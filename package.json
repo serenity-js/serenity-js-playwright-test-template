@@ -1,0 +1,53 @@
+{
+  "name": "serenity-js-playwright-test-template",
+  "version": "3.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "serenity-bdd update",
+    "clean": "rimraf playwright-report target",
+    "test": "failsafe clean test:execute test:report",
+    "test:execute": "playwright test",
+    "test:report": "serenity-bdd run",
+    "lint": "eslint --ext ts --config .eslintrc.js .",
+    "lint:fix": "npm run lint -- --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/serenity-js/serenity-js-playwright-test-template.git"
+  },
+  "keywords": [
+    "serenity-js",
+    "bdd",
+    "playwright",
+    "playwright-test",
+    "testing"
+  ],
+  "author": "Jan Molak <jan.molak@smartcodeltd.co.uk>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/serenity-js/serenity-js-playwright-test-template/issues"
+  },
+  "homepage": "https://github.com/serenity-js/serenity-js-playwright-test-template#readme",
+  "devDependencies": {
+    "@playwright/test": "1.26.0",
+    "@serenity-js/assertions": "^3.0.0-rc",
+    "@serenity-js/console-reporter": "^3.0.0-rc",
+    "@serenity-js/core": "^3.0.0-rc",
+    "@serenity-js/playwright": "^3.0.0-rc",
+    "@serenity-js/playwright-test": "^3.0.0-rc",
+    "@serenity-js/rest": "^3.0.0-rc",
+    "@serenity-js/serenity-bdd": "^3.0.0-rc",
+    "@serenity-js/web": "^3.0.0-rc",
+    "@typescript-eslint/eslint-plugin": "^5.39.0",
+    "@typescript-eslint/parser": "^5.39.0",
+    "eslint": "^8.24.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-simple-import-sort": "^8.0.0",
+    "eslint-plugin-unicorn": "^44.0.1",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "npm-failsafe": "^0.4.3",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.8.4"
+  }
+}
