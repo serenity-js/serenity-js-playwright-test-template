@@ -2,6 +2,11 @@
 
 [![Build Status](https://github.com/serenity-js/serenity-js-playwright-test-template/workflows/build/badge.svg)](https://github.com/serenity-js/serenity-js-playwright-test-template/actions)
 
+[![Serenity/JS on GitHub](https://img.shields.io/badge/github-serenity--js-yellow?logo=github)](https://github.com/serenity-js/serenity-js)
+[![Serenity/JS on StackOverflow](https://img.shields.io/badge/stackoverflow-serenity--js-important?logo=stackoverflow)](https://stackoverflow.com/questions/tagged/serenity-js)
+[![Contribute with Gitpod](https://img.shields.io/badge/Contribute%20with-Gitpod-908a85?logo=gitpod)](https://gitpod.io/from-referrer/)
+[![Chat on Gitter](https://badges.gitter.im/serenity-js/Lobby.svg)](https://gitter.im/serenity-js/Lobby)
+
 Use this [template repository](https://help.github.com/en/articles/creating-a-repository-from-a-template)
 to get started with acceptance testing your web applications using [Serenity/JS](https://serenity-js.org),
 [Playwright](https://playwright.dev/) and [Playwright Test](https://playwright.dev/docs/intro).
