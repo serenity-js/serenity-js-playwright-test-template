@@ -1,5 +1,4 @@
 import { Ensure, equals, isPresent, not } from '@serenity-js/assertions';
-import { Interaction } from '@serenity-js/core';
 import { describe, it, test } from '@serenity-js/playwright-test';
 import { isVisible, Photographer, TakePhotosOfFailures, Value } from '@serenity-js/web';
 
@@ -29,7 +28,7 @@ describe('Recording items', () => {
     });
 
     describe('Todo List App', () => {
-    
+
         it('should allow me to add todo items', async ({ actor }) => {
             await actor.attemptsTo(
                 startWithAnEmptyList(),
