@@ -26,7 +26,7 @@
   "author": "Jan Molak <jan.molak@smartcodeltd.co.uk>",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/serenity-js/serenity-js-playwright-test-template/issues"
+    "url": "https://github.com/serenity-js/serenity-js/issues"
   },
   "homepage": "https://github.com/serenity-js/serenity-js-playwright-test-template#readme",
   "devDependencies": {
