@@ -17,15 +17,15 @@ RUN git clone --depth 1 https://github.com/novnc/noVNC.git /opt/novnc \
 	&& git clone --depth 1 https://github.com/novnc/websockify /opt/novnc/utils/websockify \
 	&& find /opt/novnc -type d -name '.git' -exec rm -rf '{}' + \
 	&& sudo -H pip3 install numpy
-COPY novnc-index.html /opt/novnc/index.html
+COPY .gitpod/novnc-index.html /opt/novnc/index.html
 
 # Add VNC startup script
-COPY gp-vncsession /usr/bin/
+COPY .gitpod/gp-vncsession /usr/bin/
 RUN chmod 0755 "$(which gp-vncsession)" \
 	&& printf '%s\n' 'export DISPLAY=:0' \
 	'test -e "$GITPOD_REPO_ROOT" && gp-vncsession' >> "$HOME/.bashrc"
 # Add X11 dotfiles
-COPY --chown=gitpod:gitpod .xinitrc $HOME/
+COPY --chown=gitpod:gitpod .gitpod/.xinitrc $HOME/
 
 ## https://www.gitpod.io/docs/config-docker
 USER gitpod
