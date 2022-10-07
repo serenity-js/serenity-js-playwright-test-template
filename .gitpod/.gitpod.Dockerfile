@@ -84,4 +84,4 @@ RUN curl -fsSL "https://get.sdkman.io" | bash \
         && echo '[[ -s \"/home/gitpod/.sdkman/bin/sdkman-init.sh\" ]] && source \"/home/gitpod/.sdkman/bin/sdkman-init.sh\"' >> /home/gitpod/.bashrc.d/99-java"
 # above, we are adding the sdkman init to .bashrc (executing sdkman-init.sh does that), because one is executed on interactive shells, the other for non-interactive shells (e.g. plugin-host)
 
-RUN gsettings set org.gnome.desktop.background picture-uri file:///usr/share/backgrounds/xfce/xfce-teal.jpg
+RUN xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitorVNC-0/workspace0/last-image -s /usr/share/backgrounds/xfce/xfce-teal.jpg
