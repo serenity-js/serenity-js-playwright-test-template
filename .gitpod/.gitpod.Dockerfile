@@ -1,8 +1,31 @@
-FROM gitpod/workspace-full-vnc
+FROM gitpod/workspace-node-lts
 
 ARG DEBIAN_FRONTEND=noninteractive
 ARG TZ=UTC
 ENV SHELL=/bin/bash
+
+USER root
+
+# Install Desktop-ENV, tools
+RUN install-packages \
+	tigervnc-standalone-server tigervnc-xorg-extension \
+	dbus dbus-x11 gnome-keyring xfce4 xfce4-terminal \
+	xdg-utils x11-xserver-utils pip
+
+# Install novnc and numpy module for it
+RUN git clone --depth 1 https://github.com/novnc/noVNC.git /opt/novnc \
+	&& git clone --depth 1 https://github.com/novnc/websockify /opt/novnc/utils/websockify \
+	&& find /opt/novnc -type d -name '.git' -exec rm -rf '{}' + \
+	&& sudo -H pip3 install numpy
+COPY novnc-index.html /opt/novnc/index.html
+
+# Add VNC startup script
+COPY gp-vncsession /usr/bin/
+RUN chmod 0755 "$(which gp-vncsession)" \
+	&& printf '%s\n' 'export DISPLAY=:0' \
+	'test -e "$GITPOD_REPO_ROOT" && gp-vncsession' >> "$HOME/.bashrc"
+# Add X11 dotfiles
+COPY --chown=gitpod:gitpod .xinitrc $HOME/
 
 ## https://www.gitpod.io/docs/config-docker
 USER gitpod
@@ -84,4 +107,5 @@ RUN curl -fsSL "https://get.sdkman.io" | bash \
         && echo '[[ -s \"/home/gitpod/.sdkman/bin/sdkman-init.sh\" ]] && source \"/home/gitpod/.sdkman/bin/sdkman-init.sh\"' >> /home/gitpod/.bashrc.d/99-java"
 # above, we are adding the sdkman init to .bashrc (executing sdkman-init.sh does that), because one is executed on interactive shells, the other for non-interactive shells (e.g. plugin-host)
 
-RUN xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitorVNC-0/workspace0/last-image -s /usr/share/backgrounds/xfce/xfce-teal.jpg
+
+# RUN xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitorVNC-0/workspace0/last-image -s /usr/share/backgrounds/xfce/xfce-teal.jpg
