@@ -1,31 +1,8 @@
-FROM gitpod/workspace-node-lts
+FROM gitpod/workspace-full-vnc
 
 ARG DEBIAN_FRONTEND=noninteractive
 ARG TZ=UTC
 ENV SHELL=/bin/bash
-
-USER root
-
-# Install Desktop-ENV, tools
-RUN install-packages \
-	tigervnc-standalone-server tigervnc-xorg-extension \
-	dbus dbus-x11 gnome-keyring xfce4 xfce4-terminal \
-	xdg-utils x11-xserver-utils pip
-
-# Install novnc and numpy module for it
-RUN git clone --depth 1 https://github.com/novnc/noVNC.git /opt/novnc \
-	&& git clone --depth 1 https://github.com/novnc/websockify /opt/novnc/utils/websockify \
-	&& find /opt/novnc -type d -name '.git' -exec rm -rf '{}' + \
-	&& sudo -H pip3 install numpy
-COPY .gitpod/novnc-index.html /opt/novnc/index.html
-
-# Add VNC startup script
-COPY .gitpod/gp-vncsession /usr/bin/
-RUN chmod 0755 "$(which gp-vncsession)" \
-	&& printf '%s\n' 'export DISPLAY=:0' \
-	'test -e "$GITPOD_REPO_ROOT" && gp-vncsession' >> "$HOME/.bashrc"
-# Add X11 dotfiles
-COPY --chown=gitpod:gitpod .gitpod/.xinitrc $HOME/
 
 ## https://www.gitpod.io/docs/config-docker
 USER gitpod
@@ -92,20 +69,8 @@ RUN sudo bash -c "mkdir -p ${PLAYWRIGHT_BROWSERS_PATH} \
 
 RUN bash -c "npm i --location=global http-server"
 
+
 # ######################################################################################################################
-# Install Java
-#   https://github.com/gitpod-io/workspace-images/blob/e91b47d148d6687703e258a7589b8cba74367a88/chunks/lang-java/Dockerfile
-
-RUN curl -fsSL "https://get.sdkman.io" | bash \
- && bash -c ". /home/gitpod/.sdkman/bin/sdkman-init.sh \
-        && sed -i 's/sdkman_selfupdate_enable=true/sdkman_selfupdate_enable=false/g' /home/gitpod/.sdkman/etc/config \
-        && sed -i 's/sdkman_selfupdate_feature=true/sdkman_selfupdate_feature=false/g' /home/gitpod/.sdkman/etc/config \
-        && sdk install java \
-        && sdk flush archives \
-        && sdk flush temp \
-        && echo 'export SDKMAN_DIR=\"/home/gitpod/.sdkman\"' >> /home/gitpod/.bashrc.d/99-java \
-        && echo '[[ -s \"/home/gitpod/.sdkman/bin/sdkman-init.sh\" ]] && source \"/home/gitpod/.sdkman/bin/sdkman-init.sh\"' >> /home/gitpod/.bashrc.d/99-java"
-# above, we are adding the sdkman init to .bashrc (executing sdkman-init.sh does that), because one is executed on interactive shells, the other for non-interactive shells (e.g. plugin-host)
-
+# Configure XFCE
 
 # RUN xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitorVNC-0/workspace0/last-image -s /usr/share/backgrounds/xfce/xfce-teal.jpg
