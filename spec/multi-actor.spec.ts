@@ -32,13 +32,13 @@ describe('Multi-actor scenarios', () => {
 
     describe('Todo List App', () => {
 
-        it('supports multiple actors', async ({ actorCalled }) => {
+        it('supports multiple actors using separate browsers', async ({ actorCalled }) => {
             await actorCalled('Alice').attemptsTo(
                 startWithAListContaining(
                     'Feed the cat'
                 ),
             )
-        
+
             await actorCalled('Bob').attemptsTo(
                 startWithAListContaining(
                     'Walk the dog'
@@ -50,7 +50,7 @@ describe('Multi-actor scenarios', () => {
                     'Feed the cat'
                 ])),
             )
-        
+
             await actorCalled('Bob').attemptsTo(
                 Ensure.that(itemNames(), equals([
                     'Walk the dog'
