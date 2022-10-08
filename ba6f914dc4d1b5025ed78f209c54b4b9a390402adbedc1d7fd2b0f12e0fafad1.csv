@@ -1,4 +1,4 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Recording items","Todo List App should reflect the number of items left in the counter","SUCCESS","2022-10-07T18:21:41.639Z[Etc/UTC]","0.0","1.06"
-"Recording items","Todo List App should allow me to add todo items","SUCCESS","2022-10-07T18:21:51.297Z[Etc/UTC]","0.0","1.15"
-"Recording items","Todo List App should reflect the number of items left in the counter","SUCCESS","2022-10-07T18:21:53.399Z[Etc/UTC]","0.0","1.23"
+"Recording items","Todo List App should allow me to add todo items","SUCCESS","2022-10-08T00:59:09.798Z[Etc/UTC]","0.0","1.13"
+"Recording items","Todo List App should reflect the number of items left in the counter","SUCCESS","2022-10-08T00:59:11.892Z[Etc/UTC]","0.0","1.21"
+"Recording items","Todo List App should show #main and #footer sections only when list contains items","SUCCESS","2022-10-08T00:59:13.109Z[Etc/UTC]","0.0","1.01"
