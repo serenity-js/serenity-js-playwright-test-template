@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/serenity-js/serenity-js-playwright-test-template#readme",
   "devDependencies": {
-    "@playwright/test": "1.27.0",
+    "@playwright/test": "1.27.1",
     "@serenity-js/assertions": "^3.0.0-rc.31",
     "@serenity-js/console-reporter": "^3.0.0-rc.31",
     "@serenity-js/core": "^3.0.0-rc.31",
