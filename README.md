@@ -17,19 +17,19 @@ Learn more:
 - [Serenity/JS Tutorial](https://serenity-js.org/handbook/thinking-in-serenity-js/index.html)
 - [Serenity/JS API Docs](https://serenity-js.org/modules)
 
-## Prerequisites
+## Usage
 
-To use this project, you'll need:
+This repository is a GitHub template. You can use it to create new [GitHub repositories](https://help.github.com/en/articles/creating-a-repository-from-a-template), [clone it to your computer](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository), or launch in a virtual Gitpod workspace:
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/from-referrer/)
+
+### Installation
+
+To use this project on your machine, you'll need:
 - Node.js, a Long-Term Support (LTS) release version 14 or later - [download](https://nodejs.org/en/)
 - Java Runtime Environment (JRE) or a Java Development Kit (JDK) version 8 or later - [download](https://adoptopenjdk.net/)
 
 Follow the [installation instructions](https://serenity-js.org/handbook/integration/runtime-dependencies.html) to help you verify your setup.
-
-## Usage
-
-This repository is a GitHub template. You can use it to create new [GitHub repositories](https://help.github.com/en/articles/creating-a-repository-from-a-template) or simply [clone it to your computer](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository).
-
-### Installation
 
 Once you have the code on your computer, use your computer terminal to run the following command in the directory where you've cloned the project:
 ```
