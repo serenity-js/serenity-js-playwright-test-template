@@ -37,34 +37,6 @@ RUN bash -c "export GOOGLE_CHROME_VERSION=$(/usr/bin/google-chrome --version | s
       && node -e 'console.log(\`export CHROMEDRIVER_FILEPATH=\${ require(\"chromedriver\").path}\`)' >> /home/gitpod/.bashrc.d/99-chromedriver"
 
 # ######################################################################################################################
-# Install Playwright
-#
-# Playwright has a peculiar installation procedure, where it fails silently if you try to install it on Gitpod
-# as it assumes it's being installed in "dev mode".
-#   https://github.com/microsoft/playwright/blob/35a9daa4255f2ba556d4d7af6243cc84d1ac4f2a/packages/playwright/install.js#L19-L24
-#
-# Instead, I need to use the same trick Playwright themselves use, which is to install Playwright using a temporary Npm project
-#   https://github.com/microsoft/playwright/blob/35a9daa4255f2ba556d4d7af6243cc84d1ac4f2a/utils/docker/Dockerfile.focal
-#
-# The path to directory cache must be "/ms-playwright" because of the hard-coded path in Playwright:
-#   https://github.com/microsoft/playwright/blob/35a9daa4255f2ba556d4d7af6243cc84d1ac4f2a/packages/playwright-core/src/server/registry/dependencies.ts#L31
-#   https://playwright.dev/docs/ci#caching-browsers
-
-ENV PLAYWRIGHT_BROWSERS_PATH=/ms-playwright
-ARG DOCKER_IMAGE_NAME_TEMPLATE="mcr.microsoft.com/playwright:v%version%-focal"
-
-RUN sudo bash -c "mkdir -p ${PLAYWRIGHT_BROWSERS_PATH} \
-        && mkdir -p ${PLAYWRIGHT_BROWSERS_PATH}/agent \
-        && chmod -R 777 ${PLAYWRIGHT_BROWSERS_PATH} \
-        && rm -rf /var/lib/apt/lists/*" \
- && bash -c "cd ${PLAYWRIGHT_BROWSERS_PATH}/agent \
-        && npm init -y && npm i playwright@latest \
-        && npx playwright@latest mark-docker-image "${DOCKER_IMAGE_NAME_TEMPLATE}" \
-        && npx --yes playwright@latest install --with-deps" \
- && sudo bash -c "chmod -R 777 ${PLAYWRIGHT_BROWSERS_PATH} \
-        && rm -rf ${PLAYWRIGHT_BROWSERS_PATH}/agent"
-
-# ######################################################################################################################
 # Install HTTP Server
 
 RUN bash -c "npm i --location=global http-server"
