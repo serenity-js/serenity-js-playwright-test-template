@@ -15,7 +15,6 @@ tasks:
         nvm install
         nvm use
         npm ci
-        npx --yes playwright install --with-deps
         npm test
 
   - name: 'Serenity Reports'
