@@ -1,4 +1,4 @@
-FROM gitpod/workspace-node-lts
+FROM gitpod/workspace-full-vnc
 
 ARG DEBIAN_FRONTEND=noninteractive
 ARG TZ=UTC
