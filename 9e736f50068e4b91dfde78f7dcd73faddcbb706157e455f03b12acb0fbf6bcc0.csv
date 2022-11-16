@@ -1,3 +1,0 @@
-"Story","Title","Result","Date","Stability","Duration (s)"
-"Vanilla Playwright Test","New Todo should allow me to add todo items","SUCCESS","2022-11-16T00:39:13.487Z[Etc/UTC]","0.0","1.03"
-"Vanilla Playwright Test","New Todo should reflect the number of items left in the counter","SUCCESS","2022-11-16T00:39:15.43Z[Etc/UTC]","0.0","1.0"
