@@ -1,3 +1,0 @@
-"Story","Title","Result","Date","Stability","Duration (s)"
-"Recording items","Todo List App should clear text input field when an item is added","SUCCESS","2022-12-03T11:18:42.449Z[Etc/UTC]","0.0","0.98"
-"Recording items","Todo List App should show #main and #footer sections only when list contains items","SUCCESS","2022-12-03T11:18:44.715Z[Etc/UTC]","0.0","0.99"
