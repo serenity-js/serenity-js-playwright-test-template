@@ -1,0 +1,3 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Multi-actor scenarios","Todo List App supports multiple actors using separate browsers","SUCCESS","2022-12-17T03:26:24.697Z[Etc/UTC]","0.0","3.0"
+"Recording items","Todo List App should reflect the number of items left in the counter","SUCCESS","2022-12-17T03:26:29.422Z[Etc/UTC]","0.0","1.02"
