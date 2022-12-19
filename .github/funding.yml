@@ -1,4 +1,4 @@
 # These are supported funding model platforms
 
-github: [ serenity-js, jan-molak ]
+github: [ serenity-js ]
 tidelift: "npm/@serenity-js/core"
