@@ -17,6 +17,21 @@ Learn more:
 - [Serenity/JS Tutorial](https://serenity-js.org/handbook/thinking-in-serenity-js/index.html)
 - [Serenity/JS API Docs](https://serenity-js.org/modules)
 
+> **Note**
+>
+> ## Serenity/JS v3 is coming soon!
+>
+> The default [`main` branch](https://github.com/serenity-js/serenity-js-cucumber-template/tree/main) of this Serenity/JS repository contains code for the upcoming Serenity/JS v3 release.
+>
+> All the public Serenity/JS APIs are now stable and unlikely to change much before the final release. You're welcome to go through the [v3 migration guide](https://serenity-js.org/handbook/release-notes/serenity-js-3.html), experiment with the new version, and ask any questions you might have about the migration on the [Serenity/JS Community Gitter Chat](https://gitter.im/serenity-js/Lobby).
+>
+> ## Stay up to date!
+>
+> - To get notified when Serenity/JS v3 is available and when new tutorials are released, follow [Serenity/JS on LinkedIn](https://www.linkedin.com/company/serenity-js) and subscribe to [@serenity-js on YouTube](https://www.youtube.com/@serenity-js)!
+> - To find out more about what's left to do for the v3 launch, check out our [project board](https://github.com/serenity-js/serenity-js/milestone/1).
+>
+> And if you find Serenity/JS useful, learn how becoming a [GitHub Sponsor](https://github.com/sponsors/serenity-js) can help both you and this project!
+
 ## Usage
 
 This repository is a GitHub template. You can use it to [create a new GitHub repository](https://help.github.com/en/articles/creating-a-repository-from-a-template), [clone it to your computer](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository).
@@ -38,7 +53,7 @@ Once you have the code on your computer, use your computer terminal to run the f
 npm ci
 ```
 
-Running [`npm ci`](https://docs.npmjs.com/cli/v6/commands/npm-ci) downloads the [Node modules](https://docs.npmjs.com/about-packages-and-modules) this project depends on, as well as the latest version of [`chromedriver`](https://www.npmjs.com/package/chromedriver) and the [Serenity BDD CLI](https://github.com/serenity-bdd/serenity-cli) reporter jar. 
+Running [`npm ci`](https://docs.npmjs.com/cli/v6/commands/npm-ci) downloads the [Node modules](https://docs.npmjs.com/about-packages-and-modules) this project depends on, as well as the [Serenity BDD CLI](https://github.com/serenity-bdd/serenity-cli) reporter jar. 
 
 ### Corporate networks
 
@@ -54,8 +69,6 @@ registry=https://artifactory.mycompany.com/artifactory/
 ```
 
 If you encounter issues downloading the Serenity BDD CLI jar, please follow the [detailed instructions in the Serenity/JS Handbook](https://serenity-js.org/modules/serenity-bdd/#downloading-the-serenity-bdd-reporting-cli).
-
-Similar instructions are available for the [`chromedriver` module](https://www.npmjs.com/package/chromedriver).
 
 ### Execution
 
@@ -76,14 +89,13 @@ Do you find Serenity/JS useful? [Give it a star](https://github.com/serenity-js/
 Found a bug? Need a feature? Raise [an issue](https://github.com/serenity-js/serenity-js/issues?state=open)
 or submit a pull request.
 
-Have feedback? Let me know on Twitter: [@JanMolak](https://twitter.com/JanMolak) 
+Have feedback? Let me know on Twitter: [@JanMolak](https://twitter.com/JanMolak)
 
 If you'd like to chat with fellow users of Serenity/JS, join us on [Serenity/JS Community Chat](https://gitter.im/serenity-js/Lobby).
 
-And if Serenity/JS has made your life a little bit easier, please consider [sponsoring its ongoing development](https://github.com/sponsors/serenity-js) 🙇
+And if Serenity/JS has made your life a little bit easier, please consider [sponsoring its ongoing development](https://github.com/sponsors/serenity-js)
 
-New tutorials and videos are coming soon, follow us on Twitter and subscribe to [Serenity/JS YouTube channel](https://www.youtube.com/channel/UC0RdeVPyjtJopVHvlLrXd1Q) to get notified when they're available!
+New tutorials and videos are coming soon, follow us on [LinkedIn](https://www.linkedin.com/company/serenity-js) and subscribe to [Serenity/JS YouTube channel](https://www.youtube.com/channel/UC0RdeVPyjtJopVHvlLrXd1Q) to get notified when they're available!
 
-[![Twitter Follow](https://img.shields.io/twitter/follow/SerenityJS?style=social)](https://twitter.com/@SerenityJS)
-[![Twitter Follow](https://img.shields.io/twitter/follow/JanMolak?style=social)](https://twitter.com/@JanMolak)
-
+[![LinkedIn Follow](https://img.shields.io/badge/Serenity%2FJS-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/company/serenity-js)
+[![YouTube Follow](https://img.shields.io/badge/@serenity&#8212;JS-FA120F?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@serenity-js)
