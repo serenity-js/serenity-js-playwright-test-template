@@ -1,4 +1,4 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Vanilla Playwright Test","New Todo should reflect the number of items left in the counter","SUCCESS","2022-12-19T21:47:36.857Z[Etc/UTC]","0.0","1.06"
-"Vanilla Playwright Test","New Todo should allow me to add todo items","SUCCESS","2022-12-19T21:47:52.948Z[Etc/UTC]","0.0","1.02"
-"Vanilla Playwright Test","New Todo should reflect the number of items left in the counter","SUCCESS","2022-12-19T21:47:54.89Z[Etc/UTC]","0.0","1.17"
+"Vanilla Playwright Test","New Todo should reflect the number of items left in the counter","SUCCESS","2022-12-19T22:02:40.47Z[Etc/UTC]","0.0","1.17"
+"Vanilla Playwright Test","New Todo should allow me to add todo items","SUCCESS","2022-12-19T22:02:57.377Z[Etc/UTC]","0.0","1.0"
+"Vanilla Playwright Test","New Todo should reflect the number of items left in the counter","SUCCESS","2022-12-19T22:02:59.286Z[Etc/UTC]","0.0","1.13"
