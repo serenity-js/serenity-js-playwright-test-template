@@ -80,7 +80,7 @@ npm run lint:fix        # attempts to automatically fix linting issues
 npm run clean           # removes reports from any previous test run
 npm test                # executes the example test suite
                         # and generates the report under ./target/site/serenity
-npm start               # starts a mini HTTP server and serves the tests reports
+npm start               # starts a mini HTTP server and serves the test reports
                         # at http://localhost:8080
 ```
 
