@@ -69,8 +69,3 @@ RUN bash -c "cd ${PLAYWRIGHT_BROWSERS_PATH}/agent \
  && sudo bash -c "chmod -R 777 ${PLAYWRIGHT_BROWSERS_PATH} \
         && rm -rf ${PLAYWRIGHT_BROWSERS_PATH}/agent" \
  && bash -c "npm cache verify"
-
-# ######################################################################################################################
-# Install HTTP Server
-
-RUN bash -c "npm i --location=global http-server"
