@@ -29,7 +29,11 @@
   "bugs": {
     "url": "https://github.com/serenity-js/serenity-js/issues"
   },
-  "homepage": "https://github.com/serenity-js/serenity-js-playwright-test-template#readme",
+  "homepage": "https://serenity-js.org",
+  "engines": {
+    "node": "^14 || ^16 || ^18",
+    "npm": "^6 || ^7 || ^8"
+  },
   "dependencies": {
     "@playwright/test": "1.29.0",
     "@serenity-js/assertions": "^3.0.0-rc.37",
