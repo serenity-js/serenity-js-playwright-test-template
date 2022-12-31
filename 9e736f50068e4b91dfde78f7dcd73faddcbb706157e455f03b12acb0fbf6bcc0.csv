@@ -1,4 +1,2 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Vanilla Playwright Test","New Todo should allow me to add todo items","SUCCESS","2022-12-28T04:35:47.071Z[Etc/UTC]","0.0","1.07"
-"Vanilla Playwright Test","New Todo should clear text input field when an item is added","SUCCESS","2022-12-28T04:35:48.141Z[Etc/UTC]","0.0","1.09"
-"Vanilla Playwright Test","New Todo should reflect the number of items left in the counter","SUCCESS","2022-12-28T04:35:49.243Z[Etc/UTC]","0.0","1.19"
+"Vanilla Playwright Test","New Todo should reflect the number of items left in the counter","SUCCESS","2022-12-31T11:39:28.623Z[Etc/UTC]","0.0","1.01"
