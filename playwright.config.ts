@@ -1,5 +1,5 @@
-import type { PlaywrightTestConfig } from '@playwright/test';
 import { devices } from '@playwright/test';
+import type { PlaywrightTestConfig } from '@serenity-js/playwright-test';
 
 /**
  * Read environment variables from file.
@@ -46,6 +46,15 @@ const config: PlaywrightTestConfig = {
     use: {
         /* Base URL to use in actions like `await page.goto('/')`. */
         baseURL: 'https://todo-app.serenity-js.org/',
+
+        defaultActorName: 'Alice',
+        crew: [
+            // Take screenshots of failed Serenity/JS Activities, such as a failed assertion, or o failed interaction
+            [ '@serenity-js/web:Photographer', { strategy: 'TakePhotosOfFailures' }],
+
+            // Take screenshots of all the Activities, both successful and failed
+            // [ '@serenity-js/web:Photographer', { strategy: 'TakePhotosOfInteractions' }],
+        ],
 
         /* Maximum time each action such as `click()` can take. Defaults to 0 (no limit). */
         actionTimeout: 0,

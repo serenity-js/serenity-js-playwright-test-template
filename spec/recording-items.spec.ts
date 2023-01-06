@@ -1,6 +1,6 @@
 import { Ensure, equals, isPresent, not } from '@serenity-js/assertions';
-import { describe, it, test } from '@serenity-js/playwright-test';
-import { isVisible, Photographer, TakePhotosOfFailures, Value } from '@serenity-js/web';
+import { describe, it } from '@serenity-js/playwright-test';
+import { isVisible, Value } from '@serenity-js/web';
 
 import { TODO_ITEMS } from './todo-list-app/test-data';
 import {
@@ -19,13 +19,17 @@ import { itemNames } from './todo-list-app/TodoList';
 
 describe('Recording items', () => {
 
-    test.use({
-        defaultActorName: 'Serena',
-        crew: [
-            Photographer.whoWill(TakePhotosOfFailures),
-            // Photographer.whoWill(TakePhotosOfInteractions),
-        ],
-    });
+    /**
+     * You can override the default actor name and the Serenity/JS "crew" in playwright.config.ts,
+     * or in the test scenarios themselves.
+     */
+    // test.use({
+    //     defaultActorName: 'Serena',
+    //     crew: [
+    //         Photographer.whoWill(TakePhotosOfFailures),
+    //         // Photographer.whoWill(TakePhotosOfInteractions),
+    //     ],
+    // });
 
     describe('Todo List App', () => {
 
