@@ -3,7 +3,6 @@ import { Ensure, equals } from '@serenity-js/assertions';
 import { Actor, Cast } from '@serenity-js/core';
 import { BrowseTheWebWithPlaywright } from '@serenity-js/playwright';
 import { describe, it, test } from '@serenity-js/playwright-test';
-import { Photographer, TakePhotosOfFailures } from '@serenity-js/web';
 
 import { startWithAListContaining } from './todo-list-app/TodoApp';
 import { itemNames } from './todo-list-app/TodoList';
@@ -22,12 +21,15 @@ class TodoActors implements Cast {
 describe('Multi-actor scenarios', () => {
 
     test.use({
+        
+        /*
+         * Override the default cast of actors, 
+         * so that each actor receives their own,
+         * independent browser window.
+         */
         actors: async ({ browser }, use) => {
             use(new TodoActors(browser));
         },
-        crew: [
-            Photographer.whoWill(TakePhotosOfFailures),
-        ],
     });
 
     describe('Todo List App', () => {
@@ -44,7 +46,7 @@ describe('Multi-actor scenarios', () => {
                     'Walk the dog'
                 ),
             )
-
+            
             await actorCalled('Alice').attemptsTo(
                 Ensure.that(itemNames(), equals([
                     'Feed the cat'
