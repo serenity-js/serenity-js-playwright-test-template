@@ -1,0 +1,5 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Recording items","Todo List App should allow me to add todo items","SUCCESS","2023-01-25T08:20:05.159Z[Etc/UTC]","0.0","0.82"
+"Recording items","Todo List App should clear text input field when an item is added","SUCCESS","2023-01-25T08:20:05.983Z[Etc/UTC]","0.0","0.7"
+"Recording items","Todo List App should reflect the number of items left in the counter","SUCCESS","2023-01-25T08:20:06.688Z[Etc/UTC]","0.0","0.91"
+"Recording items","Todo List App should show #main and #footer sections only when list contains items","SUCCESS","2023-01-25T08:20:07.624Z[Etc/UTC]","0.0","0.73"
