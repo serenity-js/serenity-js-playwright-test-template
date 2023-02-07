@@ -36,14 +36,14 @@
   },
   "dependencies": {
     "@playwright/test": "1.30.0",
-    "@serenity-js/assertions": "^3.0.0-rc.40",
-    "@serenity-js/console-reporter": "^3.0.0-rc.40",
-    "@serenity-js/core": "^3.0.0-rc.40",
-    "@serenity-js/playwright": "^3.0.0-rc.40",
-    "@serenity-js/playwright-test": "^3.0.0-rc.40",
-    "@serenity-js/rest": "^3.0.0-rc.40",
-    "@serenity-js/serenity-bdd": "^3.0.0-rc.40",
-    "@serenity-js/web": "^3.0.0-rc.40",
+    "@serenity-js/assertions": "^3.0.0-rc.41",
+    "@serenity-js/console-reporter": "^3.0.0-rc.41",
+    "@serenity-js/core": "^3.0.0-rc.41",
+    "@serenity-js/playwright": "^3.0.0-rc.41",
+    "@serenity-js/playwright-test": "^3.0.0-rc.41",
+    "@serenity-js/rest": "^3.0.0-rc.41",
+    "@serenity-js/serenity-bdd": "^3.0.0-rc.41",
+    "@serenity-js/web": "^3.0.0-rc.41",
     "playwright": "1.30.0"
   },
   "devDependencies": {
