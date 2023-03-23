@@ -1,11 +1,15 @@
 # Serenity/JS Playwright Test Template
 
 [![Build Status](https://github.com/serenity-js/serenity-js-playwright-test-template/workflows/build/badge.svg)](https://github.com/serenity-js/serenity-js-playwright-test-template/actions)
-
 [![Serenity/JS on GitHub](https://img.shields.io/badge/github-serenity--js-yellow?logo=github)](https://github.com/serenity-js/serenity-js)
 [![Serenity/JS on StackOverflow](https://img.shields.io/badge/stackoverflow-serenity--js-important?logo=stackoverflow)](https://stackoverflow.com/questions/tagged/serenity-js)
 [![Contribute with Gitpod](https://img.shields.io/badge/Contribute%20with-Gitpod-908a85?logo=gitpod)](https://gitpod.io/from-referrer/)
 [![Chat on Gitter](https://badges.gitter.im/serenity-js/Lobby.svg)](https://gitter.im/serenity-js/Lobby)
+
+[![Follow Serenity/JS on LinkedIn](https://img.shields.io/badge/Follow-Serenity%2FJS%20-0077B5?logo=linkedin)](https://www.linkedin.com/company/serenity-js)
+[![Watch Serenity/JS on YouTube](https://img.shields.io/badge/Watch-@serenity--js-E62117?logo=youtube)](https://www.youtube.com/@serenity-js)
+[![Join Serenity/JS Community Chat](https://img.shields.io/badge/Chat-Serenity%2FJS%20Community-FBD30B?logo=matrix)](https://matrix.to/#/#serenity-js:gitter.im)
+[![Support Serenity/JS on GitHub](https://img.shields.io/badge/Support-@serenity--js-703EC8?logo=github)](https://matrix.to/#/#serenity-js:gitter.im)
 
 Use this [template repository](https://help.github.com/en/articles/creating-a-repository-from-a-template)
 to get started with acceptance testing your web applications using [Serenity/JS](https://serenity-js.org),
@@ -16,21 +20,6 @@ Learn more:
 - [Serenity/JS Website](https://serenity-js.org)
 - [Serenity/JS Tutorial](https://serenity-js.org/handbook/thinking-in-serenity-js/index.html)
 - [Serenity/JS API Docs](https://serenity-js.org/modules)
-
-> **Note**
->
-> ## Serenity/JS v3 is coming soon!
->
-> The default [`main` branch](https://github.com/serenity-js/serenity-js-cucumber-template/tree/main) of this Serenity/JS repository contains code for the upcoming Serenity/JS v3 release.
->
-> All the public Serenity/JS APIs are now stable and unlikely to change much before the final release. You're welcome to go through the [v3 migration guide](https://serenity-js.org/handbook/release-notes/serenity-js-3.html), experiment with the new version, and ask any questions you might have about the migration on the [Serenity/JS Community Gitter Chat](https://gitter.im/serenity-js/Lobby).
->
-> ## Stay up to date!
->
-> - To get notified when Serenity/JS v3 is available and when new tutorials are released, follow [Serenity/JS on LinkedIn](https://www.linkedin.com/company/serenity-js) and subscribe to [@serenity-js on YouTube](https://www.youtube.com/@serenity-js)!
-> - To find out more about what's left to do for the v3 launch, check out our [project board](https://github.com/serenity-js/serenity-js/milestone/1).
->
-> And if you find Serenity/JS useful, learn how becoming a [GitHub Sponsor](https://github.com/sponsors/serenity-js) can help both you and this project!
 
 ## Usage
 
