@@ -1,0 +1,3 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Vanilla Playwright Test","New Todo should reflect the number of items left in the counter","SUCCESS","2023-03-24T16:15:43.956Z[Etc/UTC]","0.0","1.01"
+"Vanilla Playwright Test","New Todo should show #main and #footer when items added","SUCCESS","2023-03-24T16:15:44.971Z[Etc/UTC]","0.0","1.22"
