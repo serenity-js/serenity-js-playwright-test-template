@@ -4,7 +4,6 @@
 [![Serenity/JS on GitHub](https://img.shields.io/badge/github-serenity--js-yellow?logo=github)](https://github.com/serenity-js/serenity-js)
 [![Serenity/JS on StackOverflow](https://img.shields.io/badge/stackoverflow-serenity--js-important?logo=stackoverflow)](https://stackoverflow.com/questions/tagged/serenity-js)
 [![Contribute with Gitpod](https://img.shields.io/badge/Contribute%20with-Gitpod-908a85?logo=gitpod)](https://gitpod.io/from-referrer/)
-[![Chat on Gitter](https://badges.gitter.im/serenity-js/Lobby.svg)](https://gitter.im/serenity-js/Lobby)
 
 [![Follow Serenity/JS on LinkedIn](https://img.shields.io/badge/Follow-Serenity%2FJS%20-0077B5?logo=linkedin)](https://www.linkedin.com/company/serenity-js)
 [![Watch Serenity/JS on YouTube](https://img.shields.io/badge/Watch-@serenity--js-E62117?logo=youtube)](https://www.youtube.com/@serenity-js)
@@ -17,9 +16,7 @@ to get started with acceptance testing your web applications using [Serenity/JS]
 
 Learn more:
 - [Serenity BDD reports for this project](https://serenity-js.github.io/serenity-js-playwright-test-template/)
-- [Serenity/JS Website](https://serenity-js.org)
-- [Serenity/JS Tutorial](https://serenity-js.org/handbook/thinking-in-serenity-js/index.html)
-- [Serenity/JS API Docs](https://serenity-js.org/modules)
+- [Serenity/JS website, tutorials, and API docs](https://serenity-js.org/)
 
 ## Usage
 
@@ -65,7 +62,7 @@ The project provides several [NPM scripts](https://docs.npmjs.com/cli/v6/using-n
 
 ```
 npm run lint            # runs code linter
-npm run lint:fix        # attempts to automatically fix linting issues
+npm run lint:fix         # attempts to automatically fix linting issues
 npm run clean           # removes reports from any previous test run
 npm test                # executes the example test suite
                         # and generates the report under ./target/site/serenity
@@ -75,19 +72,21 @@ npm start               # starts a mini HTTP server and serves the test reports
 
 ## Your feedback matters!
 
-Do you find Serenity/JS useful? [Give it a star](https://github.com/serenity-js/serenity-js)! &#9733;
+Do you find Serenity/JS useful? Give it a ⭐ star on GitHub!
+
+[![GitHub stars](https://img.shields.io/github/stars/serenity-js/serenity-js)](https://github.com/serenity-js/serenity-js)
 
 Found a bug? Need a feature? Raise [an issue](https://github.com/serenity-js/serenity-js/issues?state=open)
 or submit a pull request.
 
-Have feedback? Let me know on Twitter: [@JanMolak](https://twitter.com/JanMolak)
+Have feedback? Let me know on [LinkedIn](https://www.linkedin.com/in/janmolak/) or leave a comment in [Serenity/JS discussions on GitHub](/serenity-js/serenity-js/discussions/categories/comments).
 
-If you'd like to chat with fellow users of Serenity/JS, join us on [Serenity/JS Community Chat](https://gitter.im/serenity-js/Lobby).
+And if you have any questions about the framework, or simply want to say hello to other Serenity/JS developers, join us on [Serenity/JS Community Chat](https://matrix.to/#/#serenity-js:gitter.im).
 
-New tutorials and videos are coming soon, follow us on [LinkedIn](https://www.linkedin.com/company/serenity-js) and subscribe to [Serenity/JS YouTube channel](https://www.youtube.com/channel/UC0RdeVPyjtJopVHvlLrXd1Q) to get notified when they're available!
+## Support Serenity/JS
 
-And if Serenity/JS has made your life a little bit easier, please [support its ongoing development](https://github.com/sponsors/serenity-js).
+Serenity/JS is a free open-source framework, so we rely on our [wonderful GitHub sponsors](https://github.com/sponsors/serenity-js) to keep the lights on.
 
-[![LinkedIn Follow](https://img.shields.io/badge/Follow%20Serenity%2FJS-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/company/serenity-js)
-[![YouTube Follow](https://img.shields.io/badge/Watch%20@serenity&#8212;JS-FA120F?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@serenity-js)
+If you appreciate all the effort that goes into making sophisticated tools easy to work with, please support our work and become a Serenity/JS GitHub Sponsor today!
+
 [![GitHub Sponsors](https://img.shields.io/badge/Support%20@serenity%2FJS-703EC8?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sponsors/serenity-js)
