@@ -1,0 +1,2 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Vanilla Playwright Test","New Todo should reflect the number of items left in the counter","SUCCESS","2023-03-24T16:11:50.388Z[Etc/UTC]","0.0","1.09"
