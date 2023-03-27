@@ -1,4 +1,5 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Multi-actor scenarios","Todo List App supports multiple actors using separate browsers","SUCCESS","2023-03-26T05:32:12.509Z[Etc/UTC]","0.0","3.55"
-"Recording items","Todo List App should allow me to add todo items","SUCCESS","2023-03-26T05:32:16.073Z[Etc/UTC]","0.0","1.2"
-"Recording items","Todo List App should reflect the number of items left in the counter","SUCCESS","2023-03-26T05:32:18.248Z[Etc/UTC]","0.0","1.4"
+"Multi-actor scenarios","Todo List App supports multiple actors using separate browsers","SUCCESS","2023-03-27T20:03:10.391Z[Etc/UTC]","0.0","3.81"
+"Recording items","Todo List App should allow me to add todo items","SUCCESS","2023-03-27T20:03:14.225Z[Etc/UTC]","0.0","1.22"
+"Recording items","Todo List App should reflect the number of items left in the counter","SUCCESS","2023-03-27T20:03:16.444Z[Etc/UTC]","0.0","1.44"
+"Recording items","Todo List App should show #main and #footer sections only when list contains items","SUCCESS","2023-03-27T20:03:17.896Z[Etc/UTC]","0.0","1.0"
