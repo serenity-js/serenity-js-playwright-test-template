@@ -35,7 +35,7 @@
     "npm": "^6 || ^7 || ^8 || ^9"
   },
   "dependencies": {
-    "@playwright/test": "1.32.2",
+    "@playwright/test": "1.32.3",
     "@serenity-js/assertions": "^3.1.2",
     "@serenity-js/console-reporter": "^3.1.2",
     "@serenity-js/core": "^3.1.2",
@@ -44,7 +44,7 @@
     "@serenity-js/rest": "^3.1.2",
     "@serenity-js/serenity-bdd": "^3.1.2",
     "@serenity-js/web": "^3.1.2",
-    "playwright": "1.32.2"
+    "playwright": "1.32.3"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.58.0",
