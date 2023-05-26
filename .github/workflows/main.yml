@@ -37,7 +37,7 @@ jobs:
 
       - name: GitHub Pages
         if: github.ref == 'refs/heads/main'
-        uses: JamesIves/github-pages-deploy-action@v4.4.1
+        uses: JamesIves/github-pages-deploy-action@v4.4.2
         with:
           BRANCH: gh-pages
           FOLDER: target/site/serenity
