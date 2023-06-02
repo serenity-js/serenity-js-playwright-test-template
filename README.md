@@ -15,7 +15,8 @@ to get started with acceptance testing your web applications using [Serenity/JS]
 [Playwright](https://playwright.dev/) and [Playwright Test](https://playwright.dev/docs/intro).
 
 Learn more:
-- [Serenity BDD reports for this project](https://serenity-js.github.io/serenity-js-playwright-test-template/)
+- [Serenity BDD reports for this project](https://serenity-js.github.io/serenity-js-playwright-test-template/serenity/)
+- [Playwright Test reports for this project](https://serenity-js.github.io/serenity-js-playwright-test-template/playwright/)
 - [Serenity/JS website, tutorials, and API docs](https://serenity-js.org/)
 
 ## Usage
