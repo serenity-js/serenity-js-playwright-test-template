@@ -1,6 +1,0 @@
-"Story","Title","Result","Date","Stability","Duration (s)"
-"Vanilla Playwright Test","New Todo should clear text input field when an item is added","SUCCESS","2023-06-03T03:26:27.209Z[Etc/UTC]","0.0","1.01"
-"Vanilla Playwright Test","New Todo should allow me to add todo items","SUCCESS","2023-06-03T03:26:43.273Z[Etc/UTC]","0.0","1.15"
-"Vanilla Playwright Test","New Todo should clear text input field when an item is added","SUCCESS","2023-06-03T03:26:44.426Z[Etc/UTC]","0.0","1.01"
-"Vanilla Playwright Test","New Todo should reflect the number of items left in the counter","SUCCESS","2023-06-03T03:26:45.44Z[Etc/UTC]","0.0","1.25"
-"Vanilla Playwright Test","New Todo should show #main and #footer when items added","SUCCESS","2023-06-03T03:26:46.703Z[Etc/UTC]","0.0","1.09"
