@@ -52,7 +52,7 @@ RUN bash -c "export GOOGLE_CHROME_VERSION=$(/usr/bin/google-chrome --version | s
 
 ENV PLAYWRIGHT_BROWSERS_PATH=/ms-playwright
 
-ARG DOCKER_IMAGE_NAME_TEMPLATE="mcr.microsoft.com/playwright:v%version%-focal"
+ARG DOCKER_IMAGE_NAME_TEMPLATE="mcr.microsoft.com/playwright:v%version%-jammy"
 
 RUN sudo bash -c "mkdir -p ${PLAYWRIGHT_BROWSERS_PATH} \
         && mkdir -p ${PLAYWRIGHT_BROWSERS_PATH}/agent \
