@@ -1,4 +1,4 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Recording items","Todo List App should allow me to add todo items","SUCCESS","2023-07-12T00:16:50.972Z[Etc/UTC]","0.0","0.91"
-"Recording items","Todo List App should clear text input field when an item is added","SUCCESS","2023-07-12T00:16:51.892Z[Etc/UTC]","0.0","0.73"
-"Recording items","Todo List App should reflect the number of items left in the counter","SUCCESS","2023-07-12T00:16:52.645Z[Etc/UTC]","0.0","0.98"
+"Recording items","Todo List App should allow me to add todo items","SUCCESS","2023-07-12T00:28:57.027Z[Etc/UTC]","0.0","0.69"
+"Recording items","Todo List App should clear text input field when an item is added","SUCCESS","2023-07-12T00:28:57.723Z[Etc/UTC]","0.0","0.51"
+"Recording items","Todo List App should reflect the number of items left in the counter","SUCCESS","2023-07-12T00:28:58.237Z[Etc/UTC]","0.0","0.74"
