@@ -47,6 +47,9 @@ const config: PlaywrightTestConfig = {
         /* Base URL to use in actions like `await page.goto('/')`. */
         baseURL: 'https://todo-app.serenity-js.org/',
 
+        /* Set headless: false to see the browser window */
+        headless: true,
+
         defaultActorName: 'Alice',
         crew: [
             // Take screenshots of failed Serenity/JS Activities, such as a failed assertion, or o failed interaction
