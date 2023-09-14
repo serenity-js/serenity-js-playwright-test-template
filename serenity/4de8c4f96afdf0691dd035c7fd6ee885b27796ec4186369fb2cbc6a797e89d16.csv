@@ -1,3 +1,0 @@
-"Story","Title","Result","Date","Stability","Duration (s)"
-"Multi-actor scenarios","Todo List App supports multiple actors using separate browsers","SUCCESS","2023-09-11T21:42:04.469Z[Etc/UTC]","0.0","2.48"
-"Recording items","Todo List App should show #main and #footer sections only when list contains items","SUCCESS","2023-09-11T21:42:09.437Z[Etc/UTC]","0.0","1.19"
