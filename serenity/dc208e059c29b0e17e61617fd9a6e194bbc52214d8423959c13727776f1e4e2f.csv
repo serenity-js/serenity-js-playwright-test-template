@@ -1,0 +1,3 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Blended Testing","GitHub Pages should check the state of the system before interacting with the UI","SUCCESS","2023-10-04T22:10:26.096Z[Etc/UTC]","0.0","1.18"
+"Blended Testing","GitHub Pages should check the state of the system before interacting with the UI","SUCCESS","2023-10-04T22:10:41.837Z[Etc/UTC]","0.0","1.61"
