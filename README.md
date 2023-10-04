@@ -18,6 +18,7 @@ Learn more:
 - [Serenity BDD reports for this project](https://serenity-js.github.io/serenity-js-playwright-test-template/serenity/)
 - [Playwright Test reports for this project](https://serenity-js.github.io/serenity-js-playwright-test-template/playwright/)
 - [Serenity/JS website, tutorials, and API docs](https://serenity-js.org/)
+- [API Testing with Serenity/JS](https://serenity-js.org/handbook/api-testing/)
 
 ## Usage
 
