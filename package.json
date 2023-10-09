@@ -35,14 +35,14 @@
   },
   "dependencies": {
     "@playwright/test": "1.38.1",
-    "@serenity-js/assertions": "^3.11.1",
-    "@serenity-js/console-reporter": "^3.11.1",
-    "@serenity-js/core": "^3.11.1",
-    "@serenity-js/playwright": "^3.11.1",
-    "@serenity-js/playwright-test": "^3.11.1",
-    "@serenity-js/rest": "^3.11.1",
-    "@serenity-js/serenity-bdd": "^3.11.1",
-    "@serenity-js/web": "^3.11.1"
+    "@serenity-js/assertions": "^3.12.0",
+    "@serenity-js/console-reporter": "^3.12.0",
+    "@serenity-js/core": "^3.12.0",
+    "@serenity-js/playwright": "^3.12.0",
+    "@serenity-js/playwright-test": "^3.12.0",
+    "@serenity-js/rest": "^3.12.0",
+    "@serenity-js/serenity-bdd": "^3.12.0",
+    "@serenity-js/web": "^3.12.0"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^6.7.5",
