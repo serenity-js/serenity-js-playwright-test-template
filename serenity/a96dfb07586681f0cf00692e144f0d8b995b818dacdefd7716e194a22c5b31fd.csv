@@ -1,3 +1,0 @@
-"Story","Title","Result","Date","Stability","Duration (s)"
-"Blended Testing","GitHub Pages should check the state of the system before interacting with the UI","SUCCESS","2023-11-06T22:04:15.864Z[Etc/UTC]","0.0","1.08"
-"Recording items","Todo List App should show #main and #footer sections only when list contains items","SUCCESS","2023-11-06T22:04:19.901Z[Etc/UTC]","0.0","1.09"
