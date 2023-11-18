@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Serenity Reports</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="bootstrap-icons/font/bootstrap-icons.css"><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.20/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.20/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.10.20/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.20/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.20/datatables.bootstrap4.min.css" rel="stylesheet" />
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/>
+<!--CHART.JS-->
+<script src="chartjs/chart.js"></script>
+<script src="chartjs/chartjs-plugin-datalabels@2.0.0"></script>
+<script src="chartjs/chartjs-plugin-doughnutlabel.min.js"></script>
+<script src="chartjs/patternomaly.min.js"></script>
+<!-- JQuery-UI -->
+<link type="text/css" href="jqueryui/1.11.2-start/jquery-ui.min.css" rel="Stylesheet" />
+<script type="text/javascript" src="jqueryui/1.11.2-start/jquery-ui.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.20/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.20/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.10.20/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.20/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.20/datatables.bootstrap4.min.css" rel="stylesheet" />
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+
+
+
+    <script class="code" type="text/javascript">$(document).ready(function () {
+
+
+        $('.scenario-result-table').DataTable({
+
+            "order": [[0, "asc",], [3, "asc",]],
+            "pageLength": 25,
+            "language": {
+                searchPlaceholder: "Filter",
+                search: ""
+            }
+        });
+
+        // Results table
+        $('#test-results-table').DataTable({
+            "order": [[0, "asc",], [3, "asc",]],
+            "pageLength": 100,
+            "lengthMenu": [[25, 50, 100, 200, -1], [25, 50, 100, 200, "All"]]
+        });
+
+    })
+    ;
+    </script>
+</head>
+
+<body class="results-page">
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle"></span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+
+
+    <div id="contenttop">
+        <div class="middlebg">
+        <span class="breadcrumbs"><a href="index.html">Home</a>
+                > Platform 
+                > <span
+                    class="truncate-60">Linux 6.2.0-1016-Azure (Passing Tests)</span>
+        </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="bi bi-journal-check"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 18-11-2023 00:25:43</span>
+    <br style="clear:left"/>
+</div>
+    <div class="clr"></div>
+    <div id="beforetable"></div>
+    <div id="results-dashboard">
+        <div class="middlb">
+            <div class="table">
+
+                <h2><i class='bi bi-tags'></i> Platform: Linux 6.2.0-1016-Azure (Passing Tests)</h2>
+                <table class='overview'>
+                    <tr>
+                        <td width="375px" valign="top">
+                            <div class="test-count-summary">
+                                <div>
+
+                                21 tests
+                                    across 21 scenarios
+
+                                     |
+                                        <a href="ff4440eaddd7c25330cb08e7ff45c3b955a92aab78a615545eb1904d00611c04.csv" title="Download CSV"> <i class="bi bi-cloud-arrow-down" title="Download CSV"></i></a>
+
+                                    <p class="report-info"><i class="bi bi-info-circle"></i> Note that results include
+                                        data-driven scenarios containing tests ,
+                                        which may also contain results other than tests .</p>
+
+
+
+                                </div>
+                            </div>
+
+                            <div>
+                                <ul class="nav nav-tabs">
+                                    <li class="active">
+                                        <a data-toggle="tab" href="#summary"><i class="bi bi-house-door"></i> Summary</a>
+                                    </li>
+                                    <li>
+                                        <a data-toggle="tab" href="#tests"><i class="bi bi-speedometer"></i> Test
+                                            Results</a>
+                                    </li>
+                                </ul>
+
+                                <div class="card border">
+                                    <div class="tab-content" id="pills-tabContent">
+                                        <div id="summary" class="tab-pane fade in active">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-sm-4">
+                                                        <div>
+                                                            <h3><i class="bi bi-speedometer2"></i> Key Statistics</h3>
+                                                            <div>
+                                                                <table class="table table-striped table-hover">
+                                                                    <tbody>
+                                                                    <tr scope="row">
+                                                                        <td>
+                                                                            <i class="bi bi-flag-fill"></i> Tests Started
+                                                                        </td>
+                                                                        <td>Nov 18, 2023 00:25:05</td>
+                                                                    </tr>
+                                                                    <tr scope="row">
+                                                                        <td>
+                                                                            <i class="bi bi-stop-circle"></i> Tests Finished
+                                                                        </td>
+                                                                        <td>Nov 18, 2023 00:25:36</td>
+                                                                    </tr>
+                                                                    <tr scope="row">
+                                                                        <td>
+                                                                            <i class="bi bi-stopwatch"></i> Total Duration
+                                                                        </td>
+                                                                        <td>30s</td>
+                                                                    </tr>
+                                                                    <tr scope="row">
+                                                                        <td>
+                                                                            <i class="bi bi-trophy"></i> Fastest Test
+                                                                        </td>
+                                                                        <td>516ms</td>
+                                                                    </tr>
+                                                                    <tr scope="row">
+                                                                        <td>
+                                                                            <i class="bi bi-skip-start"></i> Slowest Test
+                                                                        </td>
+                                                                        <td>1s</td>
+                                                                    </tr>
+                                                                    <tr scope="row">
+                                                                        <td>
+                                                                            <i class="bi bi-stopwatch"></i> Average Execution Time
+                                                                        </td>
+                                                                        <td>1s</td>
+                                                                    </tr>
+                                                                    <tr scope="row">
+                                                                        <td>
+                                                                            <i class="bi bi-stopwatch-fill"></i> Total Execution Time
+                                                                        </td>
+                                                                        <td>22s</td>
+                                                                    </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-4">
+                                                        <h4><i class="bi bi-check-square"></i> Test Outcomes</h4>
+                                                        <!-- Severity bar chart -->
+                                                        <div class="chart-container" style="position: relative; width:30vw">
+                                                            <canvas id="severityChart" width="300" height="300"></canvas>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-sm-4">
+                                                        <h4><i class="bi bi-graph-up"></i> Test Performance</h4>
+
+                                                        <!-- Duration bar chart -->
+                                                        <div class="chart-container" style="position: relative; width:30vw">
+                                                            <canvas id="durationChart" width="300" height="300"></canvas>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                        <div class="col-sm-12">
+                                                            <!-- High level coverage bar chart -->
+                                                            <div class="chart-container" style="position: relative; width:60vw">
+                                                                <h3><i class="bi bi-reception-3"></i> Functional Coverage Overview</h3>
+                                                                <h4>Features</h4>
+                                                                <canvas id="coverageChart"></canvas>
+                                                            </div>
+                                                        </div>
+                                                </div>
+                                                    <div class="row">
+                                                        <div class="col-sm-12">
+                                                            <h3>Tags</h3>
+
+                                                                <div class="card">
+                                                                    <div class="card-body">
+                                                                        <div>
+                                                                                <a href="8afd86945a1a25b13fc1ac5043b29b159f5150952aa7fc6951378729e9e4cd4f.html">
+                                                                                    <span class="badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                                                                        <i class="bi bi-tag"></i> Retried&nbsp;&nbsp;&nbsp;21
+                                                                                    </span>
+                                                                                </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="card">
+                                                                    <div class="card-body">
+                                                                            <h5 class="card-title">Browser</h5>
+                                                                        <div>
+                                                                                <a href="d4db263c4c0ecdf86c9dde08ae4b945c1fede1cc68b813c67056c4ac2aa0392d.html">
+                                                                                    <span class="badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                                                                        <i class="bi bi-tag"></i> Chromium 120.0.6099.28&nbsp;&nbsp;&nbsp;7
+                                                                                    </span>
+                                                                                </a>
+                                                                                <a href="aacaf076d6db7bd644000fbdbaed3ddd4b86fc68620f972527be9a944251a3d6.html">
+                                                                                    <span class="badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                                                                        <i class="bi bi-tag"></i> Firefox 119.0&nbsp;&nbsp;&nbsp;7
+                                                                                    </span>
+                                                                                </a>
+                                                                                <a href="6d74bd3d50aead3b762bcc619691208d5e7fb814068a9fb36385b5f57f8d47b6.html">
+                                                                                    <span class="badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                                                                        <i class="bi bi-tag"></i> Webkit 17.4&nbsp;&nbsp;&nbsp;7
+                                                                                    </span>
+                                                                                </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="card">
+                                                                    <div class="card-body">
+                                                                            <h5 class="card-title">Feature</h5>
+                                                                        <div>
+                                                                                <a href="73262d3560c27d55a12eafcd3bf482972e4d0cae7c21df127ffd99ba3c802097.html">
+                                                                                    <span class="badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                                                                        <i class="bi bi-tag"></i> API Testing&nbsp;&nbsp;&nbsp;3
+                                                                                    </span>
+                                                                                </a>
+                                                                                <a href="beead259f64b0001474a05d800cec567c75cf22d25425c116a6bbd1f9389954d.html">
+                                                                                    <span class="badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                                                                        <i class="bi bi-tag"></i> Blended Testing&nbsp;&nbsp;&nbsp;3
+                                                                                    </span>
+                                                                                </a>
+                                                                                <a href="39ef06ac6957911e0e85d9a47aefac8c639c0143016ebb46e4fac04edf452ce2.html">
+                                                                                    <span class="badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                                                                        <i class="bi bi-tag"></i> Multi-Actor Scenarios&nbsp;&nbsp;&nbsp;3
+                                                                                    </span>
+                                                                                </a>
+                                                                                <a href="0719e179199c05841092720c3c7543d36c4efb9baff0a00e08ee4e6bd8b68d7a.html">
+                                                                                    <span class="badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                                                                        <i class="bi bi-tag"></i> Recording Items&nbsp;&nbsp;&nbsp;12
+                                                                                    </span>
+                                                                                </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="card">
+                                                                    <div class="card-body">
+                                                                            <h5 class="card-title">Platform</h5>
+                                                                        <div>
+                                                                                <a href="1ace7738b91097d875197eb3ee9ec72d9587b22daa6f695cf3f2371a76da7ba4.html">
+                                                                                    <span class="badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                                                                        <i class="bi bi-tag"></i> Linux 6.2.0-1016-Azure&nbsp;&nbsp;&nbsp;21
+                                                                                    </span>
+                                                                                </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                        <div id="tests" class="tab-pane fade in">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <h3><i class="bi bi-gear"></i> Automated Tests</h3>
+
+                                            <table class="scenario-result-table table" id="scenario-results">
+                                                <thead>
+                                                <tr>
+                                                    <th>Feature</th>
+                                                    <th class="test-name-column">Scenario</th>
+                                                    <th>Steps</th>
+                                                    <th>Started</th>
+                                                    <th>Duration</th>
+                                                    <th>Result</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr class="scenario-result SUCCESS">
+                                                    <td>
+                                                            <a href="73262d3560c27d55a12eafcd3bf482972e4d0cae7c21df127ffd99ba3c802097.html">API Testing</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="ac4b3cdc5bc280fda171d57cd8be8d13c382090640d4fc3f00e8664173e61030.html"><span class='context-icon'><i class='fa fa-linux' aria-hidden='true'></i> <i class='fa fa-chrome' aria-hidden='true'></i></span>JSON Placeholder /todos should retrieve a todo item by id</a>
+                                                    </td>
+                                                    <td>3</td>
+                                                    <td>00:25:05</td>
+                                                    <td>594ms</td>
+                                                    <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                            style="display:none">SUCCESS</span></td>
+                                                </tr>
+                                                <tr class="scenario-result SUCCESS">
+                                                    <td>
+                                                            <a href="beead259f64b0001474a05d800cec567c75cf22d25425c116a6bbd1f9389954d.html">Blended Testing</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="47ae50ecb2ad1f30ae19decd202b2b721ef44f76412f4042647b95abfc284793.html"><span class='context-icon'><i class='fa fa-linux' aria-hidden='true'></i> <i class='fa fa-chrome' aria-hidden='true'></i></span>GitHub Pages should check the state of the system before interacting with the UI</a>
+                                                    </td>
+                                                    <td>4</td>
+                                                    <td>00:25:06</td>
+                                                    <td>1s 284ms</td>
+                                                    <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                            style="display:none">SUCCESS</span></td>
+                                                </tr>
+                                                <tr class="scenario-result SUCCESS">
+                                                    <td>
+                                                            <a href="39ef06ac6957911e0e85d9a47aefac8c639c0143016ebb46e4fac04edf452ce2.html">Multi-actor scenarios</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="54847d70c14811c9fc4a2ad7ea0eef860f1d31987e85ee1fe11e88292479ffb8.html"><span class='context-icon'><i class='fa fa-linux' aria-hidden='true'></i> <i class='fa fa-chrome' aria-hidden='true'></i></span>Todo List App supports multiple actors using separate browsers</a>
+                                                    </td>
+                                                    <td>4</td>
+                                                    <td>00:25:07</td>
+                                                    <td>984ms</td>
+                                                    <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                            style="display:none">SUCCESS</span></td>
+                                                </tr>
+                                                <tr class="scenario-result SUCCESS">
+                                                    <td>
+                                                            <a href="0719e179199c05841092720c3c7543d36c4efb9baff0a00e08ee4e6bd8b68d7a.html">Recording items</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="23945b98e7dde8aa98ba1e91493cc12dc1f4a8ee6d735a2634c6c88e253438d1.html"><span class='context-icon'><i class='fa fa-linux' aria-hidden='true'></i> <i class='fa fa-chrome' aria-hidden='true'></i></span>Todo List App should allow me to add todo items</a>
+                                                    </td>
+                                                    <td>6</td>
+                                                    <td>00:25:08</td>
+                                                    <td>619ms</td>
+                                                    <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                            style="display:none">SUCCESS</span></td>
+                                                </tr>
+                                                <tr class="scenario-result SUCCESS">
+                                                    <td>
+                                                            <a href="0719e179199c05841092720c3c7543d36c4efb9baff0a00e08ee4e6bd8b68d7a.html">Recording items</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="fbfede24b5423399d38b61ae43a7a70a2f435eea1afaf2950896444a3a26cb8e.html"><span class='context-icon'><i class='fa fa-linux' aria-hidden='true'></i> <i class='fa fa-chrome' aria-hidden='true'></i></span>Todo List App should clear text input field when an item is added</a>
+                                                    </td>
+                                                    <td>5</td>
+                                                    <td>00:25:08</td>
+                                                    <td>516ms</td>
+                                                    <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                            style="display:none">SUCCESS</span></td>
+                                                </tr>
+                                                <tr class="scenario-result SUCCESS">
+                                                    <td>
+                                                            <a href="0719e179199c05841092720c3c7543d36c4efb9baff0a00e08ee4e6bd8b68d7a.html">Recording items</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="63eabd3996c308e83ff948fa6a8485874d7377afc413534052f18eefe8a31200.html"><span class='context-icon'><i class='fa fa-linux' aria-hidden='true'></i> <i class='fa fa-chrome' aria-hidden='true'></i></span>Todo List App should reflect the number of items left in the counter</a>
+                                                    </td>
+                                                    <td>3</td>
+                                                    <td>00:25:09</td>
+                                                    <td>734ms</td>
+                                                    <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                            style="display:none">SUCCESS</span></td>
+                                                </tr>
+                                                <tr class="scenario-result SUCCESS">
+                                                    <td>
+                                                            <a href="0719e179199c05841092720c3c7543d36c4efb9baff0a00e08ee4e6bd8b68d7a.html">Recording items</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="ec3a6e9fcb0ddfb725836c461eca8259b175f48c2650ce5a805eec7456e914b0.html"><span class='context-icon'><i class='fa fa-linux' aria-hidden='true'></i> <i class='fa fa-chrome' aria-hidden='true'></i></span>Todo List App should show #main and #footer sections only when list contains items</a>
+                                                    </td>
+                                                    <td>6</td>
+                                                    <td>00:25:10</td>
+                                                    <td>1s 035ms</td>
+                                                    <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                            style="display:none">SUCCESS</span></td>
+                                                </tr>
+                                                <tr class="scenario-result SUCCESS">
+                                                    <td>
+                                                            <a href="73262d3560c27d55a12eafcd3bf482972e4d0cae7c21df127ffd99ba3c802097.html">API Testing</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="4d9d9105a94ceb5a234051bb7c64dee24fe473cd7ffd6165aef06653c4702f22.html"><span class='context-icon'><i class='fa fa-linux' aria-hidden='true'></i> <i class='fa fa-firefox' aria-hidden='true'></i></span>JSON Placeholder /todos should retrieve a todo item by id</a>
+                                                    </td>
+                                                    <td>3</td>
+                                                    <td>00:25:14</td>
+                                                    <td>1s 571ms</td>
+                                                    <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                            style="display:none">SUCCESS</span></td>
+                                                </tr>
+                                                <tr class="scenario-result SUCCESS">
+                                                    <td>
+                                                            <a href="beead259f64b0001474a05d800cec567c75cf22d25425c116a6bbd1f9389954d.html">Blended Testing</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="4beeabb93dfff66bbc8078f14a28bc20137d88fc7be7092cfe1145869e1b03f9.html"><span class='context-icon'><i class='fa fa-linux' aria-hidden='true'></i> <i class='fa fa-firefox' aria-hidden='true'></i></span>GitHub Pages should check the state of the system before interacting with the UI</a>
+                                                    </td>
+                                                    <td>4</td>
+                                                    <td>00:25:15</td>
+                                                    <td>1s 192ms</td>
+                                                    <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                            style="display:none">SUCCESS</span></td>
+                                                </tr>
+                                                <tr class="scenario-result SUCCESS">
+                                                    <td>
+                                                            <a href="39ef06ac6957911e0e85d9a47aefac8c639c0143016ebb46e4fac04edf452ce2.html">Multi-actor scenarios</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="4ec3eff28daf6913d5b689619fd442adecb8395e478afbc30fb419a21a75f2eb.html"><span class='context-icon'><i class='fa fa-linux' aria-hidden='true'></i> <i class='fa fa-firefox' aria-hidden='true'></i></span>Todo List App supports multiple actors using separate browsers</a>
+                                                    </td>
+                                                    <td>4</td>
+                                                    <td>00:25:16</td>
+                                                    <td>1s 291ms</td>
+                                                    <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                            style="display:none">SUCCESS</span></td>
+                                                </tr>
+                                                <tr class="scenario-result SUCCESS">
+                                                    <td>
+                                                            <a href="0719e179199c05841092720c3c7543d36c4efb9baff0a00e08ee4e6bd8b68d7a.html">Recording items</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="6dd4199690a560646d8b391a59a4b3bda8c8109a369c0e53d208bd729a633a2d.html"><span class='context-icon'><i class='fa fa-linux' aria-hidden='true'></i> <i class='fa fa-firefox' aria-hidden='true'></i></span>Todo List App should allow me to add todo items</a>
+                                                    </td>
+                                                    <td>6</td>
+                                                    <td>00:25:18</td>
+                                                    <td>784ms</td>
+                                                    <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                            style="display:none">SUCCESS</span></td>
+                                                </tr>
+                                                <tr class="scenario-result SUCCESS">
+                                                    <td>
+                                                            <a href="0719e179199c05841092720c3c7543d36c4efb9baff0a00e08ee4e6bd8b68d7a.html">Recording items</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="11202e36a1dbad53f6b14e12cf9f98385b135814721a005c4341c37f342b14ac.html"><span class='context-icon'><i class='fa fa-linux' aria-hidden='true'></i> <i class='fa fa-firefox' aria-hidden='true'></i></span>Todo List App should clear text input field when an item is added</a>
+                                                    </td>
+                                                    <td>5</td>
+                                                    <td>00:25:18</td>
+                                                    <td>650ms</td>
+                                                    <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                            style="display:none">SUCCESS</span></td>
+                                                </tr>
+                                                <tr class="scenario-result SUCCESS">
+                                                    <td>
+                                                            <a href="0719e179199c05841092720c3c7543d36c4efb9baff0a00e08ee4e6bd8b68d7a.html">Recording items</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="a8838eecfbd49bb75d0287a11fb083bdad809e6c8928420473d55498ab3ff4dc.html"><span class='context-icon'><i class='fa fa-linux' aria-hidden='true'></i> <i class='fa fa-firefox' aria-hidden='true'></i></span>Todo List App should reflect the number of items left in the counter</a>
+                                                    </td>
+                                                    <td>3</td>
+                                                    <td>00:25:19</td>
+                                                    <td>886ms</td>
+                                                    <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                            style="display:none">SUCCESS</span></td>
+                                                </tr>
+                                                <tr class="scenario-result SUCCESS">
+                                                    <td>
+                                                            <a href="0719e179199c05841092720c3c7543d36c4efb9baff0a00e08ee4e6bd8b68d7a.html">Recording items</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="eca7f6e7ba7f5ce180fc12fe47e1a4306b88e22422d38fd04e2a4df4bab2101e.html"><span class='context-icon'><i class='fa fa-linux' aria-hidden='true'></i> <i class='fa fa-firefox' aria-hidden='true'></i></span>Todo List App should show #main and #footer sections only when list contains items</a>
+                                                    </td>
+                                                    <td>6</td>
+                                                    <td>00:25:20</td>
+                                                    <td>1s 174ms</td>
+                                                    <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                            style="display:none">SUCCESS</span></td>
+                                                </tr>
+                                                <tr class="scenario-result SUCCESS">
+                                                    <td>
+                                                            <a href="73262d3560c27d55a12eafcd3bf482972e4d0cae7c21df127ffd99ba3c802097.html">API Testing</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="5866c38c332787652ef8fc5e55bfae2f542ad750ea24f320a3d858ee4d345430.html"><span class='context-icon'><i class='fa fa-linux' aria-hidden='true'></i> <i class='fa fa-safari' aria-hidden='true'></i></span>JSON Placeholder /todos should retrieve a todo item by id</a>
+                                                    </td>
+                                                    <td>3</td>
+                                                    <td>00:25:26</td>
+                                                    <td>1s 993ms</td>
+                                                    <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                            style="display:none">SUCCESS</span></td>
+                                                </tr>
+                                                <tr class="scenario-result SUCCESS">
+                                                    <td>
+                                                            <a href="beead259f64b0001474a05d800cec567c75cf22d25425c116a6bbd1f9389954d.html">Blended Testing</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="37c94212cdc6c35d5b9c27a8693b6617d05bbc74ae236db025e68d31c084c5df.html"><span class='context-icon'><i class='fa fa-linux' aria-hidden='true'></i> <i class='fa fa-safari' aria-hidden='true'></i></span>GitHub Pages should check the state of the system before interacting with the UI</a>
+                                                    </td>
+                                                    <td>4</td>
+                                                    <td>00:25:28</td>
+                                                    <td>1s 557ms</td>
+                                                    <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                            style="display:none">SUCCESS</span></td>
+                                                </tr>
+                                                <tr class="scenario-result SUCCESS">
+                                                    <td>
+                                                            <a href="39ef06ac6957911e0e85d9a47aefac8c639c0143016ebb46e4fac04edf452ce2.html">Multi-actor scenarios</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="92c404ad40607559e65d83fd9a1bdd90ecfffc2d9224be1865f612cf50b200f0.html"><span class='context-icon'><i class='fa fa-linux' aria-hidden='true'></i> <i class='fa fa-safari' aria-hidden='true'></i></span>Todo List App supports multiple actors using separate browsers</a>
+                                                    </td>
+                                                    <td>4</td>
+                                                    <td>00:25:30</td>
+                                                    <td>1s 613ms</td>
+                                                    <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                            style="display:none">SUCCESS</span></td>
+                                                </tr>
+                                                <tr class="scenario-result SUCCESS">
+                                                    <td>
+                                                            <a href="0719e179199c05841092720c3c7543d36c4efb9baff0a00e08ee4e6bd8b68d7a.html">Recording items</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="0c87bb0767e0dc35662ab9dd6a6421e4545f3b7f23ee6c5322820eda398bb79d.html"><span class='context-icon'><i class='fa fa-linux' aria-hidden='true'></i> <i class='fa fa-safari' aria-hidden='true'></i></span>Todo List App should allow me to add todo items</a>
+                                                    </td>
+                                                    <td>6</td>
+                                                    <td>00:25:32</td>
+                                                    <td>920ms</td>
+                                                    <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                            style="display:none">SUCCESS</span></td>
+                                                </tr>
+                                                <tr class="scenario-result SUCCESS">
+                                                    <td>
+                                                            <a href="0719e179199c05841092720c3c7543d36c4efb9baff0a00e08ee4e6bd8b68d7a.html">Recording items</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="98011ad9b586a1eb3033def7d89b5d6df5c47a7f9b5b065e95689f377ae8eb49.html"><span class='context-icon'><i class='fa fa-linux' aria-hidden='true'></i> <i class='fa fa-safari' aria-hidden='true'></i></span>Todo List App should clear text input field when an item is added</a>
+                                                    </td>
+                                                    <td>5</td>
+                                                    <td>00:25:33</td>
+                                                    <td>765ms</td>
+                                                    <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                            style="display:none">SUCCESS</span></td>
+                                                </tr>
+                                                <tr class="scenario-result SUCCESS">
+                                                    <td>
+                                                            <a href="0719e179199c05841092720c3c7543d36c4efb9baff0a00e08ee4e6bd8b68d7a.html">Recording items</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="869abf92f8d07dd3684665259b14d5327b99baf975f5c43380e0a710ad4eae94.html"><span class='context-icon'><i class='fa fa-linux' aria-hidden='true'></i> <i class='fa fa-safari' aria-hidden='true'></i></span>Todo List App should reflect the number of items left in the counter</a>
+                                                    </td>
+                                                    <td>3</td>
+                                                    <td>00:25:33</td>
+                                                    <td>1s 046ms</td>
+                                                    <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                            style="display:none">SUCCESS</span></td>
+                                                </tr>
+                                                <tr class="scenario-result SUCCESS">
+                                                    <td>
+                                                            <a href="0719e179199c05841092720c3c7543d36c4efb9baff0a00e08ee4e6bd8b68d7a.html">Recording items</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="c571dc35848938cbf17df880e62d011ebef4221d95c6b03ef91f80fbbed61409.html"><span class='context-icon'><i class='fa fa-linux' aria-hidden='true'></i> <i class='fa fa-safari' aria-hidden='true'></i></span>Todo List App should show #main and #footer sections only when list contains items</a>
+                                                    </td>
+                                                    <td>6</td>
+                                                    <td>00:25:34</td>
+                                                    <td>1s 216ms</td>
+                                                    <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                            style="display:none">SUCCESS</span></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <h3><i class="bi bi-hand-index-thumb"></i> Manual Tests</h3>
+
+                                                No manual tests were recorded
+
+                                                    </div>
+                                                </div>
+                                            </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <h3>Tags</h3>
+                    <div class="card">
+                        <div class="card-body">
+                            <div>
+                                    <a href="8afd86945a1a25b13fc1ac5043b29b159f5150952aa7fc6951378729e9e4cd4f.html">
+                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Retried&nbsp;&nbsp;&nbsp;21
+                                    </span>
+                                    </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                                <h5 class="card-title">Browser</h5>
+                            <div>
+                                    <a href="d4db263c4c0ecdf86c9dde08ae4b945c1fede1cc68b813c67056c4ac2aa0392d.html">
+                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Chromium 120.0.6099.28&nbsp;&nbsp;&nbsp;7
+                                    </span>
+                                    </a>
+                                    <a href="aacaf076d6db7bd644000fbdbaed3ddd4b86fc68620f972527be9a944251a3d6.html">
+                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Firefox 119.0&nbsp;&nbsp;&nbsp;7
+                                    </span>
+                                    </a>
+                                    <a href="6d74bd3d50aead3b762bcc619691208d5e7fb814068a9fb36385b5f57f8d47b6.html">
+                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Webkit 17.4&nbsp;&nbsp;&nbsp;7
+                                    </span>
+                                    </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                                <h5 class="card-title">Feature</h5>
+                            <div>
+                                    <a href="73262d3560c27d55a12eafcd3bf482972e4d0cae7c21df127ffd99ba3c802097.html">
+                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> API Testing&nbsp;&nbsp;&nbsp;3
+                                    </span>
+                                    </a>
+                                    <a href="beead259f64b0001474a05d800cec567c75cf22d25425c116a6bbd1f9389954d.html">
+                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Blended Testing&nbsp;&nbsp;&nbsp;3
+                                    </span>
+                                    </a>
+                                    <a href="39ef06ac6957911e0e85d9a47aefac8c639c0143016ebb46e4fac04edf452ce2.html">
+                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Multi-Actor Scenarios&nbsp;&nbsp;&nbsp;3
+                                    </span>
+                                    </a>
+                                    <a href="0719e179199c05841092720c3c7543d36c4efb9baff0a00e08ee4e6bd8b68d7a.html">
+                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Recording Items&nbsp;&nbsp;&nbsp;12
+                                    </span>
+                                    </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                                <h5 class="card-title">Platform</h5>
+                            <div>
+                                    <a href="1ace7738b91097d875197eb3ee9ec72d9587b22daa6f695cf3f2371a76da7ba4.html">
+                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Linux 6.2.0-1016-Azure&nbsp;&nbsp;&nbsp;21
+                                    </span>
+                                    </a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="beforefooter"></div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12">
+            <span class="version">Serenity BDD version 3.1.0</span>
+        </div>
+    </div>
+</div>
+
+<!-- Chart data -->
+    <!-- PIE CHART -->
+    <script>
+
+        // Register the plugin to all charts:
+        Chart.register(ChartDataLabels);
+
+        // The results pie chart
+        const outcomeChartCtx = document.getElementById('resultChart');
+
+        // Options define for display value on top of bars
+        const outcomeDetailsReports = [
+            { title: 'Passing Scenarios', link: "b20d1bc1af01ff24059d610cf7c080d917f879133dac0cfe4c9ff56268c926ec.html" },
+            { title: 'Pending Scenarios', link: "53b2c4bd7f104e42c3ca3ae8b945a82ab15de6ed9d4ff0ebf90bd4fe1e3cfb99.html" },
+            { title: 'Ignored Scenarios', link: "ef61cafad077e11ab07adafca3353d622bd5da3efdecbc87571c4d328e603bea.html" },
+            { title: 'Skipped Scenarios', link: "2f80ebe9eb35dc639c671bb1f8507e0b6adae157a2cc503e4afb362b90d189c4.html" },
+            { title: 'Aborted Scenarios',  link: "ad47e7119a586f1b83ea5e8d6699db167c24f71d05d65b9601206fa3b715aaf5.html"},
+            { title: 'Failed Scenarios', link: "e48bcd5678ce50e3fbaffc85cab688d6d52cca7cc463a672dbe22613ff6b8b6a.html"  },
+            { title: 'Broken Scenarios', link: "12fa4bbcc578c908bafe7bc613dcce3d9f9c23de03784634d217c1e430a85991.html"    },
+            { title: 'Compromised Scenarios',  link: "048e66001d72b951a21a0e653bd30150f8099e19f007a7df84476aab45fa2e79.html" },
+        ]
+        const outcomeData = {
+            labels: ['Passing', 'Pending', 'Ignored', 'Skipped', 'Aborted', 'Failed', 'Broken', 'Compromised'],
+            datasets: [{
+                label: 'Test Results',
+                fill: false,
+                data: [21,0,0,0,0,0,0,0],
+                backgroundColor: ['rgba(153,204,51,0.5)','rgba(165, 199, 238, 0.5)','rgba(168, 168, 168, 0.5)','rgba(238, 224, 152, 0.75)','rgba(255, 153, 102, 0.5)','rgba(255, 22, 49, 0.5)','rgba(255, 97, 8, 0.5)','rgba(255, 104, 255, 0.5)'],
+                borderColor: ['rgba(153,204,51,1)','rgba(165, 199, 238, 1)','rgba(168, 168, 168, 1)','rgba(238, 224, 152, 1)','rgba(255, 153, 102, 1)','rgba(255, 22, 49, 1)','rgba(255, 97, 8, 1)','rgba(255, 104, 255, 1)'],
+                borderWidth: 1,
+            }]
+        }
+        const outcomeOptions = {
+            responsive: true,
+            plugins: {
+                legend: {
+                    display: true,
+                    position: 'bottom'
+                },
+                // Change options for ALL labels of THIS CHART
+                datalabels: {
+                    color: '#444444',
+                    'font.weight': 'bold',
+                    formatter: (value, ctx) => {
+                        let sum = 0;
+                        let dataArr = ctx.chart.data.datasets[0].data;
+                        dataArr.map(data => {
+                            sum += data;
+                        });
+                        let percentage = (value * 100 / sum).toFixed(0) + "%";
+                        if (percentage === '0%') {
+                            return '';
+                        } else {
+                            return percentage;
+                        }
+                    },
+                },
+            }
+        }
+
+        const outcomeChart = new Chart(outcomeChartCtx, {
+            type: 'doughnut',
+            data: outcomeData,
+            options: outcomeOptions,
+            plugins: [
+                {
+                    id: 'text',
+                    beforeDraw: function (chart, a, b) {
+                        var width = chart.width,
+                            height = chart.height,
+                            ctx = chart.ctx;
+
+                        ctx.restore();
+                        var fontSize = (height / 200).toFixed(1);
+                        ctx.font = fontSize + "em sans-serif";
+                        ctx.textBaseline = "middle";
+
+                        var text = "100%"
+                        textX = 10 + Math.round((width - ctx.measureText(text).width) / 2);
+                        textY = (height / 2) - 40;
+
+                        ctx.fillText(text, textX, textY);
+                        ctx.save();
+                    }
+                }]
+        });
+
+        function clickHandler(click) {
+            const points = outcomeChart.getElementsAtEventForMode(click, 'nearest', {intersect: true}, true);
+            if (points.length) {
+                const firstPoint = points[0];
+                window.open(outcomeDetailsReports[firstPoint.index].link, "_self")
+
+            }
+        }
+        outcomeChartCtx.onclick = clickHandler;
+    </script>
+    <!-- END PIE CHART -->
+
+    <!-- SUMMARY BAR CHART -->
+    <script>
+
+        // Register the plugin to all charts:
+        Chart.register(ChartDataLabels);
+
+        // The Severity bar chart
+        const severityChartCtx = document.getElementById('severityChart');
+
+        // Options define for display value on top of bars
+
+        const severityDetailsReports = [
+            { title: 'Passing Scenarios', link: "b20d1bc1af01ff24059d610cf7c080d917f879133dac0cfe4c9ff56268c926ec.html" },
+            { title: 'Pending Scenarios', link: "53b2c4bd7f104e42c3ca3ae8b945a82ab15de6ed9d4ff0ebf90bd4fe1e3cfb99.html" },
+            { title: 'Ignored Scenarios', link: "ef61cafad077e11ab07adafca3353d622bd5da3efdecbc87571c4d328e603bea.html" },
+            { title: 'Skipped Scenarios', link: "2f80ebe9eb35dc639c671bb1f8507e0b6adae157a2cc503e4afb362b90d189c4.html" },
+            { title: 'Aborted Scenarios',  link: "ad47e7119a586f1b83ea5e8d6699db167c24f71d05d65b9601206fa3b715aaf5.html"},
+            { title: 'Failed Scenarios', link: "e48bcd5678ce50e3fbaffc85cab688d6d52cca7cc463a672dbe22613ff6b8b6a.html"  },
+            { title: 'Broken Scenarios', link: "12fa4bbcc578c908bafe7bc613dcce3d9f9c23de03784634d217c1e430a85991.html"    },
+            { title: 'Compromised Scenarios',  link: "048e66001d72b951a21a0e653bd30150f8099e19f007a7df84476aab45fa2e79.html" },
+        ]
+        const severityData = {
+            labels: ['Passing', 'Pending', 'Ignored', 'Skipped', 'Aborted', 'Failed', 'Broken', 'Compromised'],
+            datasets: [
+                {
+                    label: 'Automated',
+                    data: [21,0,0,0,0,0,0,0],
+                    backgroundColor: ['rgba(153,204,51,0.5)','rgba(165, 199, 238, 0.5)','rgba(168, 168, 168, 0.5)','rgba(238, 224, 152, 0.75)','rgba(255, 153, 102, 0.5)','rgba(255, 22, 49, 0.5)','rgba(255, 97, 8, 0.5)','rgba(255, 104, 255, 0.5)'],
+                    borderColor: ['rgba(153,204,51,1)','rgba(165, 199, 238, 1)','rgba(168, 168, 168, 1)','rgba(238, 224, 152, 1)','rgba(255, 153, 102, 1)','rgba(255, 22, 49, 1)','rgba(255, 97, 8, 1)','rgba(255, 104, 255, 1)'],
+                    borderWidth: 1
+                },
+                {
+                    label: 'Manual',
+                    data: [0,0,0,0,0,0,0,0],
+                    backgroundColor: ['rgba(153,204,51,0.25)','rgba(165, 199, 238, 0.25)','rgba(168, 168, 168, 0.25)','rgba(238, 224, 152, 0.375)','rgba(255, 153, 102, 0.25)','rgba(255, 22, 49, 0.25)','rgba(255, 97, 8, 0.25)','rgba(255, 104, 255, 0.25)'],
+                    borderColor: ['rgba(153,204,51,1)','rgba(165, 199, 238, 1)','rgba(168, 168, 168, 1)','rgba(238, 224, 152, 1)','rgba(255, 153, 102, 1)','rgba(255, 22, 49, 1)','rgba(255, 97, 8, 1)','rgba(255, 104, 255, 1)'],
+                    borderWidth: 1
+                },
+
+            ]
+        }
+        const severityOptions = {
+            responsive: true,
+            skipNull: true,
+            scales: {
+                x: {
+                    stacked: true,
+                },
+                y: {
+                    stacked: true,
+                }
+            },
+            plugins: {
+                // Change options for ALL labels of THIS CHART
+                datalabels: {
+                    color: '#444444',
+                    'font.weight': 'bold',
+                    formatter: (value, ctx) => {
+                        if (value === 0) {
+                            return '';
+                        } else {
+                            return value;
+                        }
+                    },
+                }
+            }
+        }
+        const severityChart = new Chart(severityChartCtx, {
+            type: 'bar',
+            data: severityData,
+            options: severityOptions
+        });
+
+        function clickHandler(click) {
+            const points = severityChart.getElementsAtEventForMode(click, 'nearest', {intersect: true}, true);
+            if (points.length) {
+                const firstPoint = points[0];
+                window.open(severityDetailsReports[firstPoint.index].link, "_self")
+
+            }
+        }
+        severityChartCtx.onclick = clickHandler;
+    </script>
+    <!-- END SUMMARY CHART -->
+
+    <!-- DURATION CHART -->
+    <script>
+
+        // Options define for display value on top of bars
+        const durationDetailsReports = [
+                {title: "Under 1 second", link: "2db35dc22e23c2fe3392ab4d8906da53053dcdda6d9dbdc459808538dddbb8b7.html"},
+                {title: "1 to 10 seconds", link: "5c13ee6a1a7ae76b274e944982ef7d0f4d632efdeb9ad44cc6dacae56f481c4b.html"},
+                {title: "10 to 30 seconds", link: "911e7c687c2bc1a3c1bfedc5dc0e85ab85ca14d1217fcb01214667123119d09d.html"},
+                {title: "30 to 60 seconds", link: "38f12c7d782adaa7dab46ae1f98f4f8f5b728ec9a64cb8fc87c07f0be3d1947d.html"},
+                {title: "1 to 2 minutes", link: "3e256369ba77c8a51603f25fba1352b9ac5edd1d5070203b86fa0bcd213c47a8.html"},
+                {title: "2 to 5 minutes", link: "a4d9ff9a59e6a6692491623593a52bd948db3e3b7f79d1089aae31756ddcabf7.html"},
+                {title: "5 to 10 minutes", link: "fabde17d9e8444102bd18fa46bce4d8087d0b198b64a61d5492a14e030edfa0b.html"},
+                {title: "10 minutes or over", link: "291f25d19a3ee9c7c3681f41d62677ceace3e8f7f8c91b09839f69d696492abe.html"},
+        ]
+        // The Severity bar chart
+        const durationChartCtx = document.getElementById('durationChart');
+
+        // Options define for display value on top of bars
+
+        const durationData = {
+            labels: ['Under 1 second','1 to 10 seconds','10 to 30 seconds','30 to 60 seconds','1 to 2 minutes','2 to 5 minutes','5 to 10 minutes','10 minutes or over'],
+            datasets: [{
+                label: 'Number of tests per duration',
+                fill: false,
+                data: ['10','11','0','0','0','0','0','0'],
+                backgroundColor: 'rgba(83, 146, 255,0.5)',
+                borderColor: 'rgba(83, 146, 255, 1)',
+            }]
+        }
+        const durationOptions = {
+            responsive: true,
+            plugins: {
+                // Change options for ALL labels of THIS CHART
+                datalabels: {
+                    color: '#444444',
+                    'font.weight': 'bold',
+                    formatter: (value, ctx) => {
+                        if (value > 0) {
+                            return value;
+                        } else {
+                            return '';
+                        }
+                    },
+                },
+                tooltip: {
+                    enabled: true,
+                    usePointStyle: true,
+                    callbacks: {
+                        label: (data) => {
+                            return data.parsed.y + ' tests'
+                        }
+                    },
+                },
+            },
+        }
+
+        const durationChart = new Chart(durationChartCtx, {
+            type: 'bar',
+            data: durationData,
+            options: durationOptions
+        });
+
+        function durationClickHandler(click) {
+            const points = durationChart.getElementsAtEventForMode(click, 'nearest', {intersect: true}, true);
+            if (points.length) {
+                const firstPoint = points[0];
+                window.open(durationDetailsReports[firstPoint.index].link, "_self")
+
+            }
+        }
+
+        durationChartCtx.onclick = durationClickHandler;
+    </script>
+    <!-- END SUMMARY CHART -->
+
+
+
+    <!-- COVERAGE BAR CHART -->
+    <script>
+
+        // The coverage bar chart
+        const coverageChartCtx = document.getElementById('coverageChart');
+
+        // Options define for display value on top of bars
+
+        const coverageReports = [
+            {
+                title: 'API Testing',
+                result: 'SUCCESS',
+                link: "73262d3560c27d55a12eafcd3bf482972e4d0cae7c21df127ffd99ba3c802097.html"
+            },
+            {
+                title: 'Blended Testing',
+                result: 'SUCCESS',
+                link: "beead259f64b0001474a05d800cec567c75cf22d25425c116a6bbd1f9389954d.html"
+            },
+            {
+                title: 'Multi-actor scenarios',
+                result: 'SUCCESS',
+                link: "39ef06ac6957911e0e85d9a47aefac8c639c0143016ebb46e4fac04edf452ce2.html"
+            },
+            {
+                title: 'Recording items',
+                result: 'SUCCESS',
+                link: "0719e179199c05841092720c3c7543d36c4efb9baff0a00e08ee4e6bd8b68d7a.html"
+            },
+        ]
+        const coverageData = {
+            labels: [
+                'API Testing',
+                'Blended Testing',
+                'Multi-actor scenarios',
+                'Recording items',
+            ],
+            datasets: [
+                {
+                    label: ['Passing Tests'],
+                    data: [3,3,3,12],
+                    backgroundColor: [ 'rgba(153,204,51,0.5)' ]
+                },
+                {
+                    label: ['Pending Tests'],
+                    data: [null,null,null,null],
+                    backgroundColor: [ 'rgba(165, 199, 238, 0.5)' ]
+                },
+                {
+                    label: ['Ignored Tests'],
+                    data: [null,null,null,null],
+                    backgroundColor: [ 'rgba(168, 168, 168, 0.5)' ]
+                },
+                {
+                    label: ['Skipped Tests'],
+                    data: [null,null,null,null],
+                    backgroundColor: [ 'rgba(238, 224, 152, 0.75)' ]
+                },
+                {
+                    label: ['Aborted Tests'],
+                    data: [null,null,null,null],
+                    backgroundColor: [ 'rgba(255, 153, 102, 0.5)' ]
+                },
+                {
+                    label: ['Failed Tests'],
+                    data: [null,null,null,null],
+                    backgroundColor: [ 'rgba(255, 22, 49, 0.5)' ]
+                },
+                {
+                    label: ['Errors'],
+                    data: [null,null,null,null],
+                    backgroundColor: [ 'rgba(255, 97, 8, 0.5)' ]
+                },
+                {
+                    label: ['Compromised Tests'],
+                    data: [null,null,null,null],
+                    backgroundColor: [ 'rgba(255, 104, 255, 0.5)' ]
+                },
+            ]
+        }
+        const coverageOptions = {
+            responsive: true,
+            indexAxis: 'y',
+            // barPercentage: ,
+            barThickness: 'flex',
+            maxBarThickness: 30,
+            minBarLength: 2,
+            skipNull: true,
+            scales: {
+                x: {
+                    stacked: true,
+                },
+                y: {
+                    stacked: true,
+                }
+            },
+            plugins: {
+                // Change options for ALL labels of THIS CHART
+                datalabels: {
+                    color: '#444444',
+                    'font.weight': 'bold'
+                },
+                tooltip: {
+                    enabled: true,
+                    usePointStyle: true,
+                },
+            },
+        }
+
+        const coverageChart = new Chart(coverageChartCtx, {
+            type: 'bar',
+            data: coverageData,
+            options: coverageOptions
+        });
+
+        function coverageClickHandler(click) {
+            const points = coverageChart.getElementsAtEventForMode(click, 'nearest', {intersect: true}, true);
+            if (points.length) {
+                const firstPoint = points[0];
+                if (coverageReports[firstPoint.index].link) {
+                    window.open(coverageReports[firstPoint.index].link, "_self")
+                }
+            }
+        }
+
+        coverageChartCtx.onclick = coverageClickHandler;
+    </script>
+    <!-- END COVERAGE CHART -->
+
+</body>
+</html>
