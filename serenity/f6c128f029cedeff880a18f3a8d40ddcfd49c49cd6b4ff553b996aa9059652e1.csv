@@ -1,4 +1,4 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"API Testing","JSON Placeholder /todos should retrieve a todo item by id","SUCCESS","2023-11-22T15:54:28.228Z[Etc/UTC]","0.0","1.54"
-"Multi-actor scenarios","Todo List App supports multiple actors using separate browsers","SUCCESS","2023-11-22T15:54:30.595Z[Etc/UTC]","0.0","1.12"
-"Recording items","Todo List App should show #main and #footer sections only when list contains items","SUCCESS","2023-11-22T15:54:33.768Z[Etc/UTC]","0.0","1.1"
+"API Testing","JSON Placeholder /todos should retrieve a todo item by id","SUCCESS","2023-11-23T23:17:01.636Z[Etc/UTC]","0.0","1.43"
+"Multi-actor scenarios","Todo List App supports multiple actors using separate browsers","SUCCESS","2023-11-23T23:17:03.915Z[Etc/UTC]","0.0","1.12"
+"Recording items","Todo List App should show #main and #footer sections only when list contains items","SUCCESS","2023-11-23T23:17:07.14Z[Etc/UTC]","0.0","1.09"
