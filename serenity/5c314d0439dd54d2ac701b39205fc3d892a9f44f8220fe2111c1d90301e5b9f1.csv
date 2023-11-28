@@ -1,2 +1,2 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Blended Testing","GitHub Pages should check the state of the system before interacting with the UI","SUCCESS","2023-11-23T23:19:58.732Z[Etc/UTC]","0.0","1.08"
+"Multi-actor scenarios","Todo List App supports multiple actors using separate browsers","SUCCESS","2023-11-28T07:07:42.125Z[Etc/UTC]","0.0","1.02"
