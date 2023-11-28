@@ -1,4 +1,5 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Recording items","Todo List App should allow me to add todo items","SUCCESS","2023-11-28T07:07:51.987Z[Etc/UTC]","0.0","0.7"
-"Recording items","Todo List App should clear text input field when an item is added","SUCCESS","2023-11-28T07:07:52.694Z[Etc/UTC]","0.0","0.58"
-"Recording items","Todo List App should reflect the number of items left in the counter","SUCCESS","2023-11-28T07:07:53.277Z[Etc/UTC]","0.0","0.78"
+"Blended Testing","GitHub Pages should check the state of the system before interacting with the UI","SUCCESS","2023-11-28T07:22:08.944Z[Etc/UTC]","0.0","0.78"
+"Recording items","Todo List App should allow me to add todo items","SUCCESS","2023-11-28T07:22:10.873Z[Etc/UTC]","0.0","0.72"
+"Recording items","Todo List App should clear text input field when an item is added","SUCCESS","2023-11-28T07:22:11.594Z[Etc/UTC]","0.0","0.57"
+"Recording items","Todo List App should reflect the number of items left in the counter","SUCCESS","2023-11-28T07:22:12.171Z[Etc/UTC]","0.0","0.8"
