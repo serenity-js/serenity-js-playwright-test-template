@@ -56,6 +56,6 @@
     "mkdirp": "^3.0.1",
     "npm-failsafe": "^1.2.0",
     "rimraf": "^5.0.5",
-    "typescript": "^5.3.2"
+    "typescript": "^5.3.3"
   }
 }
