@@ -1,4 +1,4 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"API Testing","JSON Placeholder /todos should retrieve a todo item by id","SUCCESS","2023-12-07T00:25:59.331Z[Etc/UTC]","0.0","0.6"
-"API Testing","JSON Placeholder /todos should retrieve a todo item by id","SUCCESS","2023-12-07T00:26:07.242Z[Etc/UTC]","0.0","1.39"
-"API Testing","JSON Placeholder /todos should retrieve a todo item by id","SUCCESS","2023-12-07T00:26:19.125Z[Etc/UTC]","0.0","2.63"
+"API Testing","JSON Placeholder /todos should retrieve a todo item by id","SUCCESS","2023-12-11T04:04:41.872Z[Etc/UTC]","0.0","0.51"
+"API Testing","JSON Placeholder /todos should retrieve a todo item by id","SUCCESS","2023-12-11T04:04:49.181Z[Etc/UTC]","0.0","1.49"
+"API Testing","JSON Placeholder /todos should retrieve a todo item by id","SUCCESS","2023-12-11T04:05:00.774Z[Etc/UTC]","0.0","1.86"
