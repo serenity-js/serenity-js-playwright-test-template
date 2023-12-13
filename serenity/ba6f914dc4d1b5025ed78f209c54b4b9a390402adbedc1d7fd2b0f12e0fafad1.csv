@@ -1,3 +1,4 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Recording items","Todo List App should show #main and #footer sections only when list contains items","SUCCESS","2023-12-13T23:38:48.795Z[Etc/UTC]","0.0","1.09"
-"Recording items","Todo List App should show #main and #footer sections only when list contains items","SUCCESS","2023-12-13T23:39:05.714Z[Etc/UTC]","0.0","1.23"
+"Recording items","Todo List App should show #main and #footer sections only when list contains items","SUCCESS","2023-12-13T23:40:08.738Z[Etc/UTC]","0.0","1.11"
+"Recording items","Todo List App should reflect the number of items left in the counter","SUCCESS","2023-12-13T23:40:20.472Z[Etc/UTC]","0.0","1.01"
+"Recording items","Todo List App should show #main and #footer sections only when list contains items","SUCCESS","2023-12-13T23:40:21.486Z[Etc/UTC]","0.0","1.25"
