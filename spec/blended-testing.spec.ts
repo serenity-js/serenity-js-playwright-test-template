@@ -1,9 +1,10 @@
 import { Ensure, equals } from '@serenity-js/assertions';
 import { describe, it } from '@serenity-js/playwright-test';
+
 import { GitHubStatus } from './github';
 import { startWithAnEmptyList } from './todo-list-app/TodoApp';
-import { itemNames } from './todo-list-app/TodoList';
 import { recordItem } from './todo-list-app/TodoItem';
+import { itemNames } from './todo-list-app/TodoList';
 
 describe('Blended Testing', () => {
 
