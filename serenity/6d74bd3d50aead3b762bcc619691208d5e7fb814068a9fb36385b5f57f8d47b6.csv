@@ -1,8 +1,0 @@
-"Story","Title","Result","Date","Stability","Duration (s)"
-"API Testing","JSON Placeholder /todos should retrieve a todo item by id","SUCCESS","2024-01-10T17:17:49.739Z[Etc/UTC]","0.0","5.53"
-"Blended Testing","GitHub Pages should check the state of the system before interacting with the UI","SUCCESS","2024-01-10T17:17:55.278Z[Etc/UTC]","0.0","2.34"
-"Multi-actor scenarios","Todo List App supports multiple actors using separate browsers","SUCCESS","2024-01-10T17:17:57.629Z[Etc/UTC]","0.0","1.45"
-"Recording items","Todo List App should allow me to add todo items","SUCCESS","2024-01-10T17:17:59.082Z[Etc/UTC]","0.0","0.87"
-"Recording items","Todo List App should clear text input field when an item is added","SUCCESS","2024-01-10T17:17:59.952Z[Etc/UTC]","0.0","0.71"
-"Recording items","Todo List App should reflect the number of items left in the counter","SUCCESS","2024-01-10T17:18:00.666Z[Etc/UTC]","0.0","0.95"
-"Recording items","Todo List App should show #main and #footer sections only when list contains items","SUCCESS","2024-01-10T17:18:01.629Z[Etc/UTC]","0.0","1.26"
