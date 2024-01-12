@@ -32,9 +32,9 @@ You can also launch it in a virtual Gitpod workspace without having to install a
 
 To use this project on your machine, you'll need:
 - Node.js, a Long-Term Support (LTS) release version 16 or later - [download](https://nodejs.org/en/)
-- Java Runtime Environment (JRE) or a Java Development Kit (JDK) version 8 or later - [download](https://adoptopenjdk.net/)
+- Java Runtime Environment (JRE) or a Java Development Kit (JDK) version 11 or later - [download](https://adoptopenjdk.net/)
 
-Follow the [installation instructions](https://serenity-js.org/handbook/about/installation/) to help you verify your setup.
+Follow the [installation instructions](https://serenity-js.org/handbook/getting-started/installation/) to help you verify your setup.
 
 Once you have the code on your computer, use your computer terminal to run the following command in the directory where you've cloned the project:
 ```
