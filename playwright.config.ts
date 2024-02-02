@@ -36,7 +36,7 @@ const config: PlaywrightTestConfig = {
         ['@serenity-js/playwright-test', {
             crew: [
                 '@serenity-js/console-reporter',
-                '@serenity-js/serenity-bdd',
+                [ '@serenity-js/serenity-bdd', { specDirectory: './spec' } ],
                 ['@serenity-js/core:ArtifactArchiver', { outputDirectory: 'target/site/serenity' }],
                 // '@serenity-js/core:StreamReporter',  // use for debugging
             ],
