@@ -45,7 +45,7 @@
     "@serenity-js/web": "^3.23.2"
   },
   "devDependencies": {
-    "@types/node": "^18.19.34",
+    "@types/node": "^18.19.36",
     "@typescript-eslint/eslint-plugin": "^7.13.1",
     "@typescript-eslint/parser": "^7.13.1",
     "eslint": "^8.57.0",
