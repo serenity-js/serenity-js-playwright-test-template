@@ -21,14 +21,14 @@ class TodoActors implements Cast {
 describe('Multi-actor scenarios', () => {
 
     test.use({
-        
+
         /*
-         * Override the default cast of actors, 
+         * Override the default cast of actors,
          * so that each actor receives their own,
          * independent browser window.
          */
         actors: async ({ browser }, use) => {
-            use(new TodoActors(browser));
+            await use(new TodoActors(browser));
         },
     });
 
@@ -46,7 +46,7 @@ describe('Multi-actor scenarios', () => {
                     'Walk the dog'
                 ),
             )
-            
+
             await actorCalled('Alice').attemptsTo(
                 Ensure.that(itemNames(), equals([
                     'Feed the cat'
