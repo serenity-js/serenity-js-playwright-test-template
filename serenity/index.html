@@ -115,7 +115,11 @@
                     search: ""
                 },
                 columnDefs: [
-                    {type: 'time-elapsed-dhms', targets: 5}
+                    {
+                        targets: 4,
+                        visible: false
+                    },
+                    {type: 'time-elapsed-dhms', targets: 6}
                 ]
             })
             $("#manual-scenario-results").DataTable({
@@ -124,6 +128,12 @@
                     searchPlaceholder: "Filter",
                     search: ""
                 },
+                columnDefs: [
+                    {
+                        targets: 4,
+                        visible: false
+                    },
+                ]
             })
 
             // Results table
@@ -142,7 +152,17 @@
             $(".feature-coverage-table").DataTable({
                 searching: true,
                 paging: false,
-                info: false
+                info: false,
+                language: {
+                    searchPlaceholder: "Filter",
+                    search: ""
+                },
+                columnDefs: [
+                    {
+                        targets: 2,
+                        visible: false
+                    },
+                ]
             });
 
             $(".feature-coverage-table-with-pagination").DataTable({
@@ -152,7 +172,13 @@
                 language: {
                     searchPlaceholder: "Filter",
                     search: ""
-                }
+                },
+                columnDefs: [
+                    {
+                        targets: 2,
+                        visible: false
+                    },
+                ]
             });
         });
     </script>
@@ -195,7 +221,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 27-08-2024 17:47:54</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 27-08-2024 20:00:01</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -292,7 +318,7 @@
                     <td>
                         <i class="bi bi-flag-fill"></i> Tests Started
                     </td>
-                    <td>Aug 27, 2024 17:47:15</td>
+                    <td>Aug 27, 2024 19:59:17</td>
                 </tr>
                 <tr scope="row">
                     <td>
@@ -312,28 +338,28 @@
                     <td>
                         <i class="bi bi-trophy"></i> Fastest Test
                     </td>
-                    <td>292ms</td>
+                    <td>256ms</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-skip-start"></i> Slowest
                         Test
                     </td>
-                    <td>2s</td>
+                    <td>5s</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stopwatch"></i> Average
                         Execution Time
                     </td>
-                    <td>883ms</td>
+                    <td>975ms</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stopwatch-fill"></i> Total
                         Execution Time
                     </td>
-                    <td>29s</td>
+                    <td>32s</td>
                 </tr>
                 </tbody>
             </table>
@@ -350,12 +376,12 @@
 
                                                                     <h4>Features</h4>
 
-                                                                    <table class="table feature-coverage-table"
-                                                                           id="Feature">
+                                                                    <table class="table feature-coverage-table" id="Feature" style="width:100%">
                                                                         <thead>
                                                                         <tr>
                                                                             <th>Feature</th>
                                                                             <th style="width:1em;">Scenarios</th>
+                                                                            <th style="width:1em;">StepsText</th>
                                                                             <th style="width:1em;">Test&nbsp;Cases</th>
                                                                             <th style="width:1em;">%&nbsp;Pass</th>
                                                                             <th style="width:1em;">Result</th>
@@ -368,6 +394,16 @@
                                                                                             <a href="73262d3560c27d55a12eafcd3bf482972e4d0cae7c21df127ffd99ba3c802097.html"> API Testing</a>
                                                                                     </td>
                                                                                     <td>3</td>
+                                                                                    <td>Alice sends a GET request to '/todos/1'
+Alice ensures that the status of the last response does equal 200
+Alice ensures that 1 does equal 1
+Alice sends a GET request to '/todos/1'
+Alice ensures that the status of the last response does equal 200
+Alice ensures that 1 does equal 1
+Alice sends a GET request to '/todos/1'
+Alice ensures that the status of the last response does equal 200
+Alice ensures that 1 does equal 1
+</td>
                                                                                     <td>3</td>
                                                                                     <td>100%</td>
                                                                                     <td>
@@ -391,6 +427,43 @@
                                                                                             <a href="beead259f64b0001474a05d800cec567c75cf22d25425c116a6bbd1f9389954d.html"> Blended Testing</a>
                                                                                     </td>
                                                                                     <td>3</td>
+                                                                                    <td>Apisitt ensures all GitHub systems are operational
+Apisitt sends a GET request to 'https://www.githubstatus.com/api/v2/status.json'
+Apisitt ensures that the status of the last response does equal 200
+Apisitt ensures that GitHub Status does equal "All Systems Operational"
+Wendy starts with an empty todo list
+Wendy navigates to "/"
+Wendy ensures that website title does equal "Serenity/JS TodoApp"
+Wendy records an item called 'Feed the cat'
+Wendy enters "Feed the cat" into "What needs to be done?" input box
+Wendy presses key Enter in "What needs to be done?" input box
+Wendy waits until displayed items does contain "Feed the cat"
+Wendy ensures that displayed items does equal [ "Feed the cat" ]
+Apisitt ensures all GitHub systems are operational
+Apisitt sends a GET request to 'https://www.githubstatus.com/api/v2/status.json'
+Apisitt ensures that the status of the last response does equal 200
+Apisitt ensures that GitHub Status does equal "All Systems Operational"
+Wendy starts with an empty todo list
+Wendy navigates to "/"
+Wendy ensures that website title does equal "Serenity/JS TodoApp"
+Wendy records an item called 'Feed the cat'
+Wendy enters "Feed the cat" into "What needs to be done?" input box
+Wendy presses key Enter in "What needs to be done?" input box
+Wendy waits until displayed items does contain "Feed the cat"
+Wendy ensures that displayed items does equal [ "Feed the cat" ]
+Apisitt ensures all GitHub systems are operational
+Apisitt sends a GET request to 'https://www.githubstatus.com/api/v2/status.json'
+Apisitt ensures that the status of the last response does equal 200
+Apisitt ensures that GitHub Status does equal "All Systems Operational"
+Wendy starts with an empty todo list
+Wendy navigates to "/"
+Wendy ensures that website title does equal "Serenity/JS TodoApp"
+Wendy records an item called 'Feed the cat'
+Wendy enters "Feed the cat" into "What needs to be done?" input box
+Wendy presses key Enter in "What needs to be done?" input box
+Wendy waits until displayed items does contain "Feed the cat"
+Wendy ensures that displayed items does equal [ "Feed the cat" ]
+</td>
                                                                                     <td>3</td>
                                                                                     <td>100%</td>
                                                                                     <td>
@@ -414,6 +487,61 @@
                                                                                             <a href="39ef06ac6957911e0e85d9a47aefac8c639c0143016ebb46e4fac04edf452ce2.html"> Multi-actor scenarios</a>
                                                                                     </td>
                                                                                     <td>3</td>
+                                                                                    <td>Alice starts with a list containing 1 items
+Alice starts with an empty todo list
+Alice navigates to "/"
+Alice ensures that website title does equal "Serenity/JS TodoApp"
+Alice records an item called 'Feed the cat'
+Alice enters "Feed the cat" into "What needs to be done?" input box
+Alice presses key Enter in "What needs to be done?" input box
+Alice waits until displayed items does contain "Feed the cat"
+Bob starts with a list containing 1 items
+Bob starts with an empty todo list
+Bob navigates to "/"
+Bob ensures that website title does equal "Serenity/JS TodoApp"
+Bob records an item called 'Walk the dog'
+Bob enters "Walk the dog" into "What needs to be done?" input box
+Bob presses key Enter in "What needs to be done?" input box
+Bob waits until displayed items does contain "Walk the dog"
+Alice ensures that displayed items does equal [ "Feed the cat" ]
+Bob ensures that displayed items does equal [ "Walk the dog" ]
+Alice starts with a list containing 1 items
+Alice starts with an empty todo list
+Alice navigates to "/"
+Alice ensures that website title does equal "Serenity/JS TodoApp"
+Alice records an item called 'Feed the cat'
+Alice enters "Feed the cat" into "What needs to be done?" input box
+Alice presses key Enter in "What needs to be done?" input box
+Alice waits until displayed items does contain "Feed the cat"
+Bob starts with a list containing 1 items
+Bob starts with an empty todo list
+Bob navigates to "/"
+Bob ensures that website title does equal "Serenity/JS TodoApp"
+Bob records an item called 'Walk the dog'
+Bob enters "Walk the dog" into "What needs to be done?" input box
+Bob presses key Enter in "What needs to be done?" input box
+Bob waits until displayed items does contain "Walk the dog"
+Alice ensures that displayed items does equal [ "Feed the cat" ]
+Bob ensures that displayed items does equal [ "Walk the dog" ]
+Alice starts with a list containing 1 items
+Alice starts with an empty todo list
+Alice navigates to "/"
+Alice ensures that website title does equal "Serenity/JS TodoApp"
+Alice records an item called 'Feed the cat'
+Alice enters "Feed the cat" into "What needs to be done?" input box
+Alice presses key Enter in "What needs to be done?" input box
+Alice waits until displayed items does contain "Feed the cat"
+Bob starts with a list containing 1 items
+Bob starts with an empty todo list
+Bob navigates to "/"
+Bob ensures that website title does equal "Serenity/JS TodoApp"
+Bob records an item called 'Walk the dog'
+Bob enters "Walk the dog" into "What needs to be done?" input box
+Bob presses key Enter in "What needs to be done?" input box
+Bob waits until displayed items does contain "Walk the dog"
+Alice ensures that displayed items does equal [ "Feed the cat" ]
+Bob ensures that displayed items does equal [ "Walk the dog" ]
+</td>
                                                                                     <td>3</td>
                                                                                     <td>100%</td>
                                                                                     <td>
@@ -437,6 +565,166 @@
                                                                                             <a href="0719e179199c05841092720c3c7543d36c4efb9baff0a00e08ee4e6bd8b68d7a.html"> Recording items</a>
                                                                                     </td>
                                                                                     <td>12</td>
+                                                                                    <td>Alice starts with an empty todo list
+Alice navigates to "/"
+Alice ensures that website title does equal "Serenity/JS TodoApp"
+Alice records an item called 'buy some cheese'
+Alice enters "buy some cheese" into "What needs to be done?" input box
+Alice presses key Enter in "What needs to be done?" input box
+Alice waits until displayed items does contain "buy some cheese"
+Alice ensures that displayed items does equal [ "buy some cheese" ]
+Alice records an item called 'feed the cat'
+Alice enters "feed the cat" into "What needs to be done?" input box
+Alice presses key Enter in "What needs to be done?" input box
+Alice waits until displayed items does contain "feed the cat"
+Alice ensures that displayed items does equal [ "buy some cheese", "feed the cat" ]
+Alice ensures that persisted items does equal displayed items
+Alice starts with an empty todo list
+Alice navigates to "/"
+Alice ensures that website title does equal "Serenity/JS TodoApp"
+Alice records an item called 'buy some cheese'
+Alice enters "buy some cheese" into "What needs to be done?" input box
+Alice presses key Enter in "What needs to be done?" input box
+Alice waits until displayed items does contain "buy some cheese"
+Alice ensures that the value of "What needs to be done?" input box does equal ""
+Alice ensures that "buy some cheese" does equal "buy some cheese"
+Alice ensures that false does equal false
+Alice starts with a list containing 3 items
+Alice starts with an empty todo list
+Alice navigates to "/"
+Alice ensures that website title does equal "Serenity/JS TodoApp"
+Alice records an item called 'buy some cheese'
+Alice enters "buy some cheese" into "What needs to be done?" input box
+Alice presses key Enter in "What needs to be done?" input box
+Alice waits until displayed items does contain "buy some cheese"
+Alice records an item called 'feed the cat'
+Alice enters "feed the cat" into "What needs to be done?" input box
+Alice presses key Enter in "What needs to be done?" input box
+Alice waits until displayed items does contain "feed the cat"
+Alice records an item called 'book a doctors appointment'
+Alice enters "book a doctors appointment" into "What needs to be done?" input box
+Alice presses key Enter in "What needs to be done?" input box
+Alice waits until displayed items does contain "book a doctors appointment"
+Alice ensures that number of items left does equal 3
+Alice ensures that 3 does equal 3
+Alice starts with an empty todo list
+Alice navigates to "/"
+Alice ensures that website title does equal "Serenity/JS TodoApp"
+Alice ensures that main section does not become present
+Alice ensures that footer section does not become present
+Alice records an item called 'buy some cheese'
+Alice enters "buy some cheese" into "What needs to be done?" input box
+Alice presses key Enter in "What needs to be done?" input box
+Alice waits until displayed items does contain "buy some cheese"
+Alice ensures that main section does become visible
+Alice ensures that footer section does become visible
+Alice starts with an empty todo list
+Alice navigates to "/"
+Alice ensures that website title does equal "Serenity/JS TodoApp"
+Alice records an item called 'buy some cheese'
+Alice enters "buy some cheese" into "What needs to be done?" input box
+Alice presses key Enter in "What needs to be done?" input box
+Alice waits until displayed items does contain "buy some cheese"
+Alice ensures that displayed items does equal [ "buy some cheese" ]
+Alice records an item called 'feed the cat'
+Alice enters "feed the cat" into "What needs to be done?" input box
+Alice presses key Enter in "What needs to be done?" input box
+Alice waits until displayed items does contain "feed the cat"
+Alice ensures that displayed items does equal [ "buy some cheese", "feed the cat" ]
+Alice ensures that persisted items does equal displayed items
+Alice starts with an empty todo list
+Alice navigates to "/"
+Alice ensures that website title does equal "Serenity/JS TodoApp"
+Alice records an item called 'buy some cheese'
+Alice enters "buy some cheese" into "What needs to be done?" input box
+Alice presses key Enter in "What needs to be done?" input box
+Alice waits until displayed items does contain "buy some cheese"
+Alice ensures that the value of "What needs to be done?" input box does equal ""
+Alice ensures that "buy some cheese" does equal "buy some cheese"
+Alice ensures that false does equal false
+Alice starts with a list containing 3 items
+Alice starts with an empty todo list
+Alice navigates to "/"
+Alice ensures that website title does equal "Serenity/JS TodoApp"
+Alice records an item called 'buy some cheese'
+Alice enters "buy some cheese" into "What needs to be done?" input box
+Alice presses key Enter in "What needs to be done?" input box
+Alice waits until displayed items does contain "buy some cheese"
+Alice records an item called 'feed the cat'
+Alice enters "feed the cat" into "What needs to be done?" input box
+Alice presses key Enter in "What needs to be done?" input box
+Alice waits until displayed items does contain "feed the cat"
+Alice records an item called 'book a doctors appointment'
+Alice enters "book a doctors appointment" into "What needs to be done?" input box
+Alice presses key Enter in "What needs to be done?" input box
+Alice waits until displayed items does contain "book a doctors appointment"
+Alice ensures that number of items left does equal 3
+Alice ensures that 3 does equal 3
+Alice starts with an empty todo list
+Alice navigates to "/"
+Alice ensures that website title does equal "Serenity/JS TodoApp"
+Alice ensures that main section does not become present
+Alice ensures that footer section does not become present
+Alice records an item called 'buy some cheese'
+Alice enters "buy some cheese" into "What needs to be done?" input box
+Alice presses key Enter in "What needs to be done?" input box
+Alice waits until displayed items does contain "buy some cheese"
+Alice ensures that main section does become visible
+Alice ensures that footer section does become visible
+Alice starts with an empty todo list
+Alice navigates to "/"
+Alice ensures that website title does equal "Serenity/JS TodoApp"
+Alice records an item called 'buy some cheese'
+Alice enters "buy some cheese" into "What needs to be done?" input box
+Alice presses key Enter in "What needs to be done?" input box
+Alice waits until displayed items does contain "buy some cheese"
+Alice ensures that displayed items does equal [ "buy some cheese" ]
+Alice records an item called 'feed the cat'
+Alice enters "feed the cat" into "What needs to be done?" input box
+Alice presses key Enter in "What needs to be done?" input box
+Alice waits until displayed items does contain "feed the cat"
+Alice ensures that displayed items does equal [ "buy some cheese", "feed the cat" ]
+Alice ensures that persisted items does equal displayed items
+Alice starts with an empty todo list
+Alice navigates to "/"
+Alice ensures that website title does equal "Serenity/JS TodoApp"
+Alice records an item called 'buy some cheese'
+Alice enters "buy some cheese" into "What needs to be done?" input box
+Alice presses key Enter in "What needs to be done?" input box
+Alice waits until displayed items does contain "buy some cheese"
+Alice ensures that the value of "What needs to be done?" input box does equal ""
+Alice ensures that "buy some cheese" does equal "buy some cheese"
+Alice ensures that false does equal false
+Alice starts with a list containing 3 items
+Alice starts with an empty todo list
+Alice navigates to "/"
+Alice ensures that website title does equal "Serenity/JS TodoApp"
+Alice records an item called 'buy some cheese'
+Alice enters "buy some cheese" into "What needs to be done?" input box
+Alice presses key Enter in "What needs to be done?" input box
+Alice waits until displayed items does contain "buy some cheese"
+Alice records an item called 'feed the cat'
+Alice enters "feed the cat" into "What needs to be done?" input box
+Alice presses key Enter in "What needs to be done?" input box
+Alice waits until displayed items does contain "feed the cat"
+Alice records an item called 'book a doctors appointment'
+Alice enters "book a doctors appointment" into "What needs to be done?" input box
+Alice presses key Enter in "What needs to be done?" input box
+Alice waits until displayed items does contain "book a doctors appointment"
+Alice ensures that number of items left does equal 3
+Alice ensures that 3 does equal 3
+Alice starts with an empty todo list
+Alice navigates to "/"
+Alice ensures that website title does equal "Serenity/JS TodoApp"
+Alice ensures that main section does not become present
+Alice ensures that footer section does not become present
+Alice records an item called 'buy some cheese'
+Alice enters "buy some cheese" into "What needs to be done?" input box
+Alice presses key Enter in "What needs to be done?" input box
+Alice waits until displayed items does contain "buy some cheese"
+Alice ensures that main section does become visible
+Alice ensures that footer section does become visible
+</td>
                                                                                     <td>12</td>
                                                                                     <td>100%</td>
                                                                                     <td>
@@ -460,6 +748,7 @@
                                                                                             <a href="e576d1bb70c25689131d58f2237575124ef2b6a882f63c82dfd80a82af6f39ad.html"> Vanilla Playwright Test</a>
                                                                                     </td>
                                                                                     <td>4</td>
+                                                                                    <td></td>
                                                                                     <td>12</td>
                                                                                     <td>100%</td>
                                                                                     <td>
@@ -597,7 +886,7 @@
                     <td>
                         <i class="bi bi-trophy"></i> Fastest Test
                     </td>
-                    <td>292ms</td>
+                    <td>256ms</td>
                 </tr>
                 <tr scope="row">
                     <td>
@@ -608,18 +897,18 @@
                         <i class="bi bi-skip-start"></i> Slowest
                         Test
                     </td>
-                    <td>2s</td>
+                    <td>5s</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-flag-fill"></i> Tests Started
                     </td>
-                    <td>Aug 27, 2024 17:47:15</td>
+                    <td>Aug 27, 2024 19:59:17</td>
                     <td>
                         <i class="bi bi-stopwatch"></i> Average
                         Execution Time
                     </td>
-                    <td>883ms</td>
+                    <td>975ms</td>
                 </tr>
                 <tr scope="row">
                     <td>
@@ -631,7 +920,7 @@
                         <i class="bi bi-stopwatch-fill"></i> Total
                         Execution Time
                     </td>
-                    <td>29s</td>
+                    <td>32s</td>
                 </tr>
                 </tbody>
             </table>
@@ -640,14 +929,14 @@
 
                                                         <h3><i class="bi bi-gear"></i> Automated Scenarios</h3>
 
-                                                            <table class="scenario-result-table table"
-                                                                   id="scenario-results">
+                                                            <table class="scenario-result-table table" id="scenario-results" style="width:100%">
                                                                 <thead>
                                                                 <tr>
                                                                     <th>feature</th>
                                                                     <th class="test-name-column">Scenario</th>
                                                                     <th>Context</th>
                                                                     <th>Steps</th>
+                                                                    <th>StepsText</th>
                                                                     <th>Started</th>
                                                                     <th>Total Duration</th>
                                                                     <th>Result</th>
@@ -664,8 +953,12 @@
                                                                         <td><span class='context-icon'><i class='bi bi-ubuntu' title='Linux'></i> <i class='bi bi-browser-chrome' title='Chrome'></i></span><span style="display:none">linux,Chrome</span>
                                                                         </td>
                                                                         <td>3</td>
-                                                                        <td data-order="1724780835">17:47:15</td>
-                                                                        <td>569ms</td>
+                                                                        <td>Alice sends a GET request to '/todos/1'
+Alice ensures that the status of the last response does equal 200
+Alice ensures that 1 does equal 1
+</td>
+                                                                        <td data-order="1724788757">19:59:17</td>
+                                                                        <td>1s 792ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -680,8 +973,12 @@
                                                                         <td><span class='context-icon'><i class='bi bi-ubuntu' title='Linux'></i> <i class='bi bi-browser-firefox' title='Firefox'></i></span><span style="display:none">linux,Firefox</span>
                                                                         </td>
                                                                         <td>3</td>
-                                                                        <td data-order="1724780843">17:47:23</td>
-                                                                        <td>1s 360ms</td>
+                                                                        <td>Alice sends a GET request to '/todos/1'
+Alice ensures that the status of the last response does equal 200
+Alice ensures that 1 does equal 1
+</td>
+                                                                        <td data-order="1724788765">19:59:25</td>
+                                                                        <td>1s 452ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -696,8 +993,12 @@
                                                                         <td><span class='context-icon'><i class='bi bi-ubuntu' title='Linux'></i> <i class='bi bi-browser-safari' title='Safari or WebKit'></i></span><span style="display:none">linux,Safari or WebKit</span>
                                                                         </td>
                                                                         <td>3</td>
-                                                                        <td data-order="1724780856">17:47:36</td>
-                                                                        <td>2s 075ms</td>
+                                                                        <td>Alice sends a GET request to '/todos/1'
+Alice ensures that the status of the last response does equal 200
+Alice ensures that 1 does equal 1
+</td>
+                                                                        <td data-order="1724788777">19:59:37</td>
+                                                                        <td>5s 917ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -712,8 +1013,13 @@
                                                                         <td><span class='context-icon'><i class='bi bi-ubuntu' title='Linux'></i> <i class='bi bi-browser-chrome' title='Chrome'></i></span><span style="display:none">linux,Chrome</span>
                                                                         </td>
                                                                         <td>4</td>
-                                                                        <td data-order="1724780836">17:47:16</td>
-                                                                        <td>962ms</td>
+                                                                        <td>Apisitt ensures all GitHub systems are operational
+Wendy starts with an empty todo list
+Wendy records an item called 'Feed the cat'
+Wendy ensures that displayed items does equal [ "Feed the cat" ]
+</td>
+                                                                        <td data-order="1724788758">19:59:18</td>
+                                                                        <td>1s 023ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -728,8 +1034,13 @@
                                                                         <td><span class='context-icon'><i class='bi bi-ubuntu' title='Linux'></i> <i class='bi bi-browser-firefox' title='Firefox'></i></span><span style="display:none">linux,Firefox</span>
                                                                         </td>
                                                                         <td>4</td>
-                                                                        <td data-order="1724780845">17:47:25</td>
-                                                                        <td>905ms</td>
+                                                                        <td>Apisitt ensures all GitHub systems are operational
+Wendy starts with an empty todo list
+Wendy records an item called 'Feed the cat'
+Wendy ensures that displayed items does equal [ "Feed the cat" ]
+</td>
+                                                                        <td data-order="1724788767">19:59:27</td>
+                                                                        <td>743ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -744,8 +1055,13 @@
                                                                         <td><span class='context-icon'><i class='bi bi-ubuntu' title='Linux'></i> <i class='bi bi-browser-safari' title='Safari or WebKit'></i></span><span style="display:none">linux,Safari or WebKit</span>
                                                                         </td>
                                                                         <td>4</td>
-                                                                        <td data-order="1724780858">17:47:38</td>
-                                                                        <td>2s 086ms</td>
+                                                                        <td>Apisitt ensures all GitHub systems are operational
+Wendy starts with an empty todo list
+Wendy records an item called 'Feed the cat'
+Wendy ensures that displayed items does equal [ "Feed the cat" ]
+</td>
+                                                                        <td data-order="1724788783">19:59:43</td>
+                                                                        <td>1s 647ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -760,8 +1076,13 @@
                                                                         <td><span class='context-icon'><i class='bi bi-ubuntu' title='Linux'></i> <i class='bi bi-browser-chrome' title='Chrome'></i></span><span style="display:none">linux,Chrome</span>
                                                                         </td>
                                                                         <td>4</td>
-                                                                        <td data-order="1724780837">17:47:17</td>
-                                                                        <td>955ms</td>
+                                                                        <td>Alice starts with a list containing 1 items
+Bob starts with a list containing 1 items
+Alice ensures that displayed items does equal [ "Feed the cat" ]
+Bob ensures that displayed items does equal [ "Walk the dog" ]
+</td>
+                                                                        <td data-order="1724788759">19:59:19</td>
+                                                                        <td>872ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -776,8 +1097,13 @@
                                                                         <td><span class='context-icon'><i class='bi bi-ubuntu' title='Linux'></i> <i class='bi bi-browser-firefox' title='Firefox'></i></span><span style="display:none">linux,Firefox</span>
                                                                         </td>
                                                                         <td>4</td>
-                                                                        <td data-order="1724780846">17:47:26</td>
-                                                                        <td>1s 213ms</td>
+                                                                        <td>Alice starts with a list containing 1 items
+Bob starts with a list containing 1 items
+Alice ensures that displayed items does equal [ "Feed the cat" ]
+Bob ensures that displayed items does equal [ "Walk the dog" ]
+</td>
+                                                                        <td data-order="1724788768">19:59:28</td>
+                                                                        <td>1s 093ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -792,8 +1118,13 @@
                                                                         <td><span class='context-icon'><i class='bi bi-ubuntu' title='Linux'></i> <i class='bi bi-browser-safari' title='Safari or WebKit'></i></span><span style="display:none">linux,Safari or WebKit</span>
                                                                         </td>
                                                                         <td>4</td>
-                                                                        <td data-order="1724780860">17:47:40</td>
-                                                                        <td>1s 521ms</td>
+                                                                        <td>Alice starts with a list containing 1 items
+Bob starts with a list containing 1 items
+Alice ensures that displayed items does equal [ "Feed the cat" ]
+Bob ensures that displayed items does equal [ "Walk the dog" ]
+</td>
+                                                                        <td data-order="1724788785">19:59:45</td>
+                                                                        <td>1s 447ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -808,8 +1139,15 @@
                                                                         <td><span class='context-icon'><i class='bi bi-ubuntu' title='Linux'></i> <i class='bi bi-browser-chrome' title='Chrome'></i></span><span style="display:none">linux,Chrome</span>
                                                                         </td>
                                                                         <td>6</td>
-                                                                        <td data-order="1724780838">17:47:18</td>
-                                                                        <td>575ms</td>
+                                                                        <td>Alice starts with an empty todo list
+Alice records an item called 'buy some cheese'
+Alice ensures that displayed items does equal [ "buy some cheese" ]
+Alice records an item called 'feed the cat'
+Alice ensures that displayed items does equal [ "buy some cheese", "feed the cat" ]
+Alice ensures that persisted items does equal displayed items
+</td>
+                                                                        <td data-order="1724788760">19:59:20</td>
+                                                                        <td>549ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -824,8 +1162,14 @@
                                                                         <td><span class='context-icon'><i class='bi bi-ubuntu' title='Linux'></i> <i class='bi bi-browser-chrome' title='Chrome'></i></span><span style="display:none">linux,Chrome</span>
                                                                         </td>
                                                                         <td>5</td>
-                                                                        <td data-order="1724780838">17:47:18</td>
-                                                                        <td>470ms</td>
+                                                                        <td>Alice starts with an empty todo list
+Alice records an item called 'buy some cheese'
+Alice ensures that the value of "What needs to be done?" input box does equal ""
+Alice ensures that "buy some cheese" does equal "buy some cheese"
+Alice ensures that false does equal false
+</td>
+                                                                        <td data-order="1724788761">19:59:21</td>
+                                                                        <td>447ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -840,8 +1184,12 @@
                                                                         <td><span class='context-icon'><i class='bi bi-ubuntu' title='Linux'></i> <i class='bi bi-browser-chrome' title='Chrome'></i></span><span style="display:none">linux,Chrome</span>
                                                                         </td>
                                                                         <td>3</td>
-                                                                        <td data-order="1724780839">17:47:19</td>
-                                                                        <td>658ms</td>
+                                                                        <td>Alice starts with a list containing 3 items
+Alice ensures that number of items left does equal 3
+Alice ensures that 3 does equal 3
+</td>
+                                                                        <td data-order="1724788761">19:59:21</td>
+                                                                        <td>596ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -856,7 +1204,14 @@
                                                                         <td><span class='context-icon'><i class='bi bi-ubuntu' title='Linux'></i> <i class='bi bi-browser-chrome' title='Chrome'></i></span><span style="display:none">linux,Chrome</span>
                                                                         </td>
                                                                         <td>6</td>
-                                                                        <td data-order="1724780840">17:47:20</td>
+                                                                        <td>Alice starts with an empty todo list
+Alice ensures that main section does not become present
+Alice ensures that footer section does not become present
+Alice records an item called 'buy some cheese'
+Alice ensures that main section does become visible
+Alice ensures that footer section does become visible
+</td>
+                                                                        <td data-order="1724788762">19:59:22</td>
                                                                         <td>959ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
@@ -872,8 +1227,15 @@
                                                                         <td><span class='context-icon'><i class='bi bi-ubuntu' title='Linux'></i> <i class='bi bi-browser-firefox' title='Firefox'></i></span><span style="display:none">linux,Firefox</span>
                                                                         </td>
                                                                         <td>6</td>
-                                                                        <td data-order="1724780847">17:47:27</td>
-                                                                        <td>765ms</td>
+                                                                        <td>Alice starts with an empty todo list
+Alice records an item called 'buy some cheese'
+Alice ensures that displayed items does equal [ "buy some cheese" ]
+Alice records an item called 'feed the cat'
+Alice ensures that displayed items does equal [ "buy some cheese", "feed the cat" ]
+Alice ensures that persisted items does equal displayed items
+</td>
+                                                                        <td data-order="1724788769">19:59:29</td>
+                                                                        <td>679ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -888,8 +1250,14 @@
                                                                         <td><span class='context-icon'><i class='bi bi-ubuntu' title='Linux'></i> <i class='bi bi-browser-firefox' title='Firefox'></i></span><span style="display:none">linux,Firefox</span>
                                                                         </td>
                                                                         <td>5</td>
-                                                                        <td data-order="1724780848">17:47:28</td>
-                                                                        <td>647ms</td>
+                                                                        <td>Alice starts with an empty todo list
+Alice records an item called 'buy some cheese'
+Alice ensures that the value of "What needs to be done?" input box does equal ""
+Alice ensures that "buy some cheese" does equal "buy some cheese"
+Alice ensures that false does equal false
+</td>
+                                                                        <td data-order="1724788769">19:59:29</td>
+                                                                        <td>548ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -904,8 +1272,12 @@
                                                                         <td><span class='context-icon'><i class='bi bi-ubuntu' title='Linux'></i> <i class='bi bi-browser-firefox' title='Firefox'></i></span><span style="display:none">linux,Firefox</span>
                                                                         </td>
                                                                         <td>3</td>
-                                                                        <td data-order="1724780848">17:47:28</td>
-                                                                        <td>886ms</td>
+                                                                        <td>Alice starts with a list containing 3 items
+Alice ensures that number of items left does equal 3
+Alice ensures that 3 does equal 3
+</td>
+                                                                        <td data-order="1724788770">19:59:30</td>
+                                                                        <td>762ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -920,8 +1292,15 @@
                                                                         <td><span class='context-icon'><i class='bi bi-ubuntu' title='Linux'></i> <i class='bi bi-browser-firefox' title='Firefox'></i></span><span style="display:none">linux,Firefox</span>
                                                                         </td>
                                                                         <td>6</td>
-                                                                        <td data-order="1724780849">17:47:29</td>
-                                                                        <td>1s 141ms</td>
+                                                                        <td>Alice starts with an empty todo list
+Alice ensures that main section does not become present
+Alice ensures that footer section does not become present
+Alice records an item called 'buy some cheese'
+Alice ensures that main section does become visible
+Alice ensures that footer section does become visible
+</td>
+                                                                        <td data-order="1724788771">19:59:31</td>
+                                                                        <td>1s 057ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -936,8 +1315,15 @@
                                                                         <td><span class='context-icon'><i class='bi bi-ubuntu' title='Linux'></i> <i class='bi bi-browser-safari' title='Safari or WebKit'></i></span><span style="display:none">linux,Safari or WebKit</span>
                                                                         </td>
                                                                         <td>6</td>
-                                                                        <td data-order="1724780862">17:47:42</td>
-                                                                        <td>893ms</td>
+                                                                        <td>Alice starts with an empty todo list
+Alice records an item called 'buy some cheese'
+Alice ensures that displayed items does equal [ "buy some cheese" ]
+Alice records an item called 'feed the cat'
+Alice ensures that displayed items does equal [ "buy some cheese", "feed the cat" ]
+Alice ensures that persisted items does equal displayed items
+</td>
+                                                                        <td data-order="1724788786">19:59:46</td>
+                                                                        <td>844ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -952,8 +1338,14 @@
                                                                         <td><span class='context-icon'><i class='bi bi-ubuntu' title='Linux'></i> <i class='bi bi-browser-safari' title='Safari or WebKit'></i></span><span style="display:none">linux,Safari or WebKit</span>
                                                                         </td>
                                                                         <td>5</td>
-                                                                        <td data-order="1724780863">17:47:43</td>
-                                                                        <td>768ms</td>
+                                                                        <td>Alice starts with an empty todo list
+Alice records an item called 'buy some cheese'
+Alice ensures that the value of "What needs to be done?" input box does equal ""
+Alice ensures that "buy some cheese" does equal "buy some cheese"
+Alice ensures that false does equal false
+</td>
+                                                                        <td data-order="1724788787">19:59:47</td>
+                                                                        <td>713ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -968,8 +1360,12 @@
                                                                         <td><span class='context-icon'><i class='bi bi-ubuntu' title='Linux'></i> <i class='bi bi-browser-safari' title='Safari or WebKit'></i></span><span style="display:none">linux,Safari or WebKit</span>
                                                                         </td>
                                                                         <td>3</td>
-                                                                        <td data-order="1724780863">17:47:43</td>
-                                                                        <td>999ms</td>
+                                                                        <td>Alice starts with a list containing 3 items
+Alice ensures that number of items left does equal 3
+Alice ensures that 3 does equal 3
+</td>
+                                                                        <td data-order="1724788788">19:59:48</td>
+                                                                        <td>898ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -984,8 +1380,15 @@
                                                                         <td><span class='context-icon'><i class='bi bi-ubuntu' title='Linux'></i> <i class='bi bi-browser-safari' title='Safari or WebKit'></i></span><span style="display:none">linux,Safari or WebKit</span>
                                                                         </td>
                                                                         <td>6</td>
-                                                                        <td data-order="1724780864">17:47:44</td>
-                                                                        <td>1s 274ms</td>
+                                                                        <td>Alice starts with an empty todo list
+Alice ensures that main section does not become present
+Alice ensures that footer section does not become present
+Alice records an item called 'buy some cheese'
+Alice ensures that main section does become visible
+Alice ensures that footer section does become visible
+</td>
+                                                                        <td data-order="1724788789">19:59:49</td>
+                                                                        <td>1s 221ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1000,8 +1403,9 @@
                                                                         <td><span style="display:none"></span>
                                                                         </td>
                                                                         <td>0</td>
-                                                                        <td data-order="1724780841">17:47:21</td>
-                                                                        <td>548ms</td>
+                                                                        <td></td>
+                                                                        <td data-order="1724788763">19:59:23</td>
+                                                                        <td>454ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1016,8 +1420,9 @@
                                                                         <td><span style="display:none"></span>
                                                                         </td>
                                                                         <td>0</td>
-                                                                        <td data-order="1724780842">17:47:22</td>
-                                                                        <td>294ms</td>
+                                                                        <td></td>
+                                                                        <td data-order="1724788764">19:59:24</td>
+                                                                        <td>256ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1032,8 +1437,9 @@
                                                                         <td><span style="display:none"></span>
                                                                         </td>
                                                                         <td>0</td>
-                                                                        <td data-order="1724780842">17:47:22</td>
-                                                                        <td>331ms</td>
+                                                                        <td></td>
+                                                                        <td data-order="1724788764">19:59:24</td>
+                                                                        <td>307ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1048,8 +1454,9 @@
                                                                         <td><span style="display:none"></span>
                                                                         </td>
                                                                         <td>0</td>
-                                                                        <td data-order="1724780842">17:47:22</td>
-                                                                        <td>292ms</td>
+                                                                        <td></td>
+                                                                        <td data-order="1724788764">19:59:24</td>
+                                                                        <td>299ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1064,8 +1471,9 @@
                                                                         <td><span style="display:none"></span>
                                                                         </td>
                                                                         <td>0</td>
-                                                                        <td data-order="1724780851">17:47:31</td>
-                                                                        <td>1s 639ms</td>
+                                                                        <td></td>
+                                                                        <td data-order="1724788773">19:59:33</td>
+                                                                        <td>1s 518ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1080,8 +1488,9 @@
                                                                         <td><span style="display:none"></span>
                                                                         </td>
                                                                         <td>0</td>
-                                                                        <td data-order="1724780853">17:47:33</td>
-                                                                        <td>481ms</td>
+                                                                        <td></td>
+                                                                        <td data-order="1724788774">19:59:34</td>
+                                                                        <td>849ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1096,8 +1505,9 @@
                                                                         <td><span style="display:none"></span>
                                                                         </td>
                                                                         <td>0</td>
-                                                                        <td data-order="1724780853">17:47:33</td>
-                                                                        <td>515ms</td>
+                                                                        <td></td>
+                                                                        <td data-order="1724788775">19:59:35</td>
+                                                                        <td>451ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1112,8 +1522,9 @@
                                                                         <td><span style="display:none"></span>
                                                                         </td>
                                                                         <td>0</td>
-                                                                        <td data-order="1724780854">17:47:34</td>
-                                                                        <td>719ms</td>
+                                                                        <td></td>
+                                                                        <td data-order="1724788776">19:59:36</td>
+                                                                        <td>409ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1128,8 +1539,9 @@
                                                                         <td><span style="display:none"></span>
                                                                         </td>
                                                                         <td>0</td>
-                                                                        <td data-order="1724780866">17:47:46</td>
-                                                                        <td>760ms</td>
+                                                                        <td></td>
+                                                                        <td data-order="1724788790">19:59:50</td>
+                                                                        <td>729ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1144,8 +1556,9 @@
                                                                         <td><span style="display:none"></span>
                                                                         </td>
                                                                         <td>0</td>
-                                                                        <td data-order="1724780867">17:47:47</td>
-                                                                        <td>608ms</td>
+                                                                        <td></td>
+                                                                        <td data-order="1724788791">19:59:51</td>
+                                                                        <td>532ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1160,8 +1573,9 @@
                                                                         <td><span style="display:none"></span>
                                                                         </td>
                                                                         <td>0</td>
-                                                                        <td data-order="1724780868">17:47:48</td>
-                                                                        <td>674ms</td>
+                                                                        <td></td>
+                                                                        <td data-order="1724788792">19:59:52</td>
+                                                                        <td>603ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1176,8 +1590,9 @@
                                                                         <td><span style="display:none"></span>
                                                                         </td>
                                                                         <td>0</td>
-                                                                        <td data-order="1724780868">17:47:48</td>
-                                                                        <td>602ms</td>
+                                                                        <td></td>
+                                                                        <td data-order="1724788792">19:59:52</td>
+                                                                        <td>534ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1298,7 +1713,7 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-sm-12">
-            <span class="version">Serenity BDD version 4.1.6</span>
+            <span class="version">Serenity BDD version 4.1.20</span>
         </div>
     </div>
 </div>
@@ -1505,7 +1920,7 @@
             datasets: [{
                 label: 'Number of tests per duration',
                 fill: false,
-                data: ['25','8','0','0','0','0','0','0'],
+                data: ['23','10','0','0','0','0','0','0'],
                 backgroundColor: 'rgba(83, 146, 255,0.5)',
                 borderColor: 'rgba(83, 146, 255, 1)',
             }]
