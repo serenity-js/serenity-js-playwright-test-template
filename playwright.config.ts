@@ -1,5 +1,5 @@
-import { devices } from '@playwright/test';
-import type { PlaywrightTestConfig } from '@serenity-js/playwright-test';
+import { defineConfig, devices } from '@playwright/test';
+import type { SerenityOptions } from '@serenity-js/playwright-test';
 
 /**
  * Read environment variables from file.
@@ -10,7 +10,7 @@ import type { PlaywrightTestConfig } from '@serenity-js/playwright-test';
 /**
  * See https://playwright.dev/docs/test-configuration.
  */
-const config: PlaywrightTestConfig = {
+export default defineConfig<SerenityOptions>({
     testDir: './spec',
     /* Maximum time one test can run for. */
     timeout: 30_000,
@@ -36,7 +36,12 @@ const config: PlaywrightTestConfig = {
         ['@serenity-js/playwright-test', {
             crew: [
                 '@serenity-js/console-reporter',
-                [ '@serenity-js/serenity-bdd', { specDirectory: './spec' } ],
+                [ '@serenity-js/serenity-bdd', {
+                    specDirectory: './spec',
+                    reporter: {
+                        includeAbilityDetails: true,
+                    },
+                } ],
                 ['@serenity-js/core:ArtifactArchiver', { outputDirectory: 'target/site/serenity' }],
                 // '@serenity-js/core:StreamReporter',  // use for debugging
             ],
@@ -126,6 +131,4 @@ const config: PlaywrightTestConfig = {
     //   command: 'npm run start',
     //   port: 3000,
     // },
-};
-
-export default config;
+});
