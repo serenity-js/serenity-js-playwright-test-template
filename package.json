@@ -34,15 +34,15 @@
     "node": "^16.13 || ^18.12 || ^20"
   },
   "dependencies": {
-    "@playwright/test": "1.46.1",
-    "@serenity-js/assertions": "^3.26.1",
-    "@serenity-js/console-reporter": "^3.26.1",
-    "@serenity-js/core": "^3.26.1",
-    "@serenity-js/playwright": "^3.26.1",
-    "@serenity-js/playwright-test": "^3.26.1",
-    "@serenity-js/rest": "^3.26.1",
-    "@serenity-js/serenity-bdd": "^3.26.1",
-    "@serenity-js/web": "^3.26.1"
+    "@playwright/test": "1.47.0",
+    "@serenity-js/assertions": "^3.27.0",
+    "@serenity-js/console-reporter": "^3.27.0",
+    "@serenity-js/core": "^3.27.0",
+    "@serenity-js/playwright": "^3.27.0",
+    "@serenity-js/playwright-test": "^3.27.0",
+    "@serenity-js/rest": "^3.27.0",
+    "@serenity-js/serenity-bdd": "^3.27.0",
+    "@serenity-js/web": "^3.27.0"
   },
   "devDependencies": {
     "@types/node": "^20.16.5",
