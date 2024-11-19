@@ -30,27 +30,27 @@
   },
   "homepage": "https://serenity-js.org",
   "engines": {
-    "node": "^16.13 || ^18.12 || ^20"
+    "node": "^16.13 || ^18.12 || ^20 || ^22.0.0"
   },
   "dependencies": {
-    "@playwright/test": "1.48.2",
-    "@serenity-js/assertions": "^3.29.5",
-    "@serenity-js/console-reporter": "^3.29.5",
-    "@serenity-js/core": "^3.29.5",
-    "@serenity-js/playwright": "^3.29.5",
-    "@serenity-js/playwright-test": "^3.29.5",
-    "@serenity-js/rest": "^3.29.5",
-    "@serenity-js/serenity-bdd": "^3.29.5",
-    "@serenity-js/web": "^3.29.5"
+    "@playwright/test": "1.49.0",
+    "@serenity-js/assertions": "^3.30.0",
+    "@serenity-js/console-reporter": "^3.30.0",
+    "@serenity-js/core": "^3.30.0",
+    "@serenity-js/playwright": "^3.30.0",
+    "@serenity-js/playwright-test": "^3.30.0",
+    "@serenity-js/rest": "^3.30.0",
+    "@serenity-js/serenity-bdd": "^3.30.0",
+    "@serenity-js/web": "^3.30.0"
   },
   "devDependencies": {
-    "@types/node": "^20.17.6",
-    "@typescript-eslint/eslint-plugin": "^8.13.0",
-    "@typescript-eslint/parser": "^8.13.0",
-    "eslint": "^9.14.0",
+    "@types/node": "^22.9.1",
+    "@typescript-eslint/eslint-plugin": "^8.15.0",
+    "@typescript-eslint/parser": "^8.15.0",
+    "eslint": "^9.15.0",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-simple-import-sort": "^12.1.1",
-    "eslint-plugin-unicorn": "^56.0.0",
+    "eslint-plugin-unicorn": "^56.0.1",
     "eslint-plugin-unused-imports": "^4.1.4",
     "http-server": "^14.1.1",
     "mkdirp": "^3.0.1",
