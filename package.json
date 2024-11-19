@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "postinstall": "serenity-bdd update",
     "clean": "rimraf playwright-report target",
     "test": "failsafe clean test:execute test:report",
     "test:execute": "playwright test",
