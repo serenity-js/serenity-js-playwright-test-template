@@ -1,0 +1,1384 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Serenity Reports</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="bootstrap-icons/bootstrap-icons.css">
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.13.1/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.13.1/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.13.1/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/>
+<!--CHART.JS-->
+<script src="chartjs/chart.js"></script>
+<script src="chartjs/chartjs-plugin-datalabels@2.0.0.min.js"></script>
+<script src="chartjs/patternomaly.min.js"></script>
+<script>
+    // Register the plugin to all charts:
+    Chart.register(ChartDataLabels);
+</script>
+<!-- JQuery-UI -->
+<link type="text/css" href="jqueryui/1.11.2-start/jquery-ui.min.css" rel="Stylesheet" />
+<script type="text/javascript" src="jqueryui/1.11.2-start/jquery-ui.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.13.1/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.13.1/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.13.1/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+
+
+
+
+    <script class="code" type="text/javascript">$(document).ready(function () {
+
+            $("#scenario-results").DataTable({
+                "order": [[0, "asc",], [1, "asc",], [2, "asc",]],
+                "language": {
+                    searchPlaceholder: "Filter",
+                    search: ""
+                },
+                columnDefs: [
+                    {
+                        targets: 4,
+                        visible: false
+                    },
+                    {type: 'time-elapsed-dhms', targets: 6}
+                ]
+            })
+            $("#manual-scenario-results").DataTable({
+                "order": [[0, "asc",], [1, "asc",]],
+                "language": {
+                    searchPlaceholder: "Filter",
+                    search: ""
+                },
+                columnDefs: [
+                    {
+                        targets: 4,
+                        visible: false
+                    },
+                ]
+            })
+
+            // Results table
+            $('#test-results-table').DataTable({
+                "order": [[0, "asc",], [3, "asc",]],
+                "pageLength": 10,
+                "lengthMenu": [[10, 25, 50, 100, 200, -1], [10, 25, 50, 100, 200, "All"]]
+            });
+
+            $('#evidence-table').DataTable({
+                searching: false,
+                paging: false,
+                info: false
+            });
+
+            $(".feature-coverage-table").DataTable({
+                searching: true,
+                paging: false,
+                info: false,
+                language: {
+                    searchPlaceholder: "Filter",
+                    search: ""
+                },
+                columnDefs: [
+                    {
+                        targets: 2,
+                        visible: false
+                    },
+                ]
+            });
+
+            $(".feature-coverage-table-with-pagination").DataTable({
+                searching: true,
+                order: [[0, "asc",]],
+                pageLength: 10,
+                language: {
+                    searchPlaceholder: "Filter",
+                    search: ""
+                },
+                columnDefs: [
+                    {
+                        targets: 2,
+                        visible: false
+                    },
+                ]
+            });
+        });
+    </script>
+</head>
+
+<body class="results-page">
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Serenity/JS with Playwright Test</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+
+
+    <div id="contenttop">
+        <div class="middlebg">
+        <span class="breadcrumbs"><a href="index.html">Home</a>
+                    > Browser 
+                > <span class="truncate-60">
+                Webkit 18.2
+            </span>
+        </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="bi bi-journal-check"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 19-11-2024 19:09:02</span>
+    <br style="clear:left"/>
+</div>
+    <div class="clr"></div>
+    <div id="beforetable"></div>
+    <div id="results-dashboard">
+        <div class="middlb">
+            <div class="table">
+
+                <h2><i class='bi bi-tags'></i> Browser: Webkit 18.2</h2>
+                <table class='overview'>
+                    <tr>
+                        <td width="375px" valign="top">
+                            <div class="test-count-summary">
+                                <div class="test-count-title">
+                                    7 tests
+
+                                     |
+                                        <a href="bc6a2d1431adfa77ef09330b433ba64d0269ab57f9b7bc82dd1531fad2ed6f87.csv" title="Download CSV"> <i class="bi bi-cloud-arrow-down"
+                                                                                        title="Download CSV"></i></a>
+
+
+                                </div>
+                            </div>
+
+                            <div>
+                                <ul class="nav nav-tabs">
+                                    <li class="active">
+                                        <a data-toggle="tab" href="#summary"><i class="bi bi-house-door"></i>
+                                            Summary</a>
+                                    </li>
+                                    <li>
+                                        <a data-toggle="tab" href="#tests"><i class="bi bi-speedometer"></i> Test
+                                            Results</a>
+                                    </li>
+                                </ul>
+
+
+                                <div class="card border">
+                                    <div class="tab-content" id="pills-tabContent">
+                                        <div id="summary" class="tab-pane fade in active">
+                                            <div class="container-fluid">
+                                                <div class="dashboard-charts row">
+                                                    <div class="col-lg-4 col-md-6 col-sm-9">
+                                                        <!-- PIE CHART -->
+                                                        <h4><i class="bi bi-pie-chart"></i> Overview</h4>
+                                                            <div class="chart-container">
+                                                                <canvas id="resultChart" height="200px"></canvas>
+                                                            </div>
+                                                    </div>
+                                                    <div class="col-lg-4 col-md-6 col-sm-9">
+                                                        <h4><i class="bi bi-check-square"></i> Test Outcomes</h4>
+                                                        <!-- Severity bar chart -->
+                                                        <div class="chart-container">
+                                                            <canvas id="severityChart" height="200px"></canvas>
+                                                        </div>
+                                                    </div>
+                                                        <div class="col-lg-4 col-md-6 col-sm-9">
+                                                            <h4><i class="bi bi-graph-up"></i> Test Performance</h4>
+
+                                                            <!-- Duration bar chart -->
+                                                            <div class="chart-container">
+                                                                <canvas id="durationChart" height="200px"></canvas>
+                                                            </div>
+                                                        </div>
+                                                </div>
+                                            </div>
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                        <div class="col-lg-8 col-md-8 col-sm-9">
+                                                            <!-- High level coverage bar chart -->
+                                                            <div class="chart-container">
+                                                                <h3><i class="bi bi-reception-3"></i> Functional
+                                                                    Coverage Overview</h3>
+                                                                <h4>Features</h4>
+                                                                <canvas id="coverageChart"></canvas>
+                                                            </div>
+                                                        </div>
+                                                    <div class="col-lg-4 col-md-4 col-sm-6">
+    <div>
+        <h3><i class="bi bi-speedometer2"></i> Key Statistics</h3>
+        <div>
+            <table class="table table-striped table-hover">
+                <tbody>
+                <tr scope="row">
+                    <td>
+                        <i class="bi bi-card-checklist"></i> Number of Scenarios
+                    </td>
+                    <td>7</td>
+                </tr>
+                <tr scope="row">
+                    <td>
+                        <i class="bi bi-caret-right"></i> Total Number of Test Cases
+                    </td>
+                    <td>7</td>
+                </tr>
+                <tr scope="row">
+                    <td>
+                        <i class="bi bi-flag-fill"></i> Tests Started
+                    </td>
+                    <td>Nov 19, 2024 19:08:48</td>
+                </tr>
+                <tr scope="row">
+                    <td>
+                        <i class="bi bi-stop-circle"></i> Tests
+                        Finished
+                    </td>
+                    <td></td>
+                </tr>
+                <tr scope="row">
+                    <td>
+                        <i class="bi bi-stopwatch"></i> Total
+                        Duration
+                    </td>
+                    <td>0ms</td>
+                </tr>
+                <tr scope="row">
+                    <td>
+                        <i class="bi bi-trophy"></i> Fastest Test
+                    </td>
+                    <td>763ms</td>
+                </tr>
+                <tr scope="row">
+                    <td>
+                        <i class="bi bi-skip-start"></i> Slowest
+                        Test
+                    </td>
+                    <td>1s</td>
+                </tr>
+                <tr scope="row">
+                    <td>
+                        <i class="bi bi-stopwatch"></i> Average
+                        Execution Time
+                    </td>
+                    <td>1s</td>
+                </tr>
+                <tr scope="row">
+                    <td>
+                        <i class="bi bi-stopwatch-fill"></i> Total
+                        Execution Time
+                    </td>
+                    <td>7s</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="container-fluid">
+                                                    <div class="row">
+                                                        <div class="col-sm-11">
+                                                            <h3>Functional Coverage Details</h3>
+
+
+                                                                    <h4>Features</h4>
+
+                                                                    <table class="table feature-coverage-table" id="Feature" style="width:100%">
+                                                                        <thead>
+                                                                        <tr>
+                                                                            <th>Feature</th>
+                                                                            <th style="width:1em;">Scenarios</th>
+                                                                            <th style="width:1em;">StepsText</th>
+                                                                            <th style="width:1em;">Test&nbsp;Cases</th>
+                                                                            <th style="width:1em;">%&nbsp;Pass</th>
+                                                                            <th style="width:1em;">Result</th>
+                                                                            <th>Coverage</th>
+                                                                        </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                                <tr>
+                                                                                    <td>
+                                                                                            <a href="73262d3560c27d55a12eafcd3bf482972e4d0cae7c21df127ffd99ba3c802097.html"> API Testing</a>
+                                                                                    </td>
+                                                                                    <td>1</td>
+                                                                                    <td>Alice sends a GET request to '/todos/1'
+Alice ensures that the status of the last response does equal 200
+Alice ensures that 1 does equal 1
+</td>
+                                                                                    <td>1</td>
+                                                                                    <td>100%</td>
+                                                                                    <td>
+                                                                                            <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <div class="progress">
+                                                                                                <div class="progress-bar"
+                                                                                                     role="progressbar"
+                                                                                                     style="width: 100%; background-color: #b0cf73"
+                                                                                                     aria-valuenow="1"
+                                                                                                     title="100% success"
+                                                                                                     aria-valuemin="0"
+                                                                                                     aria-valuemax="100">
+                                                                                                </div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>
+                                                                                            <a href="beead259f64b0001474a05d800cec567c75cf22d25425c116a6bbd1f9389954d.html"> Blended Testing</a>
+                                                                                    </td>
+                                                                                    <td>1</td>
+                                                                                    <td>Apisitt ensures all GitHub systems are operational
+Apisitt sends a GET request to 'https://www.githubstatus.com/api/v2/status.json'
+Apisitt ensures that the status of the last response does equal 200
+Apisitt ensures that GitHub Status does equal "All Systems Operational"
+Wendy starts with an empty todo list
+Wendy navigates to "/"
+Wendy ensures that website title does equal "Serenity/JS TodoApp"
+Wendy records an item called 'Feed the cat'
+Wendy enters "Feed the cat" into "What needs to be done?" input box
+Wendy presses key Enter in "What needs to be done?" input box
+Wendy waits until displayed items does contain "Feed the cat"
+Wendy ensures that displayed items does equal [ "Feed the cat" ]
+</td>
+                                                                                    <td>1</td>
+                                                                                    <td>100%</td>
+                                                                                    <td>
+                                                                                            <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <div class="progress">
+                                                                                                <div class="progress-bar"
+                                                                                                     role="progressbar"
+                                                                                                     style="width: 100%; background-color: #b0cf73"
+                                                                                                     aria-valuenow="1"
+                                                                                                     title="100% success"
+                                                                                                     aria-valuemin="0"
+                                                                                                     aria-valuemax="100">
+                                                                                                </div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>
+                                                                                            <a href="39ef06ac6957911e0e85d9a47aefac8c639c0143016ebb46e4fac04edf452ce2.html"> Multi-actor scenarios</a>
+                                                                                    </td>
+                                                                                    <td>1</td>
+                                                                                    <td>Alice starts with a list containing 1 items
+Alice starts with an empty todo list
+Alice navigates to "/"
+Alice ensures that website title does equal "Serenity/JS TodoApp"
+Alice records an item called 'Feed the cat'
+Alice enters "Feed the cat" into "What needs to be done?" input box
+Alice presses key Enter in "What needs to be done?" input box
+Alice waits until displayed items does contain "Feed the cat"
+Bob starts with a list containing 1 items
+Bob starts with an empty todo list
+Bob navigates to "/"
+Bob ensures that website title does equal "Serenity/JS TodoApp"
+Bob records an item called 'Walk the dog'
+Bob enters "Walk the dog" into "What needs to be done?" input box
+Bob presses key Enter in "What needs to be done?" input box
+Bob waits until displayed items does contain "Walk the dog"
+Alice ensures that displayed items does equal [ "Feed the cat" ]
+Bob ensures that displayed items does equal [ "Walk the dog" ]
+</td>
+                                                                                    <td>1</td>
+                                                                                    <td>100%</td>
+                                                                                    <td>
+                                                                                            <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <div class="progress">
+                                                                                                <div class="progress-bar"
+                                                                                                     role="progressbar"
+                                                                                                     style="width: 100%; background-color: #b0cf73"
+                                                                                                     aria-valuenow="1"
+                                                                                                     title="100% success"
+                                                                                                     aria-valuemin="0"
+                                                                                                     aria-valuemax="100">
+                                                                                                </div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>
+                                                                                            <a href="0719e179199c05841092720c3c7543d36c4efb9baff0a00e08ee4e6bd8b68d7a.html"> Recording items</a>
+                                                                                    </td>
+                                                                                    <td>4</td>
+                                                                                    <td>Alice starts with an empty todo list
+Alice navigates to "/"
+Alice ensures that website title does equal "Serenity/JS TodoApp"
+Alice records an item called 'buy some cheese'
+Alice enters "buy some cheese" into "What needs to be done?" input box
+Alice presses key Enter in "What needs to be done?" input box
+Alice waits until displayed items does contain "buy some cheese"
+Alice ensures that displayed items does equal [ "buy some cheese" ]
+Alice records an item called 'feed the cat'
+Alice enters "feed the cat" into "What needs to be done?" input box
+Alice presses key Enter in "What needs to be done?" input box
+Alice waits until displayed items does contain "feed the cat"
+Alice ensures that displayed items does equal [ "buy some cheese", "feed the cat" ]
+Alice ensures that persisted items does equal displayed items
+Alice starts with an empty todo list
+Alice navigates to "/"
+Alice ensures that website title does equal "Serenity/JS TodoApp"
+Alice records an item called 'buy some cheese'
+Alice enters "buy some cheese" into "What needs to be done?" input box
+Alice presses key Enter in "What needs to be done?" input box
+Alice waits until displayed items does contain "buy some cheese"
+Alice ensures that the value of "What needs to be done?" input box does equal ""
+Alice ensures that "buy some cheese" does equal "buy some cheese"
+Alice ensures that false does equal false
+Alice starts with a list containing 3 items
+Alice starts with an empty todo list
+Alice navigates to "/"
+Alice ensures that website title does equal "Serenity/JS TodoApp"
+Alice records an item called 'buy some cheese'
+Alice enters "buy some cheese" into "What needs to be done?" input box
+Alice presses key Enter in "What needs to be done?" input box
+Alice waits until displayed items does contain "buy some cheese"
+Alice records an item called 'feed the cat'
+Alice enters "feed the cat" into "What needs to be done?" input box
+Alice presses key Enter in "What needs to be done?" input box
+Alice waits until displayed items does contain "feed the cat"
+Alice records an item called 'book a doctors appointment'
+Alice enters "book a doctors appointment" into "What needs to be done?" input box
+Alice presses key Enter in "What needs to be done?" input box
+Alice waits until displayed items does contain "book a doctors appointment"
+Alice ensures that number of items left does equal 3
+Alice ensures that 3 does equal 3
+Alice starts with an empty todo list
+Alice navigates to "/"
+Alice ensures that website title does equal "Serenity/JS TodoApp"
+Alice ensures that main section does not become present
+Alice ensures that footer section does not become present
+Alice records an item called 'buy some cheese'
+Alice enters "buy some cheese" into "What needs to be done?" input box
+Alice presses key Enter in "What needs to be done?" input box
+Alice waits until displayed items does contain "buy some cheese"
+Alice ensures that main section does become visible
+Alice ensures that footer section does become visible
+</td>
+                                                                                    <td>4</td>
+                                                                                    <td>100%</td>
+                                                                                    <td>
+                                                                                            <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <div class="progress">
+                                                                                                <div class="progress-bar"
+                                                                                                     role="progressbar"
+                                                                                                     style="width: 100%; background-color: #b0cf73"
+                                                                                                     aria-valuenow="4"
+                                                                                                     title="100% success"
+                                                                                                     aria-valuemin="0"
+                                                                                                     aria-valuemax="100">
+                                                                                                </div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                        </div>
+                                                    </div>
+
+                                            </div>
+                                            <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <h3>Tags</h3>
+                    <div class="card">
+                        <div class="card-body">
+                            <div>
+                                    <a href="8afd86945a1a25b13fc1ac5043b29b159f5150952aa7fc6951378729e9e4cd4f.html">
+                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Retried&nbsp;&nbsp;&nbsp;7
+                                    </span>
+                                    </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                                <h5 class="card-title">Browser</h5>
+                            <div>
+                                    <a href="bc6a2d1431adfa77ef09330b433ba64d0269ab57f9b7bc82dd1531fad2ed6f87.html">
+                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Webkit 18.2&nbsp;&nbsp;&nbsp;7
+                                    </span>
+                                    </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                                <h5 class="card-title">Feature</h5>
+                            <div>
+                                    <a href="73262d3560c27d55a12eafcd3bf482972e4d0cae7c21df127ffd99ba3c802097.html">
+                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> API Testing&nbsp;&nbsp;&nbsp;1
+                                    </span>
+                                    </a>
+                                    <a href="0719e179199c05841092720c3c7543d36c4efb9baff0a00e08ee4e6bd8b68d7a.html">
+                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Recording Items&nbsp;&nbsp;&nbsp;4
+                                    </span>
+                                    </a>
+                                    <a href="beead259f64b0001474a05d800cec567c75cf22d25425c116a6bbd1f9389954d.html">
+                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Blended Testing&nbsp;&nbsp;&nbsp;1
+                                    </span>
+                                    </a>
+                                    <a href="39ef06ac6957911e0e85d9a47aefac8c639c0143016ebb46e4fac04edf452ce2.html">
+                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Multi-Actor Scenarios&nbsp;&nbsp;&nbsp;1
+                                    </span>
+                                    </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                                <h5 class="card-title">Platform</h5>
+                            <div>
+                                    <a href="7c48bc958f123831179a2b2bc5c4b6f7fe564a7583e09bb0f64ec936a10ed37b.html">
+                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Linux 6.5.0-1025-Azure&nbsp;&nbsp;&nbsp;7
+                                    </span>
+                                    </a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+                                            </div>
+                                        </div>
+                                        <div id="tests" class="tab-pane fade">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+    <div>
+        <h3><i class="bi bi-speedometer2"></i> Key Statistics</h3>
+        <div>
+            <table class="table table-striped table-hover">
+                <tbody>
+                <tr scope="row">
+                    <td>
+                        <i class="bi bi-card-checklist"></i> Number of Scenarios
+                    </td>
+                    <td>7</td>
+                    <td>
+                        <i class="bi bi-stopwatch"></i> Total
+                        Duration
+                    </td>
+                    <td>0ms</td>
+                </tr>
+                <tr scope="row">
+                    <td>
+                        <i class="bi bi-caret-right"></i> Total Number of Test Cases
+                    </td>
+                    <td>7</td>
+                    <td>
+                        <i class="bi bi-trophy"></i> Fastest Test
+                    </td>
+                    <td>763ms</td>
+                </tr>
+                <tr scope="row">
+                    <td>
+                        <i class="bi bi-person"></i> Number of Manual Test Cases
+                    </td>
+                    <td>0</td>
+                    <td>
+                        <i class="bi bi-skip-start"></i> Slowest
+                        Test
+                    </td>
+                    <td>1s</td>
+                </tr>
+                <tr scope="row">
+                    <td>
+                        <i class="bi bi-flag-fill"></i> Tests Started
+                    </td>
+                    <td>Nov 19, 2024 19:08:48</td>
+                    <td>
+                        <i class="bi bi-stopwatch"></i> Average
+                        Execution Time
+                    </td>
+                    <td>1s</td>
+                </tr>
+                <tr scope="row">
+                    <td>
+                        <i class="bi bi-stop-circle"></i> Tests
+                        Finished
+                    </td>
+                    <td></td>
+                    <td>
+                        <i class="bi bi-stopwatch-fill"></i> Total
+                        Execution Time
+                    </td>
+                    <td>7s</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+                                                        <h3><i class="bi bi-gear"></i> Automated Scenarios</h3>
+
+                                                            <table class="scenario-result-table table" id="scenario-results" style="width:100%">
+                                                                <thead>
+                                                                <tr>
+                                                                    <th>feature</th>
+                                                                    <th class="test-name-column">Scenario</th>
+                                                                    <th>Context</th>
+                                                                    <th>Steps</th>
+                                                                    <th>StepsText</th>
+                                                                    <th>Started</th>
+                                                                    <th>Total Duration</th>
+                                                                    <th>Result</th>
+                                                                </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="#">API Testing</a>
+                                                                        </td>
+                                                                        <td data-order="JSON Placeholder /todos should retrieve a todo item by id">
+                                                                                    <a href="490da993baf134aef1e34ca816719958c89d69a5c32fd404ecae727e6b926421.html">JSON Placeholder /todos should retrieve a todo item by id</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-ubuntu' title='Linux'></i> <i class='bi bi-browser-safari' title='Safari or WebKit'></i></span><span style="display:none">linux,Safari or WebKit</span>
+                                                                        </td>
+                                                                        <td>3</td>
+                                                                        <td>Alice sends a GET request to '/todos/1'
+Alice ensures that the status of the last response does equal 200
+Alice ensures that 1 does equal 1
+</td>
+                                                                        <td data-order="1732043328">19:08:48</td>
+                                                                        <td>1s 102ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="#">Blended Testing</a>
+                                                                        </td>
+                                                                        <td data-order="GitHub Pages should check the state of the system before interacting with the UI">
+                                                                                    <a href="7abfe8e343ca9d4391fb6d24f28358d69a91f27ae0a96ac9ba0742380db398b9.html">GitHub Pages should check the state of the system before interacting with the UI</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-ubuntu' title='Linux'></i> <i class='bi bi-browser-safari' title='Safari or WebKit'></i></span><span style="display:none">linux,Safari or WebKit</span>
+                                                                        </td>
+                                                                        <td>4</td>
+                                                                        <td>Apisitt ensures all GitHub systems are operational
+Wendy starts with an empty todo list
+Wendy records an item called 'Feed the cat'
+Wendy ensures that displayed items does equal [ "Feed the cat" ]
+</td>
+                                                                        <td data-order="1732043329">19:08:49</td>
+                                                                        <td>1s 112ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="#">Multi-actor scenarios</a>
+                                                                        </td>
+                                                                        <td data-order="Todo List App supports multiple actors using separate browsers">
+                                                                                    <a href="943621914fa9eee924acd4ba0128124f784f9f51df768b1528b62a32b70fd13c.html">Todo List App supports multiple actors using separate browsers</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-ubuntu' title='Linux'></i> <i class='bi bi-browser-safari' title='Safari or WebKit'></i></span><span style="display:none">linux,Safari or WebKit</span>
+                                                                        </td>
+                                                                        <td>4</td>
+                                                                        <td>Alice starts with a list containing 1 items
+Bob starts with a list containing 1 items
+Alice ensures that displayed items does equal [ "Feed the cat" ]
+Bob ensures that displayed items does equal [ "Walk the dog" ]
+</td>
+                                                                        <td data-order="1732043330">19:08:50</td>
+                                                                        <td>1s 509ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="#">Recording items</a>
+                                                                        </td>
+                                                                        <td data-order="Todo List App should allow me to add todo items">
+                                                                                    <a href="d147bbbc00952db543864d9424f163454df1f85143f491cb834f42ee90dddf33.html">Todo List App should allow me to add todo items</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-ubuntu' title='Linux'></i> <i class='bi bi-browser-safari' title='Safari or WebKit'></i></span><span style="display:none">linux,Safari or WebKit</span>
+                                                                        </td>
+                                                                        <td>6</td>
+                                                                        <td>Alice starts with an empty todo list
+Alice records an item called 'buy some cheese'
+Alice ensures that displayed items does equal [ "buy some cheese" ]
+Alice records an item called 'feed the cat'
+Alice ensures that displayed items does equal [ "buy some cheese", "feed the cat" ]
+Alice ensures that persisted items does equal displayed items
+</td>
+                                                                        <td data-order="1732043332">19:08:52</td>
+                                                                        <td>912ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="#">Recording items</a>
+                                                                        </td>
+                                                                        <td data-order="Todo List App should clear text input field when an item is added">
+                                                                                    <a href="f8da4c47e0353af3b7a0a3e884e4aaff8e818d134f258417778611f97713ab57.html">Todo List App should clear text input field when an item is added</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-ubuntu' title='Linux'></i> <i class='bi bi-browser-safari' title='Safari or WebKit'></i></span><span style="display:none">linux,Safari or WebKit</span>
+                                                                        </td>
+                                                                        <td>5</td>
+                                                                        <td>Alice starts with an empty todo list
+Alice records an item called 'buy some cheese'
+Alice ensures that the value of "What needs to be done?" input box does equal ""
+Alice ensures that "buy some cheese" does equal "buy some cheese"
+Alice ensures that false does equal false
+</td>
+                                                                        <td data-order="1732043333">19:08:53</td>
+                                                                        <td>763ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="#">Recording items</a>
+                                                                        </td>
+                                                                        <td data-order="Todo List App should reflect the number of items left in the counter">
+                                                                                    <a href="bd71218823e0cf7137ea5a19f26ab15d3606832e07997cc926931aa6c38592ad.html">Todo List App should reflect the number of items left in the counter</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-ubuntu' title='Linux'></i> <i class='bi bi-browser-safari' title='Safari or WebKit'></i></span><span style="display:none">linux,Safari or WebKit</span>
+                                                                        </td>
+                                                                        <td>3</td>
+                                                                        <td>Alice starts with a list containing 3 items
+Alice ensures that number of items left does equal 3
+Alice ensures that 3 does equal 3
+</td>
+                                                                        <td data-order="1732043333">19:08:53</td>
+                                                                        <td>1s 044ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="#">Recording items</a>
+                                                                        </td>
+                                                                        <td data-order="Todo List App should show #main and #footer sections only when list contains items">
+                                                                                    <a href="a9561cee381019127ecd58d5b1120118d3fc73336526ff7a12df86c26f8eaf20.html">Todo List App should show #main and #footer sections only when list contains items</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-ubuntu' title='Linux'></i> <i class='bi bi-browser-safari' title='Safari or WebKit'></i></span><span style="display:none">linux,Safari or WebKit</span>
+                                                                        </td>
+                                                                        <td>6</td>
+                                                                        <td>Alice starts with an empty todo list
+Alice ensures that main section does not become present
+Alice ensures that footer section does not become present
+Alice records an item called 'buy some cheese'
+Alice ensures that main section does become visible
+Alice ensures that footer section does become visible
+</td>
+                                                                        <td data-order="1732043334">19:08:54</td>
+                                                                        <td>1s 320ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <h3><i class="bi bi-hand-index-thumb"></i> Manual Tests</h3>
+
+                                                            No manual tests were recorded
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <h3>Tags</h3>
+                    <div class="card">
+                        <div class="card-body">
+                            <div>
+                                    <a href="8afd86945a1a25b13fc1ac5043b29b159f5150952aa7fc6951378729e9e4cd4f.html">
+                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Retried&nbsp;&nbsp;&nbsp;7
+                                    </span>
+                                    </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                                <h5 class="card-title">Browser</h5>
+                            <div>
+                                    <a href="bc6a2d1431adfa77ef09330b433ba64d0269ab57f9b7bc82dd1531fad2ed6f87.html">
+                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Webkit 18.2&nbsp;&nbsp;&nbsp;7
+                                    </span>
+                                    </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                                <h5 class="card-title">Feature</h5>
+                            <div>
+                                    <a href="73262d3560c27d55a12eafcd3bf482972e4d0cae7c21df127ffd99ba3c802097.html">
+                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> API Testing&nbsp;&nbsp;&nbsp;1
+                                    </span>
+                                    </a>
+                                    <a href="0719e179199c05841092720c3c7543d36c4efb9baff0a00e08ee4e6bd8b68d7a.html">
+                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Recording Items&nbsp;&nbsp;&nbsp;4
+                                    </span>
+                                    </a>
+                                    <a href="beead259f64b0001474a05d800cec567c75cf22d25425c116a6bbd1f9389954d.html">
+                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Blended Testing&nbsp;&nbsp;&nbsp;1
+                                    </span>
+                                    </a>
+                                    <a href="39ef06ac6957911e0e85d9a47aefac8c639c0143016ebb46e4fac04edf452ce2.html">
+                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Multi-Actor Scenarios&nbsp;&nbsp;&nbsp;1
+                                    </span>
+                                    </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                                <h5 class="card-title">Platform</h5>
+                            <div>
+                                    <a href="7c48bc958f123831179a2b2bc5c4b6f7fe564a7583e09bb0f64ec936a10ed37b.html">
+                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Linux 6.5.0-1025-Azure&nbsp;&nbsp;&nbsp;7
+                                    </span>
+                                    </a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="beforefooter"></div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12">
+            <span class="version">Serenity BDD version 4.1.20</span>
+        </div>
+    </div>
+</div>
+
+<!-- Chart data -->
+    <!-- PIE CHART -->
+    <script>
+
+        // The results pie chart
+        const outcomeChartCtx = document.getElementById('resultChart');
+
+        // Options define for display value on top of bars
+        const outcomeDetailsReports = [
+            { title: 'Passing Test Cases', link: "0313e7444c34f7f2796cc34822ab1a5e6b2219500160aa4bfb8e9a0f3d771ef8.html" },
+            { title: 'Pending Test Cases', link: "c7a3420325a53f79aa1bfca371bc2c94b19cf3f3635ca95cfdbdb228e161896f.html" },
+            { title: 'Ignored Test Cases', link: "16ab318d940eadc146d2f3e6078be361410cbe667add4a4d54a389c9855e7d2c.html" },
+            { title: 'Skipped Test Cases', link: "145f607f3b0f379e9f1262428c6a33188b5acab35b1d693221f71039d57c84fa.html" },
+            { title: 'Aborted Test Cases',  link: "9e4e8fa4a4905cd4a9f906f72bf4981f7954656858bdbfe99f3e263ed41f6ce8.html"},
+            { title: 'Failed Test Cases', link: "0deb8640bd9ad3b5ada9bd928b55043df22b5743da2d9a7948f9ebbc87fa8c74.html"  },
+            { title: 'Broken Test Cases', link: "2c8fefc3233957d3decb7b09b6b2851204d2383466313f3dd3a227bc4978c85c.html"    },
+            { title: 'Compromised Test Cases',  link: "ccaa3d5254bd08935ac7785d2a1346ec1d9b813c6ce8739181c39c07e14d34de.html" },
+        ]
+        const outcomeData = {
+            labels: ['Passing Test Cases', 'Pending Test Cases', 'Ignored Test Cases', 'Skipped Test Cases', 'Aborted Test Cases', 'Failed Test Cases', 'Broken Test Cases', 'Compromised Test Cases','Undefined Test Cases'],
+            datasets: [{
+                label: 'Test Results',
+                fill: false,
+                data: [7,0,0,0,0,0,0,0],
+                backgroundColor: ['rgba(153,204,51,0.5)','rgba(165, 199, 238, 0.5)','rgba(168, 168, 168, 0.5)','rgba(238, 224, 152, 0.75)','rgba(255, 153, 102, 0.5)','rgba(255, 22, 49, 0.5)','rgba(255, 97, 8, 0.5)','rgba(255, 104, 255, 0.5)','rgba(83, 50, 168, 0.5)'],
+                borderColor: ['rgba(153,204,51,1)','rgba(165, 199, 238, 1)','rgba(168, 168, 168, 1)','rgba(238, 224, 152, 1)','rgba(255, 153, 102, 1)','rgba(255, 22, 49, 1)','rgba(255, 97, 8, 1)','rgba(255, 104, 255, 1)','rgba(83, 50, 168, 1)'],
+                borderWidth: 1,
+            }]
+        }
+        const outcomeOptions = {
+            responsive: true,
+            plugins: {
+                legend: {
+                    display: true,
+                    position: 'bottom'
+                },
+                // Change options for ALL labels of THIS CHART
+                datalabels: {
+                    color: '#444444',
+                    'font.weight': 'bold',
+                    formatter: (value, ctx) => {
+                        let sum = 0;
+                        let dataArr = ctx.chart.data.datasets[0].data;
+                        dataArr.map(data => {
+                            sum += data;
+                        });
+                        let percentage = (value * 100 / sum).toFixed(0) + "%";
+                        if (percentage === '0%' || percentage === 'NaN%') {
+                            return '';
+                        } else {
+                            return percentage;
+                        }
+                    },
+                },
+            }
+        }
+
+        const outcomeChart = new Chart(outcomeChartCtx, {
+            type: 'doughnut',
+            data: outcomeData,
+            options: outcomeOptions,
+            plugins: [
+                {
+                    id: 'text',
+                    beforeDraw: function (chart, a, b) {
+                        var width = chart.width,
+                            height = chart.height,
+                            ctx = chart.ctx;
+
+                        ctx.restore();
+                        var fontSize = (height / 200).toFixed(1);
+                        ctx.font = fontSize + "em sans-serif";
+                        ctx.textBaseline = "middle";
+
+                        var text = "100%"
+                        textX = 10 + Math.round((width - ctx.measureText(text).width) / 2);
+                        textY = (height / 2) - 40;
+
+                        ctx.fillText(text, textX, textY);
+                        ctx.save();
+                    }
+                }]
+        });
+
+        function clickHandler(click) {
+            const points = outcomeChart.getElementsAtEventForMode(click, 'nearest', {intersect: true}, true);
+            if (points.length) {
+                const firstPoint = points[0];
+                window.open(outcomeDetailsReports[firstPoint.index].link, "_self")
+
+            }
+        }
+        outcomeChartCtx.onclick = clickHandler;
+    </script>
+    <!-- END PIE CHART -->
+
+    <!-- SUMMARY BAR CHART -->
+    <script>
+
+        // The Severity bar chart
+        const severityChartCtx = document.getElementById('severityChart');
+
+        // Options define for display value on top of bars
+
+        const severityDetailsReports = [
+            { title: 'Passing Scenarios', link: "0313e7444c34f7f2796cc34822ab1a5e6b2219500160aa4bfb8e9a0f3d771ef8.html" },
+            { title: 'Pending Scenarios', link: "c7a3420325a53f79aa1bfca371bc2c94b19cf3f3635ca95cfdbdb228e161896f.html" },
+            { title: 'Ignored Scenarios', link: "16ab318d940eadc146d2f3e6078be361410cbe667add4a4d54a389c9855e7d2c.html" },
+            { title: 'Skipped Scenarios', link: "145f607f3b0f379e9f1262428c6a33188b5acab35b1d693221f71039d57c84fa.html" },
+            { title: 'Aborted Scenarios',  link: "9e4e8fa4a4905cd4a9f906f72bf4981f7954656858bdbfe99f3e263ed41f6ce8.html"},
+            { title: 'Failed Scenarios', link: "0deb8640bd9ad3b5ada9bd928b55043df22b5743da2d9a7948f9ebbc87fa8c74.html"  },
+            { title: 'Broken Scenarios', link: "2c8fefc3233957d3decb7b09b6b2851204d2383466313f3dd3a227bc4978c85c.html"    },
+            { title: 'Compromised Scenarios',  link: "ccaa3d5254bd08935ac7785d2a1346ec1d9b813c6ce8739181c39c07e14d34de.html" },
+        ]
+        const severityData = {
+            labels: ['Passing', 'Pending', 'Ignored', 'Skipped', 'Aborted', 'Failed', 'Broken', 'Compromised'],
+            datasets: [
+                {
+                    label: 'Automated',
+                    data: [7,0,0,0,0,0,0,0],
+                    backgroundColor: ['rgba(153,204,51,0.5)','rgba(165, 199, 238, 0.5)','rgba(168, 168, 168, 0.5)','rgba(238, 224, 152, 0.75)','rgba(255, 153, 102, 0.5)','rgba(255, 22, 49, 0.5)','rgba(255, 97, 8, 0.5)','rgba(255, 104, 255, 0.5)','rgba(83, 50, 168, 0.5)'],
+                    borderColor: ['rgba(153,204,51,1)','rgba(165, 199, 238, 1)','rgba(168, 168, 168, 1)','rgba(238, 224, 152, 1)','rgba(255, 153, 102, 1)','rgba(255, 22, 49, 1)','rgba(255, 97, 8, 1)','rgba(255, 104, 255, 1)','rgba(83, 50, 168, 1)'],
+                    borderWidth: 1
+                },
+                {
+                    label: 'Manual',
+                    data: [0,0,0,0,0,0,0,0],
+                    backgroundColor: ['rgba(153,204,51,0.25)','rgba(165, 199, 238, 0.25)','rgba(168, 168, 168, 0.25)','rgba(238, 224, 152, 0.375)','rgba(255, 153, 102, 0.25)','rgba(255, 22, 49, 0.25)','rgba(255, 97, 8, 0.25)','rgba(255, 104, 255, 0.25)','rgba(83, 50, 168, 0.25)'],
+                    borderColor: ['rgba(153,204,51,1)','rgba(165, 199, 238, 1)','rgba(168, 168, 168, 1)','rgba(238, 224, 152, 1)','rgba(255, 153, 102, 1)','rgba(255, 22, 49, 1)','rgba(255, 97, 8, 1)','rgba(255, 104, 255, 1)','rgba(83, 50, 168, 1)'],
+                    borderWidth: 1
+                },
+
+            ]
+        }
+        const severityOptions = {
+            responsive: true,
+            skipNull: true,
+            scales: {
+                x: {
+                    stacked: true,
+                },
+                y: {
+                    stacked: true,
+                }
+            },
+            plugins: {
+                // Change options for ALL labels of THIS CHART
+                datalabels: {
+                    color: '#444444',
+                    'font.weight': 'bold',
+                    formatter: (value, ctx) => {
+                        if (value === 0) {
+                            return '';
+                        } else {
+                            return value;
+                        }
+                    },
+                }
+            }
+        }
+        const severityChart = new Chart(severityChartCtx, {
+            type: 'bar',
+            data: severityData,
+            options: severityOptions
+        });
+
+        function clickHandler(click) {
+            const points = severityChart.getElementsAtEventForMode(click, 'nearest', {intersect: true}, true);
+            if (points.length) {
+                const firstPoint = points[0];
+                window.open(severityDetailsReports[firstPoint.index].link, "_self")
+
+            }
+        }
+        severityChartCtx.onclick = clickHandler;
+    </script>
+    <!-- END SUMMARY CHART -->
+
+    <!-- DURATION CHART -->
+    <script>
+
+        // Options define for display value on top of bars
+        const durationDetailsReports = [
+                {title: "Under 1 second", link: "2b21ba765dbeb3a6c89ee2d1720ad5db601fe414d5737b9f59b408c7df898f05.html"},
+                {title: "1 to 10 seconds", link: "ff8240706e3851fa2d5817629c644041256fd85a2bdf50f7fb04c0f222f00aab.html"},
+                {title: "10 to 30 seconds", link: "d6d12fc02f843412cc00308bca9ae1441d9ca9679e52f60f0a734e58592ed92d.html"},
+                {title: "30 to 60 seconds", link: "31e01ce6ba50e967f45ddd7c8e4da3f7ed8b61092ba434268b50b1ac120c2b96.html"},
+                {title: "1 to 2 minutes", link: "7c0abde98a59a52706bb85dc825168959fd8a3e8235b49db82f1c1ddee3cb27e.html"},
+                {title: "2 to 5 minutes", link: "e82643ebd9c4f8de12f6072b096a4fddbf733561acbed0f6e08737ba53b78a2e.html"},
+                {title: "5 to 10 minutes", link: "e8763968af3fc8f9831cd86e8ba4f9c8d4667de5040d60e59c0c961fef8af189.html"},
+                {title: "10 minutes or over", link: "9098a7555223ccf1d11d02a16cba181d3931ea81f92b10aed232099fa21c9e91.html"},
+        ]
+        // The Severity bar chart
+        const durationChartCtx = document.getElementById('durationChart');
+
+        // Options define for display value on top of bars
+
+        const durationData = {
+            labels: ['Under 1 second','1 to 10 seconds','10 to 30 seconds','30 to 60 seconds','1 to 2 minutes','2 to 5 minutes','5 to 10 minutes','10 minutes or over'],
+            datasets: [{
+                label: 'Number of tests per duration',
+                fill: false,
+                data: ['2','5','0','0','0','0','0','0'],
+                backgroundColor: 'rgba(83, 146, 255,0.5)',
+                borderColor: 'rgba(83, 146, 255, 1)',
+            }]
+        }
+        const durationOptions = {
+            responsive: true,
+            plugins: {
+                // Change options for ALL labels of THIS CHART
+                datalabels: {
+                    color: '#444444',
+                    'font.weight': 'bold',
+                    formatter: (value, ctx) => {
+                        if (value > 0) {
+                            return value;
+                        } else {
+                            return '';
+                        }
+                    },
+                },
+                tooltip: {
+                    enabled: true,
+                    usePointStyle: true,
+                    callbacks: {
+                        label: (data) => {
+                            return data.parsed.y + ' tests'
+                        }
+                    },
+                },
+            },
+        }
+
+        const durationChart = new Chart(durationChartCtx, {
+            type: 'bar',
+            data: durationData,
+            options: durationOptions
+        });
+
+        function durationClickHandler(click) {
+            const points = durationChart.getElementsAtEventForMode(click, 'nearest', {intersect: true}, true);
+            if (points.length) {
+                const firstPoint = points[0];
+                window.open(durationDetailsReports[firstPoint.index].link, "_self")
+
+            }
+        }
+
+        durationChartCtx.onclick = durationClickHandler;
+    </script>
+    <!-- END DURATION CHART -->
+
+
+
+    <!-- COVERAGE BAR CHART -->
+    <script>
+
+        // The coverage bar chart
+        const coverageChartCtx = document.getElementById('coverageChart');
+
+        // Options define for display value on top of bars
+
+        const coverageReports = [
+            {
+                title: 'API Testing',
+                result: 'SUCCESS',
+                link: "73262d3560c27d55a12eafcd3bf482972e4d0cae7c21df127ffd99ba3c802097.html"
+            },
+            {
+                title: 'Blended Testing',
+                result: 'SUCCESS',
+                link: "beead259f64b0001474a05d800cec567c75cf22d25425c116a6bbd1f9389954d.html"
+            },
+            {
+                title: 'Multi-actor scenarios',
+                result: 'SUCCESS',
+                link: "39ef06ac6957911e0e85d9a47aefac8c639c0143016ebb46e4fac04edf452ce2.html"
+            },
+            {
+                title: 'Recording items',
+                result: 'SUCCESS',
+                link: "0719e179199c05841092720c3c7543d36c4efb9baff0a00e08ee4e6bd8b68d7a.html"
+            },
+        ]
+        const coverageData = {
+            labels: [
+                'API Testing',
+                'Blended Testing',
+                'Multi-actor scenarios',
+                'Recording items',
+            ],
+            datasets: [
+                {
+                    label: ['Passing Tests'],
+                    data: [1,1,1,4],
+                    backgroundColor: [ 'rgba(153,204,51,0.5)' ]
+                },
+                {
+                    label: ['Pending Tests'],
+                    data: [0,0,0,0],
+                    backgroundColor: [ 'rgba(165, 199, 238, 0.5)' ]
+                },
+                {
+                    label: ['Ignored Tests'],
+                    data: [0,0,0,0],
+                    backgroundColor: [ 'rgba(168, 168, 168, 0.5)' ]
+                },
+                {
+                    label: ['Skipped Tests'],
+                    data: [0,0,0,0],
+                    backgroundColor: [ 'rgba(238, 224, 152, 0.75)' ]
+                },
+                {
+                    label: ['Aborted Tests'],
+                    data: [0,0,0,0],
+                    backgroundColor: [ 'rgba(255, 153, 102, 0.5)' ]
+                },
+                {
+                    label: ['Failed Tests'],
+                    data: [0,0,0,0],
+                    backgroundColor: [ 'rgba(255, 22, 49, 0.5)' ]
+                },
+                {
+                    label: ['Errors'],
+                    data: [0,0,0,0],
+                    backgroundColor: [ 'rgba(255, 97, 8, 0.5)' ]
+                },
+                {
+                    label: ['Compromised Tests'],
+                    data: [0,0,0,0],
+                    backgroundColor: [ 'rgba(255, 104, 255, 0.5)' ]
+                },
+            ]
+        }
+        const coverageOptions = {
+            responsive: true,
+            indexAxis: 'y',
+            // barPercentage: ,
+            barThickness: 'flex',
+            maxBarThickness: 30,
+            minBarLength: 2,
+            skipNull: true,
+            scales: {
+                x: {
+                    stacked: true,
+                },
+                y: {
+                    stacked: true,
+                }
+            },
+            plugins: {
+                // Change options for ALL labels of THIS CHART
+                datalabels: {
+                    color: '#444444',
+                    'font.weight': 'bold'
+                },
+                tooltip: {
+                    enabled: true,
+                    usePointStyle: true,
+                },
+            },
+        }
+
+        const coverageChart = new Chart(coverageChartCtx, {
+            type: 'bar',
+            data: coverageData,
+            options: coverageOptions
+        });
+
+        function coverageClickHandler(click) {
+            const points = coverageChart.getElementsAtEventForMode(click, 'nearest', {intersect: true}, true);
+            if (points.length) {
+                const firstPoint = points[0];
+                if (coverageReports[firstPoint.index].link) {
+                    window.open(coverageReports[firstPoint.index].link, "_self")
+                }
+            }
+        }
+
+        coverageChartCtx.onclick = coverageClickHandler;
+    </script>
+    <!-- END COVERAGE CHART -->
+
+</body>
+</html>
