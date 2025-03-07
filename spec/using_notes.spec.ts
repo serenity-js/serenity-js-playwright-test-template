@@ -1,19 +1,8 @@
-import { Ensure, equals, isPresent, not } from '@serenity-js/assertions';
+import { Ensure, equals } from '@serenity-js/assertions';
 import { useFixtures } from '@serenity-js/playwright-test';
-import { isVisible, Value } from '@serenity-js/web';
 
 import { TODO_ITEMS } from './todo-list-app/test-data';
-import {
-    footerSection,
-    mainSection,
-    newTodoInput,
-    outstandingItemsCount,
-    persistedItemCalled,
-    persistedItemNames,
-    persistedItems,
-    startWithAListContaining,
-    startWithAnEmptyList,
-} from './todo-list-app/TodoApp';
+import { startWithAListContaining, startWithAnEmptyList, } from './todo-list-app/TodoApp';
 import { recordItem } from './todo-list-app/TodoItem';
 import { itemNames } from './todo-list-app/TodoList';
 import { BrowseTheWebWithPlaywright } from '@serenity-js/playwright';
