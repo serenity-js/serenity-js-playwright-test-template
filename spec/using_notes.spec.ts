@@ -6,7 +6,7 @@ import { startWithAListContaining, startWithAnEmptyList, } from './todo-list-app
 import { recordItem } from './todo-list-app/TodoItem';
 import { itemNames } from './todo-list-app/TodoList';
 import { BrowseTheWebWithPlaywright } from '@serenity-js/playwright';
-import { List, Notepad, notes, TakeNotes } from '@serenity-js/core';
+import { Cast, List, Notepad, notes, TakeNotes } from '@serenity-js/core';
 
 interface SharedNotes {
     items: string[];
@@ -27,12 +27,13 @@ const { describe, it }  = useFixtures<TestScopeFixtures>({
 
         await use(notepad);
     },
-    actorCalled: async ({ actorCalled, notepad }, use) => {
-        await use(actorName => actorCalled(actorName).whoCan(
-            TakeNotes.using(notepad),
-            // ...add or override other abilities
-        ));
-    },
+    actors: async ({ notepad, actors }, use) => {
+        // Decorate the Cast of actors, assigning an additional ability to take notes
+        await use(Cast.where(actorName => {
+            return actors.prepare(actorName)
+                .whoCan(TakeNotes.using(notepad))
+        }));
+    }
 })
 
 describe('Using notes', () => {
