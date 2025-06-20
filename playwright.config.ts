@@ -1,5 +1,5 @@
 import { defineConfig, devices } from '@playwright/test';
-import type { SerenityOptions } from '@serenity-js/playwright-test';
+import type { SerenityFixtures, SerenityWorkerFixtures } from '@serenity-js/playwright-test';
 
 /**
  * Read environment variables from file.
@@ -10,7 +10,7 @@ import type { SerenityOptions } from '@serenity-js/playwright-test';
 /**
  * See https://playwright.dev/docs/test-configuration.
  */
-export default defineConfig<SerenityOptions>({
+export default defineConfig<SerenityFixtures, SerenityWorkerFixtures>({
     testDir: './spec',
     /* Maximum time one test can run for. */
     timeout: 30_000,
