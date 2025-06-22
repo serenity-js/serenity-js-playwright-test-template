@@ -32,9 +32,9 @@
 
 <!-- Required Javascript -->
 <script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
-<link type="text/css" href="datatables/1.13.1/datatables.min.css" rel="stylesheet" />
-<script type="text/javascript" src="datatables/1.13.1/datatables.min.js"></script>
-<script type="text/javascript" src="datatables/1.13.1/time-elapsed-dhms.js"></script>
+<link type="text/css" href="datatables/2.3.1/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/2.3.1/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/2.3.1/time-elapsed-dhms.js"></script>
 
 <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <script src="bootstrap/js/bootstrap.min.js"></script>
@@ -72,11 +72,11 @@
     Chart.register(ChartDataLabels);
 </script>
 <!-- JQuery-UI -->
-<link type="text/css" href="jqueryui/1.13.2/jquery-ui.css" rel="Stylesheet" />
-<script type="text/javascript" src="jqueryui/1.13.2/jquery-ui.js"></script><!-- DataTables -->
-<link type="text/css" href="datatables/1.13.1/datatables.min.css" rel="stylesheet" />
-<script type="text/javascript" src="datatables/1.13.1/datatables.min.js"></script>
-<script type="text/javascript" src="datatables/1.13.1/time-elapsed-dhms.js"></script>
+<link type="text/css" href="jquery-ui/1.14.1/jquery-ui.css" rel="Stylesheet" />
+<script type="text/javascript" src="jquery-ui/1.14.1/jquery-ui.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/2.3.1/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/2.3.1/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/2.3.1/time-elapsed-dhms.js"></script>
 
 <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <script src="bootstrap/js/bootstrap.min.js"></script>
@@ -157,12 +157,6 @@
                     searchPlaceholder: "Filter",
                     search: ""
                 },
-                columnDefs: [
-                    {
-                        targets: 2,
-                        visible: false
-                    },
-                ]
             });
 
             $(".feature-coverage-table-with-pagination").DataTable({
@@ -173,12 +167,6 @@
                     searchPlaceholder: "Filter",
                     search: ""
                 },
-                columnDefs: [
-                    {
-                        targets: 2,
-                        visible: false
-                    },
-                ]
             });
         });
     </script>
@@ -226,7 +214,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 21-06-2025 05:05:26</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 22-06-2025 05:14:41</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -326,27 +314,27 @@
                     <td>
                         <i class="bi bi-flag-fill"></i> Tests Started
                     </td>
-                    <td>Jun 21, 2025 05:04:44</td>
+                    <td>Jun 22, 2025 05:13:54</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stop-circle"></i> Tests
                         Finished
                     </td>
-                    <td>Jun 21, 2025 05:05:22</td>
+                    <td>Jun 22, 2025 05:14:36</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stopwatch"></i> Total
                         Duration
                     </td>
-                    <td>37s</td>
+                    <td>41s</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-trophy"></i> Fastest Test
                     </td>
-                    <td>219ms</td>
+                    <td>242ms</td>
                 </tr>
                 <tr scope="row">
                     <td>
@@ -360,14 +348,14 @@
                         <i class="bi bi-stopwatch"></i> Average
                         Execution Time
                     </td>
-                    <td>858ms</td>
+                    <td>917ms</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stopwatch-fill"></i> Total
                         Execution Time
                     </td>
-                    <td> 5m 36s</td>
+                    <td> 5m 58s</td>
                 </tr>
                 </tbody>
             </table>
@@ -389,7 +377,6 @@
                                                                         <tr>
                                                                             <th>Feature</th>
                                                                             <th style="width:1em;">Scenarios</th>
-                                                                            <th style="width:1em;">StepsText</th>
                                                                             <th style="width:1em;">Test&nbsp;Cases</th>
                                                                             <th style="width:1em;">%&nbsp;Pass</th>
                                                                             <th style="width:1em;">Result</th>
@@ -402,19 +389,6 @@
                                                                                             <a href="73262d3560c27d55a12eafcd3bf482972e4d0cae7c21df127ffd99ba3c802097.html"> API Testing</a>
                                                                                     </td>
                                                                                     <td>1</td>
-                                                                                    <td>JSON Placeholder /todos should retrieve a todo item by id #1 - Retries: Attempt #1
-Alice sends a GET request to &apos;/todos/1&apos;
-Alice ensures that the status of the last response does equal 200
-Alice ensures that 1 does equal 1
-JSON Placeholder /todos should retrieve a todo item by id #2 - Retries: Attempt #1
-Alice sends a GET request to &apos;/todos/1&apos;
-Alice ensures that the status of the last response does equal 200
-Alice ensures that 1 does equal 1
-JSON Placeholder /todos should retrieve a todo item by id #3 - Retries: Attempt #1
-Alice sends a GET request to &apos;/todos/1&apos;
-Alice ensures that the status of the last response does equal 200
-Alice ensures that 1 does equal 1
-</td>
                                                                                     <td>3</td>
                                                                                     <td>100%</td>
                                                                                     <td>
@@ -438,46 +412,6 @@ Alice ensures that 1 does equal 1
                                                                                             <a href="beead259f64b0001474a05d800cec567c75cf22d25425c116a6bbd1f9389954d.html"> Blended Testing</a>
                                                                                     </td>
                                                                                     <td>1</td>
-                                                                                    <td>GitHub Pages should check the state of the system before interacting with the UI #1 - Retries: Attempt #1
-Apisitt ensures all GitHub systems are operational
-Apisitt sends a GET request to &apos;https://www.githubstatus.com/api/v2/status.json&apos;
-Apisitt ensures that the status of the last response does equal 200
-Apisitt ensures that GitHub Status does equal &quot;All Systems Operational&quot;
-Wendy starts with an empty todo list
-Wendy navigates to &quot;/&quot;
-Wendy ensures that website title does equal &quot;Serenity/JS TodoApp&quot;
-Wendy records an item called &quot;Feed the cat&quot;
-Wendy enters &quot;Feed the cat&quot; into &quot;What needs to be done?&quot; input box
-Wendy presses key Enter in &quot;What needs to be done?&quot; input box
-Wendy waits until displayed items does contain &quot;Feed the cat&quot;
-Wendy ensures that displayed items does equal [ &quot;Feed the cat&quot; ]
-GitHub Pages should check the state of the system before interacting with the UI #2 - Retries: Attempt #1
-Apisitt ensures all GitHub systems are operational
-Apisitt sends a GET request to &apos;https://www.githubstatus.com/api/v2/status.json&apos;
-Apisitt ensures that the status of the last response does equal 200
-Apisitt ensures that GitHub Status does equal &quot;All Systems Operational&quot;
-Wendy starts with an empty todo list
-Wendy navigates to &quot;/&quot;
-Wendy ensures that website title does equal &quot;Serenity/JS TodoApp&quot;
-Wendy records an item called &quot;Feed the cat&quot;
-Wendy enters &quot;Feed the cat&quot; into &quot;What needs to be done?&quot; input box
-Wendy presses key Enter in &quot;What needs to be done?&quot; input box
-Wendy waits until displayed items does contain &quot;Feed the cat&quot;
-Wendy ensures that displayed items does equal [ &quot;Feed the cat&quot; ]
-GitHub Pages should check the state of the system before interacting with the UI #3 - Retries: Attempt #1
-Apisitt ensures all GitHub systems are operational
-Apisitt sends a GET request to &apos;https://www.githubstatus.com/api/v2/status.json&apos;
-Apisitt ensures that the status of the last response does equal 200
-Apisitt ensures that GitHub Status does equal &quot;All Systems Operational&quot;
-Wendy starts with an empty todo list
-Wendy navigates to &quot;/&quot;
-Wendy ensures that website title does equal &quot;Serenity/JS TodoApp&quot;
-Wendy records an item called &quot;Feed the cat&quot;
-Wendy enters &quot;Feed the cat&quot; into &quot;What needs to be done?&quot; input box
-Wendy presses key Enter in &quot;What needs to be done?&quot; input box
-Wendy waits until displayed items does contain &quot;Feed the cat&quot;
-Wendy ensures that displayed items does equal [ &quot;Feed the cat&quot; ]
-</td>
                                                                                     <td>3</td>
                                                                                     <td>100%</td>
                                                                                     <td>
@@ -501,64 +435,6 @@ Wendy ensures that displayed items does equal [ &quot;Feed the cat&quot; ]
                                                                                             <a href="39ef06ac6957911e0e85d9a47aefac8c639c0143016ebb46e4fac04edf452ce2.html"> Multi-actor scenarios</a>
                                                                                     </td>
                                                                                     <td>1</td>
-                                                                                    <td>Todo List App supports multiple actors using separate browsers #1 - Retries: Attempt #1
-Alice starts with a list containing 1 items
-Alice starts with an empty todo list
-Alice navigates to &quot;/&quot;
-Alice ensures that website title does equal &quot;Serenity/JS TodoApp&quot;
-Alice records an item called &quot;Feed the cat&quot;
-Alice enters &quot;Feed the cat&quot; into &quot;What needs to be done?&quot; input box
-Alice presses key Enter in &quot;What needs to be done?&quot; input box
-Alice waits until displayed items does contain &quot;Feed the cat&quot;
-Bob starts with a list containing 1 items
-Bob starts with an empty todo list
-Bob navigates to &quot;/&quot;
-Bob ensures that website title does equal &quot;Serenity/JS TodoApp&quot;
-Bob records an item called &quot;Walk the dog&quot;
-Bob enters &quot;Walk the dog&quot; into &quot;What needs to be done?&quot; input box
-Bob presses key Enter in &quot;What needs to be done?&quot; input box
-Bob waits until displayed items does contain &quot;Walk the dog&quot;
-Alice ensures that displayed items does equal [ &quot;Feed the cat&quot; ]
-Bob ensures that displayed items does equal [ &quot;Walk the dog&quot; ]
-Todo List App supports multiple actors using separate browsers #2 - Retries: Attempt #1
-Alice starts with a list containing 1 items
-Alice starts with an empty todo list
-Alice navigates to &quot;/&quot;
-Alice ensures that website title does equal &quot;Serenity/JS TodoApp&quot;
-Alice records an item called &quot;Feed the cat&quot;
-Alice enters &quot;Feed the cat&quot; into &quot;What needs to be done?&quot; input box
-Alice presses key Enter in &quot;What needs to be done?&quot; input box
-Alice waits until displayed items does contain &quot;Feed the cat&quot;
-Bob starts with a list containing 1 items
-Bob starts with an empty todo list
-Bob navigates to &quot;/&quot;
-Bob ensures that website title does equal &quot;Serenity/JS TodoApp&quot;
-Bob records an item called &quot;Walk the dog&quot;
-Bob enters &quot;Walk the dog&quot; into &quot;What needs to be done?&quot; input box
-Bob presses key Enter in &quot;What needs to be done?&quot; input box
-Bob waits until displayed items does contain &quot;Walk the dog&quot;
-Alice ensures that displayed items does equal [ &quot;Feed the cat&quot; ]
-Bob ensures that displayed items does equal [ &quot;Walk the dog&quot; ]
-Todo List App supports multiple actors using separate browsers #3 - Retries: Attempt #1
-Alice starts with a list containing 1 items
-Alice starts with an empty todo list
-Alice navigates to &quot;/&quot;
-Alice ensures that website title does equal &quot;Serenity/JS TodoApp&quot;
-Alice records an item called &quot;Feed the cat&quot;
-Alice enters &quot;Feed the cat&quot; into &quot;What needs to be done?&quot; input box
-Alice presses key Enter in &quot;What needs to be done?&quot; input box
-Alice waits until displayed items does contain &quot;Feed the cat&quot;
-Bob starts with a list containing 1 items
-Bob starts with an empty todo list
-Bob navigates to &quot;/&quot;
-Bob ensures that website title does equal &quot;Serenity/JS TodoApp&quot;
-Bob records an item called &quot;Walk the dog&quot;
-Bob enters &quot;Walk the dog&quot; into &quot;What needs to be done?&quot; input box
-Bob presses key Enter in &quot;What needs to be done?&quot; input box
-Bob waits until displayed items does contain &quot;Walk the dog&quot;
-Alice ensures that displayed items does equal [ &quot;Feed the cat&quot; ]
-Bob ensures that displayed items does equal [ &quot;Walk the dog&quot; ]
-</td>
                                                                                     <td>3</td>
                                                                                     <td>100%</td>
                                                                                     <td>
@@ -582,178 +458,6 @@ Bob ensures that displayed items does equal [ &quot;Walk the dog&quot; ]
                                                                                             <a href="0719e179199c05841092720c3c7543d36c4efb9baff0a00e08ee4e6bd8b68d7a.html"> Recording items</a>
                                                                                     </td>
                                                                                     <td>4</td>
-                                                                                    <td>Todo List App should allow me to add todo items #1 - Retries: Attempt #1
-Alice starts with an empty todo list
-Alice navigates to &quot;/&quot;
-Alice ensures that website title does equal &quot;Serenity/JS TodoApp&quot;
-Alice records an item called &quot;buy some cheese&quot;
-Alice enters &quot;buy some cheese&quot; into &quot;What needs to be done?&quot; input box
-Alice presses key Enter in &quot;What needs to be done?&quot; input box
-Alice waits until displayed items does contain &quot;buy some cheese&quot;
-Alice ensures that displayed items does equal [ &quot;buy some cheese&quot; ]
-Alice records an item called &quot;feed the cat&quot;
-Alice enters &quot;feed the cat&quot; into &quot;What needs to be done?&quot; input box
-Alice presses key Enter in &quot;What needs to be done?&quot; input box
-Alice waits until displayed items does contain &quot;feed the cat&quot;
-Alice ensures that displayed items does equal [ &quot;buy some cheese&quot;, &quot;feed the cat&quot; ]
-Alice ensures that persisted items does equal displayed items
-Todo List App should allow me to add todo items #2 - Retries: Attempt #1
-Alice starts with an empty todo list
-Alice navigates to &quot;/&quot;
-Alice ensures that website title does equal &quot;Serenity/JS TodoApp&quot;
-Alice records an item called &quot;buy some cheese&quot;
-Alice enters &quot;buy some cheese&quot; into &quot;What needs to be done?&quot; input box
-Alice presses key Enter in &quot;What needs to be done?&quot; input box
-Alice waits until displayed items does contain &quot;buy some cheese&quot;
-Alice ensures that displayed items does equal [ &quot;buy some cheese&quot; ]
-Alice records an item called &quot;feed the cat&quot;
-Alice enters &quot;feed the cat&quot; into &quot;What needs to be done?&quot; input box
-Alice presses key Enter in &quot;What needs to be done?&quot; input box
-Alice waits until displayed items does contain &quot;feed the cat&quot;
-Alice ensures that displayed items does equal [ &quot;buy some cheese&quot;, &quot;feed the cat&quot; ]
-Alice ensures that persisted items does equal displayed items
-Todo List App should allow me to add todo items #3 - Retries: Attempt #1
-Alice starts with an empty todo list
-Alice navigates to &quot;/&quot;
-Alice ensures that website title does equal &quot;Serenity/JS TodoApp&quot;
-Alice records an item called &quot;buy some cheese&quot;
-Alice enters &quot;buy some cheese&quot; into &quot;What needs to be done?&quot; input box
-Alice presses key Enter in &quot;What needs to be done?&quot; input box
-Alice waits until displayed items does contain &quot;buy some cheese&quot;
-Alice ensures that displayed items does equal [ &quot;buy some cheese&quot; ]
-Alice records an item called &quot;feed the cat&quot;
-Alice enters &quot;feed the cat&quot; into &quot;What needs to be done?&quot; input box
-Alice presses key Enter in &quot;What needs to be done?&quot; input box
-Alice waits until displayed items does contain &quot;feed the cat&quot;
-Alice ensures that displayed items does equal [ &quot;buy some cheese&quot;, &quot;feed the cat&quot; ]
-Alice ensures that persisted items does equal displayed items
-Todo List App should clear text input field when an item is added #1 - Retries: Attempt #1
-Alice starts with an empty todo list
-Alice navigates to &quot;/&quot;
-Alice ensures that website title does equal &quot;Serenity/JS TodoApp&quot;
-Alice records an item called &quot;buy some cheese&quot;
-Alice enters &quot;buy some cheese&quot; into &quot;What needs to be done?&quot; input box
-Alice presses key Enter in &quot;What needs to be done?&quot; input box
-Alice waits until displayed items does contain &quot;buy some cheese&quot;
-Alice ensures that the value of &quot;What needs to be done?&quot; input box does equal &quot;&quot;
-Alice ensures that &quot;buy some cheese&quot; does equal &quot;buy some cheese&quot;
-Alice ensures that false does equal false
-Todo List App should clear text input field when an item is added #2 - Retries: Attempt #1
-Alice starts with an empty todo list
-Alice navigates to &quot;/&quot;
-Alice ensures that website title does equal &quot;Serenity/JS TodoApp&quot;
-Alice records an item called &quot;buy some cheese&quot;
-Alice enters &quot;buy some cheese&quot; into &quot;What needs to be done?&quot; input box
-Alice presses key Enter in &quot;What needs to be done?&quot; input box
-Alice waits until displayed items does contain &quot;buy some cheese&quot;
-Alice ensures that the value of &quot;What needs to be done?&quot; input box does equal &quot;&quot;
-Alice ensures that &quot;buy some cheese&quot; does equal &quot;buy some cheese&quot;
-Alice ensures that false does equal false
-Todo List App should clear text input field when an item is added #3 - Retries: Attempt #1
-Alice starts with an empty todo list
-Alice navigates to &quot;/&quot;
-Alice ensures that website title does equal &quot;Serenity/JS TodoApp&quot;
-Alice records an item called &quot;buy some cheese&quot;
-Alice enters &quot;buy some cheese&quot; into &quot;What needs to be done?&quot; input box
-Alice presses key Enter in &quot;What needs to be done?&quot; input box
-Alice waits until displayed items does contain &quot;buy some cheese&quot;
-Alice ensures that the value of &quot;What needs to be done?&quot; input box does equal &quot;&quot;
-Alice ensures that &quot;buy some cheese&quot; does equal &quot;buy some cheese&quot;
-Alice ensures that false does equal false
-Todo List App should reflect the number of items left in the counter #1 - Retries: Attempt #1
-Alice starts with a list containing 3 items
-Alice starts with an empty todo list
-Alice navigates to &quot;/&quot;
-Alice ensures that website title does equal &quot;Serenity/JS TodoApp&quot;
-Alice records an item called &quot;buy some cheese&quot;
-Alice enters &quot;buy some cheese&quot; into &quot;What needs to be done?&quot; input box
-Alice presses key Enter in &quot;What needs to be done?&quot; input box
-Alice waits until displayed items does contain &quot;buy some cheese&quot;
-Alice records an item called &quot;feed the cat&quot;
-Alice enters &quot;feed the cat&quot; into &quot;What needs to be done?&quot; input box
-Alice presses key Enter in &quot;What needs to be done?&quot; input box
-Alice waits until displayed items does contain &quot;feed the cat&quot;
-Alice records an item called &quot;book a doctors appointment&quot;
-Alice enters &quot;book a doctors appointment&quot; into &quot;What needs to be done?&quot; input box
-Alice presses key Enter in &quot;What needs to be done?&quot; input box
-Alice waits until displayed items does contain &quot;book a doctors appointment&quot;
-Alice ensures that number of items left does equal 3
-Alice ensures that 3 does equal 3
-Todo List App should reflect the number of items left in the counter #2 - Retries: Attempt #1
-Alice starts with a list containing 3 items
-Alice starts with an empty todo list
-Alice navigates to &quot;/&quot;
-Alice ensures that website title does equal &quot;Serenity/JS TodoApp&quot;
-Alice records an item called &quot;buy some cheese&quot;
-Alice enters &quot;buy some cheese&quot; into &quot;What needs to be done?&quot; input box
-Alice presses key Enter in &quot;What needs to be done?&quot; input box
-Alice waits until displayed items does contain &quot;buy some cheese&quot;
-Alice records an item called &quot;feed the cat&quot;
-Alice enters &quot;feed the cat&quot; into &quot;What needs to be done?&quot; input box
-Alice presses key Enter in &quot;What needs to be done?&quot; input box
-Alice waits until displayed items does contain &quot;feed the cat&quot;
-Alice records an item called &quot;book a doctors appointment&quot;
-Alice enters &quot;book a doctors appointment&quot; into &quot;What needs to be done?&quot; input box
-Alice presses key Enter in &quot;What needs to be done?&quot; input box
-Alice waits until displayed items does contain &quot;book a doctors appointment&quot;
-Alice ensures that number of items left does equal 3
-Alice ensures that 3 does equal 3
-Todo List App should reflect the number of items left in the counter #3 - Retries: Attempt #1
-Alice starts with a list containing 3 items
-Alice starts with an empty todo list
-Alice navigates to &quot;/&quot;
-Alice ensures that website title does equal &quot;Serenity/JS TodoApp&quot;
-Alice records an item called &quot;buy some cheese&quot;
-Alice enters &quot;buy some cheese&quot; into &quot;What needs to be done?&quot; input box
-Alice presses key Enter in &quot;What needs to be done?&quot; input box
-Alice waits until displayed items does contain &quot;buy some cheese&quot;
-Alice records an item called &quot;feed the cat&quot;
-Alice enters &quot;feed the cat&quot; into &quot;What needs to be done?&quot; input box
-Alice presses key Enter in &quot;What needs to be done?&quot; input box
-Alice waits until displayed items does contain &quot;feed the cat&quot;
-Alice records an item called &quot;book a doctors appointment&quot;
-Alice enters &quot;book a doctors appointment&quot; into &quot;What needs to be done?&quot; input box
-Alice presses key Enter in &quot;What needs to be done?&quot; input box
-Alice waits until displayed items does contain &quot;book a doctors appointment&quot;
-Alice ensures that number of items left does equal 3
-Alice ensures that 3 does equal 3
-Todo List App should show #main and #footer sections only when list contains items #1 - Retries: Attempt #1
-Alice starts with an empty todo list
-Alice navigates to &quot;/&quot;
-Alice ensures that website title does equal &quot;Serenity/JS TodoApp&quot;
-Alice ensures that main section does not become present
-Alice ensures that footer section does not become present
-Alice records an item called &quot;buy some cheese&quot;
-Alice enters &quot;buy some cheese&quot; into &quot;What needs to be done?&quot; input box
-Alice presses key Enter in &quot;What needs to be done?&quot; input box
-Alice waits until displayed items does contain &quot;buy some cheese&quot;
-Alice ensures that main section does become visible
-Alice ensures that footer section does become visible
-Todo List App should show #main and #footer sections only when list contains items #2 - Retries: Attempt #1
-Alice starts with an empty todo list
-Alice navigates to &quot;/&quot;
-Alice ensures that website title does equal &quot;Serenity/JS TodoApp&quot;
-Alice ensures that main section does not become present
-Alice ensures that footer section does not become present
-Alice records an item called &quot;buy some cheese&quot;
-Alice enters &quot;buy some cheese&quot; into &quot;What needs to be done?&quot; input box
-Alice presses key Enter in &quot;What needs to be done?&quot; input box
-Alice waits until displayed items does contain &quot;buy some cheese&quot;
-Alice ensures that main section does become visible
-Alice ensures that footer section does become visible
-Todo List App should show #main and #footer sections only when list contains items #3 - Retries: Attempt #1
-Alice starts with an empty todo list
-Alice navigates to &quot;/&quot;
-Alice ensures that website title does equal &quot;Serenity/JS TodoApp&quot;
-Alice ensures that main section does not become present
-Alice ensures that footer section does not become present
-Alice records an item called &quot;buy some cheese&quot;
-Alice enters &quot;buy some cheese&quot; into &quot;What needs to be done?&quot; input box
-Alice presses key Enter in &quot;What needs to be done?&quot; input box
-Alice waits until displayed items does contain &quot;buy some cheese&quot;
-Alice ensures that main section does become visible
-Alice ensures that footer section does become visible
-</td>
                                                                                     <td>12</td>
                                                                                     <td>100%</td>
                                                                                     <td>
@@ -777,118 +481,6 @@ Alice ensures that footer section does become visible
                                                                                             <a href="799a2581e2cd2db4577df481d884ceaa5a1dc16303491d7aebf4609642a50994.html"> Using notes</a>
                                                                                     </td>
                                                                                     <td>1</td>
-                                                                                    <td>Todo List App should allow me to share notes across actors and browsers #1 - Retries: Attempt #1
-Alice starts with a list containing 3 items
-Alice starts with an empty todo list
-Alice navigates to &quot;/&quot;
-Alice ensures that website title does equal &quot;Serenity/JS TodoApp&quot;
-Alice records an item called &quot;buy some cheese&quot;
-Alice enters &quot;buy some cheese&quot; into &quot;What needs to be done?&quot; input box
-Alice presses key Enter in &quot;What needs to be done?&quot; input box
-Alice waits until displayed items does contain &quot;buy some cheese&quot;
-Alice records an item called &quot;feed the cat&quot;
-Alice enters &quot;feed the cat&quot; into &quot;What needs to be done?&quot; input box
-Alice presses key Enter in &quot;What needs to be done?&quot; input box
-Alice waits until displayed items does contain &quot;feed the cat&quot;
-Alice records an item called &quot;book a doctors appointment&quot;
-Alice enters &quot;book a doctors appointment&quot; into &quot;What needs to be done?&quot; input box
-Alice presses key Enter in &quot;What needs to be done?&quot; input box
-Alice waits until displayed items does contain &quot;book a doctors appointment&quot;
-Alice ensures that displayed items does equal [ &quot;buy some cheese&quot;, &quot;feed the cat&quot;, &quot;book a doctors appointment&quot; ]
-Alice takes notes:
-- items: [ &quot;buy some cheese&quot;, &quot;feed the cat&quot;, &quot;book a doctors appointment&quot; ]
-Bobby starts with an empty todo list
-Bobby navigates to &quot;/&quot;
-Bobby ensures that website title does equal &quot;Serenity/JS TodoApp&quot;
-Bobby iterates over a note of items
-Bobby records an item called &quot;buy some cheese&quot;
-Bobby enters &quot;buy some cheese&quot; into &quot;What needs to be done?&quot; input box
-Bobby presses key Enter in &quot;What needs to be done?&quot; input box
-Bobby waits until displayed items does contain &quot;buy some cheese&quot;
-Bobby records an item called &quot;feed the cat&quot;
-Bobby enters &quot;feed the cat&quot; into &quot;What needs to be done?&quot; input box
-Bobby presses key Enter in &quot;What needs to be done?&quot; input box
-Bobby waits until displayed items does contain &quot;feed the cat&quot;
-Bobby records an item called &quot;book a doctors appointment&quot;
-Bobby enters &quot;book a doctors appointment&quot; into &quot;What needs to be done?&quot; input box
-Bobby presses key Enter in &quot;What needs to be done?&quot; input box
-Bobby waits until displayed items does contain &quot;book a doctors appointment&quot;
-Bobby ensures that displayed items does equal [ &quot;buy some cheese&quot;, &quot;feed the cat&quot;, &quot;book a doctors appointment&quot; ]
-Todo List App should allow me to share notes across actors and browsers #2 - Retries: Attempt #1
-Alice starts with a list containing 3 items
-Alice starts with an empty todo list
-Alice navigates to &quot;/&quot;
-Alice ensures that website title does equal &quot;Serenity/JS TodoApp&quot;
-Alice records an item called &quot;buy some cheese&quot;
-Alice enters &quot;buy some cheese&quot; into &quot;What needs to be done?&quot; input box
-Alice presses key Enter in &quot;What needs to be done?&quot; input box
-Alice waits until displayed items does contain &quot;buy some cheese&quot;
-Alice records an item called &quot;feed the cat&quot;
-Alice enters &quot;feed the cat&quot; into &quot;What needs to be done?&quot; input box
-Alice presses key Enter in &quot;What needs to be done?&quot; input box
-Alice waits until displayed items does contain &quot;feed the cat&quot;
-Alice records an item called &quot;book a doctors appointment&quot;
-Alice enters &quot;book a doctors appointment&quot; into &quot;What needs to be done?&quot; input box
-Alice presses key Enter in &quot;What needs to be done?&quot; input box
-Alice waits until displayed items does contain &quot;book a doctors appointment&quot;
-Alice ensures that displayed items does equal [ &quot;buy some cheese&quot;, &quot;feed the cat&quot;, &quot;book a doctors appointment&quot; ]
-Alice takes notes:
-- items: [ &quot;buy some cheese&quot;, &quot;feed the cat&quot;, &quot;book a doctors appointment&quot; ]
-Bobby starts with an empty todo list
-Bobby navigates to &quot;/&quot;
-Bobby ensures that website title does equal &quot;Serenity/JS TodoApp&quot;
-Bobby iterates over a note of items
-Bobby records an item called &quot;buy some cheese&quot;
-Bobby enters &quot;buy some cheese&quot; into &quot;What needs to be done?&quot; input box
-Bobby presses key Enter in &quot;What needs to be done?&quot; input box
-Bobby waits until displayed items does contain &quot;buy some cheese&quot;
-Bobby records an item called &quot;feed the cat&quot;
-Bobby enters &quot;feed the cat&quot; into &quot;What needs to be done?&quot; input box
-Bobby presses key Enter in &quot;What needs to be done?&quot; input box
-Bobby waits until displayed items does contain &quot;feed the cat&quot;
-Bobby records an item called &quot;book a doctors appointment&quot;
-Bobby enters &quot;book a doctors appointment&quot; into &quot;What needs to be done?&quot; input box
-Bobby presses key Enter in &quot;What needs to be done?&quot; input box
-Bobby waits until displayed items does contain &quot;book a doctors appointment&quot;
-Bobby ensures that displayed items does equal [ &quot;buy some cheese&quot;, &quot;feed the cat&quot;, &quot;book a doctors appointment&quot; ]
-Todo List App should allow me to share notes across actors and browsers #3 - Retries: Attempt #1
-Alice starts with a list containing 3 items
-Alice starts with an empty todo list
-Alice navigates to &quot;/&quot;
-Alice ensures that website title does equal &quot;Serenity/JS TodoApp&quot;
-Alice records an item called &quot;buy some cheese&quot;
-Alice enters &quot;buy some cheese&quot; into &quot;What needs to be done?&quot; input box
-Alice presses key Enter in &quot;What needs to be done?&quot; input box
-Alice waits until displayed items does contain &quot;buy some cheese&quot;
-Alice records an item called &quot;feed the cat&quot;
-Alice enters &quot;feed the cat&quot; into &quot;What needs to be done?&quot; input box
-Alice presses key Enter in &quot;What needs to be done?&quot; input box
-Alice waits until displayed items does contain &quot;feed the cat&quot;
-Alice records an item called &quot;book a doctors appointment&quot;
-Alice enters &quot;book a doctors appointment&quot; into &quot;What needs to be done?&quot; input box
-Alice presses key Enter in &quot;What needs to be done?&quot; input box
-Alice waits until displayed items does contain &quot;book a doctors appointment&quot;
-Alice ensures that displayed items does equal [ &quot;buy some cheese&quot;, &quot;feed the cat&quot;, &quot;book a doctors appointment&quot; ]
-Alice takes notes:
-- items: [ &quot;buy some cheese&quot;, &quot;feed the cat&quot;, &quot;book a doctors appointment&quot; ]
-Bobby starts with an empty todo list
-Bobby navigates to &quot;/&quot;
-Bobby ensures that website title does equal &quot;Serenity/JS TodoApp&quot;
-Bobby iterates over a note of items
-Bobby records an item called &quot;buy some cheese&quot;
-Bobby enters &quot;buy some cheese&quot; into &quot;What needs to be done?&quot; input box
-Bobby presses key Enter in &quot;What needs to be done?&quot; input box
-Bobby waits until displayed items does contain &quot;buy some cheese&quot;
-Bobby records an item called &quot;feed the cat&quot;
-Bobby enters &quot;feed the cat&quot; into &quot;What needs to be done?&quot; input box
-Bobby presses key Enter in &quot;What needs to be done?&quot; input box
-Bobby waits until displayed items does contain &quot;feed the cat&quot;
-Bobby records an item called &quot;book a doctors appointment&quot;
-Bobby enters &quot;book a doctors appointment&quot; into &quot;What needs to be done?&quot; input box
-Bobby presses key Enter in &quot;What needs to be done?&quot; input box
-Bobby waits until displayed items does contain &quot;book a doctors appointment&quot;
-Bobby ensures that displayed items does equal [ &quot;buy some cheese&quot;, &quot;feed the cat&quot;, &quot;book a doctors appointment&quot; ]
-</td>
                                                                                     <td>3</td>
                                                                                     <td>100%</td>
                                                                                     <td>
@@ -912,19 +504,6 @@ Bobby ensures that displayed items does equal [ &quot;buy some cheese&quot;, &qu
                                                                                             <a href="e576d1bb70c25689131d58f2237575124ef2b6a882f63c82dfd80a82af6f39ad.html"> Vanilla Playwright Test</a>
                                                                                     </td>
                                                                                     <td>4</td>
-                                                                                    <td>New Todo should allow me to add todo items #1 - Retries: Attempt #1
-New Todo should allow me to add todo items #2 - Retries: Attempt #1
-New Todo should allow me to add todo items #3 - Retries: Attempt #1
-New Todo should clear text input field when an item is added #1 - Retries: Attempt #1
-New Todo should clear text input field when an item is added #2 - Retries: Attempt #1
-New Todo should clear text input field when an item is added #3 - Retries: Attempt #1
-New Todo should reflect the number of items left in the counter #1 - Retries: Attempt #1
-New Todo should reflect the number of items left in the counter #2 - Retries: Attempt #1
-New Todo should reflect the number of items left in the counter #3 - Retries: Attempt #1
-New Todo should show #main and #footer when items added #1 - Retries: Attempt #1
-New Todo should show #main and #footer when items added #2 - Retries: Attempt #1
-New Todo should show #main and #footer when items added #3 - Retries: Attempt #1
-</td>
                                                                                     <td>12</td>
                                                                                     <td>100%</td>
                                                                                     <td>
@@ -1068,7 +647,7 @@ New Todo should show #main and #footer when items added #3 - Retries: Attempt #1
                         <i class="bi bi-stopwatch"></i> Total
                         Duration
                     </td>
-                    <td>37s</td>
+                    <td>41s</td>
                 </tr>
                 <tr scope="row">
                     <td>
@@ -1078,7 +657,7 @@ New Todo should show #main and #footer when items added #3 - Retries: Attempt #1
                     <td>
                         <i class="bi bi-trophy"></i> Fastest Test
                     </td>
-                    <td>219ms</td>
+                    <td>242ms</td>
                 </tr>
                 <tr scope="row">
                     <td>
@@ -1095,24 +674,24 @@ New Todo should show #main and #footer when items added #3 - Retries: Attempt #1
                     <td>
                         <i class="bi bi-flag-fill"></i> Tests Started
                     </td>
-                    <td>Jun 21, 2025 05:04:44</td>
+                    <td>Jun 22, 2025 05:13:54</td>
                     <td>
                         <i class="bi bi-stopwatch"></i> Average
                         Execution Time
                     </td>
-                    <td>858ms</td>
+                    <td>917ms</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stop-circle"></i> Tests
                         Finished
                     </td>
-                    <td>Jun 21, 2025 05:05:22</td>
+                    <td>Jun 22, 2025 05:14:36</td>
                     <td>
                         <i class="bi bi-stopwatch-fill"></i> Total
                         Execution Time
                     </td>
-                    <td> 5m 36s</td>
+                    <td> 5m 58s</td>
                 </tr>
                 </tbody>
             </table>
@@ -1128,7 +707,6 @@ New Todo should show #main and #footer when items added #3 - Retries: Attempt #1
                                                                     <th class="test-name-column">Scenario</th>
                                                                     <th>Context</th>
                                                                     <th>Steps</th>
-                                                                    <th>StepsText</th>
                                                                     <th>Started</th>
                                                                     <th>Total Duration</th>
                                                                     <th>Result</th>
@@ -1150,12 +728,8 @@ New Todo should show #main and #footer when items added #3 - Retries: Attempt #1
                                                                         <td><span class='context-icon'><i class='bi bi-ubuntu' title='Linux'></i> <i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-browser-firefox' title='Firefox'></i> <i class='bi bi-browser-safari' title='Safari or WebKit'></i></span><span style="display:none">linux,Chrome,Firefox,Safari or WebKit</span>
                                                                         </td>
                                                                         <td>3</td>
-                                                                        <td>JSON Placeholder /todos should retrieve a todo item by id #1 - Retries: Attempt #1
-JSON Placeholder /todos should retrieve a todo item by id #2 - Retries: Attempt #1
-JSON Placeholder /todos should retrieve a todo item by id #3 - Retries: Attempt #1
-</td>
-                                                                        <td data-order="1750482284">05:04:44</td>
-                                                                        <td>24s 238ms</td>
+                                                                        <td data-order="1750569234">05:13:54</td>
+                                                                        <td>27s 599ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1175,12 +749,8 @@ JSON Placeholder /todos should retrieve a todo item by id #3 - Retries: Attempt 
                                                                         <td><span class='context-icon'><i class='bi bi-ubuntu' title='Linux'></i> <i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-browser-firefox' title='Firefox'></i> <i class='bi bi-browser-safari' title='Safari or WebKit'></i></span><span style="display:none">linux,Chrome,Firefox,Safari or WebKit</span>
                                                                         </td>
                                                                         <td>3</td>
-                                                                        <td>GitHub Pages should check the state of the system before interacting with the UI #1 - Retries: Attempt #1
-GitHub Pages should check the state of the system before interacting with the UI #2 - Retries: Attempt #1
-GitHub Pages should check the state of the system before interacting with the UI #3 - Retries: Attempt #1
-</td>
-                                                                        <td data-order="1750482284">05:04:44</td>
-                                                                        <td>25s 510ms</td>
+                                                                        <td data-order="1750569236">05:13:56</td>
+                                                                        <td>27s 393ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1200,12 +770,8 @@ GitHub Pages should check the state of the system before interacting with the UI
                                                                         <td><span class='context-icon'><i class='bi bi-ubuntu' title='Linux'></i> <i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-browser-firefox' title='Firefox'></i> <i class='bi bi-browser-safari' title='Safari or WebKit'></i></span><span style="display:none">linux,Chrome,Firefox,Safari or WebKit</span>
                                                                         </td>
                                                                         <td>3</td>
-                                                                        <td>Todo List App supports multiple actors using separate browsers #1 - Retries: Attempt #1
-Todo List App supports multiple actors using separate browsers #2 - Retries: Attempt #1
-Todo List App supports multiple actors using separate browsers #3 - Retries: Attempt #1
-</td>
-                                                                        <td data-order="1750482285">05:04:45</td>
-                                                                        <td>26s 662ms</td>
+                                                                        <td data-order="1750569237">05:13:57</td>
+                                                                        <td>28s 319ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1225,12 +791,8 @@ Todo List App supports multiple actors using separate browsers #3 - Retries: Att
                                                                         <td><span class='context-icon'><i class='bi bi-ubuntu' title='Linux'></i> <i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-browser-firefox' title='Firefox'></i> <i class='bi bi-browser-safari' title='Safari or WebKit'></i></span><span style="display:none">linux,Chrome,Firefox,Safari or WebKit</span>
                                                                         </td>
                                                                         <td>3</td>
-                                                                        <td>Todo List App should allow me to add todo items #1 - Retries: Attempt #1
-Todo List App should allow me to add todo items #2 - Retries: Attempt #1
-Todo List App should allow me to add todo items #3 - Retries: Attempt #1
-</td>
-                                                                        <td data-order="1750482286">05:04:46</td>
-                                                                        <td>26s 877ms</td>
+                                                                        <td data-order="1750569238">05:13:58</td>
+                                                                        <td>28s 693ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1250,12 +812,8 @@ Todo List App should allow me to add todo items #3 - Retries: Attempt #1
                                                                         <td><span class='context-icon'><i class='bi bi-ubuntu' title='Linux'></i> <i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-browser-firefox' title='Firefox'></i> <i class='bi bi-browser-safari' title='Safari or WebKit'></i></span><span style="display:none">linux,Chrome,Firefox,Safari or WebKit</span>
                                                                         </td>
                                                                         <td>3</td>
-                                                                        <td>Todo List App should clear text input field when an item is added #1 - Retries: Attempt #1
-Todo List App should clear text input field when an item is added #2 - Retries: Attempt #1
-Todo List App should clear text input field when an item is added #3 - Retries: Attempt #1
-</td>
-                                                                        <td data-order="1750482287">05:04:47</td>
-                                                                        <td>27s 202ms</td>
+                                                                        <td data-order="1750569239">05:13:59</td>
+                                                                        <td>29s 239ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1275,12 +833,8 @@ Todo List App should clear text input field when an item is added #3 - Retries: 
                                                                         <td><span class='context-icon'><i class='bi bi-ubuntu' title='Linux'></i> <i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-browser-firefox' title='Firefox'></i> <i class='bi bi-browser-safari' title='Safari or WebKit'></i></span><span style="display:none">linux,Chrome,Firefox,Safari or WebKit</span>
                                                                         </td>
                                                                         <td>3</td>
-                                                                        <td>Todo List App should reflect the number of items left in the counter #1 - Retries: Attempt #1
-Todo List App should reflect the number of items left in the counter #2 - Retries: Attempt #1
-Todo List App should reflect the number of items left in the counter #3 - Retries: Attempt #1
-</td>
-                                                                        <td data-order="1750482287">05:04:47</td>
-                                                                        <td>27s 831ms</td>
+                                                                        <td data-order="1750569239">05:13:59</td>
+                                                                        <td>29s 872ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1300,12 +854,8 @@ Todo List App should reflect the number of items left in the counter #3 - Retrie
                                                                         <td><span class='context-icon'><i class='bi bi-ubuntu' title='Linux'></i> <i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-browser-firefox' title='Firefox'></i> <i class='bi bi-browser-safari' title='Safari or WebKit'></i></span><span style="display:none">linux,Chrome,Firefox,Safari or WebKit</span>
                                                                         </td>
                                                                         <td>3</td>
-                                                                        <td>Todo List App should show #main and #footer sections only when list contains items #1 - Retries: Attempt #1
-Todo List App should show #main and #footer sections only when list contains items #2 - Retries: Attempt #1
-Todo List App should show #main and #footer sections only when list contains items #3 - Retries: Attempt #1
-</td>
-                                                                        <td data-order="1750482287">05:04:47</td>
-                                                                        <td>28s 720ms</td>
+                                                                        <td data-order="1750569240">05:14:00</td>
+                                                                        <td>30s 317ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1325,12 +875,8 @@ Todo List App should show #main and #footer sections only when list contains ite
                                                                         <td><span class='context-icon'><i class='bi bi-ubuntu' title='Linux'></i> <i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-browser-firefox' title='Firefox'></i> <i class='bi bi-browser-safari' title='Safari or WebKit'></i></span><span style="display:none">linux,Chrome,Firefox,Safari or WebKit</span>
                                                                         </td>
                                                                         <td>3</td>
-                                                                        <td>Todo List App should allow me to share notes across actors and browsers #1 - Retries: Attempt #1
-Todo List App should allow me to share notes across actors and browsers #2 - Retries: Attempt #1
-Todo List App should allow me to share notes across actors and browsers #3 - Retries: Attempt #1
-</td>
-                                                                        <td data-order="1750482288">05:04:48</td>
-                                                                        <td>29s 899ms</td>
+                                                                        <td data-order="1750569241">05:14:01</td>
+                                                                        <td>31s 366ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1350,12 +896,8 @@ Todo List App should allow me to share notes across actors and browsers #3 - Ret
                                                                         <td><span style="display:none"></span>
                                                                         </td>
                                                                         <td>3</td>
-                                                                        <td>New Todo should allow me to add todo items #1 - Retries: Attempt #1
-New Todo should allow me to add todo items #2 - Retries: Attempt #1
-New Todo should allow me to add todo items #3 - Retries: Attempt #1
-</td>
-                                                                        <td data-order="1750482290">05:04:50</td>
-                                                                        <td>29s 427ms</td>
+                                                                        <td data-order="1750569243">05:14:03</td>
+                                                                        <td>30s 820ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1375,12 +917,8 @@ New Todo should allow me to add todo items #3 - Retries: Attempt #1
                                                                         <td><span style="display:none"></span>
                                                                         </td>
                                                                         <td>3</td>
-                                                                        <td>New Todo should clear text input field when an item is added #1 - Retries: Attempt #1
-New Todo should clear text input field when an item is added #2 - Retries: Attempt #1
-New Todo should clear text input field when an item is added #3 - Retries: Attempt #1
-</td>
-                                                                        <td data-order="1750482291">05:04:51</td>
-                                                                        <td>29s 731ms</td>
+                                                                        <td data-order="1750569243">05:14:03</td>
+                                                                        <td>31s 125ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1400,12 +938,8 @@ New Todo should clear text input field when an item is added #3 - Retries: Attem
                                                                         <td><span style="display:none"></span>
                                                                         </td>
                                                                         <td>3</td>
-                                                                        <td>New Todo should reflect the number of items left in the counter #1 - Retries: Attempt #1
-New Todo should reflect the number of items left in the counter #2 - Retries: Attempt #1
-New Todo should reflect the number of items left in the counter #3 - Retries: Attempt #1
-</td>
-                                                                        <td data-order="1750482291">05:04:51</td>
-                                                                        <td>30s 209ms</td>
+                                                                        <td data-order="1750569244">05:14:04</td>
+                                                                        <td>31s 558ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1425,12 +959,8 @@ New Todo should reflect the number of items left in the counter #3 - Retries: At
                                                                         <td><span style="display:none"></span>
                                                                         </td>
                                                                         <td>3</td>
-                                                                        <td>New Todo should show #main and #footer when items added #1 - Retries: Attempt #1
-New Todo should show #main and #footer when items added #2 - Retries: Attempt #1
-New Todo should show #main and #footer when items added #3 - Retries: Attempt #1
-</td>
-                                                                        <td data-order="1750482291">05:04:51</td>
-                                                                        <td>30s 574ms</td>
+                                                                        <td data-order="1750569244">05:14:04</td>
+                                                                        <td>31s 887ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1567,7 +1097,7 @@ New Todo should show #main and #footer when items added #3 - Retries: Attempt #1
 <div class="container-fluid">
     <div class="row">
         <div class="col-sm-12">
-            <span class="version">Serenity BDD version 4.2.30</span>
+            <span class="version">Serenity BDD version 4.2.34</span>
         </div>
     </div>
 </div>
@@ -1774,7 +1304,7 @@ New Todo should show #main and #footer when items added #3 - Retries: Attempt #1
             datasets: [{
                 label: 'Number of tests per duration',
                 fill: false,
-                data: ['25','11','0','0','0','0','0','0'],
+                data: ['21','15','0','0','0','0','0','0'],
                 backgroundColor: 'rgba(83, 146, 255,0.5)',
                 borderColor: 'rgba(83, 146, 255, 1)',
             }]
