@@ -33,7 +33,7 @@
     "node": "^18.12 || ^20 || ^22"
   },
   "dependencies": {
-    "@playwright/test": "1.53.2",
+    "@playwright/test": "1.54.1",
     "@serenity-js/assertions": "^3.32.3",
     "@serenity-js/console-reporter": "^3.32.3",
     "@serenity-js/core": "^3.32.3",
