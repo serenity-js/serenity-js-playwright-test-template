@@ -105,17 +105,21 @@
 
 
 
+
     <script class="code" type="text/javascript">$(document).ready(function () {
 
-
             $("#scenario-results").DataTable({
-                "order": [[0, "asc",], [3, "asc",]],
+                "order": [[0, "asc",], [1, "asc",], [2, "asc",]],
                 "language": {
                     searchPlaceholder: "Filter",
                     search: ""
                 },
                 columnDefs: [
-                    {type: 'time-elapsed-dhms', targets: 4}
+                    {
+                        targets: 4,
+                        visible: false
+                    },
+                    {type: 'time-elapsed-dhms', targets: 6}
                 ]
             })
             $("#manual-scenario-results").DataTable({
@@ -124,17 +128,47 @@
                     searchPlaceholder: "Filter",
                     search: ""
                 },
+                columnDefs: [
+                    {
+                        targets: 4,
+                        visible: false
+                    },
+                ]
             })
 
-        // Results table
-        $('#test-results-table').DataTable({
-            "order": [[0, "asc",], [3, "asc",]],
-            "pageLength": 100,
-            "lengthMenu": [[25, 50, 100, 200, -1], [25, 50, 100, 200, "All"]]
-        });
+            // Results table
+            $('#test-results-table').DataTable({
+                "order": [[0, "asc",], [3, "asc",]],
+                "pageLength": 10,
+                "lengthMenu": [[10, 25, 50, 100, 200, -1], [10, 25, 50, 100, 200, "All"]]
+            });
 
-    })
-    ;
+            $('#evidence-table').DataTable({
+                searching: false,
+                paging: false,
+                info: false
+            });
+
+            $(".feature-coverage-table").DataTable({
+                searching: true,
+                paging: false,
+                info: false,
+                language: {
+                    searchPlaceholder: "Filter",
+                    search: ""
+                },
+            });
+
+            $(".feature-coverage-table-with-pagination").DataTable({
+                searching: true,
+                order: [[0, "asc",]],
+                pageLength: 10,
+                language: {
+                    searchPlaceholder: "Filter",
+                    search: ""
+                },
+            });
+        });
     </script>
 </head>
 
@@ -157,9 +191,10 @@
     <div id="contenttop">
         <div class="middlebg">
         <span class="breadcrumbs"><a href="index.html">Home</a>
-                > Browser 
-                > <span
-                    class="truncate-60">Chromium 140.0.7339.186 > Duration 1 To 10 Seconds</span>
+                    > Browser 
+                > <span class="truncate-60">
+                Chromium 141.0.7390.37
+            </span>
         </span>
         </div>
         <div class="rightbg"></div>
@@ -179,7 +214,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 06-10-2025 22:58:11</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 06-10-2025 23:03:06</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -188,22 +223,17 @@
         <div class="middlb">
             <div class="table">
 
-                <h2><i class='bi bi-tags'></i> Browser: Chromium 140.0.7339.186 > Duration 1 To 10 Seconds</h2>
+                <h2><i class='bi bi-tags'></i> Browser: Chromium 141.0.7390.37</h2>
                 <table class='overview'>
                     <tr>
                         <td width="375px" valign="top">
                             <div class="test-count-summary">
-                                <div>
-
-                                    9 tests
+                                <div class="test-count-title">
+                                    24 tests
 
                                      |
-                                        <a href="c22dae917596564beac307e1cc2a43bf38b7d25bed6879f2c525e2815f04d835.csv" title="Download CSV"> <i class="bi bi-cloud-arrow-down" title="Download CSV"></i></a>
-
-                                    <p class="report-info"><i class="bi bi-info-circle"></i> Note that results include
-                                        data-driven scenarios containing tests ,
-                                        which may also contain results other than tests .</p>
-
+                                        <a href="ba887fc852fe32ac2786d4b97c1d435a87df4048ec383e89ae950fe585cb4b58.csv" title="Download CSV"> <i class="bi bi-cloud-arrow-down"
+                                                                                        title="Download CSV"></i></a>
 
 
                                 </div>
@@ -212,7 +242,8 @@
                             <div>
                                 <ul class="nav nav-tabs">
                                     <li class="active">
-                                        <a data-toggle="tab" href="#summary"><i class="bi bi-house-door"></i> Summary</a>
+                                        <a data-toggle="tab" href="#summary"><i class="bi bi-house-door"></i>
+                                            Summary</a>
                                     </li>
                                     <li>
                                         <a data-toggle="tab" href="#tests"><i class="bi bi-speedometer"></i> Test
@@ -220,12 +251,48 @@
                                     </li>
                                 </ul>
 
+
                                 <div class="card border">
                                     <div class="tab-content" id="pills-tabContent">
                                         <div id="summary" class="tab-pane fade in active">
                                             <div class="container-fluid">
+                                                <div class="dashboard-charts row">
+                                                    <div class="col-lg-4 col-md-6 col-sm-9">
+                                                        <!-- PIE CHART -->
+                                                        <h4><i class="bi bi-pie-chart"></i> Overview</h4>
+                                                            <div class="chart-container">
+                                                                <canvas id="resultChart" height="200px"></canvas>
+                                                            </div>
+                                                    </div>
+                                                    <div class="col-lg-4 col-md-6 col-sm-9">
+                                                        <h4><i class="bi bi-check-square"></i> Test Outcomes</h4>
+                                                        <!-- Severity bar chart -->
+                                                        <div class="chart-container">
+                                                            <canvas id="severityChart" height="200px"></canvas>
+                                                        </div>
+                                                    </div>
+                                                        <div class="col-lg-4 col-md-6 col-sm-9">
+                                                            <h4><i class="bi bi-graph-up"></i> Test Performance</h4>
+
+                                                            <!-- Duration bar chart -->
+                                                            <div class="chart-container">
+                                                                <canvas id="durationChart" height="200px"></canvas>
+                                                            </div>
+                                                        </div>
+                                                </div>
+                                            </div>
+                                            <div class="container-fluid">
                                                 <div class="row">
-                                                    <div class="col-sm-4">
+                                                        <div class="col-lg-8 col-md-8 col-sm-9">
+                                                            <!-- High level coverage bar chart -->
+                                                            <div class="chart-container">
+                                                                <h3><i class="bi bi-reception-3"></i> Functional
+                                                                    Coverage Overview</h3>
+                                                                <h4>Features</h4>
+                                                                <canvas id="coverageChart"></canvas>
+                                                            </div>
+                                                        </div>
+                                                    <div class="col-lg-4 col-md-4 col-sm-6">
     <div>
         <h3><i class="bi bi-speedometer2"></i> Key Statistics</h3>
         <div>
@@ -235,46 +302,46 @@
                     <td>
                         <i class="bi bi-card-checklist"></i> Number of Scenarios
                     </td>
-                    <td>5</td>
+                    <td>8</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-caret-right"></i> Total Number of Test Cases
                     </td>
-                    <td>9</td>
+                    <td>24</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-flag-fill"></i> Tests Started
                     </td>
-                    <td>Oct 06, 2025 22:57:28</td>
+                    <td>Oct 06, 2025 23:02:16</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stop-circle"></i> Tests
                         Finished
                     </td>
-                    <td>Oct 06, 2025 22:58:02</td>
+                    <td>Oct 06, 2025 23:02:55</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stopwatch"></i> Total
                         Duration
                     </td>
-                    <td>34s</td>
+                    <td>39s</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-trophy"></i> Fastest Test
                     </td>
-                    <td>1s</td>
+                    <td>205ms</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-skip-start"></i> Slowest
                         Test
                     </td>
-                    <td>2s</td>
+                    <td>5s</td>
                 </tr>
                 <tr scope="row">
                     <td>
@@ -288,138 +355,15 @@
                         <i class="bi bi-stopwatch-fill"></i> Total
                         Execution Time
                     </td>
-                    <td>13s</td>
+                    <td> 4m 17s</td>
                 </tr>
                 </tbody>
             </table>
         </div>
     </div>
                                                     </div>
-                                                    <div class="col-sm-4">
-                                                        <h4><i class="bi bi-check-square"></i> Test Outcomes</h4>
-                                                        <!-- Severity bar chart -->
-                                                        <div class="chart-container" style="position: relative; width:30vw">
-                                                            <canvas id="severityChart" width="300" height="300"></canvas>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="col-sm-4">
-                                                        <h4><i class="bi bi-graph-up"></i> Test Performance</h4>
-
-                                                        <!-- Duration bar chart -->
-                                                        <div class="chart-container" style="position: relative; width:30vw">
-                                                            <canvas id="durationChart" width="300" height="300"></canvas>
-                                                        </div>
-                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="container-fluid">
-                                                <div class="row">
-                                                        <div class="col-sm-12">
-                                                            <!-- High level coverage bar chart -->
-                                                            <div class="chart-container" style="position: relative; width:60vw">
-                                                                <h3><i class="bi bi-reception-3"></i> Functional Coverage Overview</h3>
-                                                                <h4>Features</h4>
-                                                                <canvas id="coverageChart"></canvas>
-                                                            </div>
-                                                        </div>
-                                                </div>
-                                                    <div class="row">
-                                                        <div class="col-sm-12">
-                                                            <h3>Tags</h3>
-
-                                                                <div class="card">
-                                                                    <div class="card-body">
-                                                                            <h5 class="card-title">Browser</h5>
-                                                                        <div>
-                                                                                <a href="f8988b6ee6a6419081554784d445a3e09ab0012b39e23310f4645b463a70a460.html">
-                                                                                    <span class="badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
-                                                                                        <i class="bi bi-tag"></i> Webkit 26.0&nbsp;&nbsp;&nbsp;9
-                                                                                    </span>
-                                                                                </a>
-                                                                                <a href="fe7c749ed87eb75266709f623740ac9ddab23d238f2105e0895145b84840e572.html">
-                                                                                    <span class="badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
-                                                                                        <i class="bi bi-tag"></i> Chromium 140.0.7339.186&nbsp;&nbsp;&nbsp;9
-                                                                                    </span>
-                                                                                </a>
-                                                                                <a href="0441ba455f83b3df6be44eb7df6ff1b15cfb3182ca4d14c1f43db38d7ee2827d.html">
-                                                                                    <span class="badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
-                                                                                        <i class="bi bi-tag"></i> Firefox 141.0&nbsp;&nbsp;&nbsp;9
-                                                                                    </span>
-                                                                                </a>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="card">
-                                                                    <div class="card-body">
-                                                                            <h5 class="card-title">Feature</h5>
-                                                                        <div>
-                                                                                <a href="799a2581e2cd2db4577df481d884ceaa5a1dc16303491d7aebf4609642a50994.html">
-                                                                                    <span class="badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
-                                                                                        <i class="bi bi-tag"></i> Using Notes&nbsp;&nbsp;&nbsp;3
-                                                                                    </span>
-                                                                                </a>
-                                                                                <a href="73262d3560c27d55a12eafcd3bf482972e4d0cae7c21df127ffd99ba3c802097.html">
-                                                                                    <span class="badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
-                                                                                        <i class="bi bi-tag"></i> API Testing&nbsp;&nbsp;&nbsp;1
-                                                                                    </span>
-                                                                                </a>
-                                                                                <a href="0719e179199c05841092720c3c7543d36c4efb9baff0a00e08ee4e6bd8b68d7a.html">
-                                                                                    <span class="badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
-                                                                                        <i class="bi bi-tag"></i> Recording Items&nbsp;&nbsp;&nbsp;2
-                                                                                    </span>
-                                                                                </a>
-                                                                                <a href="beead259f64b0001474a05d800cec567c75cf22d25425c116a6bbd1f9389954d.html">
-                                                                                    <span class="badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
-                                                                                        <i class="bi bi-tag"></i> Blended Testing&nbsp;&nbsp;&nbsp;1
-                                                                                    </span>
-                                                                                </a>
-                                                                                <a href="39ef06ac6957911e0e85d9a47aefac8c639c0143016ebb46e4fac04edf452ce2.html">
-                                                                                    <span class="badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
-                                                                                        <i class="bi bi-tag"></i> Multi-Actor Scenarios&nbsp;&nbsp;&nbsp;2
-                                                                                    </span>
-                                                                                </a>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="card">
-                                                                    <div class="card-body">
-                                                                            <h5 class="card-title">Platform</h5>
-                                                                        <div>
-                                                                                <a href="fcc389023b4ab5b128b2188087eef7b1fc8e4ff4c332292144a7ee5264e5d7c0.html">
-                                                                                    <span class="badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
-                                                                                        <i class="bi bi-tag"></i> Linux 6.11.0-1018-Azure&nbsp;&nbsp;&nbsp;9
-                                                                                    </span>
-                                                                                </a>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="card">
-                                                                    <div class="card-body">
-                                                                            <h5 class="card-title">Project</h5>
-                                                                        <div>
-                                                                                <a href="b58eaa86a08d7b6215f33be85119c2c380c63d2b486fe98f3f265ab0d6ee8a5a.html">
-                                                                                    <span class="badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
-                                                                                        <i class="bi bi-tag"></i> Chromium&nbsp;&nbsp;&nbsp;9
-                                                                                    </span>
-                                                                                </a>
-                                                                                <a href="3350b2c5f63042dcf58707c713b4016d2e7d81a017ae47a26ec35d0ddcfa275f.html">
-                                                                                    <span class="badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
-                                                                                        <i class="bi bi-tag"></i> Webkit&nbsp;&nbsp;&nbsp;9
-                                                                                    </span>
-                                                                                </a>
-                                                                                <a href="55f65ba847c8e663dbab6b03e70e1206ff901fdfa2f80aec0fa3e24aed00af9b.html">
-                                                                                    <span class="badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
-                                                                                        <i class="bi bi-tag"></i> Firefox&nbsp;&nbsp;&nbsp;9
-                                                                                    </span>
-                                                                                </a>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                        </div>
-                                                    </div>
-                                            </div>
-
                                             <div class="container-fluid">
                                                     <div class="row">
                                                         <div class="col-sm-11">
@@ -428,12 +372,12 @@
 
                                                                     <h4>Features</h4>
 
-                                                                    <table class="table feature-coverage-table" id="Feature">
+                                                                    <table class="table feature-coverage-table" id="Feature" style="width:100%">
                                                                         <thead>
                                                                         <tr>
                                                                             <th>Feature</th>
-                                                                            <th style="width:1em;">Test&nbsp;Cases</th>
                                                                             <th style="width:1em;">Scenarios</th>
+                                                                            <th style="width:1em;">Test&nbsp;Cases</th>
                                                                             <th style="width:1em;">%&nbsp;Pass</th>
                                                                             <th style="width:1em;">Result</th>
                                                                             <th>Coverage</th>
@@ -442,103 +386,103 @@
                                                                         <tbody>
                                                                                 <tr>
                                                                                     <td>
-                                                                                            <a href="73262d3560c27d55a12eafcd3bf482972e4d0cae7c21df127ffd99ba3c802097.html" > API Testing</a>
-                                                                                    </td>
-                                                                                    <td>1</td>
-                                                                                    <td>1</td>
-                                                                                    <td>300%</td>
-                                                                                    <td>
-                                                                                            <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
-                                                                                    </td>
-                                                                                    <td>
-                                                                                        <div class="progress">
-                                                                                                <div class="progress-bar"
-                                                                                                     role="progressbar"
-                                                                                                     style="width: 100%; background-color: #b0cf73"
-                                                                                                     aria-valuenow="1"
-                                                                                                     title="100% success"
-                                                                                                     aria-valuemin="0"
-                                                                                                     aria-valuemax="100">
-                                                                                                </div>
-                                                                                        </div>
-                                                                                    </td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td>
-                                                                                            <a href="beead259f64b0001474a05d800cec567c75cf22d25425c116a6bbd1f9389954d.html" > Blended Testing</a>
-                                                                                    </td>
-                                                                                    <td>1</td>
-                                                                                    <td>1</td>
-                                                                                    <td>300%</td>
-                                                                                    <td>
-                                                                                            <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
-                                                                                    </td>
-                                                                                    <td>
-                                                                                        <div class="progress">
-                                                                                                <div class="progress-bar"
-                                                                                                     role="progressbar"
-                                                                                                     style="width: 100%; background-color: #b0cf73"
-                                                                                                     aria-valuenow="1"
-                                                                                                     title="100% success"
-                                                                                                     aria-valuemin="0"
-                                                                                                     aria-valuemax="100">
-                                                                                                </div>
-                                                                                        </div>
-                                                                                    </td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td>
-                                                                                            <a href="39ef06ac6957911e0e85d9a47aefac8c639c0143016ebb46e4fac04edf452ce2.html" > Multi-actor scenarios</a>
-                                                                                    </td>
-                                                                                    <td>1</td>
-                                                                                    <td>2</td>
-                                                                                    <td>300%</td>
-                                                                                    <td>
-                                                                                            <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
-                                                                                    </td>
-                                                                                    <td>
-                                                                                        <div class="progress">
-                                                                                                <div class="progress-bar"
-                                                                                                     role="progressbar"
-                                                                                                     style="width: 100%; background-color: #b0cf73"
-                                                                                                     aria-valuenow="2"
-                                                                                                     title="100% success"
-                                                                                                     aria-valuemin="0"
-                                                                                                     aria-valuemax="100">
-                                                                                                </div>
-                                                                                        </div>
-                                                                                    </td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td>
-                                                                                            <a href="0719e179199c05841092720c3c7543d36c4efb9baff0a00e08ee4e6bd8b68d7a.html" > Recording items</a>
-                                                                                    </td>
-                                                                                    <td>1</td>
-                                                                                    <td>2</td>
-                                                                                    <td>300%</td>
-                                                                                    <td>
-                                                                                            <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
-                                                                                    </td>
-                                                                                    <td>
-                                                                                        <div class="progress">
-                                                                                                <div class="progress-bar"
-                                                                                                     role="progressbar"
-                                                                                                     style="width: 100%; background-color: #b0cf73"
-                                                                                                     aria-valuenow="2"
-                                                                                                     title="100% success"
-                                                                                                     aria-valuemin="0"
-                                                                                                     aria-valuemax="100">
-                                                                                                </div>
-                                                                                        </div>
-                                                                                    </td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td>
-                                                                                            <a href="799a2581e2cd2db4577df481d884ceaa5a1dc16303491d7aebf4609642a50994.html" > Using notes</a>
+                                                                                            <a href="73262d3560c27d55a12eafcd3bf482972e4d0cae7c21df127ffd99ba3c802097.html"> API Testing</a>
                                                                                     </td>
                                                                                     <td>1</td>
                                                                                     <td>3</td>
-                                                                                    <td>300%</td>
+                                                                                    <td>100%</td>
+                                                                                    <td>
+                                                                                            <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <div class="progress">
+                                                                                                <div class="progress-bar"
+                                                                                                     role="progressbar"
+                                                                                                     style="width: 100%; background-color: #b0cf73"
+                                                                                                     aria-valuenow="3"
+                                                                                                     title="100% success"
+                                                                                                     aria-valuemin="0"
+                                                                                                     aria-valuemax="100">
+                                                                                                </div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>
+                                                                                            <a href="beead259f64b0001474a05d800cec567c75cf22d25425c116a6bbd1f9389954d.html"> Blended Testing</a>
+                                                                                    </td>
+                                                                                    <td>1</td>
+                                                                                    <td>3</td>
+                                                                                    <td>100%</td>
+                                                                                    <td>
+                                                                                            <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <div class="progress">
+                                                                                                <div class="progress-bar"
+                                                                                                     role="progressbar"
+                                                                                                     style="width: 100%; background-color: #b0cf73"
+                                                                                                     aria-valuenow="3"
+                                                                                                     title="100% success"
+                                                                                                     aria-valuemin="0"
+                                                                                                     aria-valuemax="100">
+                                                                                                </div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>
+                                                                                            <a href="39ef06ac6957911e0e85d9a47aefac8c639c0143016ebb46e4fac04edf452ce2.html"> Multi-actor scenarios</a>
+                                                                                    </td>
+                                                                                    <td>1</td>
+                                                                                    <td>3</td>
+                                                                                    <td>100%</td>
+                                                                                    <td>
+                                                                                            <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <div class="progress">
+                                                                                                <div class="progress-bar"
+                                                                                                     role="progressbar"
+                                                                                                     style="width: 100%; background-color: #b0cf73"
+                                                                                                     aria-valuenow="3"
+                                                                                                     title="100% success"
+                                                                                                     aria-valuemin="0"
+                                                                                                     aria-valuemax="100">
+                                                                                                </div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>
+                                                                                            <a href="0719e179199c05841092720c3c7543d36c4efb9baff0a00e08ee4e6bd8b68d7a.html"> Recording items</a>
+                                                                                    </td>
+                                                                                    <td>4</td>
+                                                                                    <td>12</td>
+                                                                                    <td>100%</td>
+                                                                                    <td>
+                                                                                            <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <div class="progress">
+                                                                                                <div class="progress-bar"
+                                                                                                     role="progressbar"
+                                                                                                     style="width: 100%; background-color: #b0cf73"
+                                                                                                     aria-valuenow="12"
+                                                                                                     title="100% success"
+                                                                                                     aria-valuemin="0"
+                                                                                                     aria-valuemax="100">
+                                                                                                </div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>
+                                                                                            <a href="799a2581e2cd2db4577df481d884ceaa5a1dc16303491d7aebf4609642a50994.html"> Using notes</a>
+                                                                                    </td>
+                                                                                    <td>1</td>
+                                                                                    <td>3</td>
+                                                                                    <td>100%</td>
                                                                                     <td>
                                                                                             <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
                                                                                     </td>
@@ -571,17 +515,17 @@
                             <div>
                                     <a href="f8988b6ee6a6419081554784d445a3e09ab0012b39e23310f4645b463a70a460.html">
                                     <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Webkit 26.0&nbsp;&nbsp;&nbsp;9
+                                        <i class="bi bi-tag-fill"></i> Webkit 26.0&nbsp;&nbsp;&nbsp;24
                                     </span>
                                     </a>
-                                    <a href="fe7c749ed87eb75266709f623740ac9ddab23d238f2105e0895145b84840e572.html">
+                                    <a href="cd0516d6f9140b11f6c065b168b137fc2cc37a26a750cb92acfad3092a17994d.html">
                                     <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Chromium 140.0.7339.186&nbsp;&nbsp;&nbsp;9
+                                        <i class="bi bi-tag-fill"></i> Firefox 142.0.1&nbsp;&nbsp;&nbsp;24
                                     </span>
                                     </a>
-                                    <a href="0441ba455f83b3df6be44eb7df6ff1b15cfb3182ca4d14c1f43db38d7ee2827d.html">
+                                    <a href="ba887fc852fe32ac2786d4b97c1d435a87df4048ec383e89ae950fe585cb4b58.html">
                                     <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Firefox 141.0&nbsp;&nbsp;&nbsp;9
+                                        <i class="bi bi-tag-fill"></i> Chromium 141.0.7390.37&nbsp;&nbsp;&nbsp;24
                                     </span>
                                     </a>
                             </div>
@@ -598,22 +542,22 @@
                                     </a>
                                     <a href="73262d3560c27d55a12eafcd3bf482972e4d0cae7c21df127ffd99ba3c802097.html">
                                     <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> API Testing&nbsp;&nbsp;&nbsp;1
+                                        <i class="bi bi-tag-fill"></i> API Testing&nbsp;&nbsp;&nbsp;3
                                     </span>
                                     </a>
                                     <a href="0719e179199c05841092720c3c7543d36c4efb9baff0a00e08ee4e6bd8b68d7a.html">
                                     <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Recording Items&nbsp;&nbsp;&nbsp;2
+                                        <i class="bi bi-tag-fill"></i> Recording Items&nbsp;&nbsp;&nbsp;12
                                     </span>
                                     </a>
                                     <a href="beead259f64b0001474a05d800cec567c75cf22d25425c116a6bbd1f9389954d.html">
                                     <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Blended Testing&nbsp;&nbsp;&nbsp;1
+                                        <i class="bi bi-tag-fill"></i> Blended Testing&nbsp;&nbsp;&nbsp;3
                                     </span>
                                     </a>
                                     <a href="39ef06ac6957911e0e85d9a47aefac8c639c0143016ebb46e4fac04edf452ce2.html">
                                     <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Multi-Actor Scenarios&nbsp;&nbsp;&nbsp;2
+                                        <i class="bi bi-tag-fill"></i> Multi-Actor Scenarios&nbsp;&nbsp;&nbsp;3
                                     </span>
                                     </a>
                             </div>
@@ -625,7 +569,7 @@
                             <div>
                                     <a href="fcc389023b4ab5b128b2188087eef7b1fc8e4ff4c332292144a7ee5264e5d7c0.html">
                                     <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Linux 6.11.0-1018-Azure&nbsp;&nbsp;&nbsp;9
+                                        <i class="bi bi-tag-fill"></i> Linux 6.11.0-1018-Azure&nbsp;&nbsp;&nbsp;24
                                     </span>
                                     </a>
                             </div>
@@ -637,17 +581,17 @@
                             <div>
                                     <a href="b58eaa86a08d7b6215f33be85119c2c380c63d2b486fe98f3f265ab0d6ee8a5a.html">
                                     <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Chromium&nbsp;&nbsp;&nbsp;9
+                                        <i class="bi bi-tag-fill"></i> Chromium&nbsp;&nbsp;&nbsp;24
                                     </span>
                                     </a>
                                     <a href="3350b2c5f63042dcf58707c713b4016d2e7d81a017ae47a26ec35d0ddcfa275f.html">
                                     <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Webkit&nbsp;&nbsp;&nbsp;9
+                                        <i class="bi bi-tag-fill"></i> Webkit&nbsp;&nbsp;&nbsp;24
                                     </span>
                                     </a>
                                     <a href="55f65ba847c8e663dbab6b03e70e1206ff901fdfa2f80aec0fa3e24aed00af9b.html">
                                     <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Firefox&nbsp;&nbsp;&nbsp;9
+                                        <i class="bi bi-tag-fill"></i> Firefox&nbsp;&nbsp;&nbsp;24
                                     </span>
                                     </a>
                             </div>
@@ -657,152 +601,260 @@
         </div>
                                             </div>
                                         </div>
-                                        <div id="tests" class="tab-pane fade in">
+                                        <div id="tests" class="tab-pane fade">
                                             <div class="container-fluid">
                                                 <div class="row">
                                                     <div class="col-sm-12">
-                                                        <h3><i class="bi bi-gear"></i> Automated Tests</h3>
+    <div>
+        <h3><i class="bi bi-speedometer2"></i> Key Statistics</h3>
+        <div>
+            <table class="table table-striped table-hover">
+                <tbody>
+                <tr scope="row">
+                    <td>
+                        <i class="bi bi-card-checklist"></i> Number of Scenarios
+                    </td>
+                    <td>8</td>
+                    <td>
+                        <i class="bi bi-stopwatch"></i> Total
+                        Duration
+                    </td>
+                    <td>39s</td>
+                </tr>
+                <tr scope="row">
+                    <td>
+                        <i class="bi bi-caret-right"></i> Total Number of Test Cases
+                    </td>
+                    <td>24</td>
+                    <td>
+                        <i class="bi bi-trophy"></i> Fastest Test
+                    </td>
+                    <td>205ms</td>
+                </tr>
+                <tr scope="row">
+                    <td>
+                        <i class="bi bi-person"></i> Number of Manual Test Cases
+                    </td>
+                    <td>0</td>
+                    <td>
+                        <i class="bi bi-skip-start"></i> Slowest
+                        Test
+                    </td>
+                    <td>5s</td>
+                </tr>
+                <tr scope="row">
+                    <td>
+                        <i class="bi bi-flag-fill"></i> Tests Started
+                    </td>
+                    <td>Oct 06, 2025 23:02:16</td>
+                    <td>
+                        <i class="bi bi-stopwatch"></i> Average
+                        Execution Time
+                    </td>
+                    <td>1s</td>
+                </tr>
+                <tr scope="row">
+                    <td>
+                        <i class="bi bi-stop-circle"></i> Tests
+                        Finished
+                    </td>
+                    <td>Oct 06, 2025 23:02:55</td>
+                    <td>
+                        <i class="bi bi-stopwatch-fill"></i> Total
+                        Execution Time
+                    </td>
+                    <td> 4m 17s</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 
-                                            <table class="scenario-result-table table" id="scenario-results">
-                                                <thead>
-                                                <tr>
-                                                    <th>feature</th>
-                                                    <th class="test-name-column">Scenario</th>
-                                                    <th>Steps</th>
-                                                    <th>Started</th>
-                                                    <th>Total Duration</th>
-                                                    <th>Result</th>
-                                                </tr>
-                                                </thead>
-                                                <tbody>
-                                                            <tr class="scenario-result SUCCESS">
-                                                                <td>
-                                                                        <a href="#">API Testing</a>
-                                                                </td>
-                                                                <td>
-                                                                    <i class="bi bi-table" title="Data Driven Scenario"></i>
-                                                                    <a href="f7b760ae61cd774d07564e2c08dabac2cbdcd1b21ff6863ff1ca882be6d876a5.html">JSON Placeholder /todos should retrieve a todo item by id #3 - Retries: Attempt #1</a>
-                                                                </td>
-                                                                <td>3</td>
-                                                                <td>22:57:50</td>
-                                                                <td>1s 910ms</td>
-                                                                <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
-                                                                </td>
-                                                            </tr>
-                                                            <tr class="scenario-result SUCCESS">
-                                                                <td>
-                                                                        <a href="#">Blended Testing</a>
-                                                                </td>
-                                                                <td>
-                                                                    <i class="bi bi-table" title="Data Driven Scenario"></i>
-                                                                    <a href="2a6c708d13d9cac3fabd8842d553e4fa826a86493e487a5083fb3b6abda71530.html">GitHub Pages should check the state of the system before interacting with the UI #3 - Retries: Attempt #1</a>
-                                                                </td>
-                                                                <td>4</td>
-                                                                <td>22:57:53</td>
-                                                                <td>1s 241ms</td>
-                                                                <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
-                                                                </td>
-                                                            </tr>
-                                                            <tr class="scenario-result SUCCESS">
-                                                                <td>
-                                                                        <a href="#">Multi-actor scenarios</a>
-                                                                </td>
-                                                                <td>
-                                                                    <i class="bi bi-table" title="Data Driven Scenario"></i>
-                                                                    <a href="c1168dbbf7ac23f881dd7a685078a1ea1dff6393d8b9b93374c485b008942cae.html">Todo List App supports multiple actors using separate browsers #2 - Retries: Attempt #1</a>
-                                                                </td>
-                                                                <td>4</td>
-                                                                <td>22:57:39</td>
-                                                                <td>1s 132ms</td>
-                                                                <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
-                                                                </td>
-                                                            </tr>
-                                                            <tr class="scenario-result SUCCESS">
-                                                                <td>
-                                                                        <a href="#">Multi-actor scenarios</a>
-                                                                </td>
-                                                                <td>
-                                                                    <i class="bi bi-table" title="Data Driven Scenario"></i>
-                                                                    <a href="c1168dbbf7ac23f881dd7a685078a1ea1dff6393d8b9b93374c485b008942cae.html">Todo List App supports multiple actors using separate browsers #3 - Retries: Attempt #1</a>
-                                                                </td>
-                                                                <td>4</td>
-                                                                <td>22:57:54</td>
-                                                                <td>2s 052ms</td>
-                                                                <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
-                                                                </td>
-                                                            </tr>
-                                                            <tr class="scenario-result SUCCESS">
-                                                                <td>
-                                                                        <a href="#">Recording items</a>
-                                                                </td>
-                                                                <td>
-                                                                    <i class="bi bi-table" title="Data Driven Scenario"></i>
-                                                                    <a href="a9ad080b16791aa36e5a030742c928d0538801c91e59cbaa0aa5a662bbaf69c1.html">Todo List App should show #main and #footer sections only when list contains items #2 - Retries: Attempt #1</a>
-                                                                </td>
-                                                                <td>6</td>
-                                                                <td>22:57:42</td>
-                                                                <td>1s 052ms</td>
-                                                                <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
-                                                                </td>
-                                                            </tr>
-                                                            <tr class="scenario-result SUCCESS">
-                                                                <td>
-                                                                        <a href="#">Recording items</a>
-                                                                </td>
-                                                                <td>
-                                                                    <i class="bi bi-table" title="Data Driven Scenario"></i>
-                                                                    <a href="a9ad080b16791aa36e5a030742c928d0538801c91e59cbaa0aa5a662bbaf69c1.html">Todo List App should show #main and #footer sections only when list contains items #3 - Retries: Attempt #1</a>
-                                                                </td>
-                                                                <td>6</td>
-                                                                <td>22:57:59</td>
-                                                                <td>1s 198ms</td>
-                                                                <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
-                                                                </td>
-                                                            </tr>
-                                                            <tr class="scenario-result SUCCESS">
-                                                                <td>
-                                                                        <a href="#">Using notes</a>
-                                                                </td>
-                                                                <td>
-                                                                    <i class="bi bi-table" title="Data Driven Scenario"></i>
-                                                                    <a href="fac87ed07ac40579431d8efe20f1197a0c13c20ae0057ee5e36a9056d6950485.html">Todo List App should allow me to share notes across actors and browsers #1 - Retries: Attempt #1</a>
-                                                                </td>
-                                                                <td>6</td>
-                                                                <td>22:57:33</td>
-                                                                <td>1s 194ms</td>
-                                                                <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
-                                                                </td>
-                                                            </tr>
-                                                            <tr class="scenario-result SUCCESS">
-                                                                <td>
-                                                                        <a href="#">Using notes</a>
-                                                                </td>
-                                                                <td>
-                                                                    <i class="bi bi-table" title="Data Driven Scenario"></i>
-                                                                    <a href="fac87ed07ac40579431d8efe20f1197a0c13c20ae0057ee5e36a9056d6950485.html">Todo List App should allow me to share notes across actors and browsers #2 - Retries: Attempt #1</a>
-                                                                </td>
-                                                                <td>6</td>
-                                                                <td>22:57:43</td>
-                                                                <td>1s 819ms</td>
-                                                                <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
-                                                                </td>
-                                                            </tr>
-                                                            <tr class="scenario-result SUCCESS">
-                                                                <td>
-                                                                        <a href="#">Using notes</a>
-                                                                </td>
-                                                                <td>
-                                                                    <i class="bi bi-table" title="Data Driven Scenario"></i>
-                                                                    <a href="fac87ed07ac40579431d8efe20f1197a0c13c20ae0057ee5e36a9056d6950485.html">Todo List App should allow me to share notes across actors and browsers #3 - Retries: Attempt #1</a>
-                                                                </td>
-                                                                <td>6</td>
-                                                                <td>22:58:00</td>
-                                                                <td>2s 107ms</td>
-                                                                <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
-                                                                </td>
-                                                            </tr>
-                                                </tbody>
-                                            </table>
+                                                        <h3><i class="bi bi-gear"></i> Automated Scenarios</h3>
+
+                                                            <table class="scenario-result-table table" id="scenario-results" style="width:100%">
+                                                                <thead>
+                                                                <tr>
+                                                                    <th>feature</th>
+                                                                    <th class="test-name-column">Scenario</th>
+                                                                    <th>Context</th>
+                                                                    <th>Steps</th>
+                                                                    <th>Started</th>
+                                                                    <th>Total Duration</th>
+                                                                    <th>Result</th>
+                                                                </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="#">API Testing</a>
+                                                                        </td>
+                                                                        <td data-order="JSON Placeholder /todos should retrieve a todo item by id - webkit">
+                                                                            <i class="bi bi-table"
+                                                                               title="Data Driven Scenario"> <a
+                                                                                        href="ad23e04918ddf1ce4dbcbdc176fc849b6f23f8d60a757cc866d265eb6849d168.html">JSON Placeholder /todos should retrieve a todo item by id - webkit</a>
+                                                                                <br/>
+                                                                                    <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> 3 passing test cases
+                                                                                    <br/>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-ubuntu' title='Linux'></i> <i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-browser-firefox' title='Firefox'></i> <i class='bi bi-browser-safari' title='Safari or WebKit'></i></span><span style="display:none">linux,Chrome,Firefox,Safari or WebKit</span>
+                                                                        </td>
+                                                                        <td>3</td>
+                                                                        <td data-order="1759791736">23:02:16</td>
+                                                                        <td>28s 538ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="#">Blended Testing</a>
+                                                                        </td>
+                                                                        <td data-order="GitHub Pages should check the state of the system before interacting with the UI - webkit">
+                                                                            <i class="bi bi-table"
+                                                                               title="Data Driven Scenario"> <a
+                                                                                        href="ad7f9fe5185925687de3d082bde6ba5ec0dacba6e8c7d1720e9c4737f9cbaa24.html">GitHub Pages should check the state of the system before interacting with the UI - webkit</a>
+                                                                                <br/>
+                                                                                    <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> 3 passing test cases
+                                                                                    <br/>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-ubuntu' title='Linux'></i> <i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-browser-firefox' title='Firefox'></i> <i class='bi bi-browser-safari' title='Safari or WebKit'></i></span><span style="display:none">linux,Chrome,Firefox,Safari or WebKit</span>
+                                                                        </td>
+                                                                        <td>3</td>
+                                                                        <td data-order="1759791736">23:02:16</td>
+                                                                        <td>30s 721ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="#">Multi-actor scenarios</a>
+                                                                        </td>
+                                                                        <td data-order="Todo List App supports multiple actors using separate browsers - webkit">
+                                                                            <i class="bi bi-table"
+                                                                               title="Data Driven Scenario"> <a
+                                                                                        href="114be25fe9a70c06d683c28a9ebc644fbad0886831b181dda16dfe638791e77f.html">Todo List App supports multiple actors using separate browsers - webkit</a>
+                                                                                <br/>
+                                                                                    <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> 3 passing test cases
+                                                                                    <br/>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-ubuntu' title='Linux'></i> <i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-browser-firefox' title='Firefox'></i> <i class='bi bi-browser-safari' title='Safari or WebKit'></i></span><span style="display:none">linux,Chrome,Firefox,Safari or WebKit</span>
+                                                                        </td>
+                                                                        <td>3</td>
+                                                                        <td data-order="1759791737">23:02:17</td>
+                                                                        <td>31s 851ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="#">Recording items</a>
+                                                                        </td>
+                                                                        <td data-order="Todo List App should allow me to add todo items - webkit">
+                                                                            <i class="bi bi-table"
+                                                                               title="Data Driven Scenario"> <a
+                                                                                        href="5d27e8eed3fd6f012ed28edb9e369e59f401e73f0788be54e8e490732e9365b6.html">Todo List App should allow me to add todo items - webkit</a>
+                                                                                <br/>
+                                                                                    <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> 3 passing test cases
+                                                                                    <br/>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-ubuntu' title='Linux'></i> <i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-browser-firefox' title='Firefox'></i> <i class='bi bi-browser-safari' title='Safari or WebKit'></i></span><span style="display:none">linux,Chrome,Firefox,Safari or WebKit</span>
+                                                                        </td>
+                                                                        <td>3</td>
+                                                                        <td data-order="1759791738">23:02:18</td>
+                                                                        <td>32s 048ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="#">Recording items</a>
+                                                                        </td>
+                                                                        <td data-order="Todo List App should clear text input field when an item is added - webkit">
+                                                                            <i class="bi bi-table"
+                                                                               title="Data Driven Scenario"> <a
+                                                                                        href="aa7e35b9502b2e19c5614b73cf8045b53a53bba957e952526b49638185e5d9cf.html">Todo List App should clear text input field when an item is added - webkit</a>
+                                                                                <br/>
+                                                                                    <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> 3 passing test cases
+                                                                                    <br/>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-ubuntu' title='Linux'></i> <i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-browser-firefox' title='Firefox'></i> <i class='bi bi-browser-safari' title='Safari or WebKit'></i></span><span style="display:none">linux,Chrome,Firefox,Safari or WebKit</span>
+                                                                        </td>
+                                                                        <td>3</td>
+                                                                        <td data-order="1759791738">23:02:18</td>
+                                                                        <td>32s 444ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="#">Recording items</a>
+                                                                        </td>
+                                                                        <td data-order="Todo List App should reflect the number of items left in the counter - webkit">
+                                                                            <i class="bi bi-table"
+                                                                               title="Data Driven Scenario"> <a
+                                                                                        href="7ac3099e62c59df34d6d085af81a21c3212245c07ad5513d7b52548d160bce21.html">Todo List App should reflect the number of items left in the counter - webkit</a>
+                                                                                <br/>
+                                                                                    <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> 3 passing test cases
+                                                                                    <br/>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-ubuntu' title='Linux'></i> <i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-browser-firefox' title='Firefox'></i> <i class='bi bi-browser-safari' title='Safari or WebKit'></i></span><span style="display:none">linux,Chrome,Firefox,Safari or WebKit</span>
+                                                                        </td>
+                                                                        <td>3</td>
+                                                                        <td data-order="1759791739">23:02:19</td>
+                                                                        <td>33s 005ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="#">Recording items</a>
+                                                                        </td>
+                                                                        <td data-order="Todo List App should show #main and #footer sections only when list contains items - webkit">
+                                                                            <i class="bi bi-table"
+                                                                               title="Data Driven Scenario"> <a
+                                                                                        href="e98eb84126f8e3cfc77df4b43d07c6fd4a5f7d7b5b8764c15bd461f13a3f21f4.html">Todo List App should show #main and #footer sections only when list contains items - webkit</a>
+                                                                                <br/>
+                                                                                    <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> 3 passing test cases
+                                                                                    <br/>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-ubuntu' title='Linux'></i> <i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-browser-firefox' title='Firefox'></i> <i class='bi bi-browser-safari' title='Safari or WebKit'></i></span><span style="display:none">linux,Chrome,Firefox,Safari or WebKit</span>
+                                                                        </td>
+                                                                        <td>3</td>
+                                                                        <td data-order="1759791739">23:02:19</td>
+                                                                        <td>33s 688ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="#">Using notes</a>
+                                                                        </td>
+                                                                        <td data-order="Todo List App should allow me to share notes across actors and browsers - webkit">
+                                                                            <i class="bi bi-table"
+                                                                               title="Data Driven Scenario"> <a
+                                                                                        href="b6899d457eea8e0d2acf8726680df7cf9a4f865ed2bfa977a1ab7b7d0cd816c6.html">Todo List App should allow me to share notes across actors and browsers - webkit</a>
+                                                                                <br/>
+                                                                                    <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> 3 passing test cases
+                                                                                    <br/>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-ubuntu' title='Linux'></i> <i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-browser-firefox' title='Firefox'></i> <i class='bi bi-browser-safari' title='Safari or WebKit'></i></span><span style="display:none">linux,Chrome,Firefox,Safari or WebKit</span>
+                                                                        </td>
+                                                                        <td>3</td>
+                                                                        <td data-order="1759791740">23:02:20</td>
+                                                                        <td>34s 797ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
 
                                                     </div>
                                                 </div>
@@ -811,7 +863,7 @@
                                                     <div class="col-sm-12">
                                                         <h3><i class="bi bi-hand-index-thumb"></i> Manual Tests</h3>
 
-                                                No manual tests were recorded
+                                                            No manual tests were recorded
 
                                                     </div>
                                                 </div>
@@ -826,17 +878,17 @@
                             <div>
                                     <a href="f8988b6ee6a6419081554784d445a3e09ab0012b39e23310f4645b463a70a460.html">
                                     <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Webkit 26.0&nbsp;&nbsp;&nbsp;9
+                                        <i class="bi bi-tag-fill"></i> Webkit 26.0&nbsp;&nbsp;&nbsp;24
                                     </span>
                                     </a>
-                                    <a href="fe7c749ed87eb75266709f623740ac9ddab23d238f2105e0895145b84840e572.html">
+                                    <a href="cd0516d6f9140b11f6c065b168b137fc2cc37a26a750cb92acfad3092a17994d.html">
                                     <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Chromium 140.0.7339.186&nbsp;&nbsp;&nbsp;9
+                                        <i class="bi bi-tag-fill"></i> Firefox 142.0.1&nbsp;&nbsp;&nbsp;24
                                     </span>
                                     </a>
-                                    <a href="0441ba455f83b3df6be44eb7df6ff1b15cfb3182ca4d14c1f43db38d7ee2827d.html">
+                                    <a href="ba887fc852fe32ac2786d4b97c1d435a87df4048ec383e89ae950fe585cb4b58.html">
                                     <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Firefox 141.0&nbsp;&nbsp;&nbsp;9
+                                        <i class="bi bi-tag-fill"></i> Chromium 141.0.7390.37&nbsp;&nbsp;&nbsp;24
                                     </span>
                                     </a>
                             </div>
@@ -853,22 +905,22 @@
                                     </a>
                                     <a href="73262d3560c27d55a12eafcd3bf482972e4d0cae7c21df127ffd99ba3c802097.html">
                                     <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> API Testing&nbsp;&nbsp;&nbsp;1
+                                        <i class="bi bi-tag-fill"></i> API Testing&nbsp;&nbsp;&nbsp;3
                                     </span>
                                     </a>
                                     <a href="0719e179199c05841092720c3c7543d36c4efb9baff0a00e08ee4e6bd8b68d7a.html">
                                     <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Recording Items&nbsp;&nbsp;&nbsp;2
+                                        <i class="bi bi-tag-fill"></i> Recording Items&nbsp;&nbsp;&nbsp;12
                                     </span>
                                     </a>
                                     <a href="beead259f64b0001474a05d800cec567c75cf22d25425c116a6bbd1f9389954d.html">
                                     <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Blended Testing&nbsp;&nbsp;&nbsp;1
+                                        <i class="bi bi-tag-fill"></i> Blended Testing&nbsp;&nbsp;&nbsp;3
                                     </span>
                                     </a>
                                     <a href="39ef06ac6957911e0e85d9a47aefac8c639c0143016ebb46e4fac04edf452ce2.html">
                                     <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Multi-Actor Scenarios&nbsp;&nbsp;&nbsp;2
+                                        <i class="bi bi-tag-fill"></i> Multi-Actor Scenarios&nbsp;&nbsp;&nbsp;3
                                     </span>
                                     </a>
                             </div>
@@ -880,7 +932,7 @@
                             <div>
                                     <a href="fcc389023b4ab5b128b2188087eef7b1fc8e4ff4c332292144a7ee5264e5d7c0.html">
                                     <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Linux 6.11.0-1018-Azure&nbsp;&nbsp;&nbsp;9
+                                        <i class="bi bi-tag-fill"></i> Linux 6.11.0-1018-Azure&nbsp;&nbsp;&nbsp;24
                                     </span>
                                     </a>
                             </div>
@@ -892,17 +944,17 @@
                             <div>
                                     <a href="b58eaa86a08d7b6215f33be85119c2c380c63d2b486fe98f3f265ab0d6ee8a5a.html">
                                     <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Chromium&nbsp;&nbsp;&nbsp;9
+                                        <i class="bi bi-tag-fill"></i> Chromium&nbsp;&nbsp;&nbsp;24
                                     </span>
                                     </a>
                                     <a href="3350b2c5f63042dcf58707c713b4016d2e7d81a017ae47a26ec35d0ddcfa275f.html">
                                     <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Webkit&nbsp;&nbsp;&nbsp;9
+                                        <i class="bi bi-tag-fill"></i> Webkit&nbsp;&nbsp;&nbsp;24
                                     </span>
                                     </a>
                                     <a href="55f65ba847c8e663dbab6b03e70e1206ff901fdfa2f80aec0fa3e24aed00af9b.html">
                                     <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Firefox&nbsp;&nbsp;&nbsp;9
+                                        <i class="bi bi-tag-fill"></i> Firefox&nbsp;&nbsp;&nbsp;24
                                     </span>
                                     </a>
                             </div>
@@ -912,11 +964,11 @@
         </div>
                                             </div>
                                         </div>
+
                                     </div>
                                 </div>
                             </div>
                         </td>
-
                     </tr>
                 </table>
             </div>
@@ -942,21 +994,21 @@
 
         // Options define for display value on top of bars
         const outcomeDetailsReports = [
-            { title: 'Passing Test Cases', link: "4667e987e60ad0fc7f0963ef679ea645f3399b702387e30d992c274b4c4f92f9.html" },
-            { title: 'Pending Test Cases', link: "9c3303aa20eb9aaceb604c825dbf53ac2c05a09d4d0f823bb87cca7c77485cbf.html" },
-            { title: 'Ignored Test Cases', link: "43a13e36257b16cf7372a29e43b8ace2ca08830ef481af937f52964a706c925a.html" },
-            { title: 'Skipped Test Cases', link: "fe5bd27cf4423238b41cf9dea3b766acb6b11422ad687f5cf24d73adcedf2c9e.html" },
-            { title: 'Aborted Test Cases',  link: "ded8ec119fef9fdaf6f02d56fa83e5e4aef715f514f5e369981a912cf0977564.html"},
-            { title: 'Failed Test Cases', link: "b46d24e2b0e9be011b17f1ba0009420154a8a20f27a45747a084833df13cd47a.html"  },
-            { title: 'Broken Test Cases', link: "332a267acda50f90e62f1e92e1dd62fa07ff58bfc906e10b220f56cda74de22e.html"    },
-            { title: 'Compromised Test Cases',  link: "130407aedfa21599edcb7d75e4f5827b5671a4dc28a092235343fbc1b14932e4.html" },
+            { title: 'Passing Test Cases', link: "31498e58bc6e773d3dd811e9a31880e1cf88171aa3210e27da910f0378d3751c.html" },
+            { title: 'Pending Test Cases', link: "755c62cd8d2ab797af61b764aee0736d1e2f9117f9cb07ae4a5767910d25ec3c.html" },
+            { title: 'Ignored Test Cases', link: "8711e5e0a3b61d993405a4190949db04a32c7a1d86ae1a7dd011c1d663b920b7.html" },
+            { title: 'Skipped Test Cases', link: "eb0c716deb50819e963ba89b195c24da92f9b53734d6a08a4d3843e21abbec94.html" },
+            { title: 'Aborted Test Cases',  link: "0b0a7cf61c9fdb150267c8c5dac0deec86f6269682416d6bb7b9848634554040.html"},
+            { title: 'Failed Test Cases', link: "3fddc8aceb209589f100dba78fe6fa8e496678835051502cf00f49ef148cbda0.html"  },
+            { title: 'Broken Test Cases', link: "95ad3a45a195faebe02b44e72319e1bef68076a35049603f03412ef57ad3848c.html"    },
+            { title: 'Compromised Test Cases',  link: "ebd12c07d289269450a6bfaeb3a308c33cf2f878defa56ed513e661c79f60850.html" },
         ]
         const outcomeData = {
             labels: ['Passing Test Cases', 'Pending Test Cases', 'Ignored Test Cases', 'Skipped Test Cases', 'Aborted Test Cases', 'Failed Test Cases', 'Broken Test Cases', 'Compromised Test Cases','Undefined Test Cases'],
             datasets: [{
                 label: 'Test Results',
                 fill: false,
-                data: [{meta: 'Passing tests', value: 9}, {meta: 'Pending tests', value: 0}, {meta: 'Ignored tests', value: 0}, {meta: 'Skipped tests', value: 0}, {meta: 'Aborted tests', value: 0}, {meta: 'Failing tests', value: 0}, {meta: 'Broken tests', value: 0}, {meta: 'Compromised tests', value: 0}],
+                data: [24,0,0,0,0,0,0,0],
                 backgroundColor: ['rgba(153,204,51,0.5)','rgba(165, 199, 238, 0.5)','rgba(168, 168, 168, 0.5)','rgba(238, 224, 152, 0.75)','rgba(255, 153, 102, 0.5)','rgba(255, 22, 49, 0.5)','rgba(255, 97, 8, 0.5)','rgba(255, 104, 255, 0.5)','rgba(83, 50, 168, 0.5)'],
                 borderColor: ['rgba(153,204,51,1)','rgba(165, 199, 238, 1)','rgba(168, 168, 168, 1)','rgba(238, 224, 152, 1)','rgba(255, 153, 102, 1)','rgba(255, 22, 49, 1)','rgba(255, 97, 8, 1)','rgba(255, 104, 255, 1)','rgba(83, 50, 168, 1)'],
                 borderWidth: 1,
@@ -1038,21 +1090,21 @@
         // Options define for display value on top of bars
 
         const severityDetailsReports = [
-            { title: 'Passing Scenarios', link: "4667e987e60ad0fc7f0963ef679ea645f3399b702387e30d992c274b4c4f92f9.html" },
-            { title: 'Pending Scenarios', link: "9c3303aa20eb9aaceb604c825dbf53ac2c05a09d4d0f823bb87cca7c77485cbf.html" },
-            { title: 'Ignored Scenarios', link: "43a13e36257b16cf7372a29e43b8ace2ca08830ef481af937f52964a706c925a.html" },
-            { title: 'Skipped Scenarios', link: "fe5bd27cf4423238b41cf9dea3b766acb6b11422ad687f5cf24d73adcedf2c9e.html" },
-            { title: 'Aborted Scenarios',  link: "ded8ec119fef9fdaf6f02d56fa83e5e4aef715f514f5e369981a912cf0977564.html"},
-            { title: 'Failed Scenarios', link: "b46d24e2b0e9be011b17f1ba0009420154a8a20f27a45747a084833df13cd47a.html"  },
-            { title: 'Broken Scenarios', link: "332a267acda50f90e62f1e92e1dd62fa07ff58bfc906e10b220f56cda74de22e.html"    },
-            { title: 'Compromised Scenarios',  link: "130407aedfa21599edcb7d75e4f5827b5671a4dc28a092235343fbc1b14932e4.html" },
+            { title: 'Passing Scenarios', link: "31498e58bc6e773d3dd811e9a31880e1cf88171aa3210e27da910f0378d3751c.html" },
+            { title: 'Pending Scenarios', link: "755c62cd8d2ab797af61b764aee0736d1e2f9117f9cb07ae4a5767910d25ec3c.html" },
+            { title: 'Ignored Scenarios', link: "8711e5e0a3b61d993405a4190949db04a32c7a1d86ae1a7dd011c1d663b920b7.html" },
+            { title: 'Skipped Scenarios', link: "eb0c716deb50819e963ba89b195c24da92f9b53734d6a08a4d3843e21abbec94.html" },
+            { title: 'Aborted Scenarios',  link: "0b0a7cf61c9fdb150267c8c5dac0deec86f6269682416d6bb7b9848634554040.html"},
+            { title: 'Failed Scenarios', link: "3fddc8aceb209589f100dba78fe6fa8e496678835051502cf00f49ef148cbda0.html"  },
+            { title: 'Broken Scenarios', link: "95ad3a45a195faebe02b44e72319e1bef68076a35049603f03412ef57ad3848c.html"    },
+            { title: 'Compromised Scenarios',  link: "ebd12c07d289269450a6bfaeb3a308c33cf2f878defa56ed513e661c79f60850.html" },
         ]
         const severityData = {
             labels: ['Passing', 'Pending', 'Ignored', 'Skipped', 'Aborted', 'Failed', 'Broken', 'Compromised'],
             datasets: [
                 {
                     label: 'Automated',
-                    data: [9,0,0,0,0,0,0,0],
+                    data: [24,0,0,0,0,0,0,0],
                     backgroundColor: ['rgba(153,204,51,0.5)','rgba(165, 199, 238, 0.5)','rgba(168, 168, 168, 0.5)','rgba(238, 224, 152, 0.75)','rgba(255, 153, 102, 0.5)','rgba(255, 22, 49, 0.5)','rgba(255, 97, 8, 0.5)','rgba(255, 104, 255, 0.5)','rgba(83, 50, 168, 0.5)'],
                     borderColor: ['rgba(153,204,51,1)','rgba(165, 199, 238, 1)','rgba(168, 168, 168, 1)','rgba(238, 224, 152, 1)','rgba(255, 153, 102, 1)','rgba(255, 22, 49, 1)','rgba(255, 97, 8, 1)','rgba(255, 104, 255, 1)','rgba(83, 50, 168, 1)'],
                     borderWidth: 1
@@ -1116,14 +1168,14 @@
 
         // Options define for display value on top of bars
         const durationDetailsReports = [
-                {title: "Under 1 second", link: "978338b30f8a9a622154b1808e8ad6f06710b5cefe7d0e160fad40ea084b837c.html"},
-                {title: "1 to 10 seconds", link: "0fe6805f1261635e7f795d9224864e40feb172622826b588bcb804c52db6a9f1.html"},
-                {title: "10 to 30 seconds", link: "c733f4850d5f5d5319bd2ae277308b672e6dd07761912949bcb90f4010d603c1.html"},
-                {title: "30 to 60 seconds", link: "a36f97b34d363c1a6baab7fcbd3f948ee27f01bff8dc946d94fb09fb3c1e4bce.html"},
-                {title: "1 to 2 minutes", link: "1a2dc7edf69e0d18eabf11d56f92347fde53a9f8ccf27ce9dcac71ba2638c51d.html"},
-                {title: "2 to 5 minutes", link: "a2ebb2b43093087f8e06d72b3f74ef313b40ff151c2322feb831a60f5e7f7c50.html"},
-                {title: "5 to 10 minutes", link: "7eb749570b54097d2a4993e5462ed57e953665adb2db356e42d81ba73cbb9ae8.html"},
-                {title: "10 minutes or over", link: "d6da3eb28297166bfc50f303f1facfbc6b47ac59ad0aaaa0170ee8dd3581373a.html"},
+                {title: "Under 1 second", link: "3a37845d15afaf322744d7100643118c52d003dc4172f47cf16ac721276cf1dd.html"},
+                {title: "1 to 10 seconds", link: "0164df95571eff3230c557b7152c6ed1dd95bf68a9e73fb9ff4fc778600670f5.html"},
+                {title: "10 to 30 seconds", link: "44f18606a34a3df694cd7457cc86783de9ac07d6a55d3cce5b575df0e6974e57.html"},
+                {title: "30 to 60 seconds", link: "91e28ad8a98a5b171930db3cde7eaa4db7166a6b257277b9ae221b359388737c.html"},
+                {title: "1 to 2 minutes", link: "665b9fd3d9eea84f900630448f86e116435a07a5f76c21c878ed94fe16876494.html"},
+                {title: "2 to 5 minutes", link: "447cd4533a13a683eaade38c553b46fff5fe5abc5648699284f950023b0cfd94.html"},
+                {title: "5 to 10 minutes", link: "cd155d129a866cc5bc268f290ffab4e75969ddcce77c39344f3b43077fbb9933.html"},
+                {title: "10 minutes or over", link: "b8ae01b8dc76dfed62f25d40d30452991bd078336c6a2b58436205c8c6b6ab17.html"},
         ]
         // The Severity bar chart
         const durationChartCtx = document.getElementById('durationChart');
@@ -1135,7 +1187,7 @@
             datasets: [{
                 label: 'Number of tests per duration',
                 fill: false,
-                data: ['0','9','0','0','0','0','0','0'],
+                data: ['15','9','0','0','0','0','0','0'],
                 backgroundColor: 'rgba(83, 146, 255,0.5)',
                 borderColor: 'rgba(83, 146, 255, 1)',
             }]
@@ -1234,7 +1286,7 @@
             datasets: [
                 {
                     label: ['Passing Tests'],
-                    data: [1,1,2,2,3],
+                    data: [3,3,3,12,3],
                     backgroundColor: [ 'rgba(153,204,51,0.5)' ]
                 },
                 {
