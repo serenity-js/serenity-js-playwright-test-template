@@ -33,15 +33,15 @@
     "node": "^18.12 || ^20 || ^22"
   },
   "dependencies": {
-    "@playwright/test": "1.55.1",
-    "@serenity-js/assertions": "^3.35.1",
-    "@serenity-js/console-reporter": "^3.35.1",
-    "@serenity-js/core": "^3.35.1",
-    "@serenity-js/playwright": "^3.35.1",
-    "@serenity-js/playwright-test": "^3.35.1",
-    "@serenity-js/rest": "^3.35.1",
-    "@serenity-js/serenity-bdd": "^3.35.1",
-    "@serenity-js/web": "^3.35.1"
+    "@playwright/test": "1.56.0",
+    "@serenity-js/assertions": "^3.35.2",
+    "@serenity-js/console-reporter": "^3.35.2",
+    "@serenity-js/core": "^3.35.2",
+    "@serenity-js/playwright": "^3.35.2",
+    "@serenity-js/playwright-test": "^3.35.2",
+    "@serenity-js/rest": "^3.35.2",
+    "@serenity-js/serenity-bdd": "^3.35.2",
+    "@serenity-js/web": "^3.35.2"
   },
   "devDependencies": {
     "@types/node": "^22.18.8",
