@@ -4,7 +4,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 ARG TZ=UTC
 
 ENV SHELL=/bin/bash
-ENV PATH="/opt/google/chrome:${NPM_GLOBAL}/bin:${PATH}"
+ENV PATH="/opt/google/chrome:${PATH}"
 
 RUN \
     # Install Firefox ESR
@@ -26,6 +26,6 @@ RUN \
     npm i -g http-server && \
     npm cache clean --force > /dev/null 2>&1 && \
     apt-get clean && \
-    rm -rf /var/lib/api/lists/*
+    rm -rf /var/lib/apt/lists/*
 
 COPY welcome-message.txt /usr/local/etc/vscode-dev-containers/first-run-notice.txt
