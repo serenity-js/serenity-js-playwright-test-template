@@ -7,5 +7,42 @@
   "features": {
     "ghcr.io/devcontainers/features/desktop-lite:1": {},
     "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
+
+  "forwardPorts": [
+    8080,
+    8181
+  ],
+  "portsAttributes": {
+    "8080": {
+      "label": "Serenity Reports"
+    },
+    "8181": {
+      "label": "Playwright Reports"
+    }
+  },
+  "postCreateCommand": "npm ci",
+  "waitFor": "postCreateCommand",
+  "postAttachCommand": {
+    "Serenity/JS Test Run": "npm test",
+    "Serenity Reports Preview": "npx http-server -p 8080 target/site/serenity/",
+    "Playwright Reports Preview": "npx http-server -p 8181 playwright-report"
+  },
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "editorconfig.editorconfig",
+        "eamodio.gitlens",
+        "ms-playwright.playwright",
+        "stateful.runme"
+      ],
+      "settings": {
+        "workbench.editorAssociations": {
+          "*.md": "runme"
+        }
+      }
+    }
   }
 }
