@@ -1,9 +1,4 @@
-// For more details, see https://aka.ms/devcontainer.json.
 {
-  "name": "Serenity Sandbox",
-
-  "build": {
-    "context": ".",
-    "dockerfile": "Dockerfile"
-  }
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "features": {}
 }
