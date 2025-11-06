@@ -10,10 +10,14 @@
   },
 
   "forwardPorts": [
+    6080,
     8080,
     8181
   ],
   "portsAttributes": {
+    "6080": {
+      "label": "Desktop"
+    },
     "8080": {
       "label": "Serenity Reports"
     },
