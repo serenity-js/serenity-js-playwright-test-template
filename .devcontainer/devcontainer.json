@@ -1,6 +1,6 @@
 // For more details, see https://aka.ms/devcontainer.json.
 {
-  "name": "Serenity/JS Sandbox",
+  "name": "Serenity Sandbox",
 
   "build": {
     "context": ".",
