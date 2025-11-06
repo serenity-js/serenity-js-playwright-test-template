@@ -52,4 +52,4 @@ COPY welcome-message.txt /usr/local/etc/vscode-dev-containers/first-run-notice.t
 
 # Switch to the non-root user for the running container
 USER ${USERNAME}
-WORKDIR /workspace
+WORKDIR /workspaces
