@@ -5,57 +5,5 @@
   "build": {
     "context": ".",
     "dockerfile": "Dockerfile"
-  },
-
-  // Features to add to the dev container. More info: https://containers.dev/features.
-  "features": {
-    "ghcr.io/devcontainers/features/desktop-lite:1": {},
-    "ghcr.io/devcontainers/features/github-cli:1": {}
-  },
-
-  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
-
-  // Use 'forwardPorts' to make a list of ports inside the container available locally.
-  "forwardPorts": [
-    8080,
-    8181
-  ],
-  "portsAttributes": {
-    "8080": {
-      "label": "Serenity Reports"
-    },
-    "8181": {
-      "label": "Playwright Reports"
-    }
-  },
-  "hostRequirements": {
-    "cpus": 8,
-    "memory": "8gb",
-    "storage": "32gb"
-  },
-  "postCreateCommand": "npm ci",
-  "waitFor": "postCreateCommand",
-  "postAttachCommand": {
-    "Serenity/JS Test Run": "npm test",
-    "Serenity Reports Preview": "npx http-server -p 8080 target/site/serenity/",
-    "Playwright Reports Preview": "npx http-server -p 8181 playwright-report"
-  },
-
-  // Configure tool-specific properties.
-  "customizations": {
-    "vscode": {
-      "extensions": [
-        "dbaeumer.vscode-eslint",
-        "editorconfig.editorconfig",
-        "eamodio.gitlens",
-        "ms-playwright.playwright",
-        "stateful.runme"
-      ],
-      "settings": {
-        "workbench.editorAssociations": {
-          "*.md": "runme"
-        }
-      }
-    }
   }
 }
