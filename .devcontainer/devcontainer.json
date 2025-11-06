@@ -1,7 +1,12 @@
 {
   "build": {
     "context": ".",
-    "dockerfile": "Dockerfile"
+    "dockerfile": "Dockerfile",
+    "args": {
+      "USERNAME": "serenity-js",
+      "USER_UID": "1000",
+      "USER_GID": "1000"
+    }
   },
 
   "features": {
@@ -48,5 +53,7 @@
         }
       }
     }
-  }
+  },
+
+  "remoteUser": "serenity-js"
 }
