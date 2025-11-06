@@ -7,9 +7,9 @@ ENV SHELL=/bin/bash
 ENV PATH="/opt/google/chrome:${PATH}"
 
 RUN \
-    # Install Firefox ESR
+    # Install Java
     apt-get -y update &&  \
-    apt-get -y install default-jre firefox-esr && \
+    apt-get -y install default-jre && \
     # Install Chrome
     cd /tmp && \
     curl -O https://dl.google.com/linux/direct/google-chrome-stable_current_$(dpkg --print-architecture).deb && \
