@@ -4,8 +4,8 @@
     "dockerfile": "Dockerfile",
     "args": {
       "USERNAME": "serenity-js",
-      "USER_UID": "1001",
-      "USER_GID": "1001"
+      "USER_UID": "1002",
+      "USER_GID": "1002"
     }
   },
 
