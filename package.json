@@ -30,7 +30,7 @@
   },
   "homepage": "https://serenity-js.org",
   "engines": {
-    "node": "^18.12 || ^20 || ^22"
+    "node": "^18.12 || ^20 || ^22 || ^24.0.0"
   },
   "dependencies": {
     "@playwright/test": "1.56.1",
@@ -44,7 +44,7 @@
     "@serenity-js/web": "^3.36.0"
   },
   "devDependencies": {
-    "@types/node": "^22.19.1",
+    "@types/node": "^24.10.1",
     "@typescript-eslint/eslint-plugin": "^8.46.4",
     "@typescript-eslint/parser": "^8.46.4",
     "eslint": "^9.39.1",
