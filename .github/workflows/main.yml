@@ -24,8 +24,6 @@ jobs:
           java-version: '17'
       - name: Setup Node Modules
         uses: bahmutov/npm-install@v1
-      - name: Install Playwright Browsers
-        run: npx playwright install --with-deps
       - name: Run Playwright tests
         run: npm test
       - uses: actions/upload-artifact@v5
