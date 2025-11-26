@@ -8,7 +8,8 @@
       "packagePatterns": [
         "^@serenity-js/",
         "^playwright",
-        "^@playwright/"
+        "^@playwright/",
+        "serenity-js/playwright"
       ],
       "groupName": "Serenity/JS and Playwright",
       "automerge": true
