@@ -1,6 +1,6 @@
 # Serenity/JS Playwright Test Template
 
-[![Build Status](https://github.com/serenity-js/serenity-js-playwright-test-template/workflows/build/badge.svg)](https://github.com/serenity-js/serenity-js-playwright-test-template/actions)
+[![Build Status](https://github.com/serenity-js/serenity-js-playwright-test-template/actions/workflows/main.yml/badge.svg)](https://github.com/serenity-js/serenity-js-playwright-test-template/actions/workflows/main.yml)
 [![Serenity/JS on GitHub](https://img.shields.io/badge/github-serenity--js-yellow?logo=github)](https://github.com/serenity-js/serenity-js)
 [![Serenity/JS on StackOverflow](https://img.shields.io/badge/stackoverflow-serenity--js-important?logo=stackoverflow)](https://stackoverflow.com/questions/tagged/serenity-js)
 [![Contribute with Gitpod](https://img.shields.io/badge/Contribute%20with-Gitpod-908a85?logo=gitpod)](https://gitpod.io/from-referrer/)
