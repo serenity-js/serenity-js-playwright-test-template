@@ -20,6 +20,8 @@ jobs:
           node-version: '24.11.1'
       - name: Setup Node Modules
         uses: bahmutov/npm-install@v1
+      - name: Run ESLint
+        run: npm run lint
       - name: Run Playwright tests
         run: npm test
       - uses: actions/upload-artifact@v5

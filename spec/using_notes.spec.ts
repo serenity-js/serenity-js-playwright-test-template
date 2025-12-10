@@ -1,12 +1,12 @@
 import { Ensure, equals } from '@serenity-js/assertions';
+import { Cast, List, Notepad, notes, TakeNotes } from '@serenity-js/core';
+import { BrowseTheWebWithPlaywright } from '@serenity-js/playwright';
 import { useFixtures } from '@serenity-js/playwright-test';
 
 import { TODO_ITEMS } from './todo-list-app/test-data';
 import { startWithAListContaining, startWithAnEmptyList, } from './todo-list-app/TodoApp';
 import { recordItem } from './todo-list-app/TodoItem';
 import { itemNames } from './todo-list-app/TodoList';
-import { BrowseTheWebWithPlaywright } from '@serenity-js/playwright';
-import { Cast, List, Notepad, notes, TakeNotes } from '@serenity-js/core';
 
 interface SharedNotes {
     items: string[];
@@ -21,6 +21,7 @@ interface TestScopeFixtures {
  * Alternatively, you can define fixtures inline in each test scenario via `test.use({ ... })`.
  */
 const { describe, it }  = useFixtures<TestScopeFixtures>({
+    // eslint-disable-next-line no-empty-pattern
     notepad: async ({ }, use) => {
         // Create an empty notepad, or add some initial notes
         const notepad = Notepad.empty<SharedNotes>()
