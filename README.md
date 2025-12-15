@@ -74,7 +74,7 @@ npm start               # starts a mini HTTP server and serves the test reports
 
 ## Next steps
 
-- Replace the sample components with your own UI elements
+- Replace the example tests with your own
 - Add new tasks, interactions, and assertions using Serenity/JS
 - Extend the test suite or integrate it into CI/CD pipelines
 - Use the sample reports to understand expected testing and reporting workflows
