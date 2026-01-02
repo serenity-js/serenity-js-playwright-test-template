@@ -147,8 +147,8 @@ spec/
 ├── recording_items.spec.ts          # Todo list app UI tests
 ├── using_notes.spec.ts              # Sharing data between actors
 ├── vanilla_playwright_test.spec.ts  # Plain Playwright Test example
-├── github/                          # GitHub-specific action classes
-└── todo-list-app/                   # Todo app page objects (Screenplay Pattern)
+├── github/                          # GitHub API-specific action classes
+└── todo-list-app/                   # Todo app-specific tasks and questions
 
 playwright.config.ts     # Playwright Test configuration
 target/site/serenity/    # Generated Serenity BDD reports
@@ -157,7 +157,8 @@ playwright-report/       # Generated Playwright Test reports
 
 **Key files:**
 - `*.spec.ts` - Test scenarios using Serenity/JS and Playwright Test
-- `*/page-objects/` - Reusable page objects following the [Screenplay Pattern](https://serenity-js.org/handbook/design/screenplay-pattern/)
+- `*/github/` - GitHub API-specific tasks and interactions following the [Screenplay Pattern](https://serenity-js.org/handbook/design/screenplay-pattern/), structured as a reusable `GitHubStatus` action class 
+- `*/todo-list-app/` - Todo app-specific tasks and questions, structured as reusable functions
 
 ## Next steps
 
