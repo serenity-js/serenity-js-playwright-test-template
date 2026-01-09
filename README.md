@@ -120,19 +120,19 @@ npm start               # starts a mini HTTP server and serves the test reports
 npm test
 
 # Run tests in specific browser
-npx playwright test --project=chromium
+npm test -- --project=chromium
 
 # Run tests in headed mode (see the browser)
-npx playwright test --headed
+npm test -- --headed
 
 # Run tests in debug mode
-npx playwright test --debug
+npm test -- --debug
 
 # Run a specific test file
-npx playwright test spec/recording_items.spec.ts
+npm test -- spec/recording_items.spec.ts
 
 # Run tests matching a pattern
-npx playwright test --grep "recording items"
+npm test -- --grep "recording items"
 ```
 
 ## Project Structure
