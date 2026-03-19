@@ -147,7 +147,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 19-03-2026 16:22</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 19-03-2026 23:28</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -189,6 +189,12 @@
                                         <a class="tagLink" style="background:default;"
                                            href="beead259f64b0001474a05d800cec567c75cf22d25425c116a6bbd1f9389954d.html">Blended Testing
                                               (feature)
+                                        </a>
+                                </span>
+                                    <span class="badge example-tag tag-badge" style="background:default;">
+                                    <i class="bi bi-tag-fill"></i>&nbsp;
+                                        <a class="tagLink" style="background:default;"
+                                           href="8afd86945a1a25b13fc1ac5043b29b159f5150952aa7fc6951378729e9e4cd4f.html">Retried
                                         </a>
                                 </span>
                                     <span class="badge example-tag tag-badge" style="background:default;">
@@ -250,9 +256,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon fa-2x' title='FAILURE'></i></a></span>
                             <span class="test-case-title">
-                                <span class="success-color">
+                                <span class="failing-color">
                                     GitHub Pages should check the state of the system before interacting with the UI - webkit
                                         <span class="related-issue-title"></span>
                                 </span>
@@ -279,7 +285,7 @@
             <div class="collapse multi-collapse" id="castDetails">
                 <table class="cast">
                     <tr>
-                            <td width="50%">
+                            <td width="100%">
                                 <h4>
                                     <i class="fs-2 bi bi-person"></i>&nbsp;
                                     <span>
@@ -291,30 +297,6 @@
                                 <div class="collapse multi-collapse" id="abilities-Apisitt">
                                         <div>
                                             <span class="cast-description">Apisitt can:</span>
-                                            <ul>
-                                                    <li>PerformActivities (PerformActivitiesAsPlaywrightSteps)</li>
-                                                    <li>AnswerQuestions</li>
-                                                    <li>RaiseErrors</li>
-                                                    <li>ScheduleWork { scheduler: { clock: { timeAdjustment: { milliseconds: 0 } }, interactionTimeout: { milliseconds: 5000 } } }</li>
-                                                    <li>BrowseTheWeb (BrowseTheWebWithPlaywright)</li>
-                                                    <li>TakeNotes { notepad: {} }</li>
-                                                    <li>CallAnApi { baseURL: "https://todo-app.serenity-js.org/", headers: { common: { Accept: "application/json, text/plain, */*" } }, timeout: 10000 }</li>
-                                            </ul>
-                                        </div>
-                                </div>
-                            </td>
-                            <td width="50%">
-                                <h4>
-                                    <i class="fs-2 bi bi-person"></i>&nbsp;
-                                    <span>
-                                        <a data-toggle="collapse" href="#abilities-Wendy"
-                                           aria-expanded="false" aria-controls="abilities">Wendy</a>
-                                        
-                                    </span>
-                                </h4>
-                                <div class="collapse multi-collapse" id="abilities-Wendy">
-                                        <div>
-                                            <span class="cast-description">Wendy can:</span>
                                             <ul>
                                                     <li>PerformActivities (PerformActivitiesAsPlaywrightSteps)</li>
                                                     <li>AnswerQuestions</li>
@@ -364,21 +346,57 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td class="test-SUCCESS"><a href="#0">1</a></td>
-                            <td class="test-SUCCESS"><a
+                        <td class="test-FAILURE"><a href="#0">1</a></td>
+                            <td class="test-FAILURE"><a
                                         href="#0">Attempt #1</a>
                             </td>
                     </tr>
                     <tr>
-                        <td class="test-SUCCESS"><a href="#1">2</a></td>
-                            <td class="test-SUCCESS"><a
-                                        href="#1">Attempt #1</a>
+                        <td class="test-FAILURE"><a href="#1">2</a></td>
+                            <td class="test-FAILURE"><a
+                                        href="#1">Attempt #2</a>
                             </td>
                     </tr>
                     <tr>
-                        <td class="test-SUCCESS"><a href="#2">3</a></td>
-                            <td class="test-SUCCESS"><a
-                                        href="#2">Attempt #1</a>
+                        <td class="test-FAILURE"><a href="#2">3</a></td>
+                            <td class="test-FAILURE"><a
+                                        href="#2">Attempt #3</a>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td class="test-FAILURE"><a href="#3">4</a></td>
+                            <td class="test-FAILURE"><a
+                                        href="#3">Attempt #1</a>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td class="test-FAILURE"><a href="#4">5</a></td>
+                            <td class="test-FAILURE"><a
+                                        href="#4">Attempt #2</a>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td class="test-FAILURE"><a href="#5">6</a></td>
+                            <td class="test-FAILURE"><a
+                                        href="#5">Attempt #3</a>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td class="test-FAILURE"><a href="#6">7</a></td>
+                            <td class="test-FAILURE"><a
+                                        href="#6">Attempt #1</a>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td class="test-FAILURE"><a href="#7">8</a></td>
+                            <td class="test-FAILURE"><a
+                                        href="#7">Attempt #2</a>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td class="test-FAILURE"><a href="#8">9</a></td>
+                            <td class="test-FAILURE"><a
+                                        href="#8">Attempt #3</a>
                             </td>
                     </tr>
                 </tbody>
@@ -395,6 +413,7 @@
                     Steps
                 </th>
 
+                    <th width="150" class="greentext">Screenshots</th>
                 <th width="130" class="greentext">Outcome</th>
                 <th width="100" class="greentext"><i title="Duration" class="bi bi-stopwatch"></i></th>
             </tr>
@@ -402,13 +421,13 @@
                 <td colspan="5"></td>
             </tr>
 
-                <tr class="test-SUCCESS">
+                <tr class="test-FAILURE">
 
                     <td width="50" class="step-icon">
                         <a name="0"></a>
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
                                style="display:block">
-                                <i class="bi bi-caret-right-square imgstepSection0 success-icon"
+                                <i class="bi bi-caret-right-square imgstepSection0 failure-icon"
                                    style="margin-left: 20px; float:left; padding-right:5px"></i>
                             </a>
                     </td>
@@ -426,19 +445,28 @@
                         </div>
                     </td>
 
-                    <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">838ms</span></td>
+                        <td width="160" class="FAILURE-text">
+
+                                <a href="f2fa2f0a067c35e922df04e8f627982651dade8e74e8b2994bef68e4767fd27d_screenshots.html#screenshots?screenshot=3">
+                                    <img src="photo-linux-chromium-145.0.7632.6-apisitt-ensures-that-github-status-d-21850b5bb0.png"
+                                         href="photo-linux-chromium-145.0.7632.6-apisitt-ensures-that-github-status-d-21850b5bb0.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="130"><span class="top-level-step">FAILURE</span></td>
+                    <td width="100"><span class="top-level-step">271ms</span></td>
                 </tr>
                     <tr>
                         <td colspan="5">
                             <table id="stepSection0" class="step-table-nested" style="display:none;">
-                <tr class="test-SUCCESS">
+                <tr class="test-FAILURE">
 
                     <td width="70" class="step-icon">
                         <a name="0-0"></a>
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-0')"
                                style="display:block">
-                                <i class="bi bi-caret-right-square imgstepSection0-0 success-icon"
+                                <i class="bi bi-caret-right-square imgstepSection0-0 failure-icon"
                                    style="margin-left: 40px; float:left; padding-right:5px"></i>
                             </a>
                     </td>
@@ -456,8 +484,17 @@
                         </div>
                     </td>
 
-                    <td width="130"><span class="nested-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-step">172ms</span></td>
+                        <td width="160" class="FAILURE-text">
+
+                                <a href="f2fa2f0a067c35e922df04e8f627982651dade8e74e8b2994bef68e4767fd27d_screenshots.html#screenshots?screenshot=3">
+                                    <img src="photo-linux-chromium-145.0.7632.6-apisitt-ensures-that-github-status-d-21850b5bb0.png"
+                                         href="photo-linux-chromium-145.0.7632.6-apisitt-ensures-that-github-status-d-21850b5bb0.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="130"><span class="nested-step">FAILURE</span></td>
+                    <td width="100"><span class="nested-step">138ms</span></td>
                 </tr>
                     <tr>
                         <td colspan="5">
@@ -495,9 +532,9 @@
                                     <h4>Request Headers</h4>
                                     <pre>Accept: application/json, text/plain, */*<br>User-Agent: axios/1.13.6<br>Accept-Encoding: gzip, compress, deflate, br</pre>
                                     <h4>Response Headers</h4>
-                                    <pre>content-type: application/json; charset=utf-8<br>content-length: 215<br>connection: close<br>date: Thu, 19 Mar 2026 16:22:32 GMT<br>x-download-options: noopen<br>x-permitted-cross-domain-policies: none<br>referrer-policy: strict-origin-when-cross-origin<br>x-statuspage-version: 424b2c3aa78c5d285028e2e254abf41f50945f39<br>strict-transport-security: max-age=259200<br>x-statuspage-skip-logging: true<br>access-control-allow-origin: *<br>cache-control: max-age=3, public, stale-while-revalidate=30, stale-if-error=3600<br>x-pollinator-metadata-service: status-page-web-pages<br>x-runtime: 0.049719<br>server: AtlassianEdge<br>accept-ranges: bytes<br>x-content-type-options: nosniff<br>x-xss-protection: 1; mode=block<br>atl-traceid: 9cfac4a4fe1a4454aac32ae18c49d105<br>atl-request-id: 9cfac4a4-fe1a-4454-aac3-2ae18c49d105<br>report-to: {&quot;endpoints&quot;: [{&quot;url&quot;: &quot;https://dz8aopenkvv6s.cloudfront.net&quot;}], &quot;group&quot;: &quot;endpoint-1&quot;, &quot;include_subdomains&quot;: true, &quot;max_age&quot;: 600}<br>nel: {&quot;failure_fraction&quot;: 0.01, &quot;include_subdomains&quot;: true, &quot;max_age&quot;: 600, &quot;report_to&quot;: &quot;endpoint-1&quot;}<br>etag: W/&quot;7d4c27419bcd1e7e56f002e76024da48&quot;<br>vary: Accept,Accept-Encoding<br>x-cache: Hit from cloudfront<br>via: 1.1 d4130248ac42413c526bedc7570754e0.cloudfront.net (CloudFront)<br>x-amz-cf-pop: ORD56-P12<br>x-amz-cf-id: XvyDe_khuA4Pu9LsYYw84A5SHj_mkixafbWLVnpLETJ3SY6Yisy2PA==<br>age: 15</pre>
+                                    <pre>content-type: application/json; charset=utf-8<br>content-length: 213<br>connection: close<br>date: Thu, 19 Mar 2026 23:27:59 GMT<br>x-download-options: noopen<br>x-permitted-cross-domain-policies: none<br>referrer-policy: strict-origin-when-cross-origin<br>x-statuspage-version: 424b2c3aa78c5d285028e2e254abf41f50945f39<br>strict-transport-security: max-age=259200<br>x-statuspage-skip-logging: true<br>access-control-allow-origin: *<br>cache-control: max-age=3, public, stale-while-revalidate=30, stale-if-error=3600<br>x-pollinator-metadata-service: status-page-web-pages<br>x-runtime: 0.052273<br>server: AtlassianEdge<br>accept-ranges: bytes<br>x-content-type-options: nosniff<br>x-xss-protection: 1; mode=block<br>atl-traceid: b816f75157624cc0b1d5582d5108a12a<br>atl-request-id: b816f751-5762-4cc0-b1d5-582d5108a12a<br>report-to: {&quot;endpoints&quot;: [{&quot;url&quot;: &quot;https://dz8aopenkvv6s.cloudfront.net&quot;}], &quot;group&quot;: &quot;endpoint-1&quot;, &quot;include_subdomains&quot;: true, &quot;max_age&quot;: 600}<br>nel: {&quot;failure_fraction&quot;: 0.01, &quot;include_subdomains&quot;: true, &quot;max_age&quot;: 600, &quot;report_to&quot;: &quot;endpoint-1&quot;}<br>etag: W/&quot;699f2533f5ad6ed562e262a6add1f196&quot;<br>vary: Accept,Accept-Encoding<br>x-cache: Hit from cloudfront<br>via: 1.1 eccb44470f382cc1705189e3db5d368c.cloudfront.net (CloudFront)<br>x-amz-cf-pop: ORD56-P12<br>x-amz-cf-id: VdftmmC6QR2Og1hjSgcoT2Oa6hyR04ex_K0BjuUTnYUNfteHfzaTZA==<br>age: 18</pre>
                                 <h4>Response Body</h4>
-                                    <pre>{<br>    &quot;page&quot;: {<br>        &quot;id&quot;: &quot;kctbh9vrtdwd&quot;,<br>        &quot;name&quot;: &quot;GitHub&quot;,<br>        &quot;url&quot;: &quot;https://www.githubstatus.com&quot;,<br>        &quot;time_zone&quot;: &quot;Etc/UTC&quot;,<br>        &quot;updated_at&quot;: &quot;2026-03-19T15:38:41.415Z&quot;<br>    },<br>    &quot;status&quot;: {<br>        &quot;indicator&quot;: &quot;none&quot;,<br>        &quot;description&quot;: &quot;All Systems Operational&quot;<br>    }<br>}</pre>
+                                    <pre>{<br>    &quot;page&quot;: {<br>        &quot;id&quot;: &quot;kctbh9vrtdwd&quot;,<br>        &quot;name&quot;: &quot;GitHub&quot;,<br>        &quot;url&quot;: &quot;https://www.githubstatus.com&quot;,<br>        &quot;time_zone&quot;: &quot;Etc/UTC&quot;,<br>        &quot;updated_at&quot;: &quot;2026-03-19T22:57:16.044Z&quot;<br>    },<br>    &quot;status&quot;: {<br>        &quot;indicator&quot;: &quot;minor&quot;,<br>        &quot;description&quot;: &quot;Minor Service Outage&quot;<br>    }<br>}</pre>
                             </div>
                         </div>
                     </div>
@@ -507,8 +544,11 @@
                         </div>
                     </td>
 
+                        <td width="160" class="SUCCESS-text">
+
+                        </td>
                     <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">138ms</span></td>
+                    <td width="100"><span class="nested-group-step">036ms</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
 
@@ -529,15 +569,18 @@
                         </div>
                     </td>
 
+                        <td width="160" class="SUCCESS-text">
+
+                        </td>
                     <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">001ms</span></td>
+                    <td width="100"><span class="nested-group-step"></span></td>
                 </tr>
-                <tr class="test-SUCCESS">
+                <tr class="test-FAILURE">
 
                     <td width="90" class="step-icon">
                         <a name="0-0-2"></a>
                             <span style="margin-left: 60px;"
-                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon ' title='FAILURE'></i></a>
                                 </span>
                     </td>
 
@@ -551,224 +594,71 @@
                         </div>
                     </td>
 
-                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">001ms</span></td>
+                        <td width="160" class="FAILURE-text">
+
+                                <a href="f2fa2f0a067c35e922df04e8f627982651dade8e74e8b2994bef68e4767fd27d_screenshots.html#screenshots?screenshot=3">
+                                    <img src="photo-linux-chromium-145.0.7632.6-apisitt-ensures-that-github-status-d-21850b5bb0.png"
+                                         href="photo-linux-chromium-145.0.7632.6-apisitt-ensures-that-github-status-d-21850b5bb0.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="130"><span class="nested-group-step">FAILURE</span></td>
+                    <td width="100"><span class="nested-group-step">002ms</span></td>
                 </tr>
+                    <tr class="test-FAILURE">
+                        <td width="40">&nbsp</td>
+                        <td width="%" colspan="4" class="error-message-cell">
+
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">AssertionError: Expected GitHub Status to equal &quot;All Systems Operational&quot;<br><br>Expectation: equals(&#39;All Systems Operational&#39;)<br><br>Expected string: All Systems Operational<br>Received string: Minor Service Outage<br><br>    at /__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts:34:30</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-5"
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="bi bi-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-5">
+            <div class="card">
+                <div class="card-header">
+                    <h4>AssertionError </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts:34)<br />.ErrorFactory.create()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/@serenity-js/core/src/errors/ErrorFactory.ts:36)<br />.Stage.createError()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/@serenity-js/core/src/stage/Stage.ts:341)<br />.RaiseErrors.create()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/@serenity-js/core/src/errors/RaiseErrors.ts:59)<br />.Ensure.performAs()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/@serenity-js/assertions/src/Ensure.ts:140)<br />.PerformActivitiesAsPlaywrightSteps.perform()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/@serenity-js/core/src/screenplay/abilities/PerformActivities.ts:60)<br />.TestStepInfoImpl._runStepBody()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/testInfo.js:506)<br />.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/common/testType.js:245)<br />.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/common/testType.js:243)<br />.TestTypeImpl._step()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/common/testType.js:240)<br />.PerformActivitiesAsPlaywrightSteps.perform()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/@serenity-js/playwright-test/src/api/PerformActivitiesAsPlaywrightSteps.ts:38)<br />.PerformActivitiesAsPlaywrightSteps.perform()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/@serenity-js/core/src/screenplay/abilities/PerformActivities.ts:60)<br />.TestStepInfoImpl._runStepBody()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/testInfo.js:506)<br />.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/common/testType.js:245)<br />.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/common/testType.js:243)<br />.TestTypeImpl._step()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/common/testType.js:240)<br />.PerformActivitiesAsPlaywrightSteps.perform()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/@serenity-js/playwright-test/src/api/PerformActivitiesAsPlaywrightSteps.ts:38)<br />.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts:33)<br />.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/workerMain.js:323)<br />.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/testInfo.js:320)<br />.TimeoutManager.withRunnable()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/timeoutManager.js:67)<br />.TestInfoImpl._runWithTimeout()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/testInfo.js:318)<br />.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/workerMain.js:321)<br />.WorkerMain._runTest()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/workerMain.js:296)<br />.WorkerMain.runTestGroup()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/workerMain.js:196)<br />.process.<anonymous>()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/common/process.js:72)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+                        </td>
+                    </tr>
 
                             </table>
                         </td>
                     </tr>
-                <tr class="test-SUCCESS">
-
-                    <td width="70" class="step-icon">
-                        <a name="0-1"></a>
-                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-1')"
-                               style="display:block">
-                                <i class="bi bi-caret-right-square imgstepSection0-1 success-icon"
-                                   style="margin-left: 40px; float:left; padding-right:5px"></i>
-                            </a>
-                    </td>
-
-                    <td class="step-description-column">
-                        <div class="step-description">
-                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-1')"
-                               style="display:block;">
-                                <span class="nested-step">
-                                                Wendy starts with an empty todo list
-                                        </span>
-                            </a>
-                            <span class="evidence">
-                                </span>
-                        </div>
-                    </td>
-
-                    <td width="130"><span class="nested-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-step">401ms</span></td>
-                </tr>
-                    <tr>
-                        <td colspan="5">
-                            <table id="stepSection0-1" class="step-table-nested" style="display:none;">
-                <tr class="test-SUCCESS">
-
-                    <td width="90" class="step-icon">
-                        <a name="0-1-0"></a>
-                            <span style="margin-left: 60px;"
-                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
-                                </span>
-                    </td>
-
-                    <td class="step-description-column">
-                        <div class="step-description">
-                                <span class="nested-group-step">
-                                                Wendy navigates to &quot;/&quot;
-                                        </span>
-                            <span class="evidence">
-                                </span>
-                        </div>
-                    </td>
-
-                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">372ms</span></td>
-                </tr>
-                <tr class="test-SUCCESS">
-
-                    <td width="90" class="step-icon">
-                        <a name="0-1-1"></a>
-                            <span style="margin-left: 60px;"
-                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
-                                </span>
-                    </td>
-
-                    <td class="step-description-column">
-                        <div class="step-description">
-                                <span class="nested-group-step">
-                                                Wendy ensures that website title does equal &quot;Serenity/JS TodoApp&quot;
-                                        </span>
-                            <span class="evidence">
-                                </span>
-                        </div>
-                    </td>
-
-                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">006ms</span></td>
-                </tr>
 
                             </table>
                         </td>
                     </tr>
-                <tr class="test-SUCCESS">
-
-                    <td width="70" class="step-icon">
-                        <a name="0-2"></a>
-                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-2')"
-                               style="display:block">
-                                <i class="bi bi-caret-right-square imgstepSection0-2 success-icon"
-                                   style="margin-left: 40px; float:left; padding-right:5px"></i>
-                            </a>
-                    </td>
-
-                    <td class="step-description-column">
-                        <div class="step-description">
-                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-2')"
-                               style="display:block;">
-                                <span class="nested-step">
-                                                Wendy records an item called &quot;Feed the cat&quot;
-                                        </span>
-                            </a>
-                            <span class="evidence">
-                                </span>
-                        </div>
-                    </td>
-
-                    <td width="130"><span class="nested-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-step">127ms</span></td>
-                </tr>
-                    <tr>
-                        <td colspan="5">
-                            <table id="stepSection0-2" class="step-table-nested" style="display:none;">
-                <tr class="test-SUCCESS">
-
-                    <td width="90" class="step-icon">
-                        <a name="0-2-0"></a>
-                            <span style="margin-left: 60px;"
-                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
-                                </span>
-                    </td>
-
-                    <td class="step-description-column">
-                        <div class="step-description">
-                                <span class="nested-group-step">
-                                                Wendy enters &quot;Feed the cat&quot; into &quot;What needs to be done?&quot; input box
-                                        </span>
-                            <span class="evidence">
-                                </span>
-                        </div>
-                    </td>
-
-                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">033ms</span></td>
-                </tr>
-                <tr class="test-SUCCESS">
-
-                    <td width="90" class="step-icon">
-                        <a name="0-2-1"></a>
-                            <span style="margin-left: 60px;"
-                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
-                                </span>
-                    </td>
-
-                    <td class="step-description-column">
-                        <div class="step-description">
-                                <span class="nested-group-step">
-                                                Wendy presses key Enter in &quot;What needs to be done?&quot; input box
-                                        </span>
-                            <span class="evidence">
-                                </span>
-                        </div>
-                    </td>
-
-                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">036ms</span></td>
-                </tr>
-                <tr class="test-SUCCESS">
-
-                    <td width="90" class="step-icon">
-                        <a name="0-2-2"></a>
-                            <span style="margin-left: 60px;"
-                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
-                                </span>
-                    </td>
-
-                    <td class="step-description-column">
-                        <div class="step-description">
-                                <span class="nested-group-step">
-                                                Wendy waits until displayed items does contain &quot;Feed the cat&quot;
-                                        </span>
-                            <span class="evidence">
-                                </span>
-                        </div>
-                    </td>
-
-                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">024ms</span></td>
-                </tr>
-
-                            </table>
-                        </td>
-                    </tr>
-                <tr class="test-SUCCESS">
-
-                    <td width="70" class="step-icon">
-                        <a name="0-3"></a>
-                            <span style="margin-left: 40px;"
-                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
-                                </span>
-                    </td>
-
-                    <td class="step-description-column">
-                        <div class="step-description">
-                                <span class="nested-group-step">
-                                                Wendy ensures that displayed items does equal [ &quot;Feed the cat&quot; ]
-                                        </span>
-                            <span class="evidence">
-                                </span>
-                        </div>
-                    </td>
-
-                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">007ms</span></td>
-                </tr>
-
-                            </table>
-                        </td>
-                    </tr>
-                <tr class="test-SUCCESS">
+                <tr class="test-FAILURE">
 
                     <td width="50" class="step-icon">
                         <a name="1"></a>
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1')"
                                style="display:block">
-                                <i class="bi bi-caret-right-square imgstepSection1 success-icon"
+                                <i class="bi bi-caret-right-square imgstepSection1 failure-icon"
                                    style="margin-left: 20px; float:left; padding-right:5px"></i>
                             </a>
                     </td>
@@ -778,7 +668,7 @@
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1')"
                                style="display:block;">
                                 <span class="top-level-step">
-                                                GitHub Pages should check the state of the system before interacting with the UI #2 - Retries: Attempt #1
+                                                GitHub Pages should check the state of the system before interacting with the UI #2 - Retries: Attempt #2
                                         </span>
                             </a>
                             <span class="evidence">
@@ -786,19 +676,28 @@
                         </div>
                     </td>
 
-                    <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">991ms</span></td>
+                        <td width="160" class="FAILURE-text">
+
+                                <a href="f2fa2f0a067c35e922df04e8f627982651dade8e74e8b2994bef68e4767fd27d_screenshots.html#screenshots?screenshot=6">
+                                    <img src="photo-linux-chromium-145.0.7632.6-apisitt-ensures-that-github-status-d-21850b5bb0.png"
+                                         href="photo-linux-chromium-145.0.7632.6-apisitt-ensures-that-github-status-d-21850b5bb0.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="130"><span class="top-level-step">FAILURE</span></td>
+                    <td width="100"><span class="top-level-step">348ms</span></td>
                 </tr>
                     <tr>
                         <td colspan="5">
                             <table id="stepSection1" class="step-table-nested" style="display:none;">
-                <tr class="test-SUCCESS">
+                <tr class="test-FAILURE">
 
                     <td width="70" class="step-icon">
                         <a name="1-0"></a>
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1-0')"
                                style="display:block">
-                                <i class="bi bi-caret-right-square imgstepSection1-0 success-icon"
+                                <i class="bi bi-caret-right-square imgstepSection1-0 failure-icon"
                                    style="margin-left: 40px; float:left; padding-right:5px"></i>
                             </a>
                     </td>
@@ -816,8 +715,17 @@
                         </div>
                     </td>
 
-                    <td width="130"><span class="nested-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-step">088ms</span></td>
+                        <td width="160" class="FAILURE-text">
+
+                                <a href="f2fa2f0a067c35e922df04e8f627982651dade8e74e8b2994bef68e4767fd27d_screenshots.html#screenshots?screenshot=6">
+                                    <img src="photo-linux-chromium-145.0.7632.6-apisitt-ensures-that-github-status-d-21850b5bb0.png"
+                                         href="photo-linux-chromium-145.0.7632.6-apisitt-ensures-that-github-status-d-21850b5bb0.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="130"><span class="nested-step">FAILURE</span></td>
+                    <td width="100"><span class="nested-step">138ms</span></td>
                 </tr>
                     <tr>
                         <td colspan="5">
@@ -840,13 +748,13 @@
                                         <span class="piece-of-evidence">
                 <span>
                         <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
-                                data-target="#restModal-REST-16">
+                                data-target="#restModal-REST-8">
                             REST Query
                         </button>
                     </span>
                 <!-- Modal -->
                 <div class="rest-query-details">
-                    <div class="collapse multi-collapse" id="restModal-REST-16">
+                    <div class="collapse multi-collapse" id="restModal-REST-8">
                         <div class="card">
                             <div class="card-body">
                                 <h4>Response</h4>
@@ -855,9 +763,9 @@
                                     <h4>Request Headers</h4>
                                     <pre>Accept: application/json, text/plain, */*<br>User-Agent: axios/1.13.6<br>Accept-Encoding: gzip, compress, deflate, br</pre>
                                     <h4>Response Headers</h4>
-                                    <pre>content-type: application/json; charset=utf-8<br>content-length: 215<br>connection: close<br>date: Thu, 19 Mar 2026 16:22:32 GMT<br>x-download-options: noopen<br>x-permitted-cross-domain-policies: none<br>referrer-policy: strict-origin-when-cross-origin<br>x-statuspage-version: 424b2c3aa78c5d285028e2e254abf41f50945f39<br>strict-transport-security: max-age=259200<br>x-statuspage-skip-logging: true<br>access-control-allow-origin: *<br>cache-control: max-age=3, public, stale-while-revalidate=30, stale-if-error=3600<br>x-pollinator-metadata-service: status-page-web-pages<br>x-runtime: 0.049719<br>server: AtlassianEdge<br>accept-ranges: bytes<br>x-content-type-options: nosniff<br>x-xss-protection: 1; mode=block<br>atl-traceid: 9cfac4a4fe1a4454aac32ae18c49d105<br>atl-request-id: 9cfac4a4-fe1a-4454-aac3-2ae18c49d105<br>report-to: {&quot;endpoints&quot;: [{&quot;url&quot;: &quot;https://dz8aopenkvv6s.cloudfront.net&quot;}], &quot;group&quot;: &quot;endpoint-1&quot;, &quot;include_subdomains&quot;: true, &quot;max_age&quot;: 600}<br>nel: {&quot;failure_fraction&quot;: 0.01, &quot;include_subdomains&quot;: true, &quot;max_age&quot;: 600, &quot;report_to&quot;: &quot;endpoint-1&quot;}<br>etag: W/&quot;7d4c27419bcd1e7e56f002e76024da48&quot;<br>vary: Accept,Accept-Encoding<br>x-cache: Hit from cloudfront<br>via: 1.1 2ec8235d22ebb3e9bd078e2d567c94a6.cloudfront.net (CloudFront)<br>x-amz-cf-pop: ORD56-P12<br>x-amz-cf-id: 39fRhCWmnqNR7p1tSlud2-qQcYkR0064OEyIE3E3QMyARmNIyuzu6Q==<br>age: 27</pre>
+                                    <pre>content-type: application/json; charset=utf-8<br>content-length: 213<br>connection: close<br>date: Thu, 19 Mar 2026 23:27:59 GMT<br>x-download-options: noopen<br>x-permitted-cross-domain-policies: none<br>referrer-policy: strict-origin-when-cross-origin<br>x-statuspage-version: 424b2c3aa78c5d285028e2e254abf41f50945f39<br>strict-transport-security: max-age=259200<br>x-statuspage-skip-logging: true<br>access-control-allow-origin: *<br>cache-control: max-age=3, public, stale-while-revalidate=30, stale-if-error=3600<br>x-pollinator-metadata-service: status-page-web-pages<br>x-runtime: 0.052273<br>server: AtlassianEdge<br>accept-ranges: bytes<br>x-content-type-options: nosniff<br>x-xss-protection: 1; mode=block<br>atl-traceid: b816f75157624cc0b1d5582d5108a12a<br>atl-request-id: b816f751-5762-4cc0-b1d5-582d5108a12a<br>report-to: {&quot;endpoints&quot;: [{&quot;url&quot;: &quot;https://dz8aopenkvv6s.cloudfront.net&quot;}], &quot;group&quot;: &quot;endpoint-1&quot;, &quot;include_subdomains&quot;: true, &quot;max_age&quot;: 600}<br>nel: {&quot;failure_fraction&quot;: 0.01, &quot;include_subdomains&quot;: true, &quot;max_age&quot;: 600, &quot;report_to&quot;: &quot;endpoint-1&quot;}<br>etag: W/&quot;699f2533f5ad6ed562e262a6add1f196&quot;<br>vary: Accept,Accept-Encoding<br>x-cache: Hit from cloudfront<br>via: 1.1 44560179599d3ceafce5daacf7e6a68a.cloudfront.net (CloudFront)<br>x-amz-cf-pop: ORD56-P12<br>x-amz-cf-id: _ACxsJ1fCCqL2AwNGcv1xAvWrM9qZo68egVOMpBjsX3iCidaiEilCw==<br>age: 20</pre>
                                 <h4>Response Body</h4>
-                                    <pre>{<br>    &quot;page&quot;: {<br>        &quot;id&quot;: &quot;kctbh9vrtdwd&quot;,<br>        &quot;name&quot;: &quot;GitHub&quot;,<br>        &quot;url&quot;: &quot;https://www.githubstatus.com&quot;,<br>        &quot;time_zone&quot;: &quot;Etc/UTC&quot;,<br>        &quot;updated_at&quot;: &quot;2026-03-19T15:38:41.415Z&quot;<br>    },<br>    &quot;status&quot;: {<br>        &quot;indicator&quot;: &quot;none&quot;,<br>        &quot;description&quot;: &quot;All Systems Operational&quot;<br>    }<br>}</pre>
+                                    <pre>{<br>    &quot;page&quot;: {<br>        &quot;id&quot;: &quot;kctbh9vrtdwd&quot;,<br>        &quot;name&quot;: &quot;GitHub&quot;,<br>        &quot;url&quot;: &quot;https://www.githubstatus.com&quot;,<br>        &quot;time_zone&quot;: &quot;Etc/UTC&quot;,<br>        &quot;updated_at&quot;: &quot;2026-03-19T22:57:16.044Z&quot;<br>    },<br>    &quot;status&quot;: {<br>        &quot;indicator&quot;: &quot;minor&quot;,<br>        &quot;description&quot;: &quot;Minor Service Outage&quot;<br>    }<br>}</pre>
                             </div>
                         </div>
                     </div>
@@ -867,8 +775,11 @@
                         </div>
                     </td>
 
+                        <td width="160" class="SUCCESS-text">
+
+                        </td>
                     <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">049ms</span></td>
+                    <td width="100"><span class="nested-group-step">062ms</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
 
@@ -889,15 +800,18 @@
                         </div>
                     </td>
 
+                        <td width="160" class="SUCCESS-text">
+
+                        </td>
                     <td width="130"><span class="nested-group-step">SUCCESS</span></td>
                     <td width="100"><span class="nested-group-step">002ms</span></td>
                 </tr>
-                <tr class="test-SUCCESS">
+                <tr class="test-FAILURE">
 
                     <td width="90" class="step-icon">
                         <a name="1-0-2"></a>
                             <span style="margin-left: 60px;"
-                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon ' title='FAILURE'></i></a>
                                 </span>
                     </td>
 
@@ -911,224 +825,71 @@
                         </div>
                     </td>
 
-                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                        <td width="160" class="FAILURE-text">
+
+                                <a href="f2fa2f0a067c35e922df04e8f627982651dade8e74e8b2994bef68e4767fd27d_screenshots.html#screenshots?screenshot=6">
+                                    <img src="photo-linux-chromium-145.0.7632.6-apisitt-ensures-that-github-status-d-21850b5bb0.png"
+                                         href="photo-linux-chromium-145.0.7632.6-apisitt-ensures-that-github-status-d-21850b5bb0.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="130"><span class="nested-group-step">FAILURE</span></td>
                     <td width="100"><span class="nested-group-step">002ms</span></td>
                 </tr>
+                    <tr class="test-FAILURE">
+                        <td width="40">&nbsp</td>
+                        <td width="%" colspan="4" class="error-message-cell">
+
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">AssertionError: Expected GitHub Status to equal &quot;All Systems Operational&quot;<br><br>Expectation: equals(&#39;All Systems Operational&#39;)<br><br>Expected string: All Systems Operational<br>Received string: Minor Service Outage<br><br>    at /__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts:34:30</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-10"
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="bi bi-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-10">
+            <div class="card">
+                <div class="card-header">
+                    <h4>AssertionError </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts:34)<br />.ErrorFactory.create()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/@serenity-js/core/src/errors/ErrorFactory.ts:36)<br />.Stage.createError()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/@serenity-js/core/src/stage/Stage.ts:341)<br />.RaiseErrors.create()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/@serenity-js/core/src/errors/RaiseErrors.ts:59)<br />.Ensure.performAs()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/@serenity-js/assertions/src/Ensure.ts:140)<br />.PerformActivitiesAsPlaywrightSteps.perform()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/@serenity-js/core/src/screenplay/abilities/PerformActivities.ts:60)<br />.TestStepInfoImpl._runStepBody()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/testInfo.js:506)<br />.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/common/testType.js:245)<br />.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/common/testType.js:243)<br />.TestTypeImpl._step()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/common/testType.js:240)<br />.PerformActivitiesAsPlaywrightSteps.perform()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/@serenity-js/playwright-test/src/api/PerformActivitiesAsPlaywrightSteps.ts:38)<br />.PerformActivitiesAsPlaywrightSteps.perform()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/@serenity-js/core/src/screenplay/abilities/PerformActivities.ts:60)<br />.TestStepInfoImpl._runStepBody()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/testInfo.js:506)<br />.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/common/testType.js:245)<br />.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/common/testType.js:243)<br />.TestTypeImpl._step()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/common/testType.js:240)<br />.PerformActivitiesAsPlaywrightSteps.perform()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/@serenity-js/playwright-test/src/api/PerformActivitiesAsPlaywrightSteps.ts:38)<br />.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts:33)<br />.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/workerMain.js:323)<br />.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/testInfo.js:320)<br />.TimeoutManager.withRunnable()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/timeoutManager.js:67)<br />.TestInfoImpl._runWithTimeout()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/testInfo.js:318)<br />.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/workerMain.js:321)<br />.WorkerMain._runTest()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/workerMain.js:296)<br />.WorkerMain.runTestGroup()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/workerMain.js:196)<br />.process.<anonymous>()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/common/process.js:72)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+                        </td>
+                    </tr>
 
                             </table>
                         </td>
                     </tr>
-                <tr class="test-SUCCESS">
-
-                    <td width="70" class="step-icon">
-                        <a name="1-1"></a>
-                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1-1')"
-                               style="display:block">
-                                <i class="bi bi-caret-right-square imgstepSection1-1 success-icon"
-                                   style="margin-left: 40px; float:left; padding-right:5px"></i>
-                            </a>
-                    </td>
-
-                    <td class="step-description-column">
-                        <div class="step-description">
-                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1-1')"
-                               style="display:block;">
-                                <span class="nested-step">
-                                                Wendy starts with an empty todo list
-                                        </span>
-                            </a>
-                            <span class="evidence">
-                                </span>
-                        </div>
-                    </td>
-
-                    <td width="130"><span class="nested-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-step">373ms</span></td>
-                </tr>
-                    <tr>
-                        <td colspan="5">
-                            <table id="stepSection1-1" class="step-table-nested" style="display:none;">
-                <tr class="test-SUCCESS">
-
-                    <td width="90" class="step-icon">
-                        <a name="1-1-0"></a>
-                            <span style="margin-left: 60px;"
-                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
-                                </span>
-                    </td>
-
-                    <td class="step-description-column">
-                        <div class="step-description">
-                                <span class="nested-group-step">
-                                                Wendy navigates to &quot;/&quot;
-                                        </span>
-                            <span class="evidence">
-                                </span>
-                        </div>
-                    </td>
-
-                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">332ms</span></td>
-                </tr>
-                <tr class="test-SUCCESS">
-
-                    <td width="90" class="step-icon">
-                        <a name="1-1-1"></a>
-                            <span style="margin-left: 60px;"
-                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
-                                </span>
-                    </td>
-
-                    <td class="step-description-column">
-                        <div class="step-description">
-                                <span class="nested-group-step">
-                                                Wendy ensures that website title does equal &quot;Serenity/JS TodoApp&quot;
-                                        </span>
-                            <span class="evidence">
-                                </span>
-                        </div>
-                    </td>
-
-                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">018ms</span></td>
-                </tr>
 
                             </table>
                         </td>
                     </tr>
-                <tr class="test-SUCCESS">
-
-                    <td width="70" class="step-icon">
-                        <a name="1-2"></a>
-                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1-2')"
-                               style="display:block">
-                                <i class="bi bi-caret-right-square imgstepSection1-2 success-icon"
-                                   style="margin-left: 40px; float:left; padding-right:5px"></i>
-                            </a>
-                    </td>
-
-                    <td class="step-description-column">
-                        <div class="step-description">
-                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1-2')"
-                               style="display:block;">
-                                <span class="nested-step">
-                                                Wendy records an item called &quot;Feed the cat&quot;
-                                        </span>
-                            </a>
-                            <span class="evidence">
-                                </span>
-                        </div>
-                    </td>
-
-                    <td width="130"><span class="nested-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-step">176ms</span></td>
-                </tr>
-                    <tr>
-                        <td colspan="5">
-                            <table id="stepSection1-2" class="step-table-nested" style="display:none;">
-                <tr class="test-SUCCESS">
-
-                    <td width="90" class="step-icon">
-                        <a name="1-2-0"></a>
-                            <span style="margin-left: 60px;"
-                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
-                                </span>
-                    </td>
-
-                    <td class="step-description-column">
-                        <div class="step-description">
-                                <span class="nested-group-step">
-                                                Wendy enters &quot;Feed the cat&quot; into &quot;What needs to be done?&quot; input box
-                                        </span>
-                            <span class="evidence">
-                                </span>
-                        </div>
-                    </td>
-
-                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">063ms</span></td>
-                </tr>
-                <tr class="test-SUCCESS">
-
-                    <td width="90" class="step-icon">
-                        <a name="1-2-1"></a>
-                            <span style="margin-left: 60px;"
-                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
-                                </span>
-                    </td>
-
-                    <td class="step-description-column">
-                        <div class="step-description">
-                                <span class="nested-group-step">
-                                                Wendy presses key Enter in &quot;What needs to be done?&quot; input box
-                                        </span>
-                            <span class="evidence">
-                                </span>
-                        </div>
-                    </td>
-
-                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">051ms</span></td>
-                </tr>
-                <tr class="test-SUCCESS">
-
-                    <td width="90" class="step-icon">
-                        <a name="1-2-2"></a>
-                            <span style="margin-left: 60px;"
-                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
-                                </span>
-                    </td>
-
-                    <td class="step-description-column">
-                        <div class="step-description">
-                                <span class="nested-group-step">
-                                                Wendy waits until displayed items does contain &quot;Feed the cat&quot;
-                                        </span>
-                            <span class="evidence">
-                                </span>
-                        </div>
-                    </td>
-
-                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">027ms</span></td>
-                </tr>
-
-                            </table>
-                        </td>
-                    </tr>
-                <tr class="test-SUCCESS">
-
-                    <td width="70" class="step-icon">
-                        <a name="1-3"></a>
-                            <span style="margin-left: 40px;"
-                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
-                                </span>
-                    </td>
-
-                    <td class="step-description-column">
-                        <div class="step-description">
-                                <span class="nested-group-step">
-                                                Wendy ensures that displayed items does equal [ &quot;Feed the cat&quot; ]
-                                        </span>
-                            <span class="evidence">
-                                </span>
-                        </div>
-                    </td>
-
-                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">012ms</span></td>
-                </tr>
-
-                            </table>
-                        </td>
-                    </tr>
-                <tr class="test-SUCCESS">
+                <tr class="test-FAILURE">
 
                     <td width="50" class="step-icon">
                         <a name="2"></a>
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection2')"
                                style="display:block">
-                                <i class="bi bi-caret-right-square imgstepSection2 success-icon"
+                                <i class="bi bi-caret-right-square imgstepSection2 failure-icon"
                                    style="margin-left: 20px; float:left; padding-right:5px"></i>
                             </a>
                     </td>
@@ -1138,7 +899,7 @@
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection2')"
                                style="display:block;">
                                 <span class="top-level-step">
-                                                GitHub Pages should check the state of the system before interacting with the UI #3 - Retries: Attempt #1
+                                                GitHub Pages should check the state of the system before interacting with the UI #3 - Retries: Attempt #3
                                         </span>
                             </a>
                             <span class="evidence">
@@ -1146,19 +907,28 @@
                         </div>
                     </td>
 
-                    <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">1s 044ms</span></td>
+                        <td width="160" class="FAILURE-text">
+
+                                <a href="f2fa2f0a067c35e922df04e8f627982651dade8e74e8b2994bef68e4767fd27d_screenshots.html#screenshots?screenshot=9">
+                                    <img src="photo-linux-chromium-145.0.7632.6-apisitt-ensures-that-github-status-d-21850b5bb0.png"
+                                         href="photo-linux-chromium-145.0.7632.6-apisitt-ensures-that-github-status-d-21850b5bb0.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="130"><span class="top-level-step">FAILURE</span></td>
+                    <td width="100"><span class="top-level-step">284ms</span></td>
                 </tr>
                     <tr>
                         <td colspan="5">
                             <table id="stepSection2" class="step-table-nested" style="display:none;">
-                <tr class="test-SUCCESS">
+                <tr class="test-FAILURE">
 
                     <td width="70" class="step-icon">
                         <a name="2-0"></a>
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection2-0')"
                                style="display:block">
-                                <i class="bi bi-caret-right-square imgstepSection2-0 success-icon"
+                                <i class="bi bi-caret-right-square imgstepSection2-0 failure-icon"
                                    style="margin-left: 40px; float:left; padding-right:5px"></i>
                             </a>
                     </td>
@@ -1176,8 +946,17 @@
                         </div>
                     </td>
 
-                    <td width="130"><span class="nested-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-step">098ms</span></td>
+                        <td width="160" class="FAILURE-text">
+
+                                <a href="f2fa2f0a067c35e922df04e8f627982651dade8e74e8b2994bef68e4767fd27d_screenshots.html#screenshots?screenshot=9">
+                                    <img src="photo-linux-chromium-145.0.7632.6-apisitt-ensures-that-github-status-d-21850b5bb0.png"
+                                         href="photo-linux-chromium-145.0.7632.6-apisitt-ensures-that-github-status-d-21850b5bb0.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="130"><span class="nested-step">FAILURE</span></td>
+                    <td width="100"><span class="nested-step">127ms</span></td>
                 </tr>
                     <tr>
                         <td colspan="5">
@@ -1200,13 +979,13 @@
                                         <span class="piece-of-evidence">
                 <span>
                         <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
-                                data-target="#restModal-REST-29">
+                                data-target="#restModal-REST-13">
                             REST Query
                         </button>
                     </span>
                 <!-- Modal -->
                 <div class="rest-query-details">
-                    <div class="collapse multi-collapse" id="restModal-REST-29">
+                    <div class="collapse multi-collapse" id="restModal-REST-13">
                         <div class="card">
                             <div class="card-body">
                                 <h4>Response</h4>
@@ -1215,9 +994,9 @@
                                     <h4>Request Headers</h4>
                                     <pre>Accept: application/json, text/plain, */*<br>User-Agent: axios/1.13.6<br>Accept-Encoding: gzip, compress, deflate, br</pre>
                                     <h4>Response Headers</h4>
-                                    <pre>content-type: application/json; charset=utf-8<br>content-length: 215<br>connection: close<br>date: Thu, 19 Mar 2026 16:22:59 GMT<br>x-download-options: noopen<br>x-permitted-cross-domain-policies: none<br>referrer-policy: strict-origin-when-cross-origin<br>x-statuspage-version: 424b2c3aa78c5d285028e2e254abf41f50945f39<br>strict-transport-security: max-age=259200<br>x-statuspage-skip-logging: true<br>access-control-allow-origin: *<br>cache-control: max-age=3, public, stale-while-revalidate=30, stale-if-error=3600<br>x-pollinator-metadata-service: status-page-web-pages<br>x-runtime: 0.068894<br>server: AtlassianEdge<br>accept-ranges: bytes<br>x-content-type-options: nosniff<br>x-xss-protection: 1; mode=block<br>atl-traceid: 79f1c0fd819945e7a7715cdd7cdb70ef<br>atl-request-id: 79f1c0fd-8199-45e7-a771-5cdd7cdb70ef<br>report-to: {&quot;endpoints&quot;: [{&quot;url&quot;: &quot;https://dz8aopenkvv6s.cloudfront.net&quot;}], &quot;group&quot;: &quot;endpoint-1&quot;, &quot;include_subdomains&quot;: true, &quot;max_age&quot;: 600}<br>nel: {&quot;failure_fraction&quot;: 0.01, &quot;include_subdomains&quot;: true, &quot;max_age&quot;: 600, &quot;report_to&quot;: &quot;endpoint-1&quot;}<br>etag: W/&quot;7d4c27419bcd1e7e56f002e76024da48&quot;<br>vary: Accept,Accept-Encoding<br>x-cache: Hit from cloudfront<br>via: 1.1 d4130248ac42413c526bedc7570754e0.cloudfront.net (CloudFront)<br>x-amz-cf-pop: ORD56-P12<br>x-amz-cf-id: 87VVwCOI4Gn0M2uSkvaefBNLX6xhQTN3mw8YeTWhpsGgjnRdmKwgnA==<br>age: 17</pre>
+                                    <pre>content-type: application/json; charset=utf-8<br>content-length: 213<br>connection: close<br>date: Thu, 19 Mar 2026 23:28:19 GMT<br>x-download-options: noopen<br>x-permitted-cross-domain-policies: none<br>referrer-policy: strict-origin-when-cross-origin<br>x-statuspage-version: 424b2c3aa78c5d285028e2e254abf41f50945f39<br>strict-transport-security: max-age=259200<br>x-statuspage-skip-logging: true<br>access-control-allow-origin: *<br>cache-control: max-age=3, public, stale-while-revalidate=30, stale-if-error=3600<br>x-pollinator-metadata-service: status-page-web-pages<br>x-runtime: 0.074617<br>server: AtlassianEdge<br>accept-ranges: bytes<br>x-content-type-options: nosniff<br>x-xss-protection: 1; mode=block<br>atl-traceid: 839a8343eb114aab99ac522e7eae4603<br>atl-request-id: 839a8343-eb11-4aab-99ac-522e7eae4603<br>report-to: {&quot;endpoints&quot;: [{&quot;url&quot;: &quot;https://dz8aopenkvv6s.cloudfront.net&quot;}], &quot;group&quot;: &quot;endpoint-1&quot;, &quot;include_subdomains&quot;: true, &quot;max_age&quot;: 600}<br>nel: {&quot;failure_fraction&quot;: 0.01, &quot;include_subdomains&quot;: true, &quot;max_age&quot;: 600, &quot;report_to&quot;: &quot;endpoint-1&quot;}<br>etag: W/&quot;699f2533f5ad6ed562e262a6add1f196&quot;<br>vary: Accept,Accept-Encoding<br>x-cache: Hit from cloudfront<br>via: 1.1 2ec8235d22ebb3e9bd078e2d567c94a6.cloudfront.net (CloudFront)<br>x-amz-cf-pop: ORD56-P12<br>x-amz-cf-id: nqHbrSGGGAwitssWhRhLmsJeqwI22SJa1gzA8bHvCtRqLZV-U5LKlw==<br>age: 2</pre>
                                 <h4>Response Body</h4>
-                                    <pre>{<br>    &quot;page&quot;: {<br>        &quot;id&quot;: &quot;kctbh9vrtdwd&quot;,<br>        &quot;name&quot;: &quot;GitHub&quot;,<br>        &quot;url&quot;: &quot;https://www.githubstatus.com&quot;,<br>        &quot;time_zone&quot;: &quot;Etc/UTC&quot;,<br>        &quot;updated_at&quot;: &quot;2026-03-19T15:38:41.415Z&quot;<br>    },<br>    &quot;status&quot;: {<br>        &quot;indicator&quot;: &quot;none&quot;,<br>        &quot;description&quot;: &quot;All Systems Operational&quot;<br>    }<br>}</pre>
+                                    <pre>{<br>    &quot;page&quot;: {<br>        &quot;id&quot;: &quot;kctbh9vrtdwd&quot;,<br>        &quot;name&quot;: &quot;GitHub&quot;,<br>        &quot;url&quot;: &quot;https://www.githubstatus.com&quot;,<br>        &quot;time_zone&quot;: &quot;Etc/UTC&quot;,<br>        &quot;updated_at&quot;: &quot;2026-03-19T22:57:16.044Z&quot;<br>    },<br>    &quot;status&quot;: {<br>        &quot;indicator&quot;: &quot;minor&quot;,<br>        &quot;description&quot;: &quot;Minor Service Outage&quot;<br>    }<br>}</pre>
                             </div>
                         </div>
                     </div>
@@ -1227,8 +1006,11 @@
                         </div>
                     </td>
 
+                        <td width="160" class="SUCCESS-text">
+
+                        </td>
                     <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">058ms</span></td>
+                    <td width="100"><span class="nested-group-step">056ms</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
 
@@ -1249,15 +1031,18 @@
                         </div>
                     </td>
 
+                        <td width="160" class="SUCCESS-text">
+
+                        </td>
                     <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">001ms</span></td>
+                    <td width="100"><span class="nested-group-step">002ms</span></td>
                 </tr>
-                <tr class="test-SUCCESS">
+                <tr class="test-FAILURE">
 
                     <td width="90" class="step-icon">
                         <a name="2-0-2"></a>
                             <span style="margin-left: 60px;"
-                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon ' title='FAILURE'></i></a>
                                 </span>
                     </td>
 
@@ -1271,30 +1056,351 @@
                         </div>
                     </td>
 
+                        <td width="160" class="FAILURE-text">
+
+                                <a href="f2fa2f0a067c35e922df04e8f627982651dade8e74e8b2994bef68e4767fd27d_screenshots.html#screenshots?screenshot=9">
+                                    <img src="photo-linux-chromium-145.0.7632.6-apisitt-ensures-that-github-status-d-21850b5bb0.png"
+                                         href="photo-linux-chromium-145.0.7632.6-apisitt-ensures-that-github-status-d-21850b5bb0.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="130"><span class="nested-group-step">FAILURE</span></td>
+                    <td width="100"><span class="nested-group-step">002ms</span></td>
+                </tr>
+                    <tr class="test-FAILURE">
+                        <td width="40">&nbsp</td>
+                        <td width="%" colspan="4" class="error-message-cell">
+
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">AssertionError: Expected GitHub Status to equal &quot;All Systems Operational&quot;<br><br>Expectation: equals(&#39;All Systems Operational&#39;)<br><br>Expected string: All Systems Operational<br>Received string: Minor Service Outage<br><br>    at /__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts:34:30</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-15"
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="bi bi-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-15">
+            <div class="card">
+                <div class="card-header">
+                    <h4>AssertionError </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts:34)<br />.ErrorFactory.create()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/@serenity-js/core/src/errors/ErrorFactory.ts:36)<br />.Stage.createError()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/@serenity-js/core/src/stage/Stage.ts:341)<br />.RaiseErrors.create()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/@serenity-js/core/src/errors/RaiseErrors.ts:59)<br />.Ensure.performAs()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/@serenity-js/assertions/src/Ensure.ts:140)<br />.PerformActivitiesAsPlaywrightSteps.perform()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/@serenity-js/core/src/screenplay/abilities/PerformActivities.ts:60)<br />.TestStepInfoImpl._runStepBody()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/testInfo.js:506)<br />.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/common/testType.js:245)<br />.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/common/testType.js:243)<br />.TestTypeImpl._step()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/common/testType.js:240)<br />.PerformActivitiesAsPlaywrightSteps.perform()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/@serenity-js/playwright-test/src/api/PerformActivitiesAsPlaywrightSteps.ts:38)<br />.PerformActivitiesAsPlaywrightSteps.perform()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/@serenity-js/core/src/screenplay/abilities/PerformActivities.ts:60)<br />.TestStepInfoImpl._runStepBody()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/testInfo.js:506)<br />.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/common/testType.js:245)<br />.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/common/testType.js:243)<br />.TestTypeImpl._step()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/common/testType.js:240)<br />.PerformActivitiesAsPlaywrightSteps.perform()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/@serenity-js/playwright-test/src/api/PerformActivitiesAsPlaywrightSteps.ts:38)<br />.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts:33)<br />.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/workerMain.js:323)<br />.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/testInfo.js:320)<br />.TimeoutManager.withRunnable()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/timeoutManager.js:67)<br />.TestInfoImpl._runWithTimeout()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/testInfo.js:318)<br />.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/workerMain.js:321)<br />.WorkerMain._runTest()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/workerMain.js:296)<br />.WorkerMain.runTestGroup()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/workerMain.js:196)<br />.process.<anonymous>()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/common/process.js:72)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+                        </td>
+                    </tr>
+
+                            </table>
+                        </td>
+                    </tr>
+
+                            </table>
+                        </td>
+                    </tr>
+                <tr class="test-FAILURE">
+
+                    <td width="50" class="step-icon">
+                        <a name="3"></a>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection3')"
+                               style="display:block">
+                                <i class="bi bi-caret-right-square imgstepSection3 failure-icon"
+                                   style="margin-left: 20px; float:left; padding-right:5px"></i>
+                            </a>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection3')"
+                               style="display:block;">
+                                <span class="top-level-step">
+                                                GitHub Pages should check the state of the system before interacting with the UI #4 - Retries: Attempt #1
+                                        </span>
+                            </a>
+                            <span class="evidence">
+                                </span>
+                        </div>
+                    </td>
+
+                        <td width="160" class="FAILURE-text">
+
+                                <a href="f2fa2f0a067c35e922df04e8f627982651dade8e74e8b2994bef68e4767fd27d_screenshots.html#screenshots?screenshot=13">
+                                    <img src="photo-linux-firefox-146.0.1-apisitt-ensures-that-github-status-does-eq-cfb29ba588.png"
+                                         href="photo-linux-firefox-146.0.1-apisitt-ensures-that-github-status-does-eq-cfb29ba588.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="130"><span class="top-level-step">FAILURE</span></td>
+                    <td width="100"><span class="top-level-step">436ms</span></td>
+                </tr>
+                    <tr>
+                        <td colspan="5">
+                            <table id="stepSection3" class="step-table-nested" style="display:none;">
+                <tr class="test-FAILURE">
+
+                    <td width="70" class="step-icon">
+                        <a name="3-0"></a>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection3-0')"
+                               style="display:block">
+                                <i class="bi bi-caret-right-square imgstepSection3-0 failure-icon"
+                                   style="margin-left: 40px; float:left; padding-right:5px"></i>
+                            </a>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection3-0')"
+                               style="display:block;">
+                                <span class="nested-step">
+                                                Apisitt ensures all GitHub systems are operational
+                                        </span>
+                            </a>
+                            <span class="evidence">
+                                </span>
+                        </div>
+                    </td>
+
+                        <td width="160" class="FAILURE-text">
+
+                                <a href="f2fa2f0a067c35e922df04e8f627982651dade8e74e8b2994bef68e4767fd27d_screenshots.html#screenshots?screenshot=13">
+                                    <img src="photo-linux-firefox-146.0.1-apisitt-ensures-that-github-status-does-eq-cfb29ba588.png"
+                                         href="photo-linux-firefox-146.0.1-apisitt-ensures-that-github-status-does-eq-cfb29ba588.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="130"><span class="nested-step">FAILURE</span></td>
+                    <td width="100"><span class="nested-step">184ms</span></td>
+                </tr>
+                    <tr>
+                        <td colspan="5">
+                            <table id="stepSection3-0" class="step-table-nested" style="display:none;">
+                <tr class="test-SUCCESS">
+
+                    <td width="90" class="step-icon">
+                        <a name="3-0-0"></a>
+                            <span style="margin-left: 60px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                                Apisitt sends a GET request to &amp;apos;https://www.githubstatus.com/api/v2/status.json&amp;apos;
+                                        </span>
+                            <span class="evidence">
+                                        <span class="piece-of-evidence">
+                <span>
+                        <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
+                                data-target="#restModal-REST-18">
+                            REST Query
+                        </button>
+                    </span>
+                <!-- Modal -->
+                <div class="rest-query-details">
+                    <div class="collapse multi-collapse" id="restModal-REST-18">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4>Response</h4>
+                                    <p>URL: https://www.githubstatus.com/api/v2/status.json</p>
+                                    <p>Status code: 200</p>
+                                    <h4>Request Headers</h4>
+                                    <pre>Accept: application/json, text/plain, */*<br>User-Agent: axios/1.13.6<br>Accept-Encoding: gzip, compress, deflate, br</pre>
+                                    <h4>Response Headers</h4>
+                                    <pre>content-type: application/json; charset=utf-8<br>content-length: 213<br>connection: close<br>date: Thu, 19 Mar 2026 23:28:19 GMT<br>x-download-options: noopen<br>x-permitted-cross-domain-policies: none<br>referrer-policy: strict-origin-when-cross-origin<br>x-statuspage-version: 424b2c3aa78c5d285028e2e254abf41f50945f39<br>strict-transport-security: max-age=259200<br>x-statuspage-skip-logging: true<br>access-control-allow-origin: *<br>cache-control: max-age=3, public, stale-while-revalidate=30, stale-if-error=3600<br>x-pollinator-metadata-service: status-page-web-pages<br>x-runtime: 0.074617<br>server: AtlassianEdge<br>accept-ranges: bytes<br>x-content-type-options: nosniff<br>x-xss-protection: 1; mode=block<br>atl-traceid: 839a8343eb114aab99ac522e7eae4603<br>atl-request-id: 839a8343-eb11-4aab-99ac-522e7eae4603<br>report-to: {&quot;endpoints&quot;: [{&quot;url&quot;: &quot;https://dz8aopenkvv6s.cloudfront.net&quot;}], &quot;group&quot;: &quot;endpoint-1&quot;, &quot;include_subdomains&quot;: true, &quot;max_age&quot;: 600}<br>nel: {&quot;failure_fraction&quot;: 0.01, &quot;include_subdomains&quot;: true, &quot;max_age&quot;: 600, &quot;report_to&quot;: &quot;endpoint-1&quot;}<br>etag: W/&quot;699f2533f5ad6ed562e262a6add1f196&quot;<br>vary: Accept,Accept-Encoding<br>x-cache: Hit from cloudfront<br>via: 1.1 44560179599d3ceafce5daacf7e6a68a.cloudfront.net (CloudFront)<br>x-amz-cf-pop: ORD56-P12<br>x-amz-cf-id: cnimRVsK0CPc9_ZrpkOgUr0xWTbUC74mbBgABaLioKtDBdKQGWpLEw==<br>age: 13</pre>
+                                <h4>Response Body</h4>
+                                    <pre>{<br>    &quot;page&quot;: {<br>        &quot;id&quot;: &quot;kctbh9vrtdwd&quot;,<br>        &quot;name&quot;: &quot;GitHub&quot;,<br>        &quot;url&quot;: &quot;https://www.githubstatus.com&quot;,<br>        &quot;time_zone&quot;: &quot;Etc/UTC&quot;,<br>        &quot;updated_at&quot;: &quot;2026-03-19T22:57:16.044Z&quot;<br>    },<br>    &quot;status&quot;: {<br>        &quot;indicator&quot;: &quot;minor&quot;,<br>        &quot;description&quot;: &quot;Minor Service Outage&quot;<br>    }<br>}</pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                        </span>
+                                </span>
+                        </div>
+                    </td>
+
+                        <td width="160" class="SUCCESS-text">
+
+                        </td>
+                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">024ms</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+
+                    <td width="90" class="step-icon">
+                        <a name="3-0-1"></a>
+                            <span style="margin-left: 60px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                                Apisitt ensures that the status of the last response does equal 200
+                                        </span>
+                            <span class="evidence">
+                                </span>
+                        </div>
+                    </td>
+
+                        <td width="160" class="SUCCESS-text">
+
+                        </td>
                     <td width="130"><span class="nested-group-step">SUCCESS</span></td>
                     <td width="100"><span class="nested-group-step">001ms</span></td>
                 </tr>
+                <tr class="test-FAILURE">
+
+                    <td width="90" class="step-icon">
+                        <a name="3-0-2"></a>
+                            <span style="margin-left: 60px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon ' title='FAILURE'></i></a>
+                                </span>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                                Apisitt ensures that GitHub Status does equal &quot;All Systems Operational&quot;
+                                        </span>
+                            <span class="evidence">
+                                </span>
+                        </div>
+                    </td>
+
+                        <td width="160" class="FAILURE-text">
+
+                                <a href="f2fa2f0a067c35e922df04e8f627982651dade8e74e8b2994bef68e4767fd27d_screenshots.html#screenshots?screenshot=13">
+                                    <img src="photo-linux-firefox-146.0.1-apisitt-ensures-that-github-status-does-eq-cfb29ba588.png"
+                                         href="photo-linux-firefox-146.0.1-apisitt-ensures-that-github-status-does-eq-cfb29ba588.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="130"><span class="nested-group-step">FAILURE</span></td>
+                    <td width="100"><span class="nested-group-step">004ms</span></td>
+                </tr>
+                    <tr class="test-FAILURE">
+                        <td width="40">&nbsp</td>
+                        <td width="%" colspan="4" class="error-message-cell">
+
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">AssertionError: Expected GitHub Status to equal &quot;All Systems Operational&quot;<br><br>Expectation: equals(&#39;All Systems Operational&#39;)<br><br>Expected string: All Systems Operational<br>Received string: Minor Service Outage<br><br>    at /__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts:34:30</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-20"
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="bi bi-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-20">
+            <div class="card">
+                <div class="card-header">
+                    <h4>AssertionError </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts:34)<br />.ErrorFactory.create()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/@serenity-js/core/src/errors/ErrorFactory.ts:36)<br />.Stage.createError()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/@serenity-js/core/src/stage/Stage.ts:341)<br />.RaiseErrors.create()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/@serenity-js/core/src/errors/RaiseErrors.ts:59)<br />.Ensure.performAs()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/@serenity-js/assertions/src/Ensure.ts:140)<br />.PerformActivitiesAsPlaywrightSteps.perform()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/@serenity-js/core/src/screenplay/abilities/PerformActivities.ts:60)<br />.TestStepInfoImpl._runStepBody()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/testInfo.js:506)<br />.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/common/testType.js:245)<br />.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/common/testType.js:243)<br />.TestTypeImpl._step()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/common/testType.js:240)<br />.PerformActivitiesAsPlaywrightSteps.perform()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/@serenity-js/playwright-test/src/api/PerformActivitiesAsPlaywrightSteps.ts:38)<br />.PerformActivitiesAsPlaywrightSteps.perform()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/@serenity-js/core/src/screenplay/abilities/PerformActivities.ts:60)<br />.TestStepInfoImpl._runStepBody()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/testInfo.js:506)<br />.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/common/testType.js:245)<br />.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/common/testType.js:243)<br />.TestTypeImpl._step()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/common/testType.js:240)<br />.PerformActivitiesAsPlaywrightSteps.perform()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/@serenity-js/playwright-test/src/api/PerformActivitiesAsPlaywrightSteps.ts:38)<br />.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts:33)<br />.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/workerMain.js:323)<br />.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/testInfo.js:320)<br />.TimeoutManager.withRunnable()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/timeoutManager.js:67)<br />.TestInfoImpl._runWithTimeout()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/testInfo.js:318)<br />.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/workerMain.js:321)<br />.WorkerMain._runTest()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/workerMain.js:296)<br />.WorkerMain.runTestGroup()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/workerMain.js:196)<br />.process.<anonymous>()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/common/process.js:72)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+                        </td>
+                    </tr>
 
                             </table>
                         </td>
                     </tr>
-                <tr class="test-SUCCESS">
+
+                            </table>
+                        </td>
+                    </tr>
+                <tr class="test-FAILURE">
+
+                    <td width="50" class="step-icon">
+                        <a name="4"></a>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection4')"
+                               style="display:block">
+                                <i class="bi bi-caret-right-square imgstepSection4 failure-icon"
+                                   style="margin-left: 20px; float:left; padding-right:5px"></i>
+                            </a>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection4')"
+                               style="display:block;">
+                                <span class="top-level-step">
+                                                GitHub Pages should check the state of the system before interacting with the UI #5 - Retries: Attempt #2
+                                        </span>
+                            </a>
+                            <span class="evidence">
+                                </span>
+                        </div>
+                    </td>
+
+                        <td width="160" class="FAILURE-text">
+
+                                <a href="f2fa2f0a067c35e922df04e8f627982651dade8e74e8b2994bef68e4767fd27d_screenshots.html#screenshots?screenshot=16">
+                                    <img src="photo-linux-firefox-146.0.1-apisitt-ensures-that-github-status-does-eq-cfb29ba588.png"
+                                         href="photo-linux-firefox-146.0.1-apisitt-ensures-that-github-status-does-eq-cfb29ba588.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="130"><span class="top-level-step">FAILURE</span></td>
+                    <td width="100"><span class="top-level-step">1s 085ms</span></td>
+                </tr>
+                    <tr>
+                        <td colspan="5">
+                            <table id="stepSection4" class="step-table-nested" style="display:none;">
+                <tr class="test-FAILURE">
 
                     <td width="70" class="step-icon">
-                        <a name="2-1"></a>
-                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection2-1')"
+                        <a name="4-0"></a>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection4-0')"
                                style="display:block">
-                                <i class="bi bi-caret-right-square imgstepSection2-1 success-icon"
+                                <i class="bi bi-caret-right-square imgstepSection4-0 failure-icon"
                                    style="margin-left: 40px; float:left; padding-right:5px"></i>
                             </a>
                     </td>
 
                     <td class="step-description-column">
                         <div class="step-description">
-                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection2-1')"
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection4-0')"
                                style="display:block;">
                                 <span class="nested-step">
-                                                Wendy starts with an empty todo list
+                                                Apisitt ensures all GitHub systems are operational
                                         </span>
                             </a>
                             <span class="evidence">
@@ -1302,16 +1408,25 @@
                         </div>
                     </td>
 
-                    <td width="130"><span class="nested-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-step">424ms</span></td>
+                        <td width="160" class="FAILURE-text">
+
+                                <a href="f2fa2f0a067c35e922df04e8f627982651dade8e74e8b2994bef68e4767fd27d_screenshots.html#screenshots?screenshot=16">
+                                    <img src="photo-linux-firefox-146.0.1-apisitt-ensures-that-github-status-does-eq-cfb29ba588.png"
+                                         href="photo-linux-firefox-146.0.1-apisitt-ensures-that-github-status-does-eq-cfb29ba588.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="130"><span class="nested-step">FAILURE</span></td>
+                    <td width="100"><span class="nested-step">272ms</span></td>
                 </tr>
                     <tr>
                         <td colspan="5">
-                            <table id="stepSection2-1" class="step-table-nested" style="display:none;">
+                            <table id="stepSection4-0" class="step-table-nested" style="display:none;">
                 <tr class="test-SUCCESS">
 
                     <td width="90" class="step-icon">
-                        <a name="2-1-0"></a>
+                        <a name="4-0-0"></a>
                             <span style="margin-left: 60px;"
                                   class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
                                 </span>
@@ -1320,20 +1435,49 @@
                     <td class="step-description-column">
                         <div class="step-description">
                                 <span class="nested-group-step">
-                                                Wendy navigates to &quot;/&quot;
+                                                Apisitt sends a GET request to &amp;apos;https://www.githubstatus.com/api/v2/status.json&amp;apos;
                                         </span>
                             <span class="evidence">
+                                        <span class="piece-of-evidence">
+                <span>
+                        <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
+                                data-target="#restModal-REST-23">
+                            REST Query
+                        </button>
+                    </span>
+                <!-- Modal -->
+                <div class="rest-query-details">
+                    <div class="collapse multi-collapse" id="restModal-REST-23">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4>Response</h4>
+                                    <p>URL: https://www.githubstatus.com/api/v2/status.json</p>
+                                    <p>Status code: 200</p>
+                                    <h4>Request Headers</h4>
+                                    <pre>Accept: application/json, text/plain, */*<br>User-Agent: axios/1.13.6<br>Accept-Encoding: gzip, compress, deflate, br</pre>
+                                    <h4>Response Headers</h4>
+                                    <pre>content-type: application/json; charset=utf-8<br>content-length: 213<br>connection: close<br>date: Thu, 19 Mar 2026 23:28:31 GMT<br>x-download-options: noopen<br>x-permitted-cross-domain-policies: none<br>referrer-policy: strict-origin-when-cross-origin<br>x-statuspage-version: 424b2c3aa78c5d285028e2e254abf41f50945f39<br>strict-transport-security: max-age=259200<br>x-statuspage-skip-logging: true<br>access-control-allow-origin: *<br>cache-control: max-age=3, public, stale-while-revalidate=30, stale-if-error=3600<br>x-pollinator-metadata-service: status-page-web-pages<br>x-runtime: 0.069247<br>server: AtlassianEdge<br>accept-ranges: bytes<br>x-content-type-options: nosniff<br>x-xss-protection: 1; mode=block<br>atl-traceid: c1abbd0d49414f0180e7e17d2de09843<br>atl-request-id: c1abbd0d-4941-4f01-80e7-e17d2de09843<br>report-to: {&quot;endpoints&quot;: [{&quot;url&quot;: &quot;https://dz8aopenkvv6s.cloudfront.net&quot;}], &quot;group&quot;: &quot;endpoint-1&quot;, &quot;include_subdomains&quot;: true, &quot;max_age&quot;: 600}<br>nel: {&quot;failure_fraction&quot;: 0.01, &quot;include_subdomains&quot;: true, &quot;max_age&quot;: 600, &quot;report_to&quot;: &quot;endpoint-1&quot;}<br>etag: W/&quot;699f2533f5ad6ed562e262a6add1f196&quot;<br>vary: Accept,Accept-Encoding<br>x-cache: Hit from cloudfront<br>via: 1.1 2ec8235d22ebb3e9bd078e2d567c94a6.cloudfront.net (CloudFront)<br>x-amz-cf-pop: ORD56-P12<br>x-amz-cf-id: f6GfnOgy877uXUGQQnY1wfHIlnK7dFihXNbp73KdMZL5EFfRtYeaPg==<br>age: 5</pre>
+                                <h4>Response Body</h4>
+                                    <pre>{<br>    &quot;page&quot;: {<br>        &quot;id&quot;: &quot;kctbh9vrtdwd&quot;,<br>        &quot;name&quot;: &quot;GitHub&quot;,<br>        &quot;url&quot;: &quot;https://www.githubstatus.com&quot;,<br>        &quot;time_zone&quot;: &quot;Etc/UTC&quot;,<br>        &quot;updated_at&quot;: &quot;2026-03-19T22:57:16.044Z&quot;<br>    },<br>    &quot;status&quot;: {<br>        &quot;indicator&quot;: &quot;minor&quot;,<br>        &quot;description&quot;: &quot;Minor Service Outage&quot;<br>    }<br>}</pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                        </span>
                                 </span>
                         </div>
                     </td>
 
+                        <td width="160" class="SUCCESS-text">
+
+                        </td>
                     <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">394ms</span></td>
+                    <td width="100"><span class="nested-group-step">080ms</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
 
                     <td width="90" class="step-icon">
-                        <a name="2-1-1"></a>
+                        <a name="4-0-1"></a>
                             <span style="margin-left: 60px;"
                                   class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
                                 </span>
@@ -1342,37 +1486,152 @@
                     <td class="step-description-column">
                         <div class="step-description">
                                 <span class="nested-group-step">
-                                                Wendy ensures that website title does equal &quot;Serenity/JS TodoApp&quot;
+                                                Apisitt ensures that the status of the last response does equal 200
                                         </span>
                             <span class="evidence">
                                 </span>
                         </div>
                     </td>
 
+                        <td width="160" class="SUCCESS-text">
+
+                        </td>
                     <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">008ms</span></td>
+                    <td width="100"><span class="nested-group-step">003ms</span></td>
                 </tr>
+                <tr class="test-FAILURE">
+
+                    <td width="90" class="step-icon">
+                        <a name="4-0-2"></a>
+                            <span style="margin-left: 60px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon ' title='FAILURE'></i></a>
+                                </span>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                                Apisitt ensures that GitHub Status does equal &quot;All Systems Operational&quot;
+                                        </span>
+                            <span class="evidence">
+                                </span>
+                        </div>
+                    </td>
+
+                        <td width="160" class="FAILURE-text">
+
+                                <a href="f2fa2f0a067c35e922df04e8f627982651dade8e74e8b2994bef68e4767fd27d_screenshots.html#screenshots?screenshot=16">
+                                    <img src="photo-linux-firefox-146.0.1-apisitt-ensures-that-github-status-does-eq-cfb29ba588.png"
+                                         href="photo-linux-firefox-146.0.1-apisitt-ensures-that-github-status-does-eq-cfb29ba588.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="130"><span class="nested-group-step">FAILURE</span></td>
+                    <td width="100"><span class="nested-group-step">003ms</span></td>
+                </tr>
+                    <tr class="test-FAILURE">
+                        <td width="40">&nbsp</td>
+                        <td width="%" colspan="4" class="error-message-cell">
+
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">AssertionError: Expected GitHub Status to equal &quot;All Systems Operational&quot;<br><br>Expectation: equals(&#39;All Systems Operational&#39;)<br><br>Expected string: All Systems Operational<br>Received string: Minor Service Outage<br><br>    at /__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts:34:30</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-25"
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="bi bi-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-25">
+            <div class="card">
+                <div class="card-header">
+                    <h4>AssertionError </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts:34)<br />.ErrorFactory.create()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/@serenity-js/core/src/errors/ErrorFactory.ts:36)<br />.Stage.createError()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/@serenity-js/core/src/stage/Stage.ts:341)<br />.RaiseErrors.create()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/@serenity-js/core/src/errors/RaiseErrors.ts:59)<br />.Ensure.performAs()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/@serenity-js/assertions/src/Ensure.ts:140)<br />.PerformActivitiesAsPlaywrightSteps.perform()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/@serenity-js/core/src/screenplay/abilities/PerformActivities.ts:60)<br />.TestStepInfoImpl._runStepBody()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/testInfo.js:506)<br />.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/common/testType.js:245)<br />.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/common/testType.js:243)<br />.TestTypeImpl._step()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/common/testType.js:240)<br />.PerformActivitiesAsPlaywrightSteps.perform()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/@serenity-js/playwright-test/src/api/PerformActivitiesAsPlaywrightSteps.ts:38)<br />.PerformActivitiesAsPlaywrightSteps.perform()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/@serenity-js/core/src/screenplay/abilities/PerformActivities.ts:60)<br />.TestStepInfoImpl._runStepBody()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/testInfo.js:506)<br />.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/common/testType.js:245)<br />.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/common/testType.js:243)<br />.TestTypeImpl._step()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/common/testType.js:240)<br />.PerformActivitiesAsPlaywrightSteps.perform()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/@serenity-js/playwright-test/src/api/PerformActivitiesAsPlaywrightSteps.ts:38)<br />.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts:33)<br />.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/workerMain.js:323)<br />.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/testInfo.js:320)<br />.TimeoutManager.withRunnable()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/timeoutManager.js:67)<br />.TestInfoImpl._runWithTimeout()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/testInfo.js:318)<br />.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/workerMain.js:321)<br />.WorkerMain._runTest()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/workerMain.js:296)<br />.WorkerMain.runTestGroup()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/workerMain.js:196)<br />.process.<anonymous>()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/common/process.js:72)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+                        </td>
+                    </tr>
 
                             </table>
                         </td>
                     </tr>
-                <tr class="test-SUCCESS">
+
+                            </table>
+                        </td>
+                    </tr>
+                <tr class="test-FAILURE">
+
+                    <td width="50" class="step-icon">
+                        <a name="5"></a>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection5')"
+                               style="display:block">
+                                <i class="bi bi-caret-right-square imgstepSection5 failure-icon"
+                                   style="margin-left: 20px; float:left; padding-right:5px"></i>
+                            </a>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection5')"
+                               style="display:block;">
+                                <span class="top-level-step">
+                                                GitHub Pages should check the state of the system before interacting with the UI #6 - Retries: Attempt #3
+                                        </span>
+                            </a>
+                            <span class="evidence">
+                                </span>
+                        </div>
+                    </td>
+
+                        <td width="160" class="FAILURE-text">
+
+                                <a href="f2fa2f0a067c35e922df04e8f627982651dade8e74e8b2994bef68e4767fd27d_screenshots.html#screenshots?screenshot=19">
+                                    <img src="photo-linux-firefox-146.0.1-apisitt-ensures-that-github-status-does-eq-cfb29ba588.png"
+                                         href="photo-linux-firefox-146.0.1-apisitt-ensures-that-github-status-does-eq-cfb29ba588.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="130"><span class="top-level-step">FAILURE</span></td>
+                    <td width="100"><span class="top-level-step">1s 051ms</span></td>
+                </tr>
+                    <tr>
+                        <td colspan="5">
+                            <table id="stepSection5" class="step-table-nested" style="display:none;">
+                <tr class="test-FAILURE">
 
                     <td width="70" class="step-icon">
-                        <a name="2-2"></a>
-                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection2-2')"
+                        <a name="5-0"></a>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection5-0')"
                                style="display:block">
-                                <i class="bi bi-caret-right-square imgstepSection2-2 success-icon"
+                                <i class="bi bi-caret-right-square imgstepSection5-0 failure-icon"
                                    style="margin-left: 40px; float:left; padding-right:5px"></i>
                             </a>
                     </td>
 
                     <td class="step-description-column">
                         <div class="step-description">
-                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection2-2')"
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection5-0')"
                                style="display:block;">
                                 <span class="nested-step">
-                                                Wendy records an item called &quot;Feed the cat&quot;
+                                                Apisitt ensures all GitHub systems are operational
                                         </span>
                             </a>
                             <span class="evidence">
@@ -1380,16 +1639,25 @@
                         </div>
                     </td>
 
-                    <td width="130"><span class="nested-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-step">200ms</span></td>
+                        <td width="160" class="FAILURE-text">
+
+                                <a href="f2fa2f0a067c35e922df04e8f627982651dade8e74e8b2994bef68e4767fd27d_screenshots.html#screenshots?screenshot=19">
+                                    <img src="photo-linux-firefox-146.0.1-apisitt-ensures-that-github-status-does-eq-cfb29ba588.png"
+                                         href="photo-linux-firefox-146.0.1-apisitt-ensures-that-github-status-does-eq-cfb29ba588.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="130"><span class="nested-step">FAILURE</span></td>
+                    <td width="100"><span class="nested-step">267ms</span></td>
                 </tr>
                     <tr>
                         <td colspan="5">
-                            <table id="stepSection2-2" class="step-table-nested" style="display:none;">
+                            <table id="stepSection5-0" class="step-table-nested" style="display:none;">
                 <tr class="test-SUCCESS">
 
                     <td width="90" class="step-icon">
-                        <a name="2-2-0"></a>
+                        <a name="5-0-0"></a>
                             <span style="margin-left: 60px;"
                                   class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
                                 </span>
@@ -1398,20 +1666,49 @@
                     <td class="step-description-column">
                         <div class="step-description">
                                 <span class="nested-group-step">
-                                                Wendy enters &quot;Feed the cat&quot; into &quot;What needs to be done?&quot; input box
+                                                Apisitt sends a GET request to &amp;apos;https://www.githubstatus.com/api/v2/status.json&amp;apos;
                                         </span>
                             <span class="evidence">
+                                        <span class="piece-of-evidence">
+                <span>
+                        <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
+                                data-target="#restModal-REST-28">
+                            REST Query
+                        </button>
+                    </span>
+                <!-- Modal -->
+                <div class="rest-query-details">
+                    <div class="collapse multi-collapse" id="restModal-REST-28">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4>Response</h4>
+                                    <p>URL: https://www.githubstatus.com/api/v2/status.json</p>
+                                    <p>Status code: 200</p>
+                                    <h4>Request Headers</h4>
+                                    <pre>Accept: application/json, text/plain, */*<br>User-Agent: axios/1.13.6<br>Accept-Encoding: gzip, compress, deflate, br</pre>
+                                    <h4>Response Headers</h4>
+                                    <pre>content-type: application/json; charset=utf-8<br>content-length: 213<br>connection: close<br>date: Thu, 19 Mar 2026 23:28:34 GMT<br>x-download-options: noopen<br>x-permitted-cross-domain-policies: none<br>referrer-policy: strict-origin-when-cross-origin<br>x-statuspage-version: 424b2c3aa78c5d285028e2e254abf41f50945f39<br>strict-transport-security: max-age=259200<br>x-statuspage-skip-logging: true<br>access-control-allow-origin: *<br>cache-control: max-age=3, public, stale-while-revalidate=30, stale-if-error=3600<br>x-pollinator-metadata-service: status-page-web-pages<br>x-runtime: 0.052400<br>server: AtlassianEdge<br>accept-ranges: bytes<br>x-content-type-options: nosniff<br>x-xss-protection: 1; mode=block<br>atl-traceid: 71eb3d5f919b42449c424e693083d133<br>atl-request-id: 71eb3d5f-919b-4244-9c42-4e693083d133<br>report-to: {&quot;endpoints&quot;: [{&quot;url&quot;: &quot;https://dz8aopenkvv6s.cloudfront.net&quot;}], &quot;group&quot;: &quot;endpoint-1&quot;, &quot;include_subdomains&quot;: true, &quot;max_age&quot;: 600}<br>nel: {&quot;failure_fraction&quot;: 0.01, &quot;include_subdomains&quot;: true, &quot;max_age&quot;: 600, &quot;report_to&quot;: &quot;endpoint-1&quot;}<br>etag: W/&quot;699f2533f5ad6ed562e262a6add1f196&quot;<br>vary: Accept,Accept-Encoding<br>x-cache: Hit from cloudfront<br>via: 1.1 eccb44470f382cc1705189e3db5d368c.cloudfront.net (CloudFront)<br>x-amz-cf-pop: ORD56-P12<br>x-amz-cf-id: 8ABBmXluNiA8dIAavF6NtdQo0aA2MtMb5GR5U9Uch_yVjrekaDbl5Q==<br>age: 5</pre>
+                                <h4>Response Body</h4>
+                                    <pre>{<br>    &quot;page&quot;: {<br>        &quot;id&quot;: &quot;kctbh9vrtdwd&quot;,<br>        &quot;name&quot;: &quot;GitHub&quot;,<br>        &quot;url&quot;: &quot;https://www.githubstatus.com&quot;,<br>        &quot;time_zone&quot;: &quot;Etc/UTC&quot;,<br>        &quot;updated_at&quot;: &quot;2026-03-19T22:57:16.044Z&quot;<br>    },<br>    &quot;status&quot;: {<br>        &quot;indicator&quot;: &quot;minor&quot;,<br>        &quot;description&quot;: &quot;Minor Service Outage&quot;<br>    }<br>}</pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                        </span>
                                 </span>
                         </div>
                     </td>
 
+                        <td width="160" class="SUCCESS-text">
+
+                        </td>
                     <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">053ms</span></td>
+                    <td width="100"><span class="nested-group-step">072ms</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
 
                     <td width="90" class="step-icon">
-                        <a name="2-2-1"></a>
+                        <a name="5-0-1"></a>
                             <span style="margin-left: 60px;"
                                   class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
                                 </span>
@@ -1420,20 +1717,691 @@
                     <td class="step-description-column">
                         <div class="step-description">
                                 <span class="nested-group-step">
-                                                Wendy presses key Enter in &quot;What needs to be done?&quot; input box
+                                                Apisitt ensures that the status of the last response does equal 200
                                         </span>
                             <span class="evidence">
                                 </span>
                         </div>
                     </td>
 
+                        <td width="160" class="SUCCESS-text">
+
+                        </td>
+                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">002ms</span></td>
+                </tr>
+                <tr class="test-FAILURE">
+
+                    <td width="90" class="step-icon">
+                        <a name="5-0-2"></a>
+                            <span style="margin-left: 60px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon ' title='FAILURE'></i></a>
+                                </span>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                                Apisitt ensures that GitHub Status does equal &quot;All Systems Operational&quot;
+                                        </span>
+                            <span class="evidence">
+                                </span>
+                        </div>
+                    </td>
+
+                        <td width="160" class="FAILURE-text">
+
+                                <a href="f2fa2f0a067c35e922df04e8f627982651dade8e74e8b2994bef68e4767fd27d_screenshots.html#screenshots?screenshot=19">
+                                    <img src="photo-linux-firefox-146.0.1-apisitt-ensures-that-github-status-does-eq-cfb29ba588.png"
+                                         href="photo-linux-firefox-146.0.1-apisitt-ensures-that-github-status-does-eq-cfb29ba588.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="130"><span class="nested-group-step">FAILURE</span></td>
+                    <td width="100"><span class="nested-group-step">003ms</span></td>
+                </tr>
+                    <tr class="test-FAILURE">
+                        <td width="40">&nbsp</td>
+                        <td width="%" colspan="4" class="error-message-cell">
+
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">AssertionError: Expected GitHub Status to equal &quot;All Systems Operational&quot;<br><br>Expectation: equals(&#39;All Systems Operational&#39;)<br><br>Expected string: All Systems Operational<br>Received string: Minor Service Outage<br><br>    at /__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts:34:30</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-30"
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="bi bi-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-30">
+            <div class="card">
+                <div class="card-header">
+                    <h4>AssertionError </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts:34)<br />.ErrorFactory.create()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/@serenity-js/core/src/errors/ErrorFactory.ts:36)<br />.Stage.createError()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/@serenity-js/core/src/stage/Stage.ts:341)<br />.RaiseErrors.create()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/@serenity-js/core/src/errors/RaiseErrors.ts:59)<br />.Ensure.performAs()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/@serenity-js/assertions/src/Ensure.ts:140)<br />.PerformActivitiesAsPlaywrightSteps.perform()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/@serenity-js/core/src/screenplay/abilities/PerformActivities.ts:60)<br />.TestStepInfoImpl._runStepBody()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/testInfo.js:506)<br />.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/common/testType.js:245)<br />.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/common/testType.js:243)<br />.TestTypeImpl._step()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/common/testType.js:240)<br />.PerformActivitiesAsPlaywrightSteps.perform()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/@serenity-js/playwright-test/src/api/PerformActivitiesAsPlaywrightSteps.ts:38)<br />.PerformActivitiesAsPlaywrightSteps.perform()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/@serenity-js/core/src/screenplay/abilities/PerformActivities.ts:60)<br />.TestStepInfoImpl._runStepBody()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/testInfo.js:506)<br />.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/common/testType.js:245)<br />.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/common/testType.js:243)<br />.TestTypeImpl._step()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/common/testType.js:240)<br />.PerformActivitiesAsPlaywrightSteps.perform()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/@serenity-js/playwright-test/src/api/PerformActivitiesAsPlaywrightSteps.ts:38)<br />.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts:33)<br />.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/workerMain.js:323)<br />.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/testInfo.js:320)<br />.TimeoutManager.withRunnable()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/timeoutManager.js:67)<br />.TestInfoImpl._runWithTimeout()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/testInfo.js:318)<br />.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/workerMain.js:321)<br />.WorkerMain._runTest()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/workerMain.js:296)<br />.WorkerMain.runTestGroup()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/workerMain.js:196)<br />.process.<anonymous>()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/common/process.js:72)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+                        </td>
+                    </tr>
+
+                            </table>
+                        </td>
+                    </tr>
+
+                            </table>
+                        </td>
+                    </tr>
+                <tr class="test-FAILURE">
+
+                    <td width="50" class="step-icon">
+                        <a name="6"></a>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection6')"
+                               style="display:block">
+                                <i class="bi bi-caret-right-square imgstepSection6 failure-icon"
+                                   style="margin-left: 20px; float:left; padding-right:5px"></i>
+                            </a>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection6')"
+                               style="display:block;">
+                                <span class="top-level-step">
+                                                GitHub Pages should check the state of the system before interacting with the UI #7 - Retries: Attempt #1
+                                        </span>
+                            </a>
+                            <span class="evidence">
+                                </span>
+                        </div>
+                    </td>
+
+                        <td width="160" class="FAILURE-text">
+
+                                <a href="f2fa2f0a067c35e922df04e8f627982651dade8e74e8b2994bef68e4767fd27d_screenshots.html#screenshots?screenshot=23">
+                                    <img src="photo-linux-webkit-26.0-apisitt-ensures-that-github-status-does-equal-eff314c98d.png"
+                                         href="photo-linux-webkit-26.0-apisitt-ensures-that-github-status-does-equal-eff314c98d.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="130"><span class="top-level-step">FAILURE</span></td>
+                    <td width="100"><span class="top-level-step">654ms</span></td>
+                </tr>
+                    <tr>
+                        <td colspan="5">
+                            <table id="stepSection6" class="step-table-nested" style="display:none;">
+                <tr class="test-FAILURE">
+
+                    <td width="70" class="step-icon">
+                        <a name="6-0"></a>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection6-0')"
+                               style="display:block">
+                                <i class="bi bi-caret-right-square imgstepSection6-0 failure-icon"
+                                   style="margin-left: 40px; float:left; padding-right:5px"></i>
+                            </a>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection6-0')"
+                               style="display:block;">
+                                <span class="nested-step">
+                                                Apisitt ensures all GitHub systems are operational
+                                        </span>
+                            </a>
+                            <span class="evidence">
+                                </span>
+                        </div>
+                    </td>
+
+                        <td width="160" class="FAILURE-text">
+
+                                <a href="f2fa2f0a067c35e922df04e8f627982651dade8e74e8b2994bef68e4767fd27d_screenshots.html#screenshots?screenshot=23">
+                                    <img src="photo-linux-webkit-26.0-apisitt-ensures-that-github-status-does-equal-eff314c98d.png"
+                                         href="photo-linux-webkit-26.0-apisitt-ensures-that-github-status-does-equal-eff314c98d.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="130"><span class="nested-step">FAILURE</span></td>
+                    <td width="100"><span class="nested-step">393ms</span></td>
+                </tr>
+                    <tr>
+                        <td colspan="5">
+                            <table id="stepSection6-0" class="step-table-nested" style="display:none;">
+                <tr class="test-SUCCESS">
+
+                    <td width="90" class="step-icon">
+                        <a name="6-0-0"></a>
+                            <span style="margin-left: 60px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                                Apisitt sends a GET request to &amp;apos;https://www.githubstatus.com/api/v2/status.json&amp;apos;
+                                        </span>
+                            <span class="evidence">
+                                        <span class="piece-of-evidence">
+                <span>
+                        <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
+                                data-target="#restModal-REST-33">
+                            REST Query
+                        </button>
+                    </span>
+                <!-- Modal -->
+                <div class="rest-query-details">
+                    <div class="collapse multi-collapse" id="restModal-REST-33">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4>Response</h4>
+                                    <p>URL: https://www.githubstatus.com/api/v2/status.json</p>
+                                    <p>Status code: 200</p>
+                                    <h4>Request Headers</h4>
+                                    <pre>Accept: application/json, text/plain, */*<br>User-Agent: axios/1.13.6<br>Accept-Encoding: gzip, compress, deflate, br</pre>
+                                    <h4>Response Headers</h4>
+                                    <pre>content-type: application/json; charset=utf-8<br>content-length: 213<br>connection: close<br>date: Thu, 19 Mar 2026 23:28:39 GMT<br>x-download-options: noopen<br>x-permitted-cross-domain-policies: none<br>referrer-policy: strict-origin-when-cross-origin<br>x-statuspage-version: 424b2c3aa78c5d285028e2e254abf41f50945f39<br>strict-transport-security: max-age=259200<br>x-statuspage-skip-logging: true<br>access-control-allow-origin: *<br>cache-control: max-age=3, public, stale-while-revalidate=30, stale-if-error=3600<br>x-pollinator-metadata-service: status-page-web-pages<br>x-runtime: 0.050148<br>server: AtlassianEdge<br>accept-ranges: bytes<br>x-content-type-options: nosniff<br>x-xss-protection: 1; mode=block<br>atl-traceid: e6a531d1521744f6aa3dfe1dd07f8dbc<br>atl-request-id: e6a531d1-5217-44f6-aa3d-fe1dd07f8dbc<br>report-to: {&quot;endpoints&quot;: [{&quot;url&quot;: &quot;https://dz8aopenkvv6s.cloudfront.net&quot;}], &quot;group&quot;: &quot;endpoint-1&quot;, &quot;include_subdomains&quot;: true, &quot;max_age&quot;: 600}<br>nel: {&quot;failure_fraction&quot;: 0.01, &quot;include_subdomains&quot;: true, &quot;max_age&quot;: 600, &quot;report_to&quot;: &quot;endpoint-1&quot;}<br>etag: W/&quot;699f2533f5ad6ed562e262a6add1f196&quot;<br>vary: Accept,Accept-Encoding<br>x-cache: Hit from cloudfront<br>via: 1.1 940cdb96b98814bdf1b5ba0576dda2b4.cloudfront.net (CloudFront)<br>x-amz-cf-pop: ORD56-P12<br>x-amz-cf-id: 0757xAnF-hwf1n2VHMe_HbCvdjnfX0mpJiVkIU9dHcorkweUEIpVZw==<br>age: 18</pre>
+                                <h4>Response Body</h4>
+                                    <pre>{<br>    &quot;page&quot;: {<br>        &quot;id&quot;: &quot;kctbh9vrtdwd&quot;,<br>        &quot;name&quot;: &quot;GitHub&quot;,<br>        &quot;url&quot;: &quot;https://www.githubstatus.com&quot;,<br>        &quot;time_zone&quot;: &quot;Etc/UTC&quot;,<br>        &quot;updated_at&quot;: &quot;2026-03-19T22:57:16.044Z&quot;<br>    },<br>    &quot;status&quot;: {<br>        &quot;indicator&quot;: &quot;minor&quot;,<br>        &quot;description&quot;: &quot;Minor Service Outage&quot;<br>    }<br>}</pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                        </span>
+                                </span>
+                        </div>
+                    </td>
+
+                        <td width="160" class="SUCCESS-text">
+
+                        </td>
+                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">019ms</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+
+                    <td width="90" class="step-icon">
+                        <a name="6-0-1"></a>
+                            <span style="margin-left: 60px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                                Apisitt ensures that the status of the last response does equal 200
+                                        </span>
+                            <span class="evidence">
+                                </span>
+                        </div>
+                    </td>
+
+                        <td width="160" class="SUCCESS-text">
+
+                        </td>
+                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">002ms</span></td>
+                </tr>
+                <tr class="test-FAILURE">
+
+                    <td width="90" class="step-icon">
+                        <a name="6-0-2"></a>
+                            <span style="margin-left: 60px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon ' title='FAILURE'></i></a>
+                                </span>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                                Apisitt ensures that GitHub Status does equal &quot;All Systems Operational&quot;
+                                        </span>
+                            <span class="evidence">
+                                </span>
+                        </div>
+                    </td>
+
+                        <td width="160" class="FAILURE-text">
+
+                                <a href="f2fa2f0a067c35e922df04e8f627982651dade8e74e8b2994bef68e4767fd27d_screenshots.html#screenshots?screenshot=23">
+                                    <img src="photo-linux-webkit-26.0-apisitt-ensures-that-github-status-does-equal-eff314c98d.png"
+                                         href="photo-linux-webkit-26.0-apisitt-ensures-that-github-status-does-equal-eff314c98d.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="130"><span class="nested-group-step">FAILURE</span></td>
+                    <td width="100"><span class="nested-group-step">002ms</span></td>
+                </tr>
+                    <tr class="test-FAILURE">
+                        <td width="40">&nbsp</td>
+                        <td width="%" colspan="4" class="error-message-cell">
+
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">AssertionError: Expected GitHub Status to equal &quot;All Systems Operational&quot;<br><br>Expectation: equals(&#39;All Systems Operational&#39;)<br><br>Expected string: All Systems Operational<br>Received string: Minor Service Outage<br><br>    at /__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts:34:30</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-35"
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="bi bi-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-35">
+            <div class="card">
+                <div class="card-header">
+                    <h4>AssertionError </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts:34)<br />.ErrorFactory.create()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/@serenity-js/core/src/errors/ErrorFactory.ts:36)<br />.Stage.createError()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/@serenity-js/core/src/stage/Stage.ts:341)<br />.RaiseErrors.create()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/@serenity-js/core/src/errors/RaiseErrors.ts:59)<br />.Ensure.performAs()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/@serenity-js/assertions/src/Ensure.ts:140)<br />.PerformActivitiesAsPlaywrightSteps.perform()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/@serenity-js/core/src/screenplay/abilities/PerformActivities.ts:60)<br />.TestStepInfoImpl._runStepBody()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/testInfo.js:506)<br />.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/common/testType.js:245)<br />.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/common/testType.js:243)<br />.TestTypeImpl._step()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/common/testType.js:240)<br />.PerformActivitiesAsPlaywrightSteps.perform()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/@serenity-js/playwright-test/src/api/PerformActivitiesAsPlaywrightSteps.ts:38)<br />.PerformActivitiesAsPlaywrightSteps.perform()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/@serenity-js/core/src/screenplay/abilities/PerformActivities.ts:60)<br />.TestStepInfoImpl._runStepBody()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/testInfo.js:506)<br />.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/common/testType.js:245)<br />.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/common/testType.js:243)<br />.TestTypeImpl._step()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/common/testType.js:240)<br />.PerformActivitiesAsPlaywrightSteps.perform()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/@serenity-js/playwright-test/src/api/PerformActivitiesAsPlaywrightSteps.ts:38)<br />.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts:33)<br />.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/workerMain.js:323)<br />.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/testInfo.js:320)<br />.TimeoutManager.withRunnable()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/timeoutManager.js:67)<br />.TestInfoImpl._runWithTimeout()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/testInfo.js:318)<br />.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/workerMain.js:321)<br />.WorkerMain._runTest()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/workerMain.js:296)<br />.WorkerMain.runTestGroup()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/workerMain.js:196)<br />.process.<anonymous>()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/common/process.js:72)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+                        </td>
+                    </tr>
+
+                            </table>
+                        </td>
+                    </tr>
+
+                            </table>
+                        </td>
+                    </tr>
+                <tr class="test-FAILURE">
+
+                    <td width="50" class="step-icon">
+                        <a name="7"></a>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection7')"
+                               style="display:block">
+                                <i class="bi bi-caret-right-square imgstepSection7 failure-icon"
+                                   style="margin-left: 20px; float:left; padding-right:5px"></i>
+                            </a>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection7')"
+                               style="display:block;">
+                                <span class="top-level-step">
+                                                GitHub Pages should check the state of the system before interacting with the UI #8 - Retries: Attempt #2
+                                        </span>
+                            </a>
+                            <span class="evidence">
+                                </span>
+                        </div>
+                    </td>
+
+                        <td width="160" class="FAILURE-text">
+
+                                <a href="f2fa2f0a067c35e922df04e8f627982651dade8e74e8b2994bef68e4767fd27d_screenshots.html#screenshots?screenshot=26">
+                                    <img src="photo-linux-webkit-26.0-apisitt-ensures-that-github-status-does-equal-eff314c98d.png"
+                                         href="photo-linux-webkit-26.0-apisitt-ensures-that-github-status-does-equal-eff314c98d.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="130"><span class="top-level-step">FAILURE</span></td>
+                    <td width="100"><span class="top-level-step">641ms</span></td>
+                </tr>
+                    <tr>
+                        <td colspan="5">
+                            <table id="stepSection7" class="step-table-nested" style="display:none;">
+                <tr class="test-FAILURE">
+
+                    <td width="70" class="step-icon">
+                        <a name="7-0"></a>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection7-0')"
+                               style="display:block">
+                                <i class="bi bi-caret-right-square imgstepSection7-0 failure-icon"
+                                   style="margin-left: 40px; float:left; padding-right:5px"></i>
+                            </a>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection7-0')"
+                               style="display:block;">
+                                <span class="nested-step">
+                                                Apisitt ensures all GitHub systems are operational
+                                        </span>
+                            </a>
+                            <span class="evidence">
+                                </span>
+                        </div>
+                    </td>
+
+                        <td width="160" class="FAILURE-text">
+
+                                <a href="f2fa2f0a067c35e922df04e8f627982651dade8e74e8b2994bef68e4767fd27d_screenshots.html#screenshots?screenshot=26">
+                                    <img src="photo-linux-webkit-26.0-apisitt-ensures-that-github-status-does-equal-eff314c98d.png"
+                                         href="photo-linux-webkit-26.0-apisitt-ensures-that-github-status-does-equal-eff314c98d.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="130"><span class="nested-step">FAILURE</span></td>
+                    <td width="100"><span class="nested-step">305ms</span></td>
+                </tr>
+                    <tr>
+                        <td colspan="5">
+                            <table id="stepSection7-0" class="step-table-nested" style="display:none;">
+                <tr class="test-SUCCESS">
+
+                    <td width="90" class="step-icon">
+                        <a name="7-0-0"></a>
+                            <span style="margin-left: 60px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                                Apisitt sends a GET request to &amp;apos;https://www.githubstatus.com/api/v2/status.json&amp;apos;
+                                        </span>
+                            <span class="evidence">
+                                        <span class="piece-of-evidence">
+                <span>
+                        <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
+                                data-target="#restModal-REST-38">
+                            REST Query
+                        </button>
+                    </span>
+                <!-- Modal -->
+                <div class="rest-query-details">
+                    <div class="collapse multi-collapse" id="restModal-REST-38">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4>Response</h4>
+                                    <p>URL: https://www.githubstatus.com/api/v2/status.json</p>
+                                    <p>Status code: 200</p>
+                                    <h4>Request Headers</h4>
+                                    <pre>Accept: application/json, text/plain, */*<br>User-Agent: axios/1.13.6<br>Accept-Encoding: gzip, compress, deflate, br</pre>
+                                    <h4>Response Headers</h4>
+                                    <pre>content-type: application/json; charset=utf-8<br>content-length: 213<br>connection: close<br>date: Thu, 19 Mar 2026 23:28:55 GMT<br>x-download-options: noopen<br>x-permitted-cross-domain-policies: none<br>referrer-policy: strict-origin-when-cross-origin<br>x-statuspage-version: 424b2c3aa78c5d285028e2e254abf41f50945f39<br>strict-transport-security: max-age=259200<br>x-statuspage-skip-logging: true<br>access-control-allow-origin: *<br>cache-control: max-age=3, public, stale-while-revalidate=30, stale-if-error=3600<br>x-pollinator-metadata-service: status-page-web-pages<br>x-runtime: 0.050589<br>server: AtlassianEdge<br>accept-ranges: bytes<br>x-content-type-options: nosniff<br>x-xss-protection: 1; mode=block<br>atl-traceid: 65a9814734ce403bb83d862ba2fbdc08<br>atl-request-id: 65a98147-34ce-403b-b83d-862ba2fbdc08<br>report-to: {&quot;endpoints&quot;: [{&quot;url&quot;: &quot;https://dz8aopenkvv6s.cloudfront.net&quot;}], &quot;group&quot;: &quot;endpoint-1&quot;, &quot;include_subdomains&quot;: true, &quot;max_age&quot;: 600}<br>nel: {&quot;failure_fraction&quot;: 0.01, &quot;include_subdomains&quot;: true, &quot;max_age&quot;: 600, &quot;report_to&quot;: &quot;endpoint-1&quot;}<br>etag: W/&quot;699f2533f5ad6ed562e262a6add1f196&quot;<br>vary: Accept,Accept-Encoding<br>x-cache: Hit from cloudfront<br>via: 1.1 2ec8235d22ebb3e9bd078e2d567c94a6.cloudfront.net (CloudFront)<br>x-amz-cf-pop: ORD56-P12<br>x-amz-cf-id: Hbs8qb6vWntaSl88mOWYfTgOCh03cRA4q36k9WzApJnZ9dcVgi-ZyA==<br>age: 4</pre>
+                                <h4>Response Body</h4>
+                                    <pre>{<br>    &quot;page&quot;: {<br>        &quot;id&quot;: &quot;kctbh9vrtdwd&quot;,<br>        &quot;name&quot;: &quot;GitHub&quot;,<br>        &quot;url&quot;: &quot;https://www.githubstatus.com&quot;,<br>        &quot;time_zone&quot;: &quot;Etc/UTC&quot;,<br>        &quot;updated_at&quot;: &quot;2026-03-19T22:57:16.044Z&quot;<br>    },<br>    &quot;status&quot;: {<br>        &quot;indicator&quot;: &quot;minor&quot;,<br>        &quot;description&quot;: &quot;Minor Service Outage&quot;<br>    }<br>}</pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                        </span>
+                                </span>
+                        </div>
+                    </td>
+
+                        <td width="160" class="SUCCESS-text">
+
+                        </td>
+                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">076ms</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+
+                    <td width="90" class="step-icon">
+                        <a name="7-0-1"></a>
+                            <span style="margin-left: 60px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                                Apisitt ensures that the status of the last response does equal 200
+                                        </span>
+                            <span class="evidence">
+                                </span>
+                        </div>
+                    </td>
+
+                        <td width="160" class="SUCCESS-text">
+
+                        </td>
+                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">005ms</span></td>
+                </tr>
+                <tr class="test-FAILURE">
+
+                    <td width="90" class="step-icon">
+                        <a name="7-0-2"></a>
+                            <span style="margin-left: 60px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon ' title='FAILURE'></i></a>
+                                </span>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                                Apisitt ensures that GitHub Status does equal &quot;All Systems Operational&quot;
+                                        </span>
+                            <span class="evidence">
+                                </span>
+                        </div>
+                    </td>
+
+                        <td width="160" class="FAILURE-text">
+
+                                <a href="f2fa2f0a067c35e922df04e8f627982651dade8e74e8b2994bef68e4767fd27d_screenshots.html#screenshots?screenshot=26">
+                                    <img src="photo-linux-webkit-26.0-apisitt-ensures-that-github-status-does-equal-eff314c98d.png"
+                                         href="photo-linux-webkit-26.0-apisitt-ensures-that-github-status-does-equal-eff314c98d.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="130"><span class="nested-group-step">FAILURE</span></td>
+                    <td width="100"><span class="nested-group-step">004ms</span></td>
+                </tr>
+                    <tr class="test-FAILURE">
+                        <td width="40">&nbsp</td>
+                        <td width="%" colspan="4" class="error-message-cell">
+
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">AssertionError: Expected GitHub Status to equal &quot;All Systems Operational&quot;<br><br>Expectation: equals(&#39;All Systems Operational&#39;)<br><br>Expected string: All Systems Operational<br>Received string: Minor Service Outage<br><br>    at /__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts:34:30</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-40"
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="bi bi-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-40">
+            <div class="card">
+                <div class="card-header">
+                    <h4>AssertionError </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts:34)<br />.ErrorFactory.create()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/@serenity-js/core/src/errors/ErrorFactory.ts:36)<br />.Stage.createError()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/@serenity-js/core/src/stage/Stage.ts:341)<br />.RaiseErrors.create()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/@serenity-js/core/src/errors/RaiseErrors.ts:59)<br />.Ensure.performAs()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/@serenity-js/assertions/src/Ensure.ts:140)<br />.PerformActivitiesAsPlaywrightSteps.perform()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/@serenity-js/core/src/screenplay/abilities/PerformActivities.ts:60)<br />.TestStepInfoImpl._runStepBody()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/testInfo.js:506)<br />.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/common/testType.js:245)<br />.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/common/testType.js:243)<br />.TestTypeImpl._step()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/common/testType.js:240)<br />.PerformActivitiesAsPlaywrightSteps.perform()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/@serenity-js/playwright-test/src/api/PerformActivitiesAsPlaywrightSteps.ts:38)<br />.PerformActivitiesAsPlaywrightSteps.perform()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/@serenity-js/core/src/screenplay/abilities/PerformActivities.ts:60)<br />.TestStepInfoImpl._runStepBody()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/testInfo.js:506)<br />.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/common/testType.js:245)<br />.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/common/testType.js:243)<br />.TestTypeImpl._step()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/common/testType.js:240)<br />.PerformActivitiesAsPlaywrightSteps.perform()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/@serenity-js/playwright-test/src/api/PerformActivitiesAsPlaywrightSteps.ts:38)<br />.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts:33)<br />.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/workerMain.js:323)<br />.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/testInfo.js:320)<br />.TimeoutManager.withRunnable()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/timeoutManager.js:67)<br />.TestInfoImpl._runWithTimeout()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/testInfo.js:318)<br />.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/workerMain.js:321)<br />.WorkerMain._runTest()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/workerMain.js:296)<br />.WorkerMain.runTestGroup()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/workerMain.js:196)<br />.process.<anonymous>()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/common/process.js:72)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+                        </td>
+                    </tr>
+
+                            </table>
+                        </td>
+                    </tr>
+
+                            </table>
+                        </td>
+                    </tr>
+                <tr class="test-FAILURE">
+
+                    <td width="50" class="step-icon">
+                        <a name="8"></a>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection8')"
+                               style="display:block">
+                                <i class="bi bi-caret-right-square imgstepSection8 failure-icon"
+                                   style="margin-left: 20px; float:left; padding-right:5px"></i>
+                            </a>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection8')"
+                               style="display:block;">
+                                <span class="top-level-step">
+                                                GitHub Pages should check the state of the system before interacting with the UI #9 - Retries: Attempt #3
+                                        </span>
+                            </a>
+                            <span class="evidence">
+                                </span>
+                        </div>
+                    </td>
+
+                        <td width="160" class="FAILURE-text">
+
+                                <a href="f2fa2f0a067c35e922df04e8f627982651dade8e74e8b2994bef68e4767fd27d_screenshots.html#screenshots?screenshot=29">
+                                    <img src="photo-linux-webkit-26.0-apisitt-ensures-that-github-status-does-equal-eff314c98d.png"
+                                         href="photo-linux-webkit-26.0-apisitt-ensures-that-github-status-does-equal-eff314c98d.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="130"><span class="top-level-step">FAILURE</span></td>
+                    <td width="100"><span class="top-level-step">605ms</span></td>
+                </tr>
+                    <tr>
+                        <td colspan="5">
+                            <table id="stepSection8" class="step-table-nested" style="display:none;">
+                <tr class="test-FAILURE">
+
+                    <td width="70" class="step-icon">
+                        <a name="8-0"></a>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection8-0')"
+                               style="display:block">
+                                <i class="bi bi-caret-right-square imgstepSection8-0 failure-icon"
+                                   style="margin-left: 40px; float:left; padding-right:5px"></i>
+                            </a>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection8-0')"
+                               style="display:block;">
+                                <span class="nested-step">
+                                                Apisitt ensures all GitHub systems are operational
+                                        </span>
+                            </a>
+                            <span class="evidence">
+                                </span>
+                        </div>
+                    </td>
+
+                        <td width="160" class="FAILURE-text">
+
+                                <a href="f2fa2f0a067c35e922df04e8f627982651dade8e74e8b2994bef68e4767fd27d_screenshots.html#screenshots?screenshot=29">
+                                    <img src="photo-linux-webkit-26.0-apisitt-ensures-that-github-status-does-equal-eff314c98d.png"
+                                         href="photo-linux-webkit-26.0-apisitt-ensures-that-github-status-does-equal-eff314c98d.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="130"><span class="nested-step">FAILURE</span></td>
+                    <td width="100"><span class="nested-step">277ms</span></td>
+                </tr>
+                    <tr>
+                        <td colspan="5">
+                            <table id="stepSection8-0" class="step-table-nested" style="display:none;">
+                <tr class="test-SUCCESS">
+
+                    <td width="90" class="step-icon">
+                        <a name="8-0-0"></a>
+                            <span style="margin-left: 60px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                                Apisitt sends a GET request to &amp;apos;https://www.githubstatus.com/api/v2/status.json&amp;apos;
+                                        </span>
+                            <span class="evidence">
+                                        <span class="piece-of-evidence">
+                <span>
+                        <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
+                                data-target="#restModal-REST-43">
+                            REST Query
+                        </button>
+                    </span>
+                <!-- Modal -->
+                <div class="rest-query-details">
+                    <div class="collapse multi-collapse" id="restModal-REST-43">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4>Response</h4>
+                                    <p>URL: https://www.githubstatus.com/api/v2/status.json</p>
+                                    <p>Status code: 200</p>
+                                    <h4>Request Headers</h4>
+                                    <pre>Accept: application/json, text/plain, */*<br>User-Agent: axios/1.13.6<br>Accept-Encoding: gzip, compress, deflate, br</pre>
+                                    <h4>Response Headers</h4>
+                                    <pre>content-type: application/json; charset=utf-8<br>content-length: 213<br>connection: close<br>date: Thu, 19 Mar 2026 23:28:59 GMT<br>x-download-options: noopen<br>x-permitted-cross-domain-policies: none<br>referrer-policy: strict-origin-when-cross-origin<br>x-statuspage-version: 424b2c3aa78c5d285028e2e254abf41f50945f39<br>strict-transport-security: max-age=259200<br>x-statuspage-skip-logging: true<br>access-control-allow-origin: *<br>cache-control: max-age=3, public, stale-while-revalidate=30, stale-if-error=3600<br>x-pollinator-metadata-service: status-page-web-pages<br>x-runtime: 0.060422<br>server: AtlassianEdge<br>accept-ranges: bytes<br>x-content-type-options: nosniff<br>x-xss-protection: 1; mode=block<br>atl-traceid: d5a82081d51b4f0297869ffc653fe816<br>atl-request-id: d5a82081-d51b-4f02-9786-9ffc653fe816<br>report-to: {&quot;endpoints&quot;: [{&quot;url&quot;: &quot;https://dz8aopenkvv6s.cloudfront.net&quot;}], &quot;group&quot;: &quot;endpoint-1&quot;, &quot;include_subdomains&quot;: true, &quot;max_age&quot;: 600}<br>nel: {&quot;failure_fraction&quot;: 0.01, &quot;include_subdomains&quot;: true, &quot;max_age&quot;: 600, &quot;report_to&quot;: &quot;endpoint-1&quot;}<br>etag: W/&quot;699f2533f5ad6ed562e262a6add1f196&quot;<br>vary: Accept,Accept-Encoding<br>x-cache: Hit from cloudfront<br>via: 1.1 9dde4c4c3e098c040b987db4bd07fbe2.cloudfront.net (CloudFront)<br>x-amz-cf-pop: ORD56-P12<br>x-amz-cf-id: iKrPeBeC70Ke414GyGD0tlRqT5RW6FJ13VCmxxj4XClQkVlfo7Fy9w==<br>age: 2</pre>
+                                <h4>Response Body</h4>
+                                    <pre>{<br>    &quot;page&quot;: {<br>        &quot;id&quot;: &quot;kctbh9vrtdwd&quot;,<br>        &quot;name&quot;: &quot;GitHub&quot;,<br>        &quot;url&quot;: &quot;https://www.githubstatus.com&quot;,<br>        &quot;time_zone&quot;: &quot;Etc/UTC&quot;,<br>        &quot;updated_at&quot;: &quot;2026-03-19T22:57:16.044Z&quot;<br>    },<br>    &quot;status&quot;: {<br>        &quot;indicator&quot;: &quot;minor&quot;,<br>        &quot;description&quot;: &quot;Minor Service Outage&quot;<br>    }<br>}</pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                        </span>
+                                </span>
+                        </div>
+                    </td>
+
+                        <td width="160" class="SUCCESS-text">
+
+                        </td>
                     <td width="130"><span class="nested-group-step">SUCCESS</span></td>
                     <td width="100"><span class="nested-group-step">070ms</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
 
                     <td width="90" class="step-icon">
-                        <a name="2-2-2"></a>
+                        <a name="8-0-1"></a>
                             <span style="margin-left: 60px;"
                                   class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
                                 </span>
@@ -1442,50 +2410,100 @@
                     <td class="step-description-column">
                         <div class="step-description">
                                 <span class="nested-group-step">
-                                                Wendy waits until displayed items does contain &quot;Feed the cat&quot;
+                                                Apisitt ensures that the status of the last response does equal 200
                                         </span>
                             <span class="evidence">
                                 </span>
                         </div>
                     </td>
 
-                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">041ms</span></td>
-                </tr>
+                        <td width="160" class="SUCCESS-text">
 
-                            </table>
                         </td>
-                    </tr>
-                <tr class="test-SUCCESS">
+                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">001ms</span></td>
+                </tr>
+                <tr class="test-FAILURE">
 
-                    <td width="70" class="step-icon">
-                        <a name="2-3"></a>
-                            <span style="margin-left: 40px;"
-                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                    <td width="90" class="step-icon">
+                        <a name="8-0-2"></a>
+                            <span style="margin-left: 60px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon ' title='FAILURE'></i></a>
                                 </span>
                     </td>
 
                     <td class="step-description-column">
                         <div class="step-description">
                                 <span class="nested-group-step">
-                                                Wendy ensures that displayed items does equal [ &quot;Feed the cat&quot; ]
+                                                Apisitt ensures that GitHub Status does equal &quot;All Systems Operational&quot;
                                         </span>
                             <span class="evidence">
                                 </span>
                         </div>
                     </td>
 
-                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">013ms</span></td>
+                        <td width="160" class="FAILURE-text">
+
+                                <a href="f2fa2f0a067c35e922df04e8f627982651dade8e74e8b2994bef68e4767fd27d_screenshots.html#screenshots?screenshot=29">
+                                    <img src="photo-linux-webkit-26.0-apisitt-ensures-that-github-status-does-equal-eff314c98d.png"
+                                         href="photo-linux-webkit-26.0-apisitt-ensures-that-github-status-does-equal-eff314c98d.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="130"><span class="nested-group-step">FAILURE</span></td>
+                    <td width="100"><span class="nested-group-step">002ms</span></td>
                 </tr>
+                    <tr class="test-FAILURE">
+                        <td width="40">&nbsp</td>
+                        <td width="%" colspan="4" class="error-message-cell">
+
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">AssertionError: Expected GitHub Status to equal &quot;All Systems Operational&quot;<br><br>Expectation: equals(&#39;All Systems Operational&#39;)<br><br>Expected string: All Systems Operational<br>Received string: Minor Service Outage<br><br>    at /__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts:34:30</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-45"
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="bi bi-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-45">
+            <div class="card">
+                <div class="card-header">
+                    <h4>AssertionError </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts:34)<br />.ErrorFactory.create()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/@serenity-js/core/src/errors/ErrorFactory.ts:36)<br />.Stage.createError()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/@serenity-js/core/src/stage/Stage.ts:341)<br />.RaiseErrors.create()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/@serenity-js/core/src/errors/RaiseErrors.ts:59)<br />.Ensure.performAs()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/@serenity-js/assertions/src/Ensure.ts:140)<br />.PerformActivitiesAsPlaywrightSteps.perform()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/@serenity-js/core/src/screenplay/abilities/PerformActivities.ts:60)<br />.TestStepInfoImpl._runStepBody()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/testInfo.js:506)<br />.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/common/testType.js:245)<br />.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/common/testType.js:243)<br />.TestTypeImpl._step()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/common/testType.js:240)<br />.PerformActivitiesAsPlaywrightSteps.perform()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/@serenity-js/playwright-test/src/api/PerformActivitiesAsPlaywrightSteps.ts:38)<br />.PerformActivitiesAsPlaywrightSteps.perform()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/@serenity-js/core/src/screenplay/abilities/PerformActivities.ts:60)<br />.TestStepInfoImpl._runStepBody()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/testInfo.js:506)<br />.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/common/testType.js:245)<br />.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/common/testType.js:243)<br />.TestTypeImpl._step()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/common/testType.js:240)<br />.PerformActivitiesAsPlaywrightSteps.perform()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/@serenity-js/playwright-test/src/api/PerformActivitiesAsPlaywrightSteps.ts:38)<br />.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts:33)<br />.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/workerMain.js:323)<br />.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/testInfo.js:320)<br />.TimeoutManager.withRunnable()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/timeoutManager.js:67)<br />.TestInfoImpl._runWithTimeout()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/testInfo.js:318)<br />.(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/workerMain.js:321)<br />.WorkerMain._runTest()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/workerMain.js:296)<br />.WorkerMain.runTestGroup()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/worker/workerMain.js:196)<br />.process.<anonymous>()(/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/node_modules/playwright/lib/common/process.js:72)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+                        </td>
+                    </tr>
 
                             </table>
                         </td>
                     </tr>
-            <tr class="test-SUCCESS">
-                    <td colspan="2"></td>
-                <td width="130"><span class="top-level-step"><em>SUCCESS</em></span></td>
-                <td width="100"><span class="top-level-step"><em>30.39s</em></span></td>
+
+                            </table>
+                        </td>
+                    </tr>
+            <tr class="test-FAILURE">
+                    <td colspan="3"></td>
+                <td width="130"><span class="top-level-step"><em>FAILURE</em></span></td>
+                <td width="100"><span class="top-level-step"><em>43.97s</em></span></td>
             </tr>
 
         </table>
