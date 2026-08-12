@@ -1,10 +1,10 @@
-Serenity report generated 12-08-2026 12:11:20
+Serenity report generated 12-08-2026 12:21:24
 
 Number of scenarios:  12
-Number of test cases: 108
-Passed:               0
+Number of test cases: 36
+Passed:               12
 Failed:               0
-Failed with errors:   12
+Failed with errors:   0
 Compromised:          0
 Pending:              0
 Ignored:              0
