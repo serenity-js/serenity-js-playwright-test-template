@@ -29,8 +29,8 @@
   "waitFor": "postCreateCommand",
   "postAttachCommand": {
     "Serenity/JS Test Run": "npm test",
-    "Serenity Reports Preview": "npx http-server -p 8080 target/site/serenity/",
-    "Playwright Reports Preview": "npx http-server -p 8181 playwright-report"
+    "Serenity Reports Preview": "npm run test:report",
+    "Playwright Reports Preview": "npx playwright show-report ./reports/playwright --port 8181"
   },
 
   "customizations": {
