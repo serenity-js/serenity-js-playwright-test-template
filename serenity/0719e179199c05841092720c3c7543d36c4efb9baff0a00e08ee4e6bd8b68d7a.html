@@ -69,8 +69,8 @@
     Chart.register(ChartDataLabels);
 </script>
 <!-- JQuery-UI -->
-<link type="text/css" href="jquery-ui/1.14.1/jquery-ui.css" rel="Stylesheet" />
-<script type="text/javascript" src="jquery-ui/1.14.1/jquery-ui.js"></script><!-- DataTables -->
+<link type="text/css" href="jquery-ui-1.14.1/jquery-ui.css" rel="Stylesheet" />
+<script type="text/javascript" src="jquery-ui-1.14.1/jquery-ui.js"></script><!-- DataTables -->
 <link type="text/css" href="datatables/2.3.1/datatables.min.css" rel="stylesheet" />
 <script type="text/javascript" src="datatables/2.3.1/datatables.min.js"></script>
 <script type="text/javascript" src="datatables/2.3.1/time-elapsed-dhms.js"></script>
@@ -107,14 +107,47 @@
 
         $(document).ready(function () {
 
+            $.fn.dataTable.ext.type.order['test-result-pre'] = function(data) {
+                // Extract the text from the hidden span (SUCCESS, FAILURE, etc.)
+                var match = data.match(/<span[^>]*style="display:none"[^>]*>(.*?)<\/span>/);
+                var result = match ? match[1].trim() : '';
+
+                // Define sort priority (failures first when ascending)
+                var order = {
+                    'FAILURE': 1,
+                    'ERROR': 2,
+                    'BROKEN': 3,
+                    'COMPROMISED': 4,
+                    'PENDING': 5,
+                    'IGNORED': 6,
+                    'SKIPPED': 7,
+                    'ABORTED': 8,
+                    'SUCCESS': 9
+                };
+
+                return order[result] || 99;
+            };
+
+            // Then modify your DataTable initialization
             $("#scenario-results").DataTable({
-                "order": [[0, "asc",], [3, "asc",]],
+                "order": [[0, "asc"], [1, "asc"], [2, "asc"]], // Keep your default sort order
                 "language": {
                     searchPlaceholder: "Filter",
                     search: ""
                 },
                 columnDefs: [
-                    {type: 'time-elapsed-dhms', targets: 4}
+                    {
+                        targets: 4, // Started column
+                        visible: false
+                    },
+                    {
+                        type: 'time-elapsed-dhms',
+                        targets: 5 // Total Duration column (adjusted from 6 to 5)
+                    },
+                    {
+                        type: 'test-result',
+                        targets: 6 // Result column (changed from 7 to 6)
+                    }
                 ]
             })
             $("#manual-scenario-results").DataTable({
@@ -225,7 +258,7 @@
             <a href="#"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 18-08-2026 22:08</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 20-08-2026 05:52</span>
     <br style="clear:left"/>
 </div>
 
@@ -434,7 +467,7 @@
                                             <div class="col-sm-12">
                                                 <h3>Scenarios</h3>
 
-                                                    <a name="6ce16551-0803-4ee8-840d-c135a8931a54"></a>
+                                                    <a name="02e77675-0e32-47d9-bc2b-51133a936c99"></a>
                                                     <p class="rule-tags inline-tag">
                                                     </p>
 
@@ -460,9 +493,9 @@
 
                                                             </div>
                                                             <div class="scenario-docs card-body">
-                                                                    <p>Todo List App should allow me to add todo items #1 - Retries: Attempt #1</p>
-                                                                    <p>Todo List App should allow me to add todo items #2 - Retries: Attempt #1</p>
-                                                                    <p>Todo List App should allow me to add todo items #3 - Retries: Attempt #1</p>
+                                                                        <p>Todo List App should allow me to add todo items #1 - Retries: Attempt #1</p>
+                                                                        <p>Todo List App should allow me to add todo items #2 - Retries: Attempt #1</p>
+                                                                        <p>Todo List App should allow me to add todo items #3 - Retries: Attempt #1</p>
                                                                 <div class="examples">
                                                                 </div>
                                                             </div>
@@ -489,9 +522,9 @@
 
                                                             </div>
                                                             <div class="scenario-docs card-body">
-                                                                    <p>Todo List App should clear text input field when an item is added #1 - Retries: Attempt #1</p>
-                                                                    <p>Todo List App should clear text input field when an item is added #2 - Retries: Attempt #1</p>
-                                                                    <p>Todo List App should clear text input field when an item is added #3 - Retries: Attempt #1</p>
+                                                                        <p>Todo List App should clear text input field when an item is added #1 - Retries: Attempt #1</p>
+                                                                        <p>Todo List App should clear text input field when an item is added #2 - Retries: Attempt #1</p>
+                                                                        <p>Todo List App should clear text input field when an item is added #3 - Retries: Attempt #1</p>
                                                                 <div class="examples">
                                                                 </div>
                                                             </div>
@@ -518,9 +551,9 @@
 
                                                             </div>
                                                             <div class="scenario-docs card-body">
-                                                                    <p>Todo List App should reflect the number of items left in the counter #1 - Retries: Attempt #1</p>
-                                                                    <p>Todo List App should reflect the number of items left in the counter #2 - Retries: Attempt #1</p>
-                                                                    <p>Todo List App should reflect the number of items left in the counter #3 - Retries: Attempt #1</p>
+                                                                        <p>Todo List App should reflect the number of items left in the counter #1 - Retries: Attempt #1</p>
+                                                                        <p>Todo List App should reflect the number of items left in the counter #2 - Retries: Attempt #1</p>
+                                                                        <p>Todo List App should reflect the number of items left in the counter #3 - Retries: Attempt #1</p>
                                                                 <div class="examples">
                                                                 </div>
                                                             </div>
@@ -547,9 +580,9 @@
 
                                                             </div>
                                                             <div class="scenario-docs card-body">
-                                                                    <p>Todo List App should show #main and #footer sections only when list contains items #1 - Retries: Attempt #1</p>
-                                                                    <p>Todo List App should show #main and #footer sections only when list contains items #2 - Retries: Attempt #1</p>
-                                                                    <p>Todo List App should show #main and #footer sections only when list contains items #3 - Retries: Attempt #1</p>
+                                                                        <p>Todo List App should show #main and #footer sections only when list contains items #1 - Retries: Attempt #1</p>
+                                                                        <p>Todo List App should show #main and #footer sections only when list contains items #2 - Retries: Attempt #1</p>
+                                                                        <p>Todo List App should show #main and #footer sections only when list contains items #3 - Retries: Attempt #1</p>
                                                                 <div class="examples">
                                                                 </div>
                                                             </div>
@@ -604,7 +637,7 @@
                         <i class="bi bi-stopwatch"></i> Total
                         Duration
                     </td>
-                    <td>33s</td>
+                    <td>34s</td>
                 </tr>
                 <tr scope="row">
                     <td>
@@ -614,7 +647,7 @@
                     <td>
                         <i class="bi bi-trophy"></i> Fastest Test
                     </td>
-                    <td>524ms</td>
+                    <td>565ms</td>
                 </tr>
                 <tr scope="row">
                     <td>
@@ -631,24 +664,24 @@
                     <td>
                         <i class="bi bi-flag-fill"></i> Tests Started
                     </td>
-                    <td>Aug 18, 2026 22:08:34</td>
+                    <td>Aug 20, 2026 05:52:20</td>
                     <td>
                         <i class="bi bi-stopwatch"></i> Average
                         Execution Time
                     </td>
-                    <td>977ms</td>
+                    <td>1s</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stop-circle"></i> Tests
                         Finished
                     </td>
-                    <td>Aug 18, 2026 22:09:08</td>
+                    <td>Aug 20, 2026 05:52:55</td>
                     <td>
-                        <i class="bi bi-stopwatch-fill"></i> Total
-                        Execution Time
+                        <i class="bi bi-stopwatch-fill"></i> Cumulative Test Time
+                        <br/><small class="text-muted">(sum of all individual test durations)</small>
                     </td>
-                    <td> 2m 3s</td>
+                    <td> 2m 5s</td>
                 </tr>
                 </tbody>
             </table>
@@ -683,9 +716,9 @@
                                                                     <td><span class='context-icon'><i class='bi bi-ubuntu' title='Linux'></i> <i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-browser-firefox' title='Firefox'></i> <i class='bi bi-browser-safari' title='Safari or WebKit'></i></span><span style="display:none">linux,Chrome,Firefox,Safari or WebKit</span>
                                                                     </td>
                                                                     <td>3</td>
-                                                                    <td>22:08:34</td>
-                                                                    <td>30s 215ms</td>
-                                                                    <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
+                                                                    <td>05:52:20</td>
+                                                                    <td>30s 625ms</td>
+                                                                    <td class="test-result-cell"><span style="display:none">SUCCESS</span> <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
                                                                     </td>
                                                                 </tr>
                                                                 <tr class="scenario-result SUCCESS">
@@ -701,9 +734,9 @@
                                                                     <td><span class='context-icon'><i class='bi bi-ubuntu' title='Linux'></i> <i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-browser-firefox' title='Firefox'></i> <i class='bi bi-browser-safari' title='Safari or WebKit'></i></span><span style="display:none">linux,Chrome,Firefox,Safari or WebKit</span>
                                                                     </td>
                                                                     <td>3</td>
-                                                                    <td>22:08:35</td>
-                                                                    <td>30s 569ms</td>
-                                                                    <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
+                                                                    <td>05:52:21</td>
+                                                                    <td>31s 025ms</td>
+                                                                    <td class="test-result-cell"><span style="display:none">SUCCESS</span> <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
                                                                     </td>
                                                                 </tr>
                                                                 <tr class="scenario-result SUCCESS">
@@ -719,9 +752,9 @@
                                                                     <td><span class='context-icon'><i class='bi bi-ubuntu' title='Linux'></i> <i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-browser-firefox' title='Firefox'></i> <i class='bi bi-browser-safari' title='Safari or WebKit'></i></span><span style="display:none">linux,Chrome,Firefox,Safari or WebKit</span>
                                                                     </td>
                                                                     <td>3</td>
-                                                                    <td>22:08:35</td>
-                                                                    <td>31s 180ms</td>
-                                                                    <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
+                                                                    <td>05:52:22</td>
+                                                                    <td>31s 631ms</td>
+                                                                    <td class="test-result-cell"><span style="display:none">SUCCESS</span> <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
                                                                     </td>
                                                                 </tr>
                                                                 <tr class="scenario-result SUCCESS">
@@ -737,9 +770,9 @@
                                                                     <td><span class='context-icon'><i class='bi bi-ubuntu' title='Linux'></i> <i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-browser-firefox' title='Firefox'></i> <i class='bi bi-browser-safari' title='Safari or WebKit'></i></span><span style="display:none">linux,Chrome,Firefox,Safari or WebKit</span>
                                                                     </td>
                                                                     <td>3</td>
-                                                                    <td>22:08:36</td>
-                                                                    <td>31s 867ms</td>
-                                                                    <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
+                                                                    <td>05:52:23</td>
+                                                                    <td>32s 192ms</td>
+                                                                    <td class="test-result-cell"><span style="display:none">SUCCESS</span> <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
                                                                     </td>
                                                                 </tr>
                                                         </tbody>
@@ -841,7 +874,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-12">
-                    <span class="version">Serenity BDD version 4.2.34</span>
+                    <span class="version">Serenity BDD version 5.3.11</span>
                 </div>
             </div>
         </div>
@@ -1144,7 +1177,7 @@
             datasets: [{
                 label: 'Number of tests per duration',
                 fill: false,
-                data: ['8','4','0','0','0','0','0','0'],
+                data: ['6','6','0','0','0','0','0','0'],
                 backgroundColor: 'rgba(83, 146, 255,0.5)',
                 borderColor: 'rgba(83, 146, 255, 1)',
             }]

@@ -72,8 +72,8 @@
     Chart.register(ChartDataLabels);
 </script>
 <!-- JQuery-UI -->
-<link type="text/css" href="jquery-ui/1.14.1/jquery-ui.css" rel="Stylesheet" />
-<script type="text/javascript" src="jquery-ui/1.14.1/jquery-ui.js"></script><!-- DataTables -->
+<link type="text/css" href="jquery-ui-1.14.1/jquery-ui.css" rel="Stylesheet" />
+<script type="text/javascript" src="jquery-ui-1.14.1/jquery-ui.js"></script><!-- DataTables -->
 <link type="text/css" href="datatables/2.3.1/datatables.min.css" rel="stylesheet" />
 <script type="text/javascript" src="datatables/2.3.1/datatables.min.js"></script>
 <script type="text/javascript" src="datatables/2.3.1/time-elapsed-dhms.js"></script>
@@ -108,14 +108,47 @@
     <script class="code" type="text/javascript">$(document).ready(function () {
 
 
+            $.fn.dataTable.ext.type.order['test-result-pre'] = function(data) {
+                // Extract the text from the hidden span (SUCCESS, FAILURE, etc.)
+                var match = data.match(/<span[^>]*style="display:none"[^>]*>(.*?)<\/span>/);
+                var result = match ? match[1].trim() : '';
+
+                // Define sort priority (failures first when ascending)
+                var order = {
+                    'FAILURE': 1,
+                    'ERROR': 2,
+                    'BROKEN': 3,
+                    'COMPROMISED': 4,
+                    'PENDING': 5,
+                    'IGNORED': 6,
+                    'SKIPPED': 7,
+                    'ABORTED': 8,
+                    'SUCCESS': 9
+                };
+
+                return order[result] || 99;
+            };
+
+            // Then modify your DataTable initialization
             $("#scenario-results").DataTable({
-                "order": [[0, "asc",], [3, "asc",]],
+                "order": [[0, "asc"], [1, "asc"], [2, "asc"]], // Keep your default sort order
                 "language": {
                     searchPlaceholder: "Filter",
                     search: ""
                 },
                 columnDefs: [
-                    {type: 'time-elapsed-dhms', targets: 4}
+                    {
+                        targets: 3, // Started column (Feature=0, Scenario=1, Steps=2, Started=3)
+                        visible: false
+                    },
+                    {
+                        type: 'time-elapsed-dhms',
+                        targets: 4 // Total Duration column
+                    },
+                    {
+                        type: 'test-result',
+                        targets: 5 // Result column
+                    }
                 ]
             })
             $("#manual-scenario-results").DataTable({
@@ -176,7 +209,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 18-08-2026 22:09:17</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 20-08-2026 05:53:05</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -244,27 +277,27 @@
                     <td>
                         <i class="bi bi-flag-fill"></i> Tests Started
                     </td>
-                    <td>Aug 18, 2026 22:08:32</td>
+                    <td>Aug 20, 2026 05:52:18</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stop-circle"></i> Tests
                         Finished
                     </td>
-                    <td>Aug 18, 2026 22:09:14</td>
+                    <td>Aug 20, 2026 05:53:01</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stopwatch"></i> Total
                         Duration
                     </td>
-                    <td>42s</td>
+                    <td>43s</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-trophy"></i> Fastest Test
                     </td>
-                    <td>220ms</td>
+                    <td>305ms</td>
                 </tr>
                 <tr scope="row">
                     <td>
@@ -278,14 +311,14 @@
                         <i class="bi bi-stopwatch"></i> Average
                         Execution Time
                     </td>
-                    <td>996ms</td>
+                    <td>1s</td>
                 </tr>
                 <tr scope="row">
                     <td>
-                        <i class="bi bi-stopwatch-fill"></i> Total
-                        Execution Time
+                        <i class="bi bi-stopwatch-fill"></i> Cumulative Test Time
+                        <br/><small class="text-muted">(sum of all individual test durations)</small>
                     </td>
-                    <td> 6m 14s</td>
+                    <td> 6m 20s</td>
                 </tr>
                 </tbody>
             </table>
@@ -714,8 +747,8 @@
                                                                     <a href="14fed50403cee0a604fe15324a0f486be6138affc103936154e260e25fb45f1a.html">JSON Placeholder /todos should retrieve a todo item by id #1 - Retries: Attempt #1</a>
                                                                 </td>
                                                                 <td>3</td>
-                                                                <td>22:08:32</td>
-                                                                <td>220ms</td>
+                                                                <td>05:52:18</td>
+                                                                <td>305ms</td>
                                                                 <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
                                                                 </td>
                                                             </tr>
@@ -728,8 +761,8 @@
                                                                     <a href="14fed50403cee0a604fe15324a0f486be6138affc103936154e260e25fb45f1a.html">JSON Placeholder /todos should retrieve a todo item by id #2 - Retries: Attempt #1</a>
                                                                 </td>
                                                                 <td>3</td>
-                                                                <td>22:08:41</td>
-                                                                <td>935ms</td>
+                                                                <td>05:52:28</td>
+                                                                <td>929ms</td>
                                                                 <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
                                                                 </td>
                                                             </tr>
@@ -742,8 +775,8 @@
                                                                     <a href="14fed50403cee0a604fe15324a0f486be6138affc103936154e260e25fb45f1a.html">JSON Placeholder /todos should retrieve a todo item by id #3 - Retries: Attempt #1</a>
                                                                 </td>
                                                                 <td>3</td>
-                                                                <td>22:08:58</td>
-                                                                <td>444ms</td>
+                                                                <td>05:52:45</td>
+                                                                <td>456ms</td>
                                                                 <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
                                                                 </td>
                                                             </tr>
@@ -756,8 +789,8 @@
                                                                     <a href="478c9d6fdb959edaf4a22f85a8fa47f0554171dfd8ae435052e080bb2e91f850.html">GitHub Pages should check the state of the system before interacting with the UI #1 - Retries: Attempt #1</a>
                                                                 </td>
                                                                 <td>4</td>
-                                                                <td>22:08:32</td>
-                                                                <td>1s 010ms</td>
+                                                                <td>05:52:18</td>
+                                                                <td>1s 069ms</td>
                                                                 <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
                                                                 </td>
                                                             </tr>
@@ -770,8 +803,8 @@
                                                                     <a href="478c9d6fdb959edaf4a22f85a8fa47f0554171dfd8ae435052e080bb2e91f850.html">GitHub Pages should check the state of the system before interacting with the UI #2 - Retries: Attempt #1</a>
                                                                 </td>
                                                                 <td>4</td>
-                                                                <td>22:08:43</td>
-                                                                <td>1s 266ms</td>
+                                                                <td>05:52:29</td>
+                                                                <td>1s 218ms</td>
                                                                 <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
                                                                 </td>
                                                             </tr>
@@ -784,8 +817,8 @@
                                                                     <a href="478c9d6fdb959edaf4a22f85a8fa47f0554171dfd8ae435052e080bb2e91f850.html">GitHub Pages should check the state of the system before interacting with the UI #3 - Retries: Attempt #1</a>
                                                                 </td>
                                                                 <td>4</td>
-                                                                <td>22:08:59</td>
-                                                                <td>895ms</td>
+                                                                <td>05:52:46</td>
+                                                                <td>924ms</td>
                                                                 <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
                                                                 </td>
                                                             </tr>
@@ -798,8 +831,8 @@
                                                                     <a href="4b91386ba563c16d3659c854348c7ba3c6a54e5e9bd46987b2f8da07d8a410be.html">Todo List App supports multiple actors using separate browsers #1 - Retries: Attempt #1</a>
                                                                 </td>
                                                                 <td>4</td>
-                                                                <td>22:08:33</td>
-                                                                <td>998ms</td>
+                                                                <td>05:52:19</td>
+                                                                <td>1s 103ms</td>
                                                                 <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
                                                                 </td>
                                                             </tr>
@@ -812,8 +845,8 @@
                                                                     <a href="4b91386ba563c16d3659c854348c7ba3c6a54e5e9bd46987b2f8da07d8a410be.html">Todo List App supports multiple actors using separate browsers #2 - Retries: Attempt #1</a>
                                                                 </td>
                                                                 <td>4</td>
-                                                                <td>22:08:44</td>
-                                                                <td>1s 539ms</td>
+                                                                <td>05:52:31</td>
+                                                                <td>1s 612ms</td>
                                                                 <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
                                                                 </td>
                                                             </tr>
@@ -826,8 +859,8 @@
                                                                     <a href="4b91386ba563c16d3659c854348c7ba3c6a54e5e9bd46987b2f8da07d8a410be.html">Todo List App supports multiple actors using separate browsers #3 - Retries: Attempt #1</a>
                                                                 </td>
                                                                 <td>4</td>
-                                                                <td>22:09:00</td>
-                                                                <td>2s 164ms</td>
+                                                                <td>05:52:47</td>
+                                                                <td>2s 112ms</td>
                                                                 <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
                                                                 </td>
                                                             </tr>
@@ -840,8 +873,8 @@
                                                                     <a href="ba33c61eb5cc0f27570929c09c2ac82053feb06dcd2660462726f2906cf594f6.html">Todo List App should allow me to add todo items #1 - Retries: Attempt #1</a>
                                                                 </td>
                                                                 <td>6</td>
-                                                                <td>22:08:34</td>
-                                                                <td>624ms</td>
+                                                                <td>05:52:20</td>
+                                                                <td>645ms</td>
                                                                 <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
                                                                 </td>
                                                             </tr>
@@ -854,8 +887,8 @@
                                                                     <a href="ba33c61eb5cc0f27570929c09c2ac82053feb06dcd2660462726f2906cf594f6.html">Todo List App should allow me to add todo items #2 - Retries: Attempt #1</a>
                                                                 </td>
                                                                 <td>6</td>
-                                                                <td>22:08:45</td>
-                                                                <td>873ms</td>
+                                                                <td>05:52:32</td>
+                                                                <td>925ms</td>
                                                                 <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
                                                                 </td>
                                                             </tr>
@@ -868,8 +901,8 @@
                                                                     <a href="ba33c61eb5cc0f27570929c09c2ac82053feb06dcd2660462726f2906cf594f6.html">Todo List App should allow me to add todo items #3 - Retries: Attempt #1</a>
                                                                 </td>
                                                                 <td>6</td>
-                                                                <td>22:09:03</td>
-                                                                <td>1s 712ms</td>
+                                                                <td>05:52:49</td>
+                                                                <td>1s 696ms</td>
                                                                 <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
                                                                 </td>
                                                             </tr>
@@ -882,8 +915,8 @@
                                                                     <a href="6221cb4f8cf5a97dbb1ddc21ddb61d2fc8428f1657bccb48a43232d61c422543.html">Todo List App should clear text input field when an item is added #1 - Retries: Attempt #1</a>
                                                                 </td>
                                                                 <td>5</td>
-                                                                <td>22:08:35</td>
-                                                                <td>524ms</td>
+                                                                <td>05:52:21</td>
+                                                                <td>565ms</td>
                                                                 <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
                                                                 </td>
                                                             </tr>
@@ -896,8 +929,8 @@
                                                                     <a href="6221cb4f8cf5a97dbb1ddc21ddb61d2fc8428f1657bccb48a43232d61c422543.html">Todo List App should clear text input field when an item is added #2 - Retries: Attempt #1</a>
                                                                 </td>
                                                                 <td>5</td>
-                                                                <td>22:08:46</td>
-                                                                <td>713ms</td>
+                                                                <td>05:52:33</td>
+                                                                <td>783ms</td>
                                                                 <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
                                                                 </td>
                                                             </tr>
@@ -910,8 +943,8 @@
                                                                     <a href="6221cb4f8cf5a97dbb1ddc21ddb61d2fc8428f1657bccb48a43232d61c422543.html">Todo List App should clear text input field when an item is added #3 - Retries: Attempt #1</a>
                                                                 </td>
                                                                 <td>5</td>
-                                                                <td>22:09:04</td>
-                                                                <td>953ms</td>
+                                                                <td>05:52:51</td>
+                                                                <td>1s 030ms</td>
                                                                 <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
                                                                 </td>
                                                             </tr>
@@ -924,8 +957,8 @@
                                                                     <a href="f099af75358480b2c046c8f24d38c9f3dd00083ada4bb3b191de3513503b2e2a.html">Todo List App should reflect the number of items left in the counter #1 - Retries: Attempt #1</a>
                                                                 </td>
                                                                 <td>3</td>
-                                                                <td>22:08:35</td>
-                                                                <td>667ms</td>
+                                                                <td>05:52:22</td>
+                                                                <td>802ms</td>
                                                                 <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
                                                                 </td>
                                                             </tr>
@@ -938,8 +971,8 @@
                                                                     <a href="f099af75358480b2c046c8f24d38c9f3dd00083ada4bb3b191de3513503b2e2a.html">Todo List App should reflect the number of items left in the counter #2 - Retries: Attempt #1</a>
                                                                 </td>
                                                                 <td>3</td>
-                                                                <td>22:08:47</td>
-                                                                <td>933ms</td>
+                                                                <td>05:52:34</td>
+                                                                <td>973ms</td>
                                                                 <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
                                                                 </td>
                                                             </tr>
@@ -952,8 +985,8 @@
                                                                     <a href="f099af75358480b2c046c8f24d38c9f3dd00083ada4bb3b191de3513503b2e2a.html">Todo List App should reflect the number of items left in the counter #3 - Retries: Attempt #1</a>
                                                                 </td>
                                                                 <td>3</td>
-                                                                <td>22:09:05</td>
-                                                                <td>1s 096ms</td>
+                                                                <td>05:52:52</td>
+                                                                <td>1s 150ms</td>
                                                                 <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
                                                                 </td>
                                                             </tr>
@@ -966,8 +999,8 @@
                                                                     <a href="dcde7b455deaad25213266ca8d39385d632e5b1dfefe7fe748ed422f3c0a61f5.html">Todo List App should show #main and #footer sections only when list contains items #1 - Retries: Attempt #1</a>
                                                                 </td>
                                                                 <td>6</td>
-                                                                <td>22:08:36</td>
-                                                                <td>955ms</td>
+                                                                <td>05:52:23</td>
+                                                                <td>1s 020ms</td>
                                                                 <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
                                                                 </td>
                                                             </tr>
@@ -980,8 +1013,8 @@
                                                                     <a href="dcde7b455deaad25213266ca8d39385d632e5b1dfefe7fe748ed422f3c0a61f5.html">Todo List App should show #main and #footer sections only when list contains items #2 - Retries: Attempt #1</a>
                                                                 </td>
                                                                 <td>6</td>
-                                                                <td>22:08:48</td>
-                                                                <td>1s 355ms</td>
+                                                                <td>05:52:35</td>
+                                                                <td>1s 339ms</td>
                                                                 <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
                                                                 </td>
                                                             </tr>
@@ -994,8 +1027,8 @@
                                                                     <a href="dcde7b455deaad25213266ca8d39385d632e5b1dfefe7fe748ed422f3c0a61f5.html">Todo List App should show #main and #footer sections only when list contains items #3 - Retries: Attempt #1</a>
                                                                 </td>
                                                                 <td>6</td>
-                                                                <td>22:09:06</td>
-                                                                <td>1s 329ms</td>
+                                                                <td>05:52:53</td>
+                                                                <td>1s 334ms</td>
                                                                 <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
                                                                 </td>
                                                             </tr>
@@ -1008,8 +1041,8 @@
                                                                     <a href="585a3ce02fdffd24a505d5127e5c4fffc237d0ec7109579eeecd22112cae933d.html">Todo List App should allow me to share notes across actors and browsers #1 - Retries: Attempt #1</a>
                                                                 </td>
                                                                 <td>6</td>
-                                                                <td>22:08:37</td>
-                                                                <td>1s 363ms</td>
+                                                                <td>05:52:24</td>
+                                                                <td>1s 370ms</td>
                                                                 <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
                                                                 </td>
                                                             </tr>
@@ -1022,8 +1055,8 @@
                                                                     <a href="585a3ce02fdffd24a505d5127e5c4fffc237d0ec7109579eeecd22112cae933d.html">Todo List App should allow me to share notes across actors and browsers #2 - Retries: Attempt #1</a>
                                                                 </td>
                                                                 <td>6</td>
-                                                                <td>22:08:49</td>
-                                                                <td>3s 255ms</td>
+                                                                <td>05:52:36</td>
+                                                                <td>3s 147ms</td>
                                                                 <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
                                                                 </td>
                                                             </tr>
@@ -1036,8 +1069,8 @@
                                                                     <a href="585a3ce02fdffd24a505d5127e5c4fffc237d0ec7109579eeecd22112cae933d.html">Todo List App should allow me to share notes across actors and browsers #3 - Retries: Attempt #1</a>
                                                                 </td>
                                                                 <td>6</td>
-                                                                <td>22:09:08</td>
-                                                                <td>2s 175ms</td>
+                                                                <td>05:52:55</td>
+                                                                <td>2s 597ms</td>
                                                                 <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
                                                                 </td>
                                                             </tr>
@@ -1050,8 +1083,8 @@
                                                                     <a href="742706b2dfe9e3001e941ce8e66f6587c83fc0203bdfcb7d8011d83207eee502.html">New Todo should allow me to add todo items #1 - Retries: Attempt #1</a>
                                                                 </td>
                                                                 <td>0</td>
-                                                                <td>22:08:39</td>
-                                                                <td>424ms</td>
+                                                                <td>05:52:25</td>
+                                                                <td>445ms</td>
                                                                 <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
                                                                 </td>
                                                             </tr>
@@ -1064,8 +1097,8 @@
                                                                     <a href="742706b2dfe9e3001e941ce8e66f6587c83fc0203bdfcb7d8011d83207eee502.html">New Todo should allow me to add todo items #2 - Retries: Attempt #1</a>
                                                                 </td>
                                                                 <td>0</td>
-                                                                <td>22:08:53</td>
-                                                                <td>1s 694ms</td>
+                                                                <td>05:52:40</td>
+                                                                <td>1s 568ms</td>
                                                                 <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
                                                                 </td>
                                                             </tr>
@@ -1078,8 +1111,8 @@
                                                                     <a href="742706b2dfe9e3001e941ce8e66f6587c83fc0203bdfcb7d8011d83207eee502.html">New Todo should allow me to add todo items #3 - Retries: Attempt #1</a>
                                                                 </td>
                                                                 <td>0</td>
-                                                                <td>22:09:11</td>
-                                                                <td>777ms</td>
+                                                                <td>05:52:58</td>
+                                                                <td>759ms</td>
                                                                 <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
                                                                 </td>
                                                             </tr>
@@ -1092,8 +1125,8 @@
                                                                     <a href="a7cb979189a9e88e0ce7bd82a9f30142ad2bf7a639f948505fcd652bcc57f3b6.html">New Todo should clear text input field when an item is added #1 - Retries: Attempt #1</a>
                                                                 </td>
                                                                 <td>0</td>
-                                                                <td>22:08:39</td>
-                                                                <td>317ms</td>
+                                                                <td>05:52:26</td>
+                                                                <td>346ms</td>
                                                                 <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
                                                                 </td>
                                                             </tr>
@@ -1106,8 +1139,8 @@
                                                                     <a href="a7cb979189a9e88e0ce7bd82a9f30142ad2bf7a639f948505fcd652bcc57f3b6.html">New Todo should clear text input field when an item is added #2 - Retries: Attempt #1</a>
                                                                 </td>
                                                                 <td>0</td>
-                                                                <td>22:08:56</td>
-                                                                <td>571ms</td>
+                                                                <td>05:52:42</td>
+                                                                <td>625ms</td>
                                                                 <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
                                                                 </td>
                                                             </tr>
@@ -1120,8 +1153,8 @@
                                                                     <a href="a7cb979189a9e88e0ce7bd82a9f30142ad2bf7a639f948505fcd652bcc57f3b6.html">New Todo should clear text input field when an item is added #3 - Retries: Attempt #1</a>
                                                                 </td>
                                                                 <td>0</td>
-                                                                <td>22:09:11</td>
-                                                                <td>706ms</td>
+                                                                <td>05:52:59</td>
+                                                                <td>668ms</td>
                                                                 <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
                                                                 </td>
                                                             </tr>
@@ -1134,8 +1167,8 @@
                                                                     <a href="fe7085470bbe7daaac3e1ef5ee699ea90634e5384049647ad8a65e8d493ebcd9.html">New Todo should reflect the number of items left in the counter #1 - Retries: Attempt #1</a>
                                                                 </td>
                                                                 <td>0</td>
-                                                                <td>22:08:40</td>
-                                                                <td>377ms</td>
+                                                                <td>05:52:26</td>
+                                                                <td>429ms</td>
                                                                 <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
                                                                 </td>
                                                             </tr>
@@ -1148,8 +1181,8 @@
                                                                     <a href="fe7085470bbe7daaac3e1ef5ee699ea90634e5384049647ad8a65e8d493ebcd9.html">New Todo should reflect the number of items left in the counter #2 - Retries: Attempt #1</a>
                                                                 </td>
                                                                 <td>0</td>
-                                                                <td>22:08:56</td>
-                                                                <td>643ms</td>
+                                                                <td>05:52:43</td>
+                                                                <td>695ms</td>
                                                                 <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
                                                                 </td>
                                                             </tr>
@@ -1162,8 +1195,8 @@
                                                                     <a href="fe7085470bbe7daaac3e1ef5ee699ea90634e5384049647ad8a65e8d493ebcd9.html">New Todo should reflect the number of items left in the counter #3 - Retries: Attempt #1</a>
                                                                 </td>
                                                                 <td>0</td>
-                                                                <td>22:09:12</td>
-                                                                <td>765ms</td>
+                                                                <td>05:52:59</td>
+                                                                <td>764ms</td>
                                                                 <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
                                                                 </td>
                                                             </tr>
@@ -1176,8 +1209,8 @@
                                                                     <a href="30ec9cff1e69745f9db3bf917dfeda03e4454d205775be8fa64d54736a0229f0.html">New Todo should show #main and #footer when items added #1 - Retries: Attempt #1</a>
                                                                 </td>
                                                                 <td>0</td>
-                                                                <td>22:08:40</td>
-                                                                <td>315ms</td>
+                                                                <td>05:52:27</td>
+                                                                <td>384ms</td>
                                                                 <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
                                                                 </td>
                                                             </tr>
@@ -1190,8 +1223,8 @@
                                                                     <a href="30ec9cff1e69745f9db3bf917dfeda03e4454d205775be8fa64d54736a0229f0.html">New Todo should show #main and #footer when items added #2 - Retries: Attempt #1</a>
                                                                 </td>
                                                                 <td>0</td>
-                                                                <td>22:08:57</td>
-                                                                <td>575ms</td>
+                                                                <td>05:52:44</td>
+                                                                <td>626ms</td>
                                                                 <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
                                                                 </td>
                                                             </tr>
@@ -1204,8 +1237,8 @@
                                                                     <a href="30ec9cff1e69745f9db3bf917dfeda03e4454d205775be8fa64d54736a0229f0.html">New Todo should show #main and #footer when items added #3 - Retries: Attempt #1</a>
                                                                 </td>
                                                                 <td>0</td>
-                                                                <td>22:09:13</td>
-                                                                <td>708ms</td>
+                                                                <td>05:53:00</td>
+                                                                <td>715ms</td>
                                                                 <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
                                                                 </td>
                                                             </tr>
@@ -1341,7 +1374,7 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-sm-12">
-            <span class="version">Serenity BDD version 4.2.34</span>
+            <span class="version">Serenity BDD version 5.3.11</span>
         </div>
     </div>
 </div>
@@ -1548,7 +1581,7 @@
             datasets: [{
                 label: 'Number of tests per duration',
                 fill: false,
-                data: ['24','12','0','0','0','0','0','0'],
+                data: ['21','15','0','0','0','0','0','0'],
                 backgroundColor: 'rgba(83, 146, 255,0.5)',
                 borderColor: 'rgba(83, 146, 255, 1)',
             }]
