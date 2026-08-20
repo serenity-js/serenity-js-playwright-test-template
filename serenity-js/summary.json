@@ -1,17 +1,17 @@
 {
   "$schema": "https://serenity-js.org/schemas/report-summary.json",
-  "generated": "2026-08-20T11:10:59.054Z",
+  "generated": "2026-08-20T12:44:34.688Z",
   "title": "Playwright",
   "schemaVersion": 1,
   "reportUrl": "./index.html",
   "ci": {
-    "commit": "5426cf9cad2efcedd983b6373ea42757d46e2c56",
+    "commit": "ded265fc77884d1ae00dcccf55331b5887ac99a6",
     "branch": "main",
-    "jobUrl": "https://github.com/serenity-js/serenity-js-playwright-test-template/actions/runs/32362416950"
+    "jobUrl": "https://github.com/serenity-js/serenity-js-playwright-test-template/actions/runs/32370274323"
   },
   "latestRun": {
-    "timestamp": "2026-08-20T11:10:18.315Z",
-    "label": "2546",
+    "timestamp": "2026-08-20T12:43:54.369Z",
+    "label": "2549",
     "totals": {
       "passed": 36,
       "failed": 0,
@@ -20,7 +20,7 @@
       "compromised": 0,
       "error": 0
     },
-    "duration": 40545
+    "duration": 40143
   },
   "runs": 1,
   "failureClusters": [],
@@ -40,27 +40,27 @@
     {
       "name": "Todo List App should allow me to share notes across actors and browsers",
       "source": "using_notes.spec.ts:44",
-      "duration": 2992
+      "duration": 2967
     },
     {
       "name": "Todo List App should allow me to share notes across actors and browsers",
       "source": "using_notes.spec.ts:44",
-      "duration": 2182
+      "duration": 2133
     },
     {
       "name": "Todo List App supports multiple actors using separate browsers",
       "source": "multi-actor_scenarios.spec.ts:37",
-      "duration": 2017
+      "duration": 2015
     },
     {
       "name": "Todo List App should allow me to add todo items",
       "source": "recording_items.spec.ts:36",
-      "duration": 1775
+      "duration": 1684
     },
     {
       "name": "New Todo should allow me to add todo items",
       "source": "vanilla_playwright_test.spec.ts:16",
-      "duration": 1571
+      "duration": 1577
     }
   ]
 }

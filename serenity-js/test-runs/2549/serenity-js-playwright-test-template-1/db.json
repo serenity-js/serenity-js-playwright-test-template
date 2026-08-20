@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "startedAt": "2026-08-20T11:10:18.315Z",
-  "finishedAt": "2026-08-20T11:10:58.860Z",
+  "startedAt": "2026-08-20T12:43:54.369Z",
+  "finishedAt": "2026-08-20T12:44:34.512Z",
   "outcomes": {
     "passed": 36,
     "failed": 0,
@@ -17,8 +17,8 @@
       "outcome": {
         "code": 64
       },
-      "duration": 214,
-      "startedAt": "2026-08-20T11:10:18.315Z",
+      "duration": 213,
+      "startedAt": "2026-08-20T12:43:54.369Z",
       "source": {
         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/api_testing.spec.ts",
         "line": 29
@@ -52,8 +52,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 63,
-          "startedAt": "2026-08-20T11:10:18.615Z",
+          "duration": 71,
+          "startedAt": "2026-08-20T12:43:54.667Z",
           "children": [],
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/api_testing.spec.ts",
@@ -65,12 +65,12 @@
             "url": "https://jsonplaceholder.typicode.com/todos/1",
             "requestHeaders": "Accept: application/json, text/plain, */*\nUser-Agent: axios/1.19.0\nAccept-Encoding: gzip, compress, deflate, br",
             "statusCode": 200,
-            "responseHeaders": "date: Thu, 20 Aug 2026 11:10:18 GMT\ncontent-type: application/json; charset=utf-8\ntransfer-encoding: chunked\nconnection: close\naccess-control-allow-credentials: true\ncache-control: max-age=43200\netag: W/\"53-hfEnumeNh6YirfjyjaujcOPPT+s\"\nexpires: -1\nnel: {\"report_to\":\"heroku-nel\",\"response_headers\":[\"Via\"],\"max_age\":3600,\"success_fraction\":0.01,\"failure_fraction\":0.1}\npragma: no-cache\nreport-to: {\"group\":\"heroku-nel\",\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?s=f0Xpspt4qOCPt%2BPexvRF9sTzYSbZ%2FKHu5MXMvl52AGc%3D\\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\\u0026ts=1777533478\"}],\"max_age\":3600}\nreporting-endpoints: heroku-nel=\"https://nel.heroku.com/reports?s=f0Xpspt4qOCPt%2BPexvRF9sTzYSbZ%2FKHu5MXMvl52AGc%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1777533478\"\nserver: cloudflare\nvary: Origin, Accept-Encoding\nvia: 2.0 heroku-router\nx-content-type-options: nosniff\nx-powered-by: Express\nx-ratelimit-limit: 1000\nx-ratelimit-remaining: 999\nx-ratelimit-reset: 1777533485\nage: 1\ncf-cache-status: HIT\ncf-ray: a2e0f366aa28aa25-ORD\nalt-svc: h3=\":443\"; ma=86400",
+            "responseHeaders": "date: Thu, 20 Aug 2026 12:43:54 GMT\ncontent-type: application/json; charset=utf-8\ntransfer-encoding: chunked\nconnection: close\naccess-control-allow-credentials: true\ncache-control: max-age=43200\netag: W/\"53-hfEnumeNh6YirfjyjaujcOPPT+s\"\nexpires: -1\nnel: {\"report_to\":\"heroku-nel\",\"response_headers\":[\"Via\"],\"max_age\":3600,\"success_fraction\":0.01,\"failure_fraction\":0.1}\npragma: no-cache\nreport-to: {\"group\":\"heroku-nel\",\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?s=6OD5Ma7Hf8sxRkmZQ%2FUwG5GvjVELY1G1N1c9ZRZ0AF4%3D\\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\\u0026ts=1785164981\"}],\"max_age\":3600}\nreporting-endpoints: heroku-nel=\"https://nel.heroku.com/reports?s=6OD5Ma7Hf8sxRkmZQ%2FUwG5GvjVELY1G1N1c9ZRZ0AF4%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1785164981\"\nserver: cloudflare\nvary: Origin, Accept-Encoding\nvia: 2.0 heroku-router\nx-content-type-options: nosniff\nx-powered-by: Express\nx-ratelimit-limit: 1000\nx-ratelimit-remaining: 999\nx-ratelimit-reset: 1785165020\nage: 25926\ncf-cache-status: HIT\ncf-ray: a2e17c82fb0198bb-IAD\nalt-svc: h3=\":443\"; ma=86400",
             "responseBody": "{\n    \"userId\": 1,\n    \"id\": 1,\n    \"title\": \"delectus aut autem\",\n    \"completed\": false\n}"
           },
           "artifacts": [
             {
-              "path": "test-runs/2546/serenity-js-playwright-test-template-1/artifact-get-https---jsonplaceholder-typicode-com-todos-1-49a2a5fda6.json",
+              "path": "test-runs/2549/serenity-js-playwright-test-template-1/artifact-get-https---jsonplaceholder-typicode-com-todos-1-70f402ef5b.json",
               "type": "screenshot"
             }
           ]
@@ -82,7 +82,7 @@
             "code": 64
           },
           "duration": 1,
-          "startedAt": "2026-08-20T11:10:18.690Z",
+          "startedAt": "2026-08-20T12:43:54.750Z",
           "children": [],
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/api_testing.spec.ts",
@@ -97,7 +97,7 @@
             "code": 64
           },
           "duration": 1,
-          "startedAt": "2026-08-20T11:10:18.703Z",
+          "startedAt": "2026-08-20T12:43:54.763Z",
           "children": [],
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/api_testing.spec.ts",
@@ -108,9 +108,9 @@
       ],
       "artifacts": [
         {
-          "path": "test-runs/2546/serenity-js-playwright-test-template-1/artifact-get-https---jsonplaceholder-typicode-com-todos-1-49a2a5fda6.json",
+          "path": "test-runs/2549/serenity-js-playwright-test-template-1/artifact-get-https---jsonplaceholder-typicode-com-todos-1-70f402ef5b.json",
           "type": "screenshot",
-          "activityId": "scf4c7sq633das0vsczt8tv3"
+          "activityId": "qetsbiwq7d5w3vecei0egtmc"
         }
       ],
       "cast": [
@@ -151,8 +151,8 @@
       "outcome": {
         "code": 64
       },
-      "duration": 918,
-      "startedAt": "2026-08-20T11:10:27.345Z",
+      "duration": 946,
+      "startedAt": "2026-08-20T12:44:03.451Z",
       "source": {
         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/api_testing.spec.ts",
         "line": 29
@@ -186,8 +186,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 72,
-          "startedAt": "2026-08-20T11:10:28.554Z",
+          "duration": 76,
+          "startedAt": "2026-08-20T12:44:04.589Z",
           "children": [],
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/api_testing.spec.ts",
@@ -199,12 +199,12 @@
             "url": "https://jsonplaceholder.typicode.com/todos/1",
             "requestHeaders": "Accept: application/json, text/plain, */*\nUser-Agent: axios/1.19.0\nAccept-Encoding: gzip, compress, deflate, br",
             "statusCode": 200,
-            "responseHeaders": "date: Thu, 20 Aug 2026 11:10:28 GMT\ncontent-type: application/json; charset=utf-8\ntransfer-encoding: chunked\nconnection: close\naccess-control-allow-credentials: true\ncache-control: max-age=43200\netag: W/\"53-hfEnumeNh6YirfjyjaujcOPPT+s\"\nexpires: -1\nnel: {\"report_to\":\"heroku-nel\",\"response_headers\":[\"Via\"],\"max_age\":3600,\"success_fraction\":0.01,\"failure_fraction\":0.1}\npragma: no-cache\nreport-to: {\"group\":\"heroku-nel\",\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?s=DV9TC%2FkOqYuahTpg8ieiNpM0kVksJDl4cKOywcG%2Fyv0%3D\\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\\u0026ts=1774595053\"}],\"max_age\":3600}\nreporting-endpoints: heroku-nel=\"https://nel.heroku.com/reports?s=DV9TC%2FkOqYuahTpg8ieiNpM0kVksJDl4cKOywcG%2Fyv0%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1774595053\"\nserver: cloudflare\nvary: Origin, Accept-Encoding\nvia: 2.0 heroku-router\nx-content-type-options: nosniff\nx-powered-by: Express\nx-ratelimit-limit: 1000\nx-ratelimit-remaining: 999\nx-ratelimit-reset: 1774595105\nage: 4\ncf-cache-status: HIT\ncf-ray: a2e0f3a4cd6f64b3-ORD\nalt-svc: h3=\":443\"; ma=86400",
+            "responseHeaders": "date: Thu, 20 Aug 2026 12:44:04 GMT\ncontent-type: application/json; charset=utf-8\ntransfer-encoding: chunked\nconnection: close\naccess-control-allow-credentials: true\ncache-control: max-age=43200\netag: W/\"53-hfEnumeNh6YirfjyjaujcOPPT+s\"\nexpires: -1\nnel: {\"report_to\":\"heroku-nel\",\"response_headers\":[\"Via\"],\"max_age\":3600,\"success_fraction\":0.01,\"failure_fraction\":0.1}\npragma: no-cache\nreport-to: {\"group\":\"heroku-nel\",\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?s=6OD5Ma7Hf8sxRkmZQ%2FUwG5GvjVELY1G1N1c9ZRZ0AF4%3D\\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\\u0026ts=1785164981\"}],\"max_age\":3600}\nreporting-endpoints: heroku-nel=\"https://nel.heroku.com/reports?s=6OD5Ma7Hf8sxRkmZQ%2FUwG5GvjVELY1G1N1c9ZRZ0AF4%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1785164981\"\nserver: cloudflare\nvary: Origin, Accept-Encoding\nvia: 2.0 heroku-router\nx-content-type-options: nosniff\nx-powered-by: Express\nx-ratelimit-limit: 1000\nx-ratelimit-remaining: 999\nx-ratelimit-reset: 1785165020\nage: 25936\ncf-cache-status: HIT\ncf-ray: a2e17cc10c03369b-IAD\nalt-svc: h3=\":443\"; ma=86400",
             "responseBody": "{\n    \"userId\": 1,\n    \"id\": 1,\n    \"title\": \"delectus aut autem\",\n    \"completed\": false\n}"
           },
           "artifacts": [
             {
-              "path": "test-runs/2546/serenity-js-playwright-test-template-1/artifact-get-https---jsonplaceholder-typicode-com-todos-1-c56063defe.json",
+              "path": "test-runs/2549/serenity-js-playwright-test-template-1/artifact-get-https---jsonplaceholder-typicode-com-todos-1-8f8fc5c9f0.json",
               "type": "screenshot"
             }
           ]
@@ -215,8 +215,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 3,
-          "startedAt": "2026-08-20T11:10:28.638Z",
+          "duration": 2,
+          "startedAt": "2026-08-20T12:44:04.678Z",
           "children": [],
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/api_testing.spec.ts",
@@ -231,7 +231,7 @@
             "code": 64
           },
           "duration": 2,
-          "startedAt": "2026-08-20T11:10:28.652Z",
+          "startedAt": "2026-08-20T12:44:04.691Z",
           "children": [],
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/api_testing.spec.ts",
@@ -242,9 +242,9 @@
       ],
       "artifacts": [
         {
-          "path": "test-runs/2546/serenity-js-playwright-test-template-1/artifact-get-https---jsonplaceholder-typicode-com-todos-1-c56063defe.json",
+          "path": "test-runs/2549/serenity-js-playwright-test-template-1/artifact-get-https---jsonplaceholder-typicode-com-todos-1-8f8fc5c9f0.json",
           "type": "screenshot",
-          "activityId": "fz8nmqqn0e179d776dz5qopj"
+          "activityId": "knja3x14fg6ysfvtiy13z4ku"
         }
       ],
       "cast": [
@@ -285,8 +285,8 @@
       "outcome": {
         "code": 64
       },
-      "duration": 421,
-      "startedAt": "2026-08-20T11:10:43.865Z",
+      "duration": 410,
+      "startedAt": "2026-08-20T12:44:19.884Z",
       "source": {
         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/api_testing.spec.ts",
         "line": 29
@@ -320,8 +320,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 71,
-          "startedAt": "2026-08-20T11:10:44.602Z",
+          "duration": 55,
+          "startedAt": "2026-08-20T12:44:20.636Z",
           "children": [],
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/api_testing.spec.ts",
@@ -333,12 +333,12 @@
             "url": "https://jsonplaceholder.typicode.com/todos/1",
             "requestHeaders": "Accept: application/json, text/plain, */*\nUser-Agent: axios/1.19.0\nAccept-Encoding: gzip, compress, deflate, br",
             "statusCode": 200,
-            "responseHeaders": "date: Thu, 20 Aug 2026 11:10:44 GMT\ncontent-type: application/json; charset=utf-8\ntransfer-encoding: chunked\nconnection: close\naccess-control-allow-credentials: true\ncache-control: max-age=43200\netag: W/\"53-hfEnumeNh6YirfjyjaujcOPPT+s\"\nexpires: -1\nnel: {\"report_to\":\"heroku-nel\",\"response_headers\":[\"Via\"],\"max_age\":3600,\"success_fraction\":0.01,\"failure_fraction\":0.1}\npragma: no-cache\nreport-to: {\"group\":\"heroku-nel\",\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?s=TmisNZdlYZ0IAtfl%2BGbwomMdLyViSrzf5oHWC6t3wJM%3D\\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\\u0026ts=1771486965\"}],\"max_age\":3600}\nreporting-endpoints: heroku-nel=\"https://nel.heroku.com/reports?s=TmisNZdlYZ0IAtfl%2BGbwomMdLyViSrzf5oHWC6t3wJM%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1771486965\"\nserver: cloudflare\nvary: Origin, Accept-Encoding\nvia: 2.0 heroku-router\nx-content-type-options: nosniff\nx-powered-by: Express\nx-ratelimit-limit: 1000\nx-ratelimit-remaining: 999\nx-ratelimit-reset: 1771486971\nage: 5\ncf-cache-status: HIT\ncf-ray: a2e0f409188b1142-ORD\nalt-svc: h3=\":443\"; ma=86400",
+            "responseHeaders": "date: Thu, 20 Aug 2026 12:44:20 GMT\ncontent-type: application/json; charset=utf-8\ntransfer-encoding: chunked\nconnection: close\naccess-control-allow-credentials: true\ncache-control: max-age=43200\netag: W/\"53-hfEnumeNh6YirfjyjaujcOPPT+s\"\nexpires: -1\nnel: {\"report_to\":\"heroku-nel\",\"response_headers\":[\"Via\"],\"max_age\":3600,\"success_fraction\":0.01,\"failure_fraction\":0.1}\npragma: no-cache\nreport-to: {\"group\":\"heroku-nel\",\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?s=6OD5Ma7Hf8sxRkmZQ%2FUwG5GvjVELY1G1N1c9ZRZ0AF4%3D\\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\\u0026ts=1785164981\"}],\"max_age\":3600}\nreporting-endpoints: heroku-nel=\"https://nel.heroku.com/reports?s=6OD5Ma7Hf8sxRkmZQ%2FUwG5GvjVELY1G1N1c9ZRZ0AF4%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1785164981\"\nserver: cloudflare\nvary: Origin, Accept-Encoding\nvia: 2.0 heroku-router\nx-content-type-options: nosniff\nx-powered-by: Express\nx-ratelimit-limit: 1000\nx-ratelimit-remaining: 999\nx-ratelimit-reset: 1785165020\nage: 25952\ncf-cache-status: HIT\ncf-ray: a2e17d253833c7c1-IAD\nalt-svc: h3=\":443\"; ma=86400",
             "responseBody": "{\n    \"userId\": 1,\n    \"id\": 1,\n    \"title\": \"delectus aut autem\",\n    \"completed\": false\n}"
           },
           "artifacts": [
             {
-              "path": "test-runs/2546/serenity-js-playwright-test-template-1/artifact-get-https---jsonplaceholder-typicode-com-todos-1-9515f82be5.json",
+              "path": "test-runs/2549/serenity-js-playwright-test-template-1/artifact-get-https---jsonplaceholder-typicode-com-todos-1-877b838756.json",
               "type": "screenshot"
             }
           ]
@@ -349,8 +349,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 1,
-          "startedAt": "2026-08-20T11:10:44.685Z",
+          "duration": 3,
+          "startedAt": "2026-08-20T12:44:20.703Z",
           "children": [],
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/api_testing.spec.ts",
@@ -364,8 +364,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 1,
-          "startedAt": "2026-08-20T11:10:44.700Z",
+          "duration": 2,
+          "startedAt": "2026-08-20T12:44:20.717Z",
           "children": [],
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/api_testing.spec.ts",
@@ -376,9 +376,9 @@
       ],
       "artifacts": [
         {
-          "path": "test-runs/2546/serenity-js-playwright-test-template-1/artifact-get-https---jsonplaceholder-typicode-com-todos-1-9515f82be5.json",
+          "path": "test-runs/2549/serenity-js-playwright-test-template-1/artifact-get-https---jsonplaceholder-typicode-com-todos-1-877b838756.json",
           "type": "screenshot",
-          "activityId": "ozkyylnag73sq7m6hz5ta8u1"
+          "activityId": "kwyzrok01d7t7vizprt2vt3b"
         }
       ],
       "cast": [
@@ -419,8 +419,8 @@
       "outcome": {
         "code": 64
       },
-      "duration": 726,
-      "startedAt": "2026-08-20T11:10:18.768Z",
+      "duration": 655,
+      "startedAt": "2026-08-20T12:43:54.835Z",
       "source": {
         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
         "line": 29
@@ -454,8 +454,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 152,
-          "startedAt": "2026-08-20T11:10:18.819Z",
+          "duration": 94,
+          "startedAt": "2026-08-20T12:43:54.899Z",
           "children": [
             {
               "type": "Interaction",
@@ -463,8 +463,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 114,
-              "startedAt": "2026-08-20T11:10:18.820Z",
+              "duration": 58,
+              "startedAt": "2026-08-20T12:43:54.900Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
@@ -476,12 +476,12 @@
                 "url": "https://www.githubstatus.com/api/v2/status.json",
                 "requestHeaders": "Accept: application/json, text/plain, */*\nUser-Agent: axios/1.19.0\nAccept-Encoding: gzip, compress, deflate, br",
                 "statusCode": 200,
-                "responseHeaders": "content-type: application/json; charset=utf-8\ncontent-length: 215\nconnection: close\ndate: Thu, 20 Aug 2026 11:10:17 GMT\nx-download-options: noopen\nx-permitted-cross-domain-policies: none\nreferrer-policy: strict-origin-when-cross-origin\nx-statuspage-version: f02313edced751b117e8141d4e028dc7090e623d\nstrict-transport-security: max-age=259200\nx-statuspage-skip-logging: true\naccess-control-allow-origin: *\ncache-control: max-age=10, public, s-maxage=10, stale-while-revalidate=20, stale-if-error=3600\nx-pollinator-metadata-service: status-page-web-pages\nx-runtime: 0.051666\nserver: AtlassianEdge\naccept-ranges: bytes\nx-content-type-options: nosniff\nx-xss-protection: 1; mode=block\natl-traceid: 7a231dcbfec04f0b9f70fbf3bfa4e4d8\natl-request-id: 7a231dcb-fec0-4f0b-9f70-fbf3bfa4e4d8\nreport-to: {\"endpoints\": [{\"url\": \"https://dz8aopenkvv6s.cloudfront.net\"}], \"group\": \"endpoint-1\", \"include_subdomains\": true, \"max_age\": 600}\nnel: {\"failure_fraction\": 0.01, \"include_subdomains\": true, \"max_age\": 600, \"report_to\": \"endpoint-1\"}\netag: W/\"4f2540bccf0c0f3ebd8b308ebe532d25\"\nvary: Accept,Accept-Encoding\nx-cache: Hit from cloudfront\nvia: 1.1 abc336ad4e023bfb4ade64ee3cb8317a.cloudfront.net (CloudFront)\nx-amz-cf-pop: IAD12-P5\nalt-svc: h3=\":443\"; ma=86400\nx-amz-cf-id: MNc6VlIFuICHfiWCpWKsblbbP77W7HCHMywUixAfkXsW1vNPk19N3w==\nage: 1",
+                "responseHeaders": "content-type: application/json; charset=utf-8\ncontent-length: 215\nconnection: close\ndate: Thu, 20 Aug 2026 12:43:28 GMT\nx-download-options: noopen\nx-permitted-cross-domain-policies: none\nreferrer-policy: strict-origin-when-cross-origin\nx-statuspage-version: f02313edced751b117e8141d4e028dc7090e623d\nstrict-transport-security: max-age=259200\nx-statuspage-skip-logging: true\naccess-control-allow-origin: *\ncache-control: max-age=10, public, s-maxage=10, stale-while-revalidate=20, stale-if-error=3600\nx-pollinator-metadata-service: status-page-web-pages\nx-runtime: 0.049480\nserver: AtlassianEdge\naccept-ranges: bytes\nx-content-type-options: nosniff\nx-xss-protection: 1; mode=block\natl-traceid: 9a6f12f36d9446baba984d056dbbdbc9\natl-request-id: 9a6f12f3-6d94-46ba-ba98-4d056dbbdbc9\nreport-to: {\"endpoints\": [{\"url\": \"https://dz8aopenkvv6s.cloudfront.net\"}], \"group\": \"endpoint-1\", \"include_subdomains\": true, \"max_age\": 600}\nnel: {\"failure_fraction\": 0.01, \"include_subdomains\": true, \"max_age\": 600, \"report_to\": \"endpoint-1\"}\netag: W/\"4f2540bccf0c0f3ebd8b308ebe532d25\"\nvary: Accept,Accept-Encoding\nx-cache: Hit from cloudfront\nvia: 1.1 009a5d13a4dd74719c9131c464732ee8.cloudfront.net (CloudFront)\nx-amz-cf-pop: IAD12-P5\nalt-svc: h3=\":443\"; ma=86400\nx-amz-cf-id: 2Rchd5K8hZDLkilgD2K8Q0m5jCgxnqwMHkfdCv0Fnbjm-r2mC7yq4Q==\nage: 25",
                 "responseBody": "{\n    \"page\": {\n        \"id\": \"kctbh9vrtdwd\",\n        \"name\": \"GitHub\",\n        \"url\": \"https://www.githubstatus.com\",\n        \"time_zone\": \"Etc/UTC\",\n        \"updated_at\": \"2026-08-20T10:44:05.071Z\"\n    },\n    \"status\": {\n        \"indicator\": \"none\",\n        \"description\": \"All Systems Operational\"\n    }\n}"
               },
               "artifacts": [
                 {
-                  "path": "test-runs/2546/serenity-js-playwright-test-template-1/artifact-get-https---www-githubstatus-com-api-v2-status-json-a3da8093e1.json",
+                  "path": "test-runs/2549/serenity-js-playwright-test-template-1/artifact-get-https---www-githubstatus-com-api-v2-status-json-56c99ac2ce.json",
                   "type": "screenshot"
                 }
               ]
@@ -492,8 +492,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 1,
-              "startedAt": "2026-08-20T11:10:18.948Z",
+              "duration": 0,
+              "startedAt": "2026-08-20T12:43:54.970Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
@@ -507,8 +507,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 0,
-              "startedAt": "2026-08-20T11:10:18.961Z",
+              "duration": 1,
+              "startedAt": "2026-08-20T12:43:54.981Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
@@ -529,8 +529,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 314,
-          "startedAt": "2026-08-20T11:10:19.003Z",
+          "duration": 287,
+          "startedAt": "2026-08-20T12:43:55.026Z",
           "children": [
             {
               "type": "Interaction",
@@ -538,8 +538,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 286,
-              "startedAt": "2026-08-20T11:10:19.004Z",
+              "duration": 259,
+              "startedAt": "2026-08-20T12:43:55.027Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
@@ -554,7 +554,7 @@
                 "code": 64
               },
               "duration": 6,
-              "startedAt": "2026-08-20T11:10:19.301Z",
+              "startedAt": "2026-08-20T12:43:55.297Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
@@ -576,7 +576,7 @@
             "code": 64
           },
           "duration": 121,
-          "startedAt": "2026-08-20T11:10:19.328Z",
+          "startedAt": "2026-08-20T12:43:55.324Z",
           "children": [
             {
               "type": "Interaction",
@@ -584,8 +584,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 30,
-              "startedAt": "2026-08-20T11:10:19.329Z",
+              "duration": 32,
+              "startedAt": "2026-08-20T12:43:55.325Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -600,7 +600,7 @@
                 "code": 64
               },
               "duration": 33,
-              "startedAt": "2026-08-20T11:10:19.370Z",
+              "startedAt": "2026-08-20T12:43:55.368Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -614,8 +614,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 24,
-              "startedAt": "2026-08-20T11:10:19.415Z",
+              "duration": 22,
+              "startedAt": "2026-08-20T12:43:55.412Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
@@ -637,7 +637,7 @@
             "code": 64
           },
           "duration": 6,
-          "startedAt": "2026-08-20T11:10:19.460Z",
+          "startedAt": "2026-08-20T12:43:55.455Z",
           "children": [],
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
@@ -648,9 +648,9 @@
       ],
       "artifacts": [
         {
-          "path": "test-runs/2546/serenity-js-playwright-test-template-1/artifact-get-https---www-githubstatus-com-api-v2-status-json-a3da8093e1.json",
+          "path": "test-runs/2549/serenity-js-playwright-test-template-1/artifact-get-https---www-githubstatus-com-api-v2-status-json-56c99ac2ce.json",
           "type": "screenshot",
-          "activityId": "dpzc70eh9fbexsfpe8r5p269"
+          "activityId": "dg5ae9n1kyaulvnfv6rsk4i5"
         }
       ],
       "cast": [
@@ -720,8 +720,8 @@
       "outcome": {
         "code": 64
       },
-      "duration": 1210,
-      "startedAt": "2026-08-20T11:10:28.727Z",
+      "duration": 1089,
+      "startedAt": "2026-08-20T12:44:04.835Z",
       "source": {
         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
         "line": 29
@@ -755,8 +755,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 98,
-          "startedAt": "2026-08-20T11:10:29.060Z",
+          "duration": 80,
+          "startedAt": "2026-08-20T12:44:05.118Z",
           "children": [
             {
               "type": "Interaction",
@@ -764,8 +764,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 62,
-              "startedAt": "2026-08-20T11:10:29.061Z",
+              "duration": 43,
+              "startedAt": "2026-08-20T12:44:05.120Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
@@ -777,12 +777,12 @@
                 "url": "https://www.githubstatus.com/api/v2/status.json",
                 "requestHeaders": "Accept: application/json, text/plain, */*\nUser-Agent: axios/1.19.0\nAccept-Encoding: gzip, compress, deflate, br",
                 "statusCode": 200,
-                "responseHeaders": "content-type: application/json; charset=utf-8\ncontent-length: 215\nconnection: close\ndate: Thu, 20 Aug 2026 11:10:17 GMT\nx-download-options: noopen\nx-permitted-cross-domain-policies: none\nreferrer-policy: strict-origin-when-cross-origin\nx-statuspage-version: f02313edced751b117e8141d4e028dc7090e623d\nstrict-transport-security: max-age=259200\nx-statuspage-skip-logging: true\naccess-control-allow-origin: *\ncache-control: max-age=10, public, s-maxage=10, stale-while-revalidate=20, stale-if-error=3600\nx-pollinator-metadata-service: status-page-web-pages\nx-runtime: 0.051666\nserver: AtlassianEdge\naccept-ranges: bytes\nx-content-type-options: nosniff\nx-xss-protection: 1; mode=block\natl-traceid: 7a231dcbfec04f0b9f70fbf3bfa4e4d8\natl-request-id: 7a231dcb-fec0-4f0b-9f70-fbf3bfa4e4d8\nreport-to: {\"endpoints\": [{\"url\": \"https://dz8aopenkvv6s.cloudfront.net\"}], \"group\": \"endpoint-1\", \"include_subdomains\": true, \"max_age\": 600}\nnel: {\"failure_fraction\": 0.01, \"include_subdomains\": true, \"max_age\": 600, \"report_to\": \"endpoint-1\"}\netag: W/\"4f2540bccf0c0f3ebd8b308ebe532d25\"\nvary: Accept,Accept-Encoding\nx-cache: Hit from cloudfront\nvia: 1.1 455fa93729c4c4e026284f344dc67c68.cloudfront.net (CloudFront)\nx-amz-cf-pop: IAD12-P5\nalt-svc: h3=\":443\"; ma=86400\nx-amz-cf-id: YwtUafamkrug_Ig2vSGev85-t8S80DUjmf4AQ0wNoOx503Snh0Q26Q==\nage: 12",
+                "responseHeaders": "content-type: application/json; charset=utf-8\ncontent-length: 215\nconnection: close\ndate: Thu, 20 Aug 2026 12:43:55 GMT\nx-download-options: noopen\nx-permitted-cross-domain-policies: none\nreferrer-policy: strict-origin-when-cross-origin\nx-statuspage-version: f02313edced751b117e8141d4e028dc7090e623d\nstrict-transport-security: max-age=259200\nx-statuspage-skip-logging: true\naccess-control-allow-origin: *\ncache-control: max-age=10, public, s-maxage=10, stale-while-revalidate=20, stale-if-error=3600\nx-pollinator-metadata-service: status-page-web-pages\nx-runtime: 0.046614\nserver: AtlassianEdge\naccept-ranges: bytes\nx-content-type-options: nosniff\nx-xss-protection: 1; mode=block\natl-traceid: b2b98b490a774a17bc051017b525ca18\natl-request-id: b2b98b49-0a77-4a17-bc05-1017b525ca18\nreport-to: {\"endpoints\": [{\"url\": \"https://dz8aopenkvv6s.cloudfront.net\"}], \"group\": \"endpoint-1\", \"include_subdomains\": true, \"max_age\": 600}\nnel: {\"failure_fraction\": 0.01, \"include_subdomains\": true, \"max_age\": 600, \"report_to\": \"endpoint-1\"}\netag: W/\"4f2540bccf0c0f3ebd8b308ebe532d25\"\nvary: Accept,Accept-Encoding\nx-cache: Hit from cloudfront\nvia: 1.1 d595bd24206cf641f8d0993f4b0f9b80.cloudfront.net (CloudFront)\nx-amz-cf-pop: IAD12-P5\nalt-svc: h3=\":443\"; ma=86400\nx-amz-cf-id: NjZbWggjM6Yd0pAgg3_YbNlv8WT89bxMeS97HeVwFzE3cCNuGrO4Uw==\nage: 10",
                 "responseBody": "{\n    \"page\": {\n        \"id\": \"kctbh9vrtdwd\",\n        \"name\": \"GitHub\",\n        \"url\": \"https://www.githubstatus.com\",\n        \"time_zone\": \"Etc/UTC\",\n        \"updated_at\": \"2026-08-20T10:44:05.071Z\"\n    },\n    \"status\": {\n        \"indicator\": \"none\",\n        \"description\": \"All Systems Operational\"\n    }\n}"
               },
               "artifacts": [
                 {
-                  "path": "test-runs/2546/serenity-js-playwright-test-template-1/artifact-get-https---www-githubstatus-com-api-v2-status-json-4d61617ddc.json",
+                  "path": "test-runs/2549/serenity-js-playwright-test-template-1/artifact-get-https---www-githubstatus-com-api-v2-status-json-9d72788814.json",
                   "type": "screenshot"
                 }
               ]
@@ -794,7 +794,7 @@
                 "code": 64
               },
               "duration": 1,
-              "startedAt": "2026-08-20T11:10:29.135Z",
+              "startedAt": "2026-08-20T12:44:05.175Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
@@ -809,7 +809,7 @@
                 "code": 64
               },
               "duration": 1,
-              "startedAt": "2026-08-20T11:10:29.147Z",
+              "startedAt": "2026-08-20T12:44:05.187Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
@@ -830,8 +830,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 483,
-          "startedAt": "2026-08-20T11:10:29.213Z",
+          "duration": 476,
+          "startedAt": "2026-08-20T12:44:05.230Z",
           "children": [
             {
               "type": "Interaction",
@@ -839,8 +839,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 452,
-              "startedAt": "2026-08-20T11:10:29.215Z",
+              "duration": 445,
+              "startedAt": "2026-08-20T12:44:05.231Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
@@ -854,8 +854,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 8,
-              "startedAt": "2026-08-20T11:10:29.678Z",
+              "duration": 9,
+              "startedAt": "2026-08-20T12:44:05.687Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
@@ -876,8 +876,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 175,
-          "startedAt": "2026-08-20T11:10:29.707Z",
+          "duration": 156,
+          "startedAt": "2026-08-20T12:44:05.717Z",
           "children": [
             {
               "type": "Interaction",
@@ -886,7 +886,7 @@
                 "code": 64
               },
               "duration": 42,
-              "startedAt": "2026-08-20T11:10:29.708Z",
+              "startedAt": "2026-08-20T12:44:05.718Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -900,8 +900,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 67,
-              "startedAt": "2026-08-20T11:10:29.761Z",
+              "duration": 49,
+              "startedAt": "2026-08-20T12:44:05.771Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -916,7 +916,7 @@
                 "code": 64
               },
               "duration": 32,
-              "startedAt": "2026-08-20T11:10:29.840Z",
+              "startedAt": "2026-08-20T12:44:05.831Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
@@ -937,8 +937,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 11,
-          "startedAt": "2026-08-20T11:10:29.893Z",
+          "duration": 10,
+          "startedAt": "2026-08-20T12:44:05.884Z",
           "children": [],
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
@@ -949,9 +949,9 @@
       ],
       "artifacts": [
         {
-          "path": "test-runs/2546/serenity-js-playwright-test-template-1/artifact-get-https---www-githubstatus-com-api-v2-status-json-4d61617ddc.json",
+          "path": "test-runs/2549/serenity-js-playwright-test-template-1/artifact-get-https---www-githubstatus-com-api-v2-status-json-9d72788814.json",
           "type": "screenshot",
-          "activityId": "qgnhsye7monkrzrg0bb7py01"
+          "activityId": "h5ko880t0fqzshfgmuv9jj3k"
         }
       ],
       "cast": [
@@ -1021,8 +1021,8 @@
       "outcome": {
         "code": 64
       },
-      "duration": 902,
-      "startedAt": "2026-08-20T11:10:44.762Z",
+      "duration": 831,
+      "startedAt": "2026-08-20T12:44:20.791Z",
       "source": {
         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
         "line": 29
@@ -1056,8 +1056,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 116,
-          "startedAt": "2026-08-20T11:10:45.011Z",
+          "duration": 59,
+          "startedAt": "2026-08-20T12:44:21.028Z",
           "children": [
             {
               "type": "Interaction",
@@ -1065,8 +1065,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 81,
-              "startedAt": "2026-08-20T11:10:45.012Z",
+              "duration": 20,
+              "startedAt": "2026-08-20T12:44:21.029Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
@@ -1078,12 +1078,12 @@
                 "url": "https://www.githubstatus.com/api/v2/status.json",
                 "requestHeaders": "Accept: application/json, text/plain, */*\nUser-Agent: axios/1.19.0\nAccept-Encoding: gzip, compress, deflate, br",
                 "statusCode": 200,
-                "responseHeaders": "content-type: application/json; charset=utf-8\ncontent-length: 215\nconnection: close\ndate: Thu, 20 Aug 2026 11:10:40 GMT\nx-download-options: noopen\nx-permitted-cross-domain-policies: none\nreferrer-policy: strict-origin-when-cross-origin\nx-statuspage-version: f02313edced751b117e8141d4e028dc7090e623d\nstrict-transport-security: max-age=259200\nx-statuspage-skip-logging: true\naccess-control-allow-origin: *\ncache-control: max-age=10, public, s-maxage=10, stale-while-revalidate=20, stale-if-error=3600\nx-pollinator-metadata-service: status-page-web-pages\nx-runtime: 0.050504\nserver: AtlassianEdge\naccept-ranges: bytes\nx-content-type-options: nosniff\nx-xss-protection: 1; mode=block\natl-traceid: 811f140bab2a456292fb3c1477ecf6fe\natl-request-id: 811f140b-ab2a-4562-92fb-3c1477ecf6fe\nreport-to: {\"endpoints\": [{\"url\": \"https://dz8aopenkvv6s.cloudfront.net\"}], \"group\": \"endpoint-1\", \"include_subdomains\": true, \"max_age\": 600}\nnel: {\"failure_fraction\": 0.01, \"include_subdomains\": true, \"max_age\": 600, \"report_to\": \"endpoint-1\"}\netag: W/\"4f2540bccf0c0f3ebd8b308ebe532d25\"\nvary: Accept,Accept-Encoding\nx-cache: Hit from cloudfront\nvia: 1.1 46c6865a1e01f65400f5a41239c74456.cloudfront.net (CloudFront)\nx-amz-cf-pop: IAD12-P5\nx-amz-cf-id: jlTBNwMgOEkB9n-hPZNhWjMmJQdkC2mRBKKHOzHH1cOtraEeguFJxA==\nage: 5",
+                "responseHeaders": "content-type: application/json; charset=utf-8\ncontent-length: 215\nconnection: close\ndate: Thu, 20 Aug 2026 12:44:05 GMT\nx-download-options: noopen\nx-permitted-cross-domain-policies: none\nreferrer-policy: strict-origin-when-cross-origin\nx-statuspage-version: f02313edced751b117e8141d4e028dc7090e623d\nstrict-transport-security: max-age=259200\nx-statuspage-skip-logging: true\naccess-control-allow-origin: *\ncache-control: max-age=10, public, s-maxage=10, stale-while-revalidate=20, stale-if-error=3600\nx-pollinator-metadata-service: status-page-web-pages\nx-runtime: 0.061131\nserver: AtlassianEdge\naccept-ranges: bytes\nx-content-type-options: nosniff\nx-xss-protection: 1; mode=block\natl-traceid: 9ea62da7a3ec48f9bfa4f732e1f9748b\natl-request-id: 9ea62da7-a3ec-48f9-bfa4-f732e1f9748b\nreport-to: {\"endpoints\": [{\"url\": \"https://dz8aopenkvv6s.cloudfront.net\"}], \"group\": \"endpoint-1\", \"include_subdomains\": true, \"max_age\": 600}\nnel: {\"failure_fraction\": 0.01, \"include_subdomains\": true, \"max_age\": 600, \"report_to\": \"endpoint-1\"}\netag: W/\"4f2540bccf0c0f3ebd8b308ebe532d25\"\nvary: Accept,Accept-Encoding\nx-cache: Hit from cloudfront\nvia: 1.1 009a5d13a4dd74719c9131c464732ee8.cloudfront.net (CloudFront)\nx-amz-cf-pop: IAD12-P5\nalt-svc: h3=\":443\"; ma=86400\nx-amz-cf-id: 0SP2DuvX1y6kFAsUs2yawIFvGiMioAlWkiLIVRDE_HRek08Pwe5NiA==\nage: 16",
                 "responseBody": "{\n    \"page\": {\n        \"id\": \"kctbh9vrtdwd\",\n        \"name\": \"GitHub\",\n        \"url\": \"https://www.githubstatus.com\",\n        \"time_zone\": \"Etc/UTC\",\n        \"updated_at\": \"2026-08-20T10:44:05.071Z\"\n    },\n    \"status\": {\n        \"indicator\": \"none\",\n        \"description\": \"All Systems Operational\"\n    }\n}"
               },
               "artifacts": [
                 {
-                  "path": "test-runs/2546/serenity-js-playwright-test-template-1/artifact-get-https---www-githubstatus-com-api-v2-status-json-8d15fa400f.json",
+                  "path": "test-runs/2549/serenity-js-playwright-test-template-1/artifact-get-https---www-githubstatus-com-api-v2-status-json-83952c12cd.json",
                   "type": "screenshot"
                 }
               ]
@@ -1095,7 +1095,7 @@
                 "code": 64
               },
               "duration": 1,
-              "startedAt": "2026-08-20T11:10:45.104Z",
+              "startedAt": "2026-08-20T12:44:21.061Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
@@ -1109,8 +1109,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 1,
-              "startedAt": "2026-08-20T11:10:45.116Z",
+              "duration": 2,
+              "startedAt": "2026-08-20T12:44:21.075Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
@@ -1131,8 +1131,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 295,
-          "startedAt": "2026-08-20T11:10:45.159Z",
+          "duration": 282,
+          "startedAt": "2026-08-20T12:44:21.122Z",
           "children": [
             {
               "type": "Interaction",
@@ -1140,8 +1140,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 262,
-              "startedAt": "2026-08-20T11:10:45.160Z",
+              "duration": 249,
+              "startedAt": "2026-08-20T12:44:21.123Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
@@ -1156,7 +1156,7 @@
                 "code": 64
               },
               "duration": 10,
-              "startedAt": "2026-08-20T11:10:45.434Z",
+              "startedAt": "2026-08-20T12:44:21.383Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
@@ -1177,8 +1177,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 148,
-          "startedAt": "2026-08-20T11:10:45.465Z",
+          "duration": 158,
+          "startedAt": "2026-08-20T12:44:21.415Z",
           "children": [
             {
               "type": "Interaction",
@@ -1186,8 +1186,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 40,
-              "startedAt": "2026-08-20T11:10:45.467Z",
+              "duration": 42,
+              "startedAt": "2026-08-20T12:44:21.416Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -1201,8 +1201,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 43,
-              "startedAt": "2026-08-20T11:10:45.518Z",
+              "duration": 51,
+              "startedAt": "2026-08-20T12:44:21.469Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -1216,8 +1216,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 30,
-              "startedAt": "2026-08-20T11:10:45.572Z",
+              "duration": 31,
+              "startedAt": "2026-08-20T12:44:21.532Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
@@ -1238,8 +1238,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 11,
-          "startedAt": "2026-08-20T11:10:45.624Z",
+          "duration": 7,
+          "startedAt": "2026-08-20T12:44:21.585Z",
           "children": [],
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
@@ -1250,9 +1250,9 @@
       ],
       "artifacts": [
         {
-          "path": "test-runs/2546/serenity-js-playwright-test-template-1/artifact-get-https---www-githubstatus-com-api-v2-status-json-8d15fa400f.json",
+          "path": "test-runs/2549/serenity-js-playwright-test-template-1/artifact-get-https---www-githubstatus-com-api-v2-status-json-83952c12cd.json",
           "type": "screenshot",
-          "activityId": "fi5p7jy99o7rki8cao65g5l6"
+          "activityId": "l6v6gcxcaetzssebznw8kwa8"
         }
       ],
       "cast": [
@@ -1322,8 +1322,8 @@
       "outcome": {
         "code": 64
       },
-      "duration": 950,
-      "startedAt": "2026-08-20T11:10:19.521Z",
+      "duration": 934,
+      "startedAt": "2026-08-20T12:43:55.516Z",
       "source": {
         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/multi-actor_scenarios.spec.ts",
         "line": 37
@@ -1357,8 +1357,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 411,
-          "startedAt": "2026-08-20T11:10:19.543Z",
+          "duration": 402,
+          "startedAt": "2026-08-20T12:43:55.540Z",
           "children": [
             {
               "type": "Task",
@@ -1366,8 +1366,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 275,
-              "startedAt": "2026-08-20T11:10:19.544Z",
+              "duration": 264,
+              "startedAt": "2026-08-20T12:43:55.541Z",
               "children": [
                 {
                   "type": "Interaction",
@@ -1375,8 +1375,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 248,
-                  "startedAt": "2026-08-20T11:10:19.545Z",
+                  "duration": 236,
+                  "startedAt": "2026-08-20T12:43:55.542Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
@@ -1390,8 +1390,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 4,
-                  "startedAt": "2026-08-20T11:10:19.804Z",
+                  "duration": 5,
+                  "startedAt": "2026-08-20T12:43:55.789Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/multi-actor_scenarios.spec.ts",
@@ -1412,8 +1412,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 113,
-              "startedAt": "2026-08-20T11:10:19.830Z",
+              "duration": 116,
+              "startedAt": "2026-08-20T12:43:55.816Z",
               "children": [
                 {
                   "type": "Interaction",
@@ -1422,7 +1422,7 @@
                     "code": 64
                   },
                   "duration": 24,
-                  "startedAt": "2026-08-20T11:10:19.830Z",
+                  "startedAt": "2026-08-20T12:43:55.817Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -1436,8 +1436,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 33,
-                  "startedAt": "2026-08-20T11:10:19.865Z",
+                  "duration": 41,
+                  "startedAt": "2026-08-20T12:43:55.852Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -1451,8 +1451,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 23,
-                  "startedAt": "2026-08-20T11:10:19.910Z",
+                  "duration": 18,
+                  "startedAt": "2026-08-20T12:43:55.904Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
@@ -1480,8 +1480,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 403,
-          "startedAt": "2026-08-20T11:10:19.980Z",
+          "duration": 385,
+          "startedAt": "2026-08-20T12:43:55.964Z",
           "children": [
             {
               "type": "Task",
@@ -1489,8 +1489,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 251,
-              "startedAt": "2026-08-20T11:10:19.981Z",
+              "duration": 254,
+              "startedAt": "2026-08-20T12:43:55.965Z",
               "children": [
                 {
                   "type": "Interaction",
@@ -1498,8 +1498,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 224,
-                  "startedAt": "2026-08-20T11:10:19.982Z",
+                  "duration": 226,
+                  "startedAt": "2026-08-20T12:43:55.966Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
@@ -1513,8 +1513,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 5,
-                  "startedAt": "2026-08-20T11:10:20.217Z",
+                  "duration": 6,
+                  "startedAt": "2026-08-20T12:43:56.203Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/multi-actor_scenarios.spec.ts",
@@ -1535,8 +1535,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 129,
-              "startedAt": "2026-08-20T11:10:20.243Z",
+              "duration": 109,
+              "startedAt": "2026-08-20T12:43:56.230Z",
               "children": [
                 {
                   "type": "Interaction",
@@ -1544,8 +1544,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 24,
-                  "startedAt": "2026-08-20T11:10:20.244Z",
+                  "duration": 23,
+                  "startedAt": "2026-08-20T12:43:56.231Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -1559,8 +1559,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 51,
-                  "startedAt": "2026-08-20T11:10:20.279Z",
+                  "duration": 32,
+                  "startedAt": "2026-08-20T12:43:56.266Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -1575,7 +1575,7 @@
                     "code": 64
                   },
                   "duration": 20,
-                  "startedAt": "2026-08-20T11:10:20.342Z",
+                  "startedAt": "2026-08-20T12:43:56.309Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
@@ -1604,7 +1604,7 @@
             "code": 64
           },
           "duration": 6,
-          "startedAt": "2026-08-20T11:10:20.397Z",
+          "startedAt": "2026-08-20T12:43:56.365Z",
           "children": [],
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/multi-actor_scenarios.spec.ts",
@@ -1618,8 +1618,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 5,
-          "startedAt": "2026-08-20T11:10:20.418Z",
+          "duration": 19,
+          "startedAt": "2026-08-20T12:43:56.386Z",
           "children": [],
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/multi-actor_scenarios.spec.ts",
@@ -1679,8 +1679,8 @@
       "outcome": {
         "code": 64
       },
-      "duration": 1452,
-      "startedAt": "2026-08-20T11:10:29.978Z",
+      "duration": 1435,
+      "startedAt": "2026-08-20T12:44:05.957Z",
       "source": {
         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/multi-actor_scenarios.spec.ts",
         "line": 37
@@ -1714,8 +1714,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 632,
-          "startedAt": "2026-08-20T11:10:30.004Z",
+          "duration": 616,
+          "startedAt": "2026-08-20T12:44:05.982Z",
           "children": [
             {
               "type": "Task",
@@ -1723,8 +1723,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 473,
-              "startedAt": "2026-08-20T11:10:30.004Z",
+              "duration": 459,
+              "startedAt": "2026-08-20T12:44:05.983Z",
               "children": [
                 {
                   "type": "Interaction",
@@ -1732,8 +1732,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 445,
-                  "startedAt": "2026-08-20T11:10:30.005Z",
+                  "duration": 431,
+                  "startedAt": "2026-08-20T12:44:05.984Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
@@ -1748,7 +1748,7 @@
                     "code": 64
                   },
                   "duration": 6,
-                  "startedAt": "2026-08-20T11:10:30.461Z",
+                  "startedAt": "2026-08-20T12:44:06.426Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/multi-actor_scenarios.spec.ts",
@@ -1769,8 +1769,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 138,
-              "startedAt": "2026-08-20T11:10:30.488Z",
+              "duration": 135,
+              "startedAt": "2026-08-20T12:44:06.453Z",
               "children": [
                 {
                   "type": "Interaction",
@@ -1778,8 +1778,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 34,
-                  "startedAt": "2026-08-20T11:10:30.489Z",
+                  "duration": 33,
+                  "startedAt": "2026-08-20T12:44:06.454Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -1793,8 +1793,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 46,
-                  "startedAt": "2026-08-20T11:10:30.534Z",
+                  "duration": 44,
+                  "startedAt": "2026-08-20T12:44:06.498Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -1808,8 +1808,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 24,
-                  "startedAt": "2026-08-20T11:10:30.591Z",
+                  "duration": 23,
+                  "startedAt": "2026-08-20T12:44:06.554Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
@@ -1838,7 +1838,7 @@
             "code": 64
           },
           "duration": 646,
-          "startedAt": "2026-08-20T11:10:30.663Z",
+          "startedAt": "2026-08-20T12:44:06.624Z",
           "children": [
             {
               "type": "Task",
@@ -1846,8 +1846,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 468,
-              "startedAt": "2026-08-20T11:10:30.664Z",
+              "duration": 460,
+              "startedAt": "2026-08-20T12:44:06.625Z",
               "children": [
                 {
                   "type": "Interaction",
@@ -1855,8 +1855,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 438,
-                  "startedAt": "2026-08-20T11:10:30.665Z",
+                  "duration": 430,
+                  "startedAt": "2026-08-20T12:44:06.626Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
@@ -1870,8 +1870,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 7,
-                  "startedAt": "2026-08-20T11:10:31.114Z",
+                  "duration": 8,
+                  "startedAt": "2026-08-20T12:44:07.067Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/multi-actor_scenarios.spec.ts",
@@ -1892,8 +1892,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 156,
-              "startedAt": "2026-08-20T11:10:31.143Z",
+              "duration": 163,
+              "startedAt": "2026-08-20T12:44:07.097Z",
               "children": [
                 {
                   "type": "Interaction",
@@ -1901,8 +1901,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 34,
-                  "startedAt": "2026-08-20T11:10:31.144Z",
+                  "duration": 35,
+                  "startedAt": "2026-08-20T12:44:07.098Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -1916,8 +1916,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 65,
-                  "startedAt": "2026-08-20T11:10:31.190Z",
+                  "duration": 71,
+                  "startedAt": "2026-08-20T12:44:07.144Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -1931,8 +1931,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 21,
-                  "startedAt": "2026-08-20T11:10:31.267Z",
+                  "duration": 24,
+                  "startedAt": "2026-08-20T12:44:07.226Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
@@ -1961,7 +1961,7 @@
             "code": 64
           },
           "duration": 9,
-          "startedAt": "2026-08-20T11:10:31.323Z",
+          "startedAt": "2026-08-20T12:44:07.284Z",
           "children": [],
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/multi-actor_scenarios.spec.ts",
@@ -1975,8 +1975,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 10,
-          "startedAt": "2026-08-20T11:10:31.346Z",
+          "duration": 9,
+          "startedAt": "2026-08-20T12:44:07.308Z",
           "children": [],
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/multi-actor_scenarios.spec.ts",
@@ -2036,8 +2036,8 @@
       "outcome": {
         "code": 64
       },
-      "duration": 2017,
-      "startedAt": "2026-08-20T11:10:45.700Z",
+      "duration": 2015,
+      "startedAt": "2026-08-20T12:44:21.652Z",
       "source": {
         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/multi-actor_scenarios.spec.ts",
         "line": 37
@@ -2071,8 +2071,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 815,
-          "startedAt": "2026-08-20T11:10:45.731Z",
+          "duration": 768,
+          "startedAt": "2026-08-20T12:44:21.685Z",
           "children": [
             {
               "type": "Task",
@@ -2080,8 +2080,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 621,
-              "startedAt": "2026-08-20T11:10:45.732Z",
+              "duration": 571,
+              "startedAt": "2026-08-20T12:44:21.685Z",
               "children": [
                 {
                   "type": "Interaction",
@@ -2089,8 +2089,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 590,
-                  "startedAt": "2026-08-20T11:10:45.733Z",
+                  "duration": 542,
+                  "startedAt": "2026-08-20T12:44:21.686Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
@@ -2104,8 +2104,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 8,
-                  "startedAt": "2026-08-20T11:10:46.335Z",
+                  "duration": 7,
+                  "startedAt": "2026-08-20T12:44:22.239Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/multi-actor_scenarios.spec.ts",
@@ -2126,8 +2126,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 172,
-              "startedAt": "2026-08-20T11:10:46.364Z",
+              "duration": 175,
+              "startedAt": "2026-08-20T12:44:22.268Z",
               "children": [
                 {
                   "type": "Interaction",
@@ -2135,8 +2135,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 45,
-                  "startedAt": "2026-08-20T11:10:46.365Z",
+                  "duration": 53,
+                  "startedAt": "2026-08-20T12:44:22.269Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -2150,8 +2150,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 56,
-                  "startedAt": "2026-08-20T11:10:46.422Z",
+                  "duration": 63,
+                  "startedAt": "2026-08-20T12:44:22.334Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -2165,8 +2165,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 36,
-                  "startedAt": "2026-08-20T11:10:46.490Z",
+                  "duration": 23,
+                  "startedAt": "2026-08-20T12:44:22.409Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
@@ -2194,8 +2194,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 1027,
-          "startedAt": "2026-08-20T11:10:46.586Z",
+          "duration": 1039,
+          "startedAt": "2026-08-20T12:44:22.486Z",
           "children": [
             {
               "type": "Task",
@@ -2203,8 +2203,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 778,
-              "startedAt": "2026-08-20T11:10:46.587Z",
+              "duration": 815,
+              "startedAt": "2026-08-20T12:44:22.487Z",
               "children": [
                 {
                   "type": "Interaction",
@@ -2212,8 +2212,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 739,
-                  "startedAt": "2026-08-20T11:10:46.588Z",
+                  "duration": 776,
+                  "startedAt": "2026-08-20T12:44:22.488Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
@@ -2227,8 +2227,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 15,
-                  "startedAt": "2026-08-20T11:10:47.340Z",
+                  "duration": 16,
+                  "startedAt": "2026-08-20T12:44:23.275Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/multi-actor_scenarios.spec.ts",
@@ -2249,8 +2249,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 227,
-              "startedAt": "2026-08-20T11:10:47.376Z",
+              "duration": 202,
+              "startedAt": "2026-08-20T12:44:23.313Z",
               "children": [
                 {
                   "type": "Interaction",
@@ -2258,8 +2258,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 43,
-                  "startedAt": "2026-08-20T11:10:47.378Z",
+                  "duration": 46,
+                  "startedAt": "2026-08-20T12:44:23.314Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -2273,8 +2273,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 98,
-                  "startedAt": "2026-08-20T11:10:47.432Z",
+                  "duration": 67,
+                  "startedAt": "2026-08-20T12:44:23.372Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -2288,8 +2288,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 50,
-                  "startedAt": "2026-08-20T11:10:47.542Z",
+                  "duration": 51,
+                  "startedAt": "2026-08-20T12:44:23.453Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
@@ -2317,8 +2317,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 11,
-          "startedAt": "2026-08-20T11:10:47.630Z",
+          "duration": 12,
+          "startedAt": "2026-08-20T12:44:23.545Z",
           "children": [],
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/multi-actor_scenarios.spec.ts",
@@ -2332,8 +2332,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 11,
-          "startedAt": "2026-08-20T11:10:47.658Z",
+          "duration": 42,
+          "startedAt": "2026-08-20T12:44:23.578Z",
           "children": [],
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/multi-actor_scenarios.spec.ts",
@@ -2393,8 +2393,8 @@
       "outcome": {
         "code": 64
       },
-      "duration": 589,
-      "startedAt": "2026-08-20T11:10:20.494Z",
+      "duration": 596,
+      "startedAt": "2026-08-20T12:43:56.473Z",
       "source": {
         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
         "line": 36
@@ -2428,8 +2428,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 239,
-          "startedAt": "2026-08-20T11:10:20.575Z",
+          "duration": 212,
+          "startedAt": "2026-08-20T12:43:56.558Z",
           "children": [
             {
               "type": "Interaction",
@@ -2437,8 +2437,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 212,
-              "startedAt": "2026-08-20T11:10:20.576Z",
+              "duration": 186,
+              "startedAt": "2026-08-20T12:43:56.558Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
@@ -2452,8 +2452,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 5,
-              "startedAt": "2026-08-20T11:10:20.799Z",
+              "duration": 4,
+              "startedAt": "2026-08-20T12:43:56.756Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
@@ -2474,8 +2474,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 101,
-          "startedAt": "2026-08-20T11:10:20.825Z",
+          "duration": 121,
+          "startedAt": "2026-08-20T12:43:56.781Z",
           "children": [
             {
               "type": "Interaction",
@@ -2483,8 +2483,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 23,
-              "startedAt": "2026-08-20T11:10:20.825Z",
+              "duration": 24,
+              "startedAt": "2026-08-20T12:43:56.782Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -2498,8 +2498,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 28,
-              "startedAt": "2026-08-20T11:10:20.859Z",
+              "duration": 45,
+              "startedAt": "2026-08-20T12:43:56.817Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -2514,7 +2514,7 @@
                 "code": 64
               },
               "duration": 18,
-              "startedAt": "2026-08-20T11:10:20.898Z",
+              "startedAt": "2026-08-20T12:43:56.874Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
@@ -2535,8 +2535,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 6,
-          "startedAt": "2026-08-20T11:10:20.937Z",
+          "duration": 7,
+          "startedAt": "2026-08-20T12:43:56.913Z",
           "children": [],
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
@@ -2550,8 +2550,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 68,
-          "startedAt": "2026-08-20T11:10:20.953Z",
+          "duration": 69,
+          "startedAt": "2026-08-20T12:43:56.931Z",
           "children": [
             {
               "type": "Interaction",
@@ -2559,8 +2559,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 6,
-              "startedAt": "2026-08-20T11:10:20.954Z",
+              "duration": 7,
+              "startedAt": "2026-08-20T12:43:56.931Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -2574,8 +2574,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 10,
-              "startedAt": "2026-08-20T11:10:20.970Z",
+              "duration": 11,
+              "startedAt": "2026-08-20T12:43:56.948Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -2589,8 +2589,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 19,
-              "startedAt": "2026-08-20T11:10:20.991Z",
+              "duration": 20,
+              "startedAt": "2026-08-20T12:43:56.970Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
@@ -2611,8 +2611,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 7,
-          "startedAt": "2026-08-20T11:10:21.031Z",
+          "duration": 8,
+          "startedAt": "2026-08-20T12:43:57.011Z",
           "children": [],
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
@@ -2626,8 +2626,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 8,
-          "startedAt": "2026-08-20T11:10:21.049Z",
+          "duration": 11,
+          "startedAt": "2026-08-20T12:43:57.030Z",
           "children": [],
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
@@ -2674,8 +2674,8 @@
       "outcome": {
         "code": 64
       },
-      "duration": 866,
-      "startedAt": "2026-08-20T11:10:31.458Z",
+      "duration": 828,
+      "startedAt": "2026-08-20T12:44:07.420Z",
       "source": {
         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
         "line": 36
@@ -2709,8 +2709,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 290,
-          "startedAt": "2026-08-20T11:10:31.701Z",
+          "duration": 269,
+          "startedAt": "2026-08-20T12:44:07.646Z",
           "children": [
             {
               "type": "Interaction",
@@ -2718,8 +2718,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 264,
-              "startedAt": "2026-08-20T11:10:31.701Z",
+              "duration": 239,
+              "startedAt": "2026-08-20T12:44:07.646Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
@@ -2733,8 +2733,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 5,
-              "startedAt": "2026-08-20T11:10:31.976Z",
+              "duration": 8,
+              "startedAt": "2026-08-20T12:44:07.897Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
@@ -2755,8 +2755,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 133,
-          "startedAt": "2026-08-20T11:10:32.002Z",
+          "duration": 130,
+          "startedAt": "2026-08-20T12:44:07.926Z",
           "children": [
             {
               "type": "Interaction",
@@ -2765,7 +2765,7 @@
                 "code": 64
               },
               "duration": 33,
-              "startedAt": "2026-08-20T11:10:32.003Z",
+              "startedAt": "2026-08-20T12:44:07.927Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -2779,8 +2779,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 44,
-              "startedAt": "2026-08-20T11:10:32.048Z",
+              "duration": 42,
+              "startedAt": "2026-08-20T12:44:07.971Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -2794,8 +2794,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 21,
-              "startedAt": "2026-08-20T11:10:32.103Z",
+              "duration": 22,
+              "startedAt": "2026-08-20T12:44:08.024Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
@@ -2816,8 +2816,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 8,
-          "startedAt": "2026-08-20T11:10:32.146Z",
+          "duration": 7,
+          "startedAt": "2026-08-20T12:44:08.067Z",
           "children": [],
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
@@ -2831,8 +2831,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 81,
-          "startedAt": "2026-08-20T11:10:32.165Z",
+          "duration": 82,
+          "startedAt": "2026-08-20T12:44:08.085Z",
           "children": [
             {
               "type": "Interaction",
@@ -2840,8 +2840,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 10,
-              "startedAt": "2026-08-20T11:10:32.165Z",
+              "duration": 9,
+              "startedAt": "2026-08-20T12:44:08.086Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -2855,8 +2855,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 17,
-              "startedAt": "2026-08-20T11:10:32.185Z",
+              "duration": 18,
+              "startedAt": "2026-08-20T12:44:08.105Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -2871,7 +2871,7 @@
                 "code": 64
               },
               "duration": 23,
-              "startedAt": "2026-08-20T11:10:32.213Z",
+              "startedAt": "2026-08-20T12:44:08.134Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
@@ -2892,8 +2892,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 11,
-          "startedAt": "2026-08-20T11:10:32.257Z",
+          "duration": 13,
+          "startedAt": "2026-08-20T12:44:08.178Z",
           "children": [],
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
@@ -2907,8 +2907,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 13,
-          "startedAt": "2026-08-20T11:10:32.279Z",
+          "duration": 14,
+          "startedAt": "2026-08-20T12:44:08.201Z",
           "children": [],
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
@@ -2955,8 +2955,8 @@
       "outcome": {
         "code": 64
       },
-      "duration": 1775,
-      "startedAt": "2026-08-20T11:10:47.768Z",
+      "duration": 1684,
+      "startedAt": "2026-08-20T12:44:23.717Z",
       "source": {
         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
         "line": 36
@@ -2990,8 +2990,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 523,
-          "startedAt": "2026-08-20T11:10:48.380Z",
+          "duration": 538,
+          "startedAt": "2026-08-20T12:44:24.290Z",
           "children": [
             {
               "type": "Interaction",
@@ -2999,8 +2999,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 463,
-              "startedAt": "2026-08-20T11:10:48.381Z",
+              "duration": 457,
+              "startedAt": "2026-08-20T12:44:24.291Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
@@ -3014,8 +3014,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 34,
-              "startedAt": "2026-08-20T11:10:48.857Z",
+              "duration": 54,
+              "startedAt": "2026-08-20T12:44:24.761Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
@@ -3036,8 +3036,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 284,
-          "startedAt": "2026-08-20T11:10:48.914Z",
+          "duration": 326,
+          "startedAt": "2026-08-20T12:44:24.839Z",
           "children": [
             {
               "type": "Interaction",
@@ -3045,8 +3045,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 82,
-              "startedAt": "2026-08-20T11:10:48.915Z",
+              "duration": 88,
+              "startedAt": "2026-08-20T12:44:24.840Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -3060,8 +3060,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 119,
-              "startedAt": "2026-08-20T11:10:49.008Z",
+              "duration": 111,
+              "startedAt": "2026-08-20T12:44:24.939Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -3075,8 +3075,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 50,
-              "startedAt": "2026-08-20T11:10:49.138Z",
+              "duration": 94,
+              "startedAt": "2026-08-20T12:44:25.061Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
@@ -3097,8 +3097,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 20,
-          "startedAt": "2026-08-20T11:10:49.209Z",
+          "duration": 25,
+          "startedAt": "2026-08-20T12:44:25.177Z",
           "children": [],
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
@@ -3112,8 +3112,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 159,
-          "startedAt": "2026-08-20T11:10:49.240Z",
+          "duration": 124,
+          "startedAt": "2026-08-20T12:44:25.213Z",
           "children": [
             {
               "type": "Interaction",
@@ -3121,8 +3121,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 20,
-              "startedAt": "2026-08-20T11:10:49.240Z",
+              "duration": 18,
+              "startedAt": "2026-08-20T12:44:25.214Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -3136,8 +3136,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 50,
-              "startedAt": "2026-08-20T11:10:49.271Z",
+              "duration": 45,
+              "startedAt": "2026-08-20T12:44:25.244Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -3151,8 +3151,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 52,
-              "startedAt": "2026-08-20T11:10:49.334Z",
+              "duration": 27,
+              "startedAt": "2026-08-20T12:44:25.300Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
@@ -3173,8 +3173,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 36,
-          "startedAt": "2026-08-20T11:10:49.410Z",
+          "duration": 8,
+          "startedAt": "2026-08-20T12:44:25.348Z",
           "children": [],
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
@@ -3188,8 +3188,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 20,
-          "startedAt": "2026-08-20T11:10:49.457Z",
+          "duration": 11,
+          "startedAt": "2026-08-20T12:44:25.367Z",
           "children": [],
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
@@ -3236,8 +3236,8 @@
       "outcome": {
         "code": 64
       },
-      "duration": 455,
-      "startedAt": "2026-08-20T11:10:21.113Z",
+      "duration": 496,
+      "startedAt": "2026-08-20T12:43:57.094Z",
       "source": {
         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
         "line": 59
@@ -3271,8 +3271,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 210,
-          "startedAt": "2026-08-20T11:10:21.170Z",
+          "duration": 224,
+          "startedAt": "2026-08-20T12:43:57.169Z",
           "children": [
             {
               "type": "Interaction",
@@ -3280,8 +3280,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 185,
-              "startedAt": "2026-08-20T11:10:21.170Z",
+              "duration": 197,
+              "startedAt": "2026-08-20T12:43:57.170Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
@@ -3296,7 +3296,7 @@
                 "code": 64
               },
               "duration": 4,
-              "startedAt": "2026-08-20T11:10:21.366Z",
+              "startedAt": "2026-08-20T12:43:57.378Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
@@ -3317,8 +3317,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 101,
-          "startedAt": "2026-08-20T11:10:21.391Z",
+          "duration": 109,
+          "startedAt": "2026-08-20T12:43:57.403Z",
           "children": [
             {
               "type": "Interaction",
@@ -3326,8 +3326,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 22,
-              "startedAt": "2026-08-20T11:10:21.392Z",
+              "duration": 24,
+              "startedAt": "2026-08-20T12:43:57.404Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -3341,8 +3341,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 29,
-              "startedAt": "2026-08-20T11:10:21.424Z",
+              "duration": 34,
+              "startedAt": "2026-08-20T12:43:57.439Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -3356,8 +3356,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 18,
-              "startedAt": "2026-08-20T11:10:21.464Z",
+              "duration": 19,
+              "startedAt": "2026-08-20T12:43:57.483Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
@@ -3378,8 +3378,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 3,
-          "startedAt": "2026-08-20T11:10:21.503Z",
+          "duration": 4,
+          "startedAt": "2026-08-20T12:43:57.523Z",
           "children": [],
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
@@ -3393,8 +3393,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 4,
-          "startedAt": "2026-08-20T11:10:21.520Z",
+          "duration": 6,
+          "startedAt": "2026-08-20T12:43:57.541Z",
           "children": [],
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
@@ -3408,8 +3408,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 5,
-          "startedAt": "2026-08-20T11:10:21.536Z",
+          "duration": 4,
+          "startedAt": "2026-08-20T12:43:57.559Z",
           "children": [],
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
@@ -3456,8 +3456,8 @@
       "outcome": {
         "code": 64
       },
-      "duration": 670,
-      "startedAt": "2026-08-20T11:10:32.358Z",
+      "duration": 713,
+      "startedAt": "2026-08-20T12:44:08.284Z",
       "source": {
         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
         "line": 59
@@ -3491,8 +3491,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 237,
-          "startedAt": "2026-08-20T11:10:32.570Z",
+          "duration": 244,
+          "startedAt": "2026-08-20T12:44:08.529Z",
           "children": [
             {
               "type": "Interaction",
@@ -3500,8 +3500,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 209,
-              "startedAt": "2026-08-20T11:10:32.571Z",
+              "duration": 217,
+              "startedAt": "2026-08-20T12:44:08.529Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
@@ -3516,7 +3516,7 @@
                 "code": 64
               },
               "duration": 5,
-              "startedAt": "2026-08-20T11:10:32.791Z",
+              "startedAt": "2026-08-20T12:44:08.757Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
@@ -3537,8 +3537,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 127,
-          "startedAt": "2026-08-20T11:10:32.817Z",
+          "duration": 129,
+          "startedAt": "2026-08-20T12:44:08.784Z",
           "children": [
             {
               "type": "Interaction",
@@ -3546,8 +3546,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 32,
-              "startedAt": "2026-08-20T11:10:32.818Z",
+              "duration": 34,
+              "startedAt": "2026-08-20T12:44:08.784Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -3561,8 +3561,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 44,
-              "startedAt": "2026-08-20T11:10:32.860Z",
+              "duration": 43,
+              "startedAt": "2026-08-20T12:44:08.829Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -3576,8 +3576,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 19,
-              "startedAt": "2026-08-20T11:10:32.915Z",
+              "duration": 20,
+              "startedAt": "2026-08-20T12:44:08.883Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
@@ -3598,8 +3598,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 4,
-          "startedAt": "2026-08-20T11:10:32.955Z",
+          "duration": 5,
+          "startedAt": "2026-08-20T12:44:08.924Z",
           "children": [],
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
@@ -3614,7 +3614,7 @@
             "code": 64
           },
           "duration": 5,
-          "startedAt": "2026-08-20T11:10:32.974Z",
+          "startedAt": "2026-08-20T12:44:08.943Z",
           "children": [],
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
@@ -3628,8 +3628,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 5,
-          "startedAt": "2026-08-20T11:10:32.992Z",
+          "duration": 6,
+          "startedAt": "2026-08-20T12:44:08.961Z",
           "children": [],
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
@@ -3676,8 +3676,8 @@
       "outcome": {
         "code": 64
       },
-      "duration": 997,
-      "startedAt": "2026-08-20T11:10:49.573Z",
+      "duration": 968,
+      "startedAt": "2026-08-20T12:44:25.437Z",
       "source": {
         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
         "line": 59
@@ -3711,8 +3711,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 359,
-          "startedAt": "2026-08-20T11:10:49.902Z",
+          "duration": 351,
+          "startedAt": "2026-08-20T12:44:25.765Z",
           "children": [
             {
               "type": "Interaction",
@@ -3720,8 +3720,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 327,
-              "startedAt": "2026-08-20T11:10:49.903Z",
+              "duration": 320,
+              "startedAt": "2026-08-20T12:44:25.766Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
@@ -3736,7 +3736,7 @@
                 "code": 64
               },
               "duration": 7,
-              "startedAt": "2026-08-20T11:10:50.242Z",
+              "startedAt": "2026-08-20T12:44:26.099Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
@@ -3757,8 +3757,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 170,
-          "startedAt": "2026-08-20T11:10:50.272Z",
+          "duration": 176,
+          "startedAt": "2026-08-20T12:44:26.127Z",
           "children": [
             {
               "type": "Interaction",
@@ -3766,8 +3766,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 31,
-              "startedAt": "2026-08-20T11:10:50.273Z",
+              "duration": 39,
+              "startedAt": "2026-08-20T12:44:26.128Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -3781,8 +3781,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 74,
-              "startedAt": "2026-08-20T11:10:50.316Z",
+              "duration": 70,
+              "startedAt": "2026-08-20T12:44:26.180Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -3796,8 +3796,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 28,
-              "startedAt": "2026-08-20T11:10:50.402Z",
+              "duration": 31,
+              "startedAt": "2026-08-20T12:44:26.261Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
@@ -3818,8 +3818,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 6,
-          "startedAt": "2026-08-20T11:10:50.453Z",
+          "duration": 5,
+          "startedAt": "2026-08-20T12:44:26.314Z",
           "children": [],
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
@@ -3833,8 +3833,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 7,
-          "startedAt": "2026-08-20T11:10:50.475Z",
+          "duration": 14,
+          "startedAt": "2026-08-20T12:44:26.345Z",
           "children": [],
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
@@ -3848,8 +3848,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 10,
-          "startedAt": "2026-08-20T11:10:50.497Z",
+          "duration": 9,
+          "startedAt": "2026-08-20T12:44:26.377Z",
           "children": [],
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
@@ -3896,8 +3896,8 @@
       "outcome": {
         "code": 64
       },
-      "duration": 658,
-      "startedAt": "2026-08-20T11:10:21.591Z",
+      "duration": 709,
+      "startedAt": "2026-08-20T12:43:57.612Z",
       "source": {
         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
         "line": 72
@@ -3931,8 +3931,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 517,
-          "startedAt": "2026-08-20T11:10:21.668Z",
+          "duration": 545,
+          "startedAt": "2026-08-20T12:43:57.713Z",
           "children": [
             {
               "type": "Task",
@@ -3940,8 +3940,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 222,
-              "startedAt": "2026-08-20T11:10:21.669Z",
+              "duration": 251,
+              "startedAt": "2026-08-20T12:43:57.714Z",
               "children": [
                 {
                   "type": "Interaction",
@@ -3949,8 +3949,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 197,
-                  "startedAt": "2026-08-20T11:10:21.669Z",
+                  "duration": 224,
+                  "startedAt": "2026-08-20T12:43:57.715Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
@@ -3964,8 +3964,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 4,
-                  "startedAt": "2026-08-20T11:10:21.876Z",
+                  "duration": 5,
+                  "startedAt": "2026-08-20T12:43:57.950Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
@@ -3986,8 +3986,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 101,
-              "startedAt": "2026-08-20T11:10:21.901Z",
+              "duration": 111,
+              "startedAt": "2026-08-20T12:43:57.976Z",
               "children": [
                 {
                   "type": "Interaction",
@@ -3995,8 +3995,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 22,
-                  "startedAt": "2026-08-20T11:10:21.902Z",
+                  "duration": 27,
+                  "startedAt": "2026-08-20T12:43:57.976Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -4010,8 +4010,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 29,
-                  "startedAt": "2026-08-20T11:10:21.935Z",
+                  "duration": 33,
+                  "startedAt": "2026-08-20T12:43:58.014Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -4025,8 +4025,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 18,
-                  "startedAt": "2026-08-20T11:10:21.974Z",
+                  "duration": 19,
+                  "startedAt": "2026-08-20T12:43:58.058Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
@@ -4047,8 +4047,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 81,
-              "startedAt": "2026-08-20T11:10:22.013Z",
+              "duration": 70,
+              "startedAt": "2026-08-20T12:43:58.098Z",
               "children": [
                 {
                   "type": "Interaction",
@@ -4057,7 +4057,7 @@
                     "code": 64
                   },
                   "duration": 6,
-                  "startedAt": "2026-08-20T11:10:22.013Z",
+                  "startedAt": "2026-08-20T12:43:58.099Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -4071,8 +4071,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 10,
-                  "startedAt": "2026-08-20T11:10:22.030Z",
+                  "duration": 12,
+                  "startedAt": "2026-08-20T12:43:58.115Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -4086,8 +4086,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 33,
-                  "startedAt": "2026-08-20T11:10:22.051Z",
+                  "duration": 19,
+                  "startedAt": "2026-08-20T12:43:58.138Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
@@ -4109,7 +4109,7 @@
                 "code": 64
               },
               "duration": 70,
-              "startedAt": "2026-08-20T11:10:22.105Z",
+              "startedAt": "2026-08-20T12:43:58.178Z",
               "children": [
                 {
                   "type": "Interaction",
@@ -4117,8 +4117,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 6,
-                  "startedAt": "2026-08-20T11:10:22.106Z",
+                  "duration": 5,
+                  "startedAt": "2026-08-20T12:43:58.179Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -4132,8 +4132,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 10,
-                  "startedAt": "2026-08-20T11:10:22.122Z",
+                  "duration": 11,
+                  "startedAt": "2026-08-20T12:43:58.195Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -4148,7 +4148,7 @@
                     "code": 64
                   },
                   "duration": 21,
-                  "startedAt": "2026-08-20T11:10:22.143Z",
+                  "startedAt": "2026-08-20T12:43:58.217Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
@@ -4176,8 +4176,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 4,
-          "startedAt": "2026-08-20T11:10:22.196Z",
+          "duration": 3,
+          "startedAt": "2026-08-20T12:43:58.269Z",
           "children": [],
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
@@ -4191,8 +4191,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 5,
-          "startedAt": "2026-08-20T11:10:22.213Z",
+          "duration": 4,
+          "startedAt": "2026-08-20T12:43:58.286Z",
           "children": [],
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
@@ -4239,8 +4239,8 @@
       "outcome": {
         "code": 64
       },
-      "duration": 891,
-      "startedAt": "2026-08-20T11:10:33.056Z",
+      "duration": 927,
+      "startedAt": "2026-08-20T12:44:09.024Z",
       "source": {
         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
         "line": 72
@@ -4274,8 +4274,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 579,
-          "startedAt": "2026-08-20T11:10:33.284Z",
+          "duration": 598,
+          "startedAt": "2026-08-20T12:44:09.287Z",
           "children": [
             {
               "type": "Task",
@@ -4283,8 +4283,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 236,
-              "startedAt": "2026-08-20T11:10:33.284Z",
+              "duration": 255,
+              "startedAt": "2026-08-20T12:44:09.288Z",
               "children": [
                 {
                   "type": "Interaction",
@@ -4292,8 +4292,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 208,
-                  "startedAt": "2026-08-20T11:10:33.285Z",
+                  "duration": 228,
+                  "startedAt": "2026-08-20T12:44:09.288Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
@@ -4307,8 +4307,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 6,
-                  "startedAt": "2026-08-20T11:10:33.504Z",
+                  "duration": 5,
+                  "startedAt": "2026-08-20T12:44:09.528Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
@@ -4329,8 +4329,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 130,
-              "startedAt": "2026-08-20T11:10:33.531Z",
+              "duration": 133,
+              "startedAt": "2026-08-20T12:44:09.554Z",
               "children": [
                 {
                   "type": "Interaction",
@@ -4338,8 +4338,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 32,
-                  "startedAt": "2026-08-20T11:10:33.532Z",
+                  "duration": 34,
+                  "startedAt": "2026-08-20T12:44:09.555Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -4354,7 +4354,7 @@
                     "code": 64
                   },
                   "duration": 45,
-                  "startedAt": "2026-08-20T11:10:33.575Z",
+                  "startedAt": "2026-08-20T12:44:09.600Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -4368,8 +4368,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 20,
-                  "startedAt": "2026-08-20T11:10:33.631Z",
+                  "duration": 21,
+                  "startedAt": "2026-08-20T12:44:09.656Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
@@ -4390,8 +4390,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 85,
-              "startedAt": "2026-08-20T11:10:33.672Z",
+              "duration": 83,
+              "startedAt": "2026-08-20T12:44:09.698Z",
               "children": [
                 {
                   "type": "Interaction",
@@ -4400,7 +4400,7 @@
                     "code": 64
                   },
                   "duration": 10,
-                  "startedAt": "2026-08-20T11:10:33.673Z",
+                  "startedAt": "2026-08-20T12:44:09.699Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -4414,8 +4414,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 17,
-                  "startedAt": "2026-08-20T11:10:33.694Z",
+                  "duration": 15,
+                  "startedAt": "2026-08-20T12:44:09.720Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -4429,8 +4429,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 24,
-                  "startedAt": "2026-08-20T11:10:33.723Z",
+                  "duration": 25,
+                  "startedAt": "2026-08-20T12:44:09.746Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
@@ -4451,8 +4451,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 84,
-              "startedAt": "2026-08-20T11:10:33.768Z",
+              "duration": 82,
+              "startedAt": "2026-08-20T12:44:09.792Z",
               "children": [
                 {
                   "type": "Interaction",
@@ -4460,8 +4460,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 10,
-                  "startedAt": "2026-08-20T11:10:33.768Z",
+                  "duration": 9,
+                  "startedAt": "2026-08-20T12:44:09.792Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -4476,7 +4476,7 @@
                     "code": 64
                   },
                   "duration": 16,
-                  "startedAt": "2026-08-20T11:10:33.789Z",
+                  "startedAt": "2026-08-20T12:44:09.812Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -4490,8 +4490,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 26,
-                  "startedAt": "2026-08-20T11:10:33.816Z",
+                  "duration": 25,
+                  "startedAt": "2026-08-20T12:44:09.839Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
@@ -4520,7 +4520,7 @@
             "code": 64
           },
           "duration": 4,
-          "startedAt": "2026-08-20T11:10:33.874Z",
+          "startedAt": "2026-08-20T12:44:09.896Z",
           "children": [],
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
@@ -4534,8 +4534,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 16,
-          "startedAt": "2026-08-20T11:10:33.896Z",
+          "duration": 5,
+          "startedAt": "2026-08-20T12:44:09.914Z",
           "children": [],
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
@@ -4582,8 +4582,8 @@
       "outcome": {
         "code": 64
       },
-      "duration": 1219,
-      "startedAt": "2026-08-20T11:10:50.596Z",
+      "duration": 1093,
+      "startedAt": "2026-08-20T12:44:26.449Z",
       "source": {
         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
         "line": 72
@@ -4617,8 +4617,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 711,
-          "startedAt": "2026-08-20T11:10:51.011Z",
+          "duration": 669,
+          "startedAt": "2026-08-20T12:44:26.772Z",
           "children": [
             {
               "type": "Task",
@@ -4626,8 +4626,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 324,
-              "startedAt": "2026-08-20T11:10:51.011Z",
+              "duration": 291,
+              "startedAt": "2026-08-20T12:44:26.772Z",
               "children": [
                 {
                   "type": "Interaction",
@@ -4635,8 +4635,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 297,
-                  "startedAt": "2026-08-20T11:10:51.012Z",
+                  "duration": 263,
+                  "startedAt": "2026-08-20T12:44:26.773Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
@@ -4651,7 +4651,7 @@
                     "code": 64
                   },
                   "duration": 5,
-                  "startedAt": "2026-08-20T11:10:51.320Z",
+                  "startedAt": "2026-08-20T12:44:27.048Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
@@ -4672,8 +4672,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 138,
-              "startedAt": "2026-08-20T11:10:51.346Z",
+              "duration": 150,
+              "startedAt": "2026-08-20T12:44:27.074Z",
               "children": [
                 {
                   "type": "Interaction",
@@ -4681,8 +4681,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 25,
-                  "startedAt": "2026-08-20T11:10:51.346Z",
+                  "duration": 36,
+                  "startedAt": "2026-08-20T12:44:27.075Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -4697,7 +4697,7 @@
                     "code": 64
                   },
                   "duration": 57,
-                  "startedAt": "2026-08-20T11:10:51.383Z",
+                  "startedAt": "2026-08-20T12:44:27.122Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -4711,8 +4711,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 23,
-                  "startedAt": "2026-08-20T11:10:51.451Z",
+                  "duration": 21,
+                  "startedAt": "2026-08-20T12:44:27.190Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
@@ -4733,8 +4733,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 110,
-              "startedAt": "2026-08-20T11:10:51.495Z",
+              "duration": 107,
+              "startedAt": "2026-08-20T12:44:27.235Z",
               "children": [
                 {
                   "type": "Interaction",
@@ -4742,8 +4742,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 10,
-                  "startedAt": "2026-08-20T11:10:51.496Z",
+                  "duration": 13,
+                  "startedAt": "2026-08-20T12:44:27.236Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -4757,8 +4757,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 35,
-                  "startedAt": "2026-08-20T11:10:51.517Z",
+                  "duration": 25,
+                  "startedAt": "2026-08-20T12:44:27.260Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -4772,8 +4772,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 29,
-                  "startedAt": "2026-08-20T11:10:51.565Z",
+                  "duration": 35,
+                  "startedAt": "2026-08-20T12:44:27.297Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
@@ -4794,8 +4794,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 96,
-              "startedAt": "2026-08-20T11:10:51.616Z",
+              "duration": 78,
+              "startedAt": "2026-08-20T12:44:27.353Z",
               "children": [
                 {
                   "type": "Interaction",
@@ -4803,8 +4803,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 8,
-                  "startedAt": "2026-08-20T11:10:51.617Z",
+                  "duration": 7,
+                  "startedAt": "2026-08-20T12:44:27.354Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -4818,8 +4818,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 16,
-                  "startedAt": "2026-08-20T11:10:51.636Z",
+                  "duration": 15,
+                  "startedAt": "2026-08-20T12:44:27.372Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -4833,8 +4833,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 38,
-                  "startedAt": "2026-08-20T11:10:51.663Z",
+                  "duration": 23,
+                  "startedAt": "2026-08-20T12:44:27.398Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
@@ -4862,8 +4862,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 6,
-          "startedAt": "2026-08-20T11:10:51.733Z",
+          "duration": 15,
+          "startedAt": "2026-08-20T12:44:27.453Z",
           "children": [],
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
@@ -4877,8 +4877,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 7,
-          "startedAt": "2026-08-20T11:10:51.755Z",
+          "duration": 11,
+          "startedAt": "2026-08-20T12:44:27.483Z",
           "children": [],
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
@@ -4925,8 +4925,8 @@
       "outcome": {
         "code": 64
       },
-      "duration": 980,
-      "startedAt": "2026-08-20T11:10:22.271Z",
+      "duration": 1001,
+      "startedAt": "2026-08-20T12:43:58.346Z",
       "source": {
         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
         "line": 81
@@ -4960,8 +4960,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 220,
-          "startedAt": "2026-08-20T11:10:22.332Z",
+          "duration": 221,
+          "startedAt": "2026-08-20T12:43:58.413Z",
           "children": [
             {
               "type": "Interaction",
@@ -4969,8 +4969,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 195,
-              "startedAt": "2026-08-20T11:10:22.332Z",
+              "duration": 193,
+              "startedAt": "2026-08-20T12:43:58.414Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
@@ -4984,8 +4984,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 4,
-              "startedAt": "2026-08-20T11:10:22.538Z",
+              "duration": 5,
+              "startedAt": "2026-08-20T12:43:58.618Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
@@ -5007,7 +5007,7 @@
             "code": 64
           },
           "duration": 254,
-          "startedAt": "2026-08-20T11:10:22.563Z",
+          "startedAt": "2026-08-20T12:43:58.644Z",
           "children": [],
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
@@ -5022,7 +5022,7 @@
             "code": 64
           },
           "duration": 252,
-          "startedAt": "2026-08-20T11:10:22.828Z",
+          "startedAt": "2026-08-20T12:43:58.909Z",
           "children": [],
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
@@ -5036,8 +5036,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 86,
-          "startedAt": "2026-08-20T11:10:23.090Z",
+          "duration": 92,
+          "startedAt": "2026-08-20T12:43:59.172Z",
           "children": [
             {
               "type": "Interaction",
@@ -5045,8 +5045,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 8,
-              "startedAt": "2026-08-20T11:10:23.091Z",
+              "duration": 10,
+              "startedAt": "2026-08-20T12:43:59.172Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -5060,8 +5060,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 28,
-              "startedAt": "2026-08-20T11:10:23.110Z",
+              "duration": 33,
+              "startedAt": "2026-08-20T12:43:59.193Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -5075,8 +5075,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 17,
-              "startedAt": "2026-08-20T11:10:23.149Z",
+              "duration": 18,
+              "startedAt": "2026-08-20T12:43:59.236Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
@@ -5097,8 +5097,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 14,
-          "startedAt": "2026-08-20T11:10:23.187Z",
+          "duration": 16,
+          "startedAt": "2026-08-20T12:43:59.275Z",
           "children": [],
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
@@ -5112,8 +5112,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 15,
-          "startedAt": "2026-08-20T11:10:23.211Z",
+          "duration": 17,
+          "startedAt": "2026-08-20T12:43:59.302Z",
           "children": [],
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
@@ -5160,8 +5160,8 @@
       "outcome": {
         "code": 64
       },
-      "duration": 1364,
-      "startedAt": "2026-08-20T11:10:33.983Z",
+      "duration": 1377,
+      "startedAt": "2026-08-20T12:44:09.982Z",
       "source": {
         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
         "line": 81
@@ -5195,8 +5195,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 252,
-          "startedAt": "2026-08-20T11:10:34.199Z",
+          "duration": 260,
+          "startedAt": "2026-08-20T12:44:10.203Z",
           "children": [
             {
               "type": "Interaction",
@@ -5204,8 +5204,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 225,
-              "startedAt": "2026-08-20T11:10:34.200Z",
+              "duration": 234,
+              "startedAt": "2026-08-20T12:44:10.203Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
@@ -5219,8 +5219,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 5,
-              "startedAt": "2026-08-20T11:10:34.436Z",
+              "duration": 6,
+              "startedAt": "2026-08-20T12:44:10.447Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
@@ -5242,7 +5242,7 @@
             "code": 64
           },
           "duration": 255,
-          "startedAt": "2026-08-20T11:10:34.462Z",
+          "startedAt": "2026-08-20T12:44:10.474Z",
           "children": [],
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
@@ -5256,8 +5256,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 252,
-          "startedAt": "2026-08-20T11:10:34.728Z",
+          "duration": 255,
+          "startedAt": "2026-08-20T12:44:10.739Z",
           "children": [],
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
@@ -5271,8 +5271,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 108,
-          "startedAt": "2026-08-20T11:10:34.990Z",
+          "duration": 110,
+          "startedAt": "2026-08-20T12:44:11.004Z",
           "children": [
             {
               "type": "Interaction",
@@ -5280,8 +5280,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 12,
-              "startedAt": "2026-08-20T11:10:34.990Z",
+              "duration": 11,
+              "startedAt": "2026-08-20T12:44:11.005Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -5295,8 +5295,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 42,
-              "startedAt": "2026-08-20T11:10:35.013Z",
+              "duration": 43,
+              "startedAt": "2026-08-20T12:44:11.027Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -5311,7 +5311,7 @@
                 "code": 64
               },
               "duration": 22,
-              "startedAt": "2026-08-20T11:10:35.066Z",
+              "startedAt": "2026-08-20T12:44:11.082Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
@@ -5332,8 +5332,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 42,
-          "startedAt": "2026-08-20T11:10:35.109Z",
+          "duration": 60,
+          "startedAt": "2026-08-20T12:44:11.124Z",
           "children": [],
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
@@ -5347,8 +5347,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 151,
-          "startedAt": "2026-08-20T11:10:35.162Z",
+          "duration": 134,
+          "startedAt": "2026-08-20T12:44:11.194Z",
           "children": [],
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
@@ -5395,8 +5395,8 @@
       "outcome": {
         "code": 64
       },
-      "duration": 1293,
-      "startedAt": "2026-08-20T11:10:51.873Z",
+      "duration": 1302,
+      "startedAt": "2026-08-20T12:44:27.584Z",
       "source": {
         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
         "line": 81
@@ -5430,8 +5430,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 311,
-          "startedAt": "2026-08-20T11:10:52.123Z",
+          "duration": 293,
+          "startedAt": "2026-08-20T12:44:27.865Z",
           "children": [
             {
               "type": "Interaction",
@@ -5439,8 +5439,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 286,
-              "startedAt": "2026-08-20T11:10:52.123Z",
+              "duration": 266,
+              "startedAt": "2026-08-20T12:44:27.866Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
@@ -5454,8 +5454,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 4,
-              "startedAt": "2026-08-20T11:10:52.420Z",
+              "duration": 5,
+              "startedAt": "2026-08-20T12:44:28.143Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
@@ -5477,7 +5477,7 @@
             "code": 64
           },
           "duration": 254,
-          "startedAt": "2026-08-20T11:10:52.445Z",
+          "startedAt": "2026-08-20T12:44:28.169Z",
           "children": [],
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
@@ -5492,7 +5492,7 @@
             "code": 64
           },
           "duration": 252,
-          "startedAt": "2026-08-20T11:10:52.710Z",
+          "startedAt": "2026-08-20T12:44:28.433Z",
           "children": [],
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
@@ -5506,8 +5506,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 111,
-          "startedAt": "2026-08-20T11:10:52.973Z",
+          "duration": 106,
+          "startedAt": "2026-08-20T12:44:28.696Z",
           "children": [
             {
               "type": "Interaction",
@@ -5515,8 +5515,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 13,
-              "startedAt": "2026-08-20T11:10:52.974Z",
+              "duration": 12,
+              "startedAt": "2026-08-20T12:44:28.697Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -5530,8 +5530,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 43,
-              "startedAt": "2026-08-20T11:10:52.998Z",
+              "duration": 39,
+              "startedAt": "2026-08-20T12:44:28.721Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -5545,8 +5545,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 22,
-              "startedAt": "2026-08-20T11:10:53.052Z",
+              "duration": 20,
+              "startedAt": "2026-08-20T12:44:28.771Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
@@ -5567,8 +5567,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 17,
-          "startedAt": "2026-08-20T11:10:53.095Z",
+          "duration": 18,
+          "startedAt": "2026-08-20T12:44:28.812Z",
           "children": [],
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
@@ -5582,8 +5582,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 18,
-          "startedAt": "2026-08-20T11:10:53.123Z",
+          "duration": 19,
+          "startedAt": "2026-08-20T12:44:28.841Z",
           "children": [],
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
@@ -5630,8 +5630,8 @@
       "outcome": {
         "code": 64
       },
-      "duration": 1304,
-      "startedAt": "2026-08-20T11:10:23.275Z",
+      "duration": 1380,
+      "startedAt": "2026-08-20T12:43:59.372Z",
       "source": {
         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
         "line": 44
@@ -5665,8 +5665,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 497,
-          "startedAt": "2026-08-20T11:10:23.352Z",
+          "duration": 523,
+          "startedAt": "2026-08-20T12:43:59.466Z",
           "children": [
             {
               "type": "Task",
@@ -5674,8 +5674,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 217,
-              "startedAt": "2026-08-20T11:10:23.352Z",
+              "duration": 229,
+              "startedAt": "2026-08-20T12:43:59.467Z",
               "children": [
                 {
                   "type": "Interaction",
@@ -5683,8 +5683,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 190,
-                  "startedAt": "2026-08-20T11:10:23.353Z",
+                  "duration": 203,
+                  "startedAt": "2026-08-20T12:43:59.467Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
@@ -5699,7 +5699,7 @@
                     "code": 64
                   },
                   "duration": 5,
-                  "startedAt": "2026-08-20T11:10:23.554Z",
+                  "startedAt": "2026-08-20T12:43:59.681Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
@@ -5720,8 +5720,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 101,
-              "startedAt": "2026-08-20T11:10:23.580Z",
+              "duration": 109,
+              "startedAt": "2026-08-20T12:43:59.707Z",
               "children": [
                 {
                   "type": "Interaction",
@@ -5729,8 +5729,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 23,
-                  "startedAt": "2026-08-20T11:10:23.580Z",
+                  "duration": 26,
+                  "startedAt": "2026-08-20T12:43:59.708Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -5744,8 +5744,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 29,
-                  "startedAt": "2026-08-20T11:10:23.614Z",
+                  "duration": 31,
+                  "startedAt": "2026-08-20T12:43:59.746Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -5759,8 +5759,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 17,
-                  "startedAt": "2026-08-20T11:10:23.654Z",
+                  "duration": 18,
+                  "startedAt": "2026-08-20T12:43:59.788Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
@@ -5781,8 +5781,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 67,
-              "startedAt": "2026-08-20T11:10:23.692Z",
+              "duration": 69,
+              "startedAt": "2026-08-20T12:43:59.827Z",
               "children": [
                 {
                   "type": "Interaction",
@@ -5791,7 +5791,7 @@
                     "code": 64
                   },
                   "duration": 6,
-                  "startedAt": "2026-08-20T11:10:23.693Z",
+                  "startedAt": "2026-08-20T12:43:59.827Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -5806,7 +5806,7 @@
                     "code": 64
                   },
                   "duration": 10,
-                  "startedAt": "2026-08-20T11:10:23.710Z",
+                  "startedAt": "2026-08-20T12:43:59.843Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -5820,8 +5820,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 19,
-                  "startedAt": "2026-08-20T11:10:23.730Z",
+                  "duration": 22,
+                  "startedAt": "2026-08-20T12:43:59.864Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
@@ -5842,8 +5842,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 69,
-              "startedAt": "2026-08-20T11:10:23.770Z",
+              "duration": 72,
+              "startedAt": "2026-08-20T12:43:59.907Z",
               "children": [
                 {
                   "type": "Interaction",
@@ -5851,8 +5851,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 6,
-                  "startedAt": "2026-08-20T11:10:23.770Z",
+                  "duration": 7,
+                  "startedAt": "2026-08-20T12:43:59.907Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -5867,7 +5867,7 @@
                     "code": 64
                   },
                   "duration": 10,
-                  "startedAt": "2026-08-20T11:10:23.787Z",
+                  "startedAt": "2026-08-20T12:43:59.925Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -5881,8 +5881,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 21,
-                  "startedAt": "2026-08-20T11:10:23.808Z",
+                  "duration": 22,
+                  "startedAt": "2026-08-20T12:43:59.946Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
@@ -5910,8 +5910,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 8,
-          "startedAt": "2026-08-20T11:10:23.860Z",
+          "duration": 10,
+          "startedAt": "2026-08-20T12:44:00.000Z",
           "children": [],
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
@@ -5925,8 +5925,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 31,
-          "startedAt": "2026-08-20T11:10:23.900Z",
+          "duration": 40,
+          "startedAt": "2026-08-20T12:44:00.042Z",
           "children": [],
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
@@ -5940,8 +5940,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 250,
-          "startedAt": "2026-08-20T11:10:23.949Z",
+          "duration": 267,
+          "startedAt": "2026-08-20T12:44:00.104Z",
           "children": [
             {
               "type": "Interaction",
@@ -5949,8 +5949,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 225,
-              "startedAt": "2026-08-20T11:10:23.949Z",
+              "duration": 241,
+              "startedAt": "2026-08-20T12:44:00.104Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
@@ -5964,8 +5964,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 4,
-              "startedAt": "2026-08-20T11:10:24.185Z",
+              "duration": 5,
+              "startedAt": "2026-08-20T12:44:00.356Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
@@ -5986,8 +5986,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 305,
-          "startedAt": "2026-08-20T11:10:24.209Z",
+          "duration": 307,
+          "startedAt": "2026-08-20T12:44:00.381Z",
           "children": [
             {
               "type": "Task",
@@ -5995,8 +5995,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 102,
-              "startedAt": "2026-08-20T11:10:24.219Z",
+              "duration": 108,
+              "startedAt": "2026-08-20T12:44:00.391Z",
               "children": [
                 {
                   "type": "Interaction",
@@ -6004,8 +6004,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 23,
-                  "startedAt": "2026-08-20T11:10:24.220Z",
+                  "duration": 27,
+                  "startedAt": "2026-08-20T12:44:00.392Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -6019,8 +6019,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 29,
-                  "startedAt": "2026-08-20T11:10:24.254Z",
+                  "duration": 31,
+                  "startedAt": "2026-08-20T12:44:00.430Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -6034,8 +6034,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 18,
-                  "startedAt": "2026-08-20T11:10:24.293Z",
+                  "duration": 17,
+                  "startedAt": "2026-08-20T12:44:00.472Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
@@ -6056,8 +6056,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 71,
-              "startedAt": "2026-08-20T11:10:24.341Z",
+              "duration": 67,
+              "startedAt": "2026-08-20T12:44:00.520Z",
               "children": [
                 {
                   "type": "Interaction",
@@ -6065,8 +6065,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 9,
-                  "startedAt": "2026-08-20T11:10:24.342Z",
+                  "duration": 6,
+                  "startedAt": "2026-08-20T12:44:00.521Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -6081,7 +6081,7 @@
                     "code": 64
                   },
                   "duration": 10,
-                  "startedAt": "2026-08-20T11:10:24.362Z",
+                  "startedAt": "2026-08-20T12:44:00.538Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -6095,8 +6095,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 19,
-                  "startedAt": "2026-08-20T11:10:24.383Z",
+                  "duration": 18,
+                  "startedAt": "2026-08-20T12:44:00.559Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
@@ -6118,7 +6118,7 @@
                 "code": 64
               },
               "duration": 71,
-              "startedAt": "2026-08-20T11:10:24.432Z",
+              "startedAt": "2026-08-20T12:44:00.607Z",
               "children": [
                 {
                   "type": "Interaction",
@@ -6126,8 +6126,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 6,
-                  "startedAt": "2026-08-20T11:10:24.432Z",
+                  "duration": 8,
+                  "startedAt": "2026-08-20T12:44:00.607Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -6141,8 +6141,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 11,
-                  "startedAt": "2026-08-20T11:10:24.450Z",
+                  "duration": 9,
+                  "startedAt": "2026-08-20T12:44:00.626Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -6157,7 +6157,7 @@
                     "code": 64
                   },
                   "duration": 21,
-                  "startedAt": "2026-08-20T11:10:24.472Z",
+                  "startedAt": "2026-08-20T12:44:00.646Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
@@ -6185,8 +6185,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 9,
-          "startedAt": "2026-08-20T11:10:24.525Z",
+          "duration": 8,
+          "startedAt": "2026-08-20T12:44:00.699Z",
           "children": [],
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
@@ -6262,8 +6262,8 @@
       "outcome": {
         "code": 64
       },
-      "duration": 2992,
-      "startedAt": "2026-08-20T11:10:35.371Z",
+      "duration": 2967,
+      "startedAt": "2026-08-20T12:44:11.386Z",
       "source": {
         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
         "line": 44
@@ -6297,8 +6297,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 607,
-          "startedAt": "2026-08-20T11:10:35.640Z",
+          "duration": 592,
+          "startedAt": "2026-08-20T12:44:11.647Z",
           "children": [
             {
               "type": "Task",
@@ -6306,8 +6306,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 268,
-              "startedAt": "2026-08-20T11:10:35.641Z",
+              "duration": 251,
+              "startedAt": "2026-08-20T12:44:11.648Z",
               "children": [
                 {
                   "type": "Interaction",
@@ -6315,8 +6315,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 241,
-                  "startedAt": "2026-08-20T11:10:35.641Z",
+                  "duration": 224,
+                  "startedAt": "2026-08-20T12:44:11.648Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
@@ -6331,7 +6331,7 @@
                     "code": 64
                   },
                   "duration": 5,
-                  "startedAt": "2026-08-20T11:10:35.893Z",
+                  "startedAt": "2026-08-20T12:44:11.883Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
@@ -6352,8 +6352,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 132,
-              "startedAt": "2026-08-20T11:10:35.920Z",
+              "duration": 133,
+              "startedAt": "2026-08-20T12:44:11.909Z",
               "children": [
                 {
                   "type": "Interaction",
@@ -6361,8 +6361,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 34,
-                  "startedAt": "2026-08-20T11:10:35.920Z",
+                  "duration": 33,
+                  "startedAt": "2026-08-20T12:44:11.910Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -6376,8 +6376,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 43,
-                  "startedAt": "2026-08-20T11:10:35.965Z",
+                  "duration": 45,
+                  "startedAt": "2026-08-20T12:44:11.954Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -6391,8 +6391,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 23,
-                  "startedAt": "2026-08-20T11:10:36.019Z",
+                  "duration": 22,
+                  "startedAt": "2026-08-20T12:44:12.010Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
@@ -6413,8 +6413,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 81,
-              "startedAt": "2026-08-20T11:10:36.063Z",
+              "duration": 82,
+              "startedAt": "2026-08-20T12:44:12.053Z",
               "children": [
                 {
                   "type": "Interaction",
@@ -6423,7 +6423,7 @@
                     "code": 64
                   },
                   "duration": 10,
-                  "startedAt": "2026-08-20T11:10:36.063Z",
+                  "startedAt": "2026-08-20T12:44:12.053Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -6437,8 +6437,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 14,
-                  "startedAt": "2026-08-20T11:10:36.084Z",
+                  "duration": 17,
+                  "startedAt": "2026-08-20T12:44:12.074Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -6453,7 +6453,7 @@
                     "code": 64
                   },
                   "duration": 23,
-                  "startedAt": "2026-08-20T11:10:36.110Z",
+                  "startedAt": "2026-08-20T12:44:12.102Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
@@ -6475,7 +6475,7 @@
                 "code": 64
               },
               "duration": 83,
-              "startedAt": "2026-08-20T11:10:36.154Z",
+              "startedAt": "2026-08-20T12:44:12.146Z",
               "children": [
                 {
                   "type": "Interaction",
@@ -6483,8 +6483,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 9,
-                  "startedAt": "2026-08-20T11:10:36.155Z",
+                  "duration": 8,
+                  "startedAt": "2026-08-20T12:44:12.147Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -6498,8 +6498,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 16,
-                  "startedAt": "2026-08-20T11:10:36.175Z",
+                  "duration": 14,
+                  "startedAt": "2026-08-20T12:44:12.167Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -6513,8 +6513,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 25,
-                  "startedAt": "2026-08-20T11:10:36.202Z",
+                  "duration": 26,
+                  "startedAt": "2026-08-20T12:44:12.192Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
@@ -6542,8 +6542,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 16,
-          "startedAt": "2026-08-20T11:10:36.258Z",
+          "duration": 14,
+          "startedAt": "2026-08-20T12:44:12.250Z",
           "children": [],
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
@@ -6557,8 +6557,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 41,
-          "startedAt": "2026-08-20T11:10:36.312Z",
+          "duration": 40,
+          "startedAt": "2026-08-20T12:44:12.302Z",
           "children": [],
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
@@ -6572,8 +6572,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 465,
-          "startedAt": "2026-08-20T11:10:36.371Z",
+          "duration": 471,
+          "startedAt": "2026-08-20T12:44:12.360Z",
           "children": [
             {
               "type": "Interaction",
@@ -6581,8 +6581,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 438,
-              "startedAt": "2026-08-20T11:10:36.371Z",
+              "duration": 445,
+              "startedAt": "2026-08-20T12:44:12.360Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
@@ -6597,7 +6597,7 @@
                 "code": 64
               },
               "duration": 5,
-              "startedAt": "2026-08-20T11:10:36.820Z",
+              "startedAt": "2026-08-20T12:44:12.816Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
@@ -6618,8 +6618,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 360,
-          "startedAt": "2026-08-20T11:10:36.846Z",
+          "duration": 364,
+          "startedAt": "2026-08-20T12:44:12.842Z",
           "children": [
             {
               "type": "Task",
@@ -6627,8 +6627,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 132,
-              "startedAt": "2026-08-20T11:10:36.857Z",
+              "duration": 133,
+              "startedAt": "2026-08-20T12:44:12.852Z",
               "children": [
                 {
                   "type": "Interaction",
@@ -6637,7 +6637,7 @@
                     "code": 64
                   },
                   "duration": 34,
-                  "startedAt": "2026-08-20T11:10:36.857Z",
+                  "startedAt": "2026-08-20T12:44:12.853Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -6651,8 +6651,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 45,
-                  "startedAt": "2026-08-20T11:10:36.902Z",
+                  "duration": 43,
+                  "startedAt": "2026-08-20T12:44:12.898Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -6666,8 +6666,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 21,
-                  "startedAt": "2026-08-20T11:10:36.958Z",
+                  "duration": 23,
+                  "startedAt": "2026-08-20T12:44:12.952Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
@@ -6688,8 +6688,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 81,
-              "startedAt": "2026-08-20T11:10:37.010Z",
+              "duration": 84,
+              "startedAt": "2026-08-20T12:44:13.005Z",
               "children": [
                 {
                   "type": "Interaction",
@@ -6697,8 +6697,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 10,
-                  "startedAt": "2026-08-20T11:10:37.010Z",
+                  "duration": 12,
+                  "startedAt": "2026-08-20T12:44:13.006Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -6713,7 +6713,7 @@
                     "code": 64
                   },
                   "duration": 15,
-                  "startedAt": "2026-08-20T11:10:37.031Z",
+                  "startedAt": "2026-08-20T12:44:13.029Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -6727,8 +6727,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 23,
-                  "startedAt": "2026-08-20T11:10:37.057Z",
+                  "duration": 24,
+                  "startedAt": "2026-08-20T12:44:13.055Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
@@ -6750,7 +6750,7 @@
                 "code": 64
               },
               "duration": 86,
-              "startedAt": "2026-08-20T11:10:37.110Z",
+              "startedAt": "2026-08-20T12:44:13.110Z",
               "children": [
                 {
                   "type": "Interaction",
@@ -6759,7 +6759,7 @@
                     "code": 64
                   },
                   "duration": 10,
-                  "startedAt": "2026-08-20T11:10:37.111Z",
+                  "startedAt": "2026-08-20T12:44:13.111Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -6773,8 +6773,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 15,
-                  "startedAt": "2026-08-20T11:10:37.131Z",
+                  "duration": 14,
+                  "startedAt": "2026-08-20T12:44:13.132Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -6789,7 +6789,7 @@
                     "code": 64
                   },
                   "duration": 29,
-                  "startedAt": "2026-08-20T11:10:37.157Z",
+                  "startedAt": "2026-08-20T12:44:13.157Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
@@ -6818,7 +6818,7 @@
             "code": 64
           },
           "duration": 13,
-          "startedAt": "2026-08-20T11:10:37.217Z",
+          "startedAt": "2026-08-20T12:44:13.217Z",
           "children": [],
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
@@ -6894,8 +6894,8 @@
       "outcome": {
         "code": 64
       },
-      "duration": 2182,
-      "startedAt": "2026-08-20T11:10:53.198Z",
+      "duration": 2133,
+      "startedAt": "2026-08-20T12:44:28.921Z",
       "source": {
         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
         "line": 44
@@ -6929,8 +6929,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 685,
-          "startedAt": "2026-08-20T11:10:53.493Z",
+          "duration": 688,
+          "startedAt": "2026-08-20T12:44:29.214Z",
           "children": [
             {
               "type": "Task",
@@ -6938,8 +6938,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 304,
-              "startedAt": "2026-08-20T11:10:53.493Z",
+              "duration": 294,
+              "startedAt": "2026-08-20T12:44:29.215Z",
               "children": [
                 {
                   "type": "Interaction",
@@ -6947,8 +6947,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 277,
-                  "startedAt": "2026-08-20T11:10:53.494Z",
+                  "duration": 265,
+                  "startedAt": "2026-08-20T12:44:29.216Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
@@ -6963,7 +6963,7 @@
                     "code": 64
                   },
                   "duration": 5,
-                  "startedAt": "2026-08-20T11:10:53.782Z",
+                  "startedAt": "2026-08-20T12:44:29.492Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
@@ -6984,8 +6984,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 137,
-              "startedAt": "2026-08-20T11:10:53.808Z",
+              "duration": 148,
+              "startedAt": "2026-08-20T12:44:29.519Z",
               "children": [
                 {
                   "type": "Interaction",
@@ -6993,8 +6993,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 29,
-                  "startedAt": "2026-08-20T11:10:53.808Z",
+                  "duration": 35,
+                  "startedAt": "2026-08-20T12:44:29.520Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -7008,8 +7008,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 51,
-                  "startedAt": "2026-08-20T11:10:53.849Z",
+                  "duration": 53,
+                  "startedAt": "2026-08-20T12:44:29.566Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -7024,7 +7024,7 @@
                     "code": 64
                   },
                   "duration": 23,
-                  "startedAt": "2026-08-20T11:10:53.911Z",
+                  "startedAt": "2026-08-20T12:44:29.631Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
@@ -7045,8 +7045,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 102,
-              "startedAt": "2026-08-20T11:10:53.956Z",
+              "duration": 96,
+              "startedAt": "2026-08-20T12:44:29.677Z",
               "children": [
                 {
                   "type": "Interaction",
@@ -7055,7 +7055,7 @@
                     "code": 64
                   },
                   "duration": 10,
-                  "startedAt": "2026-08-20T11:10:53.957Z",
+                  "startedAt": "2026-08-20T12:44:29.678Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -7069,8 +7069,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 25,
-                  "startedAt": "2026-08-20T11:10:53.978Z",
+                  "duration": 26,
+                  "startedAt": "2026-08-20T12:44:29.700Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -7084,8 +7084,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 32,
-                  "startedAt": "2026-08-20T11:10:54.016Z",
+                  "duration": 24,
+                  "startedAt": "2026-08-20T12:44:29.738Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
@@ -7106,8 +7106,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 99,
-              "startedAt": "2026-08-20T11:10:54.069Z",
+              "duration": 106,
+              "startedAt": "2026-08-20T12:44:29.784Z",
               "children": [
                 {
                   "type": "Interaction",
@@ -7115,8 +7115,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 10,
-                  "startedAt": "2026-08-20T11:10:54.070Z",
+                  "duration": 13,
+                  "startedAt": "2026-08-20T12:44:29.785Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -7130,8 +7130,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 24,
-                  "startedAt": "2026-08-20T11:10:54.091Z",
+                  "duration": 28,
+                  "startedAt": "2026-08-20T12:44:29.810Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -7145,8 +7145,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 32,
-                  "startedAt": "2026-08-20T11:10:54.126Z",
+                  "duration": 31,
+                  "startedAt": "2026-08-20T12:44:29.849Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
@@ -7175,7 +7175,7 @@
             "code": 64
           },
           "duration": 13,
-          "startedAt": "2026-08-20T11:10:54.189Z",
+          "startedAt": "2026-08-20T12:44:29.913Z",
           "children": [],
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
@@ -7189,8 +7189,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 50,
-          "startedAt": "2026-08-20T11:10:54.248Z",
+          "duration": 39,
+          "startedAt": "2026-08-20T12:44:29.976Z",
           "children": [],
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
@@ -7204,8 +7204,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 532,
-          "startedAt": "2026-08-20T11:10:54.316Z",
+          "duration": 509,
+          "startedAt": "2026-08-20T12:44:30.033Z",
           "children": [
             {
               "type": "Interaction",
@@ -7213,8 +7213,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 507,
-              "startedAt": "2026-08-20T11:10:54.316Z",
+              "duration": 483,
+              "startedAt": "2026-08-20T12:44:30.033Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
@@ -7228,8 +7228,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 4,
-              "startedAt": "2026-08-20T11:10:54.834Z",
+              "duration": 5,
+              "startedAt": "2026-08-20T12:44:30.527Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
@@ -7250,8 +7250,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 418,
-          "startedAt": "2026-08-20T11:10:54.859Z",
+          "duration": 422,
+          "startedAt": "2026-08-20T12:44:30.552Z",
           "children": [
             {
               "type": "Task",
@@ -7259,8 +7259,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 143,
-              "startedAt": "2026-08-20T11:10:54.869Z",
+              "duration": 148,
+              "startedAt": "2026-08-20T12:44:30.562Z",
               "children": [
                 {
                   "type": "Interaction",
@@ -7268,8 +7268,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 28,
-                  "startedAt": "2026-08-20T11:10:54.870Z",
+                  "duration": 35,
+                  "startedAt": "2026-08-20T12:44:30.563Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -7283,8 +7283,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 56,
-                  "startedAt": "2026-08-20T11:10:54.910Z",
+                  "duration": 52,
+                  "startedAt": "2026-08-20T12:44:30.613Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -7299,7 +7299,7 @@
                     "code": 64
                   },
                   "duration": 23,
-                  "startedAt": "2026-08-20T11:10:54.978Z",
+                  "startedAt": "2026-08-20T12:44:30.675Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
@@ -7320,8 +7320,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 109,
-              "startedAt": "2026-08-20T11:10:55.039Z",
+              "duration": 98,
+              "startedAt": "2026-08-20T12:44:30.743Z",
               "children": [
                 {
                   "type": "Interaction",
@@ -7329,8 +7329,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 12,
-                  "startedAt": "2026-08-20T11:10:55.040Z",
+                  "duration": 14,
+                  "startedAt": "2026-08-20T12:44:30.744Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -7344,8 +7344,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 36,
-                  "startedAt": "2026-08-20T11:10:55.065Z",
+                  "duration": 17,
+                  "startedAt": "2026-08-20T12:44:30.770Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -7359,8 +7359,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 24,
-                  "startedAt": "2026-08-20T11:10:55.114Z",
+                  "duration": 32,
+                  "startedAt": "2026-08-20T12:44:30.799Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
@@ -7381,8 +7381,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 94,
-              "startedAt": "2026-08-20T11:10:55.173Z",
+              "duration": 95,
+              "startedAt": "2026-08-20T12:44:30.869Z",
               "children": [
                 {
                   "type": "Interaction",
@@ -7390,8 +7390,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 12,
-                  "startedAt": "2026-08-20T11:10:55.174Z",
+                  "duration": 9,
+                  "startedAt": "2026-08-20T12:44:30.870Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -7405,8 +7405,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 19,
-                  "startedAt": "2026-08-20T11:10:55.197Z",
+                  "duration": 23,
+                  "startedAt": "2026-08-20T12:44:30.890Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
@@ -7420,8 +7420,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 29,
-                  "startedAt": "2026-08-20T11:10:55.227Z",
+                  "duration": 30,
+                  "startedAt": "2026-08-20T12:44:30.924Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
@@ -7449,8 +7449,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 18,
-          "startedAt": "2026-08-20T11:10:55.288Z",
+          "duration": 21,
+          "startedAt": "2026-08-20T12:44:30.985Z",
           "children": [],
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
@@ -7526,8 +7526,8 @@
       "outcome": {
         "code": 64
       },
-      "duration": 425,
-      "startedAt": "2026-08-20T11:10:25.066Z",
+      "duration": 408,
+      "startedAt": "2026-08-20T12:44:01.227Z",
       "source": {
         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/vanilla_playwright_test.spec.ts",
         "line": 16
@@ -7554,8 +7554,8 @@
       "outcome": {
         "code": 64
       },
-      "duration": 1571,
-      "startedAt": "2026-08-20T11:10:39.185Z",
+      "duration": 1577,
+      "startedAt": "2026-08-20T12:44:15.178Z",
       "source": {
         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/vanilla_playwright_test.spec.ts",
         "line": 16
@@ -7582,8 +7582,8 @@
       "outcome": {
         "code": 64
       },
-      "duration": 707,
-      "startedAt": "2026-08-20T11:10:55.889Z",
+      "duration": 709,
+      "startedAt": "2026-08-20T12:44:31.546Z",
       "source": {
         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/vanilla_playwright_test.spec.ts",
         "line": 16
@@ -7610,8 +7610,8 @@
       "outcome": {
         "code": 64
       },
-      "duration": 303,
-      "startedAt": "2026-08-20T11:10:25.616Z",
+      "duration": 299,
+      "startedAt": "2026-08-20T12:44:01.761Z",
       "source": {
         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/vanilla_playwright_test.spec.ts",
         "line": 39
@@ -7638,8 +7638,8 @@
       "outcome": {
         "code": 64
       },
-      "duration": 518,
-      "startedAt": "2026-08-20T11:10:41.155Z",
+      "duration": 534,
+      "startedAt": "2026-08-20T12:44:17.160Z",
       "source": {
         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/vanilla_playwright_test.spec.ts",
         "line": 39
@@ -7666,8 +7666,8 @@
       "outcome": {
         "code": 64
       },
-      "duration": 645,
-      "startedAt": "2026-08-20T11:10:56.728Z",
+      "duration": 643,
+      "startedAt": "2026-08-20T12:44:32.381Z",
       "source": {
         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/vanilla_playwright_test.spec.ts",
         "line": 39
@@ -7694,8 +7694,8 @@
       "outcome": {
         "code": 64
       },
-      "duration": 339,
-      "startedAt": "2026-08-20T11:10:25.943Z",
+      "duration": 337,
+      "startedAt": "2026-08-20T12:44:02.085Z",
       "source": {
         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/vanilla_playwright_test.spec.ts",
         "line": 49
@@ -7722,8 +7722,8 @@
       "outcome": {
         "code": 64
       },
-      "duration": 583,
-      "startedAt": "2026-08-20T11:10:41.695Z",
+      "duration": 592,
+      "startedAt": "2026-08-20T12:44:17.716Z",
       "source": {
         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/vanilla_playwright_test.spec.ts",
         "line": 49
@@ -7750,8 +7750,8 @@
       "outcome": {
         "code": 64
       },
-      "duration": 755,
-      "startedAt": "2026-08-20T11:10:57.397Z",
+      "duration": 722,
+      "startedAt": "2026-08-20T12:44:33.051Z",
       "source": {
         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/vanilla_playwright_test.spec.ts",
         "line": 49
@@ -7778,8 +7778,8 @@
       "outcome": {
         "code": 64
       },
-      "duration": 319,
-      "startedAt": "2026-08-20T11:10:26.295Z",
+      "duration": 311,
+      "startedAt": "2026-08-20T12:44:02.436Z",
       "source": {
         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/vanilla_playwright_test.spec.ts",
         "line": 63
@@ -7806,8 +7806,8 @@
       "outcome": {
         "code": 64
       },
-      "duration": 525,
-      "startedAt": "2026-08-20T11:10:42.308Z",
+      "duration": 515,
+      "startedAt": "2026-08-20T12:44:18.338Z",
       "source": {
         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/vanilla_playwright_test.spec.ts",
         "line": 63
@@ -7834,8 +7834,8 @@
       "outcome": {
         "code": 64
       },
-      "duration": 686,
-      "startedAt": "2026-08-20T11:10:58.174Z",
+      "duration": 711,
+      "startedAt": "2026-08-20T12:44:33.801Z",
       "source": {
         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/vanilla_playwright_test.spec.ts",
         "line": 63
@@ -7929,12 +7929,12 @@
     "serenityVersion": "3.45.8",
     "runtime": {
       "provider": "GitHub Actions",
-      "buildNumber": "2546",
+      "buildNumber": "2549",
       "branch": "main",
-      "commit": "5426cf9cad2efcedd983b6373ea42757d46e2c56",
-      "commitMessage": "Merge pull request #789 from serenity-js/docs/add-documentation-links",
+      "commit": "ded265fc77884d1ae00dcccf55331b5887ac99a6",
+      "commitMessage": "Merge pull request #790 from serenity-js/docs/improve-readme-onboarding",
       "commitAuthor": "Jan Molak",
-      "jobUrl": "https://github.com/serenity-js/serenity-js-playwright-test-template/actions/runs/32362416950",
+      "jobUrl": "https://github.com/serenity-js/serenity-js-playwright-test-template/actions/runs/32370274323",
       "workflow": "build",
       "repositoryUrl": "https://github.com/serenity-js/serenity-js-playwright-test-template",
       "triggeredBy": "jan-molak"
@@ -7942,7 +7942,7 @@
     "projectName": "serenity-js-playwright-test-template",
     "packageManager": "npm"
   },
-  "testRunId": "2546",
+  "testRunId": "2549",
   "moduleId": "serenity-js-playwright-test-template",
   "attempt": 1
 }
