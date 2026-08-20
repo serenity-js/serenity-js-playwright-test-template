@@ -32,17 +32,13 @@ export default defineConfig<SerenityFixtures, SerenityWorkerFixtures>({
     /* Reporter to use. See https://playwright.dev/docs/test-reporters */
     reporter: [
         ['line'],
-        ['html', { open: 'never' }],
+        ['html', { open: 'never', outputFolder: './reports/playwright' }],
         ['@serenity-js/playwright-test', {
             crew: [
                 '@serenity-js/console-reporter',
-                [ '@serenity-js/serenity-bdd', {
+                ['@serenity-js/html-reporter', {
                     specDirectory: './spec',
-                    reporter: {
-                        includeAbilityDetails: true,
-                    },
-                } ],
-                ['@serenity-js/core:ArtifactArchiver', { outputDirectory: 'target/site/serenity' }],
+                }],
                 // '@serenity-js/core:StreamReporter',  // use for debugging
             ],
         }],

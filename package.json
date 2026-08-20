@@ -4,11 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "clean": "rimraf playwright-report target",
-    "test": "failsafe clean test:execute [...] test:report",
-    "test:execute": "playwright test",
-    "test:report": "serenity-bdd run",
-    "start": "mkdirp target/site/serenity && npx http-server -p 8080 target/site/serenity -s -o",
+    "test": "playwright test",
+    "test:report": "npx @serenity-js/html-reporter serve --dir ./reports/serenity-js --open",
     "lint": "eslint .",
     "lint:fix": "npm run lint -- --fix"
   },
@@ -40,7 +37,7 @@
     "@serenity-js/playwright": "^3.45.8",
     "@serenity-js/playwright-test": "^3.45.8",
     "@serenity-js/rest": "^3.45.8",
-    "@serenity-js/serenity-bdd": "^3.45.8",
+    "@serenity-js/html-reporter": "^3.45.8",
     "@serenity-js/web": "^3.45.8"
   },
   "devDependencies": {
@@ -52,10 +49,6 @@
     "eslint-plugin-simple-import-sort": "^12.1.1",
     "eslint-plugin-unicorn": "^62.0.0",
     "eslint-plugin-unused-imports": "^4.4.1",
-    "http-server": "^14.1.1",
-    "mkdirp": "^3.0.1",
-    "npm-failsafe": "^1.4.0",
-    "rimraf": "^6.1.3",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.67.0"
   }
