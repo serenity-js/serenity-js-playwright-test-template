@@ -1,17 +1,17 @@
 {
   "$schema": "https://serenity-js.org/schemas/report-summary.json",
-  "generated": "2026-08-20T12:44:34.688Z",
-  "title": "Playwright",
+  "generated": "2026-08-21T06:09:30.443Z",
+  "title": "serenity-js-playwright-test-template",
   "schemaVersion": 1,
   "reportUrl": "./index.html",
   "ci": {
-    "commit": "ded265fc77884d1ae00dcccf55331b5887ac99a6",
+    "commit": "6ec404e27fc3ea2fdaa92ca8827205d800cb08fb",
     "branch": "main",
-    "jobUrl": "https://github.com/serenity-js/serenity-js-playwright-test-template/actions/runs/32370274323"
+    "jobUrl": "https://github.com/serenity-js/serenity-js-playwright-test-template/actions/runs/32453145456"
   },
   "latestRun": {
-    "timestamp": "2026-08-20T12:43:54.369Z",
-    "label": "2549",
+    "timestamp": "2026-08-21T06:08:50.690Z",
+    "label": "2552",
     "totals": {
       "passed": 36,
       "failed": 0,
@@ -20,7 +20,7 @@
       "compromised": 0,
       "error": 0
     },
-    "duration": 40143
+    "duration": 39602
   },
   "runs": 1,
   "failureClusters": [],
@@ -40,27 +40,27 @@
     {
       "name": "Todo List App should allow me to share notes across actors and browsers",
       "source": "using_notes.spec.ts:44",
-      "duration": 2967
+      "duration": 3163
     },
     {
       "name": "Todo List App should allow me to share notes across actors and browsers",
       "source": "using_notes.spec.ts:44",
-      "duration": 2133
+      "duration": 2110
     },
     {
       "name": "Todo List App supports multiple actors using separate browsers",
       "source": "multi-actor_scenarios.spec.ts:37",
-      "duration": 2015
-    },
-    {
-      "name": "Todo List App should allow me to add todo items",
-      "source": "recording_items.spec.ts:36",
-      "duration": 1684
+      "duration": 2009
     },
     {
       "name": "New Todo should allow me to add todo items",
       "source": "vanilla_playwright_test.spec.ts:16",
-      "duration": 1577
+      "duration": 1616
+    },
+    {
+      "name": "Todo List App supports multiple actors using separate browsers",
+      "source": "multi-actor_scenarios.spec.ts:37",
+      "duration": 1440
     }
   ]
 }
