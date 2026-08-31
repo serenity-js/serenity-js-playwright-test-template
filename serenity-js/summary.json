@@ -1,17 +1,17 @@
 {
   "$schema": "https://serenity-js.org/schemas/report-summary.json",
-  "generated": "2026-08-31T06:08:15.447Z",
+  "generated": "2026-08-31T23:10:55.172Z",
   "title": "serenity-js-playwright-test-template",
   "schemaVersion": 1,
   "reportUrl": "./index.html",
   "ci": {
-    "commit": "18edb2ac9fbceaf363c76f14c629e4932f570834",
+    "commit": "5d54c20a76b95a3f85ec7434078ed16366307dc7",
     "branch": "main",
-    "jobUrl": "https://github.com/serenity-js/serenity-js-playwright-test-template/actions/runs/33362853006"
+    "jobUrl": "https://github.com/serenity-js/serenity-js-playwright-test-template/actions/runs/33449417861"
   },
   "latestRun": {
-    "timestamp": "2026-08-31T06:07:36.938Z",
-    "label": "2566",
+    "timestamp": "2026-08-31T23:10:11.337Z",
+    "label": "2569",
     "totals": {
       "passed": 36,
       "failed": 0,
@@ -20,7 +20,7 @@
       "compromised": 0,
       "error": 0
     },
-    "duration": 38355
+    "duration": 43639
   },
   "runs": 1,
   "failureClusters": [],
@@ -40,27 +40,27 @@
     {
       "name": "Todo List App should allow me to share notes across actors and browsers",
       "source": "using_notes.spec.ts:44",
-      "duration": 2587
+      "duration": 3335
     },
     {
       "name": "Todo List App should allow me to share notes across actors and browsers",
       "source": "using_notes.spec.ts:44",
-      "duration": 2054
+      "duration": 2280
     },
     {
       "name": "Todo List App supports multiple actors using separate browsers",
       "source": "multi-actor_scenarios.spec.ts:37",
-      "duration": 1778
+      "duration": 2096
+    },
+    {
+      "name": "Todo List App should allow me to add todo items",
+      "source": "recording_items.spec.ts:36",
+      "duration": 1808
     },
     {
       "name": "New Todo should allow me to add todo items",
       "source": "vanilla_playwright_test.spec.ts:16",
-      "duration": 1750
-    },
-    {
-      "name": "Todo List App should show #main and #footer sections only when list contains items",
-      "source": "recording_items.spec.ts:81",
-      "duration": 1704
+      "duration": 1718
     }
   ]
 }
