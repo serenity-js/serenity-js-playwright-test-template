@@ -1,17 +1,17 @@
 {
   "$schema": "https://serenity-js.org/schemas/report-summary.json",
-  "generated": "2026-08-27T05:58:15.436Z",
+  "generated": "2026-08-31T06:08:15.447Z",
   "title": "serenity-js-playwright-test-template",
   "schemaVersion": 1,
   "reportUrl": "./index.html",
   "ci": {
-    "commit": "6e84e71b26c721a38099c1884817e4e852eef2ca",
+    "commit": "18edb2ac9fbceaf363c76f14c629e4932f570834",
     "branch": "main",
-    "jobUrl": "https://github.com/serenity-js/serenity-js-playwright-test-template/actions/runs/33044112832"
+    "jobUrl": "https://github.com/serenity-js/serenity-js-playwright-test-template/actions/runs/33362853006"
   },
   "latestRun": {
-    "timestamp": "2026-08-27T05:57:33.321Z",
-    "label": "2562",
+    "timestamp": "2026-08-31T06:07:36.938Z",
+    "label": "2566",
     "totals": {
       "passed": 36,
       "failed": 0,
@@ -20,7 +20,7 @@
       "compromised": 0,
       "error": 0
     },
-    "duration": 41932
+    "duration": 38355
   },
   "runs": 1,
   "failureClusters": [],
@@ -40,27 +40,27 @@
     {
       "name": "Todo List App should allow me to share notes across actors and browsers",
       "source": "using_notes.spec.ts:44",
-      "duration": 3286
+      "duration": 2587
     },
     {
       "name": "Todo List App should allow me to share notes across actors and browsers",
       "source": "using_notes.spec.ts:44",
-      "duration": 2193
+      "duration": 2054
     },
     {
       "name": "Todo List App supports multiple actors using separate browsers",
       "source": "multi-actor_scenarios.spec.ts:37",
-      "duration": 2123
-    },
-    {
-      "name": "Todo List App should allow me to add todo items",
-      "source": "recording_items.spec.ts:36",
-      "duration": 1813
+      "duration": 1778
     },
     {
       "name": "New Todo should allow me to add todo items",
       "source": "vanilla_playwright_test.spec.ts:16",
-      "duration": 1689
+      "duration": 1750
+    },
+    {
+      "name": "Todo List App should show #main and #footer sections only when list contains items",
+      "source": "recording_items.spec.ts:81",
+      "duration": 1704
     }
   ]
 }
