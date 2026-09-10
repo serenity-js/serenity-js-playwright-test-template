@@ -1,5 +1,5 @@
 {
-  "image": "ghcr.io/serenity-js/playwright:v1.62.1-resolute",
+  "image": "ghcr.io/serenity-js/playwright:v1.63.0-resolute",
 
   "features": {
     "ghcr.io/devcontainers/features/desktop-lite:1": {},
