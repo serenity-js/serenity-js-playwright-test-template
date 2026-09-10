@@ -11,9 +11,9 @@ window.__SERENITY_REPORT_DATA__ = {
       "compromised": 0,
       "error": 0
     },
-    "duration": 44092,
-    "startedAt": "2026-09-10T06:03:37.392Z",
-    "finishedAt": "2026-09-10T06:04:21.484Z",
+    "duration": 40647,
+    "startedAt": "2026-09-10T23:32:10.651Z",
+    "finishedAt": "2026-09-10T23:32:51.298Z",
     "testRunner": "Playwright"
   },
   "scenarios": [
@@ -21,8 +21,8 @@ window.__SERENITY_REPORT_DATA__ = {
       "name": "JSON Placeholder /todos should retrieve a todo item by id",
       "category": "API Testing",
       "outcome": "SUCCESS",
-      "duration": 325,
-      "startedAt": "2026-09-10T06:03:37.392Z",
+      "duration": 205,
+      "startedAt": "2026-09-10T23:32:10.651Z",
       "source": {
         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/api_testing.spec.ts",
         "line": 29
@@ -53,10 +53,10 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice sends a GET request to '/todos/1'",
           "outcome": "SUCCESS",
-          "duration": 164,
+          "duration": 63,
           "children": [],
           "type": "Interaction",
-          "startedAt": "2026-09-10T06:03:37.705Z",
+          "startedAt": "2026-09-10T23:32:10.937Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/api_testing.spec.ts",
             "line": 32,
@@ -64,7 +64,7 @@ window.__SERENITY_REPORT_DATA__ = {
           },
           "artifacts": [
             {
-              "path": "test-runs/2593/serenity-js-playwright-test-template-1/artifact-get-https---jsonplaceholder-typicode-com-todos-1-ec9e6e78a7.json",
+              "path": "test-runs/2596/serenity-js-playwright-test-template-1/artifact-get-https---jsonplaceholder-typicode-com-todos-1-4aa61f9297.json",
               "type": "screenshot"
             }
           ],
@@ -73,17 +73,17 @@ window.__SERENITY_REPORT_DATA__ = {
             "url": "https://jsonplaceholder.typicode.com/todos/1",
             "requestHeaders": "Accept: application/json, text/plain, */*\nUser-Agent: axios/1.20.0\nAccept-Encoding: gzip, compress, deflate, br",
             "statusCode": 200,
-            "responseHeaders": "date: Thu, 10 Sep 2026 06:03:37 GMT\ncontent-type: application/json; charset=utf-8\ntransfer-encoding: chunked\nconnection: close\naccess-control-allow-credentials: true\ncache-control: max-age=43200\netag: W/\"53-hfEnumeNh6YirfjyjaujcOPPT+s\"\nexpires: -1\nnel: {\"report_to\":\"heroku-nel\",\"response_headers\":[\"Via\"],\"max_age\":3600,\"success_fraction\":0.01,\"failure_fraction\":0.1}\npragma: no-cache\nreport-to: {\"group\":\"heroku-nel\",\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?s=UyhbZ%2F0MO1mJoZS7M4Hj8SWBXp3NkwnJgHEYoqocyDE%3D\\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\\u0026ts=1785191026\"}],\"max_age\":3600}\nreporting-endpoints: heroku-nel=\"https://nel.heroku.com/reports?s=UyhbZ%2F0MO1mJoZS7M4Hj8SWBXp3NkwnJgHEYoqocyDE%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1785191026\"\nserver: cloudflare\nvary: Origin, Accept-Encoding\nvia: 2.0 heroku-router\nx-content-type-options: nosniff\nx-powered-by: Express\nx-ratelimit-limit: 1000\nx-ratelimit-remaining: 999\nx-ratelimit-reset: 1785191063\nage: 13969\ncf-cache-status: HIT\ncf-ray: a38c3b094bd8decc-SEA\nalt-svc: h3=\":443\"; ma=86400",
+            "responseHeaders": "date: Thu, 10 Sep 2026 23:32:10 GMT\ncontent-type: application/json; charset=utf-8\ntransfer-encoding: chunked\nconnection: close\naccess-control-allow-credentials: true\ncache-control: max-age=43200\netag: W/\"53-hfEnumeNh6YirfjyjaujcOPPT+s\"\nexpires: -1\nnel: {\"report_to\":\"heroku-nel\",\"response_headers\":[\"Via\"],\"max_age\":3600,\"success_fraction\":0.01,\"failure_fraction\":0.1}\npragma: no-cache\nreport-to: {\"group\":\"heroku-nel\",\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?s=6OD5Ma7Hf8sxRkmZQ%2FUwG5GvjVELY1G1N1c9ZRZ0AF4%3D\\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\\u0026ts=1785164981\"}],\"max_age\":3600}\nreporting-endpoints: heroku-nel=\"https://nel.heroku.com/reports?s=6OD5Ma7Hf8sxRkmZQ%2FUwG5GvjVELY1G1N1c9ZRZ0AF4%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1785164981\"\nserver: cloudflare\nvary: Origin, Accept-Encoding\nvia: 2.0 heroku-router\nx-content-type-options: nosniff\nx-powered-by: Express\nx-ratelimit-limit: 1000\nx-ratelimit-remaining: 999\nx-ratelimit-reset: 1785165020\nage: 6611\ncf-cache-status: HIT\ncf-ray: a3923b00ad795263-IAD\nalt-svc: h3=\":443\"; ma=86400",
             "responseBody": "{\n    \"userId\": 1,\n    \"id\": 1,\n    \"title\": \"delectus aut autem\",\n    \"completed\": false\n}"
           }
         },
         {
           "name": "Alice ensures that the status of the last response does equal 200",
           "outcome": "SUCCESS",
-          "duration": 1,
+          "duration": 2,
           "children": [],
           "type": "Interaction",
-          "startedAt": "2026-09-10T06:03:37.880Z",
+          "startedAt": "2026-09-10T23:32:11.011Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/api_testing.spec.ts",
             "line": 33,
@@ -93,10 +93,10 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice ensures that <<the body of the last response>>.id does equal 1",
           "outcome": "SUCCESS",
-          "duration": 2,
+          "duration": 1,
           "children": [],
           "type": "Interaction",
-          "startedAt": "2026-09-10T06:03:37.892Z",
+          "startedAt": "2026-09-10T23:32:11.024Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/api_testing.spec.ts",
             "line": 34,
@@ -107,17 +107,17 @@ window.__SERENITY_REPORT_DATA__ = {
       "executionHistory": [
         {
           "outcome": "SUCCESS",
-          "run": "2593",
-          "timestamp": "2026-09-10T06:03:37.392Z",
-          "duration": 325,
+          "run": "2596",
+          "timestamp": "2026-09-10T23:32:10.651Z",
+          "duration": 205,
           "activities": [
             {
               "name": "Alice sends a GET request to '/todos/1'",
               "outcome": "SUCCESS",
-              "duration": 164,
+              "duration": 63,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:37.705Z",
+              "startedAt": "2026-09-10T23:32:10.937Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/api_testing.spec.ts",
                 "line": 32,
@@ -125,7 +125,7 @@ window.__SERENITY_REPORT_DATA__ = {
               },
               "artifacts": [
                 {
-                  "path": "test-runs/2593/serenity-js-playwright-test-template-1/artifact-get-https---jsonplaceholder-typicode-com-todos-1-ec9e6e78a7.json",
+                  "path": "test-runs/2596/serenity-js-playwright-test-template-1/artifact-get-https---jsonplaceholder-typicode-com-todos-1-4aa61f9297.json",
                   "type": "screenshot"
                 }
               ],
@@ -134,17 +134,17 @@ window.__SERENITY_REPORT_DATA__ = {
                 "url": "https://jsonplaceholder.typicode.com/todos/1",
                 "requestHeaders": "Accept: application/json, text/plain, */*\nUser-Agent: axios/1.20.0\nAccept-Encoding: gzip, compress, deflate, br",
                 "statusCode": 200,
-                "responseHeaders": "date: Thu, 10 Sep 2026 06:03:37 GMT\ncontent-type: application/json; charset=utf-8\ntransfer-encoding: chunked\nconnection: close\naccess-control-allow-credentials: true\ncache-control: max-age=43200\netag: W/\"53-hfEnumeNh6YirfjyjaujcOPPT+s\"\nexpires: -1\nnel: {\"report_to\":\"heroku-nel\",\"response_headers\":[\"Via\"],\"max_age\":3600,\"success_fraction\":0.01,\"failure_fraction\":0.1}\npragma: no-cache\nreport-to: {\"group\":\"heroku-nel\",\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?s=UyhbZ%2F0MO1mJoZS7M4Hj8SWBXp3NkwnJgHEYoqocyDE%3D\\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\\u0026ts=1785191026\"}],\"max_age\":3600}\nreporting-endpoints: heroku-nel=\"https://nel.heroku.com/reports?s=UyhbZ%2F0MO1mJoZS7M4Hj8SWBXp3NkwnJgHEYoqocyDE%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1785191026\"\nserver: cloudflare\nvary: Origin, Accept-Encoding\nvia: 2.0 heroku-router\nx-content-type-options: nosniff\nx-powered-by: Express\nx-ratelimit-limit: 1000\nx-ratelimit-remaining: 999\nx-ratelimit-reset: 1785191063\nage: 13969\ncf-cache-status: HIT\ncf-ray: a38c3b094bd8decc-SEA\nalt-svc: h3=\":443\"; ma=86400",
+                "responseHeaders": "date: Thu, 10 Sep 2026 23:32:10 GMT\ncontent-type: application/json; charset=utf-8\ntransfer-encoding: chunked\nconnection: close\naccess-control-allow-credentials: true\ncache-control: max-age=43200\netag: W/\"53-hfEnumeNh6YirfjyjaujcOPPT+s\"\nexpires: -1\nnel: {\"report_to\":\"heroku-nel\",\"response_headers\":[\"Via\"],\"max_age\":3600,\"success_fraction\":0.01,\"failure_fraction\":0.1}\npragma: no-cache\nreport-to: {\"group\":\"heroku-nel\",\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?s=6OD5Ma7Hf8sxRkmZQ%2FUwG5GvjVELY1G1N1c9ZRZ0AF4%3D\\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\\u0026ts=1785164981\"}],\"max_age\":3600}\nreporting-endpoints: heroku-nel=\"https://nel.heroku.com/reports?s=6OD5Ma7Hf8sxRkmZQ%2FUwG5GvjVELY1G1N1c9ZRZ0AF4%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1785164981\"\nserver: cloudflare\nvary: Origin, Accept-Encoding\nvia: 2.0 heroku-router\nx-content-type-options: nosniff\nx-powered-by: Express\nx-ratelimit-limit: 1000\nx-ratelimit-remaining: 999\nx-ratelimit-reset: 1785165020\nage: 6611\ncf-cache-status: HIT\ncf-ray: a3923b00ad795263-IAD\nalt-svc: h3=\":443\"; ma=86400",
                 "responseBody": "{\n    \"userId\": 1,\n    \"id\": 1,\n    \"title\": \"delectus aut autem\",\n    \"completed\": false\n}"
               }
             },
             {
               "name": "Alice ensures that the status of the last response does equal 200",
               "outcome": "SUCCESS",
-              "duration": 1,
+              "duration": 2,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:37.880Z",
+              "startedAt": "2026-09-10T23:32:11.011Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/api_testing.spec.ts",
                 "line": 33,
@@ -154,10 +154,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice ensures that <<the body of the last response>>.id does equal 1",
               "outcome": "SUCCESS",
-              "duration": 2,
+              "duration": 1,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:37.892Z",
+              "startedAt": "2026-09-10T23:32:11.024Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/api_testing.spec.ts",
                 "line": 34,
@@ -204,8 +204,8 @@ window.__SERENITY_REPORT_DATA__ = {
       "name": "JSON Placeholder /todos should retrieve a todo item by id",
       "category": "API Testing",
       "outcome": "SUCCESS",
-      "duration": 937,
-      "startedAt": "2026-09-10T06:03:47.442Z",
+      "duration": 896,
+      "startedAt": "2026-09-10T23:32:19.757Z",
       "source": {
         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/api_testing.spec.ts",
         "line": 29
@@ -236,10 +236,10 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice sends a GET request to '/todos/1'",
           "outcome": "SUCCESS",
-          "duration": 69,
+          "duration": 68,
           "children": [],
           "type": "Interaction",
-          "startedAt": "2026-09-10T06:03:48.659Z",
+          "startedAt": "2026-09-10T23:32:20.904Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/api_testing.spec.ts",
             "line": 32,
@@ -247,7 +247,7 @@ window.__SERENITY_REPORT_DATA__ = {
           },
           "artifacts": [
             {
-              "path": "test-runs/2593/serenity-js-playwright-test-template-1/artifact-get-https---jsonplaceholder-typicode-com-todos-1-ba9e72e002.json",
+              "path": "test-runs/2596/serenity-js-playwright-test-template-1/artifact-get-https---jsonplaceholder-typicode-com-todos-1-0f2584f542.json",
               "type": "screenshot"
             }
           ],
@@ -256,7 +256,7 @@ window.__SERENITY_REPORT_DATA__ = {
             "url": "https://jsonplaceholder.typicode.com/todos/1",
             "requestHeaders": "Accept: application/json, text/plain, */*\nUser-Agent: axios/1.20.0\nAccept-Encoding: gzip, compress, deflate, br",
             "statusCode": 200,
-            "responseHeaders": "date: Thu, 10 Sep 2026 06:03:48 GMT\ncontent-type: application/json; charset=utf-8\ntransfer-encoding: chunked\nconnection: close\naccess-control-allow-credentials: true\ncache-control: max-age=43200\netag: W/\"53-hfEnumeNh6YirfjyjaujcOPPT+s\"\nexpires: -1\nnel: {\"report_to\":\"heroku-nel\",\"response_headers\":[\"Via\"],\"max_age\":3600,\"success_fraction\":0.01,\"failure_fraction\":0.1}\npragma: no-cache\nreport-to: {\"group\":\"heroku-nel\",\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?s=UyhbZ%2F0MO1mJoZS7M4Hj8SWBXp3NkwnJgHEYoqocyDE%3D\\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\\u0026ts=1785191026\"}],\"max_age\":3600}\nreporting-endpoints: heroku-nel=\"https://nel.heroku.com/reports?s=UyhbZ%2F0MO1mJoZS7M4Hj8SWBXp3NkwnJgHEYoqocyDE%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1785191026\"\nserver: cloudflare\nvary: Origin, Accept-Encoding\nvia: 2.0 heroku-router\nx-content-type-options: nosniff\nx-powered-by: Express\nx-ratelimit-limit: 1000\nx-ratelimit-remaining: 999\nx-ratelimit-reset: 1785191063\nage: 4\ncf-cache-status: HIT\ncf-ray: a38c3b4d6a36eb28-SJC\nalt-svc: h3=\":443\"; ma=86400",
+            "responseHeaders": "date: Thu, 10 Sep 2026 23:32:20 GMT\ncontent-type: application/json; charset=utf-8\ntransfer-encoding: chunked\nconnection: close\naccess-control-allow-credentials: true\ncache-control: max-age=43200\netag: W/\"53-hfEnumeNh6YirfjyjaujcOPPT+s\"\nexpires: -1\nnel: {\"report_to\":\"heroku-nel\",\"response_headers\":[\"Via\"],\"max_age\":3600,\"success_fraction\":0.01,\"failure_fraction\":0.1}\npragma: no-cache\nreport-to: {\"group\":\"heroku-nel\",\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?s=6OD5Ma7Hf8sxRkmZQ%2FUwG5GvjVELY1G1N1c9ZRZ0AF4%3D\\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\\u0026ts=1785164981\"}],\"max_age\":3600}\nreporting-endpoints: heroku-nel=\"https://nel.heroku.com/reports?s=6OD5Ma7Hf8sxRkmZQ%2FUwG5GvjVELY1G1N1c9ZRZ0AF4%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1785164981\"\nserver: cloudflare\nvary: Origin, Accept-Encoding\nvia: 2.0 heroku-router\nx-content-type-options: nosniff\nx-powered-by: Express\nx-ratelimit-limit: 1000\nx-ratelimit-remaining: 999\nx-ratelimit-reset: 1785165020\nage: 6621\ncf-cache-status: HIT\ncf-ray: a3923b3eef855263-IAD\nalt-svc: h3=\":443\"; ma=86400",
             "responseBody": "{\n    \"userId\": 1,\n    \"id\": 1,\n    \"title\": \"delectus aut autem\",\n    \"completed\": false\n}"
           }
         },
@@ -266,7 +266,7 @@ window.__SERENITY_REPORT_DATA__ = {
           "duration": 2,
           "children": [],
           "type": "Interaction",
-          "startedAt": "2026-09-10T06:03:48.740Z",
+          "startedAt": "2026-09-10T23:32:20.984Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/api_testing.spec.ts",
             "line": 33,
@@ -279,7 +279,7 @@ window.__SERENITY_REPORT_DATA__ = {
           "duration": 2,
           "children": [],
           "type": "Interaction",
-          "startedAt": "2026-09-10T06:03:48.754Z",
+          "startedAt": "2026-09-10T23:32:20.998Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/api_testing.spec.ts",
             "line": 34,
@@ -290,17 +290,17 @@ window.__SERENITY_REPORT_DATA__ = {
       "executionHistory": [
         {
           "outcome": "SUCCESS",
-          "run": "2593",
-          "timestamp": "2026-09-10T06:03:37.392Z",
-          "duration": 937,
+          "run": "2596",
+          "timestamp": "2026-09-10T23:32:10.651Z",
+          "duration": 896,
           "activities": [
             {
               "name": "Alice sends a GET request to '/todos/1'",
               "outcome": "SUCCESS",
-              "duration": 69,
+              "duration": 68,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:48.659Z",
+              "startedAt": "2026-09-10T23:32:20.904Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/api_testing.spec.ts",
                 "line": 32,
@@ -308,7 +308,7 @@ window.__SERENITY_REPORT_DATA__ = {
               },
               "artifacts": [
                 {
-                  "path": "test-runs/2593/serenity-js-playwright-test-template-1/artifact-get-https---jsonplaceholder-typicode-com-todos-1-ba9e72e002.json",
+                  "path": "test-runs/2596/serenity-js-playwright-test-template-1/artifact-get-https---jsonplaceholder-typicode-com-todos-1-0f2584f542.json",
                   "type": "screenshot"
                 }
               ],
@@ -317,7 +317,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 "url": "https://jsonplaceholder.typicode.com/todos/1",
                 "requestHeaders": "Accept: application/json, text/plain, */*\nUser-Agent: axios/1.20.0\nAccept-Encoding: gzip, compress, deflate, br",
                 "statusCode": 200,
-                "responseHeaders": "date: Thu, 10 Sep 2026 06:03:48 GMT\ncontent-type: application/json; charset=utf-8\ntransfer-encoding: chunked\nconnection: close\naccess-control-allow-credentials: true\ncache-control: max-age=43200\netag: W/\"53-hfEnumeNh6YirfjyjaujcOPPT+s\"\nexpires: -1\nnel: {\"report_to\":\"heroku-nel\",\"response_headers\":[\"Via\"],\"max_age\":3600,\"success_fraction\":0.01,\"failure_fraction\":0.1}\npragma: no-cache\nreport-to: {\"group\":\"heroku-nel\",\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?s=UyhbZ%2F0MO1mJoZS7M4Hj8SWBXp3NkwnJgHEYoqocyDE%3D\\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\\u0026ts=1785191026\"}],\"max_age\":3600}\nreporting-endpoints: heroku-nel=\"https://nel.heroku.com/reports?s=UyhbZ%2F0MO1mJoZS7M4Hj8SWBXp3NkwnJgHEYoqocyDE%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1785191026\"\nserver: cloudflare\nvary: Origin, Accept-Encoding\nvia: 2.0 heroku-router\nx-content-type-options: nosniff\nx-powered-by: Express\nx-ratelimit-limit: 1000\nx-ratelimit-remaining: 999\nx-ratelimit-reset: 1785191063\nage: 4\ncf-cache-status: HIT\ncf-ray: a38c3b4d6a36eb28-SJC\nalt-svc: h3=\":443\"; ma=86400",
+                "responseHeaders": "date: Thu, 10 Sep 2026 23:32:20 GMT\ncontent-type: application/json; charset=utf-8\ntransfer-encoding: chunked\nconnection: close\naccess-control-allow-credentials: true\ncache-control: max-age=43200\netag: W/\"53-hfEnumeNh6YirfjyjaujcOPPT+s\"\nexpires: -1\nnel: {\"report_to\":\"heroku-nel\",\"response_headers\":[\"Via\"],\"max_age\":3600,\"success_fraction\":0.01,\"failure_fraction\":0.1}\npragma: no-cache\nreport-to: {\"group\":\"heroku-nel\",\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?s=6OD5Ma7Hf8sxRkmZQ%2FUwG5GvjVELY1G1N1c9ZRZ0AF4%3D\\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\\u0026ts=1785164981\"}],\"max_age\":3600}\nreporting-endpoints: heroku-nel=\"https://nel.heroku.com/reports?s=6OD5Ma7Hf8sxRkmZQ%2FUwG5GvjVELY1G1N1c9ZRZ0AF4%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1785164981\"\nserver: cloudflare\nvary: Origin, Accept-Encoding\nvia: 2.0 heroku-router\nx-content-type-options: nosniff\nx-powered-by: Express\nx-ratelimit-limit: 1000\nx-ratelimit-remaining: 999\nx-ratelimit-reset: 1785165020\nage: 6621\ncf-cache-status: HIT\ncf-ray: a3923b3eef855263-IAD\nalt-svc: h3=\":443\"; ma=86400",
                 "responseBody": "{\n    \"userId\": 1,\n    \"id\": 1,\n    \"title\": \"delectus aut autem\",\n    \"completed\": false\n}"
               }
             },
@@ -327,7 +327,7 @@ window.__SERENITY_REPORT_DATA__ = {
               "duration": 2,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:48.740Z",
+              "startedAt": "2026-09-10T23:32:20.984Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/api_testing.spec.ts",
                 "line": 33,
@@ -340,7 +340,7 @@ window.__SERENITY_REPORT_DATA__ = {
               "duration": 2,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:48.754Z",
+              "startedAt": "2026-09-10T23:32:20.998Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/api_testing.spec.ts",
                 "line": 34,
@@ -387,8 +387,8 @@ window.__SERENITY_REPORT_DATA__ = {
       "name": "JSON Placeholder /todos should retrieve a todo item by id",
       "category": "API Testing",
       "outcome": "SUCCESS",
-      "duration": 453,
-      "startedAt": "2026-09-10T06:04:05.722Z",
+      "duration": 406,
+      "startedAt": "2026-09-10T23:32:36.569Z",
       "source": {
         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/api_testing.spec.ts",
         "line": 29
@@ -419,10 +419,10 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice sends a GET request to '/todos/1'",
           "outcome": "SUCCESS",
-          "duration": 118,
+          "duration": 58,
           "children": [],
           "type": "Interaction",
-          "startedAt": "2026-09-10T06:04:06.450Z",
+          "startedAt": "2026-09-10T23:32:37.297Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/api_testing.spec.ts",
             "line": 32,
@@ -430,7 +430,7 @@ window.__SERENITY_REPORT_DATA__ = {
           },
           "artifacts": [
             {
-              "path": "test-runs/2593/serenity-js-playwright-test-template-1/artifact-get-https---jsonplaceholder-typicode-com-todos-1-fc2334a378.json",
+              "path": "test-runs/2596/serenity-js-playwright-test-template-1/artifact-get-https---jsonplaceholder-typicode-com-todos-1-38c93a57b7.json",
               "type": "screenshot"
             }
           ],
@@ -439,7 +439,7 @@ window.__SERENITY_REPORT_DATA__ = {
             "url": "https://jsonplaceholder.typicode.com/todos/1",
             "requestHeaders": "Accept: application/json, text/plain, */*\nUser-Agent: axios/1.20.0\nAccept-Encoding: gzip, compress, deflate, br",
             "statusCode": 200,
-            "responseHeaders": "date: Thu, 10 Sep 2026 06:04:06 GMT\ncontent-type: application/json; charset=utf-8\ntransfer-encoding: chunked\nconnection: close\naccess-control-allow-credentials: true\ncache-control: max-age=43200\netag: W/\"53-hfEnumeNh6YirfjyjaujcOPPT+s\"\nexpires: -1\nnel: {\"report_to\":\"heroku-nel\",\"response_headers\":[\"Via\"],\"max_age\":3600,\"success_fraction\":0.01,\"failure_fraction\":0.1}\npragma: no-cache\nreport-to: {\"group\":\"heroku-nel\",\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?s=UyhbZ%2F0MO1mJoZS7M4Hj8SWBXp3NkwnJgHEYoqocyDE%3D\\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\\u0026ts=1785191026\"}],\"max_age\":3600}\nreporting-endpoints: heroku-nel=\"https://nel.heroku.com/reports?s=UyhbZ%2F0MO1mJoZS7M4Hj8SWBXp3NkwnJgHEYoqocyDE%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1785191026\"\nserver: cloudflare\nvary: Origin, Accept-Encoding\nvia: 2.0 heroku-router\nx-content-type-options: nosniff\nx-powered-by: Express\nx-ratelimit-limit: 1000\nx-ratelimit-remaining: 999\nx-ratelimit-reset: 1785191063\nage: 13998\ncf-cache-status: HIT\ncf-ray: a38c3bbcee31277d-SEA\nalt-svc: h3=\":443\"; ma=86400",
+            "responseHeaders": "date: Thu, 10 Sep 2026 23:32:37 GMT\ncontent-type: application/json; charset=utf-8\ntransfer-encoding: chunked\nconnection: close\naccess-control-allow-credentials: true\ncache-control: max-age=43200\netag: W/\"53-hfEnumeNh6YirfjyjaujcOPPT+s\"\nexpires: -1\nnel: {\"report_to\":\"heroku-nel\",\"response_headers\":[\"Via\"],\"max_age\":3600,\"success_fraction\":0.01,\"failure_fraction\":0.1}\npragma: no-cache\nreport-to: {\"group\":\"heroku-nel\",\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?s=6OD5Ma7Hf8sxRkmZQ%2FUwG5GvjVELY1G1N1c9ZRZ0AF4%3D\\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\\u0026ts=1785164981\"}],\"max_age\":3600}\nreporting-endpoints: heroku-nel=\"https://nel.heroku.com/reports?s=6OD5Ma7Hf8sxRkmZQ%2FUwG5GvjVELY1G1N1c9ZRZ0AF4%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1785164981\"\nserver: cloudflare\nvary: Origin, Accept-Encoding\nvia: 2.0 heroku-router\nx-content-type-options: nosniff\nx-powered-by: Express\nx-ratelimit-limit: 1000\nx-ratelimit-remaining: 999\nx-ratelimit-reset: 1785165020\nage: 6637\ncf-cache-status: HIT\ncf-ray: a3923ba56d7f23cc-IAD\nalt-svc: h3=\":443\"; ma=86400",
             "responseBody": "{\n    \"userId\": 1,\n    \"id\": 1,\n    \"title\": \"delectus aut autem\",\n    \"completed\": false\n}"
           }
         },
@@ -449,7 +449,7 @@ window.__SERENITY_REPORT_DATA__ = {
           "duration": 2,
           "children": [],
           "type": "Interaction",
-          "startedAt": "2026-09-10T06:04:06.581Z",
+          "startedAt": "2026-09-10T23:32:37.367Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/api_testing.spec.ts",
             "line": 33,
@@ -462,7 +462,7 @@ window.__SERENITY_REPORT_DATA__ = {
           "duration": 1,
           "children": [],
           "type": "Interaction",
-          "startedAt": "2026-09-10T06:04:06.595Z",
+          "startedAt": "2026-09-10T23:32:37.380Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/api_testing.spec.ts",
             "line": 34,
@@ -473,17 +473,17 @@ window.__SERENITY_REPORT_DATA__ = {
       "executionHistory": [
         {
           "outcome": "SUCCESS",
-          "run": "2593",
-          "timestamp": "2026-09-10T06:03:37.392Z",
-          "duration": 453,
+          "run": "2596",
+          "timestamp": "2026-09-10T23:32:10.651Z",
+          "duration": 406,
           "activities": [
             {
               "name": "Alice sends a GET request to '/todos/1'",
               "outcome": "SUCCESS",
-              "duration": 118,
+              "duration": 58,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:04:06.450Z",
+              "startedAt": "2026-09-10T23:32:37.297Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/api_testing.spec.ts",
                 "line": 32,
@@ -491,7 +491,7 @@ window.__SERENITY_REPORT_DATA__ = {
               },
               "artifacts": [
                 {
-                  "path": "test-runs/2593/serenity-js-playwright-test-template-1/artifact-get-https---jsonplaceholder-typicode-com-todos-1-fc2334a378.json",
+                  "path": "test-runs/2596/serenity-js-playwright-test-template-1/artifact-get-https---jsonplaceholder-typicode-com-todos-1-38c93a57b7.json",
                   "type": "screenshot"
                 }
               ],
@@ -500,7 +500,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 "url": "https://jsonplaceholder.typicode.com/todos/1",
                 "requestHeaders": "Accept: application/json, text/plain, */*\nUser-Agent: axios/1.20.0\nAccept-Encoding: gzip, compress, deflate, br",
                 "statusCode": 200,
-                "responseHeaders": "date: Thu, 10 Sep 2026 06:04:06 GMT\ncontent-type: application/json; charset=utf-8\ntransfer-encoding: chunked\nconnection: close\naccess-control-allow-credentials: true\ncache-control: max-age=43200\netag: W/\"53-hfEnumeNh6YirfjyjaujcOPPT+s\"\nexpires: -1\nnel: {\"report_to\":\"heroku-nel\",\"response_headers\":[\"Via\"],\"max_age\":3600,\"success_fraction\":0.01,\"failure_fraction\":0.1}\npragma: no-cache\nreport-to: {\"group\":\"heroku-nel\",\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?s=UyhbZ%2F0MO1mJoZS7M4Hj8SWBXp3NkwnJgHEYoqocyDE%3D\\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\\u0026ts=1785191026\"}],\"max_age\":3600}\nreporting-endpoints: heroku-nel=\"https://nel.heroku.com/reports?s=UyhbZ%2F0MO1mJoZS7M4Hj8SWBXp3NkwnJgHEYoqocyDE%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1785191026\"\nserver: cloudflare\nvary: Origin, Accept-Encoding\nvia: 2.0 heroku-router\nx-content-type-options: nosniff\nx-powered-by: Express\nx-ratelimit-limit: 1000\nx-ratelimit-remaining: 999\nx-ratelimit-reset: 1785191063\nage: 13998\ncf-cache-status: HIT\ncf-ray: a38c3bbcee31277d-SEA\nalt-svc: h3=\":443\"; ma=86400",
+                "responseHeaders": "date: Thu, 10 Sep 2026 23:32:37 GMT\ncontent-type: application/json; charset=utf-8\ntransfer-encoding: chunked\nconnection: close\naccess-control-allow-credentials: true\ncache-control: max-age=43200\netag: W/\"53-hfEnumeNh6YirfjyjaujcOPPT+s\"\nexpires: -1\nnel: {\"report_to\":\"heroku-nel\",\"response_headers\":[\"Via\"],\"max_age\":3600,\"success_fraction\":0.01,\"failure_fraction\":0.1}\npragma: no-cache\nreport-to: {\"group\":\"heroku-nel\",\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?s=6OD5Ma7Hf8sxRkmZQ%2FUwG5GvjVELY1G1N1c9ZRZ0AF4%3D\\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\\u0026ts=1785164981\"}],\"max_age\":3600}\nreporting-endpoints: heroku-nel=\"https://nel.heroku.com/reports?s=6OD5Ma7Hf8sxRkmZQ%2FUwG5GvjVELY1G1N1c9ZRZ0AF4%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1785164981\"\nserver: cloudflare\nvary: Origin, Accept-Encoding\nvia: 2.0 heroku-router\nx-content-type-options: nosniff\nx-powered-by: Express\nx-ratelimit-limit: 1000\nx-ratelimit-remaining: 999\nx-ratelimit-reset: 1785165020\nage: 6637\ncf-cache-status: HIT\ncf-ray: a3923ba56d7f23cc-IAD\nalt-svc: h3=\":443\"; ma=86400",
                 "responseBody": "{\n    \"userId\": 1,\n    \"id\": 1,\n    \"title\": \"delectus aut autem\",\n    \"completed\": false\n}"
               }
             },
@@ -510,7 +510,7 @@ window.__SERENITY_REPORT_DATA__ = {
               "duration": 2,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:04:06.581Z",
+              "startedAt": "2026-09-10T23:32:37.367Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/api_testing.spec.ts",
                 "line": 33,
@@ -523,7 +523,7 @@ window.__SERENITY_REPORT_DATA__ = {
               "duration": 1,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:04:06.595Z",
+              "startedAt": "2026-09-10T23:32:37.380Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/api_testing.spec.ts",
                 "line": 34,
@@ -570,8 +570,8 @@ window.__SERENITY_REPORT_DATA__ = {
       "name": "GitHub Pages should check the state of the system before interacting with the UI",
       "category": "Blended Testing",
       "outcome": "SUCCESS",
-      "duration": 1028,
-      "startedAt": "2026-09-10T06:03:37.959Z",
+      "duration": 869,
+      "startedAt": "2026-09-10T23:32:11.087Z",
       "source": {
         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
         "line": 29
@@ -602,15 +602,15 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Apisitt ensures all GitHub systems are operational",
           "outcome": "SUCCESS",
-          "duration": 139,
+          "duration": 83,
           "children": [
             {
               "name": "Apisitt sends a GET request to 'https://www.githubstatus.com/api/v2/status.json'",
               "outcome": "SUCCESS",
-              "duration": 104,
+              "duration": 50,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:38.014Z",
+              "startedAt": "2026-09-10T23:32:11.141Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
                 "line": 34,
@@ -618,7 +618,7 @@ window.__SERENITY_REPORT_DATA__ = {
               },
               "artifacts": [
                 {
-                  "path": "test-runs/2593/serenity-js-playwright-test-template-1/artifact-get-https---www-githubstatus-com-api-v2-status-json-c45897465f.json",
+                  "path": "test-runs/2596/serenity-js-playwright-test-template-1/artifact-get-https---www-githubstatus-com-api-v2-status-json-5e07109328.json",
                   "type": "screenshot"
                 }
               ],
@@ -627,8 +627,8 @@ window.__SERENITY_REPORT_DATA__ = {
                 "url": "https://www.githubstatus.com/api/v2/status.json",
                 "requestHeaders": "Accept: application/json, text/plain, */*\nUser-Agent: axios/1.20.0\nAccept-Encoding: gzip, compress, deflate, br",
                 "statusCode": 200,
-                "responseHeaders": "content-type: application/json; charset=utf-8\ncontent-length: 215\nconnection: close\ndate: Thu, 10 Sep 2026 06:03:35 GMT\nx-download-options: noopen\nx-permitted-cross-domain-policies: none\nreferrer-policy: strict-origin-when-cross-origin\nx-statuspage-version: a59f71bada693ac6113a7c693930511d729e6b57\nstrict-transport-security: max-age=259200\nx-statuspage-skip-logging: true\naccess-control-allow-origin: *\ncache-control: max-age=10, public, s-maxage=10, stale-while-revalidate=20, stale-if-error=3600\nx-pollinator-metadata-service: status-page-web-pages\nx-runtime: 0.069411\nserver: AtlassianEdge\naccept-ranges: bytes\nx-content-type-options: nosniff\nx-xss-protection: 1; mode=block\natl-traceid: 260c169c14064d3684374e07a2df1285\natl-request-id: 260c169c-1406-4d36-8437-4e07a2df1285\nreport-to: {\"endpoints\": [{\"url\": \"https://dz8aopenkvv6s.cloudfront.net\"}], \"group\": \"endpoint-1\", \"include_subdomains\": true, \"max_age\": 600}\nnel: {\"failure_fraction\": 0.01, \"include_subdomains\": true, \"max_age\": 600, \"report_to\": \"endpoint-1\"}\netag: W/\"bdcf12ca5c4aeb13aa47c63b882ecd0e\"\nvary: Accept,Accept-Encoding\nx-cache: Hit from cloudfront\nvia: 1.1 6e2bc93a4843a846b5ce18c78a0ee2a8.cloudfront.net (CloudFront)\nx-amz-cf-pop: SFO5-P1\nx-amz-cf-id: 7sbzG8BJvjvsciMKrO5blRQ8Erm1hrHxuWJZLgi94n7gl_iYbrNvpw==\nage: 3",
-                "responseBody": "{\n    \"page\": {\n        \"id\": \"kctbh9vrtdwd\",\n        \"name\": \"GitHub\",\n        \"url\": \"https://www.githubstatus.com\",\n        \"time_zone\": \"Etc/UTC\",\n        \"updated_at\": \"2026-09-10T04:59:03.553Z\"\n    },\n    \"status\": {\n        \"indicator\": \"none\",\n        \"description\": \"All Systems Operational\"\n    }\n}"
+                "responseHeaders": "content-type: application/json; charset=utf-8\ncontent-length: 215\nconnection: close\ndate: Thu, 10 Sep 2026 23:32:00 GMT\nx-download-options: noopen\nx-permitted-cross-domain-policies: none\nreferrer-policy: strict-origin-when-cross-origin\nx-statuspage-version: a59f71bada693ac6113a7c693930511d729e6b57\nstrict-transport-security: max-age=259200\nx-statuspage-skip-logging: true\naccess-control-allow-origin: *\ncache-control: max-age=10, public, s-maxage=10, stale-while-revalidate=20, stale-if-error=3600\nx-pollinator-metadata-service: status-page-web-pages\nx-runtime: 0.057361\nserver: AtlassianEdge\naccept-ranges: bytes\nx-content-type-options: nosniff\nx-xss-protection: 1; mode=block\natl-traceid: 4ac4be8d82bc4b398395c982bae537fc\natl-request-id: 4ac4be8d-82bc-4b39-8395-c982bae537fc\nreport-to: {\"endpoints\": [{\"url\": \"https://dz8aopenkvv6s.cloudfront.net\"}], \"group\": \"endpoint-1\", \"include_subdomains\": true, \"max_age\": 600}\nnel: {\"failure_fraction\": 0.01, \"include_subdomains\": true, \"max_age\": 600, \"report_to\": \"endpoint-1\"}\netag: W/\"bf83d239667432d4158b680ef38f5752\"\nvary: Accept,Accept-Encoding\nx-cache: Hit from cloudfront\nvia: 1.1 6c1ad5735448633ec32f42aeac09a99e.cloudfront.net (CloudFront)\nx-amz-cf-pop: IAD12-P5\nx-amz-cf-id: QLfcGLuDabGeUXeNnZOQASePxGsSzZp6VXwHTUmsJHTpFVLVm1FkvQ==\nage: 11",
+                "responseBody": "{\n    \"page\": {\n        \"id\": \"kctbh9vrtdwd\",\n        \"name\": \"GitHub\",\n        \"url\": \"https://www.githubstatus.com\",\n        \"time_zone\": \"Etc/UTC\",\n        \"updated_at\": \"2026-09-10T22:04:06.087Z\"\n    },\n    \"status\": {\n        \"indicator\": \"none\",\n        \"description\": \"All Systems Operational\"\n    }\n}"
               }
             },
             {
@@ -637,7 +637,7 @@ window.__SERENITY_REPORT_DATA__ = {
               "duration": 1,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:38.129Z",
+              "startedAt": "2026-09-10T23:32:11.201Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
                 "line": 34,
@@ -650,7 +650,7 @@ window.__SERENITY_REPORT_DATA__ = {
               "duration": 1,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:38.141Z",
+              "startedAt": "2026-09-10T23:32:11.212Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
                 "line": 34,
@@ -659,7 +659,7 @@ window.__SERENITY_REPORT_DATA__ = {
             }
           ],
           "type": "Task",
-          "startedAt": "2026-09-10T06:03:38.014Z",
+          "startedAt": "2026-09-10T23:32:11.141Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
             "line": 34,
@@ -669,15 +669,15 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Wendy starts with an empty todo list",
           "outcome": "SUCCESS",
-          "duration": 572,
+          "duration": 503,
           "children": [
             {
               "name": "Wendy navigates to \"/\"",
               "outcome": "SUCCESS",
-              "duration": 543,
+              "duration": 465,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:38.205Z",
+              "startedAt": "2026-09-10T23:32:11.272Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
                 "line": 39,
@@ -687,10 +687,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Wendy ensures that website title does equal \"Serenity/JS TodoApp\"",
               "outcome": "SUCCESS",
-              "duration": 8,
+              "duration": 16,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:38.758Z",
+              "startedAt": "2026-09-10T23:32:11.748Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
                 "line": 39,
@@ -699,7 +699,7 @@ window.__SERENITY_REPORT_DATA__ = {
             }
           ],
           "type": "Task",
-          "startedAt": "2026-09-10T06:03:38.204Z",
+          "startedAt": "2026-09-10T23:32:11.271Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
             "line": 39,
@@ -709,15 +709,15 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Wendy records an item called \"Feed the cat\"",
           "outcome": "SUCCESS",
-          "duration": 145,
+          "duration": 125,
           "children": [
             {
               "name": "Wendy enters \"Feed the cat\" into \"What needs to be done?\" input box",
               "outcome": "SUCCESS",
-              "duration": 44,
+              "duration": 38,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:38.788Z",
+              "startedAt": "2026-09-10T23:32:11.785Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                 "line": 12,
@@ -727,10 +727,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Wendy presses key Enter in \"What needs to be done?\" input box",
               "outcome": "SUCCESS",
-              "duration": 43,
+              "duration": 33,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:38.842Z",
+              "startedAt": "2026-09-10T23:32:11.834Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                 "line": 13,
@@ -740,10 +740,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Wendy waits until displayed items does contain \"Feed the cat\"",
               "outcome": "SUCCESS",
-              "duration": 24,
+              "duration": 22,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:38.898Z",
+              "startedAt": "2026-09-10T23:32:11.878Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
                 "line": 40,
@@ -752,7 +752,7 @@ window.__SERENITY_REPORT_DATA__ = {
             }
           ],
           "type": "Task",
-          "startedAt": "2026-09-10T06:03:38.787Z",
+          "startedAt": "2026-09-10T23:32:11.785Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
             "line": 40,
@@ -762,10 +762,10 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Wendy ensures that displayed items does equal [ \"Feed the cat\" ]",
           "outcome": "SUCCESS",
-          "duration": 7,
+          "duration": 5,
           "children": [],
           "type": "Interaction",
-          "startedAt": "2026-09-10T06:03:38.943Z",
+          "startedAt": "2026-09-10T23:32:11.921Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
             "line": 41,
@@ -776,22 +776,22 @@ window.__SERENITY_REPORT_DATA__ = {
       "executionHistory": [
         {
           "outcome": "SUCCESS",
-          "run": "2593",
-          "timestamp": "2026-09-10T06:03:37.392Z",
-          "duration": 1028,
+          "run": "2596",
+          "timestamp": "2026-09-10T23:32:10.651Z",
+          "duration": 869,
           "activities": [
             {
               "name": "Apisitt ensures all GitHub systems are operational",
               "outcome": "SUCCESS",
-              "duration": 139,
+              "duration": 83,
               "children": [
                 {
                   "name": "Apisitt sends a GET request to 'https://www.githubstatus.com/api/v2/status.json'",
                   "outcome": "SUCCESS",
-                  "duration": 104,
+                  "duration": 50,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:38.014Z",
+                  "startedAt": "2026-09-10T23:32:11.141Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
                     "line": 34,
@@ -799,7 +799,7 @@ window.__SERENITY_REPORT_DATA__ = {
                   },
                   "artifacts": [
                     {
-                      "path": "test-runs/2593/serenity-js-playwright-test-template-1/artifact-get-https---www-githubstatus-com-api-v2-status-json-c45897465f.json",
+                      "path": "test-runs/2596/serenity-js-playwright-test-template-1/artifact-get-https---www-githubstatus-com-api-v2-status-json-5e07109328.json",
                       "type": "screenshot"
                     }
                   ],
@@ -808,8 +808,8 @@ window.__SERENITY_REPORT_DATA__ = {
                     "url": "https://www.githubstatus.com/api/v2/status.json",
                     "requestHeaders": "Accept: application/json, text/plain, */*\nUser-Agent: axios/1.20.0\nAccept-Encoding: gzip, compress, deflate, br",
                     "statusCode": 200,
-                    "responseHeaders": "content-type: application/json; charset=utf-8\ncontent-length: 215\nconnection: close\ndate: Thu, 10 Sep 2026 06:03:35 GMT\nx-download-options: noopen\nx-permitted-cross-domain-policies: none\nreferrer-policy: strict-origin-when-cross-origin\nx-statuspage-version: a59f71bada693ac6113a7c693930511d729e6b57\nstrict-transport-security: max-age=259200\nx-statuspage-skip-logging: true\naccess-control-allow-origin: *\ncache-control: max-age=10, public, s-maxage=10, stale-while-revalidate=20, stale-if-error=3600\nx-pollinator-metadata-service: status-page-web-pages\nx-runtime: 0.069411\nserver: AtlassianEdge\naccept-ranges: bytes\nx-content-type-options: nosniff\nx-xss-protection: 1; mode=block\natl-traceid: 260c169c14064d3684374e07a2df1285\natl-request-id: 260c169c-1406-4d36-8437-4e07a2df1285\nreport-to: {\"endpoints\": [{\"url\": \"https://dz8aopenkvv6s.cloudfront.net\"}], \"group\": \"endpoint-1\", \"include_subdomains\": true, \"max_age\": 600}\nnel: {\"failure_fraction\": 0.01, \"include_subdomains\": true, \"max_age\": 600, \"report_to\": \"endpoint-1\"}\netag: W/\"bdcf12ca5c4aeb13aa47c63b882ecd0e\"\nvary: Accept,Accept-Encoding\nx-cache: Hit from cloudfront\nvia: 1.1 6e2bc93a4843a846b5ce18c78a0ee2a8.cloudfront.net (CloudFront)\nx-amz-cf-pop: SFO5-P1\nx-amz-cf-id: 7sbzG8BJvjvsciMKrO5blRQ8Erm1hrHxuWJZLgi94n7gl_iYbrNvpw==\nage: 3",
-                    "responseBody": "{\n    \"page\": {\n        \"id\": \"kctbh9vrtdwd\",\n        \"name\": \"GitHub\",\n        \"url\": \"https://www.githubstatus.com\",\n        \"time_zone\": \"Etc/UTC\",\n        \"updated_at\": \"2026-09-10T04:59:03.553Z\"\n    },\n    \"status\": {\n        \"indicator\": \"none\",\n        \"description\": \"All Systems Operational\"\n    }\n}"
+                    "responseHeaders": "content-type: application/json; charset=utf-8\ncontent-length: 215\nconnection: close\ndate: Thu, 10 Sep 2026 23:32:00 GMT\nx-download-options: noopen\nx-permitted-cross-domain-policies: none\nreferrer-policy: strict-origin-when-cross-origin\nx-statuspage-version: a59f71bada693ac6113a7c693930511d729e6b57\nstrict-transport-security: max-age=259200\nx-statuspage-skip-logging: true\naccess-control-allow-origin: *\ncache-control: max-age=10, public, s-maxage=10, stale-while-revalidate=20, stale-if-error=3600\nx-pollinator-metadata-service: status-page-web-pages\nx-runtime: 0.057361\nserver: AtlassianEdge\naccept-ranges: bytes\nx-content-type-options: nosniff\nx-xss-protection: 1; mode=block\natl-traceid: 4ac4be8d82bc4b398395c982bae537fc\natl-request-id: 4ac4be8d-82bc-4b39-8395-c982bae537fc\nreport-to: {\"endpoints\": [{\"url\": \"https://dz8aopenkvv6s.cloudfront.net\"}], \"group\": \"endpoint-1\", \"include_subdomains\": true, \"max_age\": 600}\nnel: {\"failure_fraction\": 0.01, \"include_subdomains\": true, \"max_age\": 600, \"report_to\": \"endpoint-1\"}\netag: W/\"bf83d239667432d4158b680ef38f5752\"\nvary: Accept,Accept-Encoding\nx-cache: Hit from cloudfront\nvia: 1.1 6c1ad5735448633ec32f42aeac09a99e.cloudfront.net (CloudFront)\nx-amz-cf-pop: IAD12-P5\nx-amz-cf-id: QLfcGLuDabGeUXeNnZOQASePxGsSzZp6VXwHTUmsJHTpFVLVm1FkvQ==\nage: 11",
+                    "responseBody": "{\n    \"page\": {\n        \"id\": \"kctbh9vrtdwd\",\n        \"name\": \"GitHub\",\n        \"url\": \"https://www.githubstatus.com\",\n        \"time_zone\": \"Etc/UTC\",\n        \"updated_at\": \"2026-09-10T22:04:06.087Z\"\n    },\n    \"status\": {\n        \"indicator\": \"none\",\n        \"description\": \"All Systems Operational\"\n    }\n}"
                   }
                 },
                 {
@@ -818,7 +818,7 @@ window.__SERENITY_REPORT_DATA__ = {
                   "duration": 1,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:38.129Z",
+                  "startedAt": "2026-09-10T23:32:11.201Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
                     "line": 34,
@@ -831,7 +831,7 @@ window.__SERENITY_REPORT_DATA__ = {
                   "duration": 1,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:38.141Z",
+                  "startedAt": "2026-09-10T23:32:11.212Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
                     "line": 34,
@@ -840,7 +840,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:03:38.014Z",
+              "startedAt": "2026-09-10T23:32:11.141Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
                 "line": 34,
@@ -850,15 +850,15 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Wendy starts with an empty todo list",
               "outcome": "SUCCESS",
-              "duration": 572,
+              "duration": 503,
               "children": [
                 {
                   "name": "Wendy navigates to \"/\"",
                   "outcome": "SUCCESS",
-                  "duration": 543,
+                  "duration": 465,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:38.205Z",
+                  "startedAt": "2026-09-10T23:32:11.272Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
                     "line": 39,
@@ -868,10 +868,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Wendy ensures that website title does equal \"Serenity/JS TodoApp\"",
                   "outcome": "SUCCESS",
-                  "duration": 8,
+                  "duration": 16,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:38.758Z",
+                  "startedAt": "2026-09-10T23:32:11.748Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
                     "line": 39,
@@ -880,7 +880,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:03:38.204Z",
+              "startedAt": "2026-09-10T23:32:11.271Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
                 "line": 39,
@@ -890,15 +890,15 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Wendy records an item called \"Feed the cat\"",
               "outcome": "SUCCESS",
-              "duration": 145,
+              "duration": 125,
               "children": [
                 {
                   "name": "Wendy enters \"Feed the cat\" into \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 44,
+                  "duration": 38,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:38.788Z",
+                  "startedAt": "2026-09-10T23:32:11.785Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 12,
@@ -908,10 +908,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Wendy presses key Enter in \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 43,
+                  "duration": 33,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:38.842Z",
+                  "startedAt": "2026-09-10T23:32:11.834Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 13,
@@ -921,10 +921,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Wendy waits until displayed items does contain \"Feed the cat\"",
                   "outcome": "SUCCESS",
-                  "duration": 24,
+                  "duration": 22,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:38.898Z",
+                  "startedAt": "2026-09-10T23:32:11.878Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
                     "line": 40,
@@ -933,7 +933,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:03:38.787Z",
+              "startedAt": "2026-09-10T23:32:11.785Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
                 "line": 40,
@@ -943,10 +943,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Wendy ensures that displayed items does equal [ \"Feed the cat\" ]",
               "outcome": "SUCCESS",
-              "duration": 7,
+              "duration": 5,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:38.943Z",
+              "startedAt": "2026-09-10T23:32:11.921Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
                 "line": 41,
@@ -1022,8 +1022,8 @@ window.__SERENITY_REPORT_DATA__ = {
       "name": "GitHub Pages should check the state of the system before interacting with the UI",
       "category": "Blended Testing",
       "outcome": "SUCCESS",
-      "duration": 1195,
-      "startedAt": "2026-09-10T06:03:48.834Z",
+      "duration": 1156,
+      "startedAt": "2026-09-10T23:32:21.091Z",
       "source": {
         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
         "line": 29
@@ -1054,15 +1054,15 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Apisitt ensures all GitHub systems are operational",
           "outcome": "SUCCESS",
-          "duration": 61,
+          "duration": 64,
           "children": [
             {
               "name": "Apisitt sends a GET request to 'https://www.githubstatus.com/api/v2/status.json'",
               "outcome": "SUCCESS",
-              "duration": 23,
+              "duration": 27,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:49.081Z",
+              "startedAt": "2026-09-10T23:32:21.472Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
                 "line": 34,
@@ -1070,7 +1070,7 @@ window.__SERENITY_REPORT_DATA__ = {
               },
               "artifacts": [
                 {
-                  "path": "test-runs/2593/serenity-js-playwright-test-template-1/artifact-get-https---www-githubstatus-com-api-v2-status-json-7940dde0ad.json",
+                  "path": "test-runs/2596/serenity-js-playwright-test-template-1/artifact-get-https---www-githubstatus-com-api-v2-status-json-46c3b28a92.json",
                   "type": "screenshot"
                 }
               ],
@@ -1079,17 +1079,17 @@ window.__SERENITY_REPORT_DATA__ = {
                 "url": "https://www.githubstatus.com/api/v2/status.json",
                 "requestHeaders": "Accept: application/json, text/plain, */*\nUser-Agent: axios/1.20.0\nAccept-Encoding: gzip, compress, deflate, br",
                 "statusCode": 200,
-                "responseHeaders": "content-type: application/json; charset=utf-8\ncontent-length: 215\nconnection: close\ndate: Thu, 10 Sep 2026 06:03:35 GMT\nx-download-options: noopen\nx-permitted-cross-domain-policies: none\nreferrer-policy: strict-origin-when-cross-origin\nx-statuspage-version: a59f71bada693ac6113a7c693930511d729e6b57\nstrict-transport-security: max-age=259200\nx-statuspage-skip-logging: true\naccess-control-allow-origin: *\ncache-control: max-age=10, public, s-maxage=10, stale-while-revalidate=20, stale-if-error=3600\nx-pollinator-metadata-service: status-page-web-pages\nx-runtime: 0.069411\nserver: AtlassianEdge\naccept-ranges: bytes\nx-content-type-options: nosniff\nx-xss-protection: 1; mode=block\natl-traceid: 260c169c14064d3684374e07a2df1285\natl-request-id: 260c169c-1406-4d36-8437-4e07a2df1285\nreport-to: {\"endpoints\": [{\"url\": \"https://dz8aopenkvv6s.cloudfront.net\"}], \"group\": \"endpoint-1\", \"include_subdomains\": true, \"max_age\": 600}\nnel: {\"failure_fraction\": 0.01, \"include_subdomains\": true, \"max_age\": 600, \"report_to\": \"endpoint-1\"}\netag: W/\"bdcf12ca5c4aeb13aa47c63b882ecd0e\"\nvary: Accept,Accept-Encoding\nx-cache: Hit from cloudfront\nvia: 1.1 2d8f89e435b7eede72670d12f5184086.cloudfront.net (CloudFront)\nx-amz-cf-pop: SFO5-P1\nalt-svc: h3=\":443\"; ma=86400\nx-amz-cf-id: WJXCKz3fNcvZynNSMFweK-caugPs7aN3BvTrjpuSBpTq6xgPgRJqJQ==\nage: 14",
-                "responseBody": "{\n    \"page\": {\n        \"id\": \"kctbh9vrtdwd\",\n        \"name\": \"GitHub\",\n        \"url\": \"https://www.githubstatus.com\",\n        \"time_zone\": \"Etc/UTC\",\n        \"updated_at\": \"2026-09-10T04:59:03.553Z\"\n    },\n    \"status\": {\n        \"indicator\": \"none\",\n        \"description\": \"All Systems Operational\"\n    }\n}"
+                "responseHeaders": "content-type: application/json; charset=utf-8\ncontent-length: 215\nconnection: close\ndate: Thu, 10 Sep 2026 23:32:11 GMT\nx-download-options: noopen\nx-permitted-cross-domain-policies: none\nreferrer-policy: strict-origin-when-cross-origin\nx-statuspage-version: a59f71bada693ac6113a7c693930511d729e6b57\nx-statuspage-skip-logging: true\naccess-control-allow-origin: *\ncache-control: max-age=10, public, s-maxage=10, stale-while-revalidate=20, stale-if-error=3600\nx-pollinator-metadata-service: status-page-web-pages\nx-runtime: 0.055566\nstrict-transport-security: max-age=259200\nserver: AtlassianEdge\naccept-ranges: bytes\nx-content-type-options: nosniff\nx-xss-protection: 1; mode=block\natl-traceid: d290c9087b834988b4cbdcd6266b42b1\natl-request-id: d290c908-7b83-4988-b4cb-dcd6266b42b1\nreport-to: {\"endpoints\": [{\"url\": \"https://dz8aopenkvv6s.cloudfront.net\"}], \"group\": \"endpoint-1\", \"include_subdomains\": true, \"max_age\": 600}\nnel: {\"failure_fraction\": 0.01, \"include_subdomains\": true, \"max_age\": 600, \"report_to\": \"endpoint-1\"}\netag: W/\"bf83d239667432d4158b680ef38f5752\"\nvary: Accept,Accept-Encoding\nx-cache: Hit from cloudfront\nvia: 1.1 d595bd24206cf641f8d0993f4b0f9b80.cloudfront.net (CloudFront)\nx-amz-cf-pop: IAD12-P5\nalt-svc: h3=\":443\"; ma=86400\nx-amz-cf-id: lsxnX6yFp_iPuzqrsae9bReEVoDSska6XUME_hQGOHNr-uz1nIojjQ==\nage: 10",
+                "responseBody": "{\n    \"page\": {\n        \"id\": \"kctbh9vrtdwd\",\n        \"name\": \"GitHub\",\n        \"url\": \"https://www.githubstatus.com\",\n        \"time_zone\": \"Etc/UTC\",\n        \"updated_at\": \"2026-09-10T22:04:06.087Z\"\n    },\n    \"status\": {\n        \"indicator\": \"none\",\n        \"description\": \"All Systems Operational\"\n    }\n}"
               }
             },
             {
               "name": "Apisitt ensures that the status of the last response does equal 200",
               "outcome": "SUCCESS",
-              "duration": 2,
+              "duration": 1,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:49.115Z",
+              "startedAt": "2026-09-10T23:32:21.511Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
                 "line": 34,
@@ -1099,10 +1099,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Apisitt ensures that GitHub Status does equal \"All Systems Operational\"",
               "outcome": "SUCCESS",
-              "duration": 3,
+              "duration": 1,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:49.128Z",
+              "startedAt": "2026-09-10T23:32:21.523Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
                 "line": 34,
@@ -1111,7 +1111,7 @@ window.__SERENITY_REPORT_DATA__ = {
             }
           ],
           "type": "Task",
-          "startedAt": "2026-09-10T06:03:49.081Z",
+          "startedAt": "2026-09-10T23:32:21.471Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
             "line": 34,
@@ -1121,15 +1121,15 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Wendy starts with an empty todo list",
           "outcome": "SUCCESS",
-          "duration": 604,
+          "duration": 461,
           "children": [
             {
               "name": "Wendy navigates to \"/\"",
               "outcome": "SUCCESS",
-              "duration": 381,
+              "duration": 432,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:49.202Z",
+              "startedAt": "2026-09-10T23:32:21.572Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
                 "line": 39,
@@ -1139,10 +1139,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Wendy ensures that website title does equal \"Serenity/JS TodoApp\"",
               "outcome": "SUCCESS",
-              "duration": 201,
+              "duration": 7,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:49.594Z",
+              "startedAt": "2026-09-10T23:32:22.015Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
                 "line": 39,
@@ -1151,7 +1151,7 @@ window.__SERENITY_REPORT_DATA__ = {
             }
           ],
           "type": "Task",
-          "startedAt": "2026-09-10T06:03:49.202Z",
+          "startedAt": "2026-09-10T23:32:21.572Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
             "line": 39,
@@ -1161,15 +1161,15 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Wendy records an item called \"Feed the cat\"",
           "outcome": "SUCCESS",
-          "duration": 158,
+          "duration": 163,
           "children": [
             {
               "name": "Wendy enters \"Feed the cat\" into \"What needs to be done?\" input box",
               "outcome": "SUCCESS",
-              "duration": 44,
+              "duration": 43,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:49.817Z",
+              "startedAt": "2026-09-10T23:32:22.044Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                 "line": 12,
@@ -1179,10 +1179,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Wendy presses key Enter in \"What needs to be done?\" input box",
               "outcome": "SUCCESS",
-              "duration": 52,
+              "duration": 50,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:49.871Z",
+              "startedAt": "2026-09-10T23:32:22.097Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                 "line": 13,
@@ -1192,10 +1192,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Wendy waits until displayed items does contain \"Feed the cat\"",
               "outcome": "SUCCESS",
-              "duration": 30,
+              "duration": 37,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:49.934Z",
+              "startedAt": "2026-09-10T23:32:22.158Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
                 "line": 40,
@@ -1204,7 +1204,7 @@ window.__SERENITY_REPORT_DATA__ = {
             }
           ],
           "type": "Task",
-          "startedAt": "2026-09-10T06:03:49.816Z",
+          "startedAt": "2026-09-10T23:32:22.043Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
             "line": 40,
@@ -1217,7 +1217,7 @@ window.__SERENITY_REPORT_DATA__ = {
           "duration": 9,
           "children": [],
           "type": "Interaction",
-          "startedAt": "2026-09-10T06:03:49.985Z",
+          "startedAt": "2026-09-10T23:32:22.216Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
             "line": 41,
@@ -1228,22 +1228,22 @@ window.__SERENITY_REPORT_DATA__ = {
       "executionHistory": [
         {
           "outcome": "SUCCESS",
-          "run": "2593",
-          "timestamp": "2026-09-10T06:03:37.392Z",
-          "duration": 1195,
+          "run": "2596",
+          "timestamp": "2026-09-10T23:32:10.651Z",
+          "duration": 1156,
           "activities": [
             {
               "name": "Apisitt ensures all GitHub systems are operational",
               "outcome": "SUCCESS",
-              "duration": 61,
+              "duration": 64,
               "children": [
                 {
                   "name": "Apisitt sends a GET request to 'https://www.githubstatus.com/api/v2/status.json'",
                   "outcome": "SUCCESS",
-                  "duration": 23,
+                  "duration": 27,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:49.081Z",
+                  "startedAt": "2026-09-10T23:32:21.472Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
                     "line": 34,
@@ -1251,7 +1251,7 @@ window.__SERENITY_REPORT_DATA__ = {
                   },
                   "artifacts": [
                     {
-                      "path": "test-runs/2593/serenity-js-playwright-test-template-1/artifact-get-https---www-githubstatus-com-api-v2-status-json-7940dde0ad.json",
+                      "path": "test-runs/2596/serenity-js-playwright-test-template-1/artifact-get-https---www-githubstatus-com-api-v2-status-json-46c3b28a92.json",
                       "type": "screenshot"
                     }
                   ],
@@ -1260,17 +1260,17 @@ window.__SERENITY_REPORT_DATA__ = {
                     "url": "https://www.githubstatus.com/api/v2/status.json",
                     "requestHeaders": "Accept: application/json, text/plain, */*\nUser-Agent: axios/1.20.0\nAccept-Encoding: gzip, compress, deflate, br",
                     "statusCode": 200,
-                    "responseHeaders": "content-type: application/json; charset=utf-8\ncontent-length: 215\nconnection: close\ndate: Thu, 10 Sep 2026 06:03:35 GMT\nx-download-options: noopen\nx-permitted-cross-domain-policies: none\nreferrer-policy: strict-origin-when-cross-origin\nx-statuspage-version: a59f71bada693ac6113a7c693930511d729e6b57\nstrict-transport-security: max-age=259200\nx-statuspage-skip-logging: true\naccess-control-allow-origin: *\ncache-control: max-age=10, public, s-maxage=10, stale-while-revalidate=20, stale-if-error=3600\nx-pollinator-metadata-service: status-page-web-pages\nx-runtime: 0.069411\nserver: AtlassianEdge\naccept-ranges: bytes\nx-content-type-options: nosniff\nx-xss-protection: 1; mode=block\natl-traceid: 260c169c14064d3684374e07a2df1285\natl-request-id: 260c169c-1406-4d36-8437-4e07a2df1285\nreport-to: {\"endpoints\": [{\"url\": \"https://dz8aopenkvv6s.cloudfront.net\"}], \"group\": \"endpoint-1\", \"include_subdomains\": true, \"max_age\": 600}\nnel: {\"failure_fraction\": 0.01, \"include_subdomains\": true, \"max_age\": 600, \"report_to\": \"endpoint-1\"}\netag: W/\"bdcf12ca5c4aeb13aa47c63b882ecd0e\"\nvary: Accept,Accept-Encoding\nx-cache: Hit from cloudfront\nvia: 1.1 2d8f89e435b7eede72670d12f5184086.cloudfront.net (CloudFront)\nx-amz-cf-pop: SFO5-P1\nalt-svc: h3=\":443\"; ma=86400\nx-amz-cf-id: WJXCKz3fNcvZynNSMFweK-caugPs7aN3BvTrjpuSBpTq6xgPgRJqJQ==\nage: 14",
-                    "responseBody": "{\n    \"page\": {\n        \"id\": \"kctbh9vrtdwd\",\n        \"name\": \"GitHub\",\n        \"url\": \"https://www.githubstatus.com\",\n        \"time_zone\": \"Etc/UTC\",\n        \"updated_at\": \"2026-09-10T04:59:03.553Z\"\n    },\n    \"status\": {\n        \"indicator\": \"none\",\n        \"description\": \"All Systems Operational\"\n    }\n}"
+                    "responseHeaders": "content-type: application/json; charset=utf-8\ncontent-length: 215\nconnection: close\ndate: Thu, 10 Sep 2026 23:32:11 GMT\nx-download-options: noopen\nx-permitted-cross-domain-policies: none\nreferrer-policy: strict-origin-when-cross-origin\nx-statuspage-version: a59f71bada693ac6113a7c693930511d729e6b57\nx-statuspage-skip-logging: true\naccess-control-allow-origin: *\ncache-control: max-age=10, public, s-maxage=10, stale-while-revalidate=20, stale-if-error=3600\nx-pollinator-metadata-service: status-page-web-pages\nx-runtime: 0.055566\nstrict-transport-security: max-age=259200\nserver: AtlassianEdge\naccept-ranges: bytes\nx-content-type-options: nosniff\nx-xss-protection: 1; mode=block\natl-traceid: d290c9087b834988b4cbdcd6266b42b1\natl-request-id: d290c908-7b83-4988-b4cb-dcd6266b42b1\nreport-to: {\"endpoints\": [{\"url\": \"https://dz8aopenkvv6s.cloudfront.net\"}], \"group\": \"endpoint-1\", \"include_subdomains\": true, \"max_age\": 600}\nnel: {\"failure_fraction\": 0.01, \"include_subdomains\": true, \"max_age\": 600, \"report_to\": \"endpoint-1\"}\netag: W/\"bf83d239667432d4158b680ef38f5752\"\nvary: Accept,Accept-Encoding\nx-cache: Hit from cloudfront\nvia: 1.1 d595bd24206cf641f8d0993f4b0f9b80.cloudfront.net (CloudFront)\nx-amz-cf-pop: IAD12-P5\nalt-svc: h3=\":443\"; ma=86400\nx-amz-cf-id: lsxnX6yFp_iPuzqrsae9bReEVoDSska6XUME_hQGOHNr-uz1nIojjQ==\nage: 10",
+                    "responseBody": "{\n    \"page\": {\n        \"id\": \"kctbh9vrtdwd\",\n        \"name\": \"GitHub\",\n        \"url\": \"https://www.githubstatus.com\",\n        \"time_zone\": \"Etc/UTC\",\n        \"updated_at\": \"2026-09-10T22:04:06.087Z\"\n    },\n    \"status\": {\n        \"indicator\": \"none\",\n        \"description\": \"All Systems Operational\"\n    }\n}"
                   }
                 },
                 {
                   "name": "Apisitt ensures that the status of the last response does equal 200",
                   "outcome": "SUCCESS",
-                  "duration": 2,
+                  "duration": 1,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:49.115Z",
+                  "startedAt": "2026-09-10T23:32:21.511Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
                     "line": 34,
@@ -1280,10 +1280,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Apisitt ensures that GitHub Status does equal \"All Systems Operational\"",
                   "outcome": "SUCCESS",
-                  "duration": 3,
+                  "duration": 1,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:49.128Z",
+                  "startedAt": "2026-09-10T23:32:21.523Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
                     "line": 34,
@@ -1292,7 +1292,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:03:49.081Z",
+              "startedAt": "2026-09-10T23:32:21.471Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
                 "line": 34,
@@ -1302,15 +1302,15 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Wendy starts with an empty todo list",
               "outcome": "SUCCESS",
-              "duration": 604,
+              "duration": 461,
               "children": [
                 {
                   "name": "Wendy navigates to \"/\"",
                   "outcome": "SUCCESS",
-                  "duration": 381,
+                  "duration": 432,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:49.202Z",
+                  "startedAt": "2026-09-10T23:32:21.572Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
                     "line": 39,
@@ -1320,10 +1320,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Wendy ensures that website title does equal \"Serenity/JS TodoApp\"",
                   "outcome": "SUCCESS",
-                  "duration": 201,
+                  "duration": 7,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:49.594Z",
+                  "startedAt": "2026-09-10T23:32:22.015Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
                     "line": 39,
@@ -1332,7 +1332,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:03:49.202Z",
+              "startedAt": "2026-09-10T23:32:21.572Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
                 "line": 39,
@@ -1342,15 +1342,15 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Wendy records an item called \"Feed the cat\"",
               "outcome": "SUCCESS",
-              "duration": 158,
+              "duration": 163,
               "children": [
                 {
                   "name": "Wendy enters \"Feed the cat\" into \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 44,
+                  "duration": 43,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:49.817Z",
+                  "startedAt": "2026-09-10T23:32:22.044Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 12,
@@ -1360,10 +1360,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Wendy presses key Enter in \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 52,
+                  "duration": 50,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:49.871Z",
+                  "startedAt": "2026-09-10T23:32:22.097Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 13,
@@ -1373,10 +1373,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Wendy waits until displayed items does contain \"Feed the cat\"",
                   "outcome": "SUCCESS",
-                  "duration": 30,
+                  "duration": 37,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:49.934Z",
+                  "startedAt": "2026-09-10T23:32:22.158Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
                     "line": 40,
@@ -1385,7 +1385,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:03:49.816Z",
+              "startedAt": "2026-09-10T23:32:22.043Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
                 "line": 40,
@@ -1398,7 +1398,7 @@ window.__SERENITY_REPORT_DATA__ = {
               "duration": 9,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:49.985Z",
+              "startedAt": "2026-09-10T23:32:22.216Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
                 "line": 41,
@@ -1474,8 +1474,8 @@ window.__SERENITY_REPORT_DATA__ = {
       "name": "GitHub Pages should check the state of the system before interacting with the UI",
       "category": "Blended Testing",
       "outcome": "SUCCESS",
-      "duration": 874,
-      "startedAt": "2026-09-10T06:04:06.658Z",
+      "duration": 785,
+      "startedAt": "2026-09-10T23:32:37.444Z",
       "source": {
         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
         "line": 29
@@ -1506,15 +1506,15 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Apisitt ensures all GitHub systems are operational",
           "outcome": "SUCCESS",
-          "duration": 58,
+          "duration": 67,
           "children": [
             {
               "name": "Apisitt sends a GET request to 'https://www.githubstatus.com/api/v2/status.json'",
               "outcome": "SUCCESS",
-              "duration": 21,
+              "duration": 27,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:04:06.896Z",
+              "startedAt": "2026-09-10T23:32:37.643Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
                 "line": 34,
@@ -1522,7 +1522,7 @@ window.__SERENITY_REPORT_DATA__ = {
               },
               "artifacts": [
                 {
-                  "path": "test-runs/2593/serenity-js-playwright-test-template-1/artifact-get-https---www-githubstatus-com-api-v2-status-json-d5ac1a1901.json",
+                  "path": "test-runs/2596/serenity-js-playwright-test-template-1/artifact-get-https---www-githubstatus-com-api-v2-status-json-11c80d7756.json",
                   "type": "screenshot"
                 }
               ],
@@ -1531,17 +1531,17 @@ window.__SERENITY_REPORT_DATA__ = {
                 "url": "https://www.githubstatus.com/api/v2/status.json",
                 "requestHeaders": "Accept: application/json, text/plain, */*\nUser-Agent: axios/1.20.0\nAccept-Encoding: gzip, compress, deflate, br",
                 "statusCode": 200,
-                "responseHeaders": "content-type: application/json; charset=utf-8\ncontent-length: 215\nconnection: close\ndate: Thu, 10 Sep 2026 06:04:05 GMT\nx-download-options: noopen\nx-permitted-cross-domain-policies: none\nreferrer-policy: strict-origin-when-cross-origin\nx-statuspage-version: a59f71bada693ac6113a7c693930511d729e6b57\nstrict-transport-security: max-age=259200\nx-statuspage-skip-logging: true\naccess-control-allow-origin: *\ncache-control: max-age=10, public, s-maxage=10, stale-while-revalidate=20, stale-if-error=3600\nx-pollinator-metadata-service: status-page-web-pages\nx-runtime: 0.054831\nserver: AtlassianEdge\naccept-ranges: bytes\nx-content-type-options: nosniff\nx-xss-protection: 1; mode=block\natl-traceid: 0683cb88fb6340e98edd9211f1fa8d32\natl-request-id: 0683cb88-fb63-40e9-8edd-9211f1fa8d32\nreport-to: {\"endpoints\": [{\"url\": \"https://dz8aopenkvv6s.cloudfront.net\"}], \"group\": \"endpoint-1\", \"include_subdomains\": true, \"max_age\": 600}\nnel: {\"failure_fraction\": 0.01, \"include_subdomains\": true, \"max_age\": 600, \"report_to\": \"endpoint-1\"}\netag: W/\"bdcf12ca5c4aeb13aa47c63b882ecd0e\"\nvary: Accept,Accept-Encoding\nx-cache: Hit from cloudfront\nvia: 1.1 88eccec4c36b443b42b3988f57d3bebe.cloudfront.net (CloudFront)\nx-amz-cf-pop: SFO5-P1\nalt-svc: h3=\":443\"; ma=86400\nx-amz-cf-id: n-i7kdu1A6q5nek6x7bI8sdLRfXLyRChSv-Rt1oWxNSN20cEVQ-MDQ==\nage: 1",
-                "responseBody": "{\n    \"page\": {\n        \"id\": \"kctbh9vrtdwd\",\n        \"name\": \"GitHub\",\n        \"url\": \"https://www.githubstatus.com\",\n        \"time_zone\": \"Etc/UTC\",\n        \"updated_at\": \"2026-09-10T04:59:03.553Z\"\n    },\n    \"status\": {\n        \"indicator\": \"none\",\n        \"description\": \"All Systems Operational\"\n    }\n}"
+                "responseHeaders": "content-type: application/json; charset=utf-8\ntransfer-encoding: chunked\nconnection: close\ndate: Thu, 10 Sep 2026 23:32:21 GMT\nx-download-options: noopen\nx-permitted-cross-domain-policies: none\nreferrer-policy: strict-origin-when-cross-origin\nx-statuspage-version: a59f71bada693ac6113a7c693930511d729e6b57\nx-statuspage-skip-logging: true\naccess-control-allow-origin: *\ncache-control: max-age=10, public, s-maxage=10, stale-while-revalidate=20, stale-if-error=3600\nx-pollinator-metadata-service: status-page-web-pages\nx-runtime: 0.056958\nstrict-transport-security: max-age=259200\nserver: AtlassianEdge\naccept-ranges: bytes\nx-content-type-options: nosniff\nx-xss-protection: 1; mode=block\natl-traceid: 66478e1b4e534623b5c707b0a74f509e\natl-request-id: 66478e1b-4e53-4623-b5c7-07b0a74f509e\nreport-to: {\"endpoints\": [{\"url\": \"https://dz8aopenkvv6s.cloudfront.net\"}], \"group\": \"endpoint-1\", \"include_subdomains\": true, \"max_age\": 600}\nnel: {\"failure_fraction\": 0.01, \"include_subdomains\": true, \"max_age\": 600, \"report_to\": \"endpoint-1\"}\netag: W/\"bf83d239667432d4158b680ef38f5752\"\nvary: Accept,Accept-Encoding\nx-cache: Hit from cloudfront\nvia: 1.1 b227700af62579dd9e3f1b8495ccbf04.cloudfront.net (CloudFront)\nx-amz-cf-pop: IAD12-P5\nalt-svc: h3=\":443\"; ma=86400\nx-amz-cf-id: 2F6GZs3tbgTGHZhb2EvTbkte0Ckr5qyXuv5MMK6WRDGXXhNm_pswRQ==\nage: 16",
+                "responseBody": "{\n    \"page\": {\n        \"id\": \"kctbh9vrtdwd\",\n        \"name\": \"GitHub\",\n        \"url\": \"https://www.githubstatus.com\",\n        \"time_zone\": \"Etc/UTC\",\n        \"updated_at\": \"2026-09-10T22:04:06.087Z\"\n    },\n    \"status\": {\n        \"indicator\": \"none\",\n        \"description\": \"All Systems Operational\"\n    }\n}"
               }
             },
             {
               "name": "Apisitt ensures that the status of the last response does equal 200",
               "outcome": "SUCCESS",
-              "duration": 2,
+              "duration": 3,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:04:06.928Z",
+              "startedAt": "2026-09-10T23:32:37.681Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
                 "line": 34,
@@ -1551,10 +1551,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Apisitt ensures that GitHub Status does equal \"All Systems Operational\"",
               "outcome": "SUCCESS",
-              "duration": 2,
+              "duration": 1,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:04:06.942Z",
+              "startedAt": "2026-09-10T23:32:37.697Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
                 "line": 34,
@@ -1563,7 +1563,7 @@ window.__SERENITY_REPORT_DATA__ = {
             }
           ],
           "type": "Task",
-          "startedAt": "2026-09-10T06:04:06.896Z",
+          "startedAt": "2026-09-10T23:32:37.642Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
             "line": 34,
@@ -1573,15 +1573,15 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Wendy starts with an empty todo list",
           "outcome": "SUCCESS",
-          "duration": 294,
+          "duration": 283,
           "children": [
             {
               "name": "Wendy navigates to \"/\"",
               "outcome": "SUCCESS",
-              "duration": 264,
+              "duration": 250,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:04:07.007Z",
+              "startedAt": "2026-09-10T23:32:37.746Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
                 "line": 39,
@@ -1591,10 +1591,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Wendy ensures that website title does equal \"Serenity/JS TodoApp\"",
               "outcome": "SUCCESS",
-              "duration": 8,
+              "duration": 9,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:04:07.283Z",
+              "startedAt": "2026-09-10T23:32:38.008Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
                 "line": 39,
@@ -1603,7 +1603,7 @@ window.__SERENITY_REPORT_DATA__ = {
             }
           ],
           "type": "Task",
-          "startedAt": "2026-09-10T06:04:07.007Z",
+          "startedAt": "2026-09-10T23:32:37.745Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
             "line": 39,
@@ -1613,7 +1613,7 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Wendy records an item called \"Feed the cat\"",
           "outcome": "SUCCESS",
-          "duration": 171,
+          "duration": 150,
           "children": [
             {
               "name": "Wendy enters \"Feed the cat\" into \"What needs to be done?\" input box",
@@ -1621,7 +1621,7 @@ window.__SERENITY_REPORT_DATA__ = {
               "duration": 46,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:04:07.313Z",
+              "startedAt": "2026-09-10T23:32:38.040Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                 "line": 12,
@@ -1631,10 +1631,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Wendy presses key Enter in \"What needs to be done?\" input box",
               "outcome": "SUCCESS",
-              "duration": 56,
+              "duration": 46,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:04:07.369Z",
+              "startedAt": "2026-09-10T23:32:38.096Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                 "line": 13,
@@ -1644,10 +1644,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Wendy waits until displayed items does contain \"Feed the cat\"",
               "outcome": "SUCCESS",
-              "duration": 37,
+              "duration": 25,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:04:07.436Z",
+              "startedAt": "2026-09-10T23:32:38.154Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
                 "line": 40,
@@ -1656,7 +1656,7 @@ window.__SERENITY_REPORT_DATA__ = {
             }
           ],
           "type": "Task",
-          "startedAt": "2026-09-10T06:04:07.312Z",
+          "startedAt": "2026-09-10T23:32:38.039Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
             "line": 40,
@@ -1666,10 +1666,10 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Wendy ensures that displayed items does equal [ \"Feed the cat\" ]",
           "outcome": "SUCCESS",
-          "duration": 9,
+          "duration": 7,
           "children": [],
           "type": "Interaction",
-          "startedAt": "2026-09-10T06:04:07.494Z",
+          "startedAt": "2026-09-10T23:32:38.199Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
             "line": 41,
@@ -1680,22 +1680,22 @@ window.__SERENITY_REPORT_DATA__ = {
       "executionHistory": [
         {
           "outcome": "SUCCESS",
-          "run": "2593",
-          "timestamp": "2026-09-10T06:03:37.392Z",
-          "duration": 874,
+          "run": "2596",
+          "timestamp": "2026-09-10T23:32:10.651Z",
+          "duration": 785,
           "activities": [
             {
               "name": "Apisitt ensures all GitHub systems are operational",
               "outcome": "SUCCESS",
-              "duration": 58,
+              "duration": 67,
               "children": [
                 {
                   "name": "Apisitt sends a GET request to 'https://www.githubstatus.com/api/v2/status.json'",
                   "outcome": "SUCCESS",
-                  "duration": 21,
+                  "duration": 27,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:04:06.896Z",
+                  "startedAt": "2026-09-10T23:32:37.643Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
                     "line": 34,
@@ -1703,7 +1703,7 @@ window.__SERENITY_REPORT_DATA__ = {
                   },
                   "artifacts": [
                     {
-                      "path": "test-runs/2593/serenity-js-playwright-test-template-1/artifact-get-https---www-githubstatus-com-api-v2-status-json-d5ac1a1901.json",
+                      "path": "test-runs/2596/serenity-js-playwright-test-template-1/artifact-get-https---www-githubstatus-com-api-v2-status-json-11c80d7756.json",
                       "type": "screenshot"
                     }
                   ],
@@ -1712,17 +1712,17 @@ window.__SERENITY_REPORT_DATA__ = {
                     "url": "https://www.githubstatus.com/api/v2/status.json",
                     "requestHeaders": "Accept: application/json, text/plain, */*\nUser-Agent: axios/1.20.0\nAccept-Encoding: gzip, compress, deflate, br",
                     "statusCode": 200,
-                    "responseHeaders": "content-type: application/json; charset=utf-8\ncontent-length: 215\nconnection: close\ndate: Thu, 10 Sep 2026 06:04:05 GMT\nx-download-options: noopen\nx-permitted-cross-domain-policies: none\nreferrer-policy: strict-origin-when-cross-origin\nx-statuspage-version: a59f71bada693ac6113a7c693930511d729e6b57\nstrict-transport-security: max-age=259200\nx-statuspage-skip-logging: true\naccess-control-allow-origin: *\ncache-control: max-age=10, public, s-maxage=10, stale-while-revalidate=20, stale-if-error=3600\nx-pollinator-metadata-service: status-page-web-pages\nx-runtime: 0.054831\nserver: AtlassianEdge\naccept-ranges: bytes\nx-content-type-options: nosniff\nx-xss-protection: 1; mode=block\natl-traceid: 0683cb88fb6340e98edd9211f1fa8d32\natl-request-id: 0683cb88-fb63-40e9-8edd-9211f1fa8d32\nreport-to: {\"endpoints\": [{\"url\": \"https://dz8aopenkvv6s.cloudfront.net\"}], \"group\": \"endpoint-1\", \"include_subdomains\": true, \"max_age\": 600}\nnel: {\"failure_fraction\": 0.01, \"include_subdomains\": true, \"max_age\": 600, \"report_to\": \"endpoint-1\"}\netag: W/\"bdcf12ca5c4aeb13aa47c63b882ecd0e\"\nvary: Accept,Accept-Encoding\nx-cache: Hit from cloudfront\nvia: 1.1 88eccec4c36b443b42b3988f57d3bebe.cloudfront.net (CloudFront)\nx-amz-cf-pop: SFO5-P1\nalt-svc: h3=\":443\"; ma=86400\nx-amz-cf-id: n-i7kdu1A6q5nek6x7bI8sdLRfXLyRChSv-Rt1oWxNSN20cEVQ-MDQ==\nage: 1",
-                    "responseBody": "{\n    \"page\": {\n        \"id\": \"kctbh9vrtdwd\",\n        \"name\": \"GitHub\",\n        \"url\": \"https://www.githubstatus.com\",\n        \"time_zone\": \"Etc/UTC\",\n        \"updated_at\": \"2026-09-10T04:59:03.553Z\"\n    },\n    \"status\": {\n        \"indicator\": \"none\",\n        \"description\": \"All Systems Operational\"\n    }\n}"
+                    "responseHeaders": "content-type: application/json; charset=utf-8\ntransfer-encoding: chunked\nconnection: close\ndate: Thu, 10 Sep 2026 23:32:21 GMT\nx-download-options: noopen\nx-permitted-cross-domain-policies: none\nreferrer-policy: strict-origin-when-cross-origin\nx-statuspage-version: a59f71bada693ac6113a7c693930511d729e6b57\nx-statuspage-skip-logging: true\naccess-control-allow-origin: *\ncache-control: max-age=10, public, s-maxage=10, stale-while-revalidate=20, stale-if-error=3600\nx-pollinator-metadata-service: status-page-web-pages\nx-runtime: 0.056958\nstrict-transport-security: max-age=259200\nserver: AtlassianEdge\naccept-ranges: bytes\nx-content-type-options: nosniff\nx-xss-protection: 1; mode=block\natl-traceid: 66478e1b4e534623b5c707b0a74f509e\natl-request-id: 66478e1b-4e53-4623-b5c7-07b0a74f509e\nreport-to: {\"endpoints\": [{\"url\": \"https://dz8aopenkvv6s.cloudfront.net\"}], \"group\": \"endpoint-1\", \"include_subdomains\": true, \"max_age\": 600}\nnel: {\"failure_fraction\": 0.01, \"include_subdomains\": true, \"max_age\": 600, \"report_to\": \"endpoint-1\"}\netag: W/\"bf83d239667432d4158b680ef38f5752\"\nvary: Accept,Accept-Encoding\nx-cache: Hit from cloudfront\nvia: 1.1 b227700af62579dd9e3f1b8495ccbf04.cloudfront.net (CloudFront)\nx-amz-cf-pop: IAD12-P5\nalt-svc: h3=\":443\"; ma=86400\nx-amz-cf-id: 2F6GZs3tbgTGHZhb2EvTbkte0Ckr5qyXuv5MMK6WRDGXXhNm_pswRQ==\nage: 16",
+                    "responseBody": "{\n    \"page\": {\n        \"id\": \"kctbh9vrtdwd\",\n        \"name\": \"GitHub\",\n        \"url\": \"https://www.githubstatus.com\",\n        \"time_zone\": \"Etc/UTC\",\n        \"updated_at\": \"2026-09-10T22:04:06.087Z\"\n    },\n    \"status\": {\n        \"indicator\": \"none\",\n        \"description\": \"All Systems Operational\"\n    }\n}"
                   }
                 },
                 {
                   "name": "Apisitt ensures that the status of the last response does equal 200",
                   "outcome": "SUCCESS",
-                  "duration": 2,
+                  "duration": 3,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:04:06.928Z",
+                  "startedAt": "2026-09-10T23:32:37.681Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
                     "line": 34,
@@ -1732,10 +1732,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Apisitt ensures that GitHub Status does equal \"All Systems Operational\"",
                   "outcome": "SUCCESS",
-                  "duration": 2,
+                  "duration": 1,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:04:06.942Z",
+                  "startedAt": "2026-09-10T23:32:37.697Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
                     "line": 34,
@@ -1744,7 +1744,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:04:06.896Z",
+              "startedAt": "2026-09-10T23:32:37.642Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
                 "line": 34,
@@ -1754,15 +1754,15 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Wendy starts with an empty todo list",
               "outcome": "SUCCESS",
-              "duration": 294,
+              "duration": 283,
               "children": [
                 {
                   "name": "Wendy navigates to \"/\"",
                   "outcome": "SUCCESS",
-                  "duration": 264,
+                  "duration": 250,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:04:07.007Z",
+                  "startedAt": "2026-09-10T23:32:37.746Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
                     "line": 39,
@@ -1772,10 +1772,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Wendy ensures that website title does equal \"Serenity/JS TodoApp\"",
                   "outcome": "SUCCESS",
-                  "duration": 8,
+                  "duration": 9,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:04:07.283Z",
+                  "startedAt": "2026-09-10T23:32:38.008Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
                     "line": 39,
@@ -1784,7 +1784,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:04:07.007Z",
+              "startedAt": "2026-09-10T23:32:37.745Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
                 "line": 39,
@@ -1794,7 +1794,7 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Wendy records an item called \"Feed the cat\"",
               "outcome": "SUCCESS",
-              "duration": 171,
+              "duration": 150,
               "children": [
                 {
                   "name": "Wendy enters \"Feed the cat\" into \"What needs to be done?\" input box",
@@ -1802,7 +1802,7 @@ window.__SERENITY_REPORT_DATA__ = {
                   "duration": 46,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:04:07.313Z",
+                  "startedAt": "2026-09-10T23:32:38.040Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 12,
@@ -1812,10 +1812,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Wendy presses key Enter in \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 56,
+                  "duration": 46,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:04:07.369Z",
+                  "startedAt": "2026-09-10T23:32:38.096Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 13,
@@ -1825,10 +1825,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Wendy waits until displayed items does contain \"Feed the cat\"",
                   "outcome": "SUCCESS",
-                  "duration": 37,
+                  "duration": 25,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:04:07.436Z",
+                  "startedAt": "2026-09-10T23:32:38.154Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
                     "line": 40,
@@ -1837,7 +1837,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:04:07.312Z",
+              "startedAt": "2026-09-10T23:32:38.039Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
                 "line": 40,
@@ -1847,10 +1847,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Wendy ensures that displayed items does equal [ \"Feed the cat\" ]",
               "outcome": "SUCCESS",
-              "duration": 9,
+              "duration": 7,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:04:07.494Z",
+              "startedAt": "2026-09-10T23:32:38.199Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/blended_testing.spec.ts",
                 "line": 41,
@@ -1926,8 +1926,8 @@ window.__SERENITY_REPORT_DATA__ = {
       "name": "Todo List App supports multiple actors using separate browsers",
       "category": "Multi-actor scenarios",
       "outcome": "SUCCESS",
-      "duration": 1148,
-      "startedAt": "2026-09-10T06:03:39.015Z",
+      "duration": 933,
+      "startedAt": "2026-09-10T23:32:11.979Z",
       "source": {
         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/multi-actor_scenarios.spec.ts",
         "line": 37
@@ -1958,20 +1958,20 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice starts with a list containing 1 items",
           "outcome": "SUCCESS",
-          "duration": 560,
+          "duration": 391,
           "children": [
             {
               "name": "Alice starts with an empty todo list",
               "outcome": "SUCCESS",
-              "duration": 391,
+              "duration": 265,
               "children": [
                 {
                   "name": "Alice navigates to \"/\"",
                   "outcome": "SUCCESS",
-                  "duration": 363,
+                  "duration": 239,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:39.040Z",
+                  "startedAt": "2026-09-10T23:32:12.002Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                     "line": 18,
@@ -1981,10 +1981,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice ensures that website title does equal \"Serenity/JS TodoApp\"",
                   "outcome": "SUCCESS",
-                  "duration": 6,
+                  "duration": 5,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:39.414Z",
+                  "startedAt": "2026-09-10T23:32:12.252Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/multi-actor_scenarios.spec.ts",
                     "line": 39,
@@ -1993,7 +1993,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:03:39.040Z",
+              "startedAt": "2026-09-10T23:32:12.002Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                 "line": 18,
@@ -2003,15 +2003,15 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice records an item called \"Feed the cat\"",
               "outcome": "SUCCESS",
-              "duration": 148,
+              "duration": 104,
               "children": [
                 {
                   "name": "Alice enters \"Feed the cat\" into \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 61,
+                  "duration": 24,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:39.442Z",
+                  "startedAt": "2026-09-10T23:32:12.278Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 12,
@@ -2021,10 +2021,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice presses key Enter in \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 35,
+                  "duration": 29,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:39.514Z",
+                  "startedAt": "2026-09-10T23:32:12.313Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 13,
@@ -2034,10 +2034,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice waits until displayed items does contain \"Feed the cat\"",
                   "outcome": "SUCCESS",
-                  "duration": 19,
+                  "duration": 18,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:39.559Z",
+                  "startedAt": "2026-09-10T23:32:12.353Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                     "line": 19,
@@ -2046,7 +2046,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:03:39.441Z",
+              "startedAt": "2026-09-10T23:32:12.278Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                 "line": 19,
@@ -2055,7 +2055,7 @@ window.__SERENITY_REPORT_DATA__ = {
             }
           ],
           "type": "Task",
-          "startedAt": "2026-09-10T06:03:39.039Z",
+          "startedAt": "2026-09-10T23:32:12.001Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/multi-actor_scenarios.spec.ts",
             "line": 39,
@@ -2065,20 +2065,20 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Bob starts with a list containing 1 items",
           "outcome": "SUCCESS",
-          "duration": 445,
+          "duration": 412,
           "children": [
             {
               "name": "Bob starts with an empty todo list",
               "outcome": "SUCCESS",
-              "duration": 312,
+              "duration": 289,
               "children": [
                 {
                   "name": "Bob navigates to \"/\"",
                   "outcome": "SUCCESS",
-                  "duration": 286,
+                  "duration": 263,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:39.625Z",
+                  "startedAt": "2026-09-10T23:32:12.419Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                     "line": 18,
@@ -2088,10 +2088,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Bob ensures that website title does equal \"Serenity/JS TodoApp\"",
                   "outcome": "SUCCESS",
-                  "duration": 5,
+                  "duration": 4,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:39.922Z",
+                  "startedAt": "2026-09-10T23:32:12.693Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/multi-actor_scenarios.spec.ts",
                     "line": 45,
@@ -2100,7 +2100,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:03:39.625Z",
+              "startedAt": "2026-09-10T23:32:12.418Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                 "line": 18,
@@ -2110,15 +2110,15 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Bob records an item called \"Walk the dog\"",
               "outcome": "SUCCESS",
-              "duration": 113,
+              "duration": 101,
               "children": [
                 {
                   "name": "Bob enters \"Walk the dog\" into \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 27,
+                  "duration": 23,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:39.948Z",
+                  "startedAt": "2026-09-10T23:32:12.718Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 12,
@@ -2128,10 +2128,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Bob presses key Enter in \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 35,
+                  "duration": 28,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:39.985Z",
+                  "startedAt": "2026-09-10T23:32:12.752Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 13,
@@ -2141,10 +2141,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Bob waits until displayed items does contain \"Walk the dog\"",
                   "outcome": "SUCCESS",
-                  "duration": 19,
+                  "duration": 18,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:40.031Z",
+                  "startedAt": "2026-09-10T23:32:12.791Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                     "line": 19,
@@ -2153,7 +2153,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:03:39.947Z",
+              "startedAt": "2026-09-10T23:32:12.718Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                 "line": 19,
@@ -2162,7 +2162,7 @@ window.__SERENITY_REPORT_DATA__ = {
             }
           ],
           "type": "Task",
-          "startedAt": "2026-09-10T06:03:39.625Z",
+          "startedAt": "2026-09-10T23:32:12.418Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/multi-actor_scenarios.spec.ts",
             "line": 45,
@@ -2172,10 +2172,10 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice ensures that displayed items does equal [ \"Feed the cat\" ]",
           "outcome": "SUCCESS",
-          "duration": 6,
+          "duration": 4,
           "children": [],
           "type": "Interaction",
-          "startedAt": "2026-09-10T06:03:40.085Z",
+          "startedAt": "2026-09-10T23:32:12.844Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/multi-actor_scenarios.spec.ts",
             "line": 51,
@@ -2185,10 +2185,10 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Bob ensures that displayed items does equal [ \"Walk the dog\" ]",
           "outcome": "SUCCESS",
-          "duration": 7,
+          "duration": 5,
           "children": [],
           "type": "Interaction",
-          "startedAt": "2026-09-10T06:03:40.108Z",
+          "startedAt": "2026-09-10T23:32:12.862Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/multi-actor_scenarios.spec.ts",
             "line": 57,
@@ -2199,27 +2199,27 @@ window.__SERENITY_REPORT_DATA__ = {
       "executionHistory": [
         {
           "outcome": "SUCCESS",
-          "run": "2593",
-          "timestamp": "2026-09-10T06:03:37.392Z",
-          "duration": 1148,
+          "run": "2596",
+          "timestamp": "2026-09-10T23:32:10.651Z",
+          "duration": 933,
           "activities": [
             {
               "name": "Alice starts with a list containing 1 items",
               "outcome": "SUCCESS",
-              "duration": 560,
+              "duration": 391,
               "children": [
                 {
                   "name": "Alice starts with an empty todo list",
                   "outcome": "SUCCESS",
-                  "duration": 391,
+                  "duration": 265,
                   "children": [
                     {
                       "name": "Alice navigates to \"/\"",
                       "outcome": "SUCCESS",
-                      "duration": 363,
+                      "duration": 239,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:39.040Z",
+                      "startedAt": "2026-09-10T23:32:12.002Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                         "line": 18,
@@ -2229,10 +2229,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Alice ensures that website title does equal \"Serenity/JS TodoApp\"",
                       "outcome": "SUCCESS",
-                      "duration": 6,
+                      "duration": 5,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:39.414Z",
+                      "startedAt": "2026-09-10T23:32:12.252Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/multi-actor_scenarios.spec.ts",
                         "line": 39,
@@ -2241,7 +2241,7 @@ window.__SERENITY_REPORT_DATA__ = {
                     }
                   ],
                   "type": "Task",
-                  "startedAt": "2026-09-10T06:03:39.040Z",
+                  "startedAt": "2026-09-10T23:32:12.002Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                     "line": 18,
@@ -2251,15 +2251,15 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice records an item called \"Feed the cat\"",
                   "outcome": "SUCCESS",
-                  "duration": 148,
+                  "duration": 104,
                   "children": [
                     {
                       "name": "Alice enters \"Feed the cat\" into \"What needs to be done?\" input box",
                       "outcome": "SUCCESS",
-                      "duration": 61,
+                      "duration": 24,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:39.442Z",
+                      "startedAt": "2026-09-10T23:32:12.278Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                         "line": 12,
@@ -2269,10 +2269,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Alice presses key Enter in \"What needs to be done?\" input box",
                       "outcome": "SUCCESS",
-                      "duration": 35,
+                      "duration": 29,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:39.514Z",
+                      "startedAt": "2026-09-10T23:32:12.313Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                         "line": 13,
@@ -2282,10 +2282,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Alice waits until displayed items does contain \"Feed the cat\"",
                       "outcome": "SUCCESS",
-                      "duration": 19,
+                      "duration": 18,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:39.559Z",
+                      "startedAt": "2026-09-10T23:32:12.353Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                         "line": 19,
@@ -2294,7 +2294,7 @@ window.__SERENITY_REPORT_DATA__ = {
                     }
                   ],
                   "type": "Task",
-                  "startedAt": "2026-09-10T06:03:39.441Z",
+                  "startedAt": "2026-09-10T23:32:12.278Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                     "line": 19,
@@ -2303,7 +2303,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:03:39.039Z",
+              "startedAt": "2026-09-10T23:32:12.001Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/multi-actor_scenarios.spec.ts",
                 "line": 39,
@@ -2313,20 +2313,20 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Bob starts with a list containing 1 items",
               "outcome": "SUCCESS",
-              "duration": 445,
+              "duration": 412,
               "children": [
                 {
                   "name": "Bob starts with an empty todo list",
                   "outcome": "SUCCESS",
-                  "duration": 312,
+                  "duration": 289,
                   "children": [
                     {
                       "name": "Bob navigates to \"/\"",
                       "outcome": "SUCCESS",
-                      "duration": 286,
+                      "duration": 263,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:39.625Z",
+                      "startedAt": "2026-09-10T23:32:12.419Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                         "line": 18,
@@ -2336,10 +2336,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Bob ensures that website title does equal \"Serenity/JS TodoApp\"",
                       "outcome": "SUCCESS",
-                      "duration": 5,
+                      "duration": 4,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:39.922Z",
+                      "startedAt": "2026-09-10T23:32:12.693Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/multi-actor_scenarios.spec.ts",
                         "line": 45,
@@ -2348,7 +2348,7 @@ window.__SERENITY_REPORT_DATA__ = {
                     }
                   ],
                   "type": "Task",
-                  "startedAt": "2026-09-10T06:03:39.625Z",
+                  "startedAt": "2026-09-10T23:32:12.418Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                     "line": 18,
@@ -2358,15 +2358,15 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Bob records an item called \"Walk the dog\"",
                   "outcome": "SUCCESS",
-                  "duration": 113,
+                  "duration": 101,
                   "children": [
                     {
                       "name": "Bob enters \"Walk the dog\" into \"What needs to be done?\" input box",
                       "outcome": "SUCCESS",
-                      "duration": 27,
+                      "duration": 23,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:39.948Z",
+                      "startedAt": "2026-09-10T23:32:12.718Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                         "line": 12,
@@ -2376,10 +2376,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Bob presses key Enter in \"What needs to be done?\" input box",
                       "outcome": "SUCCESS",
-                      "duration": 35,
+                      "duration": 28,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:39.985Z",
+                      "startedAt": "2026-09-10T23:32:12.752Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                         "line": 13,
@@ -2389,10 +2389,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Bob waits until displayed items does contain \"Walk the dog\"",
                       "outcome": "SUCCESS",
-                      "duration": 19,
+                      "duration": 18,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:40.031Z",
+                      "startedAt": "2026-09-10T23:32:12.791Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                         "line": 19,
@@ -2401,7 +2401,7 @@ window.__SERENITY_REPORT_DATA__ = {
                     }
                   ],
                   "type": "Task",
-                  "startedAt": "2026-09-10T06:03:39.947Z",
+                  "startedAt": "2026-09-10T23:32:12.718Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                     "line": 19,
@@ -2410,7 +2410,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:03:39.625Z",
+              "startedAt": "2026-09-10T23:32:12.418Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/multi-actor_scenarios.spec.ts",
                 "line": 45,
@@ -2420,10 +2420,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice ensures that displayed items does equal [ \"Feed the cat\" ]",
               "outcome": "SUCCESS",
-              "duration": 6,
+              "duration": 4,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:40.085Z",
+              "startedAt": "2026-09-10T23:32:12.844Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/multi-actor_scenarios.spec.ts",
                 "line": 51,
@@ -2433,10 +2433,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Bob ensures that displayed items does equal [ \"Walk the dog\" ]",
               "outcome": "SUCCESS",
-              "duration": 7,
+              "duration": 5,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:40.108Z",
+              "startedAt": "2026-09-10T23:32:12.862Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/multi-actor_scenarios.spec.ts",
                 "line": 57,
@@ -2496,8 +2496,8 @@ window.__SERENITY_REPORT_DATA__ = {
       "name": "Todo List App supports multiple actors using separate browsers",
       "category": "Multi-actor scenarios",
       "outcome": "SUCCESS",
-      "duration": 1604,
-      "startedAt": "2026-09-10T06:03:50.063Z",
+      "duration": 1506,
+      "startedAt": "2026-09-10T23:32:22.287Z",
       "source": {
         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/multi-actor_scenarios.spec.ts",
         "line": 37
@@ -2528,20 +2528,20 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice starts with a list containing 1 items",
           "outcome": "SUCCESS",
-          "duration": 713,
+          "duration": 645,
           "children": [
             {
               "name": "Alice starts with an empty todo list",
               "outcome": "SUCCESS",
-              "duration": 548,
+              "duration": 490,
               "children": [
                 {
                   "name": "Alice navigates to \"/\"",
                   "outcome": "SUCCESS",
-                  "duration": 518,
+                  "duration": 462,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:50.091Z",
+                  "startedAt": "2026-09-10T23:32:22.308Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                     "line": 18,
@@ -2551,10 +2551,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice ensures that website title does equal \"Serenity/JS TodoApp\"",
                   "outcome": "SUCCESS",
-                  "duration": 9,
+                  "duration": 7,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:50.619Z",
+                  "startedAt": "2026-09-10T23:32:22.781Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/multi-actor_scenarios.spec.ts",
                     "line": 39,
@@ -2563,7 +2563,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:03:50.090Z",
+              "startedAt": "2026-09-10T23:32:22.308Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                 "line": 18,
@@ -2573,15 +2573,15 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice records an item called \"Feed the cat\"",
               "outcome": "SUCCESS",
-              "duration": 144,
+              "duration": 133,
               "children": [
                 {
                   "name": "Alice enters \"Feed the cat\" into \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 36,
+                  "duration": 34,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:50.650Z",
+                  "startedAt": "2026-09-10T23:32:22.809Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 12,
@@ -2591,10 +2591,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice presses key Enter in \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 50,
+                  "duration": 46,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:50.697Z",
+                  "startedAt": "2026-09-10T23:32:22.854Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 13,
@@ -2604,10 +2604,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice waits until displayed items does contain \"Feed the cat\"",
                   "outcome": "SUCCESS",
-                  "duration": 24,
+                  "duration": 21,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:50.758Z",
+                  "startedAt": "2026-09-10T23:32:22.910Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                     "line": 19,
@@ -2616,7 +2616,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:03:50.649Z",
+              "startedAt": "2026-09-10T23:32:22.809Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                 "line": 19,
@@ -2625,7 +2625,7 @@ window.__SERENITY_REPORT_DATA__ = {
             }
           ],
           "type": "Task",
-          "startedAt": "2026-09-10T06:03:50.090Z",
+          "startedAt": "2026-09-10T23:32:22.307Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/multi-actor_scenarios.spec.ts",
             "line": 39,
@@ -2635,20 +2635,20 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Bob starts with a list containing 1 items",
           "outcome": "SUCCESS",
-          "duration": 711,
+          "duration": 654,
           "children": [
             {
               "name": "Bob starts with an empty todo list",
               "outcome": "SUCCESS",
-              "duration": 553,
+              "duration": 493,
               "children": [
                 {
                   "name": "Bob navigates to \"/\"",
                   "outcome": "SUCCESS",
-                  "duration": 523,
+                  "duration": 466,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:50.831Z",
+                  "startedAt": "2026-09-10T23:32:22.979Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                     "line": 18,
@@ -2658,10 +2658,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Bob ensures that website title does equal \"Serenity/JS TodoApp\"",
                   "outcome": "SUCCESS",
-                  "duration": 8,
+                  "duration": 5,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:51.365Z",
+                  "startedAt": "2026-09-10T23:32:23.456Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/multi-actor_scenarios.spec.ts",
                     "line": 45,
@@ -2670,7 +2670,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:03:50.830Z",
+              "startedAt": "2026-09-10T23:32:22.979Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                 "line": 18,
@@ -2680,15 +2680,15 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Bob records an item called \"Walk the dog\"",
               "outcome": "SUCCESS",
-              "duration": 137,
+              "duration": 140,
               "children": [
                 {
                   "name": "Bob enters \"Walk the dog\" into \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 37,
+                  "duration": 44,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:51.394Z",
+                  "startedAt": "2026-09-10T23:32:23.483Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 12,
@@ -2698,10 +2698,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Bob presses key Enter in \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 46,
+                  "duration": 42,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:51.442Z",
+                  "startedAt": "2026-09-10T23:32:23.538Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 13,
@@ -2714,7 +2714,7 @@ window.__SERENITY_REPORT_DATA__ = {
                   "duration": 21,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:51.499Z",
+                  "startedAt": "2026-09-10T23:32:23.591Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                     "line": 19,
@@ -2723,7 +2723,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:03:51.394Z",
+              "startedAt": "2026-09-10T23:32:23.482Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                 "line": 19,
@@ -2732,7 +2732,7 @@ window.__SERENITY_REPORT_DATA__ = {
             }
           ],
           "type": "Task",
-          "startedAt": "2026-09-10T06:03:50.830Z",
+          "startedAt": "2026-09-10T23:32:22.978Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/multi-actor_scenarios.spec.ts",
             "line": 45,
@@ -2745,7 +2745,7 @@ window.__SERENITY_REPORT_DATA__ = {
           "duration": 8,
           "children": [],
           "type": "Interaction",
-          "startedAt": "2026-09-10T06:03:51.557Z",
+          "startedAt": "2026-09-10T23:32:23.646Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/multi-actor_scenarios.spec.ts",
             "line": 51,
@@ -2755,10 +2755,10 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Bob ensures that displayed items does equal [ \"Walk the dog\" ]",
           "outcome": "SUCCESS",
-          "duration": 11,
+          "duration": 7,
           "children": [],
           "type": "Interaction",
-          "startedAt": "2026-09-10T06:03:51.580Z",
+          "startedAt": "2026-09-10T23:32:23.669Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/multi-actor_scenarios.spec.ts",
             "line": 57,
@@ -2769,27 +2769,27 @@ window.__SERENITY_REPORT_DATA__ = {
       "executionHistory": [
         {
           "outcome": "SUCCESS",
-          "run": "2593",
-          "timestamp": "2026-09-10T06:03:37.392Z",
-          "duration": 1604,
+          "run": "2596",
+          "timestamp": "2026-09-10T23:32:10.651Z",
+          "duration": 1506,
           "activities": [
             {
               "name": "Alice starts with a list containing 1 items",
               "outcome": "SUCCESS",
-              "duration": 713,
+              "duration": 645,
               "children": [
                 {
                   "name": "Alice starts with an empty todo list",
                   "outcome": "SUCCESS",
-                  "duration": 548,
+                  "duration": 490,
                   "children": [
                     {
                       "name": "Alice navigates to \"/\"",
                       "outcome": "SUCCESS",
-                      "duration": 518,
+                      "duration": 462,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:50.091Z",
+                      "startedAt": "2026-09-10T23:32:22.308Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                         "line": 18,
@@ -2799,10 +2799,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Alice ensures that website title does equal \"Serenity/JS TodoApp\"",
                       "outcome": "SUCCESS",
-                      "duration": 9,
+                      "duration": 7,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:50.619Z",
+                      "startedAt": "2026-09-10T23:32:22.781Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/multi-actor_scenarios.spec.ts",
                         "line": 39,
@@ -2811,7 +2811,7 @@ window.__SERENITY_REPORT_DATA__ = {
                     }
                   ],
                   "type": "Task",
-                  "startedAt": "2026-09-10T06:03:50.090Z",
+                  "startedAt": "2026-09-10T23:32:22.308Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                     "line": 18,
@@ -2821,15 +2821,15 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice records an item called \"Feed the cat\"",
                   "outcome": "SUCCESS",
-                  "duration": 144,
+                  "duration": 133,
                   "children": [
                     {
                       "name": "Alice enters \"Feed the cat\" into \"What needs to be done?\" input box",
                       "outcome": "SUCCESS",
-                      "duration": 36,
+                      "duration": 34,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:50.650Z",
+                      "startedAt": "2026-09-10T23:32:22.809Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                         "line": 12,
@@ -2839,10 +2839,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Alice presses key Enter in \"What needs to be done?\" input box",
                       "outcome": "SUCCESS",
-                      "duration": 50,
+                      "duration": 46,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:50.697Z",
+                      "startedAt": "2026-09-10T23:32:22.854Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                         "line": 13,
@@ -2852,10 +2852,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Alice waits until displayed items does contain \"Feed the cat\"",
                       "outcome": "SUCCESS",
-                      "duration": 24,
+                      "duration": 21,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:50.758Z",
+                      "startedAt": "2026-09-10T23:32:22.910Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                         "line": 19,
@@ -2864,7 +2864,7 @@ window.__SERENITY_REPORT_DATA__ = {
                     }
                   ],
                   "type": "Task",
-                  "startedAt": "2026-09-10T06:03:50.649Z",
+                  "startedAt": "2026-09-10T23:32:22.809Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                     "line": 19,
@@ -2873,7 +2873,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:03:50.090Z",
+              "startedAt": "2026-09-10T23:32:22.307Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/multi-actor_scenarios.spec.ts",
                 "line": 39,
@@ -2883,20 +2883,20 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Bob starts with a list containing 1 items",
               "outcome": "SUCCESS",
-              "duration": 711,
+              "duration": 654,
               "children": [
                 {
                   "name": "Bob starts with an empty todo list",
                   "outcome": "SUCCESS",
-                  "duration": 553,
+                  "duration": 493,
                   "children": [
                     {
                       "name": "Bob navigates to \"/\"",
                       "outcome": "SUCCESS",
-                      "duration": 523,
+                      "duration": 466,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:50.831Z",
+                      "startedAt": "2026-09-10T23:32:22.979Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                         "line": 18,
@@ -2906,10 +2906,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Bob ensures that website title does equal \"Serenity/JS TodoApp\"",
                       "outcome": "SUCCESS",
-                      "duration": 8,
+                      "duration": 5,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:51.365Z",
+                      "startedAt": "2026-09-10T23:32:23.456Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/multi-actor_scenarios.spec.ts",
                         "line": 45,
@@ -2918,7 +2918,7 @@ window.__SERENITY_REPORT_DATA__ = {
                     }
                   ],
                   "type": "Task",
-                  "startedAt": "2026-09-10T06:03:50.830Z",
+                  "startedAt": "2026-09-10T23:32:22.979Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                     "line": 18,
@@ -2928,15 +2928,15 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Bob records an item called \"Walk the dog\"",
                   "outcome": "SUCCESS",
-                  "duration": 137,
+                  "duration": 140,
                   "children": [
                     {
                       "name": "Bob enters \"Walk the dog\" into \"What needs to be done?\" input box",
                       "outcome": "SUCCESS",
-                      "duration": 37,
+                      "duration": 44,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:51.394Z",
+                      "startedAt": "2026-09-10T23:32:23.483Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                         "line": 12,
@@ -2946,10 +2946,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Bob presses key Enter in \"What needs to be done?\" input box",
                       "outcome": "SUCCESS",
-                      "duration": 46,
+                      "duration": 42,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:51.442Z",
+                      "startedAt": "2026-09-10T23:32:23.538Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                         "line": 13,
@@ -2962,7 +2962,7 @@ window.__SERENITY_REPORT_DATA__ = {
                       "duration": 21,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:51.499Z",
+                      "startedAt": "2026-09-10T23:32:23.591Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                         "line": 19,
@@ -2971,7 +2971,7 @@ window.__SERENITY_REPORT_DATA__ = {
                     }
                   ],
                   "type": "Task",
-                  "startedAt": "2026-09-10T06:03:51.394Z",
+                  "startedAt": "2026-09-10T23:32:23.482Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                     "line": 19,
@@ -2980,7 +2980,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:03:50.830Z",
+              "startedAt": "2026-09-10T23:32:22.978Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/multi-actor_scenarios.spec.ts",
                 "line": 45,
@@ -2993,7 +2993,7 @@ window.__SERENITY_REPORT_DATA__ = {
               "duration": 8,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:51.557Z",
+              "startedAt": "2026-09-10T23:32:23.646Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/multi-actor_scenarios.spec.ts",
                 "line": 51,
@@ -3003,10 +3003,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Bob ensures that displayed items does equal [ \"Walk the dog\" ]",
               "outcome": "SUCCESS",
-              "duration": 11,
+              "duration": 7,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:51.580Z",
+              "startedAt": "2026-09-10T23:32:23.669Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/multi-actor_scenarios.spec.ts",
                 "line": 57,
@@ -3066,8 +3066,8 @@ window.__SERENITY_REPORT_DATA__ = {
       "name": "Todo List App supports multiple actors using separate browsers",
       "category": "Multi-actor scenarios",
       "outcome": "SUCCESS",
-      "duration": 1987,
-      "startedAt": "2026-09-10T06:04:07.562Z",
+      "duration": 1925,
+      "startedAt": "2026-09-10T23:32:38.263Z",
       "source": {
         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/multi-actor_scenarios.spec.ts",
         "line": 37
@@ -3098,20 +3098,20 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice starts with a list containing 1 items",
           "outcome": "SUCCESS",
-          "duration": 816,
+          "duration": 728,
           "children": [
             {
               "name": "Alice starts with an empty todo list",
               "outcome": "SUCCESS",
-              "duration": 593,
+              "duration": 577,
               "children": [
                 {
                   "name": "Alice navigates to \"/\"",
                   "outcome": "SUCCESS",
-                  "duration": 562,
+                  "duration": 547,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:04:07.589Z",
+                  "startedAt": "2026-09-10T23:32:38.290Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                     "line": 18,
@@ -3121,10 +3121,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice ensures that website title does equal \"Serenity/JS TodoApp\"",
                   "outcome": "SUCCESS",
-                  "duration": 9,
+                  "duration": 8,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:04:08.162Z",
+                  "startedAt": "2026-09-10T23:32:38.849Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/multi-actor_scenarios.spec.ts",
                     "line": 39,
@@ -3133,7 +3133,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:04:07.589Z",
+              "startedAt": "2026-09-10T23:32:38.290Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                 "line": 18,
@@ -3143,15 +3143,15 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice records an item called \"Feed the cat\"",
               "outcome": "SUCCESS",
-              "duration": 201,
+              "duration": 129,
               "children": [
                 {
                   "name": "Alice enters \"Feed the cat\" into \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 47,
+                  "duration": 31,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:04:08.193Z",
+                  "startedAt": "2026-09-10T23:32:38.878Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 12,
@@ -3161,10 +3161,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice presses key Enter in \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 64,
+                  "duration": 41,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:04:08.251Z",
+                  "startedAt": "2026-09-10T23:32:38.920Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 13,
@@ -3174,10 +3174,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice waits until displayed items does contain \"Feed the cat\"",
                   "outcome": "SUCCESS",
-                  "duration": 56,
+                  "duration": 25,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:04:08.326Z",
+                  "startedAt": "2026-09-10T23:32:38.972Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                     "line": 19,
@@ -3186,7 +3186,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:04:08.192Z",
+              "startedAt": "2026-09-10T23:32:38.878Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                 "line": 19,
@@ -3195,7 +3195,7 @@ window.__SERENITY_REPORT_DATA__ = {
             }
           ],
           "type": "Task",
-          "startedAt": "2026-09-10T06:04:07.588Z",
+          "startedAt": "2026-09-10T23:32:38.289Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/multi-actor_scenarios.spec.ts",
             "line": 39,
@@ -3205,20 +3205,20 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Bob starts with a list containing 1 items",
           "outcome": "SUCCESS",
-          "duration": 1004,
+          "duration": 1011,
           "children": [
             {
               "name": "Bob starts with an empty todo list",
               "outcome": "SUCCESS",
-              "duration": 774,
+              "duration": 790,
               "children": [
                 {
                   "name": "Bob navigates to \"/\"",
                   "outcome": "SUCCESS",
-                  "duration": 738,
+                  "duration": 756,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:04:08.441Z",
+                  "startedAt": "2026-09-10T23:32:39.063Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                     "line": 18,
@@ -3231,7 +3231,7 @@ window.__SERENITY_REPORT_DATA__ = {
                   "duration": 10,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:04:09.194Z",
+                  "startedAt": "2026-09-10T23:32:39.830Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/multi-actor_scenarios.spec.ts",
                     "line": 45,
@@ -3240,7 +3240,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:04:08.440Z",
+              "startedAt": "2026-09-10T23:32:39.060Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                 "line": 18,
@@ -3250,15 +3250,15 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Bob records an item called \"Walk the dog\"",
               "outcome": "SUCCESS",
-              "duration": 206,
+              "duration": 200,
               "children": [
                 {
                   "name": "Bob enters \"Walk the dog\" into \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 56,
+                  "duration": 50,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:04:09.226Z",
+                  "startedAt": "2026-09-10T23:32:39.861Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 12,
@@ -3268,10 +3268,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Bob presses key Enter in \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 65,
+                  "duration": 70,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:04:09.292Z",
+                  "startedAt": "2026-09-10T23:32:39.922Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 13,
@@ -3281,10 +3281,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Bob waits until displayed items does contain \"Walk the dog\"",
                   "outcome": "SUCCESS",
-                  "duration": 53,
+                  "duration": 48,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:04:09.368Z",
+                  "startedAt": "2026-09-10T23:32:40.003Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                     "line": 19,
@@ -3293,7 +3293,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:04:09.225Z",
+              "startedAt": "2026-09-10T23:32:39.861Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                 "line": 19,
@@ -3302,7 +3302,7 @@ window.__SERENITY_REPORT_DATA__ = {
             }
           ],
           "type": "Task",
-          "startedAt": "2026-09-10T06:04:08.438Z",
+          "startedAt": "2026-09-10T23:32:39.060Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/multi-actor_scenarios.spec.ts",
             "line": 45,
@@ -3312,10 +3312,10 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice ensures that displayed items does equal [ \"Feed the cat\" ]",
           "outcome": "SUCCESS",
-          "duration": 11,
+          "duration": 12,
           "children": [],
           "type": "Interaction",
-          "startedAt": "2026-09-10T06:04:09.460Z",
+          "startedAt": "2026-09-10T23:32:40.089Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/multi-actor_scenarios.spec.ts",
             "line": 51,
@@ -3328,7 +3328,7 @@ window.__SERENITY_REPORT_DATA__ = {
           "duration": 10,
           "children": [],
           "type": "Interaction",
-          "startedAt": "2026-09-10T06:04:09.490Z",
+          "startedAt": "2026-09-10T23:32:40.120Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/multi-actor_scenarios.spec.ts",
             "line": 57,
@@ -3339,27 +3339,27 @@ window.__SERENITY_REPORT_DATA__ = {
       "executionHistory": [
         {
           "outcome": "SUCCESS",
-          "run": "2593",
-          "timestamp": "2026-09-10T06:03:37.392Z",
-          "duration": 1987,
+          "run": "2596",
+          "timestamp": "2026-09-10T23:32:10.651Z",
+          "duration": 1925,
           "activities": [
             {
               "name": "Alice starts with a list containing 1 items",
               "outcome": "SUCCESS",
-              "duration": 816,
+              "duration": 728,
               "children": [
                 {
                   "name": "Alice starts with an empty todo list",
                   "outcome": "SUCCESS",
-                  "duration": 593,
+                  "duration": 577,
                   "children": [
                     {
                       "name": "Alice navigates to \"/\"",
                       "outcome": "SUCCESS",
-                      "duration": 562,
+                      "duration": 547,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:04:07.589Z",
+                      "startedAt": "2026-09-10T23:32:38.290Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                         "line": 18,
@@ -3369,10 +3369,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Alice ensures that website title does equal \"Serenity/JS TodoApp\"",
                       "outcome": "SUCCESS",
-                      "duration": 9,
+                      "duration": 8,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:04:08.162Z",
+                      "startedAt": "2026-09-10T23:32:38.849Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/multi-actor_scenarios.spec.ts",
                         "line": 39,
@@ -3381,7 +3381,7 @@ window.__SERENITY_REPORT_DATA__ = {
                     }
                   ],
                   "type": "Task",
-                  "startedAt": "2026-09-10T06:04:07.589Z",
+                  "startedAt": "2026-09-10T23:32:38.290Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                     "line": 18,
@@ -3391,15 +3391,15 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice records an item called \"Feed the cat\"",
                   "outcome": "SUCCESS",
-                  "duration": 201,
+                  "duration": 129,
                   "children": [
                     {
                       "name": "Alice enters \"Feed the cat\" into \"What needs to be done?\" input box",
                       "outcome": "SUCCESS",
-                      "duration": 47,
+                      "duration": 31,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:04:08.193Z",
+                      "startedAt": "2026-09-10T23:32:38.878Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                         "line": 12,
@@ -3409,10 +3409,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Alice presses key Enter in \"What needs to be done?\" input box",
                       "outcome": "SUCCESS",
-                      "duration": 64,
+                      "duration": 41,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:04:08.251Z",
+                      "startedAt": "2026-09-10T23:32:38.920Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                         "line": 13,
@@ -3422,10 +3422,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Alice waits until displayed items does contain \"Feed the cat\"",
                       "outcome": "SUCCESS",
-                      "duration": 56,
+                      "duration": 25,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:04:08.326Z",
+                      "startedAt": "2026-09-10T23:32:38.972Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                         "line": 19,
@@ -3434,7 +3434,7 @@ window.__SERENITY_REPORT_DATA__ = {
                     }
                   ],
                   "type": "Task",
-                  "startedAt": "2026-09-10T06:04:08.192Z",
+                  "startedAt": "2026-09-10T23:32:38.878Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                     "line": 19,
@@ -3443,7 +3443,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:04:07.588Z",
+              "startedAt": "2026-09-10T23:32:38.289Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/multi-actor_scenarios.spec.ts",
                 "line": 39,
@@ -3453,20 +3453,20 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Bob starts with a list containing 1 items",
               "outcome": "SUCCESS",
-              "duration": 1004,
+              "duration": 1011,
               "children": [
                 {
                   "name": "Bob starts with an empty todo list",
                   "outcome": "SUCCESS",
-                  "duration": 774,
+                  "duration": 790,
                   "children": [
                     {
                       "name": "Bob navigates to \"/\"",
                       "outcome": "SUCCESS",
-                      "duration": 738,
+                      "duration": 756,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:04:08.441Z",
+                      "startedAt": "2026-09-10T23:32:39.063Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                         "line": 18,
@@ -3479,7 +3479,7 @@ window.__SERENITY_REPORT_DATA__ = {
                       "duration": 10,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:04:09.194Z",
+                      "startedAt": "2026-09-10T23:32:39.830Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/multi-actor_scenarios.spec.ts",
                         "line": 45,
@@ -3488,7 +3488,7 @@ window.__SERENITY_REPORT_DATA__ = {
                     }
                   ],
                   "type": "Task",
-                  "startedAt": "2026-09-10T06:04:08.440Z",
+                  "startedAt": "2026-09-10T23:32:39.060Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                     "line": 18,
@@ -3498,15 +3498,15 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Bob records an item called \"Walk the dog\"",
                   "outcome": "SUCCESS",
-                  "duration": 206,
+                  "duration": 200,
                   "children": [
                     {
                       "name": "Bob enters \"Walk the dog\" into \"What needs to be done?\" input box",
                       "outcome": "SUCCESS",
-                      "duration": 56,
+                      "duration": 50,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:04:09.226Z",
+                      "startedAt": "2026-09-10T23:32:39.861Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                         "line": 12,
@@ -3516,10 +3516,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Bob presses key Enter in \"What needs to be done?\" input box",
                       "outcome": "SUCCESS",
-                      "duration": 65,
+                      "duration": 70,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:04:09.292Z",
+                      "startedAt": "2026-09-10T23:32:39.922Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                         "line": 13,
@@ -3529,10 +3529,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Bob waits until displayed items does contain \"Walk the dog\"",
                       "outcome": "SUCCESS",
-                      "duration": 53,
+                      "duration": 48,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:04:09.368Z",
+                      "startedAt": "2026-09-10T23:32:40.003Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                         "line": 19,
@@ -3541,7 +3541,7 @@ window.__SERENITY_REPORT_DATA__ = {
                     }
                   ],
                   "type": "Task",
-                  "startedAt": "2026-09-10T06:04:09.225Z",
+                  "startedAt": "2026-09-10T23:32:39.861Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                     "line": 19,
@@ -3550,7 +3550,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:04:08.438Z",
+              "startedAt": "2026-09-10T23:32:39.060Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/multi-actor_scenarios.spec.ts",
                 "line": 45,
@@ -3560,10 +3560,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice ensures that displayed items does equal [ \"Feed the cat\" ]",
               "outcome": "SUCCESS",
-              "duration": 11,
+              "duration": 12,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:04:09.460Z",
+              "startedAt": "2026-09-10T23:32:40.089Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/multi-actor_scenarios.spec.ts",
                 "line": 51,
@@ -3576,7 +3576,7 @@ window.__SERENITY_REPORT_DATA__ = {
               "duration": 10,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:04:09.490Z",
+              "startedAt": "2026-09-10T23:32:40.120Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/multi-actor_scenarios.spec.ts",
                 "line": 57,
@@ -3636,8 +3636,8 @@ window.__SERENITY_REPORT_DATA__ = {
       "name": "Todo List App should allow me to add todo items",
       "category": "Recording items",
       "outcome": "SUCCESS",
-      "duration": 629,
-      "startedAt": "2026-09-10T06:03:40.186Z",
+      "duration": 569,
+      "startedAt": "2026-09-10T23:32:12.934Z",
       "source": {
         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
         "line": 36
@@ -3668,15 +3668,15 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice starts with an empty todo list",
           "outcome": "SUCCESS",
-          "duration": 234,
+          "duration": 207,
           "children": [
             {
               "name": "Alice navigates to \"/\"",
               "outcome": "SUCCESS",
-              "duration": 206,
+              "duration": 181,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:40.292Z",
+              "startedAt": "2026-09-10T23:32:13.034Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 38,
@@ -3686,10 +3686,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice ensures that website title does equal \"Serenity/JS TodoApp\"",
               "outcome": "SUCCESS",
-              "duration": 5,
+              "duration": 4,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:40.509Z",
+              "startedAt": "2026-09-10T23:32:13.226Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 38,
@@ -3698,7 +3698,7 @@ window.__SERENITY_REPORT_DATA__ = {
             }
           ],
           "type": "Task",
-          "startedAt": "2026-09-10T06:03:40.291Z",
+          "startedAt": "2026-09-10T23:32:13.033Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
             "line": 38,
@@ -3708,15 +3708,15 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice records an item called \"buy some cheese\"",
           "outcome": "SUCCESS",
-          "duration": 111,
+          "duration": 100,
           "children": [
             {
               "name": "Alice enters \"buy some cheese\" into \"What needs to be done?\" input box",
               "outcome": "SUCCESS",
-              "duration": 27,
+              "duration": 23,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:40.536Z",
+              "startedAt": "2026-09-10T23:32:13.251Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                 "line": 12,
@@ -3726,10 +3726,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice presses key Enter in \"What needs to be done?\" input box",
               "outcome": "SUCCESS",
-              "duration": 32,
+              "duration": 28,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:40.574Z",
+              "startedAt": "2026-09-10T23:32:13.285Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                 "line": 13,
@@ -3742,7 +3742,7 @@ window.__SERENITY_REPORT_DATA__ = {
               "duration": 18,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:40.617Z",
+              "startedAt": "2026-09-10T23:32:13.323Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 40,
@@ -3751,7 +3751,7 @@ window.__SERENITY_REPORT_DATA__ = {
             }
           ],
           "type": "Task",
-          "startedAt": "2026-09-10T06:03:40.535Z",
+          "startedAt": "2026-09-10T23:32:13.251Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
             "line": 40,
@@ -3761,10 +3761,10 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice ensures that displayed items does equal [ \"buy some cheese\" ]",
           "outcome": "SUCCESS",
-          "duration": 7,
+          "duration": 6,
           "children": [],
           "type": "Interaction",
-          "startedAt": "2026-09-10T06:03:40.656Z",
+          "startedAt": "2026-09-10T23:32:13.362Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
             "line": 42,
@@ -3774,15 +3774,15 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice records an item called \"feed the cat\"",
           "outcome": "SUCCESS",
-          "duration": 71,
+          "duration": 63,
           "children": [
             {
               "name": "Alice enters \"feed the cat\" into \"What needs to be done?\" input box",
               "outcome": "SUCCESS",
-              "duration": 7,
+              "duration": 5,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:40.674Z",
+              "startedAt": "2026-09-10T23:32:13.379Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                 "line": 12,
@@ -3792,10 +3792,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice presses key Enter in \"What needs to be done?\" input box",
               "outcome": "SUCCESS",
-              "duration": 12,
+              "duration": 9,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:40.692Z",
+              "startedAt": "2026-09-10T23:32:13.394Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                 "line": 13,
@@ -3805,10 +3805,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice waits until displayed items does contain \"feed the cat\"",
               "outcome": "SUCCESS",
-              "duration": 20,
+              "duration": 17,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:40.715Z",
+              "startedAt": "2026-09-10T23:32:13.414Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 46,
@@ -3817,7 +3817,7 @@ window.__SERENITY_REPORT_DATA__ = {
             }
           ],
           "type": "Task",
-          "startedAt": "2026-09-10T06:03:40.674Z",
+          "startedAt": "2026-09-10T23:32:13.378Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
             "line": 46,
@@ -3827,10 +3827,10 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice ensures that displayed items does equal [ \"buy some cheese\", \"feed the cat\" ]",
           "outcome": "SUCCESS",
-          "duration": 8,
+          "duration": 6,
           "children": [],
           "type": "Interaction",
-          "startedAt": "2026-09-10T06:03:40.757Z",
+          "startedAt": "2026-09-10T23:32:13.452Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
             "line": 48,
@@ -3840,10 +3840,10 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice ensures that persisted items does equal displayed items",
           "outcome": "SUCCESS",
-          "duration": 9,
+          "duration": 7,
           "children": [],
           "type": "Interaction",
-          "startedAt": "2026-09-10T06:03:40.776Z",
+          "startedAt": "2026-09-10T23:32:13.469Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
             "line": 55,
@@ -3854,22 +3854,22 @@ window.__SERENITY_REPORT_DATA__ = {
       "executionHistory": [
         {
           "outcome": "SUCCESS",
-          "run": "2593",
-          "timestamp": "2026-09-10T06:03:37.392Z",
-          "duration": 629,
+          "run": "2596",
+          "timestamp": "2026-09-10T23:32:10.651Z",
+          "duration": 569,
           "activities": [
             {
               "name": "Alice starts with an empty todo list",
               "outcome": "SUCCESS",
-              "duration": 234,
+              "duration": 207,
               "children": [
                 {
                   "name": "Alice navigates to \"/\"",
                   "outcome": "SUCCESS",
-                  "duration": 206,
+                  "duration": 181,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:40.292Z",
+                  "startedAt": "2026-09-10T23:32:13.034Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                     "line": 38,
@@ -3879,10 +3879,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice ensures that website title does equal \"Serenity/JS TodoApp\"",
                   "outcome": "SUCCESS",
-                  "duration": 5,
+                  "duration": 4,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:40.509Z",
+                  "startedAt": "2026-09-10T23:32:13.226Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                     "line": 38,
@@ -3891,7 +3891,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:03:40.291Z",
+              "startedAt": "2026-09-10T23:32:13.033Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 38,
@@ -3901,15 +3901,15 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice records an item called \"buy some cheese\"",
               "outcome": "SUCCESS",
-              "duration": 111,
+              "duration": 100,
               "children": [
                 {
                   "name": "Alice enters \"buy some cheese\" into \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 27,
+                  "duration": 23,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:40.536Z",
+                  "startedAt": "2026-09-10T23:32:13.251Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 12,
@@ -3919,10 +3919,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice presses key Enter in \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 32,
+                  "duration": 28,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:40.574Z",
+                  "startedAt": "2026-09-10T23:32:13.285Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 13,
@@ -3935,7 +3935,7 @@ window.__SERENITY_REPORT_DATA__ = {
                   "duration": 18,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:40.617Z",
+                  "startedAt": "2026-09-10T23:32:13.323Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                     "line": 40,
@@ -3944,7 +3944,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:03:40.535Z",
+              "startedAt": "2026-09-10T23:32:13.251Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 40,
@@ -3954,10 +3954,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice ensures that displayed items does equal [ \"buy some cheese\" ]",
               "outcome": "SUCCESS",
-              "duration": 7,
+              "duration": 6,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:40.656Z",
+              "startedAt": "2026-09-10T23:32:13.362Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 42,
@@ -3967,15 +3967,15 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice records an item called \"feed the cat\"",
               "outcome": "SUCCESS",
-              "duration": 71,
+              "duration": 63,
               "children": [
                 {
                   "name": "Alice enters \"feed the cat\" into \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 7,
+                  "duration": 5,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:40.674Z",
+                  "startedAt": "2026-09-10T23:32:13.379Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 12,
@@ -3985,10 +3985,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice presses key Enter in \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 12,
+                  "duration": 9,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:40.692Z",
+                  "startedAt": "2026-09-10T23:32:13.394Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 13,
@@ -3998,10 +3998,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice waits until displayed items does contain \"feed the cat\"",
                   "outcome": "SUCCESS",
-                  "duration": 20,
+                  "duration": 17,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:40.715Z",
+                  "startedAt": "2026-09-10T23:32:13.414Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                     "line": 46,
@@ -4010,7 +4010,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:03:40.674Z",
+              "startedAt": "2026-09-10T23:32:13.378Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 46,
@@ -4020,10 +4020,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice ensures that displayed items does equal [ \"buy some cheese\", \"feed the cat\" ]",
               "outcome": "SUCCESS",
-              "duration": 8,
+              "duration": 6,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:40.757Z",
+              "startedAt": "2026-09-10T23:32:13.452Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 48,
@@ -4033,10 +4033,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice ensures that persisted items does equal displayed items",
               "outcome": "SUCCESS",
-              "duration": 9,
+              "duration": 7,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:40.776Z",
+              "startedAt": "2026-09-10T23:32:13.469Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 55,
@@ -4083,8 +4083,8 @@ window.__SERENITY_REPORT_DATA__ = {
       "name": "Todo List App should allow me to add todo items",
       "category": "Recording items",
       "outcome": "SUCCESS",
-      "duration": 961,
-      "startedAt": "2026-09-10T06:03:51.696Z",
+      "duration": 894,
+      "startedAt": "2026-09-10T23:32:23.817Z",
       "source": {
         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
         "line": 36
@@ -4115,15 +4115,15 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice starts with an empty todo list",
           "outcome": "SUCCESS",
-          "duration": 289,
+          "duration": 326,
           "children": [
             {
               "name": "Alice navigates to \"/\"",
               "outcome": "SUCCESS",
-              "duration": 262,
+              "duration": 299,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:51.975Z",
+              "startedAt": "2026-09-10T23:32:24.070Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 38,
@@ -4133,10 +4133,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice ensures that website title does equal \"Serenity/JS TodoApp\"",
               "outcome": "SUCCESS",
-              "duration": 6,
+              "duration": 7,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:52.248Z",
+              "startedAt": "2026-09-10T23:32:24.379Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 38,
@@ -4145,7 +4145,7 @@ window.__SERENITY_REPORT_DATA__ = {
             }
           ],
           "type": "Task",
-          "startedAt": "2026-09-10T06:03:51.975Z",
+          "startedAt": "2026-09-10T23:32:24.070Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
             "line": 38,
@@ -4155,15 +4155,15 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice records an item called \"buy some cheese\"",
           "outcome": "SUCCESS",
-          "duration": 155,
+          "duration": 127,
           "children": [
             {
               "name": "Alice enters \"buy some cheese\" into \"What needs to be done?\" input box",
               "outcome": "SUCCESS",
-              "duration": 35,
+              "duration": 34,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:52.276Z",
+              "startedAt": "2026-09-10T23:32:24.407Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                 "line": 12,
@@ -4173,10 +4173,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice presses key Enter in \"What needs to be done?\" input box",
               "outcome": "SUCCESS",
-              "duration": 65,
+              "duration": 42,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:52.323Z",
+              "startedAt": "2026-09-10T23:32:24.450Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                 "line": 13,
@@ -4186,10 +4186,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice waits until displayed items does contain \"buy some cheese\"",
               "outcome": "SUCCESS",
-              "duration": 21,
+              "duration": 20,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:52.399Z",
+              "startedAt": "2026-09-10T23:32:24.503Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 40,
@@ -4198,7 +4198,7 @@ window.__SERENITY_REPORT_DATA__ = {
             }
           ],
           "type": "Task",
-          "startedAt": "2026-09-10T06:03:52.275Z",
+          "startedAt": "2026-09-10T23:32:24.406Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
             "line": 40,
@@ -4208,10 +4208,10 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice ensures that displayed items does equal [ \"buy some cheese\" ]",
           "outcome": "SUCCESS",
-          "duration": 11,
+          "duration": 7,
           "children": [],
           "type": "Interaction",
-          "startedAt": "2026-09-10T06:03:52.441Z",
+          "startedAt": "2026-09-10T23:32:24.544Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
             "line": 42,
@@ -4221,15 +4221,15 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice records an item called \"feed the cat\"",
           "outcome": "SUCCESS",
-          "duration": 92,
+          "duration": 77,
           "children": [
             {
               "name": "Alice enters \"feed the cat\" into \"What needs to be done?\" input box",
               "outcome": "SUCCESS",
-              "duration": 18,
+              "duration": 10,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:52.463Z",
+              "startedAt": "2026-09-10T23:32:24.562Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                 "line": 12,
@@ -4239,10 +4239,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice presses key Enter in \"What needs to be done?\" input box",
               "outcome": "SUCCESS",
-              "duration": 18,
+              "duration": 16,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:52.491Z",
+              "startedAt": "2026-09-10T23:32:24.581Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                 "line": 13,
@@ -4252,10 +4252,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice waits until displayed items does contain \"feed the cat\"",
               "outcome": "SUCCESS",
-              "duration": 26,
+              "duration": 22,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:52.519Z",
+              "startedAt": "2026-09-10T23:32:24.607Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 46,
@@ -4264,7 +4264,7 @@ window.__SERENITY_REPORT_DATA__ = {
             }
           ],
           "type": "Task",
-          "startedAt": "2026-09-10T06:03:52.463Z",
+          "startedAt": "2026-09-10T23:32:24.562Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
             "line": 46,
@@ -4274,10 +4274,10 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice ensures that displayed items does equal [ \"buy some cheese\", \"feed the cat\" ]",
           "outcome": "SUCCESS",
-          "duration": 32,
+          "duration": 10,
           "children": [],
           "type": "Interaction",
-          "startedAt": "2026-09-10T06:03:52.566Z",
+          "startedAt": "2026-09-10T23:32:24.649Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
             "line": 48,
@@ -4287,10 +4287,10 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice ensures that persisted items does equal displayed items",
           "outcome": "SUCCESS",
-          "duration": 16,
+          "duration": 12,
           "children": [],
           "type": "Interaction",
-          "startedAt": "2026-09-10T06:03:52.609Z",
+          "startedAt": "2026-09-10T23:32:24.669Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
             "line": 55,
@@ -4301,22 +4301,22 @@ window.__SERENITY_REPORT_DATA__ = {
       "executionHistory": [
         {
           "outcome": "SUCCESS",
-          "run": "2593",
-          "timestamp": "2026-09-10T06:03:37.392Z",
-          "duration": 961,
+          "run": "2596",
+          "timestamp": "2026-09-10T23:32:10.651Z",
+          "duration": 894,
           "activities": [
             {
               "name": "Alice starts with an empty todo list",
               "outcome": "SUCCESS",
-              "duration": 289,
+              "duration": 326,
               "children": [
                 {
                   "name": "Alice navigates to \"/\"",
                   "outcome": "SUCCESS",
-                  "duration": 262,
+                  "duration": 299,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:51.975Z",
+                  "startedAt": "2026-09-10T23:32:24.070Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                     "line": 38,
@@ -4326,10 +4326,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice ensures that website title does equal \"Serenity/JS TodoApp\"",
                   "outcome": "SUCCESS",
-                  "duration": 6,
+                  "duration": 7,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:52.248Z",
+                  "startedAt": "2026-09-10T23:32:24.379Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                     "line": 38,
@@ -4338,7 +4338,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:03:51.975Z",
+              "startedAt": "2026-09-10T23:32:24.070Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 38,
@@ -4348,15 +4348,15 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice records an item called \"buy some cheese\"",
               "outcome": "SUCCESS",
-              "duration": 155,
+              "duration": 127,
               "children": [
                 {
                   "name": "Alice enters \"buy some cheese\" into \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 35,
+                  "duration": 34,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:52.276Z",
+                  "startedAt": "2026-09-10T23:32:24.407Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 12,
@@ -4366,10 +4366,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice presses key Enter in \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 65,
+                  "duration": 42,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:52.323Z",
+                  "startedAt": "2026-09-10T23:32:24.450Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 13,
@@ -4379,10 +4379,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice waits until displayed items does contain \"buy some cheese\"",
                   "outcome": "SUCCESS",
-                  "duration": 21,
+                  "duration": 20,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:52.399Z",
+                  "startedAt": "2026-09-10T23:32:24.503Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                     "line": 40,
@@ -4391,7 +4391,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:03:52.275Z",
+              "startedAt": "2026-09-10T23:32:24.406Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 40,
@@ -4401,10 +4401,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice ensures that displayed items does equal [ \"buy some cheese\" ]",
               "outcome": "SUCCESS",
-              "duration": 11,
+              "duration": 7,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:52.441Z",
+              "startedAt": "2026-09-10T23:32:24.544Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 42,
@@ -4414,15 +4414,15 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice records an item called \"feed the cat\"",
               "outcome": "SUCCESS",
-              "duration": 92,
+              "duration": 77,
               "children": [
                 {
                   "name": "Alice enters \"feed the cat\" into \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 18,
+                  "duration": 10,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:52.463Z",
+                  "startedAt": "2026-09-10T23:32:24.562Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 12,
@@ -4432,10 +4432,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice presses key Enter in \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 18,
+                  "duration": 16,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:52.491Z",
+                  "startedAt": "2026-09-10T23:32:24.581Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 13,
@@ -4445,10 +4445,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice waits until displayed items does contain \"feed the cat\"",
                   "outcome": "SUCCESS",
-                  "duration": 26,
+                  "duration": 22,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:52.519Z",
+                  "startedAt": "2026-09-10T23:32:24.607Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                     "line": 46,
@@ -4457,7 +4457,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:03:52.463Z",
+              "startedAt": "2026-09-10T23:32:24.562Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 46,
@@ -4467,10 +4467,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice ensures that displayed items does equal [ \"buy some cheese\", \"feed the cat\" ]",
               "outcome": "SUCCESS",
-              "duration": 32,
+              "duration": 10,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:52.566Z",
+              "startedAt": "2026-09-10T23:32:24.649Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 48,
@@ -4480,10 +4480,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice ensures that persisted items does equal displayed items",
               "outcome": "SUCCESS",
-              "duration": 16,
+              "duration": 12,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:52.609Z",
+              "startedAt": "2026-09-10T23:32:24.669Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 55,
@@ -4530,8 +4530,8 @@ window.__SERENITY_REPORT_DATA__ = {
       "name": "Todo List App should allow me to add todo items",
       "category": "Recording items",
       "outcome": "SUCCESS",
-      "duration": 1944,
-      "startedAt": "2026-09-10T06:04:09.614Z",
+      "duration": 1783,
+      "startedAt": "2026-09-10T23:32:40.236Z",
       "source": {
         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
         "line": 36
@@ -4562,15 +4562,15 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice starts with an empty todo list",
           "outcome": "SUCCESS",
-          "duration": 546,
+          "duration": 494,
           "children": [
             {
               "name": "Alice navigates to \"/\"",
               "outcome": "SUCCESS",
-              "duration": 454,
+              "duration": 451,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:04:10.210Z",
+              "startedAt": "2026-09-10T23:32:40.889Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 38,
@@ -4580,10 +4580,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice ensures that website title does equal \"Serenity/JS TodoApp\"",
               "outcome": "SUCCESS",
-              "duration": 70,
+              "duration": 19,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:04:10.675Z",
+              "startedAt": "2026-09-10T23:32:41.351Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 38,
@@ -4592,7 +4592,7 @@ window.__SERENITY_REPORT_DATA__ = {
             }
           ],
           "type": "Task",
-          "startedAt": "2026-09-10T06:04:10.210Z",
+          "startedAt": "2026-09-10T23:32:40.889Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
             "line": 38,
@@ -4602,15 +4602,15 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice records an item called \"buy some cheese\"",
           "outcome": "SUCCESS",
-          "duration": 426,
+          "duration": 309,
           "children": [
             {
               "name": "Alice enters \"buy some cheese\" into \"What needs to be done?\" input box",
               "outcome": "SUCCESS",
-              "duration": 135,
+              "duration": 85,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:04:10.770Z",
+              "startedAt": "2026-09-10T23:32:41.394Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                 "line": 12,
@@ -4620,10 +4620,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice presses key Enter in \"What needs to be done?\" input box",
               "outcome": "SUCCESS",
-              "duration": 149,
+              "duration": 108,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:04:10.917Z",
+              "startedAt": "2026-09-10T23:32:41.488Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                 "line": 13,
@@ -4633,10 +4633,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice waits until displayed items does contain \"buy some cheese\"",
               "outcome": "SUCCESS",
-              "duration": 104,
+              "duration": 85,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:04:11.081Z",
+              "startedAt": "2026-09-10T23:32:41.608Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 40,
@@ -4645,7 +4645,7 @@ window.__SERENITY_REPORT_DATA__ = {
             }
           ],
           "type": "Task",
-          "startedAt": "2026-09-10T06:04:10.769Z",
+          "startedAt": "2026-09-10T23:32:41.394Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
             "line": 40,
@@ -4655,10 +4655,10 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice ensures that displayed items does equal [ \"buy some cheese\" ]",
           "outcome": "SUCCESS",
-          "duration": 26,
+          "duration": 15,
           "children": [],
           "type": "Interaction",
-          "startedAt": "2026-09-10T06:04:11.207Z",
+          "startedAt": "2026-09-10T23:32:41.716Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
             "line": 42,
@@ -4668,15 +4668,15 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice records an item called \"feed the cat\"",
           "outcome": "SUCCESS",
-          "duration": 130,
+          "duration": 116,
           "children": [
             {
               "name": "Alice enters \"feed the cat\" into \"What needs to be done?\" input box",
               "outcome": "SUCCESS",
-              "duration": 16,
+              "duration": 18,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:04:11.247Z",
+              "startedAt": "2026-09-10T23:32:41.744Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                 "line": 12,
@@ -4686,10 +4686,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice presses key Enter in \"What needs to be done?\" input box",
               "outcome": "SUCCESS",
-              "duration": 37,
+              "duration": 31,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:04:11.275Z",
+              "startedAt": "2026-09-10T23:32:41.773Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                 "line": 13,
@@ -4699,10 +4699,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice waits until displayed items does contain \"feed the cat\"",
               "outcome": "SUCCESS",
-              "duration": 41,
+              "duration": 31,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:04:11.325Z",
+              "startedAt": "2026-09-10T23:32:41.817Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 46,
@@ -4711,7 +4711,7 @@ window.__SERENITY_REPORT_DATA__ = {
             }
           ],
           "type": "Task",
-          "startedAt": "2026-09-10T06:04:11.246Z",
+          "startedAt": "2026-09-10T23:32:41.743Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
             "line": 46,
@@ -4721,10 +4721,10 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice ensures that displayed items does equal [ \"buy some cheese\", \"feed the cat\" ]",
           "outcome": "SUCCESS",
-          "duration": 27,
+          "duration": 39,
           "children": [],
           "type": "Interaction",
-          "startedAt": "2026-09-10T06:04:11.387Z",
+          "startedAt": "2026-09-10T23:32:41.871Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
             "line": 48,
@@ -4734,10 +4734,10 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice ensures that persisted items does equal displayed items",
           "outcome": "SUCCESS",
-          "duration": 26,
+          "duration": 53,
           "children": [],
           "type": "Interaction",
-          "startedAt": "2026-09-10T06:04:11.429Z",
+          "startedAt": "2026-09-10T23:32:41.921Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
             "line": 55,
@@ -4748,22 +4748,22 @@ window.__SERENITY_REPORT_DATA__ = {
       "executionHistory": [
         {
           "outcome": "SUCCESS",
-          "run": "2593",
-          "timestamp": "2026-09-10T06:03:37.392Z",
-          "duration": 1944,
+          "run": "2596",
+          "timestamp": "2026-09-10T23:32:10.651Z",
+          "duration": 1783,
           "activities": [
             {
               "name": "Alice starts with an empty todo list",
               "outcome": "SUCCESS",
-              "duration": 546,
+              "duration": 494,
               "children": [
                 {
                   "name": "Alice navigates to \"/\"",
                   "outcome": "SUCCESS",
-                  "duration": 454,
+                  "duration": 451,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:04:10.210Z",
+                  "startedAt": "2026-09-10T23:32:40.889Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                     "line": 38,
@@ -4773,10 +4773,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice ensures that website title does equal \"Serenity/JS TodoApp\"",
                   "outcome": "SUCCESS",
-                  "duration": 70,
+                  "duration": 19,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:04:10.675Z",
+                  "startedAt": "2026-09-10T23:32:41.351Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                     "line": 38,
@@ -4785,7 +4785,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:04:10.210Z",
+              "startedAt": "2026-09-10T23:32:40.889Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 38,
@@ -4795,15 +4795,15 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice records an item called \"buy some cheese\"",
               "outcome": "SUCCESS",
-              "duration": 426,
+              "duration": 309,
               "children": [
                 {
                   "name": "Alice enters \"buy some cheese\" into \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 135,
+                  "duration": 85,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:04:10.770Z",
+                  "startedAt": "2026-09-10T23:32:41.394Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 12,
@@ -4813,10 +4813,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice presses key Enter in \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 149,
+                  "duration": 108,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:04:10.917Z",
+                  "startedAt": "2026-09-10T23:32:41.488Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 13,
@@ -4826,10 +4826,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice waits until displayed items does contain \"buy some cheese\"",
                   "outcome": "SUCCESS",
-                  "duration": 104,
+                  "duration": 85,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:04:11.081Z",
+                  "startedAt": "2026-09-10T23:32:41.608Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                     "line": 40,
@@ -4838,7 +4838,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:04:10.769Z",
+              "startedAt": "2026-09-10T23:32:41.394Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 40,
@@ -4848,10 +4848,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice ensures that displayed items does equal [ \"buy some cheese\" ]",
               "outcome": "SUCCESS",
-              "duration": 26,
+              "duration": 15,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:04:11.207Z",
+              "startedAt": "2026-09-10T23:32:41.716Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 42,
@@ -4861,15 +4861,15 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice records an item called \"feed the cat\"",
               "outcome": "SUCCESS",
-              "duration": 130,
+              "duration": 116,
               "children": [
                 {
                   "name": "Alice enters \"feed the cat\" into \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 16,
+                  "duration": 18,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:04:11.247Z",
+                  "startedAt": "2026-09-10T23:32:41.744Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 12,
@@ -4879,10 +4879,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice presses key Enter in \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 37,
+                  "duration": 31,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:04:11.275Z",
+                  "startedAt": "2026-09-10T23:32:41.773Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 13,
@@ -4892,10 +4892,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice waits until displayed items does contain \"feed the cat\"",
                   "outcome": "SUCCESS",
-                  "duration": 41,
+                  "duration": 31,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:04:11.325Z",
+                  "startedAt": "2026-09-10T23:32:41.817Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                     "line": 46,
@@ -4904,7 +4904,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:04:11.246Z",
+              "startedAt": "2026-09-10T23:32:41.743Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 46,
@@ -4914,10 +4914,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice ensures that displayed items does equal [ \"buy some cheese\", \"feed the cat\" ]",
               "outcome": "SUCCESS",
-              "duration": 27,
+              "duration": 39,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:04:11.387Z",
+              "startedAt": "2026-09-10T23:32:41.871Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 48,
@@ -4927,10 +4927,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice ensures that persisted items does equal displayed items",
               "outcome": "SUCCESS",
-              "duration": 26,
+              "duration": 53,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:04:11.429Z",
+              "startedAt": "2026-09-10T23:32:41.921Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 55,
@@ -4977,8 +4977,8 @@ window.__SERENITY_REPORT_DATA__ = {
       "name": "Todo List App should clear text input field when an item is added",
       "category": "Recording items",
       "outcome": "SUCCESS",
-      "duration": 539,
-      "startedAt": "2026-09-10T06:03:40.836Z",
+      "duration": 474,
+      "startedAt": "2026-09-10T23:32:13.522Z",
       "source": {
         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
         "line": 59
@@ -5009,15 +5009,15 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice starts with an empty todo list",
           "outcome": "SUCCESS",
-          "duration": 278,
+          "duration": 232,
           "children": [
             {
               "name": "Alice navigates to \"/\"",
               "outcome": "SUCCESS",
-              "duration": 252,
+              "duration": 207,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:40.901Z",
+              "startedAt": "2026-09-10T23:32:13.582Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 61,
@@ -5027,10 +5027,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice ensures that website title does equal \"Serenity/JS TodoApp\"",
               "outcome": "SUCCESS",
-              "duration": 5,
+              "duration": 4,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:41.164Z",
+              "startedAt": "2026-09-10T23:32:13.799Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 61,
@@ -5039,7 +5039,7 @@ window.__SERENITY_REPORT_DATA__ = {
             }
           ],
           "type": "Task",
-          "startedAt": "2026-09-10T06:03:40.901Z",
+          "startedAt": "2026-09-10T23:32:13.581Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
             "line": 61,
@@ -5049,15 +5049,15 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice records an item called \"buy some cheese\"",
           "outcome": "SUCCESS",
-          "duration": 110,
+          "duration": 99,
           "children": [
             {
               "name": "Alice enters \"buy some cheese\" into \"What needs to be done?\" input box",
               "outcome": "SUCCESS",
-              "duration": 26,
+              "duration": 24,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:41.190Z",
+              "startedAt": "2026-09-10T23:32:13.824Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                 "line": 12,
@@ -5067,10 +5067,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice presses key Enter in \"What needs to be done?\" input box",
               "outcome": "SUCCESS",
-              "duration": 33,
+              "duration": 29,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:41.227Z",
+              "startedAt": "2026-09-10T23:32:13.858Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                 "line": 13,
@@ -5080,10 +5080,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice waits until displayed items does contain \"buy some cheese\"",
               "outcome": "SUCCESS",
-              "duration": 18,
+              "duration": 15,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:41.271Z",
+              "startedAt": "2026-09-10T23:32:13.898Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 63,
@@ -5092,7 +5092,7 @@ window.__SERENITY_REPORT_DATA__ = {
             }
           ],
           "type": "Task",
-          "startedAt": "2026-09-10T06:03:41.190Z",
+          "startedAt": "2026-09-10T23:32:13.824Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
             "line": 63,
@@ -5102,10 +5102,10 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice ensures that the value of \"What needs to be done?\" input box does equal \"\"",
           "outcome": "SUCCESS",
-          "duration": 4,
+          "duration": 3,
           "children": [],
           "type": "Interaction",
-          "startedAt": "2026-09-10T06:03:41.310Z",
+          "startedAt": "2026-09-10T23:32:13.934Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
             "line": 65,
@@ -5115,10 +5115,10 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice ensures that <<persisted item called buy some cheese>>.name does equal \"buy some cheese\"",
           "outcome": "SUCCESS",
-          "duration": 4,
+          "duration": 3,
           "children": [],
           "type": "Interaction",
-          "startedAt": "2026-09-10T06:03:41.327Z",
+          "startedAt": "2026-09-10T23:32:13.950Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
             "line": 67,
@@ -5131,7 +5131,7 @@ window.__SERENITY_REPORT_DATA__ = {
           "duration": 4,
           "children": [],
           "type": "Interaction",
-          "startedAt": "2026-09-10T06:03:41.343Z",
+          "startedAt": "2026-09-10T23:32:13.965Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
             "line": 68,
@@ -5142,22 +5142,22 @@ window.__SERENITY_REPORT_DATA__ = {
       "executionHistory": [
         {
           "outcome": "SUCCESS",
-          "run": "2593",
-          "timestamp": "2026-09-10T06:03:37.392Z",
-          "duration": 539,
+          "run": "2596",
+          "timestamp": "2026-09-10T23:32:10.651Z",
+          "duration": 474,
           "activities": [
             {
               "name": "Alice starts with an empty todo list",
               "outcome": "SUCCESS",
-              "duration": 278,
+              "duration": 232,
               "children": [
                 {
                   "name": "Alice navigates to \"/\"",
                   "outcome": "SUCCESS",
-                  "duration": 252,
+                  "duration": 207,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:40.901Z",
+                  "startedAt": "2026-09-10T23:32:13.582Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                     "line": 61,
@@ -5167,10 +5167,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice ensures that website title does equal \"Serenity/JS TodoApp\"",
                   "outcome": "SUCCESS",
-                  "duration": 5,
+                  "duration": 4,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:41.164Z",
+                  "startedAt": "2026-09-10T23:32:13.799Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                     "line": 61,
@@ -5179,7 +5179,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:03:40.901Z",
+              "startedAt": "2026-09-10T23:32:13.581Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 61,
@@ -5189,15 +5189,15 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice records an item called \"buy some cheese\"",
               "outcome": "SUCCESS",
-              "duration": 110,
+              "duration": 99,
               "children": [
                 {
                   "name": "Alice enters \"buy some cheese\" into \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 26,
+                  "duration": 24,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:41.190Z",
+                  "startedAt": "2026-09-10T23:32:13.824Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 12,
@@ -5207,10 +5207,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice presses key Enter in \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 33,
+                  "duration": 29,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:41.227Z",
+                  "startedAt": "2026-09-10T23:32:13.858Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 13,
@@ -5220,10 +5220,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice waits until displayed items does contain \"buy some cheese\"",
                   "outcome": "SUCCESS",
-                  "duration": 18,
+                  "duration": 15,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:41.271Z",
+                  "startedAt": "2026-09-10T23:32:13.898Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                     "line": 63,
@@ -5232,7 +5232,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:03:41.190Z",
+              "startedAt": "2026-09-10T23:32:13.824Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 63,
@@ -5242,10 +5242,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice ensures that the value of \"What needs to be done?\" input box does equal \"\"",
               "outcome": "SUCCESS",
-              "duration": 4,
+              "duration": 3,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:41.310Z",
+              "startedAt": "2026-09-10T23:32:13.934Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 65,
@@ -5255,10 +5255,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice ensures that <<persisted item called buy some cheese>>.name does equal \"buy some cheese\"",
               "outcome": "SUCCESS",
-              "duration": 4,
+              "duration": 3,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:41.327Z",
+              "startedAt": "2026-09-10T23:32:13.950Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 67,
@@ -5271,7 +5271,7 @@ window.__SERENITY_REPORT_DATA__ = {
               "duration": 4,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:41.343Z",
+              "startedAt": "2026-09-10T23:32:13.965Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 68,
@@ -5318,8 +5318,8 @@ window.__SERENITY_REPORT_DATA__ = {
       "name": "Todo List App should clear text input field when an item is added",
       "category": "Recording items",
       "outcome": "SUCCESS",
-      "duration": 755,
-      "startedAt": "2026-09-10T06:03:52.684Z",
+      "duration": 752,
+      "startedAt": "2026-09-10T23:32:24.737Z",
       "source": {
         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
         "line": 59
@@ -5350,15 +5350,15 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice starts with an empty todo list",
           "outcome": "SUCCESS",
-          "duration": 298,
+          "duration": 296,
           "children": [
             {
               "name": "Alice navigates to \"/\"",
               "outcome": "SUCCESS",
-              "duration": 271,
+              "duration": 270,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:52.906Z",
+              "startedAt": "2026-09-10T23:32:24.971Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 61,
@@ -5371,7 +5371,7 @@ window.__SERENITY_REPORT_DATA__ = {
               "duration": 5,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:53.188Z",
+              "startedAt": "2026-09-10T23:32:25.252Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 61,
@@ -5380,7 +5380,7 @@ window.__SERENITY_REPORT_DATA__ = {
             }
           ],
           "type": "Task",
-          "startedAt": "2026-09-10T06:03:52.906Z",
+          "startedAt": "2026-09-10T23:32:24.971Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
             "line": 61,
@@ -5390,15 +5390,15 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice records an item called \"buy some cheese\"",
           "outcome": "SUCCESS",
-          "duration": 134,
+          "duration": 129,
           "children": [
             {
               "name": "Alice enters \"buy some cheese\" into \"What needs to be done?\" input box",
               "outcome": "SUCCESS",
-              "duration": 35,
+              "duration": 33,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:53.215Z",
+              "startedAt": "2026-09-10T23:32:25.279Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                 "line": 12,
@@ -5408,10 +5408,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice presses key Enter in \"What needs to be done?\" input box",
               "outcome": "SUCCESS",
-              "duration": 45,
+              "duration": 44,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:53.261Z",
+              "startedAt": "2026-09-10T23:32:25.323Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                 "line": 13,
@@ -5421,10 +5421,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice waits until displayed items does contain \"buy some cheese\"",
               "outcome": "SUCCESS",
-              "duration": 21,
+              "duration": 20,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:53.317Z",
+              "startedAt": "2026-09-10T23:32:25.377Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 63,
@@ -5433,7 +5433,7 @@ window.__SERENITY_REPORT_DATA__ = {
             }
           ],
           "type": "Task",
-          "startedAt": "2026-09-10T06:03:53.214Z",
+          "startedAt": "2026-09-10T23:32:25.278Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
             "line": 63,
@@ -5446,7 +5446,7 @@ window.__SERENITY_REPORT_DATA__ = {
           "duration": 5,
           "children": [],
           "type": "Interaction",
-          "startedAt": "2026-09-10T06:03:53.359Z",
+          "startedAt": "2026-09-10T23:32:25.418Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
             "line": 65,
@@ -5456,10 +5456,10 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice ensures that <<persisted item called buy some cheese>>.name does equal \"buy some cheese\"",
           "outcome": "SUCCESS",
-          "duration": 8,
+          "duration": 5,
           "children": [],
           "type": "Interaction",
-          "startedAt": "2026-09-10T06:03:53.379Z",
+          "startedAt": "2026-09-10T23:32:25.437Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
             "line": 67,
@@ -5469,10 +5469,10 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice ensures that <<persisted item called buy some cheese>>.completed does equal false",
           "outcome": "SUCCESS",
-          "duration": 5,
+          "duration": 4,
           "children": [],
           "type": "Interaction",
-          "startedAt": "2026-09-10T06:03:53.400Z",
+          "startedAt": "2026-09-10T23:32:25.455Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
             "line": 68,
@@ -5483,22 +5483,22 @@ window.__SERENITY_REPORT_DATA__ = {
       "executionHistory": [
         {
           "outcome": "SUCCESS",
-          "run": "2593",
-          "timestamp": "2026-09-10T06:03:37.392Z",
-          "duration": 755,
+          "run": "2596",
+          "timestamp": "2026-09-10T23:32:10.651Z",
+          "duration": 752,
           "activities": [
             {
               "name": "Alice starts with an empty todo list",
               "outcome": "SUCCESS",
-              "duration": 298,
+              "duration": 296,
               "children": [
                 {
                   "name": "Alice navigates to \"/\"",
                   "outcome": "SUCCESS",
-                  "duration": 271,
+                  "duration": 270,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:52.906Z",
+                  "startedAt": "2026-09-10T23:32:24.971Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                     "line": 61,
@@ -5511,7 +5511,7 @@ window.__SERENITY_REPORT_DATA__ = {
                   "duration": 5,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:53.188Z",
+                  "startedAt": "2026-09-10T23:32:25.252Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                     "line": 61,
@@ -5520,7 +5520,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:03:52.906Z",
+              "startedAt": "2026-09-10T23:32:24.971Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 61,
@@ -5530,15 +5530,15 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice records an item called \"buy some cheese\"",
               "outcome": "SUCCESS",
-              "duration": 134,
+              "duration": 129,
               "children": [
                 {
                   "name": "Alice enters \"buy some cheese\" into \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 35,
+                  "duration": 33,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:53.215Z",
+                  "startedAt": "2026-09-10T23:32:25.279Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 12,
@@ -5548,10 +5548,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice presses key Enter in \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 45,
+                  "duration": 44,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:53.261Z",
+                  "startedAt": "2026-09-10T23:32:25.323Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 13,
@@ -5561,10 +5561,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice waits until displayed items does contain \"buy some cheese\"",
                   "outcome": "SUCCESS",
-                  "duration": 21,
+                  "duration": 20,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:53.317Z",
+                  "startedAt": "2026-09-10T23:32:25.377Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                     "line": 63,
@@ -5573,7 +5573,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:03:53.214Z",
+              "startedAt": "2026-09-10T23:32:25.278Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 63,
@@ -5586,7 +5586,7 @@ window.__SERENITY_REPORT_DATA__ = {
               "duration": 5,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:53.359Z",
+              "startedAt": "2026-09-10T23:32:25.418Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 65,
@@ -5596,10 +5596,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice ensures that <<persisted item called buy some cheese>>.name does equal \"buy some cheese\"",
               "outcome": "SUCCESS",
-              "duration": 8,
+              "duration": 5,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:53.379Z",
+              "startedAt": "2026-09-10T23:32:25.437Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 67,
@@ -5609,10 +5609,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice ensures that <<persisted item called buy some cheese>>.completed does equal false",
               "outcome": "SUCCESS",
-              "duration": 5,
+              "duration": 4,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:53.400Z",
+              "startedAt": "2026-09-10T23:32:25.455Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 68,
@@ -5659,8 +5659,8 @@ window.__SERENITY_REPORT_DATA__ = {
       "name": "Todo List App should clear text input field when an item is added",
       "category": "Recording items",
       "outcome": "SUCCESS",
-      "duration": 1170,
-      "startedAt": "2026-09-10T06:04:11.623Z",
+      "duration": 929,
+      "startedAt": "2026-09-10T23:32:42.064Z",
       "source": {
         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
         "line": 59
@@ -5691,15 +5691,15 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice starts with an empty todo list",
           "outcome": "SUCCESS",
-          "duration": 586,
+          "duration": 323,
           "children": [
             {
               "name": "Alice navigates to \"/\"",
               "outcome": "SUCCESS",
-              "duration": 559,
+              "duration": 264,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:04:11.954Z",
+              "startedAt": "2026-09-10T23:32:42.373Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 61,
@@ -5709,10 +5709,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice ensures that website title does equal \"Serenity/JS TodoApp\"",
               "outcome": "SUCCESS",
-              "duration": 6,
+              "duration": 36,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:04:12.523Z",
+              "startedAt": "2026-09-10T23:32:42.648Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 61,
@@ -5721,7 +5721,7 @@ window.__SERENITY_REPORT_DATA__ = {
             }
           ],
           "type": "Task",
-          "startedAt": "2026-09-10T06:04:11.954Z",
+          "startedAt": "2026-09-10T23:32:42.372Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
             "line": 61,
@@ -5731,15 +5731,15 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice records an item called \"buy some cheese\"",
           "outcome": "SUCCESS",
-          "duration": 158,
+          "duration": 197,
           "children": [
             {
               "name": "Alice enters \"buy some cheese\" into \"What needs to be done?\" input box",
               "outcome": "SUCCESS",
-              "duration": 43,
+              "duration": 47,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:04:12.552Z",
+              "startedAt": "2026-09-10T23:32:42.709Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                 "line": 12,
@@ -5749,10 +5749,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice presses key Enter in \"What needs to be done?\" input box",
               "outcome": "SUCCESS",
-              "duration": 58,
+              "duration": 74,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:04:12.606Z",
+              "startedAt": "2026-09-10T23:32:42.767Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                 "line": 13,
@@ -5762,10 +5762,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice waits until displayed items does contain \"buy some cheese\"",
               "outcome": "SUCCESS",
-              "duration": 26,
+              "duration": 43,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:04:12.674Z",
+              "startedAt": "2026-09-10T23:32:42.852Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 63,
@@ -5774,7 +5774,7 @@ window.__SERENITY_REPORT_DATA__ = {
             }
           ],
           "type": "Task",
-          "startedAt": "2026-09-10T06:04:12.552Z",
+          "startedAt": "2026-09-10T23:32:42.708Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
             "line": 63,
@@ -5787,7 +5787,7 @@ window.__SERENITY_REPORT_DATA__ = {
           "duration": 4,
           "children": [],
           "type": "Interaction",
-          "startedAt": "2026-09-10T06:04:12.721Z",
+          "startedAt": "2026-09-10T23:32:42.916Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
             "line": 65,
@@ -5797,10 +5797,10 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice ensures that <<persisted item called buy some cheese>>.name does equal \"buy some cheese\"",
           "outcome": "SUCCESS",
-          "duration": 11,
+          "duration": 6,
           "children": [],
           "type": "Interaction",
-          "startedAt": "2026-09-10T06:04:12.744Z",
+          "startedAt": "2026-09-10T23:32:42.936Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
             "line": 67,
@@ -5810,10 +5810,10 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice ensures that <<persisted item called buy some cheese>>.completed does equal false",
           "outcome": "SUCCESS",
-          "duration": 5,
+          "duration": 10,
           "children": [],
           "type": "Interaction",
-          "startedAt": "2026-09-10T06:04:12.768Z",
+          "startedAt": "2026-09-10T23:32:42.957Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
             "line": 68,
@@ -5824,22 +5824,22 @@ window.__SERENITY_REPORT_DATA__ = {
       "executionHistory": [
         {
           "outcome": "SUCCESS",
-          "run": "2593",
-          "timestamp": "2026-09-10T06:03:37.392Z",
-          "duration": 1170,
+          "run": "2596",
+          "timestamp": "2026-09-10T23:32:10.651Z",
+          "duration": 929,
           "activities": [
             {
               "name": "Alice starts with an empty todo list",
               "outcome": "SUCCESS",
-              "duration": 586,
+              "duration": 323,
               "children": [
                 {
                   "name": "Alice navigates to \"/\"",
                   "outcome": "SUCCESS",
-                  "duration": 559,
+                  "duration": 264,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:04:11.954Z",
+                  "startedAt": "2026-09-10T23:32:42.373Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                     "line": 61,
@@ -5849,10 +5849,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice ensures that website title does equal \"Serenity/JS TodoApp\"",
                   "outcome": "SUCCESS",
-                  "duration": 6,
+                  "duration": 36,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:04:12.523Z",
+                  "startedAt": "2026-09-10T23:32:42.648Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                     "line": 61,
@@ -5861,7 +5861,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:04:11.954Z",
+              "startedAt": "2026-09-10T23:32:42.372Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 61,
@@ -5871,15 +5871,15 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice records an item called \"buy some cheese\"",
               "outcome": "SUCCESS",
-              "duration": 158,
+              "duration": 197,
               "children": [
                 {
                   "name": "Alice enters \"buy some cheese\" into \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 43,
+                  "duration": 47,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:04:12.552Z",
+                  "startedAt": "2026-09-10T23:32:42.709Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 12,
@@ -5889,10 +5889,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice presses key Enter in \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 58,
+                  "duration": 74,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:04:12.606Z",
+                  "startedAt": "2026-09-10T23:32:42.767Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 13,
@@ -5902,10 +5902,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice waits until displayed items does contain \"buy some cheese\"",
                   "outcome": "SUCCESS",
-                  "duration": 26,
+                  "duration": 43,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:04:12.674Z",
+                  "startedAt": "2026-09-10T23:32:42.852Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                     "line": 63,
@@ -5914,7 +5914,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:04:12.552Z",
+              "startedAt": "2026-09-10T23:32:42.708Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 63,
@@ -5927,7 +5927,7 @@ window.__SERENITY_REPORT_DATA__ = {
               "duration": 4,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:04:12.721Z",
+              "startedAt": "2026-09-10T23:32:42.916Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 65,
@@ -5937,10 +5937,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice ensures that <<persisted item called buy some cheese>>.name does equal \"buy some cheese\"",
               "outcome": "SUCCESS",
-              "duration": 11,
+              "duration": 6,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:04:12.744Z",
+              "startedAt": "2026-09-10T23:32:42.936Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 67,
@@ -5950,10 +5950,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice ensures that <<persisted item called buy some cheese>>.completed does equal false",
               "outcome": "SUCCESS",
-              "duration": 5,
+              "duration": 10,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:04:12.768Z",
+              "startedAt": "2026-09-10T23:32:42.957Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 68,
@@ -6000,8 +6000,8 @@ window.__SERENITY_REPORT_DATA__ = {
       "name": "Todo List App should reflect the number of items left in the counter",
       "category": "Recording items",
       "outcome": "SUCCESS",
-      "duration": 671,
-      "startedAt": "2026-09-10T06:03:41.395Z",
+      "duration": 650,
+      "startedAt": "2026-09-10T23:32:14.014Z",
       "source": {
         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
         "line": 72
@@ -6032,20 +6032,20 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice starts with a list containing 3 items",
           "outcome": "SUCCESS",
-          "duration": 530,
+          "duration": 511,
           "children": [
             {
               "name": "Alice starts with an empty todo list",
               "outcome": "SUCCESS",
-              "duration": 243,
+              "duration": 247,
               "children": [
                 {
                   "name": "Alice navigates to \"/\"",
                   "outcome": "SUCCESS",
-                  "duration": 217,
+                  "duration": 222,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:41.473Z",
+                  "startedAt": "2026-09-10T23:32:14.092Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                     "line": 18,
@@ -6055,10 +6055,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice ensures that website title does equal \"Serenity/JS TodoApp\"",
                   "outcome": "SUCCESS",
-                  "duration": 5,
+                  "duration": 3,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:41.700Z",
+                  "startedAt": "2026-09-10T23:32:14.325Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                     "line": 74,
@@ -6067,7 +6067,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:03:41.473Z",
+              "startedAt": "2026-09-10T23:32:14.092Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                 "line": 18,
@@ -6077,15 +6077,15 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice records an item called \"buy some cheese\"",
               "outcome": "SUCCESS",
-              "duration": 107,
+              "duration": 98,
               "children": [
                 {
                   "name": "Alice enters \"buy some cheese\" into \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 27,
+                  "duration": 23,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:41.726Z",
+                  "startedAt": "2026-09-10T23:32:14.349Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 12,
@@ -6095,10 +6095,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice presses key Enter in \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 31,
+                  "duration": 28,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:41.763Z",
+                  "startedAt": "2026-09-10T23:32:14.382Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 13,
@@ -6111,7 +6111,7 @@ window.__SERENITY_REPORT_DATA__ = {
                   "duration": 17,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:41.806Z",
+                  "startedAt": "2026-09-10T23:32:14.420Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                     "line": 19,
@@ -6120,7 +6120,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:03:41.726Z",
+              "startedAt": "2026-09-10T23:32:14.349Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                 "line": 19,
@@ -6130,15 +6130,15 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice records an item called \"feed the cat\"",
               "outcome": "SUCCESS",
-              "duration": 68,
+              "duration": 62,
               "children": [
                 {
                   "name": "Alice enters \"feed the cat\" into \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 7,
+                  "duration": 5,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:41.844Z",
+                  "startedAt": "2026-09-10T23:32:14.458Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 12,
@@ -6148,10 +6148,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice presses key Enter in \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 11,
+                  "duration": 7,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:41.862Z",
+                  "startedAt": "2026-09-10T23:32:14.474Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 13,
@@ -6161,10 +6161,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice waits until displayed items does contain \"feed the cat\"",
                   "outcome": "SUCCESS",
-                  "duration": 18,
+                  "duration": 17,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:41.884Z",
+                  "startedAt": "2026-09-10T23:32:14.492Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                     "line": 19,
@@ -6173,7 +6173,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:03:41.844Z",
+              "startedAt": "2026-09-10T23:32:14.457Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                 "line": 19,
@@ -6183,15 +6183,15 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice records an item called \"book a doctors appointment\"",
               "outcome": "SUCCESS",
-              "duration": 69,
+              "duration": 64,
               "children": [
                 {
                   "name": "Alice enters \"book a doctors appointment\" into \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 8,
+                  "duration": 5,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:41.923Z",
+                  "startedAt": "2026-09-10T23:32:14.530Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 12,
@@ -6201,10 +6201,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice presses key Enter in \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 10,
+                  "duration": 8,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:41.941Z",
+                  "startedAt": "2026-09-10T23:32:14.545Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 13,
@@ -6214,10 +6214,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice waits until displayed items does contain \"book a doctors appointment\"",
                   "outcome": "SUCCESS",
-                  "duration": 20,
+                  "duration": 19,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:41.962Z",
+                  "startedAt": "2026-09-10T23:32:14.564Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                     "line": 19,
@@ -6226,7 +6226,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:03:41.923Z",
+              "startedAt": "2026-09-10T23:32:14.529Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                 "line": 19,
@@ -6235,7 +6235,7 @@ window.__SERENITY_REPORT_DATA__ = {
             }
           ],
           "type": "Task",
-          "startedAt": "2026-09-10T06:03:41.472Z",
+          "startedAt": "2026-09-10T23:32:14.092Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
             "line": 74,
@@ -6245,10 +6245,10 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice ensures that number of items left does equal 3",
           "outcome": "SUCCESS",
-          "duration": 6,
+          "duration": 5,
           "children": [],
           "type": "Interaction",
-          "startedAt": "2026-09-10T06:03:42.013Z",
+          "startedAt": "2026-09-10T23:32:14.614Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
             "line": 76,
@@ -6258,10 +6258,10 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice ensures that <<persisted items>>.length does equal 3",
           "outcome": "SUCCESS",
-          "duration": 5,
+          "duration": 4,
           "children": [],
           "type": "Interaction",
-          "startedAt": "2026-09-10T06:03:42.031Z",
+          "startedAt": "2026-09-10T23:32:14.631Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
             "line": 77,
@@ -6272,27 +6272,27 @@ window.__SERENITY_REPORT_DATA__ = {
       "executionHistory": [
         {
           "outcome": "SUCCESS",
-          "run": "2593",
-          "timestamp": "2026-09-10T06:03:37.392Z",
-          "duration": 671,
+          "run": "2596",
+          "timestamp": "2026-09-10T23:32:10.651Z",
+          "duration": 650,
           "activities": [
             {
               "name": "Alice starts with a list containing 3 items",
               "outcome": "SUCCESS",
-              "duration": 530,
+              "duration": 511,
               "children": [
                 {
                   "name": "Alice starts with an empty todo list",
                   "outcome": "SUCCESS",
-                  "duration": 243,
+                  "duration": 247,
                   "children": [
                     {
                       "name": "Alice navigates to \"/\"",
                       "outcome": "SUCCESS",
-                      "duration": 217,
+                      "duration": 222,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:41.473Z",
+                      "startedAt": "2026-09-10T23:32:14.092Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                         "line": 18,
@@ -6302,10 +6302,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Alice ensures that website title does equal \"Serenity/JS TodoApp\"",
                       "outcome": "SUCCESS",
-                      "duration": 5,
+                      "duration": 3,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:41.700Z",
+                      "startedAt": "2026-09-10T23:32:14.325Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                         "line": 74,
@@ -6314,7 +6314,7 @@ window.__SERENITY_REPORT_DATA__ = {
                     }
                   ],
                   "type": "Task",
-                  "startedAt": "2026-09-10T06:03:41.473Z",
+                  "startedAt": "2026-09-10T23:32:14.092Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                     "line": 18,
@@ -6324,15 +6324,15 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice records an item called \"buy some cheese\"",
                   "outcome": "SUCCESS",
-                  "duration": 107,
+                  "duration": 98,
                   "children": [
                     {
                       "name": "Alice enters \"buy some cheese\" into \"What needs to be done?\" input box",
                       "outcome": "SUCCESS",
-                      "duration": 27,
+                      "duration": 23,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:41.726Z",
+                      "startedAt": "2026-09-10T23:32:14.349Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                         "line": 12,
@@ -6342,10 +6342,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Alice presses key Enter in \"What needs to be done?\" input box",
                       "outcome": "SUCCESS",
-                      "duration": 31,
+                      "duration": 28,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:41.763Z",
+                      "startedAt": "2026-09-10T23:32:14.382Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                         "line": 13,
@@ -6358,7 +6358,7 @@ window.__SERENITY_REPORT_DATA__ = {
                       "duration": 17,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:41.806Z",
+                      "startedAt": "2026-09-10T23:32:14.420Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                         "line": 19,
@@ -6367,7 +6367,7 @@ window.__SERENITY_REPORT_DATA__ = {
                     }
                   ],
                   "type": "Task",
-                  "startedAt": "2026-09-10T06:03:41.726Z",
+                  "startedAt": "2026-09-10T23:32:14.349Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                     "line": 19,
@@ -6377,15 +6377,15 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice records an item called \"feed the cat\"",
                   "outcome": "SUCCESS",
-                  "duration": 68,
+                  "duration": 62,
                   "children": [
                     {
                       "name": "Alice enters \"feed the cat\" into \"What needs to be done?\" input box",
                       "outcome": "SUCCESS",
-                      "duration": 7,
+                      "duration": 5,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:41.844Z",
+                      "startedAt": "2026-09-10T23:32:14.458Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                         "line": 12,
@@ -6395,10 +6395,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Alice presses key Enter in \"What needs to be done?\" input box",
                       "outcome": "SUCCESS",
-                      "duration": 11,
+                      "duration": 7,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:41.862Z",
+                      "startedAt": "2026-09-10T23:32:14.474Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                         "line": 13,
@@ -6408,10 +6408,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Alice waits until displayed items does contain \"feed the cat\"",
                       "outcome": "SUCCESS",
-                      "duration": 18,
+                      "duration": 17,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:41.884Z",
+                      "startedAt": "2026-09-10T23:32:14.492Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                         "line": 19,
@@ -6420,7 +6420,7 @@ window.__SERENITY_REPORT_DATA__ = {
                     }
                   ],
                   "type": "Task",
-                  "startedAt": "2026-09-10T06:03:41.844Z",
+                  "startedAt": "2026-09-10T23:32:14.457Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                     "line": 19,
@@ -6430,15 +6430,15 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice records an item called \"book a doctors appointment\"",
                   "outcome": "SUCCESS",
-                  "duration": 69,
+                  "duration": 64,
                   "children": [
                     {
                       "name": "Alice enters \"book a doctors appointment\" into \"What needs to be done?\" input box",
                       "outcome": "SUCCESS",
-                      "duration": 8,
+                      "duration": 5,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:41.923Z",
+                      "startedAt": "2026-09-10T23:32:14.530Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                         "line": 12,
@@ -6448,10 +6448,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Alice presses key Enter in \"What needs to be done?\" input box",
                       "outcome": "SUCCESS",
-                      "duration": 10,
+                      "duration": 8,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:41.941Z",
+                      "startedAt": "2026-09-10T23:32:14.545Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                         "line": 13,
@@ -6461,10 +6461,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Alice waits until displayed items does contain \"book a doctors appointment\"",
                       "outcome": "SUCCESS",
-                      "duration": 20,
+                      "duration": 19,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:41.962Z",
+                      "startedAt": "2026-09-10T23:32:14.564Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                         "line": 19,
@@ -6473,7 +6473,7 @@ window.__SERENITY_REPORT_DATA__ = {
                     }
                   ],
                   "type": "Task",
-                  "startedAt": "2026-09-10T06:03:41.923Z",
+                  "startedAt": "2026-09-10T23:32:14.529Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                     "line": 19,
@@ -6482,7 +6482,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:03:41.472Z",
+              "startedAt": "2026-09-10T23:32:14.092Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 74,
@@ -6492,10 +6492,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice ensures that number of items left does equal 3",
               "outcome": "SUCCESS",
-              "duration": 6,
+              "duration": 5,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:42.013Z",
+              "startedAt": "2026-09-10T23:32:14.614Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 76,
@@ -6505,10 +6505,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice ensures that <<persisted items>>.length does equal 3",
               "outcome": "SUCCESS",
-              "duration": 5,
+              "duration": 4,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:42.031Z",
+              "startedAt": "2026-09-10T23:32:14.631Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 77,
@@ -6555,8 +6555,8 @@ window.__SERENITY_REPORT_DATA__ = {
       "name": "Todo List App should reflect the number of items left in the counter",
       "category": "Recording items",
       "outcome": "SUCCESS",
-      "duration": 1010,
-      "startedAt": "2026-09-10T06:03:53.462Z",
+      "duration": 941,
+      "startedAt": "2026-09-10T23:32:25.513Z",
       "source": {
         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
         "line": 72
@@ -6587,20 +6587,20 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice starts with a list containing 3 items",
           "outcome": "SUCCESS",
-          "duration": 673,
+          "duration": 644,
           "children": [
             {
               "name": "Alice starts with an empty todo list",
               "outcome": "SUCCESS",
-              "duration": 310,
+              "duration": 303,
               "children": [
                 {
                   "name": "Alice navigates to \"/\"",
                   "outcome": "SUCCESS",
-                  "duration": 283,
+                  "duration": 277,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:53.723Z",
+                  "startedAt": "2026-09-10T23:32:25.738Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                     "line": 18,
@@ -6613,7 +6613,7 @@ window.__SERENITY_REPORT_DATA__ = {
                   "duration": 6,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:54.017Z",
+                  "startedAt": "2026-09-10T23:32:26.025Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                     "line": 74,
@@ -6622,7 +6622,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:03:53.723Z",
+              "startedAt": "2026-09-10T23:32:25.738Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                 "line": 18,
@@ -6632,15 +6632,15 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice records an item called \"buy some cheese\"",
               "outcome": "SUCCESS",
-              "duration": 145,
+              "duration": 140,
               "children": [
                 {
                   "name": "Alice enters \"buy some cheese\" into \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 39,
+                  "duration": 35,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:54.044Z",
+                  "startedAt": "2026-09-10T23:32:26.052Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 12,
@@ -6650,10 +6650,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice presses key Enter in \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 46,
+                  "duration": 42,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:54.093Z",
+                  "startedAt": "2026-09-10T23:32:26.098Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 13,
@@ -6663,10 +6663,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice waits until displayed items does contain \"buy some cheese\"",
                   "outcome": "SUCCESS",
-                  "duration": 29,
+                  "duration": 31,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:54.150Z",
+                  "startedAt": "2026-09-10T23:32:26.150Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                     "line": 19,
@@ -6675,7 +6675,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:03:54.044Z",
+              "startedAt": "2026-09-10T23:32:26.052Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                 "line": 19,
@@ -6685,15 +6685,15 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice records an item called \"feed the cat\"",
               "outcome": "SUCCESS",
-              "duration": 90,
+              "duration": 80,
               "children": [
                 {
                   "name": "Alice enters \"feed the cat\" into \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 14,
+                  "duration": 11,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:54.201Z",
+                  "startedAt": "2026-09-10T23:32:26.203Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 12,
@@ -6703,10 +6703,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice presses key Enter in \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 16,
+                  "duration": 14,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:54.226Z",
+                  "startedAt": "2026-09-10T23:32:26.225Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 13,
@@ -6716,10 +6716,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice waits until displayed items does contain \"feed the cat\"",
                   "outcome": "SUCCESS",
-                  "duration": 26,
+                  "duration": 22,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:54.253Z",
+                  "startedAt": "2026-09-10T23:32:26.250Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                     "line": 19,
@@ -6728,7 +6728,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:03:54.200Z",
+              "startedAt": "2026-09-10T23:32:26.203Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                 "line": 19,
@@ -6738,15 +6738,15 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice records an item called \"book a doctors appointment\"",
               "outcome": "SUCCESS",
-              "duration": 85,
+              "duration": 78,
               "children": [
                 {
                   "name": "Alice enters \"book a doctors appointment\" into \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 11,
+                  "duration": 10,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:54.300Z",
+                  "startedAt": "2026-09-10T23:32:26.293Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 12,
@@ -6756,10 +6756,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice presses key Enter in \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 17,
+                  "duration": 14,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:54.322Z",
+                  "startedAt": "2026-09-10T23:32:26.314Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 13,
@@ -6769,10 +6769,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice waits until displayed items does contain \"book a doctors appointment\"",
                   "outcome": "SUCCESS",
-                  "duration": 25,
+                  "duration": 22,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:54.350Z",
+                  "startedAt": "2026-09-10T23:32:26.339Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                     "line": 19,
@@ -6781,7 +6781,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:03:54.300Z",
+              "startedAt": "2026-09-10T23:32:26.293Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                 "line": 19,
@@ -6790,7 +6790,7 @@ window.__SERENITY_REPORT_DATA__ = {
             }
           ],
           "type": "Task",
-          "startedAt": "2026-09-10T06:03:53.723Z",
+          "startedAt": "2026-09-10T23:32:25.738Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
             "line": 74,
@@ -6800,10 +6800,10 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice ensures that number of items left does equal 3",
           "outcome": "SUCCESS",
-          "duration": 8,
+          "duration": 7,
           "children": [],
           "type": "Interaction",
-          "startedAt": "2026-09-10T06:03:54.406Z",
+          "startedAt": "2026-09-10T23:32:26.392Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
             "line": 76,
@@ -6816,7 +6816,7 @@ window.__SERENITY_REPORT_DATA__ = {
           "duration": 5,
           "children": [],
           "type": "Interaction",
-          "startedAt": "2026-09-10T06:03:54.428Z",
+          "startedAt": "2026-09-10T23:32:26.412Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
             "line": 77,
@@ -6827,27 +6827,27 @@ window.__SERENITY_REPORT_DATA__ = {
       "executionHistory": [
         {
           "outcome": "SUCCESS",
-          "run": "2593",
-          "timestamp": "2026-09-10T06:03:37.392Z",
-          "duration": 1010,
+          "run": "2596",
+          "timestamp": "2026-09-10T23:32:10.651Z",
+          "duration": 941,
           "activities": [
             {
               "name": "Alice starts with a list containing 3 items",
               "outcome": "SUCCESS",
-              "duration": 673,
+              "duration": 644,
               "children": [
                 {
                   "name": "Alice starts with an empty todo list",
                   "outcome": "SUCCESS",
-                  "duration": 310,
+                  "duration": 303,
                   "children": [
                     {
                       "name": "Alice navigates to \"/\"",
                       "outcome": "SUCCESS",
-                      "duration": 283,
+                      "duration": 277,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:53.723Z",
+                      "startedAt": "2026-09-10T23:32:25.738Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                         "line": 18,
@@ -6860,7 +6860,7 @@ window.__SERENITY_REPORT_DATA__ = {
                       "duration": 6,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:54.017Z",
+                      "startedAt": "2026-09-10T23:32:26.025Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                         "line": 74,
@@ -6869,7 +6869,7 @@ window.__SERENITY_REPORT_DATA__ = {
                     }
                   ],
                   "type": "Task",
-                  "startedAt": "2026-09-10T06:03:53.723Z",
+                  "startedAt": "2026-09-10T23:32:25.738Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                     "line": 18,
@@ -6879,15 +6879,15 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice records an item called \"buy some cheese\"",
                   "outcome": "SUCCESS",
-                  "duration": 145,
+                  "duration": 140,
                   "children": [
                     {
                       "name": "Alice enters \"buy some cheese\" into \"What needs to be done?\" input box",
                       "outcome": "SUCCESS",
-                      "duration": 39,
+                      "duration": 35,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:54.044Z",
+                      "startedAt": "2026-09-10T23:32:26.052Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                         "line": 12,
@@ -6897,10 +6897,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Alice presses key Enter in \"What needs to be done?\" input box",
                       "outcome": "SUCCESS",
-                      "duration": 46,
+                      "duration": 42,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:54.093Z",
+                      "startedAt": "2026-09-10T23:32:26.098Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                         "line": 13,
@@ -6910,10 +6910,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Alice waits until displayed items does contain \"buy some cheese\"",
                       "outcome": "SUCCESS",
-                      "duration": 29,
+                      "duration": 31,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:54.150Z",
+                      "startedAt": "2026-09-10T23:32:26.150Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                         "line": 19,
@@ -6922,7 +6922,7 @@ window.__SERENITY_REPORT_DATA__ = {
                     }
                   ],
                   "type": "Task",
-                  "startedAt": "2026-09-10T06:03:54.044Z",
+                  "startedAt": "2026-09-10T23:32:26.052Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                     "line": 19,
@@ -6932,15 +6932,15 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice records an item called \"feed the cat\"",
                   "outcome": "SUCCESS",
-                  "duration": 90,
+                  "duration": 80,
                   "children": [
                     {
                       "name": "Alice enters \"feed the cat\" into \"What needs to be done?\" input box",
                       "outcome": "SUCCESS",
-                      "duration": 14,
+                      "duration": 11,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:54.201Z",
+                      "startedAt": "2026-09-10T23:32:26.203Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                         "line": 12,
@@ -6950,10 +6950,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Alice presses key Enter in \"What needs to be done?\" input box",
                       "outcome": "SUCCESS",
-                      "duration": 16,
+                      "duration": 14,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:54.226Z",
+                      "startedAt": "2026-09-10T23:32:26.225Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                         "line": 13,
@@ -6963,10 +6963,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Alice waits until displayed items does contain \"feed the cat\"",
                       "outcome": "SUCCESS",
-                      "duration": 26,
+                      "duration": 22,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:54.253Z",
+                      "startedAt": "2026-09-10T23:32:26.250Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                         "line": 19,
@@ -6975,7 +6975,7 @@ window.__SERENITY_REPORT_DATA__ = {
                     }
                   ],
                   "type": "Task",
-                  "startedAt": "2026-09-10T06:03:54.200Z",
+                  "startedAt": "2026-09-10T23:32:26.203Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                     "line": 19,
@@ -6985,15 +6985,15 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice records an item called \"book a doctors appointment\"",
                   "outcome": "SUCCESS",
-                  "duration": 85,
+                  "duration": 78,
                   "children": [
                     {
                       "name": "Alice enters \"book a doctors appointment\" into \"What needs to be done?\" input box",
                       "outcome": "SUCCESS",
-                      "duration": 11,
+                      "duration": 10,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:54.300Z",
+                      "startedAt": "2026-09-10T23:32:26.293Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                         "line": 12,
@@ -7003,10 +7003,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Alice presses key Enter in \"What needs to be done?\" input box",
                       "outcome": "SUCCESS",
-                      "duration": 17,
+                      "duration": 14,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:54.322Z",
+                      "startedAt": "2026-09-10T23:32:26.314Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                         "line": 13,
@@ -7016,10 +7016,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Alice waits until displayed items does contain \"book a doctors appointment\"",
                       "outcome": "SUCCESS",
-                      "duration": 25,
+                      "duration": 22,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:54.350Z",
+                      "startedAt": "2026-09-10T23:32:26.339Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                         "line": 19,
@@ -7028,7 +7028,7 @@ window.__SERENITY_REPORT_DATA__ = {
                     }
                   ],
                   "type": "Task",
-                  "startedAt": "2026-09-10T06:03:54.300Z",
+                  "startedAt": "2026-09-10T23:32:26.293Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                     "line": 19,
@@ -7037,7 +7037,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:03:53.723Z",
+              "startedAt": "2026-09-10T23:32:25.738Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 74,
@@ -7047,10 +7047,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice ensures that number of items left does equal 3",
               "outcome": "SUCCESS",
-              "duration": 8,
+              "duration": 7,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:54.406Z",
+              "startedAt": "2026-09-10T23:32:26.392Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 76,
@@ -7063,7 +7063,7 @@ window.__SERENITY_REPORT_DATA__ = {
               "duration": 5,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:54.428Z",
+              "startedAt": "2026-09-10T23:32:26.412Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 77,
@@ -7110,8 +7110,8 @@ window.__SERENITY_REPORT_DATA__ = {
       "name": "Todo List App should reflect the number of items left in the counter",
       "category": "Recording items",
       "outcome": "SUCCESS",
-      "duration": 1221,
-      "startedAt": "2026-09-10T06:04:12.819Z",
+      "duration": 1174,
+      "startedAt": "2026-09-10T23:32:43.029Z",
       "source": {
         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
         "line": 72
@@ -7142,20 +7142,20 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice starts with a list containing 3 items",
           "outcome": "SUCCESS",
-          "duration": 821,
+          "duration": 647,
           "children": [
             {
               "name": "Alice starts with an empty todo list",
               "outcome": "SUCCESS",
-              "duration": 415,
+              "duration": 279,
               "children": [
                 {
                   "name": "Alice navigates to \"/\"",
                   "outcome": "SUCCESS",
-                  "duration": 389,
+                  "duration": 225,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:04:13.142Z",
+                  "startedAt": "2026-09-10T23:32:43.442Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                     "line": 18,
@@ -7165,10 +7165,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice ensures that website title does equal \"Serenity/JS TodoApp\"",
                   "outcome": "SUCCESS",
-                  "duration": 4,
+                  "duration": 34,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:04:13.542Z",
+                  "startedAt": "2026-09-10T23:32:43.677Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                     "line": 74,
@@ -7177,7 +7177,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:04:13.142Z",
+              "startedAt": "2026-09-10T23:32:43.442Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                 "line": 18,
@@ -7187,15 +7187,15 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice records an item called \"buy some cheese\"",
               "outcome": "SUCCESS",
-              "duration": 171,
+              "duration": 165,
               "children": [
                 {
                   "name": "Alice enters \"buy some cheese\" into \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 39,
+                  "duration": 42,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:04:13.568Z",
+                  "startedAt": "2026-09-10T23:32:43.733Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 12,
@@ -7205,10 +7205,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice presses key Enter in \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 61,
+                  "duration": 68,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:04:13.618Z",
+                  "startedAt": "2026-09-10T23:32:43.785Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 13,
@@ -7218,10 +7218,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice waits until displayed items does contain \"buy some cheese\"",
                   "outcome": "SUCCESS",
-                  "duration": 39,
+                  "duration": 23,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:04:13.690Z",
+                  "startedAt": "2026-09-10T23:32:43.864Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                     "line": 19,
@@ -7230,7 +7230,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:04:13.568Z",
+              "startedAt": "2026-09-10T23:32:43.732Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                 "line": 19,
@@ -7240,15 +7240,15 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice records an item called \"feed the cat\"",
               "outcome": "SUCCESS",
-              "duration": 86,
+              "duration": 88,
               "children": [
                 {
                   "name": "Alice enters \"feed the cat\" into \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 11,
+                  "duration": 14,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:04:13.750Z",
+                  "startedAt": "2026-09-10T23:32:43.908Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 12,
@@ -7258,10 +7258,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice presses key Enter in \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 18,
+                  "duration": 20,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:04:13.772Z",
+                  "startedAt": "2026-09-10T23:32:43.933Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 13,
@@ -7271,10 +7271,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice waits until displayed items does contain \"feed the cat\"",
                   "outcome": "SUCCESS",
-                  "duration": 24,
+                  "duration": 22,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:04:13.801Z",
+                  "startedAt": "2026-09-10T23:32:43.964Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                     "line": 19,
@@ -7283,7 +7283,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:04:13.750Z",
+              "startedAt": "2026-09-10T23:32:43.908Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                 "line": 19,
@@ -7293,7 +7293,7 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice records an item called \"book a doctors appointment\"",
               "outcome": "SUCCESS",
-              "duration": 103,
+              "duration": 72,
               "children": [
                 {
                   "name": "Alice enters \"book a doctors appointment\" into \"What needs to be done?\" input box",
@@ -7301,7 +7301,7 @@ window.__SERENITY_REPORT_DATA__ = {
                   "duration": 11,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:04:13.847Z",
+                  "startedAt": "2026-09-10T23:32:44.007Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 12,
@@ -7311,10 +7311,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice presses key Enter in \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 21,
+                  "duration": 11,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:04:13.869Z",
+                  "startedAt": "2026-09-10T23:32:44.027Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 13,
@@ -7324,10 +7324,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice waits until displayed items does contain \"book a doctors appointment\"",
                   "outcome": "SUCCESS",
-                  "duration": 39,
+                  "duration": 20,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:04:13.901Z",
+                  "startedAt": "2026-09-10T23:32:44.048Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                     "line": 19,
@@ -7336,7 +7336,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:04:13.847Z",
+              "startedAt": "2026-09-10T23:32:44.006Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                 "line": 19,
@@ -7345,7 +7345,7 @@ window.__SERENITY_REPORT_DATA__ = {
             }
           ],
           "type": "Task",
-          "startedAt": "2026-09-10T06:04:13.141Z",
+          "startedAt": "2026-09-10T23:32:43.442Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
             "line": 74,
@@ -7355,10 +7355,10 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice ensures that number of items left does equal 3",
           "outcome": "SUCCESS",
-          "duration": 16,
+          "duration": 15,
           "children": [],
           "type": "Interaction",
-          "startedAt": "2026-09-10T06:04:13.975Z",
+          "startedAt": "2026-09-10T23:32:44.099Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
             "line": 76,
@@ -7368,10 +7368,10 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice ensures that <<persisted items>>.length does equal 3",
           "outcome": "SUCCESS",
-          "duration": 5,
+          "duration": 4,
           "children": [],
           "type": "Interaction",
-          "startedAt": "2026-09-10T06:04:14.006Z",
+          "startedAt": "2026-09-10T23:32:44.131Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
             "line": 77,
@@ -7382,27 +7382,27 @@ window.__SERENITY_REPORT_DATA__ = {
       "executionHistory": [
         {
           "outcome": "SUCCESS",
-          "run": "2593",
-          "timestamp": "2026-09-10T06:03:37.392Z",
-          "duration": 1221,
+          "run": "2596",
+          "timestamp": "2026-09-10T23:32:10.651Z",
+          "duration": 1174,
           "activities": [
             {
               "name": "Alice starts with a list containing 3 items",
               "outcome": "SUCCESS",
-              "duration": 821,
+              "duration": 647,
               "children": [
                 {
                   "name": "Alice starts with an empty todo list",
                   "outcome": "SUCCESS",
-                  "duration": 415,
+                  "duration": 279,
                   "children": [
                     {
                       "name": "Alice navigates to \"/\"",
                       "outcome": "SUCCESS",
-                      "duration": 389,
+                      "duration": 225,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:04:13.142Z",
+                      "startedAt": "2026-09-10T23:32:43.442Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                         "line": 18,
@@ -7412,10 +7412,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Alice ensures that website title does equal \"Serenity/JS TodoApp\"",
                       "outcome": "SUCCESS",
-                      "duration": 4,
+                      "duration": 34,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:04:13.542Z",
+                      "startedAt": "2026-09-10T23:32:43.677Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                         "line": 74,
@@ -7424,7 +7424,7 @@ window.__SERENITY_REPORT_DATA__ = {
                     }
                   ],
                   "type": "Task",
-                  "startedAt": "2026-09-10T06:04:13.142Z",
+                  "startedAt": "2026-09-10T23:32:43.442Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                     "line": 18,
@@ -7434,15 +7434,15 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice records an item called \"buy some cheese\"",
                   "outcome": "SUCCESS",
-                  "duration": 171,
+                  "duration": 165,
                   "children": [
                     {
                       "name": "Alice enters \"buy some cheese\" into \"What needs to be done?\" input box",
                       "outcome": "SUCCESS",
-                      "duration": 39,
+                      "duration": 42,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:04:13.568Z",
+                      "startedAt": "2026-09-10T23:32:43.733Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                         "line": 12,
@@ -7452,10 +7452,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Alice presses key Enter in \"What needs to be done?\" input box",
                       "outcome": "SUCCESS",
-                      "duration": 61,
+                      "duration": 68,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:04:13.618Z",
+                      "startedAt": "2026-09-10T23:32:43.785Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                         "line": 13,
@@ -7465,10 +7465,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Alice waits until displayed items does contain \"buy some cheese\"",
                       "outcome": "SUCCESS",
-                      "duration": 39,
+                      "duration": 23,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:04:13.690Z",
+                      "startedAt": "2026-09-10T23:32:43.864Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                         "line": 19,
@@ -7477,7 +7477,7 @@ window.__SERENITY_REPORT_DATA__ = {
                     }
                   ],
                   "type": "Task",
-                  "startedAt": "2026-09-10T06:04:13.568Z",
+                  "startedAt": "2026-09-10T23:32:43.732Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                     "line": 19,
@@ -7487,15 +7487,15 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice records an item called \"feed the cat\"",
                   "outcome": "SUCCESS",
-                  "duration": 86,
+                  "duration": 88,
                   "children": [
                     {
                       "name": "Alice enters \"feed the cat\" into \"What needs to be done?\" input box",
                       "outcome": "SUCCESS",
-                      "duration": 11,
+                      "duration": 14,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:04:13.750Z",
+                      "startedAt": "2026-09-10T23:32:43.908Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                         "line": 12,
@@ -7505,10 +7505,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Alice presses key Enter in \"What needs to be done?\" input box",
                       "outcome": "SUCCESS",
-                      "duration": 18,
+                      "duration": 20,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:04:13.772Z",
+                      "startedAt": "2026-09-10T23:32:43.933Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                         "line": 13,
@@ -7518,10 +7518,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Alice waits until displayed items does contain \"feed the cat\"",
                       "outcome": "SUCCESS",
-                      "duration": 24,
+                      "duration": 22,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:04:13.801Z",
+                      "startedAt": "2026-09-10T23:32:43.964Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                         "line": 19,
@@ -7530,7 +7530,7 @@ window.__SERENITY_REPORT_DATA__ = {
                     }
                   ],
                   "type": "Task",
-                  "startedAt": "2026-09-10T06:04:13.750Z",
+                  "startedAt": "2026-09-10T23:32:43.908Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                     "line": 19,
@@ -7540,7 +7540,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice records an item called \"book a doctors appointment\"",
                   "outcome": "SUCCESS",
-                  "duration": 103,
+                  "duration": 72,
                   "children": [
                     {
                       "name": "Alice enters \"book a doctors appointment\" into \"What needs to be done?\" input box",
@@ -7548,7 +7548,7 @@ window.__SERENITY_REPORT_DATA__ = {
                       "duration": 11,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:04:13.847Z",
+                      "startedAt": "2026-09-10T23:32:44.007Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                         "line": 12,
@@ -7558,10 +7558,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Alice presses key Enter in \"What needs to be done?\" input box",
                       "outcome": "SUCCESS",
-                      "duration": 21,
+                      "duration": 11,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:04:13.869Z",
+                      "startedAt": "2026-09-10T23:32:44.027Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                         "line": 13,
@@ -7571,10 +7571,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Alice waits until displayed items does contain \"book a doctors appointment\"",
                       "outcome": "SUCCESS",
-                      "duration": 39,
+                      "duration": 20,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:04:13.901Z",
+                      "startedAt": "2026-09-10T23:32:44.048Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                         "line": 19,
@@ -7583,7 +7583,7 @@ window.__SERENITY_REPORT_DATA__ = {
                     }
                   ],
                   "type": "Task",
-                  "startedAt": "2026-09-10T06:04:13.847Z",
+                  "startedAt": "2026-09-10T23:32:44.006Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                     "line": 19,
@@ -7592,7 +7592,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:04:13.141Z",
+              "startedAt": "2026-09-10T23:32:43.442Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 74,
@@ -7602,10 +7602,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice ensures that number of items left does equal 3",
               "outcome": "SUCCESS",
-              "duration": 16,
+              "duration": 15,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:04:13.975Z",
+              "startedAt": "2026-09-10T23:32:44.099Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 76,
@@ -7615,10 +7615,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice ensures that <<persisted items>>.length does equal 3",
               "outcome": "SUCCESS",
-              "duration": 5,
+              "duration": 4,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:04:14.006Z",
+              "startedAt": "2026-09-10T23:32:44.131Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 77,
@@ -7665,8 +7665,8 @@ window.__SERENITY_REPORT_DATA__ = {
       "name": "Todo List App should show #main and #footer sections only when list contains items",
       "category": "Recording items",
       "outcome": "SUCCESS",
-      "duration": 1031,
-      "startedAt": "2026-09-10T06:03:42.087Z",
+      "duration": 1001,
+      "startedAt": "2026-09-10T23:32:14.683Z",
       "source": {
         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
         "line": 81
@@ -7697,15 +7697,15 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice starts with an empty todo list",
           "outcome": "SUCCESS",
-          "duration": 257,
+          "duration": 258,
           "children": [
             {
               "name": "Alice navigates to \"/\"",
               "outcome": "SUCCESS",
-              "duration": 231,
+              "duration": 233,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:42.151Z",
+              "startedAt": "2026-09-10T23:32:14.738Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 83,
@@ -7715,10 +7715,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice ensures that website title does equal \"Serenity/JS TodoApp\"",
               "outcome": "SUCCESS",
-              "duration": 5,
+              "duration": 4,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:42.393Z",
+              "startedAt": "2026-09-10T23:32:14.981Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 83,
@@ -7727,7 +7727,7 @@ window.__SERENITY_REPORT_DATA__ = {
             }
           ],
           "type": "Task",
-          "startedAt": "2026-09-10T06:03:42.151Z",
+          "startedAt": "2026-09-10T23:32:14.738Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
             "line": 83,
@@ -7737,10 +7737,10 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice ensures that main section does not become present",
           "outcome": "SUCCESS",
-          "duration": 255,
+          "duration": 254,
           "children": [],
           "type": "Interaction",
-          "startedAt": "2026-09-10T06:03:42.418Z",
+          "startedAt": "2026-09-10T23:32:15.006Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
             "line": 85,
@@ -7750,10 +7750,10 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice ensures that footer section does not become present",
           "outcome": "SUCCESS",
-          "duration": 253,
+          "duration": 251,
           "children": [],
           "type": "Interaction",
-          "startedAt": "2026-09-10T06:03:42.683Z",
+          "startedAt": "2026-09-10T23:32:15.271Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
             "line": 86,
@@ -7763,15 +7763,15 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice records an item called \"buy some cheese\"",
           "outcome": "SUCCESS",
-          "duration": 89,
+          "duration": 81,
           "children": [
             {
               "name": "Alice enters \"buy some cheese\" into \"What needs to be done?\" input box",
               "outcome": "SUCCESS",
-              "duration": 9,
+              "duration": 8,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:42.947Z",
+              "startedAt": "2026-09-10T23:32:15.533Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                 "line": 12,
@@ -7781,10 +7781,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice presses key Enter in \"What needs to be done?\" input box",
               "outcome": "SUCCESS",
-              "duration": 30,
+              "duration": 27,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:42.967Z",
+              "startedAt": "2026-09-10T23:32:15.551Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                 "line": 13,
@@ -7794,10 +7794,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice waits until displayed items does contain \"buy some cheese\"",
               "outcome": "SUCCESS",
-              "duration": 18,
+              "duration": 16,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:43.008Z",
+              "startedAt": "2026-09-10T23:32:15.588Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 88,
@@ -7806,7 +7806,7 @@ window.__SERENITY_REPORT_DATA__ = {
             }
           ],
           "type": "Task",
-          "startedAt": "2026-09-10T06:03:42.947Z",
+          "startedAt": "2026-09-10T23:32:15.533Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
             "line": 88,
@@ -7816,10 +7816,10 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice ensures that main section does become visible",
           "outcome": "SUCCESS",
-          "duration": 18,
+          "duration": 12,
           "children": [],
           "type": "Interaction",
-          "startedAt": "2026-09-10T06:03:43.047Z",
+          "startedAt": "2026-09-10T23:32:15.625Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
             "line": 90,
@@ -7829,10 +7829,10 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice ensures that footer section does become visible",
           "outcome": "SUCCESS",
-          "duration": 13,
+          "duration": 11,
           "children": [],
           "type": "Interaction",
-          "startedAt": "2026-09-10T06:03:43.076Z",
+          "startedAt": "2026-09-10T23:32:15.647Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
             "line": 91,
@@ -7843,22 +7843,22 @@ window.__SERENITY_REPORT_DATA__ = {
       "executionHistory": [
         {
           "outcome": "SUCCESS",
-          "run": "2593",
-          "timestamp": "2026-09-10T06:03:37.392Z",
-          "duration": 1031,
+          "run": "2596",
+          "timestamp": "2026-09-10T23:32:10.651Z",
+          "duration": 1001,
           "activities": [
             {
               "name": "Alice starts with an empty todo list",
               "outcome": "SUCCESS",
-              "duration": 257,
+              "duration": 258,
               "children": [
                 {
                   "name": "Alice navigates to \"/\"",
                   "outcome": "SUCCESS",
-                  "duration": 231,
+                  "duration": 233,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:42.151Z",
+                  "startedAt": "2026-09-10T23:32:14.738Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                     "line": 83,
@@ -7868,10 +7868,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice ensures that website title does equal \"Serenity/JS TodoApp\"",
                   "outcome": "SUCCESS",
-                  "duration": 5,
+                  "duration": 4,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:42.393Z",
+                  "startedAt": "2026-09-10T23:32:14.981Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                     "line": 83,
@@ -7880,7 +7880,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:03:42.151Z",
+              "startedAt": "2026-09-10T23:32:14.738Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 83,
@@ -7890,10 +7890,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice ensures that main section does not become present",
               "outcome": "SUCCESS",
-              "duration": 255,
+              "duration": 254,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:42.418Z",
+              "startedAt": "2026-09-10T23:32:15.006Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 85,
@@ -7903,10 +7903,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice ensures that footer section does not become present",
               "outcome": "SUCCESS",
-              "duration": 253,
+              "duration": 251,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:42.683Z",
+              "startedAt": "2026-09-10T23:32:15.271Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 86,
@@ -7916,15 +7916,15 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice records an item called \"buy some cheese\"",
               "outcome": "SUCCESS",
-              "duration": 89,
+              "duration": 81,
               "children": [
                 {
                   "name": "Alice enters \"buy some cheese\" into \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 9,
+                  "duration": 8,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:42.947Z",
+                  "startedAt": "2026-09-10T23:32:15.533Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 12,
@@ -7934,10 +7934,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice presses key Enter in \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 30,
+                  "duration": 27,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:42.967Z",
+                  "startedAt": "2026-09-10T23:32:15.551Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 13,
@@ -7947,10 +7947,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice waits until displayed items does contain \"buy some cheese\"",
                   "outcome": "SUCCESS",
-                  "duration": 18,
+                  "duration": 16,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:43.008Z",
+                  "startedAt": "2026-09-10T23:32:15.588Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                     "line": 88,
@@ -7959,7 +7959,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:03:42.947Z",
+              "startedAt": "2026-09-10T23:32:15.533Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 88,
@@ -7969,10 +7969,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice ensures that main section does become visible",
               "outcome": "SUCCESS",
-              "duration": 18,
+              "duration": 12,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:43.047Z",
+              "startedAt": "2026-09-10T23:32:15.625Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 90,
@@ -7982,10 +7982,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice ensures that footer section does become visible",
               "outcome": "SUCCESS",
-              "duration": 13,
+              "duration": 11,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:43.076Z",
+              "startedAt": "2026-09-10T23:32:15.647Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 91,
@@ -8033,7 +8033,7 @@ window.__SERENITY_REPORT_DATA__ = {
       "category": "Recording items",
       "outcome": "SUCCESS",
       "duration": 1342,
-      "startedAt": "2026-09-10T06:03:54.501Z",
+      "startedAt": "2026-09-10T23:32:26.484Z",
       "source": {
         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
         "line": 81
@@ -8064,15 +8064,15 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice starts with an empty todo list",
           "outcome": "SUCCESS",
-          "duration": 341,
+          "duration": 309,
           "children": [
             {
               "name": "Alice navigates to \"/\"",
               "outcome": "SUCCESS",
-              "duration": 313,
+              "duration": 273,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:54.764Z",
+              "startedAt": "2026-09-10T23:32:26.722Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 83,
@@ -8082,10 +8082,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice ensures that website title does equal \"Serenity/JS TodoApp\"",
               "outcome": "SUCCESS",
-              "duration": 7,
+              "duration": 16,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:55.087Z",
+              "startedAt": "2026-09-10T23:32:27.005Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 83,
@@ -8094,7 +8094,7 @@ window.__SERENITY_REPORT_DATA__ = {
             }
           ],
           "type": "Task",
-          "startedAt": "2026-09-10T06:03:54.763Z",
+          "startedAt": "2026-09-10T23:32:26.722Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
             "line": 83,
@@ -8104,10 +8104,10 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice ensures that main section does not become present",
           "outcome": "SUCCESS",
-          "duration": 255,
+          "duration": 254,
           "children": [],
           "type": "Interaction",
-          "startedAt": "2026-09-10T06:03:55.115Z",
+          "startedAt": "2026-09-10T23:32:27.042Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
             "line": 85,
@@ -8117,10 +8117,10 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice ensures that footer section does not become present",
           "outcome": "SUCCESS",
-          "duration": 253,
+          "duration": 252,
           "children": [],
           "type": "Interaction",
-          "startedAt": "2026-09-10T06:03:55.380Z",
+          "startedAt": "2026-09-10T23:32:27.306Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
             "line": 86,
@@ -8130,15 +8130,15 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice records an item called \"buy some cheese\"",
           "outcome": "SUCCESS",
-          "duration": 110,
+          "duration": 179,
           "children": [
             {
               "name": "Alice enters \"buy some cheese\" into \"What needs to be done?\" input box",
               "outcome": "SUCCESS",
-              "duration": 13,
+              "duration": 87,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:55.644Z",
+              "startedAt": "2026-09-10T23:32:27.569Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                 "line": 12,
@@ -8148,10 +8148,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice presses key Enter in \"What needs to be done?\" input box",
               "outcome": "SUCCESS",
-              "duration": 44,
+              "duration": 40,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:55.667Z",
+              "startedAt": "2026-09-10T23:32:27.667Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                 "line": 13,
@@ -8161,10 +8161,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice waits until displayed items does contain \"buy some cheese\"",
               "outcome": "SUCCESS",
-              "duration": 21,
+              "duration": 20,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:55.722Z",
+              "startedAt": "2026-09-10T23:32:27.718Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 88,
@@ -8173,7 +8173,7 @@ window.__SERENITY_REPORT_DATA__ = {
             }
           ],
           "type": "Task",
-          "startedAt": "2026-09-10T06:03:55.644Z",
+          "startedAt": "2026-09-10T23:32:27.569Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
             "line": 88,
@@ -8183,10 +8183,10 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice ensures that main section does become visible",
           "outcome": "SUCCESS",
-          "duration": 20,
+          "duration": 17,
           "children": [],
           "type": "Interaction",
-          "startedAt": "2026-09-10T06:03:55.764Z",
+          "startedAt": "2026-09-10T23:32:27.758Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
             "line": 90,
@@ -8196,10 +8196,10 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice ensures that footer section does become visible",
           "outcome": "SUCCESS",
-          "duration": 19,
+          "duration": 15,
           "children": [],
           "type": "Interaction",
-          "startedAt": "2026-09-10T06:03:55.794Z",
+          "startedAt": "2026-09-10T23:32:27.784Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
             "line": 91,
@@ -8210,22 +8210,22 @@ window.__SERENITY_REPORT_DATA__ = {
       "executionHistory": [
         {
           "outcome": "SUCCESS",
-          "run": "2593",
-          "timestamp": "2026-09-10T06:03:37.392Z",
+          "run": "2596",
+          "timestamp": "2026-09-10T23:32:10.651Z",
           "duration": 1342,
           "activities": [
             {
               "name": "Alice starts with an empty todo list",
               "outcome": "SUCCESS",
-              "duration": 341,
+              "duration": 309,
               "children": [
                 {
                   "name": "Alice navigates to \"/\"",
                   "outcome": "SUCCESS",
-                  "duration": 313,
+                  "duration": 273,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:54.764Z",
+                  "startedAt": "2026-09-10T23:32:26.722Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                     "line": 83,
@@ -8235,10 +8235,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice ensures that website title does equal \"Serenity/JS TodoApp\"",
                   "outcome": "SUCCESS",
-                  "duration": 7,
+                  "duration": 16,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:55.087Z",
+                  "startedAt": "2026-09-10T23:32:27.005Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                     "line": 83,
@@ -8247,7 +8247,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:03:54.763Z",
+              "startedAt": "2026-09-10T23:32:26.722Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 83,
@@ -8257,10 +8257,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice ensures that main section does not become present",
               "outcome": "SUCCESS",
-              "duration": 255,
+              "duration": 254,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:55.115Z",
+              "startedAt": "2026-09-10T23:32:27.042Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 85,
@@ -8270,10 +8270,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice ensures that footer section does not become present",
               "outcome": "SUCCESS",
-              "duration": 253,
+              "duration": 252,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:55.380Z",
+              "startedAt": "2026-09-10T23:32:27.306Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 86,
@@ -8283,15 +8283,15 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice records an item called \"buy some cheese\"",
               "outcome": "SUCCESS",
-              "duration": 110,
+              "duration": 179,
               "children": [
                 {
                   "name": "Alice enters \"buy some cheese\" into \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 13,
+                  "duration": 87,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:55.644Z",
+                  "startedAt": "2026-09-10T23:32:27.569Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 12,
@@ -8301,10 +8301,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice presses key Enter in \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 44,
+                  "duration": 40,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:55.667Z",
+                  "startedAt": "2026-09-10T23:32:27.667Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 13,
@@ -8314,10 +8314,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice waits until displayed items does contain \"buy some cheese\"",
                   "outcome": "SUCCESS",
-                  "duration": 21,
+                  "duration": 20,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:55.722Z",
+                  "startedAt": "2026-09-10T23:32:27.718Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                     "line": 88,
@@ -8326,7 +8326,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:03:55.644Z",
+              "startedAt": "2026-09-10T23:32:27.569Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 88,
@@ -8336,10 +8336,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice ensures that main section does become visible",
               "outcome": "SUCCESS",
-              "duration": 20,
+              "duration": 17,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:55.764Z",
+              "startedAt": "2026-09-10T23:32:27.758Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 90,
@@ -8349,10 +8349,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice ensures that footer section does become visible",
               "outcome": "SUCCESS",
-              "duration": 19,
+              "duration": 15,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:55.794Z",
+              "startedAt": "2026-09-10T23:32:27.784Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 91,
@@ -8399,8 +8399,8 @@ window.__SERENITY_REPORT_DATA__ = {
       "name": "Todo List App should show #main and #footer sections only when list contains items",
       "category": "Recording items",
       "outcome": "SUCCESS",
-      "duration": 1358,
-      "startedAt": "2026-09-10T06:04:14.100Z",
+      "duration": 1312,
+      "startedAt": "2026-09-10T23:32:44.244Z",
       "source": {
         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
         "line": 81
@@ -8431,15 +8431,15 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice starts with an empty todo list",
           "outcome": "SUCCESS",
-          "duration": 315,
+          "duration": 320,
           "children": [
             {
               "name": "Alice navigates to \"/\"",
               "outcome": "SUCCESS",
-              "duration": 287,
+              "duration": 293,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:04:14.387Z",
+              "startedAt": "2026-09-10T23:32:44.490Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 83,
@@ -8449,10 +8449,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice ensures that website title does equal \"Serenity/JS TodoApp\"",
               "outcome": "SUCCESS",
-              "duration": 7,
+              "duration": 6,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:04:14.685Z",
+              "startedAt": "2026-09-10T23:32:44.794Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 83,
@@ -8461,7 +8461,7 @@ window.__SERENITY_REPORT_DATA__ = {
             }
           ],
           "type": "Task",
-          "startedAt": "2026-09-10T06:04:14.387Z",
+          "startedAt": "2026-09-10T23:32:44.490Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
             "line": 83,
@@ -8474,7 +8474,7 @@ window.__SERENITY_REPORT_DATA__ = {
           "duration": 253,
           "children": [],
           "type": "Interaction",
-          "startedAt": "2026-09-10T06:04:14.713Z",
+          "startedAt": "2026-09-10T23:32:44.820Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
             "line": 85,
@@ -8487,7 +8487,7 @@ window.__SERENITY_REPORT_DATA__ = {
           "duration": 252,
           "children": [],
           "type": "Interaction",
-          "startedAt": "2026-09-10T06:04:14.977Z",
+          "startedAt": "2026-09-10T23:32:45.084Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
             "line": 86,
@@ -8497,15 +8497,15 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice records an item called \"buy some cheese\"",
           "outcome": "SUCCESS",
-          "duration": 128,
+          "duration": 117,
           "children": [
             {
               "name": "Alice enters \"buy some cheese\" into \"What needs to be done?\" input box",
               "outcome": "SUCCESS",
-              "duration": 12,
+              "duration": 11,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:04:15.240Z",
+              "startedAt": "2026-09-10T23:32:45.347Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                 "line": 12,
@@ -8515,10 +8515,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice presses key Enter in \"What needs to be done?\" input box",
               "outcome": "SUCCESS",
-              "duration": 54,
+              "duration": 50,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:04:15.263Z",
+              "startedAt": "2026-09-10T23:32:45.368Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                 "line": 13,
@@ -8528,10 +8528,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice waits until displayed items does contain \"buy some cheese\"",
               "outcome": "SUCCESS",
-              "duration": 28,
+              "duration": 24,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:04:15.328Z",
+              "startedAt": "2026-09-10T23:32:45.429Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 88,
@@ -8540,7 +8540,7 @@ window.__SERENITY_REPORT_DATA__ = {
             }
           ],
           "type": "Task",
-          "startedAt": "2026-09-10T06:04:15.239Z",
+          "startedAt": "2026-09-10T23:32:45.347Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
             "line": 88,
@@ -8550,10 +8550,10 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice ensures that main section does become visible",
           "outcome": "SUCCESS",
-          "duration": 27,
+          "duration": 32,
           "children": [],
           "type": "Interaction",
-          "startedAt": "2026-09-10T06:04:15.377Z",
+          "startedAt": "2026-09-10T23:32:45.475Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
             "line": 90,
@@ -8563,10 +8563,10 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice ensures that footer section does become visible",
           "outcome": "SUCCESS",
-          "duration": 25,
+          "duration": 16,
           "children": [],
           "type": "Interaction",
-          "startedAt": "2026-09-10T06:04:15.414Z",
+          "startedAt": "2026-09-10T23:32:45.518Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
             "line": 91,
@@ -8577,22 +8577,22 @@ window.__SERENITY_REPORT_DATA__ = {
       "executionHistory": [
         {
           "outcome": "SUCCESS",
-          "run": "2593",
-          "timestamp": "2026-09-10T06:03:37.392Z",
-          "duration": 1358,
+          "run": "2596",
+          "timestamp": "2026-09-10T23:32:10.651Z",
+          "duration": 1312,
           "activities": [
             {
               "name": "Alice starts with an empty todo list",
               "outcome": "SUCCESS",
-              "duration": 315,
+              "duration": 320,
               "children": [
                 {
                   "name": "Alice navigates to \"/\"",
                   "outcome": "SUCCESS",
-                  "duration": 287,
+                  "duration": 293,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:04:14.387Z",
+                  "startedAt": "2026-09-10T23:32:44.490Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                     "line": 83,
@@ -8602,10 +8602,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice ensures that website title does equal \"Serenity/JS TodoApp\"",
                   "outcome": "SUCCESS",
-                  "duration": 7,
+                  "duration": 6,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:04:14.685Z",
+                  "startedAt": "2026-09-10T23:32:44.794Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                     "line": 83,
@@ -8614,7 +8614,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:04:14.387Z",
+              "startedAt": "2026-09-10T23:32:44.490Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 83,
@@ -8627,7 +8627,7 @@ window.__SERENITY_REPORT_DATA__ = {
               "duration": 253,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:04:14.713Z",
+              "startedAt": "2026-09-10T23:32:44.820Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 85,
@@ -8640,7 +8640,7 @@ window.__SERENITY_REPORT_DATA__ = {
               "duration": 252,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:04:14.977Z",
+              "startedAt": "2026-09-10T23:32:45.084Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 86,
@@ -8650,15 +8650,15 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice records an item called \"buy some cheese\"",
               "outcome": "SUCCESS",
-              "duration": 128,
+              "duration": 117,
               "children": [
                 {
                   "name": "Alice enters \"buy some cheese\" into \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 12,
+                  "duration": 11,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:04:15.240Z",
+                  "startedAt": "2026-09-10T23:32:45.347Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 12,
@@ -8668,10 +8668,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice presses key Enter in \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 54,
+                  "duration": 50,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:04:15.263Z",
+                  "startedAt": "2026-09-10T23:32:45.368Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 13,
@@ -8681,10 +8681,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice waits until displayed items does contain \"buy some cheese\"",
                   "outcome": "SUCCESS",
-                  "duration": 28,
+                  "duration": 24,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:04:15.328Z",
+                  "startedAt": "2026-09-10T23:32:45.429Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                     "line": 88,
@@ -8693,7 +8693,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:04:15.239Z",
+              "startedAt": "2026-09-10T23:32:45.347Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 88,
@@ -8703,10 +8703,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice ensures that main section does become visible",
               "outcome": "SUCCESS",
-              "duration": 27,
+              "duration": 32,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:04:15.377Z",
+              "startedAt": "2026-09-10T23:32:45.475Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 90,
@@ -8716,10 +8716,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice ensures that footer section does become visible",
               "outcome": "SUCCESS",
-              "duration": 25,
+              "duration": 16,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:04:15.414Z",
+              "startedAt": "2026-09-10T23:32:45.518Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/recording_items.spec.ts",
                 "line": 91,
@@ -8766,8 +8766,8 @@ window.__SERENITY_REPORT_DATA__ = {
       "name": "Todo List App should allow me to share notes across actors and browsers",
       "category": "Using notes",
       "outcome": "SUCCESS",
-      "duration": 1385,
-      "startedAt": "2026-09-10T06:03:43.140Z",
+      "duration": 1308,
+      "startedAt": "2026-09-10T23:32:15.708Z",
       "source": {
         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
         "line": 44
@@ -8798,20 +8798,20 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice starts with a list containing 3 items",
           "outcome": "SUCCESS",
-          "duration": 542,
+          "duration": 503,
           "children": [
             {
               "name": "Alice starts with an empty todo list",
               "outcome": "SUCCESS",
-              "duration": 251,
+              "duration": 236,
               "children": [
                 {
                   "name": "Alice navigates to \"/\"",
                   "outcome": "SUCCESS",
-                  "duration": 224,
+                  "duration": 212,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:43.226Z",
+                  "startedAt": "2026-09-10T23:32:15.780Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                     "line": 18,
@@ -8821,10 +8821,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice ensures that website title does equal \"Serenity/JS TodoApp\"",
                   "outcome": "SUCCESS",
-                  "duration": 5,
+                  "duration": 3,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:43.461Z",
+                  "startedAt": "2026-09-10T23:32:16.003Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
                     "line": 47,
@@ -8833,7 +8833,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:03:43.226Z",
+              "startedAt": "2026-09-10T23:32:15.780Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                 "line": 18,
@@ -8843,15 +8843,15 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice records an item called \"buy some cheese\"",
               "outcome": "SUCCESS",
-              "duration": 109,
+              "duration": 99,
               "children": [
                 {
                   "name": "Alice enters \"buy some cheese\" into \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 27,
+                  "duration": 23,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:43.488Z",
+                  "startedAt": "2026-09-10T23:32:16.027Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 12,
@@ -8861,10 +8861,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice presses key Enter in \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 31,
+                  "duration": 28,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:43.526Z",
+                  "startedAt": "2026-09-10T23:32:16.061Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 13,
@@ -8874,10 +8874,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice waits until displayed items does contain \"buy some cheese\"",
                   "outcome": "SUCCESS",
-                  "duration": 18,
+                  "duration": 16,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:43.567Z",
+                  "startedAt": "2026-09-10T23:32:16.100Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                     "line": 19,
@@ -8886,7 +8886,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:03:43.487Z",
+              "startedAt": "2026-09-10T23:32:16.027Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                 "line": 19,
@@ -8896,15 +8896,15 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice records an item called \"feed the cat\"",
               "outcome": "SUCCESS",
-              "duration": 70,
+              "duration": 62,
               "children": [
                 {
                   "name": "Alice enters \"feed the cat\" into \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 7,
+                  "duration": 6,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:43.607Z",
+                  "startedAt": "2026-09-10T23:32:16.137Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 12,
@@ -8914,10 +8914,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice presses key Enter in \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 11,
+                  "duration": 9,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:43.625Z",
+                  "startedAt": "2026-09-10T23:32:16.152Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 13,
@@ -8927,10 +8927,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice waits until displayed items does contain \"feed the cat\"",
                   "outcome": "SUCCESS",
-                  "duration": 20,
+                  "duration": 18,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:43.646Z",
+                  "startedAt": "2026-09-10T23:32:16.171Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                     "line": 19,
@@ -8939,7 +8939,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:03:43.606Z",
+              "startedAt": "2026-09-10T23:32:16.137Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                 "line": 19,
@@ -8949,15 +8949,15 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice records an item called \"book a doctors appointment\"",
               "outcome": "SUCCESS",
-              "duration": 71,
+              "duration": 63,
               "children": [
                 {
                   "name": "Alice enters \"book a doctors appointment\" into \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 7,
+                  "duration": 6,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:43.687Z",
+                  "startedAt": "2026-09-10T23:32:16.209Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 12,
@@ -8967,10 +8967,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice presses key Enter in \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 10,
+                  "duration": 8,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:43.705Z",
+                  "startedAt": "2026-09-10T23:32:16.224Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 13,
@@ -8980,10 +8980,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice waits until displayed items does contain \"book a doctors appointment\"",
                   "outcome": "SUCCESS",
-                  "duration": 21,
+                  "duration": 19,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:43.726Z",
+                  "startedAt": "2026-09-10T23:32:16.243Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                     "line": 19,
@@ -8992,7 +8992,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:03:43.687Z",
+              "startedAt": "2026-09-10T23:32:16.209Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                 "line": 19,
@@ -9001,7 +9001,7 @@ window.__SERENITY_REPORT_DATA__ = {
             }
           ],
           "type": "Task",
-          "startedAt": "2026-09-10T06:03:43.226Z",
+          "startedAt": "2026-09-10T23:32:15.779Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
             "line": 47,
@@ -9011,10 +9011,10 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice ensures that displayed items does equal [ \"buy some cheese\", \"feed the cat\", \"book a doctors appointment\" ]",
           "outcome": "SUCCESS",
-          "duration": 10,
+          "duration": 8,
           "children": [],
           "type": "Interaction",
-          "startedAt": "2026-09-10T06:03:43.779Z",
+          "startedAt": "2026-09-10T23:32:16.293Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
             "line": 51,
@@ -9024,10 +9024,10 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice takes notes: items",
           "outcome": "SUCCESS",
-          "duration": 37,
+          "duration": 29,
           "children": [],
           "type": "Interaction",
-          "startedAt": "2026-09-10T06:03:43.821Z",
+          "startedAt": "2026-09-10T23:32:16.327Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
             "line": 53,
@@ -9037,15 +9037,15 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Bobby starts with an empty todo list",
           "outcome": "SUCCESS",
-          "duration": 272,
+          "duration": 291,
           "children": [
             {
               "name": "Bobby navigates to \"/\"",
               "outcome": "SUCCESS",
-              "duration": 247,
+              "duration": 266,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:43.877Z",
+              "startedAt": "2026-09-10T23:32:16.374Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
                 "line": 60,
@@ -9055,10 +9055,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Bobby ensures that website title does equal \"Serenity/JS TodoApp\"",
               "outcome": "SUCCESS",
-              "duration": 5,
+              "duration": 4,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:44.134Z",
+              "startedAt": "2026-09-10T23:32:16.651Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
                 "line": 60,
@@ -9067,7 +9067,7 @@ window.__SERENITY_REPORT_DATA__ = {
             }
           ],
           "type": "Task",
-          "startedAt": "2026-09-10T06:03:43.877Z",
+          "startedAt": "2026-09-10T23:32:16.374Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
             "line": 60,
@@ -9077,20 +9077,20 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Bobby iterates over a note of items",
           "outcome": "SUCCESS",
-          "duration": 296,
+          "duration": 278,
           "children": [
             {
               "name": "Bobby records an item called \"buy some cheese\"",
               "outcome": "SUCCESS",
-              "duration": 103,
+              "duration": 94,
               "children": [
                 {
                   "name": "Bobby enters \"buy some cheese\" into \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 25,
+                  "duration": 22,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:44.170Z",
+                  "startedAt": "2026-09-10T23:32:16.685Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 12,
@@ -9100,10 +9100,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Bobby presses key Enter in \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 30,
+                  "duration": 27,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:44.206Z",
+                  "startedAt": "2026-09-10T23:32:16.717Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 13,
@@ -9113,10 +9113,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Bobby waits until displayed items does contain \"buy some cheese\"",
                   "outcome": "SUCCESS",
-                  "duration": 17,
+                  "duration": 15,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:44.246Z",
+                  "startedAt": "2026-09-10T23:32:16.753Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
                     "line": 63,
@@ -9125,7 +9125,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:03:44.170Z",
+              "startedAt": "2026-09-10T23:32:16.685Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
                 "line": 63,
@@ -9135,15 +9135,15 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Bobby records an item called \"feed the cat\"",
               "outcome": "SUCCESS",
-              "duration": 64,
+              "duration": 62,
               "children": [
                 {
                   "name": "Bobby enters \"feed the cat\" into \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 5,
+                  "duration": 6,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:44.294Z",
+                  "startedAt": "2026-09-10T23:32:16.798Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 12,
@@ -9156,7 +9156,7 @@ window.__SERENITY_REPORT_DATA__ = {
                   "duration": 9,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:44.310Z",
+                  "startedAt": "2026-09-10T23:32:16.813Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 13,
@@ -9166,10 +9166,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Bobby waits until displayed items does contain \"feed the cat\"",
                   "outcome": "SUCCESS",
-                  "duration": 18,
+                  "duration": 17,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:44.329Z",
+                  "startedAt": "2026-09-10T23:32:16.832Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
                     "line": 63,
@@ -9178,7 +9178,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:03:44.293Z",
+              "startedAt": "2026-09-10T23:32:16.798Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
                 "line": 63,
@@ -9188,15 +9188,15 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Bobby records an item called \"book a doctors appointment\"",
               "outcome": "SUCCESS",
-              "duration": 68,
+              "duration": 65,
               "children": [
                 {
                   "name": "Bobby enters \"book a doctors appointment\" into \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 6,
+                  "duration": 5,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:44.378Z",
+                  "startedAt": "2026-09-10T23:32:16.879Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 12,
@@ -9206,10 +9206,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Bobby presses key Enter in \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 9,
+                  "duration": 8,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:44.394Z",
+                  "startedAt": "2026-09-10T23:32:16.895Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 13,
@@ -9219,10 +9219,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Bobby waits until displayed items does contain \"book a doctors appointment\"",
                   "outcome": "SUCCESS",
-                  "duration": 22,
+                  "duration": 21,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:44.414Z",
+                  "startedAt": "2026-09-10T23:32:16.913Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
                     "line": 63,
@@ -9231,7 +9231,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:03:44.378Z",
+              "startedAt": "2026-09-10T23:32:16.879Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
                 "line": 63,
@@ -9240,7 +9240,7 @@ window.__SERENITY_REPORT_DATA__ = {
             }
           ],
           "type": "Task",
-          "startedAt": "2026-09-10T06:03:44.160Z",
+          "startedAt": "2026-09-10T23:32:16.676Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
             "line": 63,
@@ -9250,10 +9250,10 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Bobby ensures that displayed items does equal [ \"buy some cheese\", \"feed the cat\", \"book a doctors appointment\" ]",
           "outcome": "SUCCESS",
-          "duration": 8,
+          "duration": 7,
           "children": [],
           "type": "Interaction",
-          "startedAt": "2026-09-10T06:03:44.467Z",
+          "startedAt": "2026-09-10T23:32:16.965Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
             "line": 65,
@@ -9264,27 +9264,27 @@ window.__SERENITY_REPORT_DATA__ = {
       "executionHistory": [
         {
           "outcome": "SUCCESS",
-          "run": "2593",
-          "timestamp": "2026-09-10T06:03:37.392Z",
-          "duration": 1385,
+          "run": "2596",
+          "timestamp": "2026-09-10T23:32:10.651Z",
+          "duration": 1308,
           "activities": [
             {
               "name": "Alice starts with a list containing 3 items",
               "outcome": "SUCCESS",
-              "duration": 542,
+              "duration": 503,
               "children": [
                 {
                   "name": "Alice starts with an empty todo list",
                   "outcome": "SUCCESS",
-                  "duration": 251,
+                  "duration": 236,
                   "children": [
                     {
                       "name": "Alice navigates to \"/\"",
                       "outcome": "SUCCESS",
-                      "duration": 224,
+                      "duration": 212,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:43.226Z",
+                      "startedAt": "2026-09-10T23:32:15.780Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                         "line": 18,
@@ -9294,10 +9294,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Alice ensures that website title does equal \"Serenity/JS TodoApp\"",
                       "outcome": "SUCCESS",
-                      "duration": 5,
+                      "duration": 3,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:43.461Z",
+                      "startedAt": "2026-09-10T23:32:16.003Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
                         "line": 47,
@@ -9306,7 +9306,7 @@ window.__SERENITY_REPORT_DATA__ = {
                     }
                   ],
                   "type": "Task",
-                  "startedAt": "2026-09-10T06:03:43.226Z",
+                  "startedAt": "2026-09-10T23:32:15.780Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                     "line": 18,
@@ -9316,15 +9316,15 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice records an item called \"buy some cheese\"",
                   "outcome": "SUCCESS",
-                  "duration": 109,
+                  "duration": 99,
                   "children": [
                     {
                       "name": "Alice enters \"buy some cheese\" into \"What needs to be done?\" input box",
                       "outcome": "SUCCESS",
-                      "duration": 27,
+                      "duration": 23,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:43.488Z",
+                      "startedAt": "2026-09-10T23:32:16.027Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                         "line": 12,
@@ -9334,10 +9334,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Alice presses key Enter in \"What needs to be done?\" input box",
                       "outcome": "SUCCESS",
-                      "duration": 31,
+                      "duration": 28,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:43.526Z",
+                      "startedAt": "2026-09-10T23:32:16.061Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                         "line": 13,
@@ -9347,10 +9347,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Alice waits until displayed items does contain \"buy some cheese\"",
                       "outcome": "SUCCESS",
-                      "duration": 18,
+                      "duration": 16,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:43.567Z",
+                      "startedAt": "2026-09-10T23:32:16.100Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                         "line": 19,
@@ -9359,7 +9359,7 @@ window.__SERENITY_REPORT_DATA__ = {
                     }
                   ],
                   "type": "Task",
-                  "startedAt": "2026-09-10T06:03:43.487Z",
+                  "startedAt": "2026-09-10T23:32:16.027Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                     "line": 19,
@@ -9369,15 +9369,15 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice records an item called \"feed the cat\"",
                   "outcome": "SUCCESS",
-                  "duration": 70,
+                  "duration": 62,
                   "children": [
                     {
                       "name": "Alice enters \"feed the cat\" into \"What needs to be done?\" input box",
                       "outcome": "SUCCESS",
-                      "duration": 7,
+                      "duration": 6,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:43.607Z",
+                      "startedAt": "2026-09-10T23:32:16.137Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                         "line": 12,
@@ -9387,10 +9387,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Alice presses key Enter in \"What needs to be done?\" input box",
                       "outcome": "SUCCESS",
-                      "duration": 11,
+                      "duration": 9,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:43.625Z",
+                      "startedAt": "2026-09-10T23:32:16.152Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                         "line": 13,
@@ -9400,10 +9400,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Alice waits until displayed items does contain \"feed the cat\"",
                       "outcome": "SUCCESS",
-                      "duration": 20,
+                      "duration": 18,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:43.646Z",
+                      "startedAt": "2026-09-10T23:32:16.171Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                         "line": 19,
@@ -9412,7 +9412,7 @@ window.__SERENITY_REPORT_DATA__ = {
                     }
                   ],
                   "type": "Task",
-                  "startedAt": "2026-09-10T06:03:43.606Z",
+                  "startedAt": "2026-09-10T23:32:16.137Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                     "line": 19,
@@ -9422,15 +9422,15 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice records an item called \"book a doctors appointment\"",
                   "outcome": "SUCCESS",
-                  "duration": 71,
+                  "duration": 63,
                   "children": [
                     {
                       "name": "Alice enters \"book a doctors appointment\" into \"What needs to be done?\" input box",
                       "outcome": "SUCCESS",
-                      "duration": 7,
+                      "duration": 6,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:43.687Z",
+                      "startedAt": "2026-09-10T23:32:16.209Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                         "line": 12,
@@ -9440,10 +9440,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Alice presses key Enter in \"What needs to be done?\" input box",
                       "outcome": "SUCCESS",
-                      "duration": 10,
+                      "duration": 8,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:43.705Z",
+                      "startedAt": "2026-09-10T23:32:16.224Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                         "line": 13,
@@ -9453,10 +9453,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Alice waits until displayed items does contain \"book a doctors appointment\"",
                       "outcome": "SUCCESS",
-                      "duration": 21,
+                      "duration": 19,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:43.726Z",
+                      "startedAt": "2026-09-10T23:32:16.243Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                         "line": 19,
@@ -9465,7 +9465,7 @@ window.__SERENITY_REPORT_DATA__ = {
                     }
                   ],
                   "type": "Task",
-                  "startedAt": "2026-09-10T06:03:43.687Z",
+                  "startedAt": "2026-09-10T23:32:16.209Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                     "line": 19,
@@ -9474,7 +9474,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:03:43.226Z",
+              "startedAt": "2026-09-10T23:32:15.779Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
                 "line": 47,
@@ -9484,10 +9484,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice ensures that displayed items does equal [ \"buy some cheese\", \"feed the cat\", \"book a doctors appointment\" ]",
               "outcome": "SUCCESS",
-              "duration": 10,
+              "duration": 8,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:43.779Z",
+              "startedAt": "2026-09-10T23:32:16.293Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
                 "line": 51,
@@ -9497,10 +9497,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice takes notes: items",
               "outcome": "SUCCESS",
-              "duration": 37,
+              "duration": 29,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:43.821Z",
+              "startedAt": "2026-09-10T23:32:16.327Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
                 "line": 53,
@@ -9510,15 +9510,15 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Bobby starts with an empty todo list",
               "outcome": "SUCCESS",
-              "duration": 272,
+              "duration": 291,
               "children": [
                 {
                   "name": "Bobby navigates to \"/\"",
                   "outcome": "SUCCESS",
-                  "duration": 247,
+                  "duration": 266,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:43.877Z",
+                  "startedAt": "2026-09-10T23:32:16.374Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
                     "line": 60,
@@ -9528,10 +9528,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Bobby ensures that website title does equal \"Serenity/JS TodoApp\"",
                   "outcome": "SUCCESS",
-                  "duration": 5,
+                  "duration": 4,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:44.134Z",
+                  "startedAt": "2026-09-10T23:32:16.651Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
                     "line": 60,
@@ -9540,7 +9540,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:03:43.877Z",
+              "startedAt": "2026-09-10T23:32:16.374Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
                 "line": 60,
@@ -9550,20 +9550,20 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Bobby iterates over a note of items",
               "outcome": "SUCCESS",
-              "duration": 296,
+              "duration": 278,
               "children": [
                 {
                   "name": "Bobby records an item called \"buy some cheese\"",
                   "outcome": "SUCCESS",
-                  "duration": 103,
+                  "duration": 94,
                   "children": [
                     {
                       "name": "Bobby enters \"buy some cheese\" into \"What needs to be done?\" input box",
                       "outcome": "SUCCESS",
-                      "duration": 25,
+                      "duration": 22,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:44.170Z",
+                      "startedAt": "2026-09-10T23:32:16.685Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                         "line": 12,
@@ -9573,10 +9573,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Bobby presses key Enter in \"What needs to be done?\" input box",
                       "outcome": "SUCCESS",
-                      "duration": 30,
+                      "duration": 27,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:44.206Z",
+                      "startedAt": "2026-09-10T23:32:16.717Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                         "line": 13,
@@ -9586,10 +9586,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Bobby waits until displayed items does contain \"buy some cheese\"",
                       "outcome": "SUCCESS",
-                      "duration": 17,
+                      "duration": 15,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:44.246Z",
+                      "startedAt": "2026-09-10T23:32:16.753Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
                         "line": 63,
@@ -9598,7 +9598,7 @@ window.__SERENITY_REPORT_DATA__ = {
                     }
                   ],
                   "type": "Task",
-                  "startedAt": "2026-09-10T06:03:44.170Z",
+                  "startedAt": "2026-09-10T23:32:16.685Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
                     "line": 63,
@@ -9608,15 +9608,15 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Bobby records an item called \"feed the cat\"",
                   "outcome": "SUCCESS",
-                  "duration": 64,
+                  "duration": 62,
                   "children": [
                     {
                       "name": "Bobby enters \"feed the cat\" into \"What needs to be done?\" input box",
                       "outcome": "SUCCESS",
-                      "duration": 5,
+                      "duration": 6,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:44.294Z",
+                      "startedAt": "2026-09-10T23:32:16.798Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                         "line": 12,
@@ -9629,7 +9629,7 @@ window.__SERENITY_REPORT_DATA__ = {
                       "duration": 9,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:44.310Z",
+                      "startedAt": "2026-09-10T23:32:16.813Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                         "line": 13,
@@ -9639,10 +9639,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Bobby waits until displayed items does contain \"feed the cat\"",
                       "outcome": "SUCCESS",
-                      "duration": 18,
+                      "duration": 17,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:44.329Z",
+                      "startedAt": "2026-09-10T23:32:16.832Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
                         "line": 63,
@@ -9651,7 +9651,7 @@ window.__SERENITY_REPORT_DATA__ = {
                     }
                   ],
                   "type": "Task",
-                  "startedAt": "2026-09-10T06:03:44.293Z",
+                  "startedAt": "2026-09-10T23:32:16.798Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
                     "line": 63,
@@ -9661,15 +9661,15 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Bobby records an item called \"book a doctors appointment\"",
                   "outcome": "SUCCESS",
-                  "duration": 68,
+                  "duration": 65,
                   "children": [
                     {
                       "name": "Bobby enters \"book a doctors appointment\" into \"What needs to be done?\" input box",
                       "outcome": "SUCCESS",
-                      "duration": 6,
+                      "duration": 5,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:44.378Z",
+                      "startedAt": "2026-09-10T23:32:16.879Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                         "line": 12,
@@ -9679,10 +9679,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Bobby presses key Enter in \"What needs to be done?\" input box",
                       "outcome": "SUCCESS",
-                      "duration": 9,
+                      "duration": 8,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:44.394Z",
+                      "startedAt": "2026-09-10T23:32:16.895Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                         "line": 13,
@@ -9692,10 +9692,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Bobby waits until displayed items does contain \"book a doctors appointment\"",
                       "outcome": "SUCCESS",
-                      "duration": 22,
+                      "duration": 21,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:44.414Z",
+                      "startedAt": "2026-09-10T23:32:16.913Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
                         "line": 63,
@@ -9704,7 +9704,7 @@ window.__SERENITY_REPORT_DATA__ = {
                     }
                   ],
                   "type": "Task",
-                  "startedAt": "2026-09-10T06:03:44.378Z",
+                  "startedAt": "2026-09-10T23:32:16.879Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
                     "line": 63,
@@ -9713,7 +9713,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:03:44.160Z",
+              "startedAt": "2026-09-10T23:32:16.676Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
                 "line": 63,
@@ -9723,10 +9723,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Bobby ensures that displayed items does equal [ \"buy some cheese\", \"feed the cat\", \"book a doctors appointment\" ]",
               "outcome": "SUCCESS",
-              "duration": 8,
+              "duration": 7,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:44.467Z",
+              "startedAt": "2026-09-10T23:32:16.965Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
                 "line": 65,
@@ -9802,8 +9802,8 @@ window.__SERENITY_REPORT_DATA__ = {
       "name": "Todo List App should allow me to share notes across actors and browsers",
       "category": "Using notes",
       "outcome": "SUCCESS",
-      "duration": 3363,
-      "startedAt": "2026-09-10T06:03:55.871Z",
+      "duration": 3053,
+      "startedAt": "2026-09-10T23:32:27.853Z",
       "source": {
         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
         "line": 44
@@ -9834,20 +9834,20 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice starts with a list containing 3 items",
           "outcome": "SUCCESS",
-          "duration": 642,
+          "duration": 631,
           "children": [
             {
               "name": "Alice starts with an empty todo list",
               "outcome": "SUCCESS",
-              "duration": 297,
+              "duration": 301,
               "children": [
                 {
                   "name": "Alice navigates to \"/\"",
                   "outcome": "SUCCESS",
-                  "duration": 269,
+                  "duration": 274,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:56.144Z",
+                  "startedAt": "2026-09-10T23:32:28.105Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                     "line": 18,
@@ -9857,10 +9857,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice ensures that website title does equal \"Serenity/JS TodoApp\"",
                   "outcome": "SUCCESS",
-                  "duration": 6,
+                  "duration": 5,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:56.424Z",
+                  "startedAt": "2026-09-10T23:32:28.389Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
                     "line": 47,
@@ -9869,7 +9869,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:03:56.143Z",
+              "startedAt": "2026-09-10T23:32:28.104Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                 "line": 18,
@@ -9879,15 +9879,15 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice records an item called \"buy some cheese\"",
               "outcome": "SUCCESS",
-              "duration": 134,
+              "duration": 132,
               "children": [
                 {
                   "name": "Alice enters \"buy some cheese\" into \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 35,
+                  "duration": 33,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:56.451Z",
+                  "startedAt": "2026-09-10T23:32:28.416Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 12,
@@ -9897,10 +9897,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice presses key Enter in \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 45,
+                  "duration": 46,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:56.497Z",
+                  "startedAt": "2026-09-10T23:32:28.459Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 13,
@@ -9910,10 +9910,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice waits until displayed items does contain \"buy some cheese\"",
                   "outcome": "SUCCESS",
-                  "duration": 22,
+                  "duration": 21,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:56.553Z",
+                  "startedAt": "2026-09-10T23:32:28.515Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                     "line": 19,
@@ -9922,7 +9922,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:03:56.451Z",
+              "startedAt": "2026-09-10T23:32:28.415Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                 "line": 19,
@@ -9932,15 +9932,15 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice records an item called \"feed the cat\"",
               "outcome": "SUCCESS",
-              "duration": 84,
+              "duration": 78,
               "children": [
                 {
                   "name": "Alice enters \"feed the cat\" into \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 12,
+                  "duration": 11,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:56.596Z",
+                  "startedAt": "2026-09-10T23:32:28.557Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 12,
@@ -9950,10 +9950,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice presses key Enter in \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 15,
+                  "duration": 13,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:56.619Z",
+                  "startedAt": "2026-09-10T23:32:28.579Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 13,
@@ -9963,10 +9963,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice waits until displayed items does contain \"feed the cat\"",
                   "outcome": "SUCCESS",
-                  "duration": 25,
+                  "duration": 22,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:56.645Z",
+                  "startedAt": "2026-09-10T23:32:28.602Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                     "line": 19,
@@ -9975,7 +9975,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:03:56.596Z",
+              "startedAt": "2026-09-10T23:32:28.557Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                 "line": 19,
@@ -9985,15 +9985,15 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice records an item called \"book a doctors appointment\"",
               "outcome": "SUCCESS",
-              "duration": 84,
+              "duration": 80,
               "children": [
                 {
                   "name": "Alice enters \"book a doctors appointment\" into \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 10,
+                  "duration": 9,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:56.691Z",
+                  "startedAt": "2026-09-10T23:32:28.646Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 12,
@@ -10003,10 +10003,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice presses key Enter in \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 16,
+                  "duration": 14,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:56.712Z",
+                  "startedAt": "2026-09-10T23:32:28.666Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 13,
@@ -10016,10 +10016,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice waits until displayed items does contain \"book a doctors appointment\"",
                   "outcome": "SUCCESS",
-                  "duration": 26,
+                  "duration": 24,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:56.739Z",
+                  "startedAt": "2026-09-10T23:32:28.690Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                     "line": 19,
@@ -10028,7 +10028,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:03:56.691Z",
+              "startedAt": "2026-09-10T23:32:28.645Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                 "line": 19,
@@ -10037,7 +10037,7 @@ window.__SERENITY_REPORT_DATA__ = {
             }
           ],
           "type": "Task",
-          "startedAt": "2026-09-10T06:03:56.143Z",
+          "startedAt": "2026-09-10T23:32:28.104Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
             "line": 47,
@@ -10047,10 +10047,10 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice ensures that displayed items does equal [ \"buy some cheese\", \"feed the cat\", \"book a doctors appointment\" ]",
           "outcome": "SUCCESS",
-          "duration": 15,
+          "duration": 11,
           "children": [],
           "type": "Interaction",
-          "startedAt": "2026-09-10T06:03:56.796Z",
+          "startedAt": "2026-09-10T23:32:28.746Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
             "line": 51,
@@ -10060,10 +10060,10 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice takes notes: items",
           "outcome": "SUCCESS",
-          "duration": 44,
+          "duration": 37,
           "children": [],
           "type": "Interaction",
-          "startedAt": "2026-09-10T06:03:56.846Z",
+          "startedAt": "2026-09-10T23:32:28.791Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
             "line": 53,
@@ -10073,15 +10073,15 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Bobby starts with an empty todo list",
           "outcome": "SUCCESS",
-          "duration": 498,
+          "duration": 481,
           "children": [
             {
               "name": "Bobby navigates to \"/\"",
               "outcome": "SUCCESS",
-              "duration": 472,
+              "duration": 452,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:56.909Z",
+              "startedAt": "2026-09-10T23:32:28.846Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
                 "line": 60,
@@ -10091,10 +10091,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Bobby ensures that website title does equal \"Serenity/JS TodoApp\"",
               "outcome": "SUCCESS",
-              "duration": 6,
+              "duration": 7,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:57.391Z",
+              "startedAt": "2026-09-10T23:32:29.309Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
                 "line": 60,
@@ -10103,7 +10103,7 @@ window.__SERENITY_REPORT_DATA__ = {
             }
           ],
           "type": "Task",
-          "startedAt": "2026-09-10T06:03:56.909Z",
+          "startedAt": "2026-09-10T23:32:28.845Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
             "line": 60,
@@ -10113,20 +10113,20 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Bobby iterates over a note of items",
           "outcome": "SUCCESS",
-          "duration": 360,
+          "duration": 343,
           "children": [
             {
               "name": "Bobby records an item called \"buy some cheese\"",
               "outcome": "SUCCESS",
-              "duration": 132,
+              "duration": 125,
               "children": [
                 {
                   "name": "Bobby enters \"buy some cheese\" into \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 34,
+                  "duration": 32,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:57.429Z",
+                  "startedAt": "2026-09-10T23:32:29.347Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 12,
@@ -10136,10 +10136,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Bobby presses key Enter in \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 45,
+                  "duration": 43,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:57.474Z",
+                  "startedAt": "2026-09-10T23:32:29.389Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 13,
@@ -10149,10 +10149,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Bobby waits until displayed items does contain \"buy some cheese\"",
                   "outcome": "SUCCESS",
-                  "duration": 20,
+                  "duration": 18,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:57.530Z",
+                  "startedAt": "2026-09-10T23:32:29.443Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
                     "line": 63,
@@ -10161,7 +10161,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:03:57.428Z",
+              "startedAt": "2026-09-10T23:32:29.347Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
                 "line": 63,
@@ -10171,15 +10171,15 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Bobby records an item called \"feed the cat\"",
               "outcome": "SUCCESS",
-              "duration": 82,
+              "duration": 77,
               "children": [
                 {
                   "name": "Bobby enters \"feed the cat\" into \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 11,
+                  "duration": 10,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:57.581Z",
+                  "startedAt": "2026-09-10T23:32:29.491Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 12,
@@ -10189,10 +10189,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Bobby presses key Enter in \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 14,
+                  "duration": 13,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:57.603Z",
+                  "startedAt": "2026-09-10T23:32:29.512Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 13,
@@ -10202,10 +10202,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Bobby waits until displayed items does contain \"feed the cat\"",
                   "outcome": "SUCCESS",
-                  "duration": 24,
+                  "duration": 22,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:57.628Z",
+                  "startedAt": "2026-09-10T23:32:29.536Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
                     "line": 63,
@@ -10214,7 +10214,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:03:57.581Z",
+              "startedAt": "2026-09-10T23:32:29.491Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
                 "line": 63,
@@ -10224,7 +10224,7 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Bobby records an item called \"book a doctors appointment\"",
               "outcome": "SUCCESS",
-              "duration": 85,
+              "duration": 81,
               "children": [
                 {
                   "name": "Bobby enters \"book a doctors appointment\" into \"What needs to be done?\" input box",
@@ -10232,7 +10232,7 @@ window.__SERENITY_REPORT_DATA__ = {
                   "duration": 9,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:57.684Z",
+                  "startedAt": "2026-09-10T23:32:29.589Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 12,
@@ -10242,10 +10242,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Bobby presses key Enter in \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 14,
+                  "duration": 13,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:57.704Z",
+                  "startedAt": "2026-09-10T23:32:29.609Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 13,
@@ -10255,10 +10255,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Bobby waits until displayed items does contain \"book a doctors appointment\"",
                   "outcome": "SUCCESS",
-                  "duration": 28,
+                  "duration": 25,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:57.729Z",
+                  "startedAt": "2026-09-10T23:32:29.633Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
                     "line": 63,
@@ -10267,7 +10267,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:03:57.683Z",
+              "startedAt": "2026-09-10T23:32:29.588Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
                 "line": 63,
@@ -10276,7 +10276,7 @@ window.__SERENITY_REPORT_DATA__ = {
             }
           ],
           "type": "Task",
-          "startedAt": "2026-09-10T06:03:57.418Z",
+          "startedAt": "2026-09-10T23:32:29.337Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
             "line": 63,
@@ -10286,10 +10286,10 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Bobby ensures that displayed items does equal [ \"buy some cheese\", \"feed the cat\", \"book a doctors appointment\" ]",
           "outcome": "SUCCESS",
-          "duration": 14,
+          "duration": 13,
           "children": [],
           "type": "Interaction",
-          "startedAt": "2026-09-10T06:03:57.789Z",
+          "startedAt": "2026-09-10T23:32:29.691Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
             "line": 65,
@@ -10300,27 +10300,27 @@ window.__SERENITY_REPORT_DATA__ = {
       "executionHistory": [
         {
           "outcome": "SUCCESS",
-          "run": "2593",
-          "timestamp": "2026-09-10T06:03:37.392Z",
-          "duration": 3363,
+          "run": "2596",
+          "timestamp": "2026-09-10T23:32:10.651Z",
+          "duration": 3053,
           "activities": [
             {
               "name": "Alice starts with a list containing 3 items",
               "outcome": "SUCCESS",
-              "duration": 642,
+              "duration": 631,
               "children": [
                 {
                   "name": "Alice starts with an empty todo list",
                   "outcome": "SUCCESS",
-                  "duration": 297,
+                  "duration": 301,
                   "children": [
                     {
                       "name": "Alice navigates to \"/\"",
                       "outcome": "SUCCESS",
-                      "duration": 269,
+                      "duration": 274,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:56.144Z",
+                      "startedAt": "2026-09-10T23:32:28.105Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                         "line": 18,
@@ -10330,10 +10330,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Alice ensures that website title does equal \"Serenity/JS TodoApp\"",
                       "outcome": "SUCCESS",
-                      "duration": 6,
+                      "duration": 5,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:56.424Z",
+                      "startedAt": "2026-09-10T23:32:28.389Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
                         "line": 47,
@@ -10342,7 +10342,7 @@ window.__SERENITY_REPORT_DATA__ = {
                     }
                   ],
                   "type": "Task",
-                  "startedAt": "2026-09-10T06:03:56.143Z",
+                  "startedAt": "2026-09-10T23:32:28.104Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                     "line": 18,
@@ -10352,15 +10352,15 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice records an item called \"buy some cheese\"",
                   "outcome": "SUCCESS",
-                  "duration": 134,
+                  "duration": 132,
                   "children": [
                     {
                       "name": "Alice enters \"buy some cheese\" into \"What needs to be done?\" input box",
                       "outcome": "SUCCESS",
-                      "duration": 35,
+                      "duration": 33,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:56.451Z",
+                      "startedAt": "2026-09-10T23:32:28.416Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                         "line": 12,
@@ -10370,10 +10370,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Alice presses key Enter in \"What needs to be done?\" input box",
                       "outcome": "SUCCESS",
-                      "duration": 45,
+                      "duration": 46,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:56.497Z",
+                      "startedAt": "2026-09-10T23:32:28.459Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                         "line": 13,
@@ -10383,10 +10383,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Alice waits until displayed items does contain \"buy some cheese\"",
                       "outcome": "SUCCESS",
-                      "duration": 22,
+                      "duration": 21,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:56.553Z",
+                      "startedAt": "2026-09-10T23:32:28.515Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                         "line": 19,
@@ -10395,7 +10395,7 @@ window.__SERENITY_REPORT_DATA__ = {
                     }
                   ],
                   "type": "Task",
-                  "startedAt": "2026-09-10T06:03:56.451Z",
+                  "startedAt": "2026-09-10T23:32:28.415Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                     "line": 19,
@@ -10405,15 +10405,15 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice records an item called \"feed the cat\"",
                   "outcome": "SUCCESS",
-                  "duration": 84,
+                  "duration": 78,
                   "children": [
                     {
                       "name": "Alice enters \"feed the cat\" into \"What needs to be done?\" input box",
                       "outcome": "SUCCESS",
-                      "duration": 12,
+                      "duration": 11,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:56.596Z",
+                      "startedAt": "2026-09-10T23:32:28.557Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                         "line": 12,
@@ -10423,10 +10423,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Alice presses key Enter in \"What needs to be done?\" input box",
                       "outcome": "SUCCESS",
-                      "duration": 15,
+                      "duration": 13,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:56.619Z",
+                      "startedAt": "2026-09-10T23:32:28.579Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                         "line": 13,
@@ -10436,10 +10436,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Alice waits until displayed items does contain \"feed the cat\"",
                       "outcome": "SUCCESS",
-                      "duration": 25,
+                      "duration": 22,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:56.645Z",
+                      "startedAt": "2026-09-10T23:32:28.602Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                         "line": 19,
@@ -10448,7 +10448,7 @@ window.__SERENITY_REPORT_DATA__ = {
                     }
                   ],
                   "type": "Task",
-                  "startedAt": "2026-09-10T06:03:56.596Z",
+                  "startedAt": "2026-09-10T23:32:28.557Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                     "line": 19,
@@ -10458,15 +10458,15 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice records an item called \"book a doctors appointment\"",
                   "outcome": "SUCCESS",
-                  "duration": 84,
+                  "duration": 80,
                   "children": [
                     {
                       "name": "Alice enters \"book a doctors appointment\" into \"What needs to be done?\" input box",
                       "outcome": "SUCCESS",
-                      "duration": 10,
+                      "duration": 9,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:56.691Z",
+                      "startedAt": "2026-09-10T23:32:28.646Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                         "line": 12,
@@ -10476,10 +10476,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Alice presses key Enter in \"What needs to be done?\" input box",
                       "outcome": "SUCCESS",
-                      "duration": 16,
+                      "duration": 14,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:56.712Z",
+                      "startedAt": "2026-09-10T23:32:28.666Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                         "line": 13,
@@ -10489,10 +10489,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Alice waits until displayed items does contain \"book a doctors appointment\"",
                       "outcome": "SUCCESS",
-                      "duration": 26,
+                      "duration": 24,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:56.739Z",
+                      "startedAt": "2026-09-10T23:32:28.690Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                         "line": 19,
@@ -10501,7 +10501,7 @@ window.__SERENITY_REPORT_DATA__ = {
                     }
                   ],
                   "type": "Task",
-                  "startedAt": "2026-09-10T06:03:56.691Z",
+                  "startedAt": "2026-09-10T23:32:28.645Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                     "line": 19,
@@ -10510,7 +10510,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:03:56.143Z",
+              "startedAt": "2026-09-10T23:32:28.104Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
                 "line": 47,
@@ -10520,10 +10520,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice ensures that displayed items does equal [ \"buy some cheese\", \"feed the cat\", \"book a doctors appointment\" ]",
               "outcome": "SUCCESS",
-              "duration": 15,
+              "duration": 11,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:56.796Z",
+              "startedAt": "2026-09-10T23:32:28.746Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
                 "line": 51,
@@ -10533,10 +10533,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice takes notes: items",
               "outcome": "SUCCESS",
-              "duration": 44,
+              "duration": 37,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:56.846Z",
+              "startedAt": "2026-09-10T23:32:28.791Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
                 "line": 53,
@@ -10546,15 +10546,15 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Bobby starts with an empty todo list",
               "outcome": "SUCCESS",
-              "duration": 498,
+              "duration": 481,
               "children": [
                 {
                   "name": "Bobby navigates to \"/\"",
                   "outcome": "SUCCESS",
-                  "duration": 472,
+                  "duration": 452,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:56.909Z",
+                  "startedAt": "2026-09-10T23:32:28.846Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
                     "line": 60,
@@ -10564,10 +10564,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Bobby ensures that website title does equal \"Serenity/JS TodoApp\"",
                   "outcome": "SUCCESS",
-                  "duration": 6,
+                  "duration": 7,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:03:57.391Z",
+                  "startedAt": "2026-09-10T23:32:29.309Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
                     "line": 60,
@@ -10576,7 +10576,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:03:56.909Z",
+              "startedAt": "2026-09-10T23:32:28.845Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
                 "line": 60,
@@ -10586,20 +10586,20 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Bobby iterates over a note of items",
               "outcome": "SUCCESS",
-              "duration": 360,
+              "duration": 343,
               "children": [
                 {
                   "name": "Bobby records an item called \"buy some cheese\"",
                   "outcome": "SUCCESS",
-                  "duration": 132,
+                  "duration": 125,
                   "children": [
                     {
                       "name": "Bobby enters \"buy some cheese\" into \"What needs to be done?\" input box",
                       "outcome": "SUCCESS",
-                      "duration": 34,
+                      "duration": 32,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:57.429Z",
+                      "startedAt": "2026-09-10T23:32:29.347Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                         "line": 12,
@@ -10609,10 +10609,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Bobby presses key Enter in \"What needs to be done?\" input box",
                       "outcome": "SUCCESS",
-                      "duration": 45,
+                      "duration": 43,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:57.474Z",
+                      "startedAt": "2026-09-10T23:32:29.389Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                         "line": 13,
@@ -10622,10 +10622,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Bobby waits until displayed items does contain \"buy some cheese\"",
                       "outcome": "SUCCESS",
-                      "duration": 20,
+                      "duration": 18,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:57.530Z",
+                      "startedAt": "2026-09-10T23:32:29.443Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
                         "line": 63,
@@ -10634,7 +10634,7 @@ window.__SERENITY_REPORT_DATA__ = {
                     }
                   ],
                   "type": "Task",
-                  "startedAt": "2026-09-10T06:03:57.428Z",
+                  "startedAt": "2026-09-10T23:32:29.347Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
                     "line": 63,
@@ -10644,15 +10644,15 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Bobby records an item called \"feed the cat\"",
                   "outcome": "SUCCESS",
-                  "duration": 82,
+                  "duration": 77,
                   "children": [
                     {
                       "name": "Bobby enters \"feed the cat\" into \"What needs to be done?\" input box",
                       "outcome": "SUCCESS",
-                      "duration": 11,
+                      "duration": 10,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:57.581Z",
+                      "startedAt": "2026-09-10T23:32:29.491Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                         "line": 12,
@@ -10662,10 +10662,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Bobby presses key Enter in \"What needs to be done?\" input box",
                       "outcome": "SUCCESS",
-                      "duration": 14,
+                      "duration": 13,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:57.603Z",
+                      "startedAt": "2026-09-10T23:32:29.512Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                         "line": 13,
@@ -10675,10 +10675,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Bobby waits until displayed items does contain \"feed the cat\"",
                       "outcome": "SUCCESS",
-                      "duration": 24,
+                      "duration": 22,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:57.628Z",
+                      "startedAt": "2026-09-10T23:32:29.536Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
                         "line": 63,
@@ -10687,7 +10687,7 @@ window.__SERENITY_REPORT_DATA__ = {
                     }
                   ],
                   "type": "Task",
-                  "startedAt": "2026-09-10T06:03:57.581Z",
+                  "startedAt": "2026-09-10T23:32:29.491Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
                     "line": 63,
@@ -10697,7 +10697,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Bobby records an item called \"book a doctors appointment\"",
                   "outcome": "SUCCESS",
-                  "duration": 85,
+                  "duration": 81,
                   "children": [
                     {
                       "name": "Bobby enters \"book a doctors appointment\" into \"What needs to be done?\" input box",
@@ -10705,7 +10705,7 @@ window.__SERENITY_REPORT_DATA__ = {
                       "duration": 9,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:57.684Z",
+                      "startedAt": "2026-09-10T23:32:29.589Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                         "line": 12,
@@ -10715,10 +10715,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Bobby presses key Enter in \"What needs to be done?\" input box",
                       "outcome": "SUCCESS",
-                      "duration": 14,
+                      "duration": 13,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:57.704Z",
+                      "startedAt": "2026-09-10T23:32:29.609Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                         "line": 13,
@@ -10728,10 +10728,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Bobby waits until displayed items does contain \"book a doctors appointment\"",
                       "outcome": "SUCCESS",
-                      "duration": 28,
+                      "duration": 25,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:03:57.729Z",
+                      "startedAt": "2026-09-10T23:32:29.633Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
                         "line": 63,
@@ -10740,7 +10740,7 @@ window.__SERENITY_REPORT_DATA__ = {
                     }
                   ],
                   "type": "Task",
-                  "startedAt": "2026-09-10T06:03:57.683Z",
+                  "startedAt": "2026-09-10T23:32:29.588Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
                     "line": 63,
@@ -10749,7 +10749,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:03:57.418Z",
+              "startedAt": "2026-09-10T23:32:29.337Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
                 "line": 63,
@@ -10759,10 +10759,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Bobby ensures that displayed items does equal [ \"buy some cheese\", \"feed the cat\", \"book a doctors appointment\" ]",
               "outcome": "SUCCESS",
-              "duration": 14,
+              "duration": 13,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:03:57.789Z",
+              "startedAt": "2026-09-10T23:32:29.691Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
                 "line": 65,
@@ -10838,8 +10838,8 @@ window.__SERENITY_REPORT_DATA__ = {
       "name": "Todo List App should allow me to share notes across actors and browsers",
       "category": "Using notes",
       "outcome": "SUCCESS",
-      "duration": 2502,
-      "startedAt": "2026-09-10T06:04:15.491Z",
+      "duration": 2338,
+      "startedAt": "2026-09-10T23:32:45.582Z",
       "source": {
         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
         "line": 44
@@ -10870,20 +10870,20 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice starts with a list containing 3 items",
           "outcome": "SUCCESS",
-          "duration": 770,
+          "duration": 780,
           "children": [
             {
               "name": "Alice starts with an empty todo list",
               "outcome": "SUCCESS",
-              "duration": 359,
+              "duration": 351,
               "children": [
                 {
                   "name": "Alice navigates to \"/\"",
                   "outcome": "SUCCESS",
-                  "duration": 318,
+                  "duration": 315,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:04:15.786Z",
+                  "startedAt": "2026-09-10T23:32:45.842Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                     "line": 18,
@@ -10896,7 +10896,7 @@ window.__SERENITY_REPORT_DATA__ = {
                   "duration": 15,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:04:16.119Z",
+                  "startedAt": "2026-09-10T23:32:46.167Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
                     "line": 47,
@@ -10905,7 +10905,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:04:15.786Z",
+              "startedAt": "2026-09-10T23:32:45.842Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                 "line": 18,
@@ -10915,15 +10915,15 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice records an item called \"buy some cheese\"",
               "outcome": "SUCCESS",
-              "duration": 162,
+              "duration": 173,
               "children": [
                 {
                   "name": "Alice enters \"buy some cheese\" into \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 36,
+                  "duration": 39,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:04:16.156Z",
+                  "startedAt": "2026-09-10T23:32:46.203Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 12,
@@ -10933,10 +10933,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice presses key Enter in \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 58,
+                  "duration": 66,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:04:16.203Z",
+                  "startedAt": "2026-09-10T23:32:46.253Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 13,
@@ -10946,10 +10946,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice waits until displayed items does contain \"buy some cheese\"",
                   "outcome": "SUCCESS",
-                  "duration": 35,
+                  "duration": 33,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:04:16.272Z",
+                  "startedAt": "2026-09-10T23:32:46.330Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                     "line": 19,
@@ -10958,7 +10958,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:04:16.156Z",
+              "startedAt": "2026-09-10T23:32:46.203Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                 "line": 19,
@@ -10968,15 +10968,15 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice records an item called \"feed the cat\"",
               "outcome": "SUCCESS",
-              "duration": 102,
+              "duration": 95,
               "children": [
                 {
                   "name": "Alice enters \"feed the cat\" into \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 13,
+                  "duration": 12,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:04:16.330Z",
+                  "startedAt": "2026-09-10T23:32:46.387Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 12,
@@ -10986,10 +10986,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice presses key Enter in \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 29,
+                  "duration": 28,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:04:16.354Z",
+                  "startedAt": "2026-09-10T23:32:46.410Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 13,
@@ -10999,10 +10999,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice waits until displayed items does contain \"feed the cat\"",
                   "outcome": "SUCCESS",
-                  "duration": 27,
+                  "duration": 23,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:04:16.394Z",
+                  "startedAt": "2026-09-10T23:32:46.449Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                     "line": 19,
@@ -11011,7 +11011,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:04:16.329Z",
+              "startedAt": "2026-09-10T23:32:46.387Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                 "line": 19,
@@ -11021,15 +11021,15 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice records an item called \"book a doctors appointment\"",
               "outcome": "SUCCESS",
-              "duration": 102,
+              "duration": 119,
               "children": [
                 {
                   "name": "Alice enters \"book a doctors appointment\" into \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 13,
+                  "duration": 23,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:04:16.442Z",
+                  "startedAt": "2026-09-10T23:32:46.493Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 12,
@@ -11039,10 +11039,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice presses key Enter in \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 29,
+                  "duration": 27,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:04:16.466Z",
+                  "startedAt": "2026-09-10T23:32:46.528Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 13,
@@ -11052,10 +11052,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice waits until displayed items does contain \"book a doctors appointment\"",
                   "outcome": "SUCCESS",
-                  "duration": 28,
+                  "duration": 35,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:04:16.506Z",
+                  "startedAt": "2026-09-10T23:32:46.566Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                     "line": 19,
@@ -11064,7 +11064,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:04:16.442Z",
+              "startedAt": "2026-09-10T23:32:46.493Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                 "line": 19,
@@ -11073,7 +11073,7 @@ window.__SERENITY_REPORT_DATA__ = {
             }
           ],
           "type": "Task",
-          "startedAt": "2026-09-10T06:04:15.785Z",
+          "startedAt": "2026-09-10T23:32:45.841Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
             "line": 47,
@@ -11083,10 +11083,10 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice ensures that displayed items does equal [ \"buy some cheese\", \"feed the cat\", \"book a doctors appointment\" ]",
           "outcome": "SUCCESS",
-          "duration": 16,
+          "duration": 25,
           "children": [],
           "type": "Interaction",
-          "startedAt": "2026-09-10T06:04:16.566Z",
+          "startedAt": "2026-09-10T23:32:46.632Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
             "line": 51,
@@ -11096,10 +11096,10 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice takes notes: items",
           "outcome": "SUCCESS",
-          "duration": 54,
+          "duration": 52,
           "children": [],
           "type": "Interaction",
-          "startedAt": "2026-09-10T06:04:16.620Z",
+          "startedAt": "2026-09-10T23:32:46.695Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
             "line": 53,
@@ -11109,15 +11109,15 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Bobby starts with an empty todo list",
           "outcome": "SUCCESS",
-          "duration": 753,
+          "duration": 649,
           "children": [
             {
               "name": "Bobby navigates to \"/\"",
               "outcome": "SUCCESS",
-              "duration": 726,
+              "duration": 614,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:04:16.698Z",
+              "startedAt": "2026-09-10T23:32:46.772Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
                 "line": 60,
@@ -11127,10 +11127,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Bobby ensures that website title does equal \"Serenity/JS TodoApp\"",
               "outcome": "SUCCESS",
-              "duration": 4,
+              "duration": 14,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:04:17.435Z",
+              "startedAt": "2026-09-10T23:32:47.396Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
                 "line": 60,
@@ -11139,7 +11139,7 @@ window.__SERENITY_REPORT_DATA__ = {
             }
           ],
           "type": "Task",
-          "startedAt": "2026-09-10T06:04:16.697Z",
+          "startedAt": "2026-09-10T23:32:46.771Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
             "line": 60,
@@ -11149,20 +11149,20 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Bobby iterates over a note of items",
           "outcome": "SUCCESS",
-          "duration": 449,
+          "duration": 401,
           "children": [
             {
               "name": "Bobby records an item called \"buy some cheese\"",
               "outcome": "SUCCESS",
-              "duration": 170,
+              "duration": 151,
               "children": [
                 {
                   "name": "Bobby enters \"buy some cheese\" into \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 34,
+                  "duration": 29,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:04:17.471Z",
+                  "startedAt": "2026-09-10T23:32:47.440Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 12,
@@ -11172,10 +11172,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Bobby presses key Enter in \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 77,
+                  "duration": 57,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:04:17.515Z",
+                  "startedAt": "2026-09-10T23:32:47.480Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 13,
@@ -11185,10 +11185,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Bobby waits until displayed items does contain \"buy some cheese\"",
                   "outcome": "SUCCESS",
-                  "duration": 25,
+                  "duration": 33,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:04:17.603Z",
+                  "startedAt": "2026-09-10T23:32:47.548Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
                     "line": 63,
@@ -11197,7 +11197,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:04:17.470Z",
+              "startedAt": "2026-09-10T23:32:47.440Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
                 "line": 63,
@@ -11207,15 +11207,15 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Bobby records an item called \"feed the cat\"",
               "outcome": "SUCCESS",
-              "duration": 93,
+              "duration": 79,
               "children": [
                 {
                   "name": "Bobby enters \"feed the cat\" into \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 12,
+                  "duration": 10,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:04:17.669Z",
+                  "startedAt": "2026-09-10T23:32:47.618Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 12,
@@ -11225,10 +11225,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Bobby presses key Enter in \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 23,
+                  "duration": 15,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:04:17.692Z",
+                  "startedAt": "2026-09-10T23:32:47.637Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 13,
@@ -11238,10 +11238,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Bobby waits until displayed items does contain \"feed the cat\"",
                   "outcome": "SUCCESS",
-                  "duration": 25,
+                  "duration": 23,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:04:17.726Z",
+                  "startedAt": "2026-09-10T23:32:47.663Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
                     "line": 63,
@@ -11250,7 +11250,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:04:17.669Z",
+              "startedAt": "2026-09-10T23:32:47.617Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
                 "line": 63,
@@ -11260,15 +11260,15 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Bobby records an item called \"book a doctors appointment\"",
               "outcome": "SUCCESS",
-              "duration": 101,
+              "duration": 93,
               "children": [
                 {
                   "name": "Bobby enters \"book a doctors appointment\" into \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 14,
+                  "duration": 13,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:04:17.798Z",
+                  "startedAt": "2026-09-10T23:32:47.728Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 12,
@@ -11278,10 +11278,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Bobby presses key Enter in \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 25,
+                  "duration": 19,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:04:17.822Z",
+                  "startedAt": "2026-09-10T23:32:47.752Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                     "line": 13,
@@ -11291,10 +11291,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Bobby waits until displayed items does contain \"book a doctors appointment\"",
                   "outcome": "SUCCESS",
-                  "duration": 27,
+                  "duration": 28,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:04:17.860Z",
+                  "startedAt": "2026-09-10T23:32:47.782Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
                     "line": 63,
@@ -11303,7 +11303,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:04:17.797Z",
+              "startedAt": "2026-09-10T23:32:47.728Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
                 "line": 63,
@@ -11312,7 +11312,7 @@ window.__SERENITY_REPORT_DATA__ = {
             }
           ],
           "type": "Task",
-          "startedAt": "2026-09-10T06:04:17.460Z",
+          "startedAt": "2026-09-10T23:32:47.430Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
             "line": 63,
@@ -11322,10 +11322,10 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Bobby ensures that displayed items does equal [ \"buy some cheese\", \"feed the cat\", \"book a doctors appointment\" ]",
           "outcome": "SUCCESS",
-          "duration": 23,
+          "duration": 24,
           "children": [],
           "type": "Interaction",
-          "startedAt": "2026-09-10T06:04:17.920Z",
+          "startedAt": "2026-09-10T23:32:47.842Z",
           "location": {
             "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
             "line": 65,
@@ -11336,27 +11336,27 @@ window.__SERENITY_REPORT_DATA__ = {
       "executionHistory": [
         {
           "outcome": "SUCCESS",
-          "run": "2593",
-          "timestamp": "2026-09-10T06:03:37.392Z",
-          "duration": 2502,
+          "run": "2596",
+          "timestamp": "2026-09-10T23:32:10.651Z",
+          "duration": 2338,
           "activities": [
             {
               "name": "Alice starts with a list containing 3 items",
               "outcome": "SUCCESS",
-              "duration": 770,
+              "duration": 780,
               "children": [
                 {
                   "name": "Alice starts with an empty todo list",
                   "outcome": "SUCCESS",
-                  "duration": 359,
+                  "duration": 351,
                   "children": [
                     {
                       "name": "Alice navigates to \"/\"",
                       "outcome": "SUCCESS",
-                      "duration": 318,
+                      "duration": 315,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:04:15.786Z",
+                      "startedAt": "2026-09-10T23:32:45.842Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                         "line": 18,
@@ -11369,7 +11369,7 @@ window.__SERENITY_REPORT_DATA__ = {
                       "duration": 15,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:04:16.119Z",
+                      "startedAt": "2026-09-10T23:32:46.167Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
                         "line": 47,
@@ -11378,7 +11378,7 @@ window.__SERENITY_REPORT_DATA__ = {
                     }
                   ],
                   "type": "Task",
-                  "startedAt": "2026-09-10T06:04:15.786Z",
+                  "startedAt": "2026-09-10T23:32:45.842Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                     "line": 18,
@@ -11388,15 +11388,15 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice records an item called \"buy some cheese\"",
                   "outcome": "SUCCESS",
-                  "duration": 162,
+                  "duration": 173,
                   "children": [
                     {
                       "name": "Alice enters \"buy some cheese\" into \"What needs to be done?\" input box",
                       "outcome": "SUCCESS",
-                      "duration": 36,
+                      "duration": 39,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:04:16.156Z",
+                      "startedAt": "2026-09-10T23:32:46.203Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                         "line": 12,
@@ -11406,10 +11406,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Alice presses key Enter in \"What needs to be done?\" input box",
                       "outcome": "SUCCESS",
-                      "duration": 58,
+                      "duration": 66,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:04:16.203Z",
+                      "startedAt": "2026-09-10T23:32:46.253Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                         "line": 13,
@@ -11419,10 +11419,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Alice waits until displayed items does contain \"buy some cheese\"",
                       "outcome": "SUCCESS",
-                      "duration": 35,
+                      "duration": 33,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:04:16.272Z",
+                      "startedAt": "2026-09-10T23:32:46.330Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                         "line": 19,
@@ -11431,7 +11431,7 @@ window.__SERENITY_REPORT_DATA__ = {
                     }
                   ],
                   "type": "Task",
-                  "startedAt": "2026-09-10T06:04:16.156Z",
+                  "startedAt": "2026-09-10T23:32:46.203Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                     "line": 19,
@@ -11441,15 +11441,15 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice records an item called \"feed the cat\"",
                   "outcome": "SUCCESS",
-                  "duration": 102,
+                  "duration": 95,
                   "children": [
                     {
                       "name": "Alice enters \"feed the cat\" into \"What needs to be done?\" input box",
                       "outcome": "SUCCESS",
-                      "duration": 13,
+                      "duration": 12,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:04:16.330Z",
+                      "startedAt": "2026-09-10T23:32:46.387Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                         "line": 12,
@@ -11459,10 +11459,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Alice presses key Enter in \"What needs to be done?\" input box",
                       "outcome": "SUCCESS",
-                      "duration": 29,
+                      "duration": 28,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:04:16.354Z",
+                      "startedAt": "2026-09-10T23:32:46.410Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                         "line": 13,
@@ -11472,10 +11472,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Alice waits until displayed items does contain \"feed the cat\"",
                       "outcome": "SUCCESS",
-                      "duration": 27,
+                      "duration": 23,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:04:16.394Z",
+                      "startedAt": "2026-09-10T23:32:46.449Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                         "line": 19,
@@ -11484,7 +11484,7 @@ window.__SERENITY_REPORT_DATA__ = {
                     }
                   ],
                   "type": "Task",
-                  "startedAt": "2026-09-10T06:04:16.329Z",
+                  "startedAt": "2026-09-10T23:32:46.387Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                     "line": 19,
@@ -11494,15 +11494,15 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Alice records an item called \"book a doctors appointment\"",
                   "outcome": "SUCCESS",
-                  "duration": 102,
+                  "duration": 119,
                   "children": [
                     {
                       "name": "Alice enters \"book a doctors appointment\" into \"What needs to be done?\" input box",
                       "outcome": "SUCCESS",
-                      "duration": 13,
+                      "duration": 23,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:04:16.442Z",
+                      "startedAt": "2026-09-10T23:32:46.493Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                         "line": 12,
@@ -11512,10 +11512,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Alice presses key Enter in \"What needs to be done?\" input box",
                       "outcome": "SUCCESS",
-                      "duration": 29,
+                      "duration": 27,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:04:16.466Z",
+                      "startedAt": "2026-09-10T23:32:46.528Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                         "line": 13,
@@ -11525,10 +11525,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Alice waits until displayed items does contain \"book a doctors appointment\"",
                       "outcome": "SUCCESS",
-                      "duration": 28,
+                      "duration": 35,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:04:16.506Z",
+                      "startedAt": "2026-09-10T23:32:46.566Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                         "line": 19,
@@ -11537,7 +11537,7 @@ window.__SERENITY_REPORT_DATA__ = {
                     }
                   ],
                   "type": "Task",
-                  "startedAt": "2026-09-10T06:04:16.442Z",
+                  "startedAt": "2026-09-10T23:32:46.493Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoApp/tasks.ts",
                     "line": 19,
@@ -11546,7 +11546,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:04:15.785Z",
+              "startedAt": "2026-09-10T23:32:45.841Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
                 "line": 47,
@@ -11556,10 +11556,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice ensures that displayed items does equal [ \"buy some cheese\", \"feed the cat\", \"book a doctors appointment\" ]",
               "outcome": "SUCCESS",
-              "duration": 16,
+              "duration": 25,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:04:16.566Z",
+              "startedAt": "2026-09-10T23:32:46.632Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
                 "line": 51,
@@ -11569,10 +11569,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice takes notes: items",
               "outcome": "SUCCESS",
-              "duration": 54,
+              "duration": 52,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:04:16.620Z",
+              "startedAt": "2026-09-10T23:32:46.695Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
                 "line": 53,
@@ -11582,15 +11582,15 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Bobby starts with an empty todo list",
               "outcome": "SUCCESS",
-              "duration": 753,
+              "duration": 649,
               "children": [
                 {
                   "name": "Bobby navigates to \"/\"",
                   "outcome": "SUCCESS",
-                  "duration": 726,
+                  "duration": 614,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:04:16.698Z",
+                  "startedAt": "2026-09-10T23:32:46.772Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
                     "line": 60,
@@ -11600,10 +11600,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Bobby ensures that website title does equal \"Serenity/JS TodoApp\"",
                   "outcome": "SUCCESS",
-                  "duration": 4,
+                  "duration": 14,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-09-10T06:04:17.435Z",
+                  "startedAt": "2026-09-10T23:32:47.396Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
                     "line": 60,
@@ -11612,7 +11612,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:04:16.697Z",
+              "startedAt": "2026-09-10T23:32:46.771Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
                 "line": 60,
@@ -11622,20 +11622,20 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Bobby iterates over a note of items",
               "outcome": "SUCCESS",
-              "duration": 449,
+              "duration": 401,
               "children": [
                 {
                   "name": "Bobby records an item called \"buy some cheese\"",
                   "outcome": "SUCCESS",
-                  "duration": 170,
+                  "duration": 151,
                   "children": [
                     {
                       "name": "Bobby enters \"buy some cheese\" into \"What needs to be done?\" input box",
                       "outcome": "SUCCESS",
-                      "duration": 34,
+                      "duration": 29,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:04:17.471Z",
+                      "startedAt": "2026-09-10T23:32:47.440Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                         "line": 12,
@@ -11645,10 +11645,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Bobby presses key Enter in \"What needs to be done?\" input box",
                       "outcome": "SUCCESS",
-                      "duration": 77,
+                      "duration": 57,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:04:17.515Z",
+                      "startedAt": "2026-09-10T23:32:47.480Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                         "line": 13,
@@ -11658,10 +11658,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Bobby waits until displayed items does contain \"buy some cheese\"",
                       "outcome": "SUCCESS",
-                      "duration": 25,
+                      "duration": 33,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:04:17.603Z",
+                      "startedAt": "2026-09-10T23:32:47.548Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
                         "line": 63,
@@ -11670,7 +11670,7 @@ window.__SERENITY_REPORT_DATA__ = {
                     }
                   ],
                   "type": "Task",
-                  "startedAt": "2026-09-10T06:04:17.470Z",
+                  "startedAt": "2026-09-10T23:32:47.440Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
                     "line": 63,
@@ -11680,15 +11680,15 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Bobby records an item called \"feed the cat\"",
                   "outcome": "SUCCESS",
-                  "duration": 93,
+                  "duration": 79,
                   "children": [
                     {
                       "name": "Bobby enters \"feed the cat\" into \"What needs to be done?\" input box",
                       "outcome": "SUCCESS",
-                      "duration": 12,
+                      "duration": 10,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:04:17.669Z",
+                      "startedAt": "2026-09-10T23:32:47.618Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                         "line": 12,
@@ -11698,10 +11698,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Bobby presses key Enter in \"What needs to be done?\" input box",
                       "outcome": "SUCCESS",
-                      "duration": 23,
+                      "duration": 15,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:04:17.692Z",
+                      "startedAt": "2026-09-10T23:32:47.637Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                         "line": 13,
@@ -11711,10 +11711,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Bobby waits until displayed items does contain \"feed the cat\"",
                       "outcome": "SUCCESS",
-                      "duration": 25,
+                      "duration": 23,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:04:17.726Z",
+                      "startedAt": "2026-09-10T23:32:47.663Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
                         "line": 63,
@@ -11723,7 +11723,7 @@ window.__SERENITY_REPORT_DATA__ = {
                     }
                   ],
                   "type": "Task",
-                  "startedAt": "2026-09-10T06:04:17.669Z",
+                  "startedAt": "2026-09-10T23:32:47.617Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
                     "line": 63,
@@ -11733,15 +11733,15 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Bobby records an item called \"book a doctors appointment\"",
                   "outcome": "SUCCESS",
-                  "duration": 101,
+                  "duration": 93,
                   "children": [
                     {
                       "name": "Bobby enters \"book a doctors appointment\" into \"What needs to be done?\" input box",
                       "outcome": "SUCCESS",
-                      "duration": 14,
+                      "duration": 13,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:04:17.798Z",
+                      "startedAt": "2026-09-10T23:32:47.728Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                         "line": 12,
@@ -11751,10 +11751,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Bobby presses key Enter in \"What needs to be done?\" input box",
                       "outcome": "SUCCESS",
-                      "duration": 25,
+                      "duration": 19,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:04:17.822Z",
+                      "startedAt": "2026-09-10T23:32:47.752Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/todo-list-app/TodoItem/tasks.ts",
                         "line": 13,
@@ -11764,10 +11764,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Bobby waits until displayed items does contain \"book a doctors appointment\"",
                       "outcome": "SUCCESS",
-                      "duration": 27,
+                      "duration": 28,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-09-10T06:04:17.860Z",
+                      "startedAt": "2026-09-10T23:32:47.782Z",
                       "location": {
                         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
                         "line": 63,
@@ -11776,7 +11776,7 @@ window.__SERENITY_REPORT_DATA__ = {
                     }
                   ],
                   "type": "Task",
-                  "startedAt": "2026-09-10T06:04:17.797Z",
+                  "startedAt": "2026-09-10T23:32:47.728Z",
                   "location": {
                     "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
                     "line": 63,
@@ -11785,7 +11785,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-09-10T06:04:17.460Z",
+              "startedAt": "2026-09-10T23:32:47.430Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
                 "line": 63,
@@ -11795,10 +11795,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Bobby ensures that displayed items does equal [ \"buy some cheese\", \"feed the cat\", \"book a doctors appointment\" ]",
               "outcome": "SUCCESS",
-              "duration": 23,
+              "duration": 24,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-09-10T06:04:17.920Z",
+              "startedAt": "2026-09-10T23:32:47.842Z",
               "location": {
                 "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/using_notes.spec.ts",
                 "line": 65,
@@ -11874,8 +11874,8 @@ window.__SERENITY_REPORT_DATA__ = {
       "name": "New Todo should allow me to add todo items",
       "category": "Vanilla Playwright Test",
       "outcome": "SUCCESS",
-      "duration": 418,
-      "startedAt": "2026-09-10T06:03:45.023Z",
+      "duration": 400,
+      "startedAt": "2026-09-10T23:32:17.479Z",
       "source": {
         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/vanilla_playwright_test.spec.ts",
         "line": 16
@@ -11898,9 +11898,9 @@ window.__SERENITY_REPORT_DATA__ = {
       "executionHistory": [
         {
           "outcome": "SUCCESS",
-          "run": "2593",
-          "timestamp": "2026-09-10T06:03:37.392Z",
-          "duration": 418,
+          "run": "2596",
+          "timestamp": "2026-09-10T23:32:10.651Z",
+          "duration": 400,
           "activities": []
         }
       ],
@@ -11910,8 +11910,8 @@ window.__SERENITY_REPORT_DATA__ = {
       "name": "New Todo should allow me to add todo items",
       "category": "Vanilla Playwright Test",
       "outcome": "SUCCESS",
-      "duration": 1914,
-      "startedAt": "2026-09-10T06:04:00.061Z",
+      "duration": 1637,
+      "startedAt": "2026-09-10T23:32:31.690Z",
       "source": {
         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/vanilla_playwright_test.spec.ts",
         "line": 16
@@ -11934,9 +11934,9 @@ window.__SERENITY_REPORT_DATA__ = {
       "executionHistory": [
         {
           "outcome": "SUCCESS",
-          "run": "2593",
-          "timestamp": "2026-09-10T06:03:37.392Z",
-          "duration": 1914,
+          "run": "2596",
+          "timestamp": "2026-09-10T23:32:10.651Z",
+          "duration": 1637,
           "activities": []
         }
       ],
@@ -11946,8 +11946,8 @@ window.__SERENITY_REPORT_DATA__ = {
       "name": "New Todo should allow me to add todo items",
       "category": "Vanilla Playwright Test",
       "outcome": "SUCCESS",
-      "duration": 750,
-      "startedAt": "2026-09-10T06:04:18.491Z",
+      "duration": 704,
+      "startedAt": "2026-09-10T23:32:48.400Z",
       "source": {
         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/vanilla_playwright_test.spec.ts",
         "line": 16
@@ -11970,9 +11970,9 @@ window.__SERENITY_REPORT_DATA__ = {
       "executionHistory": [
         {
           "outcome": "SUCCESS",
-          "run": "2593",
-          "timestamp": "2026-09-10T06:03:37.392Z",
-          "duration": 750,
+          "run": "2596",
+          "timestamp": "2026-09-10T23:32:10.651Z",
+          "duration": 704,
           "activities": []
         }
       ],
@@ -11982,8 +11982,8 @@ window.__SERENITY_REPORT_DATA__ = {
       "name": "New Todo should clear text input field when an item is added",
       "category": "Vanilla Playwright Test",
       "outcome": "SUCCESS",
-      "duration": 349,
-      "startedAt": "2026-09-10T06:03:45.568Z",
+      "duration": 318,
+      "startedAt": "2026-09-10T23:32:17.991Z",
       "source": {
         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/vanilla_playwright_test.spec.ts",
         "line": 39
@@ -12006,9 +12006,9 @@ window.__SERENITY_REPORT_DATA__ = {
       "executionHistory": [
         {
           "outcome": "SUCCESS",
-          "run": "2593",
-          "timestamp": "2026-09-10T06:03:37.392Z",
-          "duration": 349,
+          "run": "2596",
+          "timestamp": "2026-09-10T23:32:10.651Z",
+          "duration": 318,
           "activities": []
         }
       ],
@@ -12018,8 +12018,8 @@ window.__SERENITY_REPORT_DATA__ = {
       "name": "New Todo should clear text input field when an item is added",
       "category": "Vanilla Playwright Test",
       "outcome": "SUCCESS",
-      "duration": 666,
-      "startedAt": "2026-09-10T06:04:02.527Z",
+      "duration": 602,
+      "startedAt": "2026-09-10T23:32:33.738Z",
       "source": {
         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/vanilla_playwright_test.spec.ts",
         "line": 39
@@ -12042,9 +12042,9 @@ window.__SERENITY_REPORT_DATA__ = {
       "executionHistory": [
         {
           "outcome": "SUCCESS",
-          "run": "2593",
-          "timestamp": "2026-09-10T06:03:37.392Z",
-          "duration": 666,
+          "run": "2596",
+          "timestamp": "2026-09-10T23:32:10.651Z",
+          "duration": 602,
           "activities": []
         }
       ],
@@ -12054,8 +12054,8 @@ window.__SERENITY_REPORT_DATA__ = {
       "name": "New Todo should clear text input field when an item is added",
       "category": "Vanilla Playwright Test",
       "outcome": "SUCCESS",
-      "duration": 688,
-      "startedAt": "2026-09-10T06:04:19.385Z",
+      "duration": 627,
+      "startedAt": "2026-09-10T23:32:49.239Z",
       "source": {
         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/vanilla_playwright_test.spec.ts",
         "line": 39
@@ -12078,9 +12078,9 @@ window.__SERENITY_REPORT_DATA__ = {
       "executionHistory": [
         {
           "outcome": "SUCCESS",
-          "run": "2593",
-          "timestamp": "2026-09-10T06:03:37.392Z",
-          "duration": 688,
+          "run": "2596",
+          "timestamp": "2026-09-10T23:32:10.651Z",
+          "duration": 627,
           "activities": []
         }
       ],
@@ -12090,8 +12090,8 @@ window.__SERENITY_REPORT_DATA__ = {
       "name": "New Todo should reflect the number of items left in the counter",
       "category": "Vanilla Playwright Test",
       "outcome": "SUCCESS",
-      "duration": 376,
-      "startedAt": "2026-09-10T06:03:45.944Z",
+      "duration": 400,
+      "startedAt": "2026-09-10T23:32:18.331Z",
       "source": {
         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/vanilla_playwright_test.spec.ts",
         "line": 49
@@ -12114,9 +12114,9 @@ window.__SERENITY_REPORT_DATA__ = {
       "executionHistory": [
         {
           "outcome": "SUCCESS",
-          "run": "2593",
-          "timestamp": "2026-09-10T06:03:37.392Z",
-          "duration": 376,
+          "run": "2596",
+          "timestamp": "2026-09-10T23:32:10.651Z",
+          "duration": 400,
           "activities": []
         }
       ],
@@ -12126,8 +12126,8 @@ window.__SERENITY_REPORT_DATA__ = {
       "name": "New Todo should reflect the number of items left in the counter",
       "category": "Vanilla Playwright Test",
       "outcome": "SUCCESS",
-      "duration": 757,
-      "startedAt": "2026-09-10T06:04:03.220Z",
+      "duration": 611,
+      "startedAt": "2026-09-10T23:32:34.358Z",
       "source": {
         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/vanilla_playwright_test.spec.ts",
         "line": 49
@@ -12150,9 +12150,9 @@ window.__SERENITY_REPORT_DATA__ = {
       "executionHistory": [
         {
           "outcome": "SUCCESS",
-          "run": "2593",
-          "timestamp": "2026-09-10T06:03:37.392Z",
-          "duration": 757,
+          "run": "2596",
+          "timestamp": "2026-09-10T23:32:10.651Z",
+          "duration": 611,
           "activities": []
         }
       ],
@@ -12162,8 +12162,8 @@ window.__SERENITY_REPORT_DATA__ = {
       "name": "New Todo should reflect the number of items left in the counter",
       "category": "Vanilla Playwright Test",
       "outcome": "SUCCESS",
-      "duration": 724,
-      "startedAt": "2026-09-10T06:04:20.108Z",
+      "duration": 722,
+      "startedAt": "2026-09-10T23:32:49.904Z",
       "source": {
         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/vanilla_playwright_test.spec.ts",
         "line": 49
@@ -12186,9 +12186,9 @@ window.__SERENITY_REPORT_DATA__ = {
       "executionHistory": [
         {
           "outcome": "SUCCESS",
-          "run": "2593",
-          "timestamp": "2026-09-10T06:03:37.392Z",
-          "duration": 724,
+          "run": "2596",
+          "timestamp": "2026-09-10T23:32:10.651Z",
+          "duration": 722,
           "activities": []
         }
       ],
@@ -12198,8 +12198,8 @@ window.__SERENITY_REPORT_DATA__ = {
       "name": "New Todo should show #main and #footer when items added",
       "category": "Vanilla Playwright Test",
       "outcome": "SUCCESS",
-      "duration": 371,
-      "startedAt": "2026-09-10T06:03:46.345Z",
+      "duration": 331,
+      "startedAt": "2026-09-10T23:32:18.754Z",
       "source": {
         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/vanilla_playwright_test.spec.ts",
         "line": 63
@@ -12222,9 +12222,9 @@ window.__SERENITY_REPORT_DATA__ = {
       "executionHistory": [
         {
           "outcome": "SUCCESS",
-          "run": "2593",
-          "timestamp": "2026-09-10T06:03:37.392Z",
-          "duration": 371,
+          "run": "2596",
+          "timestamp": "2026-09-10T23:32:10.651Z",
+          "duration": 331,
           "activities": []
         }
       ],
@@ -12234,8 +12234,8 @@ window.__SERENITY_REPORT_DATA__ = {
       "name": "New Todo should show #main and #footer when items added",
       "category": "Vanilla Playwright Test",
       "outcome": "SUCCESS",
-      "duration": 652,
-      "startedAt": "2026-09-10T06:04:04.005Z",
+      "duration": 558,
+      "startedAt": "2026-09-10T23:32:34.996Z",
       "source": {
         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/vanilla_playwright_test.spec.ts",
         "line": 63
@@ -12258,9 +12258,9 @@ window.__SERENITY_REPORT_DATA__ = {
       "executionHistory": [
         {
           "outcome": "SUCCESS",
-          "run": "2593",
-          "timestamp": "2026-09-10T06:03:37.392Z",
-          "duration": 652,
+          "run": "2596",
+          "timestamp": "2026-09-10T23:32:10.651Z",
+          "duration": 558,
           "activities": []
         }
       ],
@@ -12270,8 +12270,8 @@ window.__SERENITY_REPORT_DATA__ = {
       "name": "New Todo should show #main and #footer when items added",
       "category": "Vanilla Playwright Test",
       "outcome": "SUCCESS",
-      "duration": 635,
-      "startedAt": "2026-09-10T06:04:20.849Z",
+      "duration": 650,
+      "startedAt": "2026-09-10T23:32:50.648Z",
       "source": {
         "path": "/__w/serenity-js-playwright-test-template/serenity-js-playwright-test-template/spec/vanilla_playwright_test.spec.ts",
         "line": 63
@@ -12294,9 +12294,9 @@ window.__SERENITY_REPORT_DATA__ = {
       "executionHistory": [
         {
           "outcome": "SUCCESS",
-          "run": "2593",
-          "timestamp": "2026-09-10T06:03:37.392Z",
-          "duration": 635,
+          "run": "2596",
+          "timestamp": "2026-09-10T23:32:10.651Z",
+          "duration": 650,
           "activities": []
         }
       ],
@@ -12305,8 +12305,8 @@ window.__SERENITY_REPORT_DATA__ = {
   ],
   "history": [
     {
-      "timestamp": "2026-09-10T06:03:37.392Z",
-      "duration": 44092,
+      "timestamp": "2026-09-10T23:32:10.651Z",
+      "duration": 40647,
       "outcomes": {
         "passed": 36,
         "failed": 0,
@@ -12315,13 +12315,13 @@ window.__SERENITY_REPORT_DATA__ = {
         "compromised": 0,
         "error": 0
       },
-      "label": "2593",
-      "slowest": 3363,
-      "fastest": 325,
-      "average": 1048,
-      "commit": "af6b046c11acbcce7aa71f957cba55961d3b9ccb",
+      "label": "2596",
+      "slowest": 3053,
+      "fastest": 205,
+      "average": 966,
+      "commit": "5ac0374408eec06768d72069aa9f0c593a4cf353",
       "branch": "main",
-      "ciJobUrl": "https://github.com/serenity-js/serenity-js-playwright-test-template/actions/runs/34443496684",
+      "ciJobUrl": "https://github.com/serenity-js/serenity-js-playwright-test-template/actions/runs/34542506701",
       "repositoryUrl": "https://github.com/serenity-js/serenity-js-playwright-test-template",
       "score": {
         "confidence": 100,
@@ -12455,7 +12455,7 @@ window.__SERENITY_REPORT_DATA__ = {
       "version": "6.17.0-1022-azure",
       "arch": "x64"
     },
-    "serenityVersion": "3.47.0",
+    "serenityVersion": "3.47.2",
     "testRunner": {
       "name": "Playwright",
       "version": "1.63.0"
@@ -12476,12 +12476,12 @@ window.__SERENITY_REPORT_DATA__ = {
     ],
     "ci": {
       "provider": "GitHub Actions",
-      "buildNumber": "2593",
+      "buildNumber": "2596",
       "branch": "main",
-      "commit": "af6b046c11acbcce7aa71f957cba55961d3b9ccb",
-      "commitMessage": "fix(deps): update serenity/js and playwright (#797)",
+      "commit": "5ac0374408eec06768d72069aa9f0c593a4cf353",
+      "commitMessage": "fix(deps): update serenity/js and playwright to ^3.47.2 (#801)",
       "commitAuthor": "renovate[bot]",
-      "jobUrl": "https://github.com/serenity-js/serenity-js-playwright-test-template/actions/runs/34443496684",
+      "jobUrl": "https://github.com/serenity-js/serenity-js-playwright-test-template/actions/runs/34542506701",
       "workflow": "build",
       "repositoryUrl": "https://github.com/serenity-js/serenity-js-playwright-test-template",
       "triggeredBy": "renovate[bot]"
