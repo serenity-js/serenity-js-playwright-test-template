@@ -1,17 +1,17 @@
 {
   "$schema": "https://serenity-js.org/schemas/report-summary.json",
-  "generated": "2026-09-16T12:35:25.546Z",
+  "generated": "2026-09-19T06:07:28.734Z",
   "title": "serenity-js-playwright-test-template",
   "schemaVersion": 1,
   "reportUrl": "./index.html",
   "ci": {
-    "commit": "e05fefd554afded721cf6675d7824addaee09e5d",
+    "commit": "092a863d3aa4e8adc8ec015a3da8df01af3b9624",
     "branch": "main",
-    "jobUrl": "https://github.com/serenity-js/serenity-js-playwright-test-template/actions/runs/35096521505"
+    "jobUrl": "https://github.com/serenity-js/serenity-js-playwright-test-template/actions/runs/35425677772"
   },
   "latestRun": {
-    "timestamp": "2026-09-16T12:34:42.388Z",
-    "label": "2604",
+    "timestamp": "2026-09-19T06:06:58.762Z",
+    "label": "2608",
     "totals": {
       "passed": 36,
       "failed": 0,
@@ -20,7 +20,7 @@
       "compromised": 0,
       "error": 0
     },
-    "duration": 42960
+    "duration": 29850
   },
   "runs": 1,
   "failureClusters": [],
@@ -40,27 +40,27 @@
     {
       "name": "Todo List App should allow me to share notes across actors and browsers",
       "source": "using_notes.spec.ts:44",
-      "duration": 3269
+      "duration": 2435
     },
     {
       "name": "Todo List App should allow me to share notes across actors and browsers",
       "source": "using_notes.spec.ts:44",
-      "duration": 2449
+      "duration": 1538
     },
     {
       "name": "Todo List App supports multiple actors using separate browsers",
       "source": "multi-actor_scenarios.spec.ts:37",
-      "duration": 1927
+      "duration": 1333
     },
     {
-      "name": "Todo List App should allow me to add todo items",
-      "source": "recording_items.spec.ts:36",
-      "duration": 1822
+      "name": "Todo List App supports multiple actors using separate browsers",
+      "source": "multi-actor_scenarios.spec.ts:37",
+      "duration": 1186
     },
     {
       "name": "New Todo should allow me to add todo items",
       "source": "vanilla_playwright_test.spec.ts:16",
-      "duration": 1740
+      "duration": 1124
     }
   ]
 }
