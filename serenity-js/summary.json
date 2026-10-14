@@ -1,17 +1,17 @@
 {
   "$schema": "https://serenity-js.org/schemas/report-summary.json",
-  "generated": "2026-10-13T05:04:56.296Z",
+  "generated": "2026-10-14T18:42:00.623Z",
   "title": "serenity-js-playwright-test-template",
   "schemaVersion": 1,
   "reportUrl": "./index.html",
   "ci": {
-    "commit": "af6537bd054e84c6eb2603813e30b5dfddfe091a",
+    "commit": "c661fa7d230095ecd0b398cc09e3115aa7c61e62",
     "branch": "main",
-    "jobUrl": "https://github.com/serenity-js/serenity-js-playwright-test-template/actions/runs/38349422723"
+    "jobUrl": "https://github.com/serenity-js/serenity-js-playwright-test-template/actions/runs/38617117461"
   },
   "latestRun": {
-    "timestamp": "2026-10-13T05:04:18.401Z",
-    "label": "2642",
+    "timestamp": "2026-10-14T18:41:20.258Z",
+    "label": "2646",
     "totals": {
       "passed": 36,
       "failed": 0,
@@ -20,7 +20,7 @@
       "compromised": 0,
       "error": 0
     },
-    "duration": 37723
+    "duration": 40147
   },
   "runs": 1,
   "failureClusters": [],
@@ -38,29 +38,29 @@
   },
   "slowest": [
     {
-      "name": "Todo List App should allow me to share notes across actors and browsers",
-      "source": "using_notes.spec.ts:44",
-      "duration": 2203
+      "name": "GitHub Pages should check the state of the system before interacting with the UI",
+      "source": "blended_testing.spec.ts:29",
+      "duration": 3222
     },
     {
       "name": "Todo List App should allow me to share notes across actors and browsers",
       "source": "using_notes.spec.ts:44",
-      "duration": 1899
+      "duration": 2250
     },
     {
       "name": "Todo List App supports multiple actors using separate browsers",
       "source": "multi-actor_scenarios.spec.ts:37",
-      "duration": 1626
+      "duration": 1812
+    },
+    {
+      "name": "Todo List App should allow me to share notes across actors and browsers",
+      "source": "using_notes.spec.ts:44",
+      "duration": 1759
     },
     {
       "name": "New Todo should allow me to add todo items",
       "source": "vanilla_playwright_test.spec.ts:16",
-      "duration": 1554
-    },
-    {
-      "name": "JSON Placeholder /todos should retrieve a todo item by id",
-      "source": "api_testing.spec.ts:29",
-      "duration": 1401
+      "duration": 1643
     }
   ]
 }
