@@ -1,17 +1,17 @@
 {
   "$schema": "https://serenity-js.org/schemas/report-summary.json",
-  "generated": "2026-10-21T23:04:00.457Z",
+  "generated": "2026-10-27T02:57:47.025Z",
   "title": "serenity-js-playwright-test-template",
   "schemaVersion": 1,
   "reportUrl": "./index.html",
   "ci": {
-    "commit": "774a2507e4b0d76f17a9db046a8f85c4ab25dcb8",
+    "commit": "7d3dc11abbb2f3a17dc846ab5361044e5126181f",
     "branch": "main",
-    "jobUrl": "https://github.com/serenity-js/serenity-js-playwright-test-template/actions/runs/39690720479"
+    "jobUrl": "https://github.com/serenity-js/serenity-js-playwright-test-template/actions/runs/40441288311"
   },
   "latestRun": {
-    "timestamp": "2026-10-21T23:03:25.570Z",
-    "label": "2664",
+    "timestamp": "2026-10-27T02:57:09.391Z",
+    "label": "2669",
     "totals": {
       "passed": 36,
       "failed": 0,
@@ -20,7 +20,7 @@
       "compromised": 0,
       "error": 0
     },
-    "duration": 34730
+    "duration": 37426
   },
   "runs": 1,
   "failureClusters": [],
@@ -40,27 +40,27 @@
     {
       "name": "Todo List App should allow me to share notes across actors and browsers",
       "source": "using_notes.spec.ts:44",
-      "duration": 2144
+      "duration": 2281
     },
     {
       "name": "Todo List App should allow me to share notes across actors and browsers",
       "source": "using_notes.spec.ts:44",
-      "duration": 1628
+      "duration": 1836
     },
     {
       "name": "Todo List App supports multiple actors using separate browsers",
       "source": "multi-actor_scenarios.spec.ts:37",
-      "duration": 1524
-    },
-    {
-      "name": "Todo List App supports multiple actors using separate browsers",
-      "source": "multi-actor_scenarios.spec.ts:37",
-      "duration": 1324
+      "duration": 1788
     },
     {
       "name": "New Todo should allow me to add todo items",
       "source": "vanilla_playwright_test.spec.ts:16",
-      "duration": 1213
+      "duration": 1678
+    },
+    {
+      "name": "Todo List App should allow me to add todo items",
+      "source": "recording_items.spec.ts:36",
+      "duration": 1556
     }
   ]
 }
