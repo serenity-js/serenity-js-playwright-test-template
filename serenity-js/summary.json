@@ -1,17 +1,17 @@
 {
   "$schema": "https://serenity-js.org/schemas/report-summary.json",
-  "generated": "2026-10-27T02:57:47.025Z",
+  "generated": "2026-10-28T23:42:54.886Z",
   "title": "serenity-js-playwright-test-template",
   "schemaVersion": 1,
   "reportUrl": "./index.html",
   "ci": {
-    "commit": "7d3dc11abbb2f3a17dc846ab5361044e5126181f",
+    "commit": "6657198ea169363304f6473a5a1f683704f1da55",
     "branch": "main",
-    "jobUrl": "https://github.com/serenity-js/serenity-js-playwright-test-template/actions/runs/40441288311"
+    "jobUrl": "https://github.com/serenity-js/serenity-js-playwright-test-template/actions/runs/40789043207"
   },
   "latestRun": {
-    "timestamp": "2026-10-27T02:57:09.391Z",
-    "label": "2669",
+    "timestamp": "2026-10-28T23:42:17.467Z",
+    "label": "2675",
     "totals": {
       "passed": 36,
       "failed": 0,
@@ -20,7 +20,7 @@
       "compromised": 0,
       "error": 0
     },
-    "duration": 37426
+    "duration": 37242
   },
   "runs": 1,
   "failureClusters": [],
@@ -40,27 +40,27 @@
     {
       "name": "Todo List App should allow me to share notes across actors and browsers",
       "source": "using_notes.spec.ts:44",
-      "duration": 2281
+      "duration": 2126
     },
     {
       "name": "Todo List App should allow me to share notes across actors and browsers",
       "source": "using_notes.spec.ts:44",
-      "duration": 1836
+      "duration": 1794
     },
     {
       "name": "Todo List App supports multiple actors using separate browsers",
       "source": "multi-actor_scenarios.spec.ts:37",
-      "duration": 1788
+      "duration": 1733
     },
     {
       "name": "New Todo should allow me to add todo items",
       "source": "vanilla_playwright_test.spec.ts:16",
-      "duration": 1678
+      "duration": 1421
     },
     {
-      "name": "Todo List App should allow me to add todo items",
-      "source": "recording_items.spec.ts:36",
-      "duration": 1556
+      "name": "Todo List App supports multiple actors using separate browsers",
+      "source": "multi-actor_scenarios.spec.ts:37",
+      "duration": 1369
     }
   ]
 }
