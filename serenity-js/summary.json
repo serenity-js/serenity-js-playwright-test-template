@@ -1,17 +1,17 @@
 {
   "$schema": "https://serenity-js.org/schemas/report-summary.json",
-  "generated": "2026-10-29T11:40:07.513Z",
+  "generated": "2026-11-16T02:47:39.471Z",
   "title": "serenity-js-playwright-test-template",
   "schemaVersion": 1,
   "reportUrl": "./index.html",
   "ci": {
-    "commit": "76ea7007cb784530df9172f9a449aec2d43a6070",
+    "commit": "cff5454a43a2aa6154a9bf3cfd9cf4ae014c2867",
     "branch": "main",
-    "jobUrl": "https://github.com/serenity-js/serenity-js-playwright-test-template/actions/runs/40866911131"
+    "jobUrl": "https://github.com/serenity-js/serenity-js-playwright-test-template/actions/runs/43794097452"
   },
   "latestRun": {
-    "timestamp": "2026-10-29T11:39:23.889Z",
-    "label": "2680",
+    "timestamp": "2026-11-16T02:47:12.839Z",
+    "label": "2688",
     "totals": {
       "passed": 36,
       "failed": 0,
@@ -20,7 +20,7 @@
       "compromised": 0,
       "error": 0
     },
-    "duration": 43397
+    "duration": 26467
   },
   "runs": 1,
   "failureClusters": [],
@@ -40,27 +40,27 @@
     {
       "name": "Todo List App should allow me to share notes across actors and browsers",
       "source": "using_notes.spec.ts:44",
-      "duration": 2577
-    },
-    {
-      "name": "Todo List App supports multiple actors using separate browsers",
-      "source": "multi-actor_scenarios.spec.ts:37",
-      "duration": 2013
+      "duration": 1624
     },
     {
       "name": "Todo List App should allow me to share notes across actors and browsers",
       "source": "using_notes.spec.ts:44",
-      "duration": 1957
+      "duration": 1327
     },
     {
-      "name": "Todo List App should allow me to add todo items",
-      "source": "recording_items.spec.ts:36",
-      "duration": 1943
+      "name": "Todo List App supports multiple actors using separate browsers",
+      "source": "multi-actor_scenarios.spec.ts:37",
+      "duration": 1233
     },
     {
       "name": "New Todo should allow me to add todo items",
       "source": "vanilla_playwright_test.spec.ts:16",
-      "duration": 1678
+      "duration": 1099
+    },
+    {
+      "name": "Todo List App should show #main and #footer sections only when list contains items",
+      "source": "recording_items.spec.ts:81",
+      "duration": 1034
     }
   ]
 }
