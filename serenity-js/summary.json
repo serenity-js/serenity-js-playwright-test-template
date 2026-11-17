@@ -1,17 +1,17 @@
 {
   "$schema": "https://serenity-js.org/schemas/report-summary.json",
-  "generated": "2026-11-16T02:50:13.620Z",
+  "generated": "2026-11-17T05:27:22.820Z",
   "title": "serenity-js-playwright-test-template",
   "schemaVersion": 1,
   "reportUrl": "./index.html",
   "ci": {
-    "commit": "dbf0dae66b843480e1d33761b65ee3ec75bc8e68",
+    "commit": "86467c451ed3e71c4f72ddf6f1d4a64be88e7c02",
     "branch": "main",
-    "jobUrl": "https://github.com/serenity-js/serenity-js-playwright-test-template/actions/runs/43794365458"
+    "jobUrl": "https://github.com/serenity-js/serenity-js-playwright-test-template/actions/runs/44024048168"
   },
   "latestRun": {
-    "timestamp": "2026-11-16T02:49:35.390Z",
-    "label": "2694",
+    "timestamp": "2026-11-17T05:26:50.387Z",
+    "label": "2701",
     "totals": {
       "passed": 36,
       "failed": 0,
@@ -20,7 +20,7 @@
       "compromised": 0,
       "error": 0
     },
-    "duration": 38070
+    "duration": 32254
   },
   "runs": 1,
   "failureClusters": [],
@@ -40,27 +40,27 @@
     {
       "name": "Todo List App should allow me to share notes across actors and browsers",
       "source": "using_notes.spec.ts:44",
-      "duration": 2597
-    },
-    {
-      "name": "Todo List App should allow me to share notes across actors and browsers",
-      "source": "using_notes.spec.ts:44",
-      "duration": 1892
-    },
-    {
-      "name": "Todo List App supports multiple actors using separate browsers",
-      "source": "multi-actor_scenarios.spec.ts:37",
-      "duration": 1703
+      "duration": 2117
     },
     {
       "name": "New Todo should allow me to add todo items",
       "source": "vanilla_playwright_test.spec.ts:16",
-      "duration": 1602
+      "duration": 1669
+    },
+    {
+      "name": "Todo List App should allow me to share notes across actors and browsers",
+      "source": "using_notes.spec.ts:44",
+      "duration": 1595
     },
     {
       "name": "Todo List App supports multiple actors using separate browsers",
       "source": "multi-actor_scenarios.spec.ts:37",
-      "duration": 1506
+      "duration": 1562
+    },
+    {
+      "name": "Todo List App should allow me to add todo items",
+      "source": "recording_items.spec.ts:36",
+      "duration": 1289
     }
   ]
 }
