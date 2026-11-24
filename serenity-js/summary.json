@@ -1,17 +1,17 @@
 {
   "$schema": "https://serenity-js.org/schemas/report-summary.json",
-  "generated": "2026-11-23T04:34:41.615Z",
+  "generated": "2026-11-24T02:49:58.015Z",
   "title": "serenity-js-playwright-test-template",
   "schemaVersion": 1,
   "reportUrl": "./index.html",
   "ci": {
-    "commit": "f02353fbd44ec7ef6347ff8f0198e28a9ee64969",
+    "commit": "55c9a8133f7e23616de21e413e8c3a2623e4fe5b",
     "branch": "main",
-    "jobUrl": "https://github.com/serenity-js/serenity-js-playwright-test-template/actions/runs/45112528435"
+    "jobUrl": "https://github.com/serenity-js/serenity-js-playwright-test-template/actions/runs/45314896163"
   },
   "latestRun": {
-    "timestamp": "2026-11-23T04:34:09.914Z",
-    "label": "2709",
+    "timestamp": "2026-11-24T02:49:28.932Z",
+    "label": "2712",
     "totals": {
       "passed": 36,
       "failed": 0,
@@ -20,7 +20,7 @@
       "compromised": 0,
       "error": 0
     },
-    "duration": 31535
+    "duration": 28935
   },
   "runs": 1,
   "failureClusters": [],
@@ -40,27 +40,27 @@
     {
       "name": "Todo List App should allow me to share notes across actors and browsers",
       "source": "using_notes.spec.ts:44",
-      "duration": 2064
+      "duration": 1804
+    },
+    {
+      "name": "GitHub Pages should check the state of the system before interacting with the UI",
+      "source": "blended_testing.spec.ts:29",
+      "duration": 1398
     },
     {
       "name": "Todo List App should allow me to share notes across actors and browsers",
       "source": "using_notes.spec.ts:44",
-      "duration": 1551
+      "duration": 1357
     },
     {
       "name": "Todo List App supports multiple actors using separate browsers",
       "source": "multi-actor_scenarios.spec.ts:37",
-      "duration": 1532
+      "duration": 1287
     },
     {
       "name": "New Todo should allow me to add todo items",
       "source": "vanilla_playwright_test.spec.ts:16",
-      "duration": 1408
-    },
-    {
-      "name": "Todo List App should show #main and #footer sections only when list contains items",
-      "source": "recording_items.spec.ts:81",
-      "duration": 1222
+      "duration": 1235
     }
   ]
 }
