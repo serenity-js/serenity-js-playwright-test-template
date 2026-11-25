@@ -1,17 +1,17 @@
 {
   "$schema": "https://serenity-js.org/schemas/report-summary.json",
-  "generated": "2026-11-24T02:49:58.015Z",
+  "generated": "2026-11-25T23:49:32.479Z",
   "title": "serenity-js-playwright-test-template",
   "schemaVersion": 1,
   "reportUrl": "./index.html",
   "ci": {
-    "commit": "55c9a8133f7e23616de21e413e8c3a2623e4fe5b",
+    "commit": "fe91e7d98bddbf650779b852c11733c4c17307a4",
     "branch": "main",
-    "jobUrl": "https://github.com/serenity-js/serenity-js-playwright-test-template/actions/runs/45314896163"
+    "jobUrl": "https://github.com/serenity-js/serenity-js-playwright-test-template/actions/runs/45724056880"
   },
   "latestRun": {
-    "timestamp": "2026-11-24T02:49:28.932Z",
-    "label": "2712",
+    "timestamp": "2026-11-25T23:48:59.624Z",
+    "label": "2719",
     "totals": {
       "passed": 36,
       "failed": 0,
@@ -20,7 +20,7 @@
       "compromised": 0,
       "error": 0
     },
-    "duration": 28935
+    "duration": 32724
   },
   "runs": 1,
   "failureClusters": [],
@@ -40,27 +40,27 @@
     {
       "name": "Todo List App should allow me to share notes across actors and browsers",
       "source": "using_notes.spec.ts:44",
-      "duration": 1804
-    },
-    {
-      "name": "GitHub Pages should check the state of the system before interacting with the UI",
-      "source": "blended_testing.spec.ts:29",
-      "duration": 1398
+      "duration": 1977
     },
     {
       "name": "Todo List App should allow me to share notes across actors and browsers",
       "source": "using_notes.spec.ts:44",
-      "duration": 1357
+      "duration": 1585
     },
     {
       "name": "Todo List App supports multiple actors using separate browsers",
       "source": "multi-actor_scenarios.spec.ts:37",
-      "duration": 1287
+      "duration": 1520
+    },
+    {
+      "name": "Todo List App supports multiple actors using separate browsers",
+      "source": "multi-actor_scenarios.spec.ts:37",
+      "duration": 1307
     },
     {
       "name": "New Todo should allow me to add todo items",
       "source": "vanilla_playwright_test.spec.ts:16",
-      "duration": 1235
+      "duration": 1210
     }
   ]
 }
